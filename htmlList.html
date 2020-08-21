@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>퍼블리싱 리스트 </title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css" />
+<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" /> -->
+<style type="text/css">	
+	body{font:normal 13px/1.5 'Noto Sans KR',Malgun Gothic,'맑은고딕', sans-serif, Arial, Verdana;color:#666;margin:0;}
+	h1, h2, h3, h4, h5, h6{color:#000;}
+	fieldset,ul, ol, dl, dt, dd, p, button, figure{margin:0;padding:0;}
+	legend, caption{width:0;height:0;visibility:hidden;font-size:0;line-height:0;}
+	em, a , input, textarea, keygen, select, button, isindex, i{font-style:normal;text-decoration:none;color:#666;}
+	fieldset, button{background:none;border:0px;}
+	ul:after,ol:after,dl:after{content:'';display:block;clear:both;}
+	li{list-style:none;}
+	img{vertical-align:middle;}
+	table{width:100%;border-spacing:0px;border-collapse:collapse;table-layout:fixed;}
+	th, td{word-break:break-all;}
+	iframe{width:100%;vertical-align:middle;}
+	hr{border:0 none;height:1px;background:#e3e3e3;}
+	
+	.wrap{padding:10px 10px 80px;max-width:1200px;margin:0 auto;}
+	.table{border-top:1px solid #666;border-bottom:2px solid #999;margin-bottom:20px;}
+	.table table{width:100%;}
+	.table table thead th{padding:5px;background:#e4e4e4;border-left:1px solid #c3c3c3;border-bottom:1px solid #666;color:#333;}
+	.table table tbody td{padding:5px;border-top:1px solid #c3c3c3;border-left:1px solid #c3c3c3;}
+	.table table tbody th{text-align:center;background:#f9f9f9;color:#515151;border-top:1px solid #c3c3c3;}
+	.table table tbody tr:first-child th, .table table tbody tr:first-child td{border-top:0;}
+	.table table th:last-child, .table table tbody td:last-child{border-right:0;}
+	.table table tbody tr:hover th, 
+	.table table tbody tr:hover td{background:#f5f5f5 !important;}
+	.table table tbody tr:hover td a{color:red;}
+	.table a{text-decoration:underline;}
+	.table .sky th, .table .sky td{background:#d2f6f6;color:#000;}
+	.table .yellow td{background:#ffeeca;color:#000;}
+	.table .yellow td:first-child{background:none;}
+	.table .line th, .table .line td{border-top-color:#666;}
+	
+	.text_box{padding:10px;margin-bottom:10px;color:#666;border:2px solid #ccc;line-height:1.5;}
+	.text_box strong{display:inline-block;}
+	.text_box strong:first-child{padding-left:0;}
+	.text_box span{display:inline-block;width:10px;height:10px;vertical-align:center;}
+	
+	.red{color:red;}
+	.blue{color:blue;}
+
+	.midline{text-decoration:line-through;color: #aaa;}
+
+@media only screen and (max-width:760px ){
+	.table{overflow-y:auto;}
+	.table table{table-layout:auto;}
+	th, td{white-space:nowrap;font-size:11px;}
+}
+</style>
+
+<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(function(){
+		var size = 0;
+		$('.line').each(function(idx){
+			$(this).children('th').attr('rowspan',
+				$(this).nextAll('.line').index() < 0 ? size = $(this).nextAll().length  + 1: $(this).nextAll('.line').index() - size
+			);
+			size = $(this).nextAll('.line').index();
+		});
+	});
+</script>
+</head>
+<body>	
+	<section class="wrap">
+		<h1>HRD-Net</h1>
+		<div class="text_box">
+			<p>* 문서타입 : HTML5 / CSS3</p>
+			<p>* pc : 1280 ~ ? </p>
+			<p>* mobile : 320 ~ ? </p>
+		</div>
+		<div class="table">
+			<table>
+				<colgroup>
+					<col width="12%">
+                    <col width="14%">
+                    <col width="12%">
+                    <col width="10%">
+                    <col width="27%">
+                    <col width="*">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>1depth</th>
+						<th>2depth</th>
+						<th>3depth</th>
+						<th>구분</th>
+						<th>File</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- 메인 -->
+					<tr class="line">
+						<th>메인</th>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a target="_blank" href="A001/A001001001ML.html">A001001001ML.html</a></td>
+						<td class="red">* 메인은 PC/MOBILE 별개이며, 네비게이션도 서브랑 틀립니다.</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a target="_blank" href="A001/A001001001L.html">A001001001L.html</a></td>
+						<td class="red">* 메인은 PC/MOBILE 별개이며, 네비게이션도 서브랑 틀립니다.</td>
+					</tr>
+					<!-- 로그인 -->
+					<tr class="line">
+						<th>로그인</th>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a target="_blank" href="A002/A002001001L.html">A002001001L.html</a></td>
+						<td class=" ">PC</td>
+					</tr>
+					<tr>
+						<td>개인회원</td>
+						<td>PASS 인증 로그인</td>
+						<td></td>
+						<td><a target="_blank" href="A002/A002001001L_공통_개인_로그인_02_패스인증.html">A002001001L_공통_개인_로그인_02_패스인증.html</a></td>
+						<td>PC</td>
+					</tr>
+					<!-- 회원가입 -->
+                    <tr class="line">
+                        <th>회원가입</th>
+                        <td>회원가입</td>
+						<td></td>
+						<td></td>
+                        <td><a target="_blank" href="A003/A003001001L.html">A003001001L.html</a></td>
+                        <td class="">PC만 선작업</td>
+                    </tr>
+                    <tr>
+                        <td>가입인증</td>
+						<td></td>
+						<td></td>
+                        <td><a target="_blank" href="A003/A003001001L_01.html">A003001001L_01.html</a></td>
+                        <td class="">PC만 선작업</td>
+                    </tr>
+                    <tr>
+                        <td>약관동의</td>
+						<td></td>
+						<td></td>
+                        <td><a target="_blank" href="A003/A003001001L_02.html">A003001001L_02.html</a></td>
+                        <td class="">PC만 선작업</td>
+                    </tr>
+                    <tr>
+                        <td>회원정보입력</td>
+						<td></td>
+						<td></td>
+                        <td><a target="_blank" href="A003/A003001001L_03.html">A003001001L_03.html</a></td>
+                        <td class="">PC만 선작업</td>
+                    </tr>
+                    <tr>
+                        <td>가입완료</td>
+						<td></td>
+						<td></td>
+                        <td><a target="_blank" href="A003/A003001001L_04.html">A003001001L_04.html</a></td>
+                        <td class="">PC만 선작업</td>
+                    </tr>
+					<tr class="line">
+						<th>공통</th>
+						<td>404에러</td>
+						<td></td>
+						<td></td>
+						<td><a target="_blank" href="."> </a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>500에러</td>
+						<td></td>
+						<td></td>
+						<td><a target="_blank" href="."> </a></td>
+						<td></td>
+					</tr>
+
+					<!-- 고객센터 -->
+					<tr class="line">
+						<th>고객센터</th>
+						<td>자주묻는 질문</td>
+						<td></td>
+						<td></td>
+						<td><a target="_blank" href="A007/A007001001L.html">A007001001L.html</a></td>
+						<td class="">목록 상세 합쳐짐<br>(설계서, 메뉴구조도와 다름)</td>
+					</tr>
+					<tr>
+						<td rowspan="3">질문과 답변</td>
+						<td></td>
+						<td>목록</td>
+						<td><a target="_blank" href="A007/A007002001L.html">A007002001L.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>상세</td>						
+						<td><a target="_blank" href="A007/A007002001D.html">A007002001D.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>등록</td>						
+						<td><a target="_blank" href="A007/A007002001S.html">A007002001S.html</a></td>
+						<td>PC</td>
+					</tr>	
+					<tr>
+						<td>기관찾기</td>
+						<td></td>
+						<td></td>
+						<td><a target="_blank" href="A007/A007003001L.html">A007003001L.html</a></td>
+						<td>PC</td>
+					</tr>	
+					<tr>
+						<td rowspan="3">개선 및 제안</td>
+						<td></td>
+						<td>목록</td>						
+						<td><a target="_blank" href="A007/A007004001L.html">A007004001L.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>상세</td>						
+						<td><a target="_blank" href="A007/A007004001D.html">A007004001D.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>등록</td>						
+						<td><a target="_blank" href="A007/A007004001S.html">A007004001S.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">공지/행사 안내</td>
+						<td></td>
+						<td>목록</td>						
+						<td><a target="_blank" href="A007/A007005001L.html">A007005001L.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>상세</td>						
+						<td><a target="_blank" href="A007/A007005001D.html">A007005001D.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">이벤트 설문 참여</td>
+						<td></td>
+						<td>목록</td>						
+						<td><a target="_blank" href="A007/A007006001L.html">A007006001L.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>상세</td>						
+						<td><a target="_blank" href="A007/A007006001D.html">A007006001D.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2">개인정보처리요구</td>
+						<td></td>
+						<td>목록</td>						
+						<td><a target="_blank" href="A007/A007009001L.html">A007009001L.html</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>등록</td>						
+						<td><a target="_blank" href="A007/A007009001S.html">A007009001S.html</a></td>
+						<td></td>
+					</tr>
+					<!-- 훈련과정 -->
+					<tr class="line">
+						<th>훈련과정</th>
+						<td rowspan="2">국민내일배움카드 훈련과정</td>
+						<td></td>
+						<td>검색</td>
+						<td><a target="_blank" href="B001/B001001001L.html">B001001001L.html</a></td>
+						<td>PC 선작업</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>검색</td>
+						<td><a target="_blank" href="B001/B006001001L.html">B006001001L.html</a></td>
+						<td>MOBILE 선작업</td>
+					</tr>
+					<!-- MY서비스 -->
+                    <tr class="line">
+                        <th>MY서비스</th>
+                        <td rowspan="17">MY관심</td>
+                        <td rowspan="17">비대면 훈련상담</td>
+                        <td>목록</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>상세</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="15">등록</td>
+                        <td><a target="_blank" href="G003/G003004001S.html">G003004001S.html</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_01.html">G003004001S_01.html</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_02.html">G003004001S_02.html</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_03.html">G003004001S_03.html</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_04.html">G003004001S_04.html</a></td>
+                        <td class="">
+                            PC 선작업
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_05.html">G003004001S_05.html</a></td>
+                        <td>PC 선작업</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_06.html">G003004001S_06.html</a></td>
+                        <td class="">PC 선작업</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_07.html">G003004001S_07.html</a></td>
+                        <td>PC 선작업</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_08.html">G003004001S_08.html</a></td>
+                        <td class="red"></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_09.html">G003004001S_09.html</a></td>
+                        <td>PC 선작업</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_10.html">G003004001S_10.html</a></td>
+                        <td class="red"></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_11.html">G003004001S_11.html</a></td>
+                        <td>PC 선작업</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_12.html">G003004001S_12.html</a></td>
+                        <td>PC 선작업</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_13.html">G003004001S_13.html</a></td>
+                        <td>PC 선작업</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="G003/G003004001S_14.html">G003004001S_14.html</a></td>
+                        <td>PC 선작업</td>
+                    </tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<!-- //contents -->
+
+</body>
+</html>

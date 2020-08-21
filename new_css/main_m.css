@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* ==============================
+* 공통 컨텐츠
+* ============================== */
+#mainTopWrap { position:fixed; height:600px; }
+/*#mainTopWrap:after { position:absolute; z-index:1; bottom:0; content:''; background:#fff; width:100%; height:40px; border-top-left-radius:30px; border-top-right-radius:30px; }*/ 
+#mainTopWrap .mainKeyVisual { position:relative; height:600px; }
+#mainTopWrap .mainTopText { display:block; width:100%; color:#fff; font-size:40px; font-weight:200; letter-spacing:-1px; padding:190px 0 0 0; text-align:center; }
+#mainTopWrap .mainTopText strong { font-weight:700; }
+
+#mainTopWrap .mainKeyVisual .mainKeyVisual01 { background:url('../new_images/main/mainTopVisualM01.jpg') center top no-repeat; height:870px; }
+#mainTopWrap .mainKeyVisual .mainKeyVisual02 { background:url('../new_images/main/mainTopVisualM02.jpg') center top no-repeat; height:870px; }
+#mainTopWrap .mainKeyVisual .mainKeyVisual03 { background:url('../new_images/main/mainTopVisualM03.jpg') center top no-repeat; height:870px; }
+#mainTopWrap .mainKeyVisual .mainKeyVisual04 { background:url('../new_images/main/mainTopVisualM04.jpg') center top no-repeat; height:870px; }
+#mainTopWrap .mainKeyVisual .mainKeyVisual05 { background:url('../new_images/main/mainTopVisualM05.jpg') center top no-repeat; height:870px; }
+#mainTopWrap .mainKeyVisual .mainKeyVisual06 { background:url('../new_images/main/mainTopVisualM06.jpg') center top no-repeat; height:870px; }
+
+#container { position:relative; padding:112px 0 0 0; }
+#mainContentWrap .mainContentArea { position:relative; width:100%; margin:555px 0 0 0; background:#fff; padding:45px 0 0 0; border-top-left-radius:50px; border-top-right-radius:50px; }
+#mainContentWrap .mainContentArea:after { position:absolute; right:0; top:45px; bottom:0; width:30px; height:1400px; z-index:999; content:''; background:url('../new_images/main/bgContentRightM.png') repeat-y; } 
+#mainContentWrap .mainContentArea .mainHeadingTitle { font-size:38px; color:#4e4f51; font-weight:500; text-align:left; letter-spacing:-1px; margin:35px 0 30px; }
+#mainContentWrap .mainContentArea .contentsTitle { font-size:18px; color:#292a2d; }
+#mainContentWrap .mainContentArea .contentsText { font-size:14px; color:#727476; line-height:22px; }
+#mainContentWrap .mainContentArea .learningCard { padding:0 0 0 30px; }
+#mainContentWrap .mainContentArea .learningCard .mainHeadingTitle { margin:0 0 15px; }
+#mainContentWrap .mainContentArea .learningCard ul { display:flex; justify-content:flex-start; }
+#mainContentWrap .mainContentArea .learningCard ul > li { width:124px; height:115px; text-align:center; background:url('../new_images/main/learningCardSet.png') no-repeat;   }
+#mainContentWrap .mainContentArea .learningCard ul > li.learningCard01 { background-position:0 0; }
+#mainContentWrap .mainContentArea .learningCard ul > li.learningCard02 { background-position:-124px 0; }
+#mainContentWrap .mainContentArea .learningCard ul > li.learningCard03 { background-position:-248px 0; }
+#mainContentWrap .mainContentArea .learningCard ul > li.learningCard04 { background-position:-372px 0; }
+#mainContentWrap .mainContentArea .learningCard ul > li.learningCard05 { background-position:-496px 0; }
+#mainContentWrap .mainContentArea .learningCard ul > li.learningCard06 { background-position:-620px 0; }
+#mainContentWrap .mainContentArea .learningCard .contentsTitle { padding:80px 0 0 0; font-size:26px; color:#727476; }
+#mainContentWrap .mainContentArea .absentArea { padding:0 30px; }
+#mainContentWrap .mainContentArea .absentArea > ul { display:flex; background:#416fdf; width:100%; height:120px; border-radius:10px; }
+#mainContentWrap .mainContentArea .absentArea > ul > li { position:relative; flex:1; padding-left:125px; font-size:30px; line-height:120px; color:#fff; }
+#mainContentWrap .mainContentArea .absentArea > ul > li:before { position:absolute; top:28px; left:40px; width:64px; height:64px; content:''; background:url('../new_images/main/icoAbsentSet.png') 0 0 no-repeat;}
+#mainContentWrap .mainContentArea .absentArea > ul > li.beacon:before { background-position:-64px 0;}
+#mainContentWrap .mainContentArea .absentArea > ul > li.qr:after { position:absolute; top:30px; right:0; width:2px; height:60px; content:''; background:#8ba7eb; }
+#mainContentWrap .mainContentArea .noticeArea { background:#f2f4f6; height:64px; padding:0 30px; margin:40px 0; }
+#mainContentWrap .mainContentArea .noticeArea > ul > li { background:#f2f4f6; font-size:28px; color:#4e4f51;; line-height:64px; }
+#mainContentWrap .mainContentArea .noticeArea > ul > li .noticePart { display:inline-block; margin:0 20px 0 0; text-align:center; border:2px solid #e2e2e4; background: #fff; color:#193294; font-size:24px; width:80px; height:40px; line-height:38px;  }
+#mainContentWrap .mainContentArea .disitalTech { padding:0 0 0 30px; }
+#mainContentWrap .mainContentArea .disitalTech ul { display:flex; justify-content:flex-start; }
+#mainContentWrap .mainContentArea .disitalTech ul > li .contentImg { width:300px; height:300px; }
+#mainContentWrap .mainContentArea .disitalTech ul > li .contentsTitle { padding:20px 0 0 0; font-size:30px; text-align:left; color:#292a2d; }
+#mainContentWrap .mainContentArea .trainingCourse { padding:0 0 0 30px; }
+#mainContentWrap .mainContentArea .trainingCourse ul { display:flex; justify-content:flex-start; }
+#mainContentWrap .mainContentArea .trainingCourse ul > li .contentImg { width:188px; height:188px; text-align:center;}
+#mainContentWrap .mainContentArea .trainingCourse ul > li .contentsTitle { width:100%; text-align:center; color:#292a2d; font-size:30px; margin:20px 0 0 0; }
+#mainContentWrap .mainContentArea .eventArea { background:#f6f7f8; padding:23px 0 17px; margin:70px 0 0 0; }
+#mainContentWrap .mainContentArea .recentBoard { padding:0 30px 50px; }
+#mainContentWrap .mainContentArea .recentBoard .recentList > li { padding:0 20px; border-bottom:1px solid #f2f4f6; font-size:28px; line-height:66px; color:#727476; }
+#mainContentWrap .mainContentArea .recentBoard .recentList > li:last-child { border:none; }
+/* ==============================
+* slider pagenation
+* ============================== */
+
+#mainKeyVisualPagination.swiper-pagination { display:block; width:640px; bottom:80px; }
+#mainKeyVisualPagination.swiper-pagination .swiper-pagination-bullet { width:12px; height:12px; border-radius:12px; background:#fff; opacity:.5; margin-left:10px; }
+#mainKeyVisualPagination.swiper-pagination .swiper-pagination-bullet-active { background:#fff; width:51px; height:12px; border-radius:12px; opacity:1; }
+.eventArea .swiper-pagination { bottom:12px; }
+.mainContentArea .swiper-pagination .swiper-pagination-bullet { width:8px; height:8px; border:1px solid #434e65; border-radius:8px; background:#fff; opacity:1; }
+.mainContentArea .swiper-pagination .swiper-pagination-bullet-active { width:34px; height:8px; border-radius:8px; background:#434e65; }
+
