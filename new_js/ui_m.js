@@ -339,8 +339,7 @@ var uiSlider = {
 
 	topVisual : function() {
 		var swiperCnt = $('#mainKeyVisual').find('.swiper-slide').length;
-		if ( swiperCnt > 1)
-		{
+		if ( swiperCnt > 1){
 			var swiper = new Swiper('#mainKeyVisual', {
 				slidesPerView: 1,
 				spaceBetween: 0,
@@ -354,10 +353,7 @@ var uiSlider = {
 				},
 				autoplayDisableOninteraction: true, //모바일에서 터치하거나 클릭시 자동 슬라이드 정지
 			});
-		} else {
-		//	$('.mainSwiper').find('.event-button-next').hide();
-		//	$('.mainSwiper').find('.event-button-prev').hide();
-		}
+		} else {}
 	},
 
 	learningCard : function() {

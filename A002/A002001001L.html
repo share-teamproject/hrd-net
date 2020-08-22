@@ -139,34 +139,26 @@
                         </li>
                         <li class="gnbSearchBtn">
                             <a href="javascript:void(0);">검색</a>            
-                            <div class="gnbSubAreag nbSub05">
+                            <div class="gnbSubArea gnbSub05">
                                 <ul class="searchArea">
                                     <li>
                                         <form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
                                             <fieldset>
                                                 <legend>통합검색</legend>
-                                                <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value="">
-                                                
-                                                <div id="totalKeywordLst" class="totalKeywordLst">
-                                                    <ul>
-                                                    </ul>
-                                                </div>
-
-                                                <button type="button" class="btn_search" id="btn_total_search" title="검색">
-                                                    <img src="../new_images/common/btnSearch01.png" alt="검색">
-                                                </button>
+                                                <lable for="searchTotalKeyword" class="hide">검색어</lable>
+                                                <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value=""><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색">검색</button>
                                             </fieldset>
                                         </form>                                    
                                     </li>  
-                                    <li class="serachKeywordArea">
+                                    <li class="searchKeywordArea">
                                         <P>인기검색어</P>
-                                        <ul class="serachKeyword">
-                                            <li><a href="javascript:void(0);">#바리스타</a></li>
-                                            <li><a href="javascript:void(0);">#컴퓨터</a></li>
-                                            <li><a href="javascript:void(0);">#요양보호사</a></li>
-                                            <li><a href="javascript:void(0);">#제빵</a></li>
-                                            <li><a href="javascript:void(0);">#포토샵</a></li>
-                                        </ul>    
+                                        <div class="searchKeyword">
+                                            <a href="javascript:void(0);">#바리스타</a>
+                                            <a href="javascript:void(0);">#컴퓨터</a>
+                                            <a href="javascript:void(0);">#요양보호사</a>
+                                            <a href="javascript:void(0);">#제빵</a>
+                                            <a href="javascript:void(0);">#포토샵</a>
+                                        </div>    
                                     </li>
                                 </ul> 
                             </div> 

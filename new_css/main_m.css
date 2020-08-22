@@ -53,14 +53,14 @@
 #mainContentWrap .mainContentArea .recentBoard { padding:0 30px 50px; }
 #mainContentWrap .mainContentArea .recentBoard .recentList > li { padding:0 20px; border-bottom:1px solid #f2f4f6; font-size:28px; line-height:66px; color:#727476; }
 #mainContentWrap .mainContentArea .recentBoard .recentList > li:last-child { border:none; }
+
 /* ==============================
 * slider pagenation
 * ============================== */
-
 #mainKeyVisualPagination.swiper-pagination { display:block; width:640px; bottom:80px; }
 #mainKeyVisualPagination.swiper-pagination .swiper-pagination-bullet { width:12px; height:12px; border-radius:12px; background:#fff; opacity:.5; margin-left:10px; }
 #mainKeyVisualPagination.swiper-pagination .swiper-pagination-bullet-active { background:#fff; width:51px; height:12px; border-radius:12px; opacity:1; }
-.eventArea .swiper-pagination { bottom:12px; }
+
 .mainContentArea .swiper-pagination .swiper-pagination-bullet { width:8px; height:8px; border:1px solid #434e65; border-radius:8px; background:#fff; opacity:1; }
 .mainContentArea .swiper-pagination .swiper-pagination-bullet-active { width:34px; height:8px; border-radius:8px; background:#434e65; }
-
+.eventArea .swiper-pagination { bottom:12px; }

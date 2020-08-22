@@ -397,8 +397,7 @@ var mainSearch = {
 					$inputSearchKeyword.css('width','190px;')
 				}
 			});		
-		});	
-		
+		});			
 	}
 };
 
