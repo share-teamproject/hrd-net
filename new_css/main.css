@@ -1,6 +1,7 @@
 @charset "utf-8";
 #gnb.mainGnb .gnbSubArea { padding-left:200px; }
 #mainTopWrap { position:relative; height:870px; }
+/* 통합검색 */
 #mainTopWrap .mainTopArea { position:absolute; width:1140px; z-index:10; top:420px; left:calc(50% - 570px); z-index:10; }
 #mainTopWrap .mainTopArea .mainSearchArea { width:864px; margin:0 auto; height:68px; background:#fff; }
 #mainTopWrap .mainTopArea .mainSearchArea fieldset { height:68px; } 
@@ -22,10 +23,9 @@
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea #btnPeriod.on:after { background-position: -60px -23px; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn::before { position:absolute; top:26px; left:0; width:1px; height:16px; content:''; background:#ecedef; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn.on { width:430px; transition: all 0.4s linear; }
-
 #mainTopWrap .tabSelect .content { float:none; width:864px; }
 #mainTopWrap .tabSelect .boxWrap { top:68px; left:calc(50% - 432px); background:#fff; width:864px; float:none; overflow:hidden; }
-
+/* 키비주얼 */
 #mainTopWrap .mainKeyVisual { position:relative; height:870px; }
 #mainTopWrap .mainTopArea { position:absolute; }
 #mainTopWrap .mainTopText { text-align:center; color:#fff; font-size:40px; font-weight:200; letter-spacing:-1px; padding:325px 0 0 0; }
@@ -49,6 +49,21 @@
 #mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active:after { position:absolute; top:8px; right:11px; width:12px; height:12px; border-radius:12px; background:#4870cf; content:''; }
 #mainTopWrap .movieControlArea .btnGroup { position:absolute; top:0; right:10px; width:40px; }
 #mainKeyVisualPagination.swiper-pagination { top:5px; right:0px; }
+/* 국민내일배움카드 */
+#mainTopWrap .learningCard .mainHeadingTitle { position:relative; margin:100px 0 0; font-size:24px; font-weight:500px; color:#fff; text-align:center; }
+#mainTopWrap .learningCard .mainHeadingTitle:before { position:absolute; top:20px; left:290px; width:160px; height:1px; background:#fff; opacity:.5; content:''; }
+#mainTopWrap .learningCard .mainHeadingTitle:after { position:absolute; top:20px; right:290px; width:160px; height:1px; background:#fff; opacity:.5; content:''; }
+#mainTopWrap .learningCard ul { display:flex; justify-content:center; margin:25px 0 0; }
+#mainTopWrap .learningCard ul > li { width:83px; height:42px; text-align:center; margin:0 0 0 37px; }
+#mainTopWrap .learningCard ul > li:first-child { margin:0; }
+#mainTopWrap .learningCard ul > li a { display:block; width:100%; height:100%; color:#fff; font-size:18px; background:url('../new_images/main/learningCardSet.png') no-repeat; background-size: 827px 42px; padding: 47px 0 0 0; }
+#mainTopWrap .learningCard ul > li.learningCard01 a { background-position:0 0; }
+#mainTopWrap .learningCard ul > li.learningCard02 a { background-position:-83px 0; }
+#mainTopWrap .learningCard ul > li.learningCard03 a { background-position:-166px 0; }
+#mainTopWrap .learningCard ul > li.learningCard04 a { background-position:-249px 0; }
+#mainTopWrap .learningCard ul > li.learningCard05 a { background-position:-332px 0; }
+#mainTopWrap .learningCard ul > li.learningCard06 a { background-position:-415px 0; }
+/* 메인컨텐츠 */
 #mainContentWrap .mainContentArea { width:1140px; margin:0 auto; }
 #mainContentWrap .mainContentArea .mainHeadingTitle { font-size:32px; color:#4e4f51; font-weight:500; text-align:center; margin:75px 0 40px; }
 #mainContentWrap .mainContentArea .mainHeadingTitleArea { position:relative; }

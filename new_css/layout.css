@@ -29,7 +29,7 @@ body.noScroll { position: fixed; overflow: hidden;	width: 100%; height: 100% }
 #gnb > li { height:72px; text-align:left; padding-left:100px; }
 #gnb > li > a { position:relative; display:block; font-size:22px; color:#fff; }
 #gnb > li.gnbSearchBtn { padding-left:70px; }
-#gnb > li.gnbSearchBtn a { font-size:0; width:20px; height:33px; background:url('../new_images/common/icoGnbSearch.png') 0 7px no-repeat; }
+#gnb > li.gnbSearchBtn > a { font-size:0; width:20px; height:33px; background:url('../new_images/common/icoGnbSearch.png') 0 7px no-repeat; }
 #gnb.fixed > li > a { color:#292a2d; }
 #gnb.fixed > li.gnbSearchBtn a { background-position:-20px 7px; }
 #gnb > li > a.on { color:#4171df; font-weight:500; } 
@@ -52,7 +52,11 @@ body.noScroll { position: fixed; overflow: hidden;	width: 100%; height: 100% }
 #gnb .gnbSubArea > ul > li > ul > li > a:hover { color:#5b648a; font-weight:500; }
 #gnb .gnbSubArea > ul > li > a { color:#4e4f51; font-size:18px; }
 #gnb .gnbSubArea > ul > li > a:hover { color:#5b648a; font-weight:500; font-size:18px; border-bottom:1px solid #434e64; }
-
+#gnb .gnbSubArea .searchArea >li { float:none; }
+#gnb .gnbSubArea .serachKeywordArea > p { font-size:16; color:#434e64; font-weight:500; }
+#gnb .gnbSubArea .serachKeywordArea .serachKeyword { overflow:hidden; }
+#gnb .gnbSubArea .serachKeywordArea .serachKeyword > li { float:left; margin:0 0 0 30px; }
+#gnb .gnbSubArea .serachKeywordArea .serachKeyword > li > a { color:#258384; font-size:14px; }
 /* ==============================
 * contents
 * ============================== */
