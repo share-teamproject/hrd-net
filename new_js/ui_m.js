@@ -269,28 +269,19 @@ var uiNavigation = {
 		this.menu(); // 전체메뉴
 		this.nav(); // gnb메뉴
 	//	this.goTop(); // top버튼 클릭시 페이지 상단으로 이동
+
 	},
 
 	menu : function() {
 		$('.totalMenuBtn').on('click',function() {
-		//	$('.overlay').css({opacity:0.8});
-		//	$('.overlay').css({display:'block'});
 			$('.totalMenuWrap').css({display:'block'}).animate({right : 0}, 400); 
-		//	TweenMax.to('.overlay',0.5,{opacity:0.8});
-		//	TweenMax.to('#gnb', 0.5, {left:'0'});
 			$('body').addClass('noScroll');	
 		});
 	},
 
 	close : function() {
 		$('.closeTotalMenu').on('click',function() {
-			//TweenMax.to('.totalMenuWrap', 0.5,{right:'100%',onComplete:function() {
-			//	$('.totalMenuWrap').css({display:'none'}); 
-			//}});	
 			$('.totalMenuWrap').css({display:'block'}).animate({right : '-100%'}, 400); 
-//			TweenMax.to('.overlay',0.5,{opacity:0,onComplete:function() {
-//				$('.overlay').css({display:'none'});
-//			}});	
 			$('body').removeClass('noScroll');
 		});
 	},
@@ -300,18 +291,24 @@ var uiNavigation = {
 		var $depthList = $('.navDepthArea01 > li');
 
 		$depthList.each(function(){
-			$(this).on('click', function(){	
+			var posTop1 = $depthList.eq(0).children('.navDepthArea02').offset().top; 
+			var posTop2 = $depthList.eq(1).children('.navDepthArea02').offset().top;
+			var posTop3 = $depthList.eq(2).children('.navDepthArea02').offset().top;
+			var posTop4 = $depthList.eq(3).children('.navDepthArea02').offset().top;
 
-				var navPosTop = $depthList.offset().top; 
-				var $depth1 = $depth1.scrollTop()
-				idx = $depthList.index(this);	
+			$(this).on('click', function(){	
+				idx = $depthList.index(this);					
 				$depthList.children('a').removeClass('on');
 				$depthList.children('a').eq(idx).addClass('on');
-				$depth1.animate({
-					scrollTop: navPosTop
-			   	}, 1000);
-				console.log(navPosTop)
-				console.log(scrollTop1)
+				if(idx==0){
+					$('.navBody').animate({scrollTop : posTop1 - posTop1}, 400);
+				}else if(idx==1){
+					$('.navBody').animate({scrollTop : posTop2 - posTop1 - 85}, 400);	
+				}else if(idx==2){
+					$('.navBody').animate({scrollTop : posTop3 - posTop1 - 85}, 400);	
+				}else if(idx==3){
+					$('.navBody').animate({scrollTop : posTop4 - posTop1 - 85}, 400);	
+				}
 			});
 		});	
 	},
@@ -451,7 +448,3 @@ $(function($){
 	uiNavigation.init();
 	uiSlider.init();		
 });
-
-//window.addEventListener('resize', function() {
-//	header.resizing();
-//});

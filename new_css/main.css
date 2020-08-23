@@ -23,7 +23,7 @@
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea #btnPeriod.on:after { background-position: -60px -23px; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn::before { position:absolute; top:26px; left:0; width:1px; height:16px; content:''; background:#ecedef; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn.on { width:430px; transition: all 0.4s linear; }
-#mainTopWrap .tabSelect .content { float:none; width:864px; }
+#mainTopWrap .tabSelect .content { position:absolute; top:0; float:none; width:864px; z-index:1; }
 #mainTopWrap .tabSelect .boxWrap { top:68px; left:calc(50% - 432px); background:#fff; width:864px; float:none; overflow:hidden; }
 /* 키비주얼 */
 #mainTopWrap .mainKeyVisual { position:relative; height:870px; }

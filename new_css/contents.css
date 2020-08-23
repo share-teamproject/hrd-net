@@ -2,16 +2,13 @@
 /* ==============================
 * 공통 컨텐츠
 * ============================== */
-
 #subTopWrap.topVisu01 { background: url('../new_images/common/topVisual01.jpg') 50% 0 no-repeat; }
+#subTopWrap.topVisu03 { background: url('../new_images/common/topVisual03.jpg') 50% 0 no-repeat; }
 #subTopWrap.topVisu04 { background: url('../new_images/common/topVisual04.jpg') 50% 0 no-repeat; }
-
 
 .iconTip {display:inline-block; width:24px; text-align:center; font-weight:500; font-size:11px; color:#fff; text-align:center; line-height:17px; background:#65646a;}
 
 /* 회원가입 - 상단 키비쥬얼 */
-#subTopWrap.topVisu03 { background: url('../new_images/common/topVisual03.jpg') 50% 0 no-repeat; }
-
 #subTopWrap { width:100%; height: 384px; border-bottom:1px solid #eeeeee }
 #subTopWrap .subTopArea { width:1140px; height:344px; margin:0 auto; color:#fff; }
 #subTopWrap .subTopArea .subTopTilte { font-size:40px; text-align:center; padding:170px 0 10px; font-weight:500; }
@@ -118,7 +115,6 @@
 .tabSelect .boxWrap .list li.on span { background-color:#c9d3e8; }
 .tabSelect .boxWrap .list li span:after { content:none; display:inline-block; width:16px; height:11px; margin-left:8px; background:url('../new_images/common/checkSelect.png') no-repeat; background-size:16px 11px; }
 .tabSelect .boxWrap .list li.on span:after { content:''; }
-/* // 200819 추가 */
 
 /* 정렬방식 */
 #subContentWrap .subContArea .sortArea { display: flex; justify-content: space-between; padding: 8px 0; }
@@ -521,7 +517,6 @@
 .singUpCompList > li > .tit {display:inline-block; width:236px; padding-left:90px; line-height:54px; vertical-align:middle; font-size:14px; color:#727476;}
 .singUpCompList > li > .detail {display:inline-block; vertical-align:middle; font-size:16px; color:#4e4f51;}
 
-/* 200819 추가 // */
 /* 훈련과정 - 국민내일배움카드 훈련과정 */
 .inputDateTermWrap .btnArea { margin-left:12px; }
 .inputDateTerm { display:inline-block; }
@@ -531,8 +526,6 @@
 .thumbnailWrap + .tabmenu { margin-top:70px; }
 .thumbnailWrap .swiper-button-next { width:21px; height:42px; background-image:url('../new_images/common/btnSlideNext.png'); background-size:cover; margin-right:-50px; }
 .thumbnailWrap .swiper-button-prev { width:21px; height:42px; background-image:url('../new_images/common/btnSlidePrev.png'); background-size:cover; margin-left:-50px; }
-.thumbnail {  }
-.thumbnailList {  }
 .thumbnailList li { width:262px; position:relative; }
 .thumbnailList a { display:block; }
 .thumbnailList .img { width:262px; height:0; max-height:0; padding-top:200px; overflow:hidden; position:relative; }
@@ -586,9 +579,7 @@
 .detailList .util .btnLink.mark:before { background-image:url('../new_images/common/icobookmarkFill.png'); }
 .detailList .util .btnLink.compare:before { background-image:url('../new_images/common/icoCheck.png'); }
 .detailList .util .btnLink + .btnLink { margin-top:5px; }
-/* // 200819 추가 */
-/* 김재섭 추가 */
-#subTopWrap.topVisub1 { background: url('../new_images/common/topVisualb1.jpg') 50% 0 no-repeat; }
+
 /* ==============================
 * 훈련과정 목록 - 좁은 사이즈용
 * ============================== */
@@ -881,8 +872,6 @@
 .txtSchAreaKwdListArea {padding:10px 20px; border:1px solid #e2e2e4;}
 .txtSchAreaKwdListArea > .inner {height:168px; overflow:auto;}
 
-.txtSchAreaKwdList {}
-.txtSchAreaKwdList > li {}
 .txtSchAreaKwdList > li + li {margin-top:12px;}
 .txtSchAreaKwdList > li > a {display:inline-block; padding:1px 20px 1px 14px; font-size:14px; color:#727476; box-sizing:border-box;}
 .txtSchAreaKwdList > li > a:focus,
@@ -907,6 +896,20 @@
 .ncsSchSortList > li > input[type="radio"]:checked + label:after,
 .ncsSchSortList > li > label:focus:after,
 .ncsSchSortList > li > label:hover:after {content:''; position:absolute; top:50%; right:18px; display:inline-block; width:16px; height:11px; margin-top:-5px; background:url(../new_images/common/icoCheck02.png)}
+
+/* 비대면 - 등록 step 5 */
+.infoCheckBox > fieldset > dl .infoCheckList01_1 .ui_radioBox { margin-right:-45px; }
+.infoCheckBox > fieldset > dl .infoCheckList01_1 > ul { overflow:hidden; }
+.infoCheckBox > fieldset > dl .infoCheckList01_1 > ul > li { width:20%; float:left; padding:15px 20px; border-bottom:1px #e2e2e4 solid; }
+.infoCheckBox > fieldset > dl .infoCheckList01_1 .ui_radioBox > label { color:#727476; }
+.infoCheckBox > fieldset > dl .infoCheckList01_1 .ui_radioBox + .ui_radioBox { margin-left:0; }
+
+.infoCheckBox > fieldset > dl .infoCheckList02_1 .ui_radioBox { margin-right:-45px; }
+.infoCheckBox > fieldset > dl .infoCheckList02_1 > ul { overflow:hidden; border-bottom:1px #e2e2e4 solid; }
+.infoCheckBox > fieldset > dl .infoCheckList02_1 > ul > li { width:33.3%; float:left; padding:15px 20px; }
+.infoCheckBox > fieldset > dl .infoCheckList02_1 .ui_radioBox > label { color:#727476; }
+.infoCheckBox > fieldset > dl .infoCheckList02_1 .ui_radioBox + .ui_radioBox { margin-left:0; }
+
 /* 비대면 - 등록 step 6 */
 .areaSortEle {margin:60px 0 40px 0; padding:32px 0; border:1px solid #e2e2e4; text-align:center; font-size:0;}
 .areaSortEle > .tit {display:inline-block; vertical-align:middle; padding-right:28px; font-size:18px; color:#4e4f51;}

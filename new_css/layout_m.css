@@ -120,6 +120,20 @@ body.noScroll { position: fixed; overflow: hidden;	width: 100%; height: 100% }
 .tableArea table.view2 th { background:#f0f0f2; width:180px; border-bottom:2px solid hsl(240, 4%, 89%); padding:10px 20px; font-size: 26px; color:#222222; font-weight:400; text-align:left; box-sizing:border-box;  }
 .tableArea table.view2 td { border-bottom:2px solid #e2e2e4; font-size: 26px; color:#727476; text-align:left; padding:20px 40px; box-sizing:border-box;  }
 
+.tableArea table.view.tblCenterAlign th {width:auto; text-align:center;}
+.tableArea table.view.tblCenterAlign td {text-align:center;}
+.tableArea table.view.tblCenterAlign thead th {background:#f0f0f2; padding:20px 0; }
+.tableArea table.view.tblCenterAlign tbody th {background:#f8f8f8; color:#4e4f51; padding:20px 0; }
+.tableArea table.view.tblCenterAlign tbody td { color:#292a2d; padding:20px 0; }
+.tableArea table.view.tblBrdAll th,
+.tableArea table.view.tblBrdAll td {border:1px solid #e2e2e4; border-left:none; font-weight:300; font-size:24px; }
+.tableArea table.view.tblBrdAll thead tr th:last-child {border-right:none;}
+.tableArea table.view.tblBrdAll tr td:last-child {border-right:none;}
+.tableArea.compareTbl { width:100% }
+.tableArea.compareTbl table.view th.compareThColor {background:#f2f2fc;}
+.tableArea.compareTbl table.view th.thFontBig {font-size:24px;}
+.tableArea.compareTbl table.view th.compareThColor.thFontBig {color:#5b648a;}
+
 /* ==============================
 * tab
 * ============================== */
@@ -166,7 +180,7 @@ textarea::placeholder { font-size:28px; color:#767676; }
 /* ==============================
 * button
 * ============================== */
-.btnGroup{ display:block }
+.btnGroup{ display:block; text-align:center; }
 .btnArea{ display:inline-block }
 /* 대버튼 */
 button.btnType1, a.type1 a { min-width:90px; display:inline-block; text-align:center; background:#fff; border:2px solid #cdcdd1; color:#4e4f51; font-size:28px; line-height:88px; height:90px; padding:0 44px; box-sizing:border-box; }
@@ -195,7 +209,9 @@ button.commentBtn, a.commentBtn { border:2px solid #5b648a; background:#fff; col
 /* 컨펌버튼 */
 button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line-height:24px; text-align:left; font-size:26px; padding:0 0 3px 10px; color:#4870cf; background:url('../new_images/common/arrowConfirm.png') no-repeat 90px 50%; background-size:6px 12px; }
 
-
+/* 바로가기 */
+.goLinkLong {display:inline-block; min-width:235px; height:50px; line-height:46px; padding:0 20px; text-align:left; border:2px solid #cdcdd1; font-size:26px; color:#4e4f51; }
+.goLinkLong:after {content:''; display:inline-block; vertical-align:middle; width:6px; height:12px; margin-left:10px; margin-top:-5px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;}
 
 
 /* ==============================
@@ -266,13 +282,19 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 .w180 { width:180px !important; }
 .w300 { width:300px !important; }
 .w480 { width:480px !important; }
+.mt60 { margin-top:60px !important; }
+.mt50 { margin-top:60px !important; }
 .mt30 { margin-top:30px !important; }
 .mb0 {margin-bottom:0 !important;}
 .pr0 {padding-right:0 !important;}
 .brd-r-ty1 {border-right:1px solid #e2e2e4;}
+.brd-t-ty2 {border-top:4px solid #5b648a !important;}
+.brd-r-ty2 {border-right:4px solid #5b648a !important;}
+.brd-b-ty2 {border-bottom:4px solid #5b648a !important;}
+.brd-l-ty2 {border-left:4px solid #5b648a !important;}
 .spacing-3 {letter-spacing:-3px;}
 .hide { position:absolute; left:-99999px; }
-
+.endLineM { height:8px; background:#e7e9f0; margin:65px -30px; }
 
 /* 차트 - 도넛 : 임시 */
 .chartDoughnut { width: 100%; font-size: 16px; margin: 0 auto; animation: donutfade 1s; }

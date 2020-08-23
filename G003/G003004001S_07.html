@@ -16,12 +16,13 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout.css" rel="stylesheet" />
-    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" />
+	<link href="../new_css/kangjiyeon_m.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" /> 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
-    <script src="../new_js/ui.js"></script>
+    <script src="../new_js/ui_m.js"></script>
 </head>
 
 <body>
@@ -140,12 +141,30 @@
                         </li>
                         <li class="gnbSearchBtn">
                             <a href="javascript:void(0);">검색</a>            
-                            <div class="gnbSubArea gnbSub05">                                
-                                <ul>
-                                    <li><div class="gnbSubSearch"><img  src="../new_images/temp/@temp02.png"></div> </li>
-                                </ul>
+                            <div class="gnbSubArea gnbSub05">
+                                <ul class="searchArea">
+                                    <li>
+                                        <form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
+                                            <fieldset>
+                                                <legend>통합검색</legend>
+                                                <lable for="searchTotalKeyword" class="hide">검색어</lable>
+                                                <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value=""><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색">검색</button>
+                                            </fieldset>
+                                        </form>                                    
+                                    </li>  
+                                    <li class="searchKeywordArea">
+                                        <P>인기검색어</P>
+                                        <div class="searchKeyword">
+                                            <a href="javascript:void(0);">#바리스타</a>
+                                            <a href="javascript:void(0);">#컴퓨터</a>
+                                            <a href="javascript:void(0);">#요양보호사</a>
+                                            <a href="javascript:void(0);">#제빵</a>
+                                            <a href="javascript:void(0);">#포토샵</a>
+                                        </div>    
+                                    </li>
+                                </ul> 
                             </div> 
-                        </li>       
+                        </li>            
                     </ul>
                 </div>
             </div>
@@ -174,7 +193,7 @@
                     </div>  
                     <div class="navBody">
                         <ul class="navDepthArea01">
-                            <li><a href="/" class="navDepth01_01 on">훈련과정</a>
+                            <li><a href="javascript:void(0);" class="navDepth01_01 on">훈련과정</a>
                                 <p class="navTitle">훈련과정</p>
                                 <ul class="navDepthArea02">
                                     <li><a href="/">과정별 상세검색</a></li>
@@ -186,7 +205,7 @@
                                     <li><a href="/" class="spacing-3">한기대 스마트 직업훈련과정(STEP)</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/" class="navDepth01_02">지원제도</a>
+                            <li><a href="javascript:void(0);" class="navDepth01_02">지원제도</a>
                                 <p class="navTitle">지원제도</p>
                                 <ul class="navDepthArea02">
                                     <li><a href="/">정부지원사업</a></li>
@@ -199,7 +218,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="/" class="navDepth01_03">고객센터</a>
+                            <li><a href="javascript:void(0);" class="navDepth01_03">고객센터</a>
                                 <p class="navTitle">고객센터</p>
                                 <ul class="navDepthArea02">
                                     <li><a href="/">자주묻는 질문</a></li>
@@ -208,7 +227,7 @@
                                     <li><a href="/">공지/행사 안내</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/" class="navDepth01_04">MY 서비스</a>
+                            <li><a href="javascript:void(0);" class="navDepth01_04">MY 서비스</a>
                                 <p class="navTitle">MY 서비스</p>
                                 <ul class="navDepthArea02">
                                     <li>
@@ -354,7 +373,7 @@
 
                         <!-- 비대면 훈련상담 컨텐츠 -->
                         <div class="nonfaceArea">
-                            <div class="stepBoxArea">
+                            <div class="stepBoxArea ty2">
                                 <h4 class="stepBoxTitle">추가정보 탐색 방법 안내</h4>
                                 <div class="stepBoxText">
                                     <ol class="stepBoxFlowList">
@@ -375,7 +394,7 @@
                                 <p class="guideComment"><span>한고원님</span>께 추천드린 훈련과정 외 추가 적인 훈련정보나(취업/자격/창업)정보를 원하실 경우, 아래 표를 참고하여주세요</p>
                             </div>
 
-                            <div class="contListWrap">
+                            <div class="contListWrap mt60">
                                 <ul class="contListType3">
                                     <li>
                                         <strong class="tit">구인구직정보</strong>
@@ -448,17 +467,20 @@
                     <div class="footerLink">
                         <div class="swiper-container" id="footerLink">
                             <ul class="swiper-wrapper">
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-                                <li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="../new_images/common/familySite01.png" alt="고용노동부"></a></li>
+                                <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
+                                <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
+                                <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
+                                <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
+                                <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
+                                <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
+                                <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
+                                <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
+                                <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
+                                <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
                             </ul>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>    
                     </div> 
                     <ul class="footerLogo">
@@ -495,12 +517,12 @@
         <div id="floatingWrap" class="fixBotNav">
             <nav class="floatingMenu">            
                 <ul>
-                    <li class="home"><a href="/"><span>홈</span></a></li>
-                    <li class="search"><a href="/"><span>훈련상세<br>과정검색</span></a></li>                    
+                    <li class="home on"><a href="/"><span>홈</span></a></li>
+                    <li class="search"><a href="/"><span>과정검색</span></a></li>                    
                     <li class="my"><a href="/"><span>My</span></a></li>
                     <li class="alam"><a href="/"><span>알림</span></a></li>
                 </ul>
-            </nav>            
+            </nav>          
         </div> 
         <!-- //하단 고정 메뉴 : Mobile -->
     </div>
