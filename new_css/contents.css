@@ -57,7 +57,6 @@
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label { font-size:0; line-height:0; }
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label + input { width:210px; margin:0 12px 0 8px; }
 
-/* 200819 추가 // */
 /* 검색박스 Line */
 .searchBoxLineWrap { margin-bottom:50px; }
 .searchBoxLineWrap legend { font-size:0; line-height: 0; }
@@ -204,6 +203,9 @@
 .windowPop .windowBox .text2 { font-size:14px; color:#727476; text-align:center; padding-top:20px; }
 .windowPop .windowBox .text3 { font-size:16px; color:#4171df; text-align:center; padding-top:10px; }
 .windowPop .windowEx { font-size:16px; text-align:center; padding:30px 0;  }
+
+.dotList > li {position:relative; padding-left:10px; font-size:12px; line-height:20px; color:#767676}
+.dotList > li:before {content:''; position:absolute; top:9px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
 
 /* ==============================
 * 자주묻는 질문 & 질문과 답변
@@ -440,6 +442,16 @@
 * ============================== */
 .boxArea + .tabInterface {margin-top:60px;}
 #subContentWrap .subContArea .membershipArea .tabCont {padding-top:60px;}
+.signUpFlowList > li .verPC {display:inline-block !important;}
+.mjArea {margin:60px 0 40px 0; border:1px solid #e2e2e4; border-top:2px solid #5b648a;}
+.mjArea > .inner {padding:40px 0; text-align:center; font-size:0;}
+.mjArea > .inner > a {display:inline-block; vertical-align:top; width:379px; padding-bottom:80px; font-weight:500; font-size:18px; color:#292a2d; background-repeat:no-repeat; background-position:center bottom;}
+.mjArea > .inner > a + a {border-left:1px solid #e2e2e4;}
+
+.mjTy1 {background-image:url(../new_images/common/iconMj01.png)}
+.mjTy2 {background-image:url(../new_images/common/iconMj02.png)}
+.mjTy3 {background-image:url(../new_images/common/iconMj03.png)}
+
 
 /* 회원가입 - 가입인증 */
 .signUpFlow {text-align:center;}
@@ -508,16 +520,16 @@
 .completeContReg > div {display:inline-block; width:50%;}
 .completeContReg .tit {display:inline-block; padding-right:22px; font-size:16px; color:#4e4f51;}
 .completeContReg + .btnGroup {margin-top:60px;}
-
-
-
 .singUpCompDetail {display:inline-block; width:460px; padding-top:25px;}
 .singUpCompList > li {font-size:0; text-align:left;}
 .singUpCompList > li + li {border-top:1px solid #f5f5f5;}
 .singUpCompList > li > .tit {display:inline-block; width:236px; padding-left:90px; line-height:54px; vertical-align:middle; font-size:14px; color:#727476;}
 .singUpCompList > li > .detail {display:inline-block; vertical-align:middle; font-size:16px; color:#4e4f51;}
+.singUpCompList > li .verPC {display:inline-block !important;}
 
-/* 훈련과정 - 국민내일배움카드 훈련과정 */
+/* ==========================================
+* 훈련과정 목록 - 국민내일배움카드 훈련과정
+* ======================================== */
 .inputDateTermWrap .btnArea { margin-left:12px; }
 .inputDateTerm { display:inline-block; }
 .inputDateTerm .at { display:inline-block; line-height:40px; padding:0 5px; color:#727476; text-align:center; vertical-align:middle; }

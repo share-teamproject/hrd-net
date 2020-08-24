@@ -282,11 +282,12 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 .w180 { width:180px !important; }
 .w300 { width:300px !important; }
 .w480 { width:480px !important; }
-.mt60 { margin-top:60px !important; }
-.mt50 { margin-top:60px !important; }
 .mt30 { margin-top:30px !important; }
+.mt50 { margin-top:60px !important; }
+.mt60 { margin-top:60px !important; }
 .mb0 {margin-bottom:0 !important;}
 .pr0 {padding-right:0 !important;}
+.pl15 { padding-left:15px !important; }
 .brd-r-ty1 {border-right:1px solid #e2e2e4;}
 .brd-t-ty2 {border-top:4px solid #5b648a !important;}
 .brd-r-ty2 {border-right:4px solid #5b648a !important;}

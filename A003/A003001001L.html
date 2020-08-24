@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" contnet="width=640, user-scale=yes">
+    <meta name="viewport" content="width=640, user-scale=yes">
     <meta name="apple-mobile-web-app-capable" content="no">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
@@ -16,12 +16,12 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout.css" rel="stylesheet" />
-    <link href="../new_css/contents.css" rel="stylesheet" />
-    <link href="../new_css/main.css" rel="stylesheet" />
+    <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" /> 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
-    <script src="../new_js/ui.js"></script>
+    <script src="../new_js/ui_m.js"></script>
 </head>
 
 <body>
@@ -340,74 +340,59 @@
                                     <li>- 훈련기관 / 기업 대리인의 경우 선임된 이후 별도의 회원가입 절차없이 로그인 > 대리인 > 메뉴에서 공인인증서 등록 후 로그인이 가능합니다.</li>
                                 </ul>
                             </div>
+                            <div class="mjArea">
+                                <div class="inner">
+                                    <a href="" class="mjTy1">개인회원</a>
+                                    <a href="" class="mjTy2">훈련기관회원</a>
+                                    <a href="" class="mjTy3">기업회원</a>
+                                </div>
+                            </div>
 
-                            <div class="tabInterface">
-                                <!-- 텝 인덱스 -->
-                                <div class="tabListArea">
-                                    <ul class="tabList" role="tablist">
-                                        <li role="tab" aria-controls="section1" aria-selected="true" id="tab1" class="on"><button type="button">개인회원</button></li>
-                                        <li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">훈련기관회원</button></li>
-                                        <li role="tab" aria-controls="section3" aria-selected="false" id="tab3"><button type="button">기업회원</button></li>
+                            <div class="tableArea">
+                                <table class="view mb0">
+                                    <caption>회원가입 유형별 혜택 정보</caption>
+                                    <colgroup>
+                                        <col style="width:90px;">
+                                        <col style="width:120px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="rowgroup" rowspan="2" class="brd-r-ty1">개인회원</th>
+                                            <th scope="row">일반회원</th>
+                                            <td>
+                                                MY서비스 권한 : 훈련(구직자, 근로자)훈련, 수강평등록, 동영상 시청, 훈련문의, 생애이력, 카드신청<br>
+												행정서비스 권한 : 부정행위 / 신고포상 신청, 청년취업 아카데미, 근로자카드 신청 및 조회
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="pr0">대리인 회원</th>
+                                            <td>기업/훈련기관 대리인 권한 부여</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">훈련기관</th>
+                                            <td>
+                                                MY 서비스 권한 : 대리인 현황, 수강신청 확인 및 상담, 신청결과 통지내역 등 업무지원<br>
+												행정서비스 권한 : 행정지원시스템 업무지원
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">기업회원</th>
+                                            <td>
+                                                MY 서비스 권한 : 대리인 현황, 사업주 훈련 이력, 신청결과 통지내역 등 업무 지원<br>
+												행정서비스 권한 : 행정업무 지원 , 훈련비 카드결제, 일 학습병행제, 등 행정 업무지원
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="boxBltList">
+                                    <ul>
+                                        <li>· 회원 가입하실 때 어려움이 있으신 경우 <a href="/" class="goLink">환경설정</a> 을 확인하여 주시기 바랍니다.</li>
                                     </ul>
                                 </div>
-                                <!--// 텝 인덱스 -->
-
-                                <!-- 텝 컨텐츠 -->
-                                <div class="tabContents">
-                                    <section id="section1" role="tabpanel" class="tabCont on">
-                                        <div class="tableArea">
-                                            <table class="view mb0">
-                                                <caption>회원가입 유형별 혜택 정보</caption>
-                                                <colgroup>
-                                                    <col style="width:90px;">
-                                                    <col style="width:120px;">
-                                                    <col style="width:auto;">
-                                                </colgroup>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="rowgroup" rowspan="2" class="brd-r-ty1">개인회원</th>
-                                                        <th scope="row">일반회원</th>
-                                                        <td>
-                                                            MY서비스 권한 : 훈련(구직자, 근로자)훈련, 수강평등록, 동영상 시청, 훈련문의, 생애이력, 카드신청<br>
-															행정서비스 권한 : 부정행위 / 신고포상 신청, 청년취업 아카데미, 근로자카드 신청 및 조회
-														</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" class="pr0">대리인 회원</th>
-                                                        <td>기업/훈련기관 대리인 권한 부여</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" colspan="2">훈련기관</th>
-                                                        <td>
-                                                            MY 서비스 권한 : 대리인 현황, 수강신청 확인 및 상담, 신청결과 통지내역 등 업무지원<br>
-															행정서비스 권한 : 행정지원시스템 업무지원
-														</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" colspan="2">기업회원</th>
-                                                        <td>
-                                                            MY 서비스 권한 : 대리인 현황, 사업주 훈련 이력, 신청결과 통지내역 등 업무 지원<br>
-															행정서비스 권한 : 행정업무 지원 , 훈련비 카드결제, 일 학습병행제, 등 행정 업무지원
-														</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="boxBltList">
-                                                <ul>
-                                                    <li>· 회원 가입하실 때 어려움이 있으신 경우 <a href="/" class="goLink">환경설정</a> 을 확인하여 주시기 바랍니다.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <section id="section2" role="tabpanel" class="tabCont">
-                                        2
-                                    </section>
-                                    <section id="section3" role="tabpanel" class="tabCont">
-                                        3
-                                    </section>
-                                </div>
-                                <!--// 텝 컨텐츠 -->
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -420,23 +405,18 @@
             <div class="footerArea">                
                 <div class="footerCont">
                     <div class="footerLink">
-                        <div class="swiper-container" id="footerLink">
-                            <ul class="swiper-wrapper">
-                                <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
-                                <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
-                                <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
-                                <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
-                                <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
-                                <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
-                                <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
-                                <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
-                                <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
-                                <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
-                            </ul>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>    
+                        <ul class="swiper-wrapper">
+                            <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
+                            <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
+                            <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
+                            <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
+                            <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
+                            <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
+                            <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
+                            <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
+                            <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
+                            <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
+                        </ul>
                     </div> 
                     <ul class="footerLogo">
                         <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
@@ -461,7 +441,10 @@
                     </ul>
                 </div>                 
                 <address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address> 
-                <p class="copyright">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</p>
+                <p class="copyright">
+                    <span class="verPC">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</span>
+                    <span class="verM">Copyright ⓒ 고용노동부 한국고용정보원 all rights reserved.</span>
+                </p>
             </div>           
         </footer>
         <!-- //푸터영역 -->
@@ -479,7 +462,7 @@
                     <li class="my"><a href="/"><span>My</span></a></li>
                     <li class="alam"><a href="/"><span>알림</span></a></li>
                 </ul>
-            </nav>        
+            </nav>            
         </div> 
         <!-- //하단 고정 메뉴 : Mobile -->
     </div>

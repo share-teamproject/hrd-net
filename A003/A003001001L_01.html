@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" contnet="width=640, user-scale=yes">
+    <meta name="viewport" content="width=640, user-scale=yes">
     <meta name="apple-mobile-web-app-capable" content="no">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
@@ -16,12 +16,12 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout.css" rel="stylesheet" />
-    <link href="../new_css/contents.css" rel="stylesheet" />
-    <link href="../new_css/main.css" rel="stylesheet" />
+    <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" /> 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
-    <script src="../new_js/ui.js"></script>
+    <script src="../new_js/ui_m.js"></script>
 </head>
 
 <body>
@@ -291,12 +291,12 @@
         <!-- 메인 컨텐츠영역 -->
         <div id="contentWrap">
             <!-- 상단 비주얼 영역 -->
-            <div id="subTopWrap" class="topVisu03">
+            <div id="subTopWrap" class="topVisu03 noneType">
                 <div class="subTopArea">
                     <h2 class="subTopTilte">회원가입</h2>
                     <p class="subTopText">HRD-Net 회원이 되시면 특화된 서비스를 이용하실 수 있습니다.</p>
                 </div>
-                <div class="location">
+                <div class="location verPC">
                     <!-- 2depth-->
                     <ul>
                         <li class="goHome verPC"><a href="/">홈</a></li>
@@ -316,42 +316,40 @@
             </div>
             <!-- //상단 비주얼 영역 -->
 
-            <div class="contentArea">
-                <div id="subContentWrap" class="fullContents">
-                    <div class="subContArea">
-                        <div class="contentArea">
-                            <div class="signUpFlow">
-                                <ol class="signUpFlowList" aria-label="총 4단계 중 현재단계 1단계">
-                                    <li aria-current="step" class="on"><em class="stepCount">1</em><span class="txt">가입인증</span></li>
-                                    <li><em class="stepCount">2</em><span class="txt">약관동의</span></li>
-                                    <li><em class="stepCount">3</em><span class="txt">회원정보입력</span></li>
-                                    <li><em class="stepCount">4</em><span class="txt">가입완료</span></li>
-                                </ol>
-                            </div>
+            <div id="subContentWrap" class="fullContents">
+                <div class="subContArea">
+                    <div class="contentArea">
+                        <div class="signUpFlow">
+                            <ol class="signUpFlowList" aria-label="총 4단계 중 현재단계 1단계">
+                                <li aria-current="step" class="on"><em class="stepCount">1</em><span class="txt">가입인증</span></li>
+                                <li><em class="stepCount">2</em><span class="txt">약관동의</span></li>
+                                <li><em class="stepCount">3</em><span class="txt"><span class="verPC">회원</span>정보입력</span></li>
+                                <li><em class="stepCount">4</em><span class="txt">가입완료</span></li>
+                            </ol>
+                        </div>
 
-                            <div class="singUpCert">
-                                <div class="singUpCertTit">
-                                    <strong>개인정보 가입인증</strong>
-                                    <p class="desc">보인인증 방법을 선택해 주세요.</p>
+                        <div class="singUpCert">
+                            <div class="singUpCertTit">
+                                <strong>개인정보 가입인증</strong>
+                                <p class="desc">보인인증 방법을 선택해 주세요.</p>
+                            </div>
+                            <div class="singUpCertLink">
+                                <div class="singUpCertLinkEle">
+                                    <a href="/" class="singUpLink ty1">휴대폰 본인 인증</a>
                                 </div>
-                                <div class="singUpCertLink">
-                                    <div class="singUpCertLinkEle">
-                                        <a href="/" class="singUpLink ty1">휴대폰 본인 인증</a>
-                                    </div>
-                                    <div class="singUpCertLinkEle">
-                                        <a href="/" class="singUpLink ty2">I-PIN 인증</a>
-                                    </div>
+                                <div class="singUpCertLinkEle">
+                                    <a href="/" class="singUpLink ty2">I-PIN 인증</a>
                                 </div>
                             </div>
-                            <div class="boxBltList">
-                                <ul>
-                                    <li>· 개인정보보호법이 개정(2014.8.7) 시행되어 모든 공공기관 및 민간사업자 등 사회 전체 분야에 불필요한 주민번호 수집이 금지됨에 따라 HRD-Net 시스템 회원가입은 휴대폰 본인확인과 아이핀(I-pin)인증만 가능하도록 개편되었습니다.</li>
-                                    <li>· 휴대폰 본인확인과 아이핀(I-pin) 인증 중 편리한 방법으로 본인인증을 진행하시기 바랍니다.</li>
-                                    <li>· HRD-Net 시스템은 회원중복가입, 개인정보 도용 및 허위 가입정보로 인한 피해를 사전에 방지하고자 금융감독위원회로부터 신용평가 전문기관으로 지정된 서울신용평가정보㈜( <a href="http://www.siren24.com/" target="_blank" title="새창">www.siren24.com</a> )를 통해 본인확인(인증) 서비스를 시행하고 있습니다.</li>
-                                    <li>· 본인확인(인증) 시 오류발생에 대해서는 서울신용평가정보㈜(1577-1006)으로 문의하여 주시기 바랍니다.</li>
-                                    <li>· 아울러, 타인 명의로 HRD-Net 시스템에 회원가입시 모든 법적 책임은 명의를 도용한 사람에게 있음을 알려드립니다.</li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div class="boxBltList contBoxType1">
+                            <ul class="dotList">
+                                <li>개인정보보호법이 개정(2014.8.7) 시행되어 모든 공공기관 및 민간사업자 등 사회 전체 분야에 불필요한 주민번호 수집이 금지됨에 따라 HRD-Net 시스템 회원가입은 휴대폰 본인확인과 아이핀(I-pin)인증만 가능하도록 개편되었습니다.</li>
+                                <li>휴대폰 본인확인과 아이핀(I-pin) 인증 중 편리한 방법으로 본인인증을 진행하시기 바랍니다.</li>
+                                <li>HRD-Net 시스템은 회원중복가입, 개인정보 도용 및 허위 가입정보로 인한 피해를 사전에 방지하고자 금융감독위원회로부터 신용평가 전문기관으로 지정된 서울신용평가정보㈜( <a href="http://www.siren24.com/" target="_blank" title="새창">www.siren24.com</a> )를 통해 본인확인(인증) 서비스를 시행하고 있습니다.</li>
+                                <li>본인확인(인증) 시 오류발생에 대해서는 서울신용평가정보㈜(1577-1006)으로 문의하여 주시기 바랍니다.</li>
+                                <li>아울러, 타인 명의로 HRD-Net 시스템에 회원가입시 모든 법적 책임은 명의를 도용한 사람에게 있음을 알려드립니다.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -364,37 +362,34 @@
             <div class="footerArea">                
                 <div class="footerCont">
                     <div class="footerLink">
-                        <div class="swiper-container" id="footerLink">
-                            <ul class="swiper-wrapper">
-                                <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
-                                <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
-                                <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
-                                <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
-                                <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
-                                <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
-                                <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
-                                <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
-                                <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
-                                <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
-                            </ul>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>    
+                        <ul class="swiper-wrapper">
+                            <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
+                            <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
+                            <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
+                            <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
+                            <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
+                            <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
+                            <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
+                            <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
+                            <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
+                            <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
+                        </ul>
                     </div> 
                     <ul class="footerLogo">
                         <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
                         <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
                     </ul>
                     <div class="footerPolicy">
-                        <ul>                                
-                            <li><a href="/">기관소개</a></li>
-                            <li><a href="/">찾아오시는 길</a></li>
+                        <ul>  
+                            <li class="verM"><a href="/">이용약관</a></li>                              
+                            <li class="verPC"><a href="/">기관소개</a></li>
+                            <li class="verPC"><a href="/">찾아오시는 길</a></li>
                             <li class="on"><a href="/">개인정보처리방침</a></li>
-                            <li><a href="/">저작권보호정책</a></li>
-                            <li><a href="/">공인인증센터</a></li>
-                            <li><a href="/">이메일수집거부</a></li>
-                            <li><a href="/">오픈 API 서비스</a></li>
+                            <li class="verPC"><a href="/">저작권보호정책</a></li>
+                            <li class="verPC"><a href="/">공인인증센터</a></li>
+                            <li class="verPC"><a href="/">이메일수집거부</a></li>
+                            <li class="verPC"><a href="/">오픈 API 서비스</a></li>
+                            <li class="verM"><a href="/">PC화면</a></li>
                         </ul>
                     </div>
                     <ul class="footerMark">
@@ -403,7 +398,10 @@
                     </ul>
                 </div>                 
                 <address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address> 
-                <p class="copyright">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</p>
+                <p class="copyright">
+                    <span class="verPC">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</span>
+                    <span class="verM">Copyright ⓒ 고용노동부 한국고용정보원 all rights reserved.</span>
+                </p>
             </div>           
         </footer>
         <!-- //푸터영역 -->
