@@ -5,6 +5,11 @@
 * ============================== */
 .mt0 {margin-top:0 !important;}
 .mt20 {margin-top:20px !important;}
+.mt70 {margin-top:70px !important;}
+
+.w280 { width:280px !important; }
+
+.bgType1 {background:#f0f0f2 !important;}
 
 .titleFs30 {font-weight:500; font-size:30px; color:#292a2d; line-height:1.2;}
 .titleFs30 > small {padding-left:5px; font-weight:normal; font-size:26px; color:#666;}
@@ -23,6 +28,9 @@
 
 .moContInner {padding:0 30px;}
 .moContInner + .moContInner {margin-top:60px; padding-top:60px; border-top:8px solid #e7e9f0;}
+
+.moContInner.ty2 {padding-top:60px; border-top:8px solid #e7e9f0;}
+.moContInner.ty2 + .moContInner.ty2 {}
 
 .contBoxType2 {padding:50px 30px; background:#f7f7f7;}
 
@@ -56,7 +64,8 @@
 .attendCont > .inner {display:table; width:100%; table-layout:fixed;}
 .attendCont > .inner .ele {display:table-cell; vertical-align:middle;}
 .attendCont .ele.state {width:224px; text-align:center;}
-.attendCont .ele.name {padding-right:30px; font-size:32px; color:#292a2d; line-height:34px;}
+.attendCont .ele.name {padding-left:30px; padding-right:30px; font-size:32px; color:#292a2d; line-height:34px;}
+.attendCont .ele.state + .ele.name {padding-left:0;}
 .attendCont > .dotBtn {position:absolute; right:28px; bottom:14px;}
 .attendChk {display:inline-block; width:140px; height:140px; text-align:center; line-height:140px; border-radius:50%; font-weight:500; font-size:28px; color:#fff;}
 .attendChk.ty1 {background:#5b648a;}

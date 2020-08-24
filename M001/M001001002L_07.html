@@ -291,15 +291,15 @@
         <!-- 메인 컨텐츠영역 -->
         <div id="contentWrap">
             <!-- 상단 비주얼 영역 -->
-            <div id="subTopWrap" class="topVisu03">
+            <div id="subTopWrap" class="topVisu03 noneType">
                 <div class="subTopArea">
-                    <h2 class="subTopTilte">출결</h2>
+                    <h2 class="subTopTilte">입실확인 전송내역</h2>
                 </div>
-                <div class="location">
+                <div class="location verPC">
                     <!-- 2depth-->
                     <ul>
                         <li class="goHome verPC"><a href="/">홈</a></li>
-						<li>QR출결</li>
+						<li>입실확인 전송내역</li>
                     </ul>
 
                     <!-- 2depth 이상인 경우 -->
@@ -317,155 +317,23 @@
 
             <div id="subContentWrap" class="fullContents">
                 <div class="subContArea">
-                    <div class="headingTitleArea">
-                        <h3 class="headingTitle">QR출결</h3>
-                    </div>
                     <div class="contentArea">
-
-						<div class="moContInner mt20">
-							<div class="contListWrap">
-								<ul class="contListType3 full mt0 mb0">
-									<li>
-										<strong class="tit">참여과정</strong>
-										<span class="txt">1건</span>
-									</li>
-								</ul>
-							</div>
-							<div class="attendCont">
-								<div class="inner">
-									<div class="ele state">
-										<span class="attendChk ty1">입실 전</span>
-									</div>
-									<div class="ele name">
-										그래픽 디자인 실무 &amp; 그래픽 자격증 취득과정 심화반
-									</div>
+						<div class="moContInner mt70">
+							<div>
+								<div class="ui_radioBox">                                             
+									<input type="radio" value="" name="view" id="view01" checked>
+									<label for="view01">공개</label>
 								</div>
-								<button type="button" class="dotBtn"></button>
-							</div>
-							<div class="contBoxType2">
-								<ul class="listType1">
-									<li>
-										<span class="rndBoxTxt">훈련기관</span> 한국고용정보원
-									</li>
-									<li>
-										<span class="rndBoxTxt">기관위치</span> 충북 음성군
-									</li>
-									<li>
-										<span class="rndBoxTxt">전화번호</span> 031-2133-3213
-									</li>
-									<li>
-										<span class="rndBoxTxt">훈련기간</span> 2018.10.22 - 2020.12.31
-									</li>
-									<li>
-										<span class="rndBoxTxt">훈련유형</span> 국가 인적자원개발컨소시엄
-									</li>
-									<li>
-										<span class="rndBoxTxt">금일훈련</span> 2020.07.23(목) 09:00~18:00
-									</li>
-								</ul>
-								<div class="btnH60Group">
-									<button type="button" class="btnH60 ty1">입실</button>
-									<!-- <button type="button" class="btnH60 ty2">확인</button>
-									<button type="button" class="btnH60 ty3">외출</button>
-									<button type="button" class="btnH60 ty4">퇴실</button> -->
+								<div class="ui_radioBox">                                             
+									<input type="radio" value="" name="view" id="view02"> 
+									<label for="view02">비공개</label>
 								</div>
 							</div>
-							<div class="contListWrap">
-								<ul class="contListType6">
-									<li>
-										<strong class="tit">입실</strong>
-										<span class="txt">20:36</span>
-									</li>
-									<li>
-										<strong class="tit">복귀</strong>
-										<span class="txt">-</span>
-									</li>
-									<li>
-										<strong class="tit">외출</strong>
-										<span class="txt">-</span>
-									</li>
-									<li>
-										<strong class="tit">퇴실</strong>
-										<span class="txt">-</span>
-									</li>
-								</ul>
+							<div class="mt20">
+								<input type="text" value="" title="제목 입력" name="" id="" class="w100p" placeholder="제목을 입력하세요">
 							</div>
-						</div>
-
-						<div class="moContInner">
-							<div class="attendState">
-								<h4 class="titleFs30">나의 출결 및 진도 현황 <small>(2020.07.22 기준)</small></h4>
-								<div class="attendStateCont">
-									<ul class="attendDp">
-										<li>
-											<em class="cnt">999</em>
-											<span class="txt">출석</span>
-										</li>
-										<li>
-											<em class="cnt">3</em>
-											<span class="txt">지각</span>
-										</li>
-										<li>
-											<em class="cnt">2</em>
-											<span class="txt">조퇴</span>
-										</li>
-										<li>
-											<em class="cnt">0</em>
-											<span class="txt">외출</span>
-										</li>
-										<li>
-											<em class="cnt">0</em>
-											<span class="txt">결석</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="contBoxType2">
-								<ul class="attendProgress">
-									<li>
-										<div class="tblEle">
-											<div class="ele titEle">
-												<span class="rndBoxTxt">나의출석률</span>
-											</div>
-											<div class="ele attendDate">
-												<strong>157</strong> / 340일
-											</div>
-											<div class="ele mini"><span class="iconTip">TIP</span></div>
-										</div>
-										<div class="attendBar">
-											<img src="../new_images/temp/@progress.jpg" alt="">
-										</div>
-									</li>
-									<li>
-										<div class="tblEle">
-											<div class="ele titEle">
-												<span class="rndBoxTxt">과정진행률</span>
-											</div>
-											<div class="ele attendDate">
-												<strong>157</strong> / 340일
-											</div>
-											<div class="ele mini"><span class="iconTip">TIP</span></div>
-										</div>
-										<div class="attendBar">
-											<img src="../new_images/temp/@progress.jpg" alt="">
-										</div>
-									</li>
-									<li>
-										<div class="tblEle">
-											<div class="ele titEle">
-												<span class="rndBoxTxt">총결석일</span>
-											</div>
-											<div class="ele attendDate">
-												<strong>53</strong>일
-											</div>
-											<div class="ele mini"><span class="iconTip">TIP</span></div>
-										</div>
-										<div class="attendBar">
-											<img src="../new_images/temp/@progress.jpg" alt="">
-										</div>
-										<p class="attendNoti">지각·조퇴·외출 3회는 결석 1회로 산정</p>
-									</li>
-								</ul>
+							<div class="mt20">
+								<textarea name="" id="" cols="30" rows="10" title="내용 입력" placeholder="내용을 입력하세요. 내용 입력 시 개인정보가 있을 경우 반드시 비공개로 해주세요."></textarea>
 							</div>
 						</div>
                     </div>
