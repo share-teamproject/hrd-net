@@ -522,7 +522,8 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .contListType3 > li .tit2 { width:200px; }
 .contListType3 > li .txt { display:block; line-height:38px; font-weight:500; padding:0 30px; }
 .contListType3 > li > .goLinkLong { margin:30px 0 10px 30px; }
-.contListType3.full { }
+.contListType3.etc > li .tit { width:210px; }
+
 
 .contListType4 { }
 .contListType4 > li { border-bottom:2px #e3e7ee solid; margin-bottom:30px; }

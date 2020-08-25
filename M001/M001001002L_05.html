@@ -293,13 +293,14 @@
             <!-- 상단 비주얼 영역 -->
             <div id="subTopWrap" class="topVisu03">
                 <div class="subTopArea">
-                    <h2 class="subTopTilte">입실확인 전송내역</h2>
+                    <h2 class="subTopTilte">출결</h2>
                 </div>
                 <div class="location">
                     <!-- 2depth-->
                     <ul>
                         <li class="goHome verPC"><a href="/">홈</a></li>
-						<li class="on">입실확인 전송내역</li>
+						<li>QR출결</li>
+						<li class="on">나의 출석보기</li>
                     </ul>
 
                     <!-- 2depth 이상인 경우 -->
@@ -318,11 +319,42 @@
             <div id="subContentWrap" class="fullContents">
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle">입실확인 전송내역</h3>
+                        <h3 class="headingTitle">나의 출석보기</h3>
                     </div>
                     <div class="contentArea">
+
 						<div class="moContInner ty2 mt20">
-							<select name="" id="" class="selectBox w100p">
+							<h4 class="titleFs32">훈련과정정보</h4>
+							<div class="contListWrap mt28">
+								<ul class="contListType3 full mt0 mb0">
+									<li>
+										<strong class="tit">훈련과정</strong>
+										<span class="txt">HRD-Net 통합앱 비콘출결 테스트</span>
+									</li>
+									<li>
+										<strong class="tit">훈련기관</strong>
+										<span class="txt">한국고용정보원</span>
+									</li>
+									<li>
+										<strong class="tit">훈련유형</strong>
+										<span class="txt">국가인적자원개발컨소시엄</span>
+									</li>
+									<li>
+										<strong class="tit">훈련기간</strong>
+										<span class="txt">2018.10.22(월) ~<br> 2020.12.31(목)</span>
+									</li>
+									<li>
+										<strong class="tit">출석일</strong>
+										<span class="txt"><span class="color04">0</span> / 309일</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="moContInner ty2">
+							<h4 class="titleFs32">나의 출석정보</h4>
+
+							<select name="" id="" class="selectBox w100p mt26">
 								<option value="">2020</option>
 							</select>
 
@@ -330,57 +362,67 @@
 								<option value="">전체</option>
 							</select>
 
-							<select name="" id="" class="selectBox w100p mt20" disabled>
-								<option value="">전체</option>
-							</select>
-						</div>
+							<div class="tabInterface mt60">
+								<!-- 텝 인덱스 -->  
+								<div class="tabListArea"> 
+									<ul class="tabList" role="tablist">
+										<li role="tab" aria-controls="section1" aria-selected="true" id="tab1" class="on"><button type="button">달력</button></li>
+										<li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">리스트 보기</button></li>
+									</ul>
+								</div> 
+								<!--// 텝 인덱스 -->
 
-						<div class="moContInner ty2">
-							<div class="tableArea">
-								<table class="view tblCenterAlign tblBrdAll">
-									<caption>입실 내역</caption>
-                                    <colgroup>
-                                        <col style="width:57%;">
-                                        <col style="width:auto;">
-                                    </colgroup>
-									<tbody>
-										<tr>
-											<td class="bgType1">2020.06.15 (월요일)</td>
-											<td class="bgType1">09:00 ~ 18:00</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>15:33:11</td>
-										</tr>
-										<tr>
-											<td class="bgType1">2020.06.08 (월요일)</td>
-											<td class="bgType1">09:00 ~ 18:00</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>16:53:17</td>
-										</tr>
-										<tr>
-											<td class="bgType1">2020.06.05 (금요일)</td>
-											<td class="bgType1">09:00 ~ 18:00</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>09:42:17</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>09:42:17</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>09:42:17</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
+								<!-- 텝 컨텐츠 -->
+                                <div class="tabContents mt30">
+									<section id="section1" role="tabpanel" class="tabCont on">
+										<img src="../new_images/temp/@cal.jpg" alt="">
+									</section>
 
+									<section id="section2" role="tabpanel" class="tabCont">
+										<div class="tableArea">
+											<table class="view tblCenterAlign tblBrdAll">
+												<caption></caption>
+												<colgroup>
+													<col style="width:57%;">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">일자 및 시간</th>
+														<th scope="col">출결정보(외출정보)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>06/06(금) 09:00 ~ 18:00</td>
+														<td>결석</td>
+													</tr>
+													<tr>
+														<td>06/06(금) 09:00 ~ 18:00</td>
+														<td>결석</td>
+													</tr>
+													<tr>
+														<td>06/06(금) 09:00 ~ 18:00</td>
+														<td>결석</td>
+													</tr>
+													<tr>
+														<td>06/06(금) 09:00 ~ 18:00</td>
+														<td><span class="color05">출석</span></td>
+													</tr>
+													<tr>
+														<td>06/06(금) 09:00 ~ 18:00</td>
+														<td>결석</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</section>
+								</div>
+								 <!--// 텝 컨텐츠 -->
+							</div>   
+
+						</div>
+				
                     </div>
                 </div>
             </div>

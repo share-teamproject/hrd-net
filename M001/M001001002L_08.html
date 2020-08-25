@@ -293,13 +293,14 @@
             <!-- 상단 비주얼 영역 -->
             <div id="subTopWrap" class="topVisu03">
                 <div class="subTopArea">
-                    <h2 class="subTopTilte">입실확인 전송내역</h2>
+                    <h2 class="subTopTilte">출결</h2>
                 </div>
                 <div class="location">
                     <!-- 2depth-->
                     <ul>
                         <li class="goHome verPC"><a href="/">홈</a></li>
-						<li class="on">입실확인 전송내역</li>
+						<li>QR출결</li>
+						<li class="on">출석현황</li>
                     </ul>
 
                     <!-- 2depth 이상인 경우 -->
@@ -318,11 +319,35 @@
             <div id="subContentWrap" class="fullContents">
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle">입실확인 전송내역</h3>
+                        <h3 class="headingTitle">출석현황</h3>
                     </div>
                     <div class="contentArea">
+
 						<div class="moContInner ty2 mt20">
-							<select name="" id="" class="selectBox w100p">
+							<h4 class="titleFs32">훈련과정정보</h4>
+							<div class="contListWrap mt28">
+								<ul class="contListType3 full mt0 mb0">
+									<li>
+										<strong class="tit">훈련과정</strong>
+										<span class="txt">HRD-Net 통합앱 비콘출결 테스트</span>
+									</li>
+									<li>
+										<strong class="tit">훈련기관</strong>
+										<span class="txt">한국고용정보원</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="moContInner ty2">
+							<div class="tblEle">
+								<div class="ele"><h4 class="titleFs32">나의 출석정보</h4></div>
+								<div class="ele mini">
+									<button type="button" class="btnH60 ty3 w140">새로고침</button>
+								</div>
+							</div>
+
+							<select name="" id="" class="selectBox w100p mt15">
 								<option value="">2020</option>
 							</select>
 
@@ -330,57 +355,68 @@
 								<option value="">전체</option>
 							</select>
 
-							<select name="" id="" class="selectBox w100p mt20" disabled>
+							<select name="" id="" class="selectBox w100p mt20">
 								<option value="">전체</option>
 							</select>
-						</div>
 
-						<div class="moContInner ty2">
-							<div class="tableArea">
-								<table class="view tblCenterAlign tblBrdAll">
-									<caption>입실 내역</caption>
-                                    <colgroup>
-                                        <col style="width:57%;">
-                                        <col style="width:auto;">
-                                    </colgroup>
-									<tbody>
-										<tr>
-											<td class="bgType1">2020.06.15 (월요일)</td>
-											<td class="bgType1">09:00 ~ 18:00</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>15:33:11</td>
-										</tr>
-										<tr>
-											<td class="bgType1">2020.06.08 (월요일)</td>
-											<td class="bgType1">09:00 ~ 18:00</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>16:53:17</td>
-										</tr>
-										<tr>
-											<td class="bgType1">2020.06.05 (금요일)</td>
-											<td class="bgType1">09:00 ~ 18:00</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>09:42:17</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>09:42:17</td>
-										</tr>
-										<tr>
-											<td>훈련</td>
-											<td>09:42:17</td>
-										</tr>
-									</tbody>
-								</table>
+							<div class="contListWrap mt30">
+								<ul class="contListType3 etc mt0 mb0">
+									<li>
+										<strong class="tit">총인원</strong>
+										<span class="txt">6</span>
+									</li>
+									<li>
+										<strong class="tit">참석인원</strong>
+										<span class="txt">0</span>
+									</li>
+									<li>
+										<strong class="tit">미참석인원</strong>
+										<span class="txt">0</span>
+									</li>
+								</ul>
+							</div>
+
+							<div class="slideCont mt20 mb50">
+								<button type="button" class="btnSlideView dataSlide" data-slide="slide01"><span>훈련생 출석현황 보기</span></button>
+							</div>
+
+							<div class="singleSlideCont" data-slideEle="slide01">
+								<div class="tableArea">
+									<table class="view tblCenterAlign tblBrdAll">
+										<caption></caption>
+										<colgroup>
+											<col>
+											<col style="width:130px;">
+											<col style="width:130px;">
+											<col style="width:145px;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">훈련생</th>
+												<th scope="col">입실<br>(외출)</th>
+												<th scope="col">퇴실<br>(복귀)</th>
+												<th scope="col">상태</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>김은별(여)</td>
+												<td>-</td>
+												<td>-</td>
+												<td>미출석</td>
+											</tr>
+											<tr>
+												<td>박민지(여)</td>
+												<td>-</td>
+												<td>-</td>
+												<td><span class="color05">출석</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
-
+				
                     </div>
                 </div>
             </div>
