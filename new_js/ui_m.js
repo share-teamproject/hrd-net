@@ -272,6 +272,21 @@ $(function(){
 			$('body').removeAttr('style');
 			$(this).closest('.layerfullWrap').css('display','none');
 		});
+
+		// 개별 슬라이드
+		$('.dataSlide').on('click', function(){
+			var data = $(this).data('slide');
+			if ( $('[data-slideEle="'+ data +'"]').css('display') == 'block' )
+			{
+				$(this).addClass('on');
+				
+				$('[data-slideEle="'+ data +'"]').stop().slideUp(500);
+			} else {
+				$(this).removeClass('on');
+				$('[data-slideEle="'+ data +'"]').stop().slideDown(500);
+			}
+		});
+
 	});
 
 
