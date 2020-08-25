@@ -412,10 +412,11 @@ var navigation = {
 	len : 0,
 
 	init : function() {
-		navigation.pc_menu();
+		navigation.gnb();
+		navigation.lnb();
 	},
 	
-	pc_menu : function() {	
+	gnb : function() {	
 		var $gnb_top = $('#gnb > li > a');
 		var $gnb_sub = $('#gnb > li .gnbSubArea');	
 		
@@ -451,6 +452,27 @@ var navigation = {
 				$gnb_top.removeClass('on')
 				$(".gnbSubArea").stop().slideUp('fast');
 			});
+		});
+	},
+
+	lnb : function() {	
+		var $lnb_top = $('.dep02 > li > a');
+		var $lnb_sub = $('.dep03');	
+		
+		$lnb_top.each(function(){ 
+			$lnb_top.on('click',function() {
+				$lnb_top.removeClass('on')
+				$(this).addClass('on');
+
+				if(!$(this).hasClass('noSub')){
+					if($(this).hasClass('on')){						
+						$lnb_sub.stop().slideUp('fast');
+						$(this).siblings().stop().slideDown('fast');
+					}else{
+						//$('.dep03').stop().slideUp('fast');
+					}
+				}
+			});	
 		});
 	}	
 };
