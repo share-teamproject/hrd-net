@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.tableArea td { position:relative; }
+.tableArea table.list td.none { padding:40px 0;}
+.tableBtnList {position:absolute;top:14px; right:20px;}
+.tableBtnList li {float:left;padding-left:12px;}
+
+.tableArea + .ty2 {margin-top:40px;}
+
+.btnGroup.ty2 { display:block; text-align:right; }
+/* 바로가기 */
+.goLinkLong02 {display:inline-block; min-width:80px; height:26px; line-height:24px; padding:0 20px; text-align:center; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51;}
+.btnH26 {display:inline-block; min-width:112px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:24px;}
+
+/* ==============================
+* 공통 컨텐츠
+* ============================== */
+
+#subContentWrap .lnbAreaTy1 { width:240px; text-align:left; }
+#subContentWrap .lnbAreaTy1 > ul { width:200px; border-bottom:1px solid #dcdcdd; } 
+#subContentWrap .lnbAreaTy1 > ul > li { border-top:1px solid #eee; height: 45px; line-height: 45px; padding:0 15px; }
+#subContentWrap .lnbAreaTy1 > ul > li:first-child { border-top:none; }
+#subContentWrap .lnbAreaTy1 > ul > li > a { font-size:16px; color:#727476; }
+#subContentWrap .lnbAreaTy1 > ul > li > a:hover, 
+#subContentWrap .lnbAreaTy1 > ul > li > a.on { color:#4e4f51; font-weight:500; }
+
+
+/* ==============================
+* MY서비스
+* ============================== */ 
+
+/* MY훈련 - 직업훈련이력 */
+.myTrainingArea { margin-top:15px; }
+#subContentWrap .infoBoxArea.ty01 { border:3px #e1e4e9 solid; padding:12px 25px; margin:40px 0 30px 0;}
+#subContentWrap .infoBoxArea.ty01 > ul >li { position:relative; font-size:14px; color:#767676; line-height:44px; padding-left:12px; }
+#subContentWrap .infoBoxArea.ty01 > ul >li:before {content:""; position:absolute; top:20px; left:0; width:4px; height:4px; background-color:#727476; border-radius:50%;  }
+
+#subContentWrap .subContArea .qnaArea .qnaA.ty01 { position:relative; padding:30px; border-bottom: 1px solid #e3e7ee; background:#fbfbfb; display:none; }
+.TrainingHistoryBox { background:#fff; margin-bottom:20px; border-top:1px #e2e2e4 solid; border-left:1px #e2e2e4 solid; border-right:1px #e2e2e4 solid; }
+.TrainingHistoryBox > ul { overflow:hidden; width:100%;  }
+.TrainingHistoryBox > ul > li { float:left; width:50%; border-bottom:1px #e2e2e4 solid; }
+.TrainingHistoryBox > ul > li.borL {border-left:1px #e2e2e4 solid;}
+.TrainingHistoryBox > ul > li.clearW100 {clear:both; width:100%;}
+.TrainingHistoryBox > ul > li > dl { position:relative; overflow:hidden; display:flex; align-items:center; margin:14px 0; height:35px; line-height:100%; }
+.TrainingHistoryBox > ul > li > dl > dt, .TrainingHistoryBox > ul > li > dl > dd { float:left; }
+.TrainingHistoryBox > ul > li > dl > dt { width:170px; color:#4e4f51; text-align:center; }
+.TrainingHistoryBox > ul > li > dl > dd { color:#292a2d; font-size:14px; padding-left:40px; }
+.TrainingHistoryBox > ul > li > dl > dd:before { content:""; position:absolute; top:0; left:170px; width:1px; height:35px; background-color:#e3e7ee;  }
+.TrainingHistoryBox > ul > li > dl > .star { margin-left:40px; }
+
+.PathArea > .bigTitle02 { margin-top:50px; }
+.PathArea > .tableArea .btnH26 { margin:5px 0; }
+
+.RouteSearchBox { border:3px #e1e4e9 solid;  padding:30px; margin-bottom:30px; }
+.RouteSearchBox > dl {overflow:hidden; margin-bottom:30px; }
+.RouteSearchBox > dl > dt, .RouteSearchBox > dl > dd { float:left; }
+.RouteSearchBox > dl > dt { width:90px; color:#4e4f51; font-size:18px; }
+.RouteSearchBox .ncsSchArea { width:741px; border:3px solid #434e64;}
+.RouteSearchBox .ncsSchSortList > li > input[type="radio"]:checked + label,
+.RouteSearchBox .ncsSchSortList > li > label:focus,
+.RouteSearchBox .ncsSchSortList > li > label:hover {padding:0px 35px 0px 13px; background-color:#c9d3e8; color:#5b648a; border-radius:25px;}
+.RouteSearchBox .ncsSchSortList > li > input[type="radio"]:checked + label:after,
+.RouteSearchBox .ncsSchSortList > li > label:focus:after,
+.RouteSearchBox .ncsSchSortList > li > label:hover:after {content:''; position:absolute; top:50%; right:18px; display:inline-block; width:16px; height:11px; margin-top:-5px; background:url('../new_images/common/checkSelect.png')}
+
+
+/* 비대면 - 목록 */
+.applicationBox { position:relative; border:1px #e4e7ee solid; padding:15px 0; margin:15px 0 20px 0; }
+.applicationBox dl.title { overflow:hidden; }
+.applicationBox dl.title dt, .applicationBox .title dd { float:left; line-height:30px; }
+.applicationBox .title dt { width:200px; color:#4e4f51; padding-left:30px; border-right:1px #e3e7ee solid; }
+.applicationBox .title dd { color:#727476; font-size:14px; padding-left:30px; }
+.applicationBox .btn { position:absolute; top:10px; right:20px; }
+
+.processArea { margin-top:50px;}
+
+.bigTitle02 {font-weight:500; font-size:22px; color:#292a2d; height:42px; }
+.bigTitle03 {font-weight:500; font-size:18px; color:#292a2d; height:40px;}
+
+
+

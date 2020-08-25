@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* ==============================
+* 공통 컨텐츠
+* ============================== */ 
+#subContentWrap .lnbAreaTy1 {display:none;}
+
+/* 별점 */
+.star { text-indent:-9999px; line-height:0; background:url('../new_images/common/icoStar.png') no-repeat; width:125px; height:19px;  }
+.star.star05 { background-position:0 -19px; }
+.star.star04 { background-position:0 -38px; }
+.star.star03 { background-position:0 -57px; }
+.star.star02 { background-position:0 -76px; }
+.star.star01 { background-position:0 -95px; }
+
+/* ==============================
+* 자주묻는 질문 & 질문과 답변
+* ============================== */  
+
+/* 검색박스 */
+#subContentWrap .subContArea .searchBox.ty2 { border-top :6px #e1e4e9 solid; margin-top:20px; }
+
+
+/* qna */
+#subContentWrap .subContArea .qnaArea { width:100%; padding:80px 30px 0; }
+
+#subContentWrap .subContArea .qnaArea .txtQ.ty2 { height:80px; position:relative; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ.ty2 .txt01 {position:absolute; top:-25px; left:0; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ.ty2 .txt02 {position:absolute; top:70px; left:-20px; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ.ty2 .qnaText {position:absolute; top:20px; left:0; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ.ty2 > .qnaSection > li {border:none;}
+#subContentWrap .subContArea .qnaArea .qnaQ.ty2:after {content:''; position:absolute; top:calc(100% - 95px); right:30px; display:inline-block; width:24px; height:12px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -12px; background-size:24px; }
+
+
+/* ==============================
+* MY서비스
+* ============================== */ 
+#subContentWrap .subContArea .nonfaceArea { padding:0; margin-top:20px; }
+
+/* MY훈련 - 직업훈련이력 */
+.myTrainingArea .qnaArea { padding:0 30px; }
+
+#subContentWrap .subContArea .qnaArea .qnaA.ty01 { position:relative; padding:30px; border-bottom: 1px solid #e3e7ee; background:#fbfbfb; display:none; }
+.TrainingHistoryBox { background:#fff; margin-bottom:20px; border-top:1px #e2e2e4 solid; border-left:1px #e2e2e4 solid; border-right:1px #e2e2e4 solid; }
+.TrainingHistoryBox > ul { }
+.TrainingHistoryBox > ul > li { width:100%; border-bottom:1px #e2e2e4 solid; line-height:80px; }
+.TrainingHistoryBox > ul > li > dl { position:relative; overflow:hidden; display:flex; align-items:center; margin:25px 0; }
+.TrainingHistoryBox > ul > li > dl > dt, .TrainingHistoryBox > ul > li > dl > dd { float:left; line-height:38px;}
+.TrainingHistoryBox > ul > li > dl > dt { width:205px;  font-size:28px; color:#4e4f51; text-align:center; }
+.TrainingHistoryBox > ul > li > dl > dd { color:#292a2d; font-size:28px; padding-left:40px; }
+.TrainingHistoryBox > ul > li > dl > dt:before { content:''; position:absolute; top:2px; left:205px; height:calc(100% - 2px); border-left:3px solid #e3e7ee; }
+
+.TrainingHistoryBox > ul > li > dl > .star { margin-left:40px; }
+
+/* 비대면 - 목록 */
+.applicationBox { text-align:center; }
+.applicationBox .title {font-size:28px; letter-spacing:-1px;word-break: keep-all; }
+.applicationBox .btn { padding-top:30px; margin-bottom:30px;}

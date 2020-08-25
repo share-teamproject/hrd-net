@@ -450,7 +450,6 @@ var navigation = {
 				}
 				$gnb_top.removeClass('on')
 				$(".gnbSubArea").stop().slideUp('fast');
-			//	$('body').removeClass('noScroll');	
 			});
 		});
 	}	
