@@ -7,19 +7,23 @@
 .tableArea table.list td.none { padding:40px 0;}
 .tableBtnList {position:absolute;top:14px; right:20px;}
 .tableBtnList li {float:left;padding-left:12px;}
+.tblInfoTxt { font-size:12px; color:#727476; background-color:#f7f7f7; padding:30px; margin:-20px 0 20px 0; }
 
 .tableArea + .ty2 {margin-top:40px;}
-.tableArea .selectW50 { min-width:50px; width:50px; }
-.tableArea .selectW65 { min-width:65px; width:65px; }
-.tableArea .selectW80 { min-width:80px; width:80px; }
-.tableArea .selectW130 { min-width:130px; width:130px; }
-.tableArea .selectW160 { min-width:160px; width:160px; }
-.tableArea .selectW180 { min-width:180px; width:180px; }
-.tableArea .selectW210 { min-width:210px; width:210px; }
-.tableArea .selectW243 { min-width:243px; width:243px; }
-.tableArea .selectW250 { min-width:250px; width:250px; }
-.tableArea .selectW692 { min-width:692px; width:692px; }
-.tableArea .btnW60 { min-width:60px; width:60px; padding:0; }
+.tableArea .selectW50, .selectW50 { min-width:50px; width:50px; }
+.tableArea .selectW65, .selectW65 { min-width:65px; width:65px; }
+.tableArea .selectW80, .selectW80 { min-width:80px; width:80px; }
+.tableArea .selectW130, .selectW130 { min-width:130px; width:130px; }
+.tableArea .selectW160, .selectW160 { min-width:160px; width:160px; }
+.tableArea .selectW180, .selectW180 { min-width:180px; width:180px; }
+.tableArea .selectW180, .selectW190 { min-width:190px; width:190px; }
+.tableArea .selectW200, .selectW200 { min-width:200px; width:200px; }
+.tableArea .selectW210, .selectW210 { min-width:210px; width:210px; }
+.tableArea .selectW243, .selectW243 { min-width:243px; width:243px; }
+.tableArea .selectW250, .selectW250 { min-width:250px; width:250px; }
+.tableArea .selectW585, .selectW585 { min-width:585px; width:585px; }
+.tableArea .selectW692, .selectW692 { min-width:692px; width:692px; }
+.btnW60 { min-width:60px; width:60px; padding:0; }
 
 
 /* ==============================
@@ -71,7 +75,6 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 /* 검색박스 */
 #subContentWrap .subContArea .searchBox.ty2 {margin-bottom:50px; padding:22px 0 20px 55px;}
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect03 { width:200px }
-#subContentWrap .subContArea .searchBox.ty2 .btnArea {padding-left:18px;}
 #subContentWrap .subContArea .searchBox.ty2 .btnArea button { width:80px; padding:0; margin-left:-5px; }
 #subContentWrap .subContArea .searchBox.ty2 .btnArea button:last-child {border-left:1px #4171df solid;}
 #subContentWrap .subContArea .searchBox.ty2 .btnGroup { margin-top:10px; }
@@ -83,6 +86,19 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 #subContentWrap .subContArea .searchBox.ty3 > fieldset > dl > dt,
 #subContentWrap .subContArea .searchBox.ty3 > fieldset > dl > dd { height:95px; line-height:95px; margin-top:-15px; border-bottom:1px #f4f4f4 solid; }
 #subContentWrap .subContArea .searchBox.ty3 .btnGroup  { margin-top:10px; }
+
+#subContentWrap .subContArea .searchBox.tyM2 { position:relative; margin-bottom:50px;  }
+#subContentWrap .subContArea .searchBox.tyM2 .btnArea {position:absolute;bottom:20px; right:150px;}
+.checkBoxList { overflow:hidden; }
+.checkBoxList li { float:left; width:200px; }
+.checkBoxList2 {overflow:hidden; }
+.checkBoxList2 li { float:left; width:200px;}
+.checkBoxList.ty2 {padding-top:10px; }
+
+/* 정렬방식 */
+#subContentWrap .sortArea.ty2 { margin:35px 0 -30px 0; }
+#subContentWrap .sortArea.ty3 { margin:50px 0 0 0; }
+
 
 
 /* ==============================
@@ -139,9 +155,9 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .choiceArea > ul { display:table; width:100%; }
 .choiceArea > ul > li {display:table-cell; width:24%; display:inline-block; padding:5px 0; margin:0; }
 
-.myTrainingArea .tableArea.ty2 {margin-bottom:50px;}
-.myTrainingArea .tableArea.ty2 .list th, 
-.myTrainingArea .tableArea.ty2 .list td {padding:14px 5px;}
+#subContentWrap .tableArea.ty2 {margin-bottom:50px;}
+#subContentWrap .tableArea.ty2 .list th, 
+#subContentWrap .tableArea.ty2 .list td {padding:14px 5px;}
 
 .textareaBoxLine { border:1px #e2e2e4 solid; padding:20px; margin-bottom:50px; }
 .textareaBoxLine .textareaBox textarea {height:150px;}
@@ -155,6 +171,25 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .AddFilesArea .fileBox dd { float:right; color:#767676; font-size:13px; }
 .AddFilesArea .dragBox {color:#767676; font-size:14px; border:3px #e1e4e9 solid; height:74px; line-height:74px; text-align:center; }
 .AddFilesArea .fileBtnBox { background:#f7f7f7; padding:25px; }
+
+.inTextBox {margin-bottom:20px; }
+.inTextBox .txt1 { font-size:14px; color:#4e4f51; padding-top:15px; }
+.inTextBox .txt2List { overflow:hidden; padding-top:15px; }
+.inTextBox .txt2List > li { float:left; width:49%; }
+.inTextBox .txt2List > li > dl { overflow:hidden; }
+.inTextBox .txt2List > li > dl > dt,
+.inTextBox .txt2List > li > dl > dd { float:left; width:50%;  font-size:13px; color:#666; }
+.inTextBox .txt2List > li > dl > dt { width:100px; }
+.inTextBox .txt2List > li > dl > dt > span { display:inline-block; text-align:center; min-width:90px; height:24px; line-height:24px; border:1px #d3d3d3 solid; padding:0 10px; border-radius:10px; }
+.inTextBox .txt2List > li > dl > dd { text-align:left; }
+.inTextBox .txt3 { font-size:12px; color:#727476; }
+.inTextBox .txt4 { font-size:14px; color:#727476; padding-top:15px; }
+
+.innerTableArea { border-top:1px #e2e2e4 solid; }
+.innerTableArea .view th { font-size:14px;  color:#222; font-weight:400; border-bottom:1px #e2e2e4 solid; background:#f0f0f2; padding:7px 20px; }
+.innerTableArea .view td { border-bottom:1px #e2e2e4 solid; background:#fff; padding:7px 20px; }
+
+.infoTextBoxS {  font-size:12px;  color:#727476; font-weight:400; background:#f7f7f7; padding:30px; margin-bottom:60px; }
 
 /* 비대면 - 목록 */
 .applicationBox { position:relative; border:1px #e4e7ee solid; padding:15px 0; margin:15px 0 20px 0; }
@@ -177,7 +212,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 
 
 /* 비대면 훈련상담 */
-#myStateWrap .myStateArea .myStateBox .myState2 { width:182px; }
+#myStateWrap .myStateArea .myStateBox .myState2 { max-width:182px; }
 
 
 

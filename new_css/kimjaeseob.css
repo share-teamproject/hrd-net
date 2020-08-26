@@ -4,7 +4,12 @@
 * common
 * ============================== */
 
-.toolTipQ {display:inline-block; vertical-align:middle; width:20px; height:20px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer;}
+.flexMiddle {display:flex; align-items: center; justify-content: center; padding:0 8px 0 20px;}
+.heightAuto {min-height:0 !important;}
+
+.itemHash {display:inline-block; line-height:26px; padding:0 12px; margin-right:15px; border-radius:4px; color:#222; font-size:11px; background-color:#e3e7ee; font-weight:300;}
+
+.toolTipQ {display:inline-block; vertical-align:middle; width:20px; height:20px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover;}
 
 .bgType1 {background:#f0f0f2 !important;}
 
@@ -101,4 +106,45 @@
 
 
 
+
+/* 통합검색 */
+.totalSchRstTitle {text-align:center; font-size:26px; color:#4e4f51; line-height:1;}
+.totalSchRstTitle > .kwd {font-weight:500; font-size:32px; color:#258384}
+
+.schTabListWrap {margin-top:50px;}
+.schTabList {display:table; width:100%; table-layout:fixed; border-top:1px solid #f6f6f6;}
+.schTabList > li {display:table-cell; vertical-align:middle;}
+.schTabList > li a {position:relative; display:block; padding-top:15px; text-align:center; font-size:18px; color:#65646a; line-height:24px;}
+.schTabList > li a.on {font-weight:500; color:#3d5895}
+.schTabList > li a.on:before {content:''; position:absolute; top:-1px; left:0; width:100%; border-bottom:4px solid #3d5895;}
+
+.schEduCont {margin-top:50px;}
+.schEduCont + .schEduCont {}
+.schEduCont > .more {margin-top:20px; font-size:0; text-align:right;}
+#subContentWrap .subContArea .schEduCont .qnaArea {padding-top:0;}
+
+.schEduContHead {padding-bottom:14px;}
+.schEduContHead:after {content:''; display:block; clear:both;}
+.schEduContHead .leftGroup {display:inline-block;}
+.schEduContHead .leftGroup .title {display:inline-block; vertical-align:middle; font-weight:500; font-size:26px; color:#292a2d;}
+.schEduContHead .leftGroup .toolTipQ {margin-left:10px;}
+.schEduContHead .leftGroup .txtCases {display:inline-block; vertical-align:middle; margin-left:5px; font-size:14px; color:#666;}
+.schEduContHead .leftGroup .txtCases em {color:#f48b2f;}
+.schEduContHead > .boxLinkList {float:right; margin-top:8px;}
+
+.boxLinkList {display:inline-block; overflow:hidden;}
+.boxLinkList > li {position:relative; float:left; width:110px; border:1px solid #cdcdd1; background:#fff;}
+.boxLinkList > li + li {margin-left:-1px;}
+.boxLinkList > li > a {display:block; text-align:center; font-size:14px; color:#727476; line-height:28px;}
+.boxLinkList > li.on {z-index:1; border:1px solid #4171df;}
+.boxLinkList > li.on > a {color:#4171df;}
+
+.detailListTy2 {}
+.detailListTy2 > li {padding:30px 25px; border-bottom:1px solid #e2e2e4;}
+.detailListTy2 > li .tit {font-size:0;}
+.detailListTy2 > li .tit > * {vertical-align:middle;}
+.detailListTy2 > li .tit a {display:inline-block; font-size:20px; color:#292a2d;}
+.detailListTy2 > li .tit .itemHash {margin-left:15px;}
+.detailListTy2 > li .txt01 {padding-top:20px; font-size:14px; color:#292a2d;}
+.detailListTy2 > li .txt02 {padding-top:7px; font-size:14px; color:#666; line-height:24px;}
 

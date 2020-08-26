@@ -17,7 +17,10 @@
 	<link href="../new_css/reset.css" rel="stylesheet" />
 	<link href="../new_css/layout.css" rel="stylesheet" />
 	<link href="../new_css/contents.css" rel="stylesheet" />
-	<link href="../new_css/kimjaeseob.css" rel="stylesheet" />
+
+	<!-- <link href="../new_css/layout_m.css" rel="stylesheet" />
+	<link href="../new_css/contents_m.css" rel="stylesheet" /> -->
+
 	<script src="../new_js/lib/jquery-2.1.1.js"></script>
 	<script src="../new_js/lib/swiper.min.js"></script>
 	<script src="../new_js/ui.js"></script>
@@ -80,12 +83,12 @@
 				<div class="subContArea">
 					<div class="contentArea">
 
-						<div class="totalSchRstTitle">
+						<div class="totalSchRstTitle mt75">
 							<strong class="kwd">“컴퓨터”</strong> 검색결과입니다.
 						</div>
 
-						<!-- 국민내일배움카드 훈련과정 -->
-						<div class="schTabListWrap">
+						<!-- pc 노출 -->
+						<div class="schTabListWrap verPC">
 							<ul class="schTabList">
 								<li><a href="" class="on">전체검색</a></li>
 								<li><a href="">훈련정보</a></li>
@@ -95,9 +98,21 @@
 								<li><a href="">자주묻는 질문</a></li>
 							</ul>
 						</div>
-						<!--// 국민내일배움카드 훈련과정 -->
+						<!--// pc 노출 -->
 
-						<!-- 기업훈련과정 -->
+						<!-- Mobile 노출 -->
+						<div class="schTabListWrap verM">
+							<ul class="schTabList">
+								<li><a href="" class="on">전체검색</a></li>
+								<li><a href="">훈련정보</a></li>
+								<li><a href="">자격증정보</a></li>
+								<li><a href="">직업정보</a></li>
+								<li><a href="">자주묻는 질문</a></li>
+							</ul>
+						</div>
+						<!--// Mobile 노출 -->
+
+						<!-- 국민내일배움카드 훈련과정 -->
 						<div class="schEduCont">
 							<div class="schEduContHead">
 								<div class="leftGroup">
@@ -105,16 +120,28 @@
 									<div class="toolTipQ"></div>
 									<span class="txtCases">(전체 <em>6,000</em>건)</span>
 								</div>
-								<ul class="boxLinkList">
+								<!-- pc 노출 -->
+								<ul class="boxLinkList verPC">
 									<li class="on"><a href="">전체과정보기</a></li>
 									<li><a href="">집체과정보기</a></li>
 									<li><a href="">원격과정보기</a></li>
 									<li><a href="">혼합과정보기</a></li>
 									<li><a href="">스마트 혼합</a></li>
 								</ul>
+								<!--// pc 노출 -->
+
+								<!-- Mobile 노출 -->
+								<ul class="boxLinkList verM">
+									<li class="on"><a href="">전체</a></li>
+									<li><a href="">집체</a></li>
+									<li><a href="">온라인</a></li>
+									<li><a href="">혼합</a></li>
+									<li><a href="">스마트</a></li>
+								</ul>
+								<!--// Mobile 노출 -->
 							</div>
 
-							<div class="detailListWrap">
+							<div class="detailListWrap verPC">
 								<ul class="detailList">
 									<li>
 										<div class="title">
@@ -131,7 +158,7 @@
 											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
 											<ul class="hashtag">
 												<li>
 													#국민내일배움카드
@@ -193,7 +220,7 @@
 											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
 											<ul class="hashtag">
 												<li>
 													#국민내일배움카드
@@ -242,8 +269,416 @@
 									</li>
 								</ul>
 							</div>
+
+							<div class="detailListWrap verM">
+								<ul class="detailList">
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+
 							<div class="more">
-								<a href="" class="goLink">검색결과 더보기</a>
+								<a href="" class="goLinkLong">검색결과 더보기</a>
+							</div>
+						</div>
+						<!--// 국민내일배움카드 훈련과정 -->
+
+						<!-- 기업훈련과정 -->
+						<div class="schEduCont">
+							<div class="schEduContHead">
+								<div class="leftGroup">
+									<h4 class="title">기업훈련과정</h4>
+									<div class="toolTipQ"></div>
+									<span class="txtCases">(전체 <em>6,000</em>건)</span>
+								</div>
+								<!-- pc 노출 -->
+								<ul class="boxLinkList verPC">
+									<li class="on"><a href="">전체과정보기</a></li>
+									<li><a href="">집체과정보기</a></li>
+									<li><a href="">원격과정보기</a></li>
+									<li><a href="">혼합과정보기</a></li>
+									<li><a href="">스마트 혼합</a></li>
+								</ul>
+								<!--// pc 노출 -->
+
+								<!-- Mobile 노출 -->
+								<ul class="boxLinkList verM">
+									<li class="on"><a href="">전체</a></li>
+									<li><a href="">집체</a></li>
+									<li><a href="">온라인</a></li>
+									<li><a href="">혼합</a></li>
+									<li><a href="">스마트</a></li>
+								</ul>
+								<!--// Mobile 노출 -->
+							</div>
+							<div class="detailListWrap verPC">
+								<ul class="detailList">
+									<li>
+										<div class="title">
+											<p class="zone">
+												경기도 화성
+											</p>
+											<p class="school">
+												㈜화성직업 <br>
+												전문학교
+											</p>
+											<div class="iconCertify"></div>
+											<p class="award certi3">
+												3년 인증
+											</p>
+										</div>
+										<div class="content">
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
+											<ul class="hashtag">
+												<li>
+													#국민내일배움카드
+												</li>
+												<li>
+													#근로자 직무능력향상지원금
+												</li>
+											</ul>
+											<div class="info">
+												<dl class="item term">
+													<dt>훈련기관</dt>
+													<dd>
+														2020-06-17 ~ 2020-12-14 (9회차)
+													</dd>
+												</dl>
+												<dl class="item work">
+													<dt>일자리 정보</dt>
+													<dd>
+														1999개
+													</dd>
+												</dl>
+												<dl class="item satis">
+													<dt>과정만족도</dt>
+													<dd class="star star4">
+														별 4개
+													</dd>
+													<dd class="graph">
+														<span class="bar" style="width:88.5%;">
+															88.5%
+														</span>
+													</dd>
+												</dl>
+											</div>
+										</div>
+										<div class="util">
+											<p class="status">
+												모집중
+											</p>
+											<p class="price">
+												1,973810원
+											</p>
+											<a href="#" class="self">자비부담액보기&gt;</a>
+											<a href="#" class="btnLink mark">담아두기</a>
+											<a href="#" class="btnLink compare">비교하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="title">
+											<p class="zone">
+												경기도 화성
+											</p>
+											<p class="school">
+												㈜화성직업 <br>
+												전문학교
+											</p>
+											<div class="iconCertify"></div>
+											<p class="award certi3">
+												3년 인증
+											</p>
+										</div>
+										<div class="content">
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
+											<ul class="hashtag">
+												<li>
+													#국민내일배움카드
+												</li>
+												<li>
+													#근로자 직무능력향상지원금
+												</li>
+											</ul>
+											<div class="info">
+												<dl class="item term">
+													<dt>훈련기관</dt>
+													<dd>
+														2020-06-17 ~ 2020-12-14 (9회차)
+													</dd>
+												</dl>
+												<dl class="item work">
+													<dt>일자리 정보</dt>
+													<dd>
+														1999개
+													</dd>
+												</dl>
+												<dl class="item satis">
+													<dt>과정만족도</dt>
+													<dd class="star star4">
+														별 4개
+													</dd>
+													<dd class="graph">
+														<span class="bar" style="width:88.5%;">
+															88.5%
+														</span>
+													</dd>
+												</dl>
+											</div>
+										</div>
+										<div class="util">
+											<p class="status">
+												모집중
+											</p>
+											<p class="price">
+												1,973810원
+											</p>
+											<a href="#" class="self">자비부담액보기&gt;</a>
+											<a href="#" class="btnLink mark">담아두기</a>
+											<a href="#" class="btnLink compare">비교하기</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="detailListWrap verM">
+								<ul class="detailList">
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="more">
+								<a href="" class="goLinkLong">검색결과 더보기</a>
 							</div>
 						</div>
 						<!--// 기업훈련과정 -->
@@ -258,32 +693,18 @@
 								</div>
 							</div>
 
-							<div class="detailListWrap">
+							<div class="detailListWrap mtetc">
 								<ul class="detailList">
-									<li>
-										<div class="title">
-											<p class="zone">
-												경기도 화성
-											</p>
+									<li class="heightAuto">
+										<div class="title flexMiddle">
 											<p class="school">
 												㈜화성직업 <br>
 												전문학교
 											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
-											<ul class="hashtag">
-												<li>
-													#국민내일배움카드
-												</li>
-												<li>
-													#근로자 직무능력향상지원금
-												</li>
-											</ul>
+											<p class="tit"><a href="">(변경인정)_2019년_(대학연계형)_기계요소설계_L3_ver2.0_신비앤텍</a></p>
+											<p class="txt">학습기업 (공동훈련센터)</p>
 											<div class="info">
 												<dl class="item term">
 													<dt>훈련기관</dt>
@@ -291,61 +712,26 @@
 														2020-06-17 ~ 2020-12-14 (9회차)
 													</dd>
 												</dl>
-												<dl class="item work">
-													<dt>일자리 정보</dt>
-													<dd>
-														1999개
-													</dd>
-												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
-													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
-													</dd>
-												</dl>
 											</div>
 										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
+										<div class="util flexMiddle">
+											<div class="items">
+												<p class="status">
+													모집중
+												</p>
+											</div>
 										</div>
 									</li>
-									<li>
-										<div class="title">
-											<p class="zone">
-												경기도 화성
-											</p>
+									<li class="heightAuto">
+										<div class="title flexMiddle">
 											<p class="school">
 												㈜화성직업 <br>
 												전문학교
 											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
-											<ul class="hashtag">
-												<li>
-													#국민내일배움카드
-												</li>
-												<li>
-													#근로자 직무능력향상지원금
-												</li>
-											</ul>
+											<p class="tit"><a href="">(변경인정)_2019년_(대학연계형)_기계요소설계_L3_ver2.0_신비앤텍</a></p>
+											<p class="txt">학습기업 (공동훈련센터)</p>
 											<div class="info">
 												<dl class="item term">
 													<dt>훈련기관</dt>
@@ -353,41 +739,20 @@
 														2020-06-17 ~ 2020-12-14 (9회차)
 													</dd>
 												</dl>
-												<dl class="item work">
-													<dt>일자리 정보</dt>
-													<dd>
-														1999개
-													</dd>
-												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
-													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
-													</dd>
-												</dl>
 											</div>
 										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
+										<div class="util flexMiddle">
+											<div class="items">
+												<p class="status">
+													모집중
+												</p>
+											</div>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="more">
-								<a href="" class="goLink">검색결과 더보기</a>
+								<a href="" class="goLinkLong">검색결과 더보기</a>
 							</div>
 						</div>
 						<!--// 일학습병행과정 -->
@@ -400,16 +765,28 @@
 									<div class="toolTipQ"></div>
 									<span class="txtCases">(전체 <em>6,000</em>건)</span>
 								</div>
-								<ul class="boxLinkList">
+								<!-- pc 노출 -->
+								<ul class="boxLinkList verPC">
 									<li class="on"><a href="">전체과정보기</a></li>
 									<li><a href="">집체과정보기</a></li>
 									<li><a href="">원격과정보기</a></li>
 									<li><a href="">혼합과정보기</a></li>
 									<li><a href="">스마트 혼합</a></li>
 								</ul>
+								<!--// pc 노출 -->
+
+								<!-- Mobile 노출 -->
+								<ul class="boxLinkList verM">
+									<li class="on"><a href="">전체</a></li>
+									<li><a href="">집체</a></li>
+									<li><a href="">온라인</a></li>
+									<li><a href="">혼합</a></li>
+									<li><a href="">스마트</a></li>
+								</ul>
+								<!--// Mobile 노출 -->
 							</div>
 
-							<div class="detailListWrap">
+							<div class="detailListWrap verPC">
 								<ul class="detailList">
 									<li>
 										<div class="title">
@@ -426,7 +803,7 @@
 											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
 											<ul class="hashtag">
 												<li>
 													#국민내일배움카드
@@ -488,7 +865,7 @@
 											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
 											<ul class="hashtag">
 												<li>
 													#국민내일배움카드
@@ -537,8 +914,131 @@
 									</li>
 								</ul>
 							</div>
+
+							<div class="detailListWrap verM">
+								<ul class="detailList">
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+									<li>
+										<p class="school">(주)화성직업전문학교</p>
+										<p class="title">모션 그래픽 디자이너 양성과정 &amp; 그래...</p>
+										<ul class="tag">
+											<li class="border">
+												구
+											</li>
+											<li class="border">
+												근
+											</li>
+											<li class="fill tip">
+												TIP
+											</li>
+										</ul>
+										<div class="info">
+											<dl class="item term">
+												<dt class="tit">훈련기관</dt>
+												<dd class="con">2020-06-17 ~ 2020-12-14</dd>
+											</dl>
+											<dl class="item work">
+												<dt class="tit">일자리 정보</dt>
+												<dd class="con">1999개</dd>
+											</dl>
+											<dl class="item satis">
+												<dt class="tit">과정 만족도</dt>
+												<dd class="con star4">별 4개</dd>
+											</dl>
+										</div>
+										<div class="graph">
+											<span class="hide">과정 만족도 퍼센트</span>
+											<span class="all">
+												<span class="bar" style="width:87.5%;">87.5%</span>
+											</span>
+										</div>
+										<div class="util">
+											<p class="price">12,641,280원</p>
+											<a href="#" class="self">자비부담액보기 &gt;</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+
 							<div class="more">
-								<a href="" class="goLink">검색결과 더보기</a>
+								<a href="" class="goLinkLong">검색결과 더보기</a>
 							</div>
 						</div>
 						<!--// 기업훈련과정 -->
@@ -551,19 +1051,31 @@
 									<div class="toolTipQ"></div>
 									<span class="txtCases">(전체 <em>6,000</em>건)</span>
 								</div>
-								<ul class="boxLinkList">
+								<!-- pc 노출 -->
+								<ul class="boxLinkList verPC">
 									<li class="on"><a href="">전체과정보기</a></li>
 									<li><a href="">집체과정보기</a></li>
 									<li><a href="">원격과정보기</a></li>
 									<li><a href="">혼합과정보기</a></li>
 									<li><a href="">스마트 혼합</a></li>
 								</ul>
+								<!--// pc 노출 -->
+
+								<!-- Mobile 노출 -->
+								<ul class="boxLinkList verM">
+									<li class="on"><a href="">전체</a></li>
+									<li><a href="">집체</a></li>
+									<li><a href="">온라인</a></li>
+									<li><a href="">혼합</a></li>
+									<li><a href="">스마트</a></li>
+								</ul>
+								<!--// Mobile 노출 -->
 							</div>
 
 							<div class="detailListWrap">
 								<ul class="detailList">
-									<li>
-										<div class="title">
+									<li class="heightAuto">
+										<div class="title flexMiddle">
 											<p class="zone">
 												경기도 화성
 											</p>
@@ -571,13 +1083,9 @@
 												㈜화성직업 <br>
 												전문학교
 											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
 											<ul class="hashtag">
 												<li>
 													#국민내일배움카드
@@ -593,39 +1101,18 @@
 														2020-06-17 ~ 2020-12-14 (9회차)
 													</dd>
 												</dl>
-												<dl class="item work">
-													<dt>일자리 정보</dt>
-													<dd>
-														1999개
-													</dd>
-												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
-													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
-													</dd>
-												</dl>
 											</div>
 										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
+										<div class="util flexMiddle">
+											<div class="items">
+												<p class="status">
+													모집중
+												</p>
+											</div>
 										</div>
 									</li>
-									<li>
-										<div class="title">
+									<li class="heightAuto">
+										<div class="title flexMiddle">
 											<p class="zone">
 												경기도 화성
 											</p>
@@ -633,13 +1120,9 @@
 												㈜화성직업 <br>
 												전문학교
 											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
 											<ul class="hashtag">
 												<li>
 													#국민내일배움카드
@@ -655,41 +1138,20 @@
 														2020-06-17 ~ 2020-12-14 (9회차)
 													</dd>
 												</dl>
-												<dl class="item work">
-													<dt>일자리 정보</dt>
-													<dd>
-														1999개
-													</dd>
-												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
-													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
-													</dd>
-												</dl>
 											</div>
 										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
+										<div class="util flexMiddle">
+											<div class="items">
+												<p class="status">
+													모집중
+												</p>
+											</div>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="more">
-								<a href="" class="goLink">검색결과 더보기</a>
+								<a href="" class="goLinkLong">검색결과 더보기</a>
 							</div>
 						</div>
 						<!--// 기업훈련과정 -->
@@ -705,135 +1167,34 @@
 							</div>
 
 							<div class="detailListWrap">
-								<ul class="detailList">
+								<ul class="detailListTy2">
 									<li>
-										<div class="title">
-											<p class="zone">
-												경기도 화성
-											</p>
-											<p class="school">
-												㈜화성직업 <br>
-												전문학교
-											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
-										</div>
-										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
-											<ul class="hashtag">
-												<li>
-													#국민내일배움카드
-												</li>
-												<li>
-													#근로자 직무능력향상지원금
+										<div class="tit">
+											<a href="">통신기기기능사</a> <span class="itemHash verPC">#국민내일배움카드</span>
+											<ul class="tag verM">
+												<li class="border">
+													구
 												</li>
 											</ul>
-											<div class="info">
-												<dl class="item term">
-													<dt>훈련기관</dt>
-													<dd>
-														2020-06-17 ~ 2020-12-14 (9회차)
-													</dd>
-												</dl>
-												<dl class="item work">
-													<dt>일자리 정보</dt>
-													<dd>
-														1999개
-													</dd>
-												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
-													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
-													</dd>
-												</dl>
-											</div>
 										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
-										</div>
+										<p class="txt01">관련부처 : 한국산업인력공단</p>
+										<p class="txt02">산업 및 통신기술의 발달과 통신량의 증가에 따라 케이블 선로 및 광케이블 선로시설을 가설하고 유지, 보수하는데 필요한 제반 환경조성과 인력양성을 위해 자격제도 제정.</p>
 									</li>
 									<li>
-										<div class="title">
-											<p class="zone">
-												경기도 화성
-											</p>
-											<p class="school">
-												㈜화성직업 <br>
-												전문학교
-											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
-										</div>
-										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
-											<ul class="hashtag">
-												<li>
-													#국민내일배움카드
-												</li>
-												<li>
-													#근로자 직무능력향상지원금
+										<div class="tit">
+											<a href="">3D 프린터 마스터</a> <span class="itemHash verPC">#공인민간자격</span>
+											<ul class="tag verM">
+												<li class="border">
+													근
 												</li>
 											</ul>
-											<div class="info">
-												<dl class="item term">
-													<dt>훈련기관</dt>
-													<dd>
-														2020-06-17 ~ 2020-12-14 (9회차)
-													</dd>
-												</dl>
-												<dl class="item work">
-													<dt>일자리 정보</dt>
-													<dd>
-														1999개
-													</dd>
-												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
-													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
-													</dd>
-												</dl>
-											</div>
 										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
-										</div>
+										<p class="txt01">자격관리기관 : (사)한국광전자산업전문인협회</p>
 									</li>
 								</ul>
 							</div>
 							<div class="more">
-								<a href="" class="goLink">검색결과 더보기</a>
+								<a href="" class="goLinkLong">검색결과 더보기</a>
 							</div>
 						</div>
 						<!--// 자격증 정보 -->
@@ -851,7 +1212,7 @@
 							<div class="detailListWrap">
 								<ul class="detailList">
 									<li>
-										<div class="title">
+										<div class="title flexMiddle">
 											<p class="zone">
 												경기도 화성
 											</p>
@@ -859,61 +1220,55 @@
 												㈜화성직업 <br>
 												전문학교
 											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
-											<ul class="hashtag">
-												<li>
-													#국민내일배움카드
-												</li>
-												<li>
-													#근로자 직무능력향상지원금
-												</li>
-											</ul>
+											<p class="tit"><a href="">그래픽 디자인 실무 & 그래픽 취득과정 전문가 양성과정</a></p>
 											<div class="info">
-												<dl class="item term">
-													<dt>훈련기관</dt>
+												<dl class="item term etc">
+													<dt>경력</dt>
 													<dd>
-														2020-06-17 ~ 2020-12-14 (9회차)
+														신입
 													</dd>
 												</dl>
 												<dl class="item work">
-													<dt>일자리 정보</dt>
+													<dt>등록일</dt>
 													<dd>
-														1999개
+														2020.07.08
 													</dd>
 												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
+												<dl class="item term etc">
+													<dt>학력</dt>
+													<dd>
+														고졸 | 대졸 (2~~3년) | 대졸 (4년)
 													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
+												</dl>
+												<dl class="item work">
+													<dt>마감일</dt>
+													<dd>
+														2020.07.08
+													</dd>
+												</dl>
+												<dl class="item term">
+													<dt>고용형태</dt>
+													<dd>
+														기간의 정함이 있는 근로계약 (시간(선택)제)
 													</dd>
 												</dl>
 											</div>
 										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
+										<div class="util flexMiddle">
+											<div class="items">
+												<p class="status ty2">
+													워크넷
+												</p>
+												<p class="price">
+													3,400만원<br>(연봉)
+												</p>
+											</div>
 										</div>
 									</li>
 									<li>
-										<div class="title">
+										<div class="title flexMiddle">
 											<p class="zone">
 												경기도 화성
 											</p>
@@ -921,63 +1276,57 @@
 												㈜화성직업 <br>
 												전문학교
 											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
 										</div>
 										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
-											<ul class="hashtag">
-												<li>
-													#국민내일배움카드
-												</li>
-												<li>
-													#근로자 직무능력향상지원금
-												</li>
-											</ul>
+											<p class="tit"><a href="">그래픽 디자인 실무 & 그래픽 취득과정 전문가 양성과정</a></p>
 											<div class="info">
-												<dl class="item term">
-													<dt>훈련기관</dt>
+												<dl class="item term etc">
+													<dt>경력</dt>
 													<dd>
-														2020-06-17 ~ 2020-12-14 (9회차)
+														신입
 													</dd>
 												</dl>
 												<dl class="item work">
-													<dt>일자리 정보</dt>
+													<dt>등록일</dt>
 													<dd>
-														1999개
+														2020.07.08
 													</dd>
 												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
+												<dl class="item term etc">
+													<dt>학력</dt>
+													<dd>
+														고졸 | 대졸 (2~~3년) | 대졸 (4년)
 													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
+												</dl>
+												<dl class="item work">
+													<dt>마감일</dt>
+													<dd>
+														2020.07.08
+													</dd>
+												</dl>
+												<dl class="item term">
+													<dt>고용형태</dt>
+													<dd>
+														기간의 정함이 있는 근로계약 (시간(선택)제)
 													</dd>
 												</dl>
 											</div>
 										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
+										<div class="util flexMiddle">
+											<div class="items">
+												<p class="status ty2">
+													워크넷
+												</p>
+												<p class="price">
+													3,400만원<br>(연봉)
+												</p>
+											</div>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="more">
-								<a href="" class="goLink">검색결과 더보기</a>
+								<a href="" class="goLinkLong">검색결과 더보기</a>
 							</div>
 						</div>
 						<!--// 일자리 정보 -->
@@ -992,136 +1341,26 @@
 								</div>
 							</div>
 
-							<div class="detailListWrap">
-								<ul class="detailList">
+							<div class="detailListWrap mtetc">
+								<ul class="detailListTy2">
 									<li>
-										<div class="title">
-											<p class="zone">
-												경기도 화성
-											</p>
-											<p class="school">
-												㈜화성직업 <br>
-												전문학교
-											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
+										<div class="tit">
+											<a href="">RFID 시스템 개발자</a>
 										</div>
-										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
-											<ul class="hashtag">
-												<li>
-													#국민내일배움카드
-												</li>
-												<li>
-													#근로자 직무능력향상지원금
-												</li>
-											</ul>
-											<div class="info">
-												<dl class="item term">
-													<dt>훈련기관</dt>
-													<dd>
-														2020-06-17 ~ 2020-12-14 (9회차)
-													</dd>
-												</dl>
-												<dl class="item work">
-													<dt>일자리 정보</dt>
-													<dd>
-														1999개
-													</dd>
-												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
-													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
-													</dd>
-												</dl>
-											</div>
-										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
-										</div>
+										<p class="txt01">전기·전자·정보통신 &gt; 정보통신관련직 &gt; RFID 시스템 개발자</p>
+										<p class="txt02">RFID 시스템개발자는 RFID 기술을 응용하여 새로운 제품을 설계하거나, 기존의 제품을 개선하여 좀 더 편리하게 만드는 일을 수행한다.</p>
 									</li>
 									<li>
-										<div class="title">
-											<p class="zone">
-												경기도 화성
-											</p>
-											<p class="school">
-												㈜화성직업 <br>
-												전문학교
-											</p>
-											<div class="iconCertify"></div>
-											<p class="award certi3">
-												3년 인증
-											</p>
+										<div class="tit">
+											<a href="">가상현실전문가</a>
 										</div>
-										<div class="content">
-											<p class="tit certify">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</p>
-											<ul class="hashtag">
-												<li>
-													#국민내일배움카드
-												</li>
-												<li>
-													#근로자 직무능력향상지원금
-												</li>
-											</ul>
-											<div class="info">
-												<dl class="item term">
-													<dt>훈련기관</dt>
-													<dd>
-														2020-06-17 ~ 2020-12-14 (9회차)
-													</dd>
-												</dl>
-												<dl class="item work">
-													<dt>일자리 정보</dt>
-													<dd>
-														1999개
-													</dd>
-												</dl>
-												<dl class="item satis">
-													<dt>과정만족도</dt>
-													<dd class="star star4">
-														별 4개
-													</dd>
-													<dd class="graph">
-														<span class="bar" style="width:88.5%;">
-															88.5%
-														</span>
-													</dd>
-												</dl>
-											</div>
-										</div>
-										<div class="util">
-											<p class="status">
-												모집중
-											</p>
-											<p class="price">
-												1,973810원
-											</p>
-											<a href="#" class="self">자비부담액보기&gt;</a>
-											<a href="#" class="btnLink mark">담아두기</a>
-											<a href="#" class="btnLink compare">비교하기</a>
-										</div>
+										<p class="txt01">전기·전자·정보통신 &gt; 정보통신관련직 &gt; 가상현실전문가</p>
+										<p class="txt02">가상현실전문가는 3D모델링 및 VRML 등의 기술을 이용해서, 가상의 시공간에서 자유로운 세계를 체험할 수 있도록 각종 응용분야(게임, 비행기 조종훈련, 가상 모델하우스 등)에 적용될 수 있는 가상의 시스템을 개발하는데 전문적으로 종사한다.</p>
 									</li>
 								</ul>
 							</div>
 							<div class="more">
-								<a href="" class="goLink">검색결과 더보기</a>
+								<a href="" class="goLinkLong">검색결과 더보기</a>
 							</div>
 						</div>
 						<!--// 직업 정보 -->
@@ -1177,47 +1416,97 @@
 						</div>
 						<!--// 자주묻는 질문 -->
 
+						<!-- 최근 내가본 과정 -->
+						<div class="schEduCont">
+							<div class="schEduContHead">
+								<div class="leftGroup">
+									<h4 class="title">최근 내가본 과정</h4>
+								</div>
+							</div>
 
-<style>
-
-.schEduCont {margin-top:50px;}
-.schEduCont + .schEduCont {}
-.schEduCont > .more {margin-top:20px; font-size:0; text-align:right;}
-
-#subContentWrap .subContArea .schEduCont .qnaArea {padding-top:0;}
-
-.schEduContHead {padding-bottom:14px;}
-.schEduContHead:after {content:''; display:block; clear:both;}
-.schEduContHead .leftGroup {display:inline-block;}
-.schEduContHead .leftGroup .title {display:inline-block; vertical-align:middle; font-weight:500; font-size:26px; color:#292a2d;}
-.schEduContHead .leftGroup .toolTipQ {margin-left:10px;}
-.schEduContHead .leftGroup .txtCases {display:inline-block; vertical-align:middle; margin-left:5px; font-size:14px; color:#666;}
-.schEduContHead .leftGroup .txtCases em {color:#f48b2f;}
-.schEduContHead > .boxLinkList {float:right; margin-top:8px;}
-
-
-.boxLinkList {display:inline-block; overflow:hidden;}
-.boxLinkList > li {position:relative; float:left; width:110px; border:1px solid #cdcdd1; background:#fff;}
-.boxLinkList > li + li {margin-left:-1px;}
-.boxLinkList > li > a {display:block; text-align:center; font-size:14px; color:#727476; line-height:28px;}
-.boxLinkList > li.on {z-index:1; border:1px solid #4171df;}
-.boxLinkList > li.on > a {color:#4171df;}
-
-
-.totalSchRstTitle {text-align:center; font-size:26px; color:#4e4f51; line-height:1;}
-.totalSchRstTitle > .kwd {font-weight:500; font-size:32px; color:#258384}
-
-.schTabListWrap {margin-top:50px;}
-.schTabList {display:table; width:100%; table-layout:fixed; border-top:1px solid #f6f6f6;}
-.schTabList > li {display:table-cell; vertical-align:middle;}
-.schTabList > li a {position:relative; display:block; padding-top:15px; text-align:center; font-size:18px; color:#65646a; line-height:24px;}
-.schTabList > li a.on {font-weight:500; color:#3d5895}
-.schTabList > li a.on:before {content:''; position:absolute; top:-1px; left:0; width:100%; border-bottom:4px solid #3d5895;}
-</style>
-
-
-
-
+							<div class="detailListWrap">
+								<ul class="detailList">
+									<li class="heightAuto">
+										<div class="title flexMiddle">
+											<p class="zone">
+												경기도 화성
+											</p>
+											<p class="school">
+												㈜화성직업 <br>
+												전문학교
+											</p>
+										</div>
+										<div class="content">
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
+											<ul class="hashtag">
+												<li>
+													#국민내일배움카드
+												</li>
+												<li>
+													#근로자 직무능력향상지원금
+												</li>
+											</ul>
+											<div class="info">
+												<dl class="item term">
+													<dt>훈련기관</dt>
+													<dd>
+														2020-06-17 ~ 2020-12-14 (9회차)
+													</dd>
+												</dl>
+											</div>
+										</div>
+										<div class="util flexMiddle">
+											<div class="items">
+												<p class="status">
+													모집중
+												</p>
+											</div>
+										</div>
+									</li>
+									<li class="heightAuto">
+										<div class="title flexMiddle">
+											<p class="zone">
+												경기도 화성
+											</p>
+											<p class="school">
+												㈜화성직업 <br>
+												전문학교
+											</p>
+										</div>
+										<div class="content">
+											<p class="tit certify"><a href="">모션 그래픽 디자이너 양성과정 & 그래픽 자격증 취득 양성과정 9회차 모집</a></p>
+											<ul class="hashtag">
+												<li>
+													#국민내일배움카드
+												</li>
+												<li>
+													#근로자 직무능력향상지원금
+												</li>
+											</ul>
+											<div class="info">
+												<dl class="item term">
+													<dt>훈련기관</dt>
+													<dd>
+														2020-06-17 ~ 2020-12-14 (9회차)
+													</dd>
+												</dl>
+											</div>
+										</div>
+										<div class="util flexMiddle">
+											<div class="items">
+												<p class="status">
+													모집중
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="more">
+								<a href="" class="goLinkLong">검색결과 더보기</a>
+							</div>
+						</div>
+						<!--// 최근 내가본 과정 -->
 					</div>
 				</div>
 			</div>
