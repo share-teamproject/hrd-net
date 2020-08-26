@@ -8,11 +8,13 @@
 
 .bgType1 {background:#f0f0f2 !important;}
 
-.titleFs32 {font-size:32px; color:#222; line-height:1.2;}
+.toolTipQ {display:inline-block; vertical-align:middle; width:26px; height:26px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover;}
 
 
 .titleFs30 {font-weight:500; font-size:30px; color:#292a2d; line-height:1.2;}
 .titleFs30 > small {padding-left:5px; font-weight:normal; font-size:26px; color:#666;}
+
+.titleFs32 {font-size:32px; color:#222; line-height:1.2;}
 
 .listType1 {}
 .listType1 > li {font-size:26px; color:#727476;}
@@ -120,3 +122,64 @@
 [data-calendar-table] td .num {display:inline-block; width:45px; font-size:20px; line-height:48px; border-radius:50%;}
 [data-calendar-table] td.today .num {background:#536acd; color:#fff;}
 [data-calendar-table] td .msg {padding-top:8px; font-weight:500; font-size:22px; line-height:1; color: #5b648a;}
+
+
+
+
+/* 통합검색 */
+.totalSchRstTitle {padding:0 30px; text-align:center; font-size:36px; color:#4e4f51; line-height:1;}
+.totalSchRstTitle > .kwd {font-weight:500; font-size:40px; color:#258384}
+
+.schTabListWrap {padding:0 30px 40px 30px; margin-top:75px;}
+.schTabList {overflow:hidden; /* border-top:1px solid #f6f6f6; */}
+.schTabList > li {float:left; width:33%; border:1px solid #f6f6f6;}
+.schTabList > li + li {border-left:0;}
+.schTabList > li:nth-child(3n + 1) {width:34%; border-left:1px solid #f6f6f6;}
+.schTabList > li:nth-child(n + 4) {margin-top:-1px;}
+.schTabList > li a {position:relative; display:block; text-align:center; font-size:28px; color:#65646a; line-height:80px;}
+.schTabList > li a.on {font-weight:500; color:#3d5895}
+.schTabList > li a.on:before {content:''; position:absolute; top:-1px; left:0; width:100%; border-bottom:8px solid #3d5895;}
+
+
+
+
+.schEduCont {margin-top:50px;}
+.schEduCont + .schEduCont {margin-top:60px; padding-top:50px; border-top:6px solid #e1e4e9;}
+.schEduCont > .more {padding:0 30px; margin-top:30px; font-size:0; text-align:right;}
+#subContentWrap .subContArea .schEduCont .qnaArea {padding-top:0;}
+.schEduCont .detailListWrap.mtetc {margin-top:0;}
+
+.schEduContHead {padding:0 30px; padding-bottom:14px;}
+.schEduContHead:after {content:''; display:block; clear:both;}
+.schEduContHead .leftGroup {padding-bottom:2px;}
+.schEduContHead .leftGroup .title {display:inline-block; vertical-align:middle; font-weight:500; font-size:30px; color:#292a2d;}
+.schEduContHead .leftGroup .toolTipQ {margin-left:10px;}
+.schEduContHead .leftGroup .txtCases {display:inline-block; vertical-align:middle; margin-left:5px; font-size:26px; color:#666;}
+.schEduContHead .leftGroup .txtCases em {color:#f48b2f;}
+.schEduContHead > .boxLinkList {margin-top:38px;}
+
+.boxLinkList {/* display:inline-block; overflow:hidden; */ text-align:center; font-size:0;}
+.boxLinkList > li {display:inline-block; vertical-align:top; width:164px; border:1px solid #cdcdd1; background:#fff; margin-bottom:20px;}
+.boxLinkList > li + li {margin-left:20px;}
+.boxLinkList > li:nth-child(4n) {margin-left:0;}
+.boxLinkList > li > a {display:block; text-align:center; font-size:28px; color:#727476; line-height:60px;}
+.boxLinkList > li.on {z-index:1; border:1px solid #4171df;}
+.boxLinkList > li.on > a {color:#4171df;}
+
+.detailListTy2 {}
+.detailListTy2 > li {padding:30px 25px; border-bottom:1px solid #e2e2e4;}
+.detailListTy2 > li .tit {font-size:0;}
+.detailListTy2 > li .tit > * {vertical-align:middle;}
+.detailListTy2 > li .tit a {display:inline-block; font-size:30px; color:#292a2d;}
+.detailListTy2 > li .tit .itemHash {margin-left:15px;}
+.detailListTy2 > li .txt01 {padding-top:20px; font-size:24px; color:#292a2d; overflow:hidden; }
+.detailListTy2 > li .txt02 {padding-top:7px; font-size:24px; color:#666; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+.detailListTy2 .tag { display:inline-block; }
+.detailListTy2 .tag.verM { display:inline-block !important; margin-left:15px; }
+.detailListTy2 .tag:after { content:''; display:block; clear:both; }
+.detailListTy2 .tag li { float:left; margin-left:10px; font-size:20px; }
+.detailListTy2 .tag li:first-child { margin-left:0; }
+.detailListTy2 .tag li.border { box-sizing:border-box; min-width:40px; line-height:40px; padding:0 4px; border:1px solid #d3d3d3; border-radius:4px; text-align:center; }
+.detailListTy2 .tag li.fill { box-sizing:border-box; min-width:45px; line-height:32px; background-color:#65646a; color:#fff; text-align:center }
+.detailListTy2 .tag li.tip { margin-top:5px; margin-left:20px; }
+
