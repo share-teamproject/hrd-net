@@ -176,24 +176,25 @@
                     <div class="mainSearchArea">                        
                         <form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
                             <fieldset>
-                                <div class="searchArea">
+                                <legend>통합검색</legend>
+                                <div class="searchArea">                                    
                                     <div class="inputArea">
-                                        <legend>통합검색</legend>
+                                        <label for="searchTotalKeyword" class="hide">통합검색</label>
                                         <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value="">
                                     </div>  
                                     <div class="btnArea">
                                         <ul class="btnTotalSearchArea">
                                             <li>
-                                                <button type="button" class="btn" id="btnRegion" title="지역검색"><label for="inputRegion">지역</label></button>
-                                                <input type="text" title="지역" name="inputRegion" id="inputRegion" placeholder="강동구" value="">
+                                                <button type="button" class="btn" id="btnRegion" title="지역검색">지역</button>
+                                                <input type="text" title="지역" name="inputRegion" id="inputRegion" placeholder="강동구" value=""><label for="inputRegion" class="hide">지역</label>
                                             </li>
                                             <li>
-                                                <button type="button" class="btn" id="btnCategory" title="분야검색"><label for="inputRegion">분야</label></button>
-                                                <input type="text" title="분야" name="inputCategory" id="inputCategory" placeholder="QM/QC관리" value="">
+                                                <button type="button" class="btn" id="btnCategory" title="분야검색">분야</button>
+                                                <input type="text" title="분야" name="inputCategory" id="inputCategory" placeholder="QM/QC관리" value=""><label for="inputCategory" class="hide">분야</label>
                                             </li>
                                             <li>
-                                                <button type="button" class="btn" id="btnPeriod" title="기간검색"><label for="inputRegion">기간</label></button>
-                                                <input type="text" title="기간" name="inputPeriod" id="inputPeriod" placeholder="8.11~8.21" value="">
+                                                <button type="button" class="btn" id="btnPeriod" title="기간검색">기간</button>
+                                                <input type="text" title="기간" name="inputPeriod" id="inputPeriod" placeholder="8.11~8.21" value=""><label for="inputPeriod" class="hide">기간</label>
                                             </li>
                                             <li><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색"><img src="../new_images/common/btnSearch02.png" alt="검색"></button></li>
                                         </ul>
@@ -934,7 +935,7 @@
                                     </ul>
                                 </div> 
                                 <div id="topTrainingPagination" class="swiper-pagination"></div>  
-                                <div class="btnArea"><a href="검색결과 더보기" class="goLink">검색결과 더보기</a></div>                             
+                                <div class="btnArea"><a href="/" class="goLink">검색결과 더보기</a></div>                             
                             </div>
                         </div>                            
                     </div>
@@ -1034,7 +1035,7 @@
                                             <li class="zone Gangwon"><a href="javascript:void(0);">강원</a></li>
                                             <li class="zone Chungbuk"><a href="javascript:void(0);">충북</a></li>
                                             <li class="zone Chungnam"><a href="javascript:void(0);">충남</a></li>
-                                            <li class="zone Daejeon"><a href="javascript:void(0);">대전</li>
+                                            <li class="zone Daejeon"><a href="javascript:void(0);">대전</a></li>
                                             <li class="zone Gyeongbuk"><a href="javascript:void(0);">경북</a></li>
                                             <li class="zone Daegu"><a href="javascript:void(0);">대구</a></li>
                                             <li class="zone Jeonbuk"><a href="javascript:void(0);">전북</a></li>
@@ -1083,14 +1084,16 @@
                         <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
                     </ul>
                     <div class="footerPolicy">
-                        <ul>                                
-                            <li><a href="/">기관소개</a></li>
-                            <li><a href="/">찾아오시는 길</a></li>
+                        <ul>  
+                            <li class="verM"><a href="/">이용약관</a></li>                              
+                            <li class="verPC"><a href="/">기관소개</a></li>
+                            <li class="verPC"><a href="/">찾아오시는 길</a></li>
                             <li class="on"><a href="/">개인정보처리방침</a></li>
-                            <li><a href="/">저작권보호정책</a></li>
-                            <li><a href="/">공인인증센터</a></li>
-                            <li><a href="/">이메일수집거부</a></li>
-                            <li><a href="/">오픈 API 서비스</a></li>
+                            <li class="verPC"><a href="/">저작권보호정책</a></li>
+                            <li class="verPC"><a href="/">공인인증센터</a></li>
+                            <li class="verPC"><a href="/">이메일수집거부</a></li>
+                            <li class="verPC"><a href="/">오픈 API 서비스</a></li>
+                            <li class="verM"><a href="/">PC화면</a></li>
                         </ul>
                     </div>
                     <ul class="footerMark">
