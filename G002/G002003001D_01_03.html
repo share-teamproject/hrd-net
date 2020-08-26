@@ -18,6 +18,7 @@
     <link href="../new_css/reset.css" rel="stylesheet" />
     <link href="../new_css/layout.css" rel="stylesheet" />
     <link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/kangjiyeon.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" /> 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
@@ -169,7 +170,7 @@
             </div>
             <!-- 헤더 : mobile -->                
             <div class="headerBtn">
-                <!--h1>class="headerLogo"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1-->  
+                <!--div class="headerLogo"><a href="/"><img src="../newimages/common/headerLogo.png" alt="직업훈련포털 HRD-Net"></a></div-->  
                 <button type="button" class="backBtn btn">이전 단계로 돌아가기</button>
                 <button type="button" class="searhBtn btn">검색</button>
                 <button type="button" class="totalMenuBtn btn">전체메뉴</button>
@@ -301,7 +302,8 @@
                         <li class="goHome verPC"><a href="/">홈</a></li>
                         <li class="verPC"><a href="/">MY 서비스</a></li>
                         <li><a href="/">MY 훈련</a></li>
-                        <li class="on"><a href="/">직업훈련이력</a></li>
+						<li><a href="/">과정평가형 자격관리</a></li>
+                        <li class="on"><a href="/">평가결과신고</a></li>
                     </ul>
                 </div>
             </div>
@@ -380,10 +382,10 @@
                         <li>
                             <a href="javascript:void(0);" class="on"><span class="color03">MY</span> 훈련</a>
                             <ul class="dep02">
-                                <li><a href="/" class="noSub on">직업훈련이력</a></li>
+                                <li><a href="/" class="noSub">직업훈련이력</a></li>
                                 <li><a href="/" class="noSub">청년취업아카데미신청</a></li>
-                                <li><a href="javascript:void(0);">과정평가형 자격관리</a> 
-                                    <ul class="dep03">
+                                <li><a href="javascript:void(0);" class="on">과정평가형 자격관리</a> 
+                                    <ul class="dep03 on">
                                         <li><a href="/">평가결과신고</a></li>
                                         <li><a href="/">재평가결과신고</a></li>
                                     </ul>
@@ -452,7 +454,7 @@
 
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle">직업훈련이력</h3>
+                        <h3 class="headingTitle">과정평가형</h3>
                         <!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
                         <div class="headingIcon">
                             <ul>
@@ -466,388 +468,405 @@
                     <div class="contentArea">
 
                         <!-- My훈련 컨텐츠 -->
-                        <div class="myTrainingArea">                          
+                        <div class="myTrainingArea">  
 
-							<div class="">
-								<!-- 텝 인덱스 -->  
-								<div class="tabListArea verPC"> 
-									<ul class="tabList">
-										<li id="tab1" class="on"><button type="button">직업훈련이력</button></li>
-										<li id="tab2"><button type="button">경력개발경로관리</button></li>
-									</ul>
-								</div> 
-								<!--// 텝 인덱스 -->
+							<h5 class="bigTitle02">평가결과 입력</h5>
+							<div class="contListType1Wrap ty2">
+								<ul class="contListType1">
+									<li><strong class="tit">능력단위명</strong><span class="txt">피복아크용접 작업안전보건관리</span></li>
+								</ul>
+								<ul class="contListType1">
+									<li><strong class="tit">NCS 코드</strong><span class="txt">1601050101_16v2</span></li>
+								</ul>
+							</div>
 
-								<!-- 텝 컨텐츠 -->
-                                <div class="tabContents">
-									<section id="section1" role="tabpanel" class="tabCont on">
-										<h3>직업훈련이력 section</h3>
-										<div class="infoBoxArea ty01 verPC">
-											<ul>
-												<li>고용노동부 지정직업훈련시설 기관에서 수강한 과정은 연말정산 시 세액공제 대상이며, "소득공제여부"에 Y로 표시됩니다.</li>
-												<li>본인부담 금액은 정부지원금액을 제외한 본인 부담금액을 의미 합니다.</li>
-												<li>2001년 부터 고용노동부에서 지원하는 훈련과정을 수강하여 HRD-Net에 등록된 개인별 훈련이력을 조회 할 수 있습니다.</li>
-												<li>훈련결과는 훈련기간종료 후 훈련기관에서 결과처리(정상수료 등)를 하기전까지는 '훈련종료'로 표시됩니다.</li>
-												<li>내일배움카드(실업자), 국가기간 훈련생의 경우, 수강평을 등록하셔야 마지막 단위기간 훈련장려금을 받으실 수 있습니다.</li>
-												<li>훈련 참여 중 외부에 공개되지 않는 수강평(부정훈련 관련 내용 포함)을 남기고 싶을 경우 '블라인드 수강후기'를 작성할 수 있습니다.</li>
-												<li>훈련종료 후 수강평 등록은 수료요건 충족(전체 출석률 80%)일부터 종료 후 30일까지 또는 훈련종료(중도탈락일) 후 30일 동안만</li>
-												<li>등록이 가능하며, 등록된 수강평은 30일 이후에도 수정이 가능합니다.</li>
-												<li>과정검색후 조회되는 수강평 및 평점은 과정종료일 이후 조회가 가능합니다.</li>
-												<li>수강포기시 별도의 수강포기정보를 입력하는 팝업창이 노출되며 즉시 수강포기처리되지 않습니다.</li>
-												<li><span class="color02">허위사실, 욕설, 비방 등의 목적으로 수강후기를 작성하는 경우 민ㆍ형사상 책임이 발생할 수 있으며, 동의없이 삭제될 수 있습니다.</span></li>
-											</ul>
-										</div>	
+							<h5 class="bigTitle02">평가결과 입력</h5>
+							<div class="contListWrap">
+                                <ul class="contListType3 ty2">
+                                    <li class="etc">
+                                        <strong class="tit">평가일정</strong>
+                                        <span class="txt">2020-04-09 ~ 2020-04-09</span>
+                                    </li>
+                                    <li>
+                                        <strong class="tit">평가장소</strong>
+                                        <span class="txt">신204</span>
+                                    </li>
+                                    <li>
+                                        <strong class="tit">평가시간</strong>
+                                        <span class="txt">1시간</span>
+                                    </li>
+									 <li>
+                                        <strong class="tit">시설</strong>
+                                        <span class="txt">용접실습실(국소배기장치 등의 환기장치 포함),연삭실,공구재료실,가스보관실</span>
+                                    </li>
+									 <li>
+                                        <strong class="tit">장비</strong>
+                                        <span class="txt">용접작업대(전자세 지그부착)</span>
+                                    </li>
+									 <li>
+                                        <strong class="tit">채점방법</strong>
+                                        <span class="txt">내</span>
+                                    </li>
+                                </ul>
+                            </div>
 
-										<!-- 검색 : mobile -->
-										<div class="searchBox ty2 verM">
-											<fieldset>
-												<legend>직업훈련이력 검색</legend>
-												<dl>                                    
-													<dt><label for="searchItem">구분</label></dt>
-													<dd><select name="searchItem" title="검색 항목 선택" id="searchItem" class="selectBox searchSelect02">
-															<option value="all">전체</option>
-															<option value="title">제목</option>
-															<option value="reply">내용</option>
-															<option value="name">작성자</option>
-														</select>
-														<label for="searchText">검색어</label>
-														<input type="text" value="" placeholder="검색어를 입력하세요." title="검색어" name="searchText" id="searchText">
-														<div class="btnArea"><button type="button" class="searchBtn">검색</button></div>                                        
-													</dd>                                  
-												</dl> 
-											</fieldset>
+							<h5 class="bigTitle02">재평가방법</h5>
+							<div class="choiceArea">
+								<ul>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how01"><label for="how01">포트폴리오</label>
 										</div>
-										<!-- 검색 : mobile -->
-
-										<div class="qnaArea">  
-											<ul>
-												<li>
-													<div tabindex="0" class="qnaQ ty2">
-														<div class="txtQ ty2">
-															<ul class="qnaSection">
-																<li class="txt01">화성전문학교</li>
-																<li class="txt02">2020.06.15 ~ 2020.07.16</li>
-															</ul>
-															<p class="qnaText">제품디자인 및 3D프린팅 제품설계제작</p>
-														</div>
-													</div>
-													<div class="qnaA ty01">
-														<div class="TrainingHistoryBox">
-															<ul>
-																<li>
-																	<dl>
-																		<dt>학습활동서</dt>
-																		<dd>통합심사과정훈련</dd>
-																	</dl>
-																</li>
-																<li class="borL">
-																	<dl>
-																		<dt>학습결과보기</dt>
-																		<dd>정상수료</dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl>
-																		<dt>과정만족도<br /> 본임평가결과</dt>
-																		<dd class="star star01">별 4개</dd>
-																	</dl>
-																</li>
-																<li class="borL">
-																	<dl>
-																		<dt>학습결과보기</dt>
-																		<dd>-</dd>
-																	</dl>
-																</li>
-																<li class="clearW100">
-																	<dl>
-																		<dt>비용지급년도<br />(본인부담금)</dt>
-																		<dd>-</dd>
-																	</dl>
-																</li>
-																<li class="clearW100 verPC">
-																	<dl>
-																		<dt>비고</dt>
-																		<dd>
-																			<span><button type="button" class="goLinkLong02">출석보기</button></span>
-																			<span><button type="button" class="goLinkLong02">정산현황</button></span>
-																			<span><button type="button" class="goLinkLong02">수강평조회</button></span>
-																			<span><button type="button" class="goLinkLong02">시간표</button></span>
-																			<span><button type="button" class="goLinkLong02">만족도 평가</button></span>
-																		</dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-
-														<!-- 버튼  -->
-														<div class="btnGroup ty2">
-															<button type="button" class="btnType2 primary">훈련이력 확인원 출력</button>
-														</div>  
-													</div>
-												</li>												                         
-											</ul>		
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how02"><label for="how02">문제해결시나리오</label>
 										</div>
-									</section>
-									<section id="section2" role="tabpanel" class="tabCont verPC">
-										<h3>경력개발경로관리 section</h3>
-										<div class="infoBoxArea ty01">
-											<ul>
-												<li>경력개발경로관리는 본인의 경력개발경로 설정 및 개발목표 수립을 통해 훈련이력 및 직업경력이력을 관리하는 서비스입니다.</li>
-												<li>본인 직무에 대한 자가 진단을 위해서는 워크넷(WORK.GO.KR)과 NCS시스템(NCS.GO.KR)을 활용하시기 바랍니다.</li>
-											</ul>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how03"><label for="how03">서술형시험 </label>
 										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how04"><label for="how04">논술형시험</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how05"><label for="how05">사례연구</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how06"><label for="how06">평가자 질문</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how07"><label for="how07">평가자 질문</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how08"><label for="how08">피평가자 체크리스트</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how09"><label for="how09">일지/저널</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how10"><label for="how10">역할연기</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how11"><label for="how11">구두발표</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how12"><label for="how12">작업장평가</label>
+										</div>
+									</li>
+									<li>
+										<div class="ui_checkBox">
+											<input type="checkbox" name="how" id="how13"><label for="how13">기타</label>
+										</div>
+									</li>
+								</ul>
+							</div>
 
-										<div class="PathArea">
-											<h5 class="bigTitle02">나의 경력개발경로</h5>
-											<div class="tableArea">
-												<table class="list">
-													<caption>나의 경력개발경로 리스트</caption>
-													<colgroup>
-														<col style="width: 105px;" class="forPC">
-														<col style="width: 125px;">
-														<col style="width: auto;" class="forPC">
-														<col style="width: 145px;" class="forPC">
-													</colgroup>
-													<thead>
-														<tr>
-															<th scope="col" class="forPC">선택</th>
-															<th scope="col">설정일</th>
-															<th scope="col" class="forPC">지원대상</th>
-															<th scope="col" class="last forPC">상태</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td class="forPC"></td>
-															<td>2020-08-10</td>
-															<td class="tl forPC">건설 > 토목 > 토목설계·감리 > <span class="color03">도로설계 실무자 [4수준]</span></td>
-															<td class="last forPC">
-																<span><button type="button" class="btnH26">경로보기</button></span>
-																<span><button type="button" class="btnH26">과정보기</button></span>
-															</td>
-														</tr>
-													</tbody>
-												</table>     											
-											</div> 
+							<h5 class="bigTitle02">교육 . 훈련과정 정보</h5>
+							<div class="contListWrap">
+                                <ul class="contListType3 ty2">
+                                    <li class="etc">
+                                        <strong class="tit">편성 교과목</strong>
+                                        <span class="txt">피복아크용접</span>
+                                    </li>
+                                    <li>
+                                        <strong class="tit">교육 . 훈련시간</strong>
+                                        <span class="txt">15</span>
+                                    </li>
+                                    <li>
+                                        <strong class="tit">평가 담당교수</strong>
+                                        <span class="txt">김임국</span>
+                                    </li>
+									 <li>
+                                        <strong class="tit">비고</strong>
+                                        <span class="txt">비전공자가 대부분임에도 과정 초반에 매우 열성적으로 훈련에 참여하여 아주 우수한 평가 결과를 나타냄.</span>
+                                    </li>
+                                </ul>
+                            </div>
 
-											<!-- 버튼  -->
-											<div class="btnGroup ty2">
-												<button type="button" class="btnType2 primary">선택삭제</button>
-											</div>  
-
-											<h5 class="bigTitle02">경력개발 경로조회</h5>											
-											<div class="RouteSearchBox">
-												<dl>
-													<dt>직무분야</dt>
-													<dd>
-														<div class="ncsSchArea">
-															<div class="ncsSchSort">
-																<strong class="tit tit01">대분류</strong>
-																<div class="inner verPC">
-																	<ul class="ncsSchSortList">
-																		<li><input type="radio" name="ncsSchSort01" id="ncsSchSort01-01"><label for="ncsSchSort01-01" class="on">사회 · 복지 · 종교</label></li>
-																		<li><input type="radio" name="ncsSchSort01" id="ncsSchSort01-02"><label for="ncsSchSort01-02">문화 · 예술 · 디자인</label></li>
-																		<li><input type="radio" name="ncsSchSort01" id="ncsSchSort01-03"><label for="ncsSchSort01-03">운전 · 운송</label></li>
-																		<li><input type="radio" name="ncsSchSort01" id="ncsSchSort01-04"><label for="ncsSchSort01-04">영업 · 판매</label></li>
-																		<li><input type="radio" name="ncsSchSort01" id="ncsSchSort01-05"><label for="ncsSchSort01-05">경비 · 청소</label></li>
-																		<li><input type="radio" name="ncsSchSort01" id="ncsSchSort01-06"><label for="ncsSchSort01-06">이용 숙박 · 여행 · 오락</label></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="ncsSchSort">
-																<strong class="tit tit02">중분류</strong>
-																<div class="inner verPC">
-																	<ul class="ncsSchSortList">
-																		<li><input type="radio" name="ncsSchSort02" id="ncsSchSort02-01"><label for="ncsSchSort02-01">문화 · 예술</label></li>
-																		<li><input type="radio" name="ncsSchSort02" id="ncsSchSort02-02"><label for="ncsSchSort02-02">디자인</label></li>
-																		<li><input type="radio" name="ncsSchSort02" id="ncsSchSort02-03"><label for="ncsSchSort02-03">문화콘텐츠</label></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="ncsSchSort">
-																<strong class="tit tit03">소분류</strong>
-																<div class="inner verPC">
-																	<ul class="ncsSchSortList">
-																		<li><input type="radio" name="ncsSchSort03" id="ncsSchSort03-01"><label for="ncsSchSort03-01">디자인</label></li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-													</dd>
-												</dl>												
-												<!-- 버튼  -->
-												<div class="btnGroup">
-													<button type="button" class="btnType3 primary">검색</button>
-												</div>  
+							<h5 class="bigTitle02">개인별 평가현황</h5>
+							<div class="tableArea ty2">
+								<table class="list">
+									<caption>개인별 평가현황 리스트</caption>
+									<colgroup>
+										<col style="width: 55px;">
+										<col style="width: 100px;">
+										<col style="width: auto;">
+										<col style="width: 100px;">
+										<col style="width: 100px;">
+										<col style="width: auto;">
+										<col style="width: 170px;">
+										<col style="width: 70px;">
+										<col style="width: 170px;">
+									</colgroup>
+									<thead>
+										<tr>
+										  <th rowspan="2">연번</th>
+										  <th rowspan="2">수험번호</th>
+										  <th rowspan="2">성명</th>
+										  <th rowspan="2">생년월일</th>
+										  <th class="brd-b-ty1">정규학습시간</th>
+										  <th rowspan="2">학습률</th>
+										  <th rowspan="2">응시여부</th>
+										  <th rowspan="2">득점</th>
+										  <th rowspan="2" class="last">평가결과</th>
+									  </tr>
+										<tr>
+										  <th>보강학습시간</th>
+									  </tr>
+									</thead>
+									<tbody>
+										<tr>
+										  <td rowspan="2">1</td>
+										  <td rowspan="2">20-04037568</td>
+										  <td rowspan="2">곽태훈</td>
+										  <td rowspan="2">1986-03-20</td>
+										  <td>15시</td>
+										  <td rowspan="2">100%</td>
+										  <td rowspan="2">
+											<div class="ui_radioBox ty2">                                             
+												<input type="radio" checked="checked" value="stare1" name="stare" id="stare1"> 
+												<label for="stare1">응시</label>
 											</div>
-											
-											<h5 class="bigTitle03">※정보기획전략 · 계획 분야 평생경력개발 경로</h5>
-											<div class="tableArea">
-												<table class="list">
-													<caption>정보기획전략 · 계획 분야 평생경력개발 경로 리스트</caption>
-													<colgroup>
-														<col style="width: auto;">
-													</colgroup>
-													<tbody>
-														<tr>
-															<td class="none">선택값이 없습니다.</td>
-														</tr>
-													</tbody>
-												</table>     											
-											</div> 
-
-											<div class="tableArea ty2">
-												<table class="list">
-													<caption>나의 경력개발경로 리스트</caption>
-													<colgroup>
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-													</colgroup>
-													<thead>
-														<tr>
-															<th scope="col">구분</th>
-															<th scope="col">1수준</th>
-															<th scope="col">2수준</th>
-															<th scope="col">3수준</th>
-															<th scope="col">4수준</th>
-															<th scope="col">5수준</th>
-															<th scope="col">6수준</th>
-															<th scope="col">7수준</th>
-															<th scope="col" class="last">8수준</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>방재시설</td>
-															<td>-</td>
-															<td>-</td>
-															<td>초급<br />산업기사</td>
-															<td>중급 기사</td>
-															<td>고급<br />숙련기사</td>
-															<td>-</td>
-															<td>-</td>
-															<td class="last"></td>
-														</tr>
-														<tr>
-															<td>방재시설</td>
-															<td>-</td>
-															<td>-</td>
-															<td>초급<br />산업기사</td>
-															<td>중급 기사</td>
-															<td>고급<br />숙련기사</td>
-															<td>-</td>
-															<td>-</td>
-															<td class="last"></td>
-														</tr>
-														<tr>
-															<td>방재시설</td>
-															<td>-</td>
-															<td>-</td>
-															<td>초급<br />산업기사</td>
-															<td>중급 기사</td>
-															<td>고급<br />숙련기사</td>
-															<td>-</td>
-															<td>-</td>
-															<td class="last"></td>
-														</tr>
-													</tbody>
-												</table>     											
-											</div> 
-
-											<!-- 버튼  -->
-											<div class="btnGroup ty2">
-												<button type="button" class="btnType2 primary">선택삭제</button>
+											<div class="ui_radioBox ty2">   
+												<input type="radio" value="stare2" name="stare" id="stare2"> 
+												<label for="stare2">미응시</label>
 											</div>  
+										  </td>
+										  <td rowspan="2"><input type="text" value="" placeholder="100" title="" name="num" id="num" class="selectW50"></td>
+										  <td rowspan="2" class="last">
+											<div class="ui_radioBox ty2">                                             
+												<input type="radio" checked="checked" value="Pass" name="Pass" id="Pass"> 
+												<label for="Pass">Pass</label>
+											</div>
+											<div class="ui_radioBox ty2">   
+												<input type="radio" value="Fall" name="Fall" id="Fall"> 
+												<label for="Fall">Fall</label>
+											</div>  
+										  </td>
+									  </tr>
+										<tr>
+										  <td>0시간</td>
+									  </tr>
+									</tbody>
+								</table>     						               
+							</div>   
 
-											<h5 class="bigTitle02">나의 훈련참여 이력 토목설계·감리</h5>
-											<div class="tableArea ty2">
-												<table class="list">
-													<caption>나의 경력개발경로 리스트</caption>
-													<colgroup>
-														<col style="width: 80px;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-													</colgroup>
-													<thead>
-														<tr>
-															<th scope="col">No</th>
-															<th scope="col">훈련과정</th>
-															<th scope="col">수준</th>
-															<th scope="col">훈련기관</th>
-															<th scope="col">훈련기간</th>
-															<th scope="col">상태</th>
-															<th scope="col" class="last">훈련시간</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td colspan="7" class="last none">조건에 맞는 데이터 없습니다. </td>
-														</tr>
-													</tbody>
-												</table>     											
-											</div> 
+							<h5 class="bigTitle02">시험위원 활용</h5>
+							<div class="tableArea ty2">
+								<table class="list">
+									<caption>개인별 평가현황 리스트</caption>
+									<colgroup>
+										<col style="width: auto;">
+										<col style="width: 100px;">
+										<col style="width: 150px;">
+										<col style="width: 100px;">
+										<col style="width: 85px;">
+										<col style="width: 165px;">
+										<col style="width: 180px;">								
+									</colgroup>
+									<thead>
+										<tr>
+										  <th>구분</th>
+										  <th>참여일자</th>
+										  <th>소속</th>
+										  <th>직위</th>
+										  <th>성명</th>
+										  <th>내외부구분</th>
+										  <th class="last">활용구분</th>
+									  </tr>
+									</thead>
+									<tbody>
+										<tr>
+										  <td>출제위원<br />시행(평가)위원</td>
+										  <td><input type="text" value="date" placeholder="20200423" title="date" name="date" id="date" class="selectW80"></td>
+										  <td><input type="text" value="belong" placeholder="대구직업전문학교" title="belong" name="belong" id="belong" class="selectW130"></td>
+										  <td><input type="text" value="teacher" placeholder="훈련교사" title="teacher" name="teacher" id="teacher" class="selectW80"></td>
+										  <td><input type="text" value="user" placeholder="홍길동" title="user" name="user" id="user" class="selectW65"></td>
+										  <td>
+											<div class="ui_radioBox ty2">                                             
+												<input type="radio" checked="checked" value="inside" name="inside" id="inside"> 
+												<label for="inside">내부</label>
+											</div>
+											<div class="ui_radioBox ty2">   
+												<input type="radio" value="outside" name="outside" id="outside"> 
+												<label for="outside">외부</label>
+											</div>  
+										  </td>
+										  <td class="last">
+											<div class="ui_radioBox ty2">                                             
+												<input type="radio" checked="checked" value="uses1" name="uses1" id="uses1"> 
+												<label for="uses1">산업계</label>
+											</div>
+											<div class="ui_radioBox ty2">   
+												<input type="radio" value="uses2" name="uses2" id="uses2"> 
+												<label for="uses2">교육계</label>
+											</div>
+										  </td>
+									  </tr>
+									</tbody>
+								</table>     						               
+							</div>
 
-											<h5 class="bigTitle02">직무분야 수준별 훈련과정 도로설계 실무자[4수준]</h5>
-											<div class="tableArea ty2">
-												<table class="list">
-													<caption>나의 경력개발경로 리스트</caption>
-													<colgroup>
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-														<col style="width: auto;">
-													</colgroup>
-													<thead>
-														<tr>
-															<th scope="col">훈련과정</th>
-															<th scope="col">수준</th>
-															<th scope="col">훈련기관</th>
-															<th scope="col">지역</th>
-															<th scope="col" class="last">훈련기간</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td></td>
-															<td></td>
-															<td></td>
-															<td></td>
-															<td class="last"></td>
-														</tr>
-													</tbody>
-												</table>     											
-											</div> 
+							<h5 class="bigTitle02">특이사항</h5>
+							<div class="textareaBoxLine">
+								<div class="textareaBox">
+									<textarea title="" placeholder="비전공자가 대부분임에도 과정 초반에 매우 열성적으로 훈련에 참여하여 아주 우수한 평가 결과를 나타냄." rows="5" cols="60" name="Uniqueness" id="Uniqueness"></textarea>
+								</div>  
+							</div>
 
-											<!-- paging : pc -->
-											<div class="pagenation">
-												<a href="/" class="pb prev">이전보기</a>
-												<a href="/" class="on">1</a>
-												<a href="/">2</a>
-												<a href="/">3</a>
-												<a href="/">4</a>
-												<a href="/">5</a>
-												<a href="/">6</a>
-												<a href="/">7</a>
-												<a href="/" class="pb next">다음보기</a>
-											</div> 
-											<!-- //paging : pc -->
-										</div>
-									</section>
-								</div>
-								 <!--// 텝 컨텐츠 -->
-							</div>         
+							<h5 class="bigTitle02">평가결과 점검</h5>
+							<h6 class="bigTitle04">우수한점</h6>
+							<div class="textareaBoxLine">
+								<div class="textareaBox">
+									<textarea title="" placeholder="비전공자가 대부분임에도 과정 초반에 매우 열성적으로 훈련에 참여하여 아주 우수한 평가 결과를 나타냄." rows="5" cols="60" name="ResultCheck" id="ResultCheck"></textarea>
+								</div>  
+							</div>
+
+							<h6 class="bigTitle04">미숙한점</h6>
+							<div class="textareaBoxLine">
+								<div class="textareaBox">
+									<textarea title="" placeholder="특별히 미흡한 점은 없음." rows="5" cols="60" name="ResultCheck2" id="ResultCheck2"></textarea>
+								</div>  
+							</div>
+							
+							<h5 class="bigTitle02">시행자료 (첨부파일)</h5>
+							<div class="contListWrap">
+                                <ul class="contListType3 ty2">                                    
+                                    <li>
+                                        <strong class="tit">순번</strong>
+                                        <span class="txt">1</span>
+                                    </li>
+                                    <li>
+                                        <strong class="tit">파일명</strong>
+                                        <span class="txt">피복아크용접 작업안전보건관리 시행자료.pdf</span>
+                                    </li>
+									 <li>
+                                        <strong class="tit">파일크기</strong>
+                                        <span class="txt">756834</span>
+                                    </li>
+									 <li>
+                                        <strong class="tit">다운로드</strong>
+                                        <span class="txt"><button type="button" class="download Mdn">다운로드</button></span>
+                                    </li>
+                                </ul>
+                            </div>
+
+							<h5 class="bigTitle02">작품자료 (첨부파일)</h5>
+							<div class="contListWrap">
+                                <ul class="contListType3 ty2">                                    
+                                    <li>
+                                        <strong class="tit">순번</strong>
+                                        <span class="txt">1</span>
+                                    </li>
+                                    <li>
+                                        <strong class="tit">파일명</strong>
+                                        <span class="txt">피복아크용접 작업안전보건관리 시행자료.pdf</span>
+                                    </li>
+									 <li>
+                                        <strong class="tit">파일크기</strong>
+                                        <span class="txt">756834</span>
+                                    </li>
+									 <li>
+                                        <strong class="tit">다운로드</strong>
+                                        <span class="txt"><button type="button" class="download Mdn">다운로드</button></span>
+                                    </li>
+                                </ul>
+                            </div>
+
+							<h5 class="bigTitle02">작품보관 계획</h5>
+							<div class="textareaBoxLine">
+								<div class="textareaBox">
+									<textarea title="" placeholder="특별히 미흡한 점은 없음." rows="5" cols="60" name="storagePlan" id="storagePlan"></textarea>
+								</div>  
+							</div>
+
+							<h5 class="bigTitle02">재평가 대상</h5>
+							<div class="tableArea">
+								<table class="list">
+									<caption>재평가 대상 리스트</caption>
+									<colgroup>
+										<col style="width: auto;">
+										<col style="width: auto;">
+										<col style="width: auto;">
+										<col style="width: auto;">
+										<col style="width: auto;">
+									</colgroup>
+									<thead>
+										<tr>
+										  <th>교육기간</th>
+										  <th>교육기간</th>
+										  <th>시설</th>
+										  <th>장비</th>
+										  <th class="last">비고</th>
+									  </tr>
+									</thead>
+									<tbody>
+										<tr>
+										 <td colspan="5" class="last none">해당 데이터가 없습니다.</td>
+									  </tr>
+									</tbody>
+								</table>     						               
+							</div>
+
+							<h5 class="bigTitle02">재교육 계획</h5>
+							<div class="tableArea">
+								<table class="list">
+									<caption>재교육 계획 리스트</caption>
+									<colgroup>
+										<col style="width: auto;">
+										<col style="width: auto;">
+										<col style="width: auto;">
+										<col style="width: auto;">
+										<col style="width: auto;">
+									</colgroup>
+									<thead>
+										<tr>
+										  <th>교육기간</th>
+										  <th>교육기간</th>
+										  <th>시설</th>
+										  <th>장비</th>
+										  <th class="last">비고</th>
+									  </tr>
+									</thead>
+									<tbody>
+										<tr>
+										 <td colspan="5" class="last none">해당 데이터가 없습니다.</td>
+									  </tr>
+									</tbody>
+								</table>     						               
+							</div>
+
+							<h5 class="bigTitle02">재평가 방법</h5>
+							<div class="textareaBoxLine">
+								<div class="textareaBox">
+									<textarea title="" placeholder="" rows="5" cols="60" name="reevaluation" id="reevaluation"></textarea>
+								</div>  
+							</div>
+
+							<div class="btnGroup">
+								<button type="button" class="btnType1 primary">목록</button>
+							</div>  
+							
                         </div>
                         <!-- // My훈련 컨텐츠 -->
 
@@ -919,7 +938,7 @@
                     <li class="my"><a href="/"><span>My</span></a></li>
                     <li class="alam"><a href="/"><span>알림</span></a></li>
                 </ul>
-            </nav>            
+            </nav>        
         </div> 
         <!-- //하단 고정 메뉴 : Mobile -->
     </div>

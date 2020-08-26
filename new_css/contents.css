@@ -40,7 +40,8 @@
 #subContentWrap .lnbArea .dep02 > li > a:after { position:absolute; top:19px; right:15px; width:12px; height:6px; content:''; background:url('../new_images/common/arrowQna.png') no-repeat; background-position:0 -6px; background-size:12px 12px;  }
 #subContentWrap .lnbArea .dep02 > li > a.on:after { top:18px; background-position:0 0; }
 #subContentWrap .lnbArea .dep02 > li > a.noSub:after { background:none; width:0; height:0; } 
-#subContentWrap .lnbArea .dep03 { display:none;background:#f9fafd; }
+#subContentWrap .lnbArea .dep03 { display:none; background:#f9fafd; }
+#subContentWrap .lnbArea .dep03.on { display:block; }
 #subContentWrap .lnbArea .dep03 > li > a { position:relative; width:100%; display:block; padding:0 30px 0 37px; font-size:14px; line-height:36px; color:#727476; }
 #subContentWrap .lnbArea .dep03 > li > a:hover,  
 #subContentWrap .lnbArea .dep03 > li > a.on { font-weight:500; color:#446ac4; text-decoration:underline; }

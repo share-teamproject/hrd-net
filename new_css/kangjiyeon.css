@@ -1,35 +1,95 @@
 @charset "utf-8";
 
+/* ==============================
+* table
+* ============================== */
 .tableArea td { position:relative; }
 .tableArea table.list td.none { padding:40px 0;}
 .tableBtnList {position:absolute;top:14px; right:20px;}
 .tableBtnList li {float:left;padding-left:12px;}
 
 .tableArea + .ty2 {margin-top:40px;}
+.tableArea .selectW50 { min-width:50px; width:50px; }
+.tableArea .selectW65 { min-width:65px; width:65px; }
+.tableArea .selectW80 { min-width:80px; width:80px; }
+.tableArea .selectW130 { min-width:130px; width:130px; }
+.tableArea .selectW160 { min-width:160px; width:160px; }
+.tableArea .selectW180 { min-width:180px; width:180px; }
+.tableArea .selectW210 { min-width:210px; width:210px; }
+.tableArea .selectW243 { min-width:243px; width:243px; }
+.tableArea .selectW250 { min-width:250px; width:250px; }
+.tableArea .selectW692 { min-width:692px; width:692px; }
+.tableArea .btnW60 { min-width:60px; width:60px; padding:0; }
 
+
+/* ==============================
+* radio
+* ============================== */
+.ui_radioBox.ty2 { padding-left:30px; }
+.ui_radioBox.ty2 + .ui_radioBox.ty2 { margin-left:0; }
+.ui_radioBox.ty2 + br + .ui_radioBox.ty2 { margin-left:0; }
+.ui_radioBox.ty2 label { margin-right:10px; }
+
+/* ==============================
+* button
+* ============================== */
 .btnGroup.ty2 { display:block; text-align:right; }
 /* 바로가기 */
 .goLinkLong02 {display:inline-block; min-width:80px; height:26px; line-height:24px; padding:0 20px; text-align:center; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51;}
 .btnH26 {display:inline-block; min-width:112px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:24px;}
+/* 다운로드버튼 */
+button.download, a.download { min-width:75px; display:inline-block; text-align:center; background:#c9d3e8; color:#4e4f51; font-size:12px; line-height:26px; height:26px; padding:0 10px; box-sizing:border-box; }
+.download.grey { border:1px #cdcdd1 solid; color:#4e4f51; background:#fff; }
+button.lookupBtn, a.lookupBtn { display:inline-block; min-width:65px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:24px; }
+button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:center; font-size:14px; color:#4e4f51; border:1px solid #cdcdd1; line-height:24px; }
+
+
+/* ==============================
+* etc
+* ============================== */
+.brd-b-ty1 {border-bottom:1px solid #e2e2e4 !important;}
+
+
+
+
 
 /* ==============================
 * 공통 컨텐츠
 * ============================== */
 
 #subContentWrap .lnbAreaTy1 { width:240px; text-align:left; }
-#subContentWrap .lnbAreaTy1 > ul { width:200px; border-bottom:1px solid #dcdcdd; } 
+#subContentWrap .lnbAreaTy1 > ul { width:210px; border-bottom:1px solid #dcdcdd; } 
 #subContentWrap .lnbAreaTy1 > ul > li { border-top:1px solid #eee; height: 45px; line-height: 45px; padding:0 15px; }
 #subContentWrap .lnbAreaTy1 > ul > li:first-child { border-top:none; }
-#subContentWrap .lnbAreaTy1 > ul > li > a { font-size:16px; color:#727476; }
+#subContentWrap .lnbAreaTy1 > ul > li > a { font-size:15px; color:#727476; }
 #subContentWrap .lnbAreaTy1 > ul > li > a:hover, 
 #subContentWrap .lnbAreaTy1 > ul > li > a.on { color:#4e4f51; font-weight:500; }
+#subContentWrap .lnbAreaTy1 > ul .top { font-size:16px; font-weight:500; }
+
+#subContentWrap .subContArea .headingTitleArea .headingTitle .depth4 { color:#727476; font-size:26px; }
+
+/* 검색박스 */
+#subContentWrap .subContArea .searchBox.ty2 {margin-bottom:50px; padding:22px 0 20px 55px;}
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect03 { width:200px }
+#subContentWrap .subContArea .searchBox.ty2 .btnArea {padding-left:18px;}
+#subContentWrap .subContArea .searchBox.ty2 .btnArea button { width:80px; padding:0; margin-left:-5px; }
+#subContentWrap .subContArea .searchBox.ty2 .btnArea button:last-child {border-left:1px #4171df solid;}
+#subContentWrap .subContArea .searchBox.ty2 .btnGroup { margin-top:10px; }
+.dateSelect { display:inline; position:relative;}
+.dateSelect .btn_calendar { position:absolute; top:5px; right:15px; width:20px; height:19px; background:url('../new_images/common/inoCalendar.png') no-repeat;  }
+.dateSelectTxt01 { display:inline-block; width:28px; text-align:center;}
+
+#subContentWrap .subContArea .searchBox.ty3 {margin-bottom:50px; padding:12px 0 20px 55px;}
+#subContentWrap .subContArea .searchBox.ty3 > fieldset > dl > dt,
+#subContentWrap .subContArea .searchBox.ty3 > fieldset > dl > dd { height:95px; line-height:95px; margin-top:-15px; border-bottom:1px #f4f4f4 solid; }
+#subContentWrap .subContArea .searchBox.ty3 .btnGroup  { margin-top:10px; }
 
 
 /* ==============================
 * MY서비스
 * ============================== */ 
 
-/* MY훈련 - 직업훈련이력 */
+/* MY훈련 */
 .myTrainingArea { margin-top:15px; }
 #subContentWrap .infoBoxArea.ty01 { border:3px #e1e4e9 solid; padding:12px 25px; margin:40px 0 30px 0;}
 #subContentWrap .infoBoxArea.ty01 > ul >li { position:relative; font-size:14px; color:#767676; line-height:44px; padding-left:12px; }
@@ -63,6 +123,38 @@
 .RouteSearchBox .ncsSchSortList > li > label:focus:after,
 .RouteSearchBox .ncsSchSortList > li > label:hover:after {content:''; position:absolute; top:50%; right:18px; display:inline-block; width:16px; height:11px; margin-top:-5px; background:url('../new_images/common/checkSelect.png')}
 
+.myTrainingArea > .contListWrap {padding-top:0;}
+
+#subContentWrap .contListType1Wrap.ty2 {margin-bottom:50px;}
+
+#subContentWrap .contListType3.ty2 { margin-bottom:50px;  }
+#subContentWrap .contListType3.ty2 li {padding:14px 0; }
+#subContentWrap .contListType3.ty2 li .download {display:inline; margin-left:15px; }
+#subContentWrap .contListType3.ty2 li .download.Mdn {margin-left:0; }
+
+#subContentWrap .contListType4.ty2 {margin:-18px 0;}
+#subContentWrap .contListType4.ty2 li {position:relative; padding:14px 0; }
+
+.choiceArea { border:3px #e1e4e9 solid; margin-bottom:50px; padding:15px 0 15px 40px; }
+.choiceArea > ul { display:table; width:100%; }
+.choiceArea > ul > li {display:table-cell; width:24%; display:inline-block; padding:5px 0; margin:0; }
+
+.myTrainingArea .tableArea.ty2 {margin-bottom:50px;}
+.myTrainingArea .tableArea.ty2 .list th, 
+.myTrainingArea .tableArea.ty2 .list td {padding:14px 5px;}
+
+.textareaBoxLine { border:1px #e2e2e4 solid; padding:20px; margin-bottom:50px; }
+.textareaBoxLine .textareaBox textarea {height:150px;}
+.textareaBoxLine .textareaBox2 textarea {height:100px;}
+
+.AddFilesArea { border-top:2px #727476 solid; margin-bottom:50px; }
+.AddFilesArea .fileBox {overflow:hidden; padding:20px 0; }
+.AddFilesArea .fileBox dt { float:left; position:relative; font-size:14px; }
+.AddFilesArea .fileBox dt span {padding-left:5px; }
+.AddFilesArea .fileBox dt .btnDelete { position:absolute; top:2px; right:-30px; width:21px; height:21px; background:url('../new_images/common/icoFileDelete.png') no-repeat;  }
+.AddFilesArea .fileBox dd { float:right; color:#767676; font-size:13px; }
+.AddFilesArea .dragBox {color:#767676; font-size:14px; border:3px #e1e4e9 solid; height:74px; line-height:74px; text-align:center; }
+.AddFilesArea .fileBtnBox { background:#f7f7f7; padding:25px; }
 
 /* 비대면 - 목록 */
 .applicationBox { position:relative; border:1px #e4e7ee solid; padding:15px 0; margin:15px 0 20px 0; }
@@ -74,8 +166,18 @@
 
 .processArea { margin-top:50px;}
 
+/* 타이틀 */
+.bigTitle02List {overflow:hidden;}
+.bigTitle02List dt {float:left;}
+.bigTitle02List dd {float:right;}
 .bigTitle02 {font-weight:500; font-size:22px; color:#292a2d; height:42px; }
 .bigTitle03 {font-weight:500; font-size:18px; color:#292a2d; height:40px;}
+.bigTitle04 {position:relative;font-weight:500; font-size:16px; color:#5b648a; height:30px; padding-left:12px; }
+.bigTitle04:before{content:''; position:absolute; top:10px; left:0; width:4px;height:4px; background:#5b648a; border-radius:50%; }
+
+
+/* 비대면 훈련상담 */
+#myStateWrap .myStateArea .myStateBox .myState2 { width:182px; }
 
 
 
