@@ -101,5 +101,22 @@
 .qrAreaCross {height:calc(100% - 190px); background:url(../new_images/common/icoQrCross.png) no-repeat center center;}
 
 
-
-
+/* 달력 */
+[data-calendar] {margin-top:20px; }
+[data-calendar] .calendar_header {text-align:center;}
+[data-calendar] .calendar_tit {padding:15px; background:#ca0464; font-size:30px; line-height:1.2; color:#fff;}
+[data-calendar] .calendar_info {display:table; position:relative; width:100%; height:80px; background:#e7e9f0;}
+[data-calendar] .calendar_info .date {display:table-cell; font-size:30px; line-height:1.2; vertical-align:middle; color:#333;}
+[data-calendar] .calendar_info .ctr button {overflow:hidden; position:absolute; top:50%; width:12px; height:24px; margin-top:-12px; text-indent:-9999px;}
+[data-calendar] .calendar_info .ctr .prev {left:30px;}
+[data-calendar] .calendar_info .ctr .prev:before {content:''; position:absolute; top:0; left:0; border-right: 12px solid #727476; border-top:12px solid transparent; border-bottom:12px solid transparent; box-sizing:border-box;}
+[data-calendar] .calendar_info .ctr .prev:after {content:''; position:absolute; top:0; left:3px; border-right: 12px solid #e7e9f0; border-top:12px solid transparent; border-bottom:12px solid transparent; box-sizing:border-box;}
+[data-calendar] .calendar_info .ctr .next:before {content:''; position:absolute; top:0; right:0; border-left: 12px solid #727476; border-top:12px solid transparent; border-bottom:12px solid transparent; box-sizing:border-box;}
+[data-calendar] .calendar_info .ctr .next:after {content:''; position:absolute; top:0; right:3px; border-left: 12px solid #e7e9f0; border-top:12px solid transparent; border-bottom:12px solid transparent; box-sizing:border-box;}
+[data-calendar] .calendar_info .ctr .next {right:30px;}
+[data-calendar-table] {padding:30px 0; border: 2px solid #e2e2e4; border-top:0;}
+[data-calendar-table] table {border:0;}
+[data-calendar-table] td {position:relative; height:85px; vertical-align:top; text-align: center;}
+[data-calendar-table] td .num {display:inline-block; width:45px; font-size:20px; line-height:48px; border-radius:50%;}
+[data-calendar-table] td.today .num {background:#536acd; color:#fff;}
+[data-calendar-table] td .msg {padding-top:8px; font-weight:500; font-size:22px; line-height:1; color: #5b648a;}

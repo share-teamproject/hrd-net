@@ -70,7 +70,7 @@
                             <div class="gnbSubArea gnbSub02">
                                 <ul>
                                     <li>
-                                        <a href="">정부지원사업안내</a>
+                                        <a href="/">정부지원사업안내</a>
                                         <ul class="navDepthArea02">
                                             <li><a href="/">정부지원사업안내</a></li>
                                             <li><a href="/">훈련안내 및 절차</a></li>
@@ -105,21 +105,21 @@
                                             <li><a href="/">직업사전검색</a></li>
                                         </ul>                                  
                                     </li>
-                                    <li><a href="">학과정보</a>
+                                    <li><a href="/">학과정보</a>
                                         <ul>
                                             <li><a href="/">법령정보</a></li>
                                             <li><a href="/">업무서식 및 규정</a></li>
                                         </ul>
-                                        <a href="">NCS 분류체계</a><br>
-                                        <a href="">훈련/교육통계</a><br>
-                                        <a href="">스타훈련교사</a>
+                                        <a href="/">NCS 분류체계</a><br>
+                                        <a href="/">훈련/교육통계</a><br>
+                                        <a href="/">스타훈련교사</a>
                                     </li>
-                                    <li><a href="">강사뱅크</a><br>
-                                        <a href="">훈련기관평가정보</a>
+                                    <li><a href="/">강사뱅크</a><br>
+                                        <a href="/">훈련기관평가정보</a>
                                         <ul>
-                                            <li><a href="">집체훈련</a></li>
-                                            <li><a href="">혼합훈련</a></li>
-                                            <li><a href="">원격훈련</a></li>
+                                            <li><a href="/">집체훈련</a></li>
+                                            <li><a href="/">혼합훈련</a></li>
+                                            <li><a href="/">원격훈련</a></li>
                                         </ul>
                                     </li>
                                 </ul-->
@@ -128,12 +128,12 @@
                         <li><a href="javascript:void(0);">일학습병행</a>
                             <div class="gnbSubArea gnbSub04">
                                 <ul>
-                                    <li><a href="">일학습병행제란</a><br>
-                                        <a href="">운영기관</a><br>
-                                        <a href="">자료공강</a>
+                                    <li><a href="/">일학습병행제란</a><br>
+                                        <a href="/">운영기관</a><br>
+                                        <a href="/">자료공강</a>
                                     </li>
-                                    <li><a href="">외부평가</a><br>
-                                        <a href="">훈련과정개발보고서(PDMS)</a>
+                                    <li><a href="/">외부평가</a><br>
+                                        <a href="/">훈련과정개발보고서(PDMS)</a>
                                     </li>
                                 </ul>
                             </div>       
@@ -146,7 +146,7 @@
                                         <form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
                                             <fieldset>
                                                 <legend>통합검색</legend>
-                                                <lable for="searchTotalKeyword" class="hide">검색어</lable>
+                                                <label for="searchTotalKeyword" class="hide">검색어</label>
                                                 <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value=""><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색">검색</button>
                                             </fieldset>
                                         </form>                                    
@@ -304,13 +304,13 @@
                     </ul>
 
                     <!-- 2depth 이상인 경우 -->
-                    <!--ul>
+                    <!-- <ul>
                         <li class="goHome verPC"><a href="/">홈</a></li>
                         <li class="verPC"><a href="/">My서비스</a></li>
                         <li><a href="/">My카드</a></li>
                         <li><a href="/">국민내일배움카드</a></li>
                         <li class="on last"><a href="/">사용내역조회</a></li>
-                    </ul-->
+                    </ul> -->
                     <!-- //2depth 이상인 경우 -->
                 </div>
             </div>
@@ -375,13 +375,191 @@
 								<!-- 텝 컨텐츠 -->
                                 <div class="tabContents mt30">
 									<section id="section1" role="tabpanel" class="tabCont on">
-										<img src="../new_images/temp/@cal.jpg" alt="">
+                                        <!-- 달력 -->
+										<div data-calendar="">
+											<div class="calendar_header">
+												<div class="calendar_info">
+													<div class="date">2019. 06</div>
+													<div class="ctr">
+														<button type="button" class="prev change_month">이전</button>
+														<button type="button" class="next change_month">다음</button>
+													</div>
+												</div>
+											</div>
+
+                                            <!-- 일자 출력 부분 -->
+                                            <div data-calendar-table="">
+                                                <table>
+                                                    <colgroup>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                            			<tr>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td>
+                                            					<span class="num">1</span>
+                                                                <p class="msg">결석</p>
+                                            				</td>
+                                                        </tr>
+														<tr>
+															<td>
+																<span class="num">2</span>
+																<p class="msg">결석</p>
+															</td>
+															<td>
+																<span class="num">3</span>
+																<p class="msg">결석</p>
+															</td>
+															<td>
+																<span class="num">4</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">5</span>
+																<p class="msg"></p>
+															</td>
+															<td class="today">
+																<span class="num">6</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">7</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">8</span>
+																<p class="msg"></p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="num">9</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">10</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">11</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">12</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">13</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">14</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">15</span>
+																<p class="msg"></p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="num">16</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">17</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">18</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">19</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">20</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">21</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">22</span>
+																<p class="msg"></p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="num">23</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">24</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">25</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">26</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">27</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">28</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">29</span>
+																<p class="msg"></p>
+															</td>
+														</tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="num">30</span>
+                                                                <p class="msg"></p>
+                                                            </td>
+                                                            <td>
+                                                                <span class="num">31</span>
+                                                                <p class="msg"></p>
+                                                            </td>
+                                                            <td class="no_item"></td>
+                                                            <td class="no_item"></td>
+                                                            <td class="no_item"></td>
+                                                            <td class="no_item"></td>
+                                                            <td class="no_item"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- //일자 출력 부분 -->
+                                        </div>
+                                        <!--// 달력 -->
 									</section>
+
 
 									<section id="section2" role="tabpanel" class="tabCont">
 										<div class="tableArea">
 											<table class="view tblCenterAlign tblBrdAll">
-												<caption></caption>
+												<caption>출결 표</caption>
 												<colgroup>
 													<col style="width:57%;">
 													<col>
