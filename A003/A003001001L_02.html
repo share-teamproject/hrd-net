@@ -16,12 +16,12 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout_m.css" rel="stylesheet" />
-    <link href="../new_css/contents_m.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" /> 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
-    <script src="../new_js/ui_m.js"></script>
+    <script src="../new_js/ui.js"></script>
 </head>
 
 <body>
@@ -146,7 +146,7 @@
                                         <form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
                                             <fieldset>
                                                 <legend>통합검색</legend>
-                                                <lable for="searchTotalKeyword" class="hide">검색어</lable>
+                                                <label for="searchTotalKeyword" class="hide">검색어</label>
                                                 <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value=""><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색">검색</button>
                                             </fieldset>
                                         </form>                                    
@@ -303,15 +303,7 @@
                         <li class="verPC"><a href="/">회원가입</a></li>
                     </ul>
 
-                    <!-- 2depth 이상인 경우 -->
-                    <!--ul>
-                        <li class="goHome verPC"><a href="/">홈</a></li>
-                        <li class="verPC"><a href="/">My서비스</a></li>
-                        <li><a href="/">My카드</a></li>
-                        <li><a href="/">국민내일배움카드</a></li>
-                        <li class="on last"><a href="/">사용내역조회</a></li>
-                    </ul-->
-                    <!-- //2depth 이상인 경우 -->
+                    
                 </div>
             </div>
             <!-- //상단 비주얼 영역 -->
@@ -554,71 +546,73 @@
     </div>
     <!-- //메인 컨텐츠영역 -->
 
-    <!-- 푸터영역 -->
-    <footer id="footerWrap">
-        <div class="footerArea">                
-            <div class="footerCont">
-                <div class="footerLink">
-                    <ul class="swiper-wrapper">
-                        <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
-                        <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
-                        <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
-                        <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
-                        <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
-                        <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
-                        <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
-                        <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
-                        <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
-                        <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
+        <!-- 푸터영역 -->
+        <footer id="footerWrap">
+            <div class="footerArea">                
+                <div class="footerCont">
+                    <div class="footerLink">
+                        <div class="swiper-container" id="footerLink">
+                            <ul class="swiper-wrapper">
+                                <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
+                                <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
+                                <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
+                                <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
+                                <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
+                                <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
+                                <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
+                                <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
+                                <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
+                                <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
+                            </ul>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>    
+                    </div> 
+                    <ul class="footerLogo">
+                        <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
+                        <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
                     </ul>
-                </div> 
-                <ul class="footerLogo">
-                    <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
-                    <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
-                </ul>
-                <div class="footerPolicy">
-                    <ul>  
-                        <li class="verM"><a href="/">이용약관</a></li>                              
-                        <li class="verPC"><a href="/">기관소개</a></li>
-                        <li class="verPC"><a href="/">찾아오시는 길</a></li>
-                        <li class="on"><a href="/">개인정보처리방침</a></li>
-                        <li class="verPC"><a href="/">저작권보호정책</a></li>
-                        <li class="verPC"><a href="/">공인인증센터</a></li>
-                        <li class="verPC"><a href="/">이메일수집거부</a></li>
-                        <li class="verPC"><a href="/">오픈 API 서비스</a></li>
-                        <li class="verM"><a href="/">PC화면</a></li>
+                    <div class="footerPolicy">
+                        <ul>  
+                            <li class="verM"><a href="/">이용약관</a></li>                              
+                            <li class="verPC"><a href="/">기관소개</a></li>
+                            <li class="verPC"><a href="/">찾아오시는 길</a></li>
+                            <li class="on"><a href="/">개인정보처리방침</a></li>
+                            <li class="verPC"><a href="/">저작권보호정책</a></li>
+                            <li class="verPC"><a href="/">공인인증센터</a></li>
+                            <li class="verPC"><a href="/">이메일수집거부</a></li>
+                            <li class="verPC"><a href="/">오픈 API 서비스</a></li>
+                            <li class="verM"><a href="/">PC화면</a></li>
+                        </ul>
+                    </div>
+                    <ul class="footerMark">
+                        <li><a href="javascript:window.open('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&amp;certNum=2019-N009','seal','width=527,height=720,location=no,status=no,scrollbars=no')" title="새창"><img src="../new_images/common/footerMark01.png" alt="ePRIVACY마크(개인정보보호마크)"></a></li>
+                        <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerMark02.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"></a></li>
                     </ul>
-                </div>
-                <ul class="footerMark">
-                    <li><a href="javascript:window.open('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&amp;certNum=2019-N009','seal','width=527,height=720,location=no,status=no,scrollbars=no')" title="새창"><img src="../new_images/common/footerMark01.png" alt="ePRIVACY마크(개인정보보호마크)"></a></li>
-                    <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerMark02.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"></a></li>
-                </ul>
-            </div>                 
-            <address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address> 
-            <p class="copyright">
-                <span class="verPC">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</span>
-                <span class="verM">Copyright ⓒ 고용노동부 한국고용정보원 all rights reserved.</span>
-            </p>
-        </div>           
-    </footer>
-    <!-- //푸터영역 -->
-    
-    <!-- Top버튼 -->
-    <!--div class="btnGoTop"><a href="/" role="button">Top으로 이동</a></div-->
-    <!-- //Top버튼 -->
+                </div>                 
+                <address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address> 
+                <p class="copyright">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</p>
+            </div>           
+        </footer>
+        <!-- //푸터영역 -->
+        
+        <!-- Top버튼 -->
+        <!--div class="btnGoTop"><a href="/" role="button">Top으로 이동</a></div-->
+        <!-- //Top버튼 -->
 
-    <!-- 하단 고정 메뉴 : Mobile -->
-    <div id="floatingWrap" class="fixBotNav">
-        <nav class="floatingMenu">            
-            <ul>
-                <li class="home on"><a href="/"><span>홈</span></a></li>
-                <li class="search"><a href="/"><span>과정검색</span></a></li>                    
-                <li class="my"><a href="/"><span>My</span></a></li>
-                <li class="alam"><a href="/"><span>알림</span></a></li>
-            </ul>
-        </nav>            
-    </div> 
-    <!-- //하단 고정 메뉴 : Mobile -->
+        <!-- 하단 고정 메뉴 : Mobile -->
+        <div id="floatingWrap" class="fixBotNav">
+            <nav class="floatingMenu">            
+                <ul>
+                    <li class="home on"><a href="/"><span>홈</span></a></li>
+                    <li class="search"><a href="/"><span>과정검색</span></a></li>                    
+                    <li class="my"><a href="/"><span>My</span></a></li>
+                    <li class="alam"><a href="/"><span>알림</span></a></li>
+                </ul>
+            </nav>            
+        </div> 
+        <!-- //하단 고정 메뉴 : Mobile -->
 
     <!-- HRD-Net 이용약관 -->
     <div class="layerfullWrap" data-fullpop="fullpop01" style="display:none">

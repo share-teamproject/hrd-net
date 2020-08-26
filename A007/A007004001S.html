@@ -121,7 +121,7 @@
                                             <li><a href="">원격훈련</a></li>
                                         </ul>
                                     </li>
-                                </ul-->
+                                </ul>
                             </div>    
                         </li>
                         <li><a href="javascript:void(0);">일학습병행</a>
@@ -145,7 +145,7 @@
                                         <form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
                                             <fieldset>
                                                 <legend>통합검색</legend>
-                                                <lable for="searchTotalKeyword" class="hide">검색어</lable>
+                                                <label for="searchTotalKeyword" class="hide">검색어</label>
                                                 <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value=""><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색">검색</button>
                                             </fieldset>
                                         </form>                                    
@@ -167,8 +167,8 @@
                 </div>
             </div>
             <!-- 헤더 : mobile -->                
-            <div class="headerBtn">
-                <!--div class="headerLogo"><a href="/"><img src="../newimages/common/headerLogo.png" alt="직업훈련포털 HRD-Net"></a></div-->  
+            <div class="headerBtn bg01">
+                <!--h1 class="headerLogo"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1-->  
                 <button type="button" class="backBtn btn">이전 단계로 돌아가기</button>
                 <button type="button" class="searhBtn btn">검색</button>
                 <button type="button" class="totalMenuBtn btn">전체메뉴</button>
@@ -304,15 +304,7 @@
                         <li class="on"><a href="/">개선 및 제안</a></li>
                     </ul>
 
-                    <!-- 2depth 이상인 경우 -->
-                    <!--ul>
-                        <li class="goHome verPC"><a href="/">홈</a></li>
-                        <li class="verPC"><a href="/">My서비스</a></li>
-                        <li><a href="/">My카드</a></li>
-                        <li><a href="/">국민내일배움카드</a></li>
-                        <li class="on last"><a href="/">사용내역조회</a></li>
-                    </ul-->
-                    <!-- //2depth 이상인 경우 -->
+                    
                 </div>                   
             </div>
             <!-- //상단 비주얼 영역 --> 
@@ -384,12 +376,12 @@
 														<dt><label for="userMail">이메일</label></dt>
 														<dd>															
 															<input type="text" value="" title="" name="userMail" id="userMail" class="w150"> <span>@</span>
-															<input type="text" value="" title="" name="userMail" id="userMail2" class="w150"> 
+															<input type="text" value="" title="" name="userMail" id="userMail2" class="w150"><label for="userMail2" class="hide">이메일</label> 
 															<select name="searchItem" title="메일 항목 선택" id="userMail3" class="selectBox searchSelect01">
 																<option value="all">선택</option>
 																<option value="mail1">gmail.com</option>
 																<option value="mail2">nate.com</option>
-															</select>
+															</select><label for="userMail3" class="hide">메일 항목 선택</label>
 														</dd>                                  
 													</dl> 
 												</fieldset>
@@ -413,9 +405,9 @@
 																	<option value="tel032">032</option>
 																</select>
 																<span>-</span>
-																<input type="text" value="" title="" name="userTel" id="userTel2" class="w145"> 
+																<input type="text" value="" title="" name="userTel" id="userTel2" class="w145"><label for="userTel2" class="hide">전화번호 가운데 번호</label> 
 																<span>-</span>
-																<input type="text" value="" title="" name="userTel" id="userTel3" class="w150"> 
+																<input type="text" value="" title="" name="userTel" id="userTel3" class="w150"><label for="userTel3" class="hide">전화번호 마지막 번호</label> 
 															</dd>                                  
 														</dl> 
 													</fieldset>
@@ -436,9 +428,9 @@
 																	<option value="phone010">010</option>
 																</select>
 																<span>-</span>
-																<input type="text" value="" title="" name="userHP" id="userHP2" class="w145"> 
+																<input type="text" value="" title="" name="userHP" id="userHP2" class="w145"><label for="userHP2" class="hide">휴대폰 가운데 번호</label> 
 																<span>-</span>
-																<input type="text" value="" title="" name="userHP" id="userHP3" class="w150"> 
+																<input type="text" value="" title="" name="userHP" id="userHP3" class="w150"><label for="userHP3" class="hide">휴대폰 마지막 번호</label> 
 															</dd>                                  
 														</dl> 
 													</fieldset>
@@ -502,7 +494,7 @@
 													<fieldset>
 														<legend>개선분야 정보</legend>
 														<dl>
-															<dt><label for="writeTitle">개선 분야</label></dt>
+															<dt><label for="writeField">개선 분야</label></dt>
 															<dd>
 																<select name="searchItem" title="질문분야 선택" id="writeField" class="selectBox searchSelect02">
 																	<option value="all">분야를 선택해주세요.</option>
@@ -569,11 +561,11 @@
 									<span>개인정보 수집 및 취급 위탁에 동의 하십니까? </span>
 									<div class="ui_radioBox">                                             
 										<input type="radio" checked="checked" value="N" name="agreeYn" id="agreeYn1"> 
-										<label for="openYn1">동의합니다.</label>
+										<label for="agreeYn1">동의합니다.</label>
 									</div>
 									<div class="ui_radioBox">   
 										<input type="radio" value="Y" name="agreeYn" id="agreeYn2"> 
-										<label for="openYn2">동의하지 않습니다.</label>
+										<label for="agreeYn2">동의하지 않습니다.</label>
 									</div> 
 								</div>
 							</div>
@@ -618,14 +610,16 @@
                         <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
                     </ul>
                     <div class="footerPolicy">
-                        <ul>                                
-                            <li><a href="/">기관소개</a></li>
-                            <li><a href="/">찾아오시는 길</a></li>
+                        <ul>  
+                            <li class="verM"><a href="/">이용약관</a></li>                              
+                            <li class="verPC"><a href="/">기관소개</a></li>
+                            <li class="verPC"><a href="/">찾아오시는 길</a></li>
                             <li class="on"><a href="/">개인정보처리방침</a></li>
-                            <li><a href="/">저작권보호정책</a></li>
-                            <li><a href="/">공인인증센터</a></li>
-                            <li><a href="/">이메일수집거부</a></li>
-                            <li><a href="/">오픈 API 서비스</a></li>
+                            <li class="verPC"><a href="/">저작권보호정책</a></li>
+                            <li class="verPC"><a href="/">공인인증센터</a></li>
+                            <li class="verPC"><a href="/">이메일수집거부</a></li>
+                            <li class="verPC"><a href="/">오픈 API 서비스</a></li>
+                            <li class="verM"><a href="/">PC화면</a></li>
                         </ul>
                     </div>
                     <ul class="footerMark">

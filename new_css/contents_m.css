@@ -284,7 +284,9 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 
 #subContentWrap .subContArea .nonfaceArea .textResultType { border-bottom:1px #e2e2e4 solid; padding-bottom:15px; margin-bottom:50px; }
 #subContentWrap .subContArea .nonfaceArea .textResultType > dl { margin-bottom:50px; }
-#subContentWrap .subContArea .nonfaceArea .textResultType > dl > dt { padding-left:50%; margin-left:-70px; }
+#subContentWrap .subContArea .nonfaceArea .textResultType > dl > dt { display:flex; justify-content:center; }
+#subContentWrap .subContArea .nonfaceArea .textResultType > dl > dt .ui_radioBox {padding:0; margin:50px 0 0;} 
+#subContentWrap .subContArea .nonfaceArea .textResultType > dl > dt label { font-size:0; }
 #subContentWrap .subContArea .nonfaceArea .textResultType > dl > dd { width:100%; font-size:28px; text-align:center; word-break: keep-all; padding-top:20px; }
 #subContentWrap .subContArea .nonfaceArea .textResultType > dl > dt .textResultType1 { width:140px; height:140px; font-size:28px; color:#fff; text-align:center; background-color:#4171df; border-radius:50%; }
 #subContentWrap .subContArea .nonfaceArea .textResultType > dl > dt .textResultType2 { width:140px; height:140px; font-size:28px; color:#4171df; text-align:center; background-color:#fff; border:1px #4171df solid; border-radius:50%; }
