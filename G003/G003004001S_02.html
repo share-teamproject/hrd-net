@@ -21,6 +21,28 @@
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
     <script src="../new_js/ui.js"></script>
+    <script> 
+        $(function() {    
+            //라디오버튼
+            var radioForm = 'input[type=radio]';
+            $(radioForm).each(function () {
+                if ($(this).prop('checked') == true) {
+                    var labelFor = $(this).attr('id');
+                    $('[for="'+labelFor+'"]').addClass('on');
+                }
+                if($(this).prop('disabled') == true){
+                    $(this).parent().addClass('disabled');
+                }
+            });
+        
+            $(document).on('click', radioForm, function () {
+                var labelFor = $(this).attr('id');
+                var n = $(this).attr('name');
+                $('[name="' + n + '"]').parent().removeClass('on');
+                $('[for="'+labelFor+'"]').addClass('on');
+            }); 
+        });
+    </script>
 </head>
 
 <body>
@@ -121,7 +143,7 @@
                                             <li><a href="">원격훈련</a></li>
                                         </ul>
                                     </li>
-                                </ul-->
+                                </ul>
                             </div>    
                         </li>
                         <li><a href="javascript:void(0);">일학습병행</a>
@@ -145,7 +167,7 @@
                                         <form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
                                             <fieldset>
                                                 <legend>통합검색</legend>
-                                                <lable for="searchTotalKeyword" class="hide">검색어</lable>
+                                                <label for="searchTotalKeyword" class="hide">검색어</label>
                                                 <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value=""><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색">검색</button>
                                             </fieldset>
                                         </form>                                    
@@ -167,8 +189,8 @@
                 </div>
             </div>
             <!-- 헤더 : mobile -->                
-            <div class="headerBtn">
-                <!--div class="headerLogo"><a href="/"><img src="../newimages/common/headerLogo.png" alt="직업훈련포털 HRD-Net"></a></div-->  
+            <div class="headerBtn bg01">
+                <!--h1 class="headerLogo"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1-->  
                 <button type="button" class="backBtn btn">이전 단계로 돌아가기</button>
                 <button type="button" class="searhBtn btn">검색</button>
                 <button type="button" class="totalMenuBtn btn">전체메뉴</button>
@@ -389,19 +411,37 @@
 							<div class="textBoxArea">
 								<div class="textResultType">
 									<dl>
-										<dt><div class="textResultType1">진입형</div></dt>
+										<dt><div class="ui_radioBox">                                             
+                                                <input type="radio" checked="checked" value="" name="type" id="type1"> 
+                                                <label for="type1">진입형</label>
+                                            </div>
+                                            <div class="textResultType1">진입형</div></dt>
 										<dd>훈련이후 취업을 희망하는 유형입니다. 훈련분야는 기존 경험과 관련된 분야일수도 있고, 다른 분야일수도 있습니다. 이 유형은 구직자 훈련과정을 추천합니다.</dd>
 									</dl>
 									<dl>
-										<dt><div class="textResultType2">자격형</div></dt>
+										<dt><div class="ui_radioBox"ui_radioBox>                                             
+                                            <input type="radio" value="" name="type" id="type2"> 
+                                            <label for="type2">자격형</label>
+                                        </div>
+                                        <div class="textResultType2">자격형</div></dt>
 										<dd>훈련과 관련한 자격증 취득을 희망하는 유형입니다. 훈련을 통해 취득한 자격증은 현재 직장에서 또는 새로운 직장에 취업하기 위해 사용할 수 있습니다 . 이 유형은 수강 이후 취득할 수 있는 자격증이 있는 훈련과정을 추천합니다.</dd>
 									</dl>
 									<dl>
-										<dt><div class="textResultType3">역량<br />개발형</div></dt>
+										<dt>
+                                            <dt><div class="ui_radioBox">                                             
+                                                <input type="radio" value="" name="type" id="type3"> 
+                                                <label for="type3">역량<br />개발형</label>
+                                            </div>
+                                            <div class="textResultType3">역량<br />개발형</div></dt>
 										<dd>현재의 직무역량을 향상하기 위한 훈련에 참여하는 유형입니다. <br />이 유형은 현재 일과 유사한 분야의 근로자 또는 사업주 훈련 지원과정을 추천 합니다.</dd>
 									</dl>
 									<dl>
-										<dt><div class="textResultType4">전환형</div></dt>
+										<dt>
+                                            <div class="ui_radioBox">                                             
+                                                <input type="radio" value="" name="type" id="type4"> 
+                                                <label for="type4">전환형</label>
+                                            </div>
+                                            <div class="textResultType4">전환형</div></dt>
 										<dd>훈련 이후 새로운 분야로 전직 하거나, 창업을 희망하는 유형입니다. 이 유형은 새롭게 진출하고자 하는 분야의 구직자 훈련과정 또는 필요한 영역을 보충할 수 있는 구직자, 근로자 지원과정을 추천합니다. </dd>
 									</dl>
 								</div>
@@ -451,14 +491,16 @@
                         <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
                     </ul>
                     <div class="footerPolicy">
-                        <ul>                                
-                            <li><a href="/">기관소개</a></li>
-                            <li><a href="/">찾아오시는 길</a></li>
+                        <ul>  
+                            <li class="verM"><a href="/">이용약관</a></li>                              
+                            <li class="verPC"><a href="/">기관소개</a></li>
+                            <li class="verPC"><a href="/">찾아오시는 길</a></li>
                             <li class="on"><a href="/">개인정보처리방침</a></li>
-                            <li><a href="/">저작권보호정책</a></li>
-                            <li><a href="/">공인인증센터</a></li>
-                            <li><a href="/">이메일수집거부</a></li>
-                            <li><a href="/">오픈 API 서비스</a></li>
+                            <li class="verPC"><a href="/">저작권보호정책</a></li>
+                            <li class="verPC"><a href="/">공인인증센터</a></li>
+                            <li class="verPC"><a href="/">이메일수집거부</a></li>
+                            <li class="verPC"><a href="/">오픈 API 서비스</a></li>
+                            <li class="verM"><a href="/">PC화면</a></li>
                         </ul>
                     </div>
                     <ul class="footerMark">
