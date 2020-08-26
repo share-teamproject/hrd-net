@@ -21,6 +21,42 @@
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
     <script src="../new_js/ui.js"></script>
+    
+    <!-- 팝업스크립트 -->
+	<script> 
+        function wrapWindowByMask(){
+            
+            var maskHeight = $(document).height();  
+            var maskWidth = '100%';
+
+            $('#mask').css({'width':maskWidth,'height':maskHeight});  
+
+            $('#mask').fadeIn(1000);      
+            $('#mask').fadeTo("slow",0.5);    
+
+            $('.windowPop').show();
+        }
+
+        $(document).ready(function(){
+            wrapWindowByMask()
+            $('.openMask').click(function(e){
+                e.preventDefault();
+                wrapWindowByMask();
+            });
+
+            $('.windowPop .close').click(function (e) {  
+                e.preventDefault();  
+                $('#mask, .windowPop').hide();  
+            });       
+
+            $('#mask').click(function () {  
+                $(this).hide();  
+                $('.windowPop').hide();  
+            });
+            
+        });
+	</script> 
+	<!-- // 팝업스크립트 -->
 </head>
 
 <body>
