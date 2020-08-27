@@ -158,7 +158,7 @@
 .schEduContHead .leftGroup .txtCases em {color:#f48b2f;}
 .schEduContHead > .boxLinkList {margin-top:38px;}
 
-.boxLinkList {/* display:inline-block; overflow:hidden; */ text-align:center; font-size:0;}
+.boxLinkList {text-align:center; font-size:0;}
 .boxLinkList > li {display:inline-block; vertical-align:top; width:164px; border:1px solid #cdcdd1; background:#fff; margin-bottom:20px;}
 .boxLinkList > li + li {margin-left:20px;}
 .boxLinkList > li:nth-child(4n) {margin-left:0;}
@@ -182,3 +182,26 @@
 .detailListTy2 .tag li.border { box-sizing:border-box; min-width:40px; line-height:40px; padding:0 4px; border:1px solid #d3d3d3; border-radius:4px; text-align:center; }
 .detailListTy2 .tag li.fill { box-sizing:border-box; min-width:45px; line-height:32px; background-color:#65646a; color:#fff; text-align:center }
 .detailListTy2 .tag li.tip { margin-top:5px; margin-left:20px; }
+
+.detailListTy3 {}
+.detailListTy3 > li {padding:30px 25px; border-bottom:1px solid #e2e2e4;}
+.detailListTy3 > li .subtit {padding-bottom:8px; font-size:24px; color:#727476;}
+.detailListTy3 > li .tit a {display:block; font-size:30px; color:#292a2d; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+.detailListTy3 > li .tit .itemHash {margin-left:15px;}
+.detailListTy3 > li .date {padding-top:4px; font-size:24px; color:#727476;}
+
+.detailListTy4 {}
+.detailListTy4 > li {padding:30px 25px; border-bottom:1px solid #e2e2e4;}
+.detailListTy4 > li .subtit {padding-bottom:9px; font-size:26px; color:#292a2d; line-height:1;}
+.detailListTy4 > li .tit a {display:block; font-size:30px; color:#292a2d; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all; line-height:1;}
+.detailListTy4 > li .cl {padding-top:22px; font-size:24px; color:#727476;}
+.detailListTy4 > li .st {padding-top:6px; font-size:0;}
+.detailListTy4 > li .st > .el {position:relative; display:inline-block; vertical-align:middle; font-size:24px; color:#727476; line-height:27px;}
+.detailListTy4 > li .st > .el + .el {padding-left:10px; margin-left:10px; border-left:1px solid #727476;}
+.detailListTy4 > li .st > .el.fs + .el {border-left:0;}
+.detailListTy4 > li .st > .el.fs + .el:before {content:''; position:absolute; top:50%; left:0; margin-top:-10px; height:20px; border-left:1px solid #ececef;}
+.detailListTy4 > li .co {padding-top:6px; font-size:24px; color:#727476;}
+.detailListTy4 > li .pay {padding-top:3px; font-size:0;}
+.detailListTy4 > li .pay > span {display:inline-block; vertical-align:middle;}
+.detailListTy4 > li .pay > .pay01 {font-size:30px; color:#292a2d;}
+.detailListTy4 > li .pay > .lo {margin-left:10px; padding:0 15px; font-weight:500; font-size:18px; color:#fff; line-height:38px; background:#4870cf; border-radius:25px;}

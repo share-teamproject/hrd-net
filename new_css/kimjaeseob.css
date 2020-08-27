@@ -144,7 +144,9 @@
 .detailListTy2 > li .tit {font-size:0;}
 .detailListTy2 > li .tit > * {vertical-align:middle;}
 .detailListTy2 > li .tit a {display:inline-block; font-size:20px; color:#292a2d;}
-.detailListTy2 > li .tit .itemHash {margin-left:15px;}
+.detailListTy2 > li .tit .ih.verPC {overflow:hidden; display:inline-block !important;}
+.detailListTy2 > li .tit .itemHash {float:left; margin-left:15px;}
+.detailListTy2 > li .tit .itemHash.verPC {}
 .detailListTy2 > li .txt01 {padding-top:20px; font-size:14px; color:#292a2d;}
 .detailListTy2 > li .txt02 {padding-top:7px; font-size:14px; color:#666; line-height:24px;}
 
