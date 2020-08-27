@@ -1,6 +1,10 @@
 @charset "utf-8";
 #gnb.mainGnb .gnbSubArea { padding-left:200px; }
 #mainTopWrap { position:relative; height:870px; }
+#mainContentWrap .headingTitleArea { text-align:center; }
+#mainContentWrap .headingTitleArea .mainHeadingTitle { display:inline-block; vertical-align:middle; }
+#mainContentWrap .headingTitleArea .toolTip { margin:25px 0 0 10px; }
+
 /* 통합검색 */
 #mainTopWrap .mainTopArea { position:absolute; width:1140px; z-index:10; top:420px; left:calc(50% - 570px); z-index:10; }
 #mainTopWrap .mainTopArea .mainSearchArea { width:864px; margin:0 auto; height:68px; background:#fff; }
@@ -50,7 +54,7 @@
 #mainTopWrap .movieControlArea .btnGroup { position:absolute; top:0; right:10px; width:40px; }
 #mainKeyVisualPagination.swiper-pagination { top:5px; right:0px; }
 /* 국민내일배움카드 */
-#mainTopWrap .learningCard .mainHeadingTitle { position:relative; margin:100px 0 0; font-size:24px; font-weight:500px; color:#fff; text-align:center; }
+#mainTopWrap .learningCard .mainHeadingTitle { display:inline-block; position:relative; margin:100px 0 0; font-size:24px; font-weight:500px; color:#fff; text-align:center; }
 #mainTopWrap .learningCard .mainHeadingTitle:before { position:absolute; top:20px; left:290px; width:160px; height:1px; background:#fff; opacity:.5; content:''; }
 #mainTopWrap .learningCard .mainHeadingTitle:after { position:absolute; top:20px; right:290px; width:160px; height:1px; background:#fff; opacity:.5; content:''; }
 #mainTopWrap .learningCard ul { display:flex; justify-content:center; margin:25px 0 0; }

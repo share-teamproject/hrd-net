@@ -90,13 +90,49 @@ $(function(){
 				$this.datepicker(dateOptions);
 			});
 		},
-	});
-	$('.js_datepicker').fn_datepicker(); //date picker
 
+		//fn_tootip
+		fn_tooltip:function(){
+			return this.each(function(){
+				var $this = $(this),
+					$tip = $('.toolTip').find('.tip');
+					//$tbY = $('#yearTable').offset().top,
+					//$tbHeight = $('#yearTable').height(),
+					//$tbBottom = $tbY + $tbHeight;
+
+				$tip.each(function(){
+					$(this).click(function(){
+						var $posX = $(this).offset().left,
+							$tooltip = $(this).children('.tooltip');
+
+						if($posX < 900){
+							if(!$tooltip.hasClass('open')){
+								$('.tooltip').removeClass('open');							
+								$tooltip.addClass('open');									
+							}else{
+								$('.tooltip').removeClass('open');							
+								$tooltip.removeClass('open');	
+							}			
+						}else{								
+							if(!$tooltip.hasClass('open')){
+								$('.tooltip').removeClass('open');
+								$tooltip.addClass('right');								
+								$tooltip.addClass('open');	
+							}else{
+								$('.tooltip').removeClass('open');			
+								$tooltip.removeClass('open');	
+							}							
+						}						
+					});
+				});
+			});
+		},	
+	});
+	$('.js_datepicker').fn_datepicker(); //datepicker
+	$('.toolTip').fn_tooltip();  //tooltip
 
 	headFixed();
 	uiForm();
-	uiSlider.init();
 	wrapWindowByMask();
 
 	/* popup */
@@ -143,7 +179,6 @@ $(function(){
 	}
 
 	function uiForm(){	
-
 		//라디오버튼
 		var radioForm = 'input[type=radio]';
 		$(radioForm).each(function () {
@@ -289,7 +324,6 @@ $(function(){
 	});	
 
 	//로그인 라디오버튼
-
 	$("#radioMemberType input[type='radio']").change(function(){
 		if($('#radioMemberType01').is(':checked')){
 			$('#memberType01').css('display','block');
@@ -334,17 +368,22 @@ $(function(){
 		return false;
 	});	
 
+	// toolTip 토글 버튼
+	$('.toolTip .toolTipBtn').on('click',function() {
+		$(this).siblings().toggleClass('on');
+		return false;
+	});	
+
+	//기관찾기
 	$('.openMenu_2' ).hide();
 	$('.zone').on('click', function () {
 		//버튼 색 제거,추가
 		$('.zone').removeClass('on');
 		$(this).addClass('on');
-
 		//컨텐츠 제거 후 인덱스에 맞는 컨텐츠 노출
 		var idx = $('.zone').index(this);
-
 		$('.zoneBox').hide();
-	$('.zoneBox').eq(idx).show();
+		$('.zoneBox').eq(idx).show();
 	});
 
 	// 직무검색 탭
@@ -355,12 +394,7 @@ $(function(){
 		$(this).closest('.condiSchArea').find('.dpTabCont').removeClass('on');
 		$(this).closest('.condiSchArea').find('.dpTabCont').eq(idx).addClass('on');
 		$(this).closest('li').addClass('on')
-	})
-
-
-
-	/*var idx2=$('#mainKeyVisualPagination .swiper-pagination-bullet-active').index();
-				console.log(idx2);*/
+	})	
 });
 
 /* ==============================

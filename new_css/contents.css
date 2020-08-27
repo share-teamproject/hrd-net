@@ -11,7 +11,16 @@
 #subTopWrap.topVisu04 { background: url('../new_images/common/topVisual04.jpg') 50% 0 no-repeat; }
 #subTopWrap.topVisu12 { background: url('../new_images/common/topVisual12.jpg') 50% 0 no-repeat; }
 
-.iconTip {display:inline-block; width:24px; text-align:center; font-weight:500; font-size:11px; color:#fff; text-align:center; line-height:17px; background:#65646a;}
+.iconTip { display:inline-block; width:24px; text-align:center; font-weight:500; font-size:11px; color:#fff; text-align:center; line-height:17px; background:#65646a;}
+
+.toolTip { margin:-10px 0 0 10px; display:inline-block; vertical-align:middle; position:relative; }
+.toolTipBtn { margin:12px 0 0 0; font-size:0; line-height:0; width:20px; height:20px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover; }
+.toolTipContent { position:absolute; z-index:10; display:none; top:0; left:40px; width:300px; background:#fff; border:1px solid #cdcdd1; padding:20px; text-align:left; }
+.toolTipContent.on { display:block; }
+.toolTipContent:before { position:absolute; top:13px; left:0; margin-left:-16px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; }
+.toolTipContent .toolTipTitle { font-size:13px; font-weight:500; color:#4e4f51; margin:0 0 10px 0; }
+.toolTipContent .toolTipText { font-size:13px; color:#767676; line-height:18px; }
+.toolTipContent .toolTipText strong { color:#4171df; }
 
 /* 회원가입 - 상단 키비쥬얼 */
 #subTopWrap { width:100%; height: 384px; border-bottom:1px solid #eeeeee }
