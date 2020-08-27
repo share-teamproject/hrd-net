@@ -291,14 +291,22 @@ button.goLink, a.goLink { position:relative; display:inline-block; min-width:100
 button.goLink, a.goLink:after { position:absolute; top:6px; right:20px; width:6px; height:12px; content:''; background:url('../new_images/common/arrowGoLink.png') no-repeat; background-size:6px 12px; }
 .goLinkLong {display:inline-block; min-width:100px; height:26px; line-height:24px; padding:0 20px; text-align:left; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51; }
 .goLinkLong:after {content:''; display:inline-block; vertical-align:middle; width:6px; height:12px; margin-left:5px; margin-top:-3px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;}
-.btnH30 {display:inline-block; min-width:105px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:28px;}
+.btnH30 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:28px;}
 
 /* 댓글등록 버튼 */
 button.commentBtn, a.commentBtn { border:1px solid #5b648a; background:#fff; color:#5b648a; width:136px; height:105px; font-size:16px; font-weight:500; }
 /* 컨펌버튼 */
 button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line-height:24px; text-align:left; font-size:13px; padding:0 0 3px 10px; color:#4870cf; background:url('../new_images/common/arrowConfirm.png') no-repeat 90px 50%; background-size:6px 12px; }
 
-
+/* height 60px button */
+.dotBtn {display:inline-block; width:53px; height:39px; background:url(../new_images/common/icoBtnDot.png) no-repeat center center;}
+.btnH60Group {font-size:0; text-align:center;}
+.btnH60Group .btnH60 + .btnH60 {margin-left:20px;}
+.btnH60 {display:inline-block; width:160px; height:60px; line-height:56px; text-align:center; border:1px solid #fff; background:#fff; font-weight:500; font-size:24px;}
+.btnH60.ty1 {color:#fff; background:#4171df; border:2px solid #4171df;} 
+.btnH60.ty2 {color:#4e4f51; border:2px solid #cdcdd1;}
+.btnH60.ty3 {color:#258384; border:2px solid #258384;}
+.btnH60.ty4 {color:#4171df; border:2px solid #4171df;}
 
 
 
@@ -385,11 +393,13 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .w100p { width:100% !important; }
 .w145 { width:145px !important; }
 .w150 { width:150px !important; }
+.w160 { width:160px !important; }
 .w180 { width:180px !important; }
 .w300 { width:300px !important; }
 .w480 { width:480px !important; }
 .mt30 { margin-top:30px !important; }
 .mt60 { margin-top:60px !important; }
+.ml6 { margin-left:6px !important; }
 .mb0 {margin-bottom:0 !important;}
 .pr0 {padding-right:0 !important;}
 .brd-r-ty1 {border-right:1px solid #e2e2e4;}
