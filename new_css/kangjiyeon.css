@@ -14,6 +14,7 @@
 .tableArea .selectW65, .selectW65 { min-width:65px; width:65px; }
 .tableArea .selectW80, .selectW80 { min-width:80px; width:80px; }
 .tableArea .selectW130, .selectW130 { min-width:130px; width:130px; }
+.tableArea .selectW150, .selectW150, .btnW150 { min-width:150px; width:150px; }
 .tableArea .selectW160, .selectW160 { min-width:160px; width:160px; }
 .tableArea .selectW180, .selectW180 { min-width:180px; width:180px; }
 .tableArea .selectW180, .selectW190 { min-width:190px; width:190px; }
@@ -24,7 +25,7 @@
 .tableArea .selectW585, .selectW585 { min-width:585px; width:585px; }
 .tableArea .selectW692, .selectW692 { min-width:692px; width:692px; }
 .btnW60 { min-width:60px; width:60px; padding:0; }
-
+.moreBtn { display:none; }
 
 /* ==============================
 * radio
@@ -44,8 +45,8 @@
 /* 다운로드버튼 */
 button.download, a.download { min-width:75px; display:inline-block; text-align:center; background:#c9d3e8; color:#4e4f51; font-size:12px; line-height:26px; height:26px; padding:0 10px; box-sizing:border-box; }
 .download.grey { border:1px #cdcdd1 solid; color:#4e4f51; background:#fff; }
-button.lookupBtn, a.lookupBtn { display:inline-block; min-width:65px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:24px; }
-button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:center; font-size:14px; color:#4e4f51; border:1px solid #cdcdd1; line-height:24px; }
+button.lookupBtn, a.lookupBtn { display:inline-block; min-width:65px; text-align:center; font-size:12px; color:#258384; border:1px solid #258384; line-height:24px; }
+button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:center; font-size:12px; color:#4e4f51; border:1px solid #cdcdd1; line-height:24px; }
 
 
 /* ==============================
@@ -104,7 +105,6 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 /* ==============================
 * MY서비스
 * ============================== */ 
-
 /* MY훈련 */
 .myTrainingArea { margin-top:15px; }
 #subContentWrap .infoBoxArea.ty01 { border:3px #e1e4e9 solid; padding:12px 25px; margin:40px 0 30px 0;}
@@ -210,9 +210,45 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .bigTitle04 {position:relative;font-weight:500; font-size:16px; color:#5b648a; height:30px; padding-left:12px; }
 .bigTitle04:before{content:''; position:absolute; top:10px; left:0; width:4px;height:4px; background:#5b648a; border-radius:50%; }
 
-
 /* 비대면 훈련상담 */
 #myStateWrap .myStateArea .myStateBox .myState2 { max-width:182px; }
 
 
 
+
+
+/* MY관심 */
+.myInterestArea {}
+.myInterestArea .searchBox .btnArea01 { margin-left:25px; }
+.myInterestArea .sortArea01 { margin-top:50px; }
+.myInterestArea .sortArea02 { margin-top:-30px; }
+
+.tableArea.tableArea01 .list { border-top:2px #727476 solid; }
+.tableArea.tableArea01 .list th { padding:20px 14px; border-bottom:1px #e2e2e4 solid; }
+.tableArea.tableArea01 .list td { padding:20px 5px; }
+.tableArea.tableArea01 .list .none2 { text-align:left; line-height:24px; padding:15px 0 15px 20px; }
+
+.myInterestArea { margin-top:15px; }
+.myInterestArea .tabListArea { margin-bottom:60px; }
+.myInterestArea .tabContents .tabCont { margin-bottom:50px; }
+
+.infoBtnList { height:45px; }
+.infoBtnList ul { overflow:hidden; }
+.infoBtnList .txt { float:left; color:#4e4f51; font-size:16px; }
+.infoBtnList .btn { float:right; }
+
+.selectionBox { border:3px #e1e4e9 solid; height:180px; padding:30px; margin-bottom:20px; }
+.selectionBox .txt { font-size:14px; color:#727476; text-align:center; line-height:150%; padding:30px 0; }
+.selectionBox .selectionList > li { font-size:14px; color:#4e4f51; }
+
+.divtableArea01 { border-top:2px #727476 solid; }
+.divtableArea01 .divtableListSet { margin-bottom:20px; }
+.divtableArea01 .divtableListSet .divtableList > li { border-bottom:1px #e2e2e4 solid; padding:20px; }
+.divtableArea01 .divtableListSet .divtableList > li .txt { font-size:20px; color:#292a2d; }
+.divtableArea01 .divtableListSet .divtableList > li .innerList { overflow:hidden; margin-top:10px; }
+.divtableArea01 .divtableListSet .divtableList > li .innerList > li { float:left; width:425px; }
+.divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl { overflow:hidden; margin-top:15px; }
+.divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl > dt { float:left; line-height:23px; }
+.divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl > dt > span { width:82px; display:inline-block; font-size:13px; color:#666; text-align:center; border:1px #d3d3d3 solid; border-radius:15px; }
+.divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl > dd { float:left; font-size:14px; color:#666; line-height:23px; padding-left:15px; }
+.divtableArea01 .divtableListSet .divtableList > li .none { font-size:14px; color:#727476; text-align:center; padding:20px; }
