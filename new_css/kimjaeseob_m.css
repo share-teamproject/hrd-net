@@ -3,17 +3,16 @@
 /* ==============================
 * common
 * ============================== */
-
-
+.commentBox {min-height:53px; padding:25px 25px 25px 100px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 37px top 25px;}
 
 .bgType1 {background:#f0f0f2 !important;}
 
 .toolTipQ {display:inline-block; vertical-align:middle; width:26px; height:26px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover;}
-
+.iconTip {display:inline-block; width:45px; font-weight:500; font-size:20px; color:#fff; text-align:center; line-height:32px; background:#65646a;}
+.rndBoxTxt {display:inline-block; min-width:170px; padding:0 10px; line-height:40px; text-align:center; border:2px solid #d3d3d3; border-radius:25px; font-size:26px; color:#727476; background:#fff;}
 
 .titleFs30 {font-weight:500; font-size:30px; color:#292a2d; line-height:1.2;}
 .titleFs30 > small {padding-left:5px; font-weight:normal; font-size:26px; color:#666;}
-
 .titleFs32 {font-size:32px; color:#222; line-height:1.2;}
 
 .listType1 {}
@@ -22,11 +21,10 @@
 .listType1 > li .rndBoxTxt {margin-right:15px;}
 .listType1 + .btnH60Group {margin-top:50px;}
 
-.contListType6 {overflow:hidden; border-top:2px solid #e2e2e4; border-left:2px solid #e2e2e4;}
-.contListType6 > li {position:relative; float:left; width:50%; padding:20px 0; border-right:2px solid #e2e2e4; border-bottom:2px solid #e2e2e4; font-size:0;}
-.contListType6 > li:before {content:''; position:absolute; top:20px; left:125px; height:calc(100% - 40px); border-left:2px solid #e3e7ee;}
-.contListType6 > li > .tit {display:inline-block; vertical-align:middle; width:125px; font-size:28px; color:#4e4f51; text-align:center; line-height:30px;}
-.contListType6 > li > .txt {display:inline-block; vertical-align:middle; padding-left:40px; line-height:30px; font-weight:500; font-size:28px; color:#292a2d;}
+.dashList {}
+.dashList > li {position:relative; padding-left:14px; font-size:22px; color:#767676; line-height:26px;}
+.dashList > li:before {content:''; position:absolute; top:13px; left:0; width:6px; border-bottom:2px solid #767676;}
+.dashList > li + li {margin-top:8px;}
 
 .moContInner {padding:0 30px;}
 .moContInner + .moContInner {margin-top:60px; padding-top:60px; border-top:8px solid #e7e9f0;}
@@ -36,9 +34,9 @@
 
 .contBoxType2 {padding:50px 30px; background:#f7f7f7;}
 
-.rndBoxTxt {display:inline-block; min-width:170px; padding:0 10px; line-height:40px; text-align:center; border:2px solid #d3d3d3; border-radius:25px; font-size:26px; color:#727476; background:#fff;}
+.moMt60 {margin-top:60px;}
+.moMt80 {margin-top:80px;}
 
-.iconTip {display:inline-block; width:45px; font-weight:500; font-size:20px; color:#fff; text-align:center; line-height:32px; background:#65646a;}
 
 /* ==============================
 * common - btn

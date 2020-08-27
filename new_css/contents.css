@@ -232,8 +232,9 @@
 .windowPop .windowBox .text3 { font-size:16px; color:#4171df; text-align:center; padding-top:10px; }
 .windowPop .windowEx { font-size:16px; text-align:center; padding:30px 0;  }
 
-.dotList > li {position:relative; padding-left:10px; font-size:12px; line-height:20px; color:#767676}
+.dotList > li {position:relative; padding-left:10px; font-size:12px; line-height:20px; color:#767676; text-align:left;}
 .dotList > li:before {content:''; position:absolute; top:9px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
+.dotList.fs14 > li {font-size:14px;}
 
 /* ==============================
 * 자주묻는 질문 & 질문과 답변

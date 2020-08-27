@@ -398,9 +398,11 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .w300 { width:300px !important; }
 .w480 { width:480px !important; }
 .mt30 { margin-top:30px !important; }
+.mt50 { margin-top:50px !important; }
 .mt60 { margin-top:60px !important; }
 .ml6 { margin-left:6px !important; }
 .mb0 {margin-bottom:0 !important;}
+.pd0 {padding:0 !important;}
 .pr0 {padding-right:0 !important;}
 .brd-r-ty1 {border-right:1px solid #e2e2e4;}
 .brd-t-ty2 {border-top:2px solid #5b648a !important;}

@@ -541,6 +541,11 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .contListType5 > li > .cont .titTxt + .txtMarkList {margin-top:35px;  font-size:28px; color:#727476; line-height:40px; }
 .contListType5 + .tableArea {margin-top:12px;}
 
+.contListType6 {overflow:hidden; border-top:2px solid #e2e2e4; border-left:2px solid #e2e2e4;}
+.contListType6 > li {position:relative; float:left; width:50%; padding:20px 0; border-right:2px solid #e2e2e4; border-bottom:2px solid #e2e2e4; font-size:0;}
+.contListType6 > li:before {content:''; position:absolute; top:20px; left:125px; height:calc(100% - 40px); border-left:2px solid #e3e7ee;}
+.contListType6 > li > .tit {display:inline-block; vertical-align:middle; width:125px; font-size:28px; color:#4e4f51; text-align:center; line-height:30px;}
+.contListType6 > li > .txt {display:inline-block; vertical-align:middle; padding-left:40px; line-height:30px; font-weight:500; font-size:28px; color:#292a2d;}
 
 .dpTabAreaList { display:flex; width:100%; }
 .dpTabAreaList li { flex:1; height: 80px; border:1px solid #e2e2e4; border-left:none; line-height: 70px; text-align: center; color:#65646a; cursor: pointer; }
