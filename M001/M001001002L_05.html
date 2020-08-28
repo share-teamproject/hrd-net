@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -168,8 +169,8 @@
                 </div>
             </div>
             <!-- 헤더 : mobile -->                
-            <div class="headerBtn bg01">
-                <!--h1 class="headerLogo"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1-->  
+            <div class="headerBtn">
+                <!--h1>class="headerLogo"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1-->  
                 <button type="button" class="backBtn btn">이전 단계로 돌아가기</button>
                 <button type="button" class="searhBtn btn">검색</button>
                 <button type="button" class="totalMenuBtn btn">전체메뉴</button>
@@ -303,7 +304,15 @@
 						<li class="on">나의 출석보기</li>
                     </ul>
 
-                    
+                    <!-- 2depth 이상인 경우 -->
+                    <!--ul>
+                        <li class="goHome verPC"><a href="/">홈</a></li>
+                        <li class="verPC"><a href="/">My서비스</a></li>
+                        <li><a href="/">My카드</a></li>
+                        <li><a href="/">국민내일배움카드</a></li>
+                        <li class="on last"><a href="/">사용내역조회</a></li>
+                    </ul-->
+                    <!-- //2depth 이상인 경우 -->
                 </div>
             </div>
             <!-- //상단 비주얼 영역 -->
@@ -367,7 +376,184 @@
 								<!-- 텝 컨텐츠 -->
                                 <div class="tabContents mt30">
 									<section id="section1" role="tabpanel" class="tabCont on">
-										<img src="../new_images/temp/@cal.jpg" alt="">
+										<!-- 달력 -->
+										<div data-calendar="">
+											<div class="calendar_header">
+												<div class="calendar_info">
+													<div class="date">2019. 06</div>
+													<div class="ctr">
+														<button type="button" class="prev change_month">이전</button>
+														<button type="button" class="next change_month">다음</button>
+													</div>
+												</div>
+											</div>
+
+                                            <!-- 일자 출력 부분 -->
+                                            <div data-calendar-table="">
+                                                <table>
+                                                    <colgroup>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                            			<tr>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td class="no_item"></td>
+                                            				<td>
+                                            					<span class="num">1</span>
+                                                                <p class="msg">결석</p>
+                                            				</td>
+                                                        </tr>
+														<tr>
+															<td>
+																<span class="num">2</span>
+																<p class="msg">결석</p>
+															</td>
+															<td>
+																<span class="num">3</span>
+																<p class="msg">결석</p>
+															</td>
+															<td>
+																<span class="num">4</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">5</span>
+																<p class="msg"></p>
+															</td>
+															<td class="today">
+																<span class="num">6</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">7</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">8</span>
+																<p class="msg"></p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="num">9</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">10</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">11</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">12</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">13</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">14</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">15</span>
+																<p class="msg"></p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="num">16</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">17</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">18</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">19</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">20</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">21</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">22</span>
+																<p class="msg"></p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="num">23</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">24</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">25</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">26</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">27</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">28</span>
+																<p class="msg"></p>
+															</td>
+															<td>
+																<span class="num">29</span>
+																<p class="msg"></p>
+															</td>
+														</tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="num">30</span>
+                                                                <p class="msg"></p>
+                                                            </td>
+                                                            <td>
+                                                                <span class="num">31</span>
+                                                                <p class="msg"></p>
+                                                            </td>
+                                                            <td class="no_item"></td>
+                                                            <td class="no_item"></td>
+                                                            <td class="no_item"></td>
+                                                            <td class="no_item"></td>
+                                                            <td class="no_item"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- //일자 출력 부분 -->
+                                        </div>
+                                        <!--// 달력 -->
 									</section>
 
 									<section id="section2" role="tabpanel" class="tabCont">
@@ -426,18 +612,23 @@
             <div class="footerArea">                
                 <div class="footerCont">
                     <div class="footerLink">
-                        <ul class="swiper-wrapper">
-                            <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
-                            <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
-                            <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
-                            <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
-                            <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
-                            <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
-                            <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
-                            <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
-                            <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
-                            <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
-                        </ul>
+                        <div class="swiper-container" id="footerLink">
+                            <ul class="swiper-wrapper">
+                                <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
+                                <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
+                                <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
+                                <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
+                                <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
+                                <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
+                                <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
+                                <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
+                                <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
+                                <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
+                            </ul>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>    
                     </div> 
                     <ul class="footerLogo">
                         <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
@@ -462,10 +653,7 @@
                     </ul>
                 </div>                 
                 <address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address> 
-                <p class="copyright">
-                    <span class="verPC">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</span>
-                    <span class="verM">Copyright ⓒ 고용노동부 한국고용정보원 all rights reserved.</span>
-                </p>
+                <p class="copyright">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</p>
             </div>           
         </footer>
         <!-- //푸터영역 -->
