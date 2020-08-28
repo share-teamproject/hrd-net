@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import 'kangjiyeon.css';
 @import 'kimjaeseob.css';
-@import 'D002.css';
+@import 'front.css';
 
 /* ==============================
 * 공통 컨텐츠
@@ -20,7 +20,12 @@
 .toolTipContent:before { position:absolute; top:13px; left:0; margin-left:-16px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; }
 .toolTipContent .toolTipTitle { font-size:13px; font-weight:500; color:#4e4f51; margin:0 0 10px 0; }
 .toolTipContent .toolTipText { font-size:13px; color:#767676; line-height:18px; }
-.toolTipContent .toolTipText strong { color:#4171df; }
+.toolTipContent .toolTipText strong { color:#727476; }
+
+/* 4xx, 5xx error */
+.errorArea { position:absolute; top:calc(50% - 150px); left:0; width:100%; height:300px; text-align:center; padding:100px 0 0 0; background:url('../new_images/common/imgError.png') center 0 no-repeat; background-size:64px 56px; }
+.errorArea .errorText1 { color:#292a2d; font-size:28px; }
+.errorArea .errorText2 { color:#727476; font-size:16px; margin:25px 0 40px; line-height:22px; }
 
 /* 회원가입 - 상단 키비쥬얼 */
 #subTopWrap { width:100%; height: 384px; border-bottom:1px solid #eeeeee }
@@ -333,7 +338,6 @@
 * 자주묻는 질문 & 질문과 답변 & 기관찾기
 * ============================== */ 
 /* 등록박스 */
-#subContentWrap .subContArea .inputBox { }
 #subContentWrap .subContArea .inputBox > fieldset > legend { font-size:0; line-height: 0; }
 #subContentWrap .subContArea .inputBox > fieldset > dl { width:100%; display:flex; flex-wrap:wrap; }
 #subContentWrap .subContArea .inputBox > fieldset > dl > dt > label { font-size:0; color:#4e4f51; line-height:40px; }
@@ -844,13 +848,11 @@
 .contListType3 > li > .txt {position:relative; display:inline-block; vertical-align:middle; width:calc(100% - 170px); padding:6px 0 6px 40px; line-height:20px; font-weight:500; font-size:14px; color:#292a2d;}
 .contListType3 > li > .goLinkLong {position:absolute; top:50%; right:20px; margin-top:-13px;}
 
-.contListType4 {}
 .contListType4 > li {position:relative; padding:14px 160px 14px 0;}
 .contListType4 > li + li {border-top:1px solid #e2e2e4;}
 .contListType4 > li > .txt {display:inline-block; vertical-align:middle; padding:6px 0; line-height:18px; font-weight:500; font-size:14px; color:#292a2d;}
 .contListType4 > li > .goLinkLong {position:absolute; top:50%; right:20px; margin-top:-13px;}
 
-.contListType5 {}
 .contListType5 > li {display:table; width:100%; }
 .contListType5 > li + li {margin-top:30px;}
 .contListType5 > li > .num {display:table-cell; vertical-align:top; width:10px; white-space:nowrap; font-size:16px; color:#4e4f51; line-height:24px;}
@@ -865,11 +867,9 @@
 .contListType6 > li > .tit {display:inline-block; vertical-align:middle; width:125px; font-size:28px; color:#4e4f51; text-align:center; line-height:30px;}
 .contListType6 > li > .txt {display:inline-block; vertical-align:middle; padding-left:40px; line-height:30px; font-weight:500; font-size:28px; color:#292a2d;}
 
-.txtMarkList {}
 .txtMarkList > li {position:relative; padding-left:18px; font-size:14px; color:#727476;}
 .txtMarkList > li:before {content:'※'; position:absolute; top:0; left:0;}
 
-.numList {}
 .numList > li {position:relative; padding-left:18px; font-size:14px; color:#727476;}
 .numList > li > .num {position:absolute; top:0; left:0;}
 .tableArea + .numList {padding-top:10px;}
@@ -910,7 +910,6 @@
 .dpTabCont {display:none;}
 .dpTabCont.on {display:block;}
 
-.txtSchArea {}
 .txtSchAreaKwd {font-size:0;}
 .txtSchAreaKwd > input[type="text"] {display:inline-block; width:calc(100% - 76px); height:68px; max-width:none; font-size:18px; border:1px solid #434e64; border-right:0;}
 
@@ -1021,8 +1020,6 @@
 .attendDp > li .cnt {display:block; border-radius:50%; text-align:center; line-height:72px; font-weight:500; font-size:36px; color:#fff; background:#5b648a;}
 .attendDp > li .txt {display:block; margin-top:16px; font-weight:500; font-size:24px; color:#292a2d; line-height:1;}
 
-.attendProgress {}
-.attendProgress > li {}
 .attendProgress > li + li {padding-top:40px; margin-top:40px; border-top:2px solid #e2e2e4;}
 .attendProgress > li .tblEle {padding-bottom:20px;}
 .attendProgress > li .titEle {width:195px;}

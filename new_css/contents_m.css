@@ -49,7 +49,6 @@
 
 button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-height:58px; height:60px; padding:0 10px;}
 
-.dotList {}
 .dotList > li {position:relative; padding-left:10px; font-size:22px; line-height:30px; color:#767676; text-align:left;}
 .dotList > li:before {content:''; position:absolute; top:13px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
 
@@ -85,7 +84,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .agrCont > li.ty1 + li.ty1 .num {top:31px;}
 .agrCont > li .tit {font-size:32px; color:#222;}
 
-.agtTxtCont {}
 .agtTxtCont > dt {font-size:32px; color:#222;}
 .agtTxtCont > dd {padding:3px 0 0 30px; font-size:28px; color:#727476;}
 
@@ -96,6 +94,10 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .layerContent > .layerInner {height:calc(100% - 20px); overflow:auto;}
 .layerCloseBtn {position:absolute; top:36px; right:32px; width:39px; height:38px; background:url(../new_images/common/btnCloseLayerPop.png) no-repeat; background-size:100%; text-indent:-9999px;}
 
+/* 4xx, 5xx error */
+.errorArea { position:absolute; top:calc(50% - 215px); left:0; width:100%; height:430px; text-align:center; padding:135px 0 0 0; background:url('../new_images/common/imgError.png') center 0 no-repeat; }
+.errorArea .errorText1 { color:#292a2d; font-size:38px; font-weight:500; }
+.errorArea .errorText2 { color:#727476; font-size:28px; margin:40px 0 55px; line-height:38px; }
 
 /* 이메일 입력 항목 */
 .emailInput {font-size:0;}
@@ -218,7 +220,7 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
  .signUpFlowList {position:relative; font-size:0; text-align:center;}
  .signUpFlowList:after {content:''; position:absolute; top:30px; left:45px; width:calc(100% - 90px); border-bottom:10px solid #f4f6f9;}
  .signUpFlowList > li {position:relative; display:inline-block; vertical-align:top; width:25%; padding-top:100px;}
- .signUpFlowList > li + li {}
+
  .signUpFlowList > li .stepCount {position:absolute; top:0; left:50%; z-index:1; margin-left:-35px; width:70px; height:70px; border-radius:50%; font-size:28px; color:#727476; line-height:70px; background:#f4f6f9;}
  .signUpFlowList > li.on .stepCount {font-weight:500; color:#fff; background:#5b648a;}
  .signUpFlowList > li .txt {font-size:28px; color:#727476;}
@@ -246,7 +248,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
  .signUpFormList > li .inpArea {padding-top:8px;}
  .signUpFormList > li .inpArea input[type="text"], 
  .signUpFormList > li .inpArea input[type="password"] {width:100%;}
- .signUpForm + .tableTitleArea {}
  .signUpForm + .btnGroup {margin-top:60px;} 
  
  /* 회원가입 - 가입완료 */
@@ -490,8 +491,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 #subContentWrap .subContArea .nonfaceArea .divTableArea .divTableRow02 .tdCell04 textarea { height:75px; }
 
 #subContentWrap .subContArea .nonfaceArea .divTable2 .divTableRow02-1 { display:flex; flex-wrap:wrap; width:133%; border-bottom:1px #e2e2e4 solid;  } 
-#subContentWrap .subContArea .nonfaceArea .divTable2 .divTableRow02-1 .thCell02-01,
-#subContentWrap .subContArea .nonfaceArea .divTable2 .divTableRow02-1 .tdCell02-01 {  }
 #subContentWrap .subContArea .nonfaceArea .divTable2 .divTableRow02-1 .thCell02-01 { width:25%; color:#4e4f51; font-size:26px; text-align:center; padding-top:40px; background-color:#f0f0f2; }
 #subContentWrap .subContArea .nonfaceArea .divTable2 .divTableRow02-1 .tdCell02-01 { width:75%; padding:20px 0 0 20px; }
 #subContentWrap .subContArea .nonfaceArea .divTable2 .divTableRow02-1 .tdCell02-01 textarea { height:270px; margin-bottom:10px; }
@@ -526,13 +525,10 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .contListType3 > li > .goLinkLong { margin:30px 0 10px 30px; }
 .contListType3.etc > li .tit { width:210px; }
 
-
-.contListType4 { }
 .contListType4 > li { border-bottom:2px #e3e7ee solid; margin-bottom:30px; }
 .contListType4 > li .txt {margin-left:-30px; padding-bottom:30px; }
 .contListType4 > li > .goLinkLong {margin-bottom:30px; }
 
-.contListType5 {}
 .contListType5 > li {width:100%; }
 .contListType5 > li + li {margin-top:30px;}
 .contListType5 > li > .num {vertical-align:top; width:10px; white-space:nowrap; font-size:28px; color:#222; line-height:40px;}
@@ -560,8 +556,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .txtSchAreaKwdListArea {padding:20px; border:1px solid #e2e2e4; }
 .txtSchAreaKwdListArea > .inner {height:575px; overflow:auto;}
 
-.txtSchAreaKwdList {}
-.txtSchAreaKwdList > li {}
 .txtSchAreaKwdList > li + li {margin-top:12px;}
 .txtSchAreaKwdList > li > a {display:inline-block; padding:5px 20px; font-size:26px; color:#727476; box-sizing:border-box;}
 .txtSchAreaKwdList > li > a:focus,
@@ -639,7 +633,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .bigTitle2 { font-size:34px; letter-spacing:-1px; height:80px; text-align:center; }
 
 .choiceTraining { padding:0; margin:0 -30px 0 0; }
-.choiceTraining .swiper-wrapper { }
 .choiceTraining .swiper-wrapper li { padding:0 ; margin:0 0 0 0; }
 .choiceTraining .choiceTrainingBtn { position:relative; width:580px; margin:0 auto; }
 .choiceTraining .choiceTrainingBtn .swiper-button-prev{ position:absolute; top:-50px; left:-15px; width:40px; height:40px; background:url('../new_images/common/arrowLeft.png') no-repeat;}

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>직업ㆍ기관정보 | HRD-Net</title> 
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" /> 
+	<link href="../new_css/front.css" rel="stylesheet" /> 
+
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+	<div id="skipnav">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#contentWrap">본문 바로가기</a>
+		<a href="#footerWrap">푸터 바로가기</a>
+	</div>
+
+	<div id="wrap">
+		<!-- 헤더영역 -->
+		<header id="headerWrap">
+			Header영역
+		</header>
+		<!-- //헤더영역 -->
+
+		<!-- 메인 컨텐츠영역 -->
+		<div id="contentWrap">
+			<!-- 상단 비주얼 영역 -->
+			<div id="subTopWrap" class="topVisu01">
+				<div class="subTopArea">
+					<h2 class="subTopTilte">직업ㆍ기관정보</h2>
+					<p class="subTopText">직종 분류에 따른 종목별 상세 자격증 및 구인정보를 정보를 확인하실 수 있습니다.</p>
+				</div>
+				<div class="location">
+					<!-- 2depth 이상인 경우 -->
+					<ul>
+						<li class="goHome verPC"><a href="/">홈</a></li>
+						<li class="verPC"><a href="/">직업ㆍ기관정보</a></li>
+						<li class="on last"><a href="/">구인정보</a></li>
+					</ul>
+					<!-- //2depth 이상인 경우 -->
+				</div>
+			</div>
+			<!-- //상단 비주얼 영역 --> 
+
+			<div id="subContentWrap">
+				<!-- ========== 본문 영역 ================================================== -->
+				<div class="subContArea full" id="front">
+					<!-- 본문제목 -->
+					<div class="headingTitleArea">
+						<h3 class="headingTitle">국가자격</h3>
+						<p class="headingText">직종 분류와 지역에 따라 구인정보를 제공해 드리고 있습니다.</p>
+						<div class="headingIcon">
+							<ul>
+								<li><button type="button" class="twitter">트위터</button></li>
+								<li><button type="button" class="facebbok">페이스북</button></li>
+								<li><button type="button" class="print">프린트</button></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="contentArea">
+						<!-- 본문검색조건  -->
+						<div class="searchBoxLineWrap">
+							<fieldset>
+								<legend>지역 및 직종 선택에 다른 구인정보 검색</legend>
+								<div class="searchBoxLine">
+									<div class="tabSelectWrap">
+										<dl class="tabSelect on">
+											<dt class="title">
+												<label>지역</label>
+											</dt>
+											<dd class="content">
+												<!-- 200820 수정 // -->
+												<button class="btn" onclick="tabSelectOpen($(this));">지역 선택</button>
+												<!-- // 200820 수정 -->
+												<div class="boxWrap half">
+													<div class="box">
+														<p class="tit">광역시/도</p>
+														<div class="listWrap">
+															<ul class="list">
+																<li class="on">
+																	<span>전체</span>
+																</li>
+																<li>
+																	<span>서울</span>
+																</li>
+																<li>
+																	<span>부산</span>
+																</li>
+																<li>
+																	<span>대구</span>
+																</li>
+																<li>
+																	<span>인천</span>
+																</li>
+																<li>
+																	<span>광주</span>
+																</li>
+																<li>
+																	<span>대전</span>
+																</li>
+																<li>
+																	<span>울산</span>
+																</li>
+																<li>
+																	<span>세종</span>
+																</li>
+																<li>
+																	<span>경기</span>
+																</li>
+																<li>
+																	<span>강원</span>
+																</li>
+																<li>
+																	<span>충북</span>
+																</li>
+																<li>
+																	<span>충남</span>
+																</li>
+																<li>
+																	<span>전북</span>
+																</li>
+																<li>
+																	<span>전남</span>
+																</li>
+																<li>
+																	<span>경북</span>
+																</li>
+																<li>
+																	<span>경남</span>
+																</li>
+																<li>
+																	<span>제주</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="box">
+														<p class="tit">시/군/구</p>
+														<div class="listWrap">
+															<ul class="list">
+																<li>
+																	<span>전체</span>
+																</li>
+																<li>
+																	<span>강남구</span>
+																</li>
+																<li class="on">
+																	<span>강동구</span>
+																</li>
+																<li>
+																	<span>강북구</span>
+																</li>
+																<li>
+																	<span>강서구</span>
+																</li>
+																<li>
+																	<span>관악구</span>
+																</li>
+																<li>
+																	<span>광진구</span>
+																</li>
+																<li>
+																	<span>구로구</span>
+																</li>
+																<li>
+																	<span>금천구</span>
+																</li>
+																<li>
+																	<span>노원구</span>
+																</li>
+																<li>
+																	<span>도봉구</span>
+																</li>
+																<li>
+																	<span>동작구</span>
+																</li>
+																<li>
+																	<span>동대문구</span>
+																</li>
+																<li>
+																	<span>도봉구</span>
+																</li>
+																<li>
+																	<span>동작구</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</dd>
+										</dl>
+
+										<script>
+											
+										</script>
+										<dl class="tabSelect">
+											<dt class="title">
+												<label>직종분류</label>
+											</dt>
+											<dd class="content">
+												<!-- 200820 수정 // -->
+												<button class="btn" onclick="tabSelectOpen($(this));">직종 선택</button>
+												<!-- // 200820 수정 -->
+												<div class="boxWrap quarter">
+													<div class="box">
+														<p class="tit">대분류</p>
+														<div class="listWrap">
+															<ul class="list">
+																<li class="on">
+																	<span>사업관리</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+																<li>
+																	<span>경영&middot;회계&middot;사무</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="box">
+														<p class="tit">중분류</p>
+														<div class="listWrap">
+															<ul class="list">
+																<li class="on">
+																	<span>기획사무</span>
+																</li>
+																<li>
+																	<span>기획사무</span>
+																</li>
+																<li>
+																	<span>기획사무</span>
+																</li>
+																<li>
+																	<span>기획사무</span>
+																</li>
+																<li>
+																	<span>기획사무</span>
+																</li>
+																<li>
+																	<span>기획사무</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="box">
+														<p class="tit">소분류</p>
+														<div class="listWrap">
+															<ul class="list">
+																<li class="on">
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+																<li>
+																	<span>생산관리</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="box">
+														<p class="tit">세분류</p>
+														<div class="listWrap">
+															<ul class="list">
+																<li class="on">
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+																<li>
+																	<span>QM/QC관리</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<!-- 200820 추가 // -->
+									<script>
+										 function tabSelectOpen(button) {
+											var $button = button;
+											var $tabSelects = $('.tabSelect');
+
+											$tabSelects.removeClass('on');
+											$button.parents('.tabSelect').addClass('on');
+										 }
+									</script>
+									<!-- // 200820 추가 -->
+
+									<!-- 경력 -->
+									<dl class="row">
+										<dt class="title"><label>경력</label></dt>
+										<dd class="content">
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn1" id="chkReturn1-1"><label for="chkReturn1-1">무관</label>
+											</div>  
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn1" id="chkReturn1-2"><label for="chkReturn1-2">신입</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn1" id="chkReturn1-3"><label for="chkReturn1-3">경력</label>
+											</div>
+										</dd>
+									</dl>
+									<!-- 학력 -->
+									<dl class="row">
+										<dt class="title"><label>학력</label></dt>
+										<dd class="content">
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-1"><label for="chkReturn2-1">전체</label>
+											</div>  
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-2"><label for="chkReturn2-2">초졸이상</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-3"><label for="chkReturn2-3">중졸</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-4"><label for="chkReturn2-4">고졸</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-5"><label for="chkReturn2-5">대졸(2~3년)</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-6"><label for="chkReturn2-6">대졸(4년)</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-7"><label for="chkReturn2-7">석사</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-8"><label for="chkReturn2-8">박사</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn2" id="chkReturn2-9"><label for="chkReturn2-9">학력무관</label>
+											</div>
+										</dd>
+									</dl>
+									<!-- 기업유형 -->
+									<dl class="row">
+										<dt class="title"><label>기업유형</label></dt>
+										<dd class="content">
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn3" id="chkReturn3-1"><label for="chkReturn3-1">대기업</label>
+											</div>  
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn3" id="chkReturn3-2"><label for="chkReturn3-2">우수중소기업</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn3" id="chkReturn3-3"><label for="chkReturn3-3">벤처기업</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn3" id="chkReturn3-4"><label for="chkReturn3-4">공기업/공공기관</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn3" id="chkReturn3-5"><label for="chkReturn3-5">외국계기업</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn3" id="chkReturn3-6"><label for="chkReturn3-6">코스피</label>
+											</div>
+											<div class="ui_checkBox">
+												<input type="checkbox" name="chkReturn3" id="chkReturn3-7"><label for="chkReturn3-7">코스닥</label>
+											</div>
+										</dd>
+									</dl>
+									<!-- 임금(월급 환산) -->
+									<dl class="row">
+										<dt class="title"><label for="text1">임금<br />(월급 환산)</label></dt>
+										<dd class="content">
+											<div class="inputDateTermWrap">
+												<div class="inputDateTerm">
+													<input type="text" name="text" id="text1"><span class="at">만원</span>
+													<span class="at">~</span>
+													<input type="text" name="text" id="text2"><span class="at">만원</span>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<!-- 모집기간 -->
+									<dl class="row last">
+										<dt class="title"><label for="date1">모집기간</label></dt>
+										<dd class="content">
+											<div class="inputDateTermWrap">
+												<div class="inputDateTerm">
+													<input type="text" name="date" id="date1" class="js_datepicker">
+													<span class="at">~</span>
+													<input type="text" name="date" id="date2" class="js_datepicker">
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<!-- 200820 수정 // -->
+								<script>
+									function openCondition(el) {
+										var $window = $(window);
+										var value = $window.scrollTop();
+										var $addCondition = $('.addCondition');
+
+										if($addCondition.is(':visible')) {
+											$addCondition.hide();
+											return false;
+										}
+
+										$addCondition.show();
+										$window.scrollTop(value);
+									}
+								</script>
+								 <!-- // 200820 수정 -->
+								<div class="keywordArea">
+									<ul class="list">
+										<li>
+											<span class="con">사업관리</span>
+											<button type="button" class="btnDelete">삭제</button>
+										</li>
+										<li>
+											<span class="con">사업관리</span>
+											<button type="button" class="btnDelete">삭제</button>
+										</li>
+										<li>
+											<span class="con">개강일자 : 2020-06-14 ~ 2020-07-20</span>
+											<button type="button" class="btnDelete">삭제</button>
+										</li>
+										<li>
+											<span class="con">컨소시엄 채용예정자</span>
+											<button type="button" class="btnDelete">삭제</button>
+										</li>
+										<li>
+											<span class="con">외국어과정</span>
+											<button type="button" class="btnDelete">삭제</button>
+										</li>
+									</ul>
+									<div class="btnArea">
+										<button type="button" class="btnType2">조건 초기화</button>
+										<button type="button" class="btnType2 fullBg">선택항목 검색</button>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+
+						<!-- 본문검색결과 조회수  -->
+						<div class="searchResult">
+							<div class="sortArea">
+								<p class="totalNum">전체 <strong>3,765</strong> 건</p>
+								<div class="selectViewArea">
+									<div class="selectView">
+										<label for="pageOrder">등록일</label>
+										<select title="조건별 정렬" name="pageOrder" id="pageOrder" class="selectBox h30">
+											<option value="pageOrder1" selected="selected">가나다↑</option>
+											<option value="pageOrder2">가나다↓</option>
+										</select>
+									</div>
+									<div class="selectView">
+										<label for="pageRow">페이지당 조회건수</label>
+										<select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
+											<option value="10" selected="selected">10개씩</option>
+											<option value="20">20개씩</option>
+											<option value="30">30개씩</option>
+											<option value="50">50개씩</option>
+											<option value="100">100개씩</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<!-- 본문검색목록  -->
+							<div class="tradeList">
+								<ul>
+									<li>
+										<p class="tradeText">
+											<span class="tradeTitle"><a href="/">가축인공수정사</a></span>
+											<span class="selectView">
+												<select title="관련정보보기" name="pageOrder1" id="pageOrder1" class="selectBox h30">
+													<option value="pageOrder1" selected="selected">관련정보보기</option>
+													<option value="pageOrder2">훈련과정 (58)</option>
+													<option value="pageOrder3">일자리 (388)</option>
+												</select>
+											</span>
+										</p>
+										<ul class="txtSection">
+											<li>관련부처 : 한국산업인력공단</li>
+											<li>시행기관 : 한국산업인력공단</li>
+											<li>관심등록 : 18명</li>
+										</ul>
+									</li>
+									<li>
+										<p class="tradeText">
+											<span class="tradeTitle"><a href="/">간호사</a></span>
+											<span class="selectView">
+												<select title="관련정보보기" name="pageOrder2" id="pageOrder2" class="selectBox h30">
+													<option value="pageOrder1" selected="selected">관련정보보기</option>
+													<option value="pageOrder2">훈련과정 (58)</option>
+													<option value="pageOrder3">일자리 (388)</option>
+												</select>
+											</span>
+										</p>
+										<ul class="txtSection">
+											<li>관련부처 : 농립수산식품부</li>
+											<li>시행기관 : 한국산업인력공단</li>
+											<li>관심등록 : 18명</li>
+										</ul>
+									</li>
+									<li>
+										<p class="tradeText">
+											<span class="tradeTitle"><a href="/">간호사</a></span>
+											<span class="selectView">
+												<select title="관련정보보기" name="pageOrder3" id="pageOrder3" class="selectBox h30">
+													<option value="pageOrder1" selected="selected">관련정보보기</option>
+													<option value="pageOrder2">훈련과정 (58)</option>
+													<option value="pageOrder3">일자리 (388)</option>
+												</select>
+											</span>
+										</p>
+										<ul class="txtSection">
+											<li>관련부처 : 농립수산식품부</li>
+											<li>시행기관 : 한국산업인력공단</li>
+											<li>관심등록 : 18명</li>
+										</ul>
+									</li>
+									<li>
+										<p class="tradeText">
+											<span class="tradeTitle"><a href="/">간호사</a></span>
+											<span class="selectView">
+												<select title="관련정보보기" name="pageOrder4" id="pageOrder4" class="selectBox h30">
+													<option value="pageOrder1" selected="selected">관련정보보기</option>
+													<option value="pageOrder2">훈련과정 (58)</option>
+													<option value="pageOrder3">일자리 (388)</option>
+												</select>
+											</span>
+										</p>
+										<ul class="txtSection">
+											<li>관련부처 : 농립수산식품부</li>
+											<li>시행기관 : 한국산업인력공단</li>
+											<li>관심등록 : 18명</li>
+										</ul>
+									</li>
+									<li>
+										<p class="tradeText">
+											<span class="tradeTitle"><a href="/">간호사</a></span>
+											<span class="selectView">
+												<select title="관련정보보기" name="pageOrder5" id="pageOrder5" class="selectBox h30">
+													<option value="pageOrder1" selected="selected">관련정보보기</option>
+													<option value="pageOrder2">훈련과정 (58)</option>
+													<option value="pageOrder3">일자리 (388)</option>
+												</select>
+											</span>
+										</p>
+										<ul class="txtSection">
+											<li>관련부처 : 농립수산식품부</li>
+											<li>시행기관 : 한국산업인력공단</li>
+											<li>관심등록 : 18명</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!--// 검색목록 -->
+
+							<!-- paging : pc -->
+							<div class="pagenation">
+								<a href="/" class="pb prev">이전보기</a>
+								<a href="/" class="on">1</a>
+								<a href="/">2</a>
+								<a href="/">3</a>
+								<a href="/">4</a>
+								<a href="/">5</a>
+								<a href="/">6</a>
+								<a href="/">7</a>
+								<a href="/" class="pb next">다음보기</a>
+							</div>
+							<!-- //paging : pc -->
+						</div>
+					</div>
+
+				</div>
+				<!-- //========== 본문 영역 ================================================== -->
+			</div>
+		</div>
+		<!-- //메인 컨텐츠영역 -->
+
+		<!-- 푸터영역 -->
+		<footer id="footerWrap">
+			푸터영역
+		</footer>
+		<!--// 푸터영역 -->
+	</div>
+
+</body>
+</html>

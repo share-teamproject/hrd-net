@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko"> 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -13,11 +13,14 @@
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
 	<title>직업ㆍ기관정보 | HRD-Net</title> 
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
 	<link href="../new_css/reset.css" rel="stylesheet" />
 	<link href="../new_css/layout.css" rel="stylesheet" />
 	<link href="../new_css/contents.css" rel="stylesheet" />
-	<link href="../new_css/D002.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" /> 
+	<link href="../new_css/front.css" rel="stylesheet" /> 
+
 	<script src="../new_js/lib/jquery-2.1.1.js"></script>
 	<script src="../new_js/lib/swiper.min.js"></script>
 	<script src="../new_js/ui.js"></script>
@@ -33,33 +36,9 @@
 	<div id="wrap">
 		<!-- 헤더영역 -->
 		<header id="headerWrap">
-			<div class="headArea">
-				<h1 class="logoTop"><a href="/"><img src="../new_images/common/logoTop.png" alt="직업훈련포털 HRD-Net"></a></h1>
-				<div class="headTop">
-					<ul id="tnb">
-						<li><a href="/">로그인</a></li>
-						<li><a href="/">회원가입</a></li>
-						<li><a href="/">고객센터</a></li>
-						<li><a href="/">HRD-Net 소개</a></li>
-						<li><a href="/">원격지원</a></li>
-					</ul> 
-				</div>
-				<div class="headBot">
-					<ul id="gnb">
-						<li><a href="/">훈련과정</a></li>
-						<li><a href="/">지원제도</a></li>
-						<li><a href="/">직업ㆍ기관정보</a></li>
-						<li><a href="/">일학습병행제</a></li>
-						<li class="gnbSearchBtn"><a href="/">검색</a></li>
-					</ul>
-				</div>
-			</div>
+			Header영역
 		</header>
 		<!-- //헤더영역 -->
-
-
-<link href="../new_css/D002.css" rel="stylesheet" />
-
 
 		<!-- 메인 컨텐츠영역 -->
 		<div id="contentWrap">
@@ -82,77 +61,78 @@
 			</div>
 			<!-- //상단 비주얼 영역 --> 
 
-			<div id="subContentWrap" class="fullContents">
-				<div class="subContArea">
+			<div id="subContentWrap">
+				<!-- ========== 본문 영역 ================================================== -->
+				<div class="subContArea full" id="front">
+					<!-- 본문제목 -->
 					<div class="headingTitleArea">
 						<h3 class="headingTitle">직업사전 소개</h3>
-						<p class="headingText">직업 현장에서의 직무분석을 바탕으로 조사된 직업정보를 국가직무능력표준(NCS) 분류체계 기준과 한국고용직업분류(KECO) 기준으로 확인할 수 있는 대한민국 직업사전입니다.</p> 
+						<p class="headingText">직업 현장에서의 직무분석을 바탕으로 조사된 직업정보를 국가직무능력표준(NCS) 분류체계 기준과 한국고용직업분류(KECO) 기준으로 확인할 수 있는 대한민국 직업사전입니다.</p>
 						<div class="headingIcon">
 							<ul>
 								<li><button type="button" class="twitter">트위터</button></li>
 								<li><button type="button" class="facebbok">페이스북</button></li>
-								<!--li><button type="button" class="">링크복사</button></li-->
 								<li><button type="button" class="print">프린트</button></li>
 							</ul>
 						</div>
 					</div>
-					<div class="contentArea" id="D002">
-<!--  ##################################################### -->
 
+					<div class="contentArea">
 						<div class="tabInterface">
 							<!-- 텝 인덱스 -->
 							<div class="tabListArea">
 								<ul class="tabList" role="tablist">
-									<li role="tab" aria-controls="section1" aria-selected="true" id="tab1" class="on"><button type="button">소개 및 일러두기</button></li>
-									<li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">수록 직업현황</button></li>
+									<li role="tab" aria-controls="section1" aria-selected="true" id="tab1"  class="on"><button type="button">소개 및 일러두기</button></li>
+									<li role="tab" aria-controls="section2" aria-selected="true" id="tab2"><button type="button">수록 직업현황</button></li>
 								</ul>
 							</div>
 							<!--// 텝 인덱스 -->
 
 							<!-- 텝 컨텐츠 -->
-							<div class="tabContents">
+							<div>
 								<section id="section1" role="tabpanel" class="tabCont on">
-									<div class="tabInterface2">
+									<h4 class="visually-hidden">소개 및 일러두기</h4>
+									<div class="tabInterface">
 										<!-- s텝 인덱스 -->
-										<div class="tabListArea">
-											<ul class="tabList04" role="stablist">
-												<li role="stab" aria-controls="section1-1" aria-selected="true" id="stab1"  class="on"><button type="button">직업코드</button></li>
-												<li role="stab" aria-controls="section1-2" aria-selected="true" id="stab2"  ><button type="button">본직업명칭</button></li>
-												<li role="stab" aria-controls="section1-3" aria-selected="true" id="stab3"  ><button type="button">직무개요</button></li>
-												<li role="stab" aria-controls="section1-4" aria-selected="true" id="stab4"  ><button type="button">수행직무</button></li>
-												<li role="stab" aria-controls="section1-5" aria-selected="true" id="stab5"  ><button type="button">부가직업정보</button></li>
+										<div>
+											<ul class="tabList04" role="tablist">
+												<li  class="on"><button type="button">직업코드</button></li>
+												<li><button type="button">본직업명칭</button></li>
+												<li><button type="button">직무개요</button></li>
+												<li><button type="button">수행직무</button></li>
+												<li><button type="button">부가직업정보</button></li>
 											</ul>
-											<div class="guideBox">『한국직업사전』에 수록된 직업들은 직무분석을 바탕으로 조사된 정보들로서 수많은 일을 조직화된 방식으로 고찰하기 위하여 유사한 직무를 기준으로 분류한 것이다. 수록된 직업정보들은 크게 다섯가지의 항목으로 구성된다.</div>
+											<p class="tabDesc">※ 『한국직업사전』에 수록된 직업들은 직무분석을 바탕으로 조사된 정보들로서 수많은 일을 조직화된 방식으로 고찰하기 위하여 유사한 직무를 기준으로 분류한 것이다. 수록된 직업정보들은 크게 다섯가지의 항목으로 구성된다.</p>
 										</div>
 										<!--// s텝 인덱스 -->
 
 										<!-- s텝 컨텐츠 -->
 										<div class="tabContents">
-											<section id="section1-1" role="stabpanel" class="tabCont on">
-												<h4 class="bult-h4">직업코드</h4>
-												<article class="txtCon01">
+											<section id="section1-1" role="tabpanel" class="tabCont on">
+												<h5 class="bult-h4">직업코드</h5>
+												<div class="txtCon01">
 													<p class="scon">특정 직업을 구분해 주는 단위로서『한국고용직업분류(KECO)』의 세분류 4자리 숫자로 표기하였다. 다만, 동일한 직업에 대해 여러 개의 직업코드가 포함되는 경우에는 직무의 유사성 등을 고려하여 가장 타당하다고 판단되는 직업코드 하나를 부여하였다. 직업코드 4자리에서 첫 번째와 두 번째 숫자는 『한국고용직업분류(KECO)』의 24개 중분류를 나타내며, 세 번째 숫자는 소분류, 네 번째 숫자는 세분류를 나타낸다. 세분류 내 직업들은 가나다 순으로 배열된다.</p>
-													<div class="guideBox">직업분류체계의 기준은 2011년도까지『한국표준직업분류』(통계청)를 사용해 왔으나, 우리나라의 노동시장 현실을 제대로 반영하고 일-훈련-자격 체계의 일관성을 도모하기 위해 『2012 한국직업사전』부터는 『한국고용직업분류(KECO)』(한국고용정보원)를 사용하였다.</div>
-												</article>
+													<p class="tabDesc">※ 직업분류체계의 기준은 2011년도까지『한국표준직업분류』(통계청)를 사용해 왔으나, 우리나라의 노동시장 현실을 제대로 반영하고 일-훈련-자격 체계의 일관성을 도모하기 위해 『2012 한국직업사전』부터는 『한국고용직업분류(KECO)』(한국고용정보원)를 사용하였다.</p>
+												</div>
 											</section>
 
-											<section id="section1-2" role="stabpanel" class="tabCont">
-												<h4 class="bult-h4">본직업명칭</h4>
-												<article class="txtCon01">
+											<section id="section1-2" role="tabpanel" class="tabCont">
+												<h5 class="bult-h4">본직업명칭</h5>
+												<div class="txtCon01">
 													<p class="scon">산업현장에서 일반적으로 해당 직업으로 알려진 명칭 혹은 그 직무가 통상적으로 호칭되는 것으로 『한국직업사전』에 그 직무내용이 기술된 명칭이다. 즉, 사업주가 근로자를 모집할 때 사용하는 명칭, 사업체 내에서 일반적으로 통용되는 명칭, 구직자가 취업하고자 할 때 사용하는 명칭, 해당 직업 종사자 상호간의 호칭, 그 외 각종 직업 관련 서류에 쓰이는 명칭을 말한다. 특별히 부르는 명칭이 없는 경우에는 직무내용과 산업의 특수성 등을 고려하여 누구나 쉽게 이해할 수 있는 명칭을 부여하였다. 실제로 현장근로자를 대상으로 하는 직무조사의 경우 작업자 스스로도 자신의 직업이 무엇으로 불리는지 알지 못하는 경우가 있는데 이는 작업자들 간에 사용하는 호칭과 기업 내 직무편제상의 명칭이 다르기 때문이다. 따라서 직업명칭은 해당 작업자의 의견뿐만 아니라 상위책임자 및 인사담담자의 의견을 수렴하여 결정하였다. 또한 가급적 외래어를 피하고 우리말로 표기하되, 우리말 표기에 현장감이 없을 경우에는 외래어를 교육인적자원부에서 정한 외래어표기법에 따라 표기하였다.</p>
-												</article>
+												</div>
 											</section>
 
-											<section id="section1-3" role="stabpanel" class="tabCont">
-												<h4 class="bult-h4">직무개요</h4>
-												<article class="txtCon01">
+											<section id="section1-3" role="tabpanel" class="tabCont">
+												<h5 class="bult-h4">직무개요</h5>
+												<div class="txtCon01">
 													<p class="scon">직무담당자의 활동, 활동의 대상 및 목적, 직무담당자가 사용하는 기계, 설비 및 작업보조물, 사용된 자재, 만들어진 생산품 또는 제공된 용역, 수반되는 일반적, 전문적 지식 등을 간략히 기술하였다.</p>
-												</article>
+												</div>
 											</section>
 
-											<section id="section1-4" role="stabpanel" class="tabCont">
-												<h4 class="bult-h4">수행직무</h4>
-												<article class="txtCon01">
+											<section id="section1-4" role="tabpanel" class="tabCont">
+												<h5 class="bult-h4">수행직무</h5>
+												<div class="txtCon01">
 													<p class="scon">직무담당자가 직무의 목적을 완수하기 위하여 수행하는 구체적인 작업(task) 내용을 작업순서에 따라 서술한 것이다. 단, 공정의 순서를 파악하기 어려운 경우에는 작업의 중요도 또는 작업빈도가 높은 순으로 기술하였다. 작업을 수행하면서 수반되는 작업요소(task element)는 직무를 기술하는데 필요한 것이라면 포함한다. 직무의 특징적인 작업을 명확히 하기 위하여 작업자가 사용하는 도구·기계와 관련시켜 작업자가 무엇을, 어떻게, 왜 하는가를 정확하게 표현하되 평이한 문체로 이해하기 쉽게 기술하였다. 작업과 작업요소는 상대적인 개념으로 어떤 직업에서는 작업요소인 활동이 다른 직업에서는 작업(task)이 될 수 있고 또 어떤 근로자에게는 하나의 직무가 될 수 있으므로 직무특성에 따라 적절히 판단하였다. 문장기술의 통일성을 확보하기 위하여 조사자는 다음의 원칙을 고려하여 수행직무를 기술하였다.</p>
 													<ol class="scon decimal">
 														<li>해당 작업원이 주어일 때는 주어를 생략하나, 다른 작업원이 주어일 때에는 주어를 생략하지 않는다.</li>
@@ -165,12 +145,12 @@
 														<li>주된 직무보다 빈도나 중요도는 낮으나 수행이 가능한 작업에 대해서는 "수행직무" 에서 "~하기도 한다." 로 표현한다. "~하기도 한다." 라는 문장은 이 직업에 종사하는 사람이 가끔 이런 작업을 수행할 것이라는 의미가 아니라 다른 사업체에 있는 이 직업에 종사하는 사람이 일반적으로 수행하거나 수행 가능한 작업을 나타낸다.</li>
 														<li>외래어의 정확한 이해를 위해 원어(原語)를 함께 표기한다.</li>
 													</ol>
-												</article>
+												</div>
 											</section>
 
-											<section id="section1-5" role="stabpanel" class="tabCont">
+											<section id="section1-5" role="tabpanel" class="tabCont">
 												<h4 class="bult-h4">부가직업정보</h4>
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">정규교육</h5>
 													<p class="scon">해당 직업의 직무를 수행하는데 필요한 일반적인 정규교육수준을 의미하는 것으로 해당 직업 종사자의 평균 학력을 나타내는 것은 아니다. 현행 우리나라 정규교육과정의 연한을 고려하여 "6년 이하"(무학 또는 초졸 정도), "6년 초과 ~ 9년 이하"(중졸 정도), "9년 초과 ~ 12년 이하"(고졸 정도), "12년 초과 ~ 14년 이하"(전문대졸 정도), "14년 초과 ~ 16년 이하"(대졸 정도), "16년 초과"(대학원 이상) 등 그 수준을 6단계로 분류하였으며, 독학, 검정고시 등을 통해 정규교육 과정을 이수하였다고 판단되는 기간도 포함된다.</p>
 													<div class="tableArea">
@@ -214,9 +194,9 @@
 															</tbody>
 														</table>
 													</div>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">숙련기간</h5>
 													<p class="scon">정규교육과정을 이수한 후 해당 직업의 직무를 평균적인 수준으로 스스로 수행하기 위하여 필요한 각종 교육, 훈련, 숙련기간을 의미한다. 해당 직업에 필요한 자격·면허를 취득하는 취업 전 교육 및 훈련기간뿐만 아니라 취업 후에 이루어지는 관련 자격·면허 취득 교육 및 훈련기간도 포함된다. 또한 자격·면허가 요구되는 직업은 아니지만 해당 직무를 평균적으로 수행하기 위한 각종 교육·훈련기간, 수습교육, 기타 사내교육, 현장훈련 등이 포함된다. 단, 해당직무를 평균적인 수준 이상으로 수행하기 위한 향상훈련(further training)은 "숙련기간"에 포함되지 않는다.</p>
 													<div class="tableArea">
@@ -272,9 +252,9 @@
 															</tbody>
 														</table>
 													</div>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">직무기능</h5>
 													<p class="scon">해당 직업 종사자가 직무를 수행하는 과정에서 "자료(data)", "사람(people)", "사물(thing)"과 맺는 관련된 특성을 나타낸다. 각각의 작업자 직무기능은 광범위한 행위를 표시하고 있으며 작업자가 자료, 사람, 사물과 어떤 관련을 가지고 있는지를 보여준다. 세 가지 관계 내에서의 배열은 아래에서 위로 올라가면서 단순한 것에서 차츰 복잡한 것으로 향하는 특성을 보여주지만 그 계층적 관계가 제한적인 경우도 있다. "자료(data)"와 관련된 기능은 정보, 지식, 개념 등 세 가지 종류의 활동으로 배열되어 있는데 어떤 것은 광범위하며 어떤 것은 범위가 협소하다. 또한 각 활동은 상당히 중첩되어 배열간의 복잡성이 존재한다. "사람(people)"과 관련된 기능은 위계적 관계가 없거나 희박하다. 서비스 제공이 일반적으로 덜 복잡한 사람관련 기능이며, 나머지 기능들은 기능의 수준을 의미하는 것은 아니다. "사물(thing)"과 관련된 기능은 작업자가 기계와 장비를 가지고 작업하는지 혹은 기계가 아닌 도구나 보조구(補助具)를 가지고 작업하는지에 기초하여 분류된다. 또한 작업자의 업무에 따라 사물과 관련되어 요구되는 활동수준이 달라진다.</p>
 													<div class="tableArea">
@@ -304,7 +284,7 @@
 																<tr>
 																	<td class="forPC">1</td>
 																	<td class="forPC">조정</td>
-																	<td class="forPC"협의></td>
+																	<td class="forPC">협의</td>
 																	<td class="last forPC">정밀작업</td>
 																</tr>
 																<tr>
@@ -352,9 +332,9 @@
 															</tbody>
 														</table>
 													</div>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">자료(data) : "자료"와 관련된 기능은 만질 수 없으며 숫자, 단어, 기호, 생각, 개념 그리고 구두상 표현을 포함한다.</h5>
 													<ol class="scon">
 														<li>0.    종합(synthesizing) : 사실을 발견하고 지식개념 또는 해석을 개발하기 위해 자료를 종합적으로 분석한다.</li>
@@ -364,9 +344,9 @@
 														<li>4.    계산(computing) : 사칙연산을 실시하고 사칙연산과 관련하여 규정된 활동을 수행하거나 보고한다. 수를 세는 것은 포함되지 않는다.기록(copying) : 데이터를 옮겨 적거나 입력하거나 표시한다.</li>
 														<li>5.    비교(comparing) : 자료, 사람, 사물의 쉽게 관찰되는 기능적, 구조적, 조합적 특성을 (유사성 또는 표준과의 차이) 판단한다.</li>
 													</ol>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">사람(people) : "사람"과 관련된 기능은 인간과 인간처럼 취급되는 동물을 다루는 것을 포함한다.</h5>
 													<ol class="scon">
 														<li>0.    자문(mentoring) : 법률적으로나 과학적, 임상적, 종교적, 기타 전문적인 방식에 따라 사람들의 전인격적인 문제를 상담하고 조언하며 해결책을 제시한다.</li>
@@ -378,9 +358,9 @@
 														<li>6.    말하기-신호(speaking-signaling) : 언어나 신호를 사용해서 정보를 전달하고 교환한다. 보조원에게 지시하거나 과제를 할당하는 일을 포함한다.</li>
 														<li>7.    서비스제공(serving) : 사람들의 요구 또는 필요를 파악하여 서비스를 제공한다. 즉각적인 반응이 수반된다.</li>
 													</ol>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">사물(thing) : "사물"과 관련된 기능은 사람과 구분되는 무생물로서 물질, 재료, 기계, 공구, 설비, 작업도구 및 제품 등을 다루는 것을 포함한다.</h5>
 													<ol class="scon">
 														<li>0.    설치(setting up) : 기계의 성능, 재료의 특성, 작업장의 관례 등에 대한 지식을 적용하여 연속적인 기계가공작업을 수행하기 위한 기계 및 설비의 준비, 공구 및 기타 기계장비의 설치 및 조정, 가공물 또는 재료의 위치조정, 제어장치 설정, 기계의 기능 및 완제품의 정밀성 측정 등을 수행한다.</li>
@@ -392,9 +372,9 @@
 														<li>6.    투입.인출(feeding-off bearing) : 자동적으로 또는 타작업원에 의하여 가동, 유지되는 기계나 장비안에 자재를 삽입, 투척, 하역하거나 그 안에 있는 자재를 다른 장소로 옮긴다.</li>
 														<li>7.    단순작업(handling) : 신체부위, 수공구 또는 특수장치를 사용하여 기계, 장비, 물건 또는 원료 등을 정리, 운반 처리한다. 정확도 달성 및 적합한 공구, 장비, 원료를 선정하는데 판단력은 요구되지 않는다.</li>
 													</ol>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">작업강도</h5>
 													<p class="scon">"작업강도"는 해당 직업의 직무를 수행하는데 필요한 육체적 힘의 강도를 나타낸 것으로 5단계로 분류하였다. 그러나 "작업강도"는 심리적·정신적 노동강도는 고려하지 않았다.</p>
 													<div class="tableArea">
@@ -444,9 +424,9 @@
 														<li>- 밈 : 물체에 힘을 가하여 힘을 가한 반대쪽으로 움직이게 하는 작업 (때리고, 치고, 발로차고, 페달을 밟는 일도 포함)</li>
 														<li>- 당김 : 물체에 힘을 가하여 힘을 가한 쪽으로 움직이게 하는 작업</li>
 													</ul>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">육체활동</h5>
 													<p class="scon">"육체활동"은 해당 직업의 직무를 수행하기 위해 필요한 신체적 능력을 나타내는 것으로 균형감각, 웅크림, 손, 언어력, 청각, 시각 등이 요구되는 직업인지를 보여준다. 단, "육체활동"은 조사대상 사업체 및 종사자에 따라 다소 상이할 수 있으므로 전체 직업 종사자의 "육체활동"으로 일반화하는 데는 무리가 있다.</p>
 													<div class="tableArea">
@@ -507,9 +487,9 @@
 															</tbody>
 														</table>
 													</div>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">작업장소</h5>
 													<p class="scon">"작업장소"는 해당직업의 직무가 주로 수행되는 장소를 나타내는 것으로 실내, 실외 종사비율에 따라 구분한다.</p>
 													<div class="tableArea">
@@ -541,9 +521,9 @@
 															</tbody>
 														</table>
 													</div>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">작업환경</h5>
 													<p class="scon">"작업환경"은 해당직업의 직무를 수행하는 작업자에게 직접적으로 물리적, 신체적 영향을 미치는 작업장의 환경요인을 나타낸 것이다. 작업자의 작업환경을 조사하는 담당자는 일시적으로 방문하고 또한 정확한 측정기구를 가지고 있지 못한 경우가 일반적이기 때문에 조사 당시에 조사자가 느끼는 신체적 반응 및 작업자의 반응을 듣고 판단한다. 온도, 소음·진동, 위험내재 및 대기환경이 미흡한 직업은 근로기준법, 산업안전보건법 등의 법률(부록참조)에서 제시한 금지직업이나 유해요소가 있는 직업 등을 근거로 판단할 수 있다. 그러나 이러한 기준도 산업체 및 작업장에 따라 달라 질 수 있으므로 절대적인 기준이 될 수 없다.</p>
 													<div class="tableArea">
@@ -587,37 +567,37 @@
 															</tbody>
 														</table>
 													</div>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">유사명칭</h5>
 													<p class="scon">"유사명칭"은 현장에서 본직업명을 명칭만 다르게 부르는 것으로 본직업명과 사실상 동일하다. 따라서 직업수 집계에서 제외된다. 예를 들어, "보험모집원"은 "생활설계사", "보험영업사원"이라는 유사명칭을 가지는데 이는 동일한 직무를 다르게 부르는 명칭들이다.</p>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">관련직업</h5>
 													<p class="scon">"관련직업"은 본직업명과 기본적인 직무에 있어서 공통점이 있으나 직무의 범위, 대상 등에 따라 나누어지는 직업이다. 하나의 본직업명에는 두 개 이상의 관련 직업이 있을 수 있으며 직업수 집계에 포함된다.</p>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">자격·면허</h5>
 													<p class="scon">"자격·면허"는 해당 직업에 취업 시 소지할 경우 유리한 자격증 또는 면허를 나타내는 것으로 현행 국가기술자격법 및 개별법령에 의해 정부주관으로 운영하고 있는 국가자격 및 면허를 수록한다. 한국산업인력공단 및 대한상공회의소에서 주관·수행하는 시험에 해당하는 자격과 각 부처에서 개별적으로 시험을 실시하는 자격증을 중심으로 수록하였다. 그러나 민간에서 부여하는 자격증은 제외한다.</p>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">한국표준산업분류 코드</h5>
 													<p class="scon">해당 직업을 조사한 산업을 나타내는 것으로『한국표준산업분류(제9차 개정)』의 소분류(3-digits) 산업을 기준으로 하였다. 두개 이상의 산업에 걸쳐 조사된 직업에 대해서도 해당 산업을 모두 표기하였다. 대분류 기준의 모든 산업에 포함되는 일부 직업은 대분류의 소분류 산업을 모두 표기하는 것이 아니라 "제조업", "도매 및 소매업" 등 대분류 산업을 기준으로 표기하였다. 단, "산업분류"는 수록된 산업에만 해당 직업이 존재하는 것을 의미하는 것이 아니라 그 직업이 조사된 산업을 나타내고 있다. 따라서 타 산업에서도 해당 직업이 존재 할 수 있다.</p>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">한국표준직업분류 코드</h5>
 													<p class="scon">해당 직업의『한국고용직업분류(KECO)』 세분류 코드(4-digits)에 해당하는 『한국표준직업분류』(통계청)의 세분류 코드를 표기한다.</p>
-												</article>
+												</div>
 
-												<article class="txtCon01">
+												<div class="txtCon01">
 													<h5 class="bultH5">조사연도</h5>
 													<p class="scon">"조사연도"는 해당 직업의 직무조사가 실시된 연도를 나타낸다.</p>
-												</article>
+												</div>
 											</section>
 										</div>
 										<!-- //s텝 컨텐츠 -->
@@ -626,7 +606,7 @@
 
 								<section id="section2" role="tabpanel" class="tabCont">
 									<h4 class="bult-h4">『한국직업사전』 수록 직업 현황</h4>
-									<article class="txtCon01">
+									<div class="txtCon01">
 										<p class="scon">2014년 말 기준, 『한국직업사전』에는 총 11,440개(본직업명 5,662개, 관련직업명 5,778개 포함)의 직업이 수록되어 있으며 직업명 기준으로는 11,440개의 직업에 유사직업명 3,441개를 더한 14,881개의 직업명이 수록되어 있다.</p>
 										<div class="guideBox">
 												<p>- 본직업명은 직업현장에서 해당 직무에 대해 통상적으로 불리는 호칭으로서 『한국직업사전』에 그 직무내용이 기술되어 있다.</p>
@@ -635,79 +615,24 @@
 												<p>- 유사직업명은 직업현장에서 본직업명을 명칭만 다르게 부르는 것으로 본직업명과 사실상 동일한 직업이다.</p>
 												<p>- 예를 들어, ‘택시운전원’의 유사직업명인 ‘택시운전사’, ‘택시기사’는 ‘택시운전원’과 동일한 직업이며, 직업 수 집계에서 제외된다.</p>
 										</div>
-									</article>
+									</div>
 								</section>
 							</div>
 							<!--// 텝 컨텐츠 -->
 						</div>
 
-<!--  ##################################################### -->
 					</div>
 				</div>
+				<!-- //========== 본문 영역 ================================================== -->
 			</div>
 		</div>
 		<!-- //메인 컨텐츠영역 -->
 
-<!-- 푸터영역 -->
-<footer id="footerWrap">
-	<div class="footerArea">	
-		<div class="footerCont">
-			<div class="footerLink swiper-container">
-				<ul class="swiper-wrapper">
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-				</ul>
-			</div> 
-			<ul class="footerLogo">
-				<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="..../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
-				<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="..../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
-			</ul>
-			<div class="footerPolicy">
-				<ul>								
-					<li><a href="/">기관소개</a></li>
-					<li><a href="/">찾아오시는 길</a></li>
-					<li class="on"><a href="/">개인정보처리방침</a></li>
-					<li><a href="/">저작권보호정책</a></li>
-					<li><a href="/">공인인증센터</a></li>
-					<li><a href="/">이메일수집거부</a></li>
-					<li><a href="/">오픈 API 서비스</a></li>
-				</ul>
-			</div>
-			<ul class="footerMark">
-				<li><a href="javascript:window.open('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&amp;certNum=2019-N009','seal','width=527,height=720,location=no,status=no,scrollbars=no')" title="새창"><img src="..../new_images/common/footerMark01.png" alt="ePRIVACY마크(개인정보보호마크)"></a></li>
-				<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="..../new_images/common/footerMark02.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"></a></li>
-			</ul>
-		</div>				 
-		<address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address> 
-		<p class="copyright">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</p>
-	</div>		   
-</footer>
-<!-- //푸터영역 -->
-
-<!-- Top버튼 -->
-<!--div class="btnGoTop"><a href="/" role="button">Top으로 이동</a></div-->
-<!-- //Top버튼 -->
-
-<!-- 하단 고정 메뉴 : Mobile -->
-<div id="floatingWrap" class="fixBotNav">
-	<nav class="floatingMenu">
-		<ul>
-			<li class="home"><a href="/"><span>홈</span></a></li>
-			<li class="search"><a href="/"><span>훈련상세<br>과정검색</span></a></li>
-			<li class="my"><a href="/"><span>My</span></a></li>
-			<li class="alam"><a href="/"><span>알림</span></a></li>
-		</ul>
-	</nav>
-</div> 
-<!-- //하단 고정 메뉴 : Mobile -->
-</div>
+		<!-- 푸터영역 -->
+		<footer id="footerWrap">
+			푸터영역
+		</footer>
+		<!--// 푸터영역 -->
+	</div>
 </body>
 </html>

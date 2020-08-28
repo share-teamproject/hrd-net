@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=1140, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" /> 
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            winHeight();
+            function winHeight(){
+                var winH = $(window).height();
+                $('#contentWrap').css('height',winH);
+            }    
+            window.addEventListener('resize', function() {
+            	winHeight();
+            });
+        });    
+    </script>   
+</head>
+
+<body>
+	<div id="wrap">
+        <!-- 메인 컨텐츠영역 -->
+        <div id="contentWrap">
+            <div class="errorArea">
+                <p class="errorText1">페이지를 찾을 수가 없습니다.</p>
+                <p class="errorText2">연결하려는 페이지에 문제가 있어서 페이지를<br> 표시할 수 없습니다.</p>
+                <div class="btnGroup tc">
+                    <button type="button" class="btnType1 primary">새로고침</button>
+                </div>   
+            </div>
+        </div>
+        <!-- //메인 컨텐츠영역 -->
+    </div>
+</body>
+</html>

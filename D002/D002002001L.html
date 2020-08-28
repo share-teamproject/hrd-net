@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko"> 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -13,10 +13,14 @@
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
 	<title>직업ㆍ기관정보 | HRD-Net</title> 
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
 	<link href="../new_css/reset.css" rel="stylesheet" />
 	<link href="../new_css/layout.css" rel="stylesheet" />
 	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" /> 
+	<link href="../new_css/front.css" rel="stylesheet" /> 
+
 	<script src="../new_js/lib/jquery-2.1.1.js"></script>
 	<script src="../new_js/lib/swiper.min.js"></script>
 	<script src="../new_js/ui.js"></script>
@@ -32,33 +36,9 @@
 	<div id="wrap">
 		<!-- 헤더영역 -->
 		<header id="headerWrap">
-			<div class="headArea">
-				<h1 class="logoTop"><a href="/"><img src="../new_images/common/logoTop.png" alt="직업훈련포털 HRD-Net"></a></h1>
-				<div class="headTop">
-					<ul id="tnb">
-						<li><a href="/">로그인</a></li>
-						<li><a href="/">회원가입</a></li>
-						<li><a href="/">고객센터</a></li>
-						<li><a href="/">HRD-Net 소개</a></li>
-						<li><a href="/">원격지원</a></li>
-					</ul> 
-				</div>
-				<div class="headBot">
-					<ul id="gnb">
-						<li><a href="/">훈련과정</a></li>
-						<li><a href="/">지원제도</a></li>
-						<li><a href="/">직업ㆍ기관정보</a></li>
-						<li><a href="/">일학습병행제</a></li>
-						<li class="gnbSearchBtn"><a href="/">검색</a></li>
-					</ul>
-				</div>
-			</div>
+			Header영역
 		</header>
 		<!-- //헤더영역 -->
-
-
-<link href="../new_css/D002.css" rel="stylesheet" />
-
 
 		<!-- 메인 컨텐츠영역 -->
 		<div id="contentWrap">
@@ -81,28 +61,28 @@
 			</div>
 			<!-- //상단 비주얼 영역 --> 
 
-			<div id="subContentWrap" class="fullContents">
-				<div class="subContArea">
+			<div id="subContentWrap">
+				<!-- ========== 본문 영역 ================================================== -->
+				<div class="subContArea full" id="front">
+					<!-- 본문제목 -->
 					<div class="headingTitleArea">
-						<h3 class="headingTitle">공인민간자격</h3>
-						<p class="headingText">국가 외의 자가(민간기관) 신설하여 관리, 운영하는 자격으로 자격기본법에 의거하여 국가의 인정을 받은 자격을 말합니다. <br />자세한 정보는 한국직업능력개발원 (http://www.pqi.or.kr) 에서 확인하시기 바랍니다.</p> 
+						<h3 class="headingTitle">국가자격</h3>
+						<p class="headingText">직종 분류와 지역에 따라 구인정보를 제공해 드리고 있습니다.</p>
 						<div class="headingIcon">
 							<ul>
 								<li><button type="button" class="twitter">트위터</button></li>
 								<li><button type="button" class="facebbok">페이스북</button></li>
-								<!--li><button type="button" class="">링크복사</button></li-->
 								<li><button type="button" class="print">프린트</button></li>
 							</ul>
 						</div>
 					</div>
-					<div class="contentArea" id="D002">
-<!--  ##################################################### -->
 
+					<div class="contentArea">
 						<!-- 조건검색영역 -->
 						<div class="searchWrap">
 							<fieldset>
 								<legend>공인민간자격 검색</legend>
-								<dl>
+								<dl class="searchArea">
 									<dt><label for="searchItem">검색</label></dt>
 									<dd>
 										<select name="searchItem" title="검색 항목 선택" id="searchItem" class="selectBox w35p">
@@ -119,147 +99,93 @@
 						<!--// 조건검색영역 -->
 
 						<!-- 검색결과 갯수 및 정렬 -->
-						<div class="sortArea">
-							<p class="totalNum">전체 <strong>3,765</strong> 건</p>
-							<div class="selectViewArea">
-								<div class="selectView">
-									<label for="pageOrder">등록일</label>
-									<select title="조건별 정렬" name="pageOrder" id="pageOrder" class="selectBox h30">
-										<option value="pageOrder1" selected="selected">자격증↑</option>
-										<option value="pageOrder2">자격증↓</option>
-									</select>
-								</div>
-								<div class="selectView">
-									<label for="pageRow">페이지당 조회건수</label>
-									<select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
-										<option value="10" selected="selected">10개씩</option>
-										<option value="20">20개씩</option>
-										<option value="30">30개씩</option>
-										<option value="50">50개씩</option>
-										<option value="100">100개씩</option>
-									</select>
+						<div class="searchResult">
+							<div class="sortArea">
+								<p class="totalNum">전체 <strong>3,765</strong> 건</p>
+								<div class="selectViewArea">
+									<div class="selectView">
+										<label for="pageOrder">등록일</label>
+										<select title="조건별 정렬" name="pageOrder" id="pageOrder" class="selectBox h30">
+											<option value="pageOrder1" selected="selected">자격증↑</option>
+											<option value="pageOrder2">자격증↓</option>
+										</select>
+									</div>
+									<div class="selectView">
+										<label for="pageRow">페이지당 조회건수</label>
+										<select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
+											<option value="10" selected="selected">10개씩</option>
+											<option value="20">20개씩</option>
+											<option value="30">30개씩</option>
+											<option value="50">50개씩</option>
+											<option value="100">100개씩</option>
+										</select>
+									</div>
 								</div>
 							</div>
+							<!-- // 검색결과 갯수 및 정렬 -->
+
+							<!-- 검색목록  -->
+							<div tabindex="0" class="tradeList">
+								<ul>
+									<li>
+										<p class="tradeText">
+											<span class="tradeTitle">3D프린터마스터</span>
+											<a href="#" class="conFirm" title="새창으로 연결">바로 확인하기</a>
+										</p>
+										<p class="txtSection">
+											<span class="tl">자격관리기관: (사)한국광전자산업전문인협회</span>
+										</p>
+									</li>
+									<li>
+										<p class="tradeText">
+											<span class="tradeTitle">AT(Accounting Technician)</span>
+											<a href="#" class="conFirm" title="새창으로 연결">바로 확인하기</a>
+										</p>
+										<p class="txtSection">
+											<span class="tl">자격관리기관: (사)한국광전자산업전문인협회</span>
+										</p>
+									</li>
+									<li>
+										<p class="tradeText">
+											<span class="tradeTitle">CRA(신용위험분석사)</span>
+											<a href="#" class="conFirm" title="새창으로 연결">바로 확인하기</a>
+										</p>
+										<p class="txtSection">
+											<span class="tl">자격관리기관: (사)한국금융연수원</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<!--// 검색목록  -->
+
+							<!-- paging : pc -->
+							<div class="pagenation">
+								<a href="/" class="pb prev">이전보기</a>
+								<a href="/" class="on">1</a>
+								<a href="/">2</a>
+								<a href="/">3</a>
+								<a href="/">4</a>
+								<a href="/">5</a>
+								<a href="/">6</a>
+								<a href="/">7</a>
+								<a href="/" class="pb next">다음보기</a>
+							</div>
+							<!-- //paging : pc -->
 						</div>
-						<!-- // 검색결과 갯수 및 정렬 -->
-
-						<!-- 검색목록  -->
-						<div tabindex="0" class="tradeList">
-							<ul>
-								<li>
-									<p class="tradeText">
-										<span class="tradeTitle">3D프린터마스터</span>
-										<a href="#" class="conFirm" title="새창으로 연결">바로 확인하기</a>
-									</p>
-									<p class="txtSection">
-										<span class="tl">자격관리기관: (사)한국광전자산업전문인협회</span>
-									</p>
-								</li>
-								<li>
-									<p class="tradeText">
-										<span class="tradeTitle">AT(Accounting Technician)</span>
-										<a href="#" class="conFirm" title="새창으로 연결">바로 확인하기</a>
-									</p>
-									<p class="txtSection">
-										<span class="tl">자격관리기관: (사)한국광전자산업전문인협회</span>
-									</p>
-								</li>
-								<li>
-									<p class="tradeText">
-										<span class="tradeTitle">CRA(신용위험분석사)</span>
-										<a href="#" class="conFirm" title="새창으로 연결">바로 확인하기</a>
-									</p>
-									<p class="txtSection">
-										<span class="tl">자격관리기관: (사)한국금융연수원</span>
-									</p>
-								</li>
-							</ul>
-						</div>
-						<!--// 검색목록  -->
-
-						<!-- paging : pc -->
-						<div class="pagenation">
-							<a href="/" class="pb prev">이전보기</a>
-							<a href="/" class="on">1</a>
-							<a href="/">2</a>
-							<a href="/">3</a>
-							<a href="/">4</a>
-							<a href="/">5</a>
-							<a href="/">6</a>
-							<a href="/">7</a>
-							<a href="/" class="pb next">다음보기</a>
-						</div>
-						<!-- //paging : pc -->
 
 
-<!--  ##################################################### -->
 					</div>
 				</div>
+				<!-- //========== 본문 영역 ================================================== -->
 			</div>
 		</div>
 		<!-- //메인 컨텐츠영역 -->
 
-
-<!-- 푸터영역 -->
-<footer id="footerWrap">
-	<div class="footerArea">	
-		<div class="footerCont">
-			<div class="footerLink swiper-container">
-				<ul class="swiper-wrapper">
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-					<li class="swiper-slide"><a href="/" target="_blank" title="새창"><img src="..../new_images/common/familySite01.png" alt="고용노동부"></a></li>
-				</ul>
-			</div> 
-			<ul class="footerLogo">
-				<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="..../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
-				<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="..../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
-			</ul>
-			<div class="footerPolicy">
-				<ul>								
-					<li><a href="/">기관소개</a></li>
-					<li><a href="/">찾아오시는 길</a></li>
-					<li class="on"><a href="/">개인정보처리방침</a></li>
-					<li><a href="/">저작권보호정책</a></li>
-					<li><a href="/">공인인증센터</a></li>
-					<li><a href="/">이메일수집거부</a></li>
-					<li><a href="/">오픈 API 서비스</a></li>
-				</ul>
-			</div>
-			<ul class="footerMark">
-				<li><a href="javascript:window.open('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&amp;certNum=2019-N009','seal','width=527,height=720,location=no,status=no,scrollbars=no')" title="새창"><img src="..../new_images/common/footerMark01.png" alt="ePRIVACY마크(개인정보보호마크)"></a></li>
-				<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="..../new_images/common/footerMark02.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"></a></li>
-			</ul>
-		</div>				 
-		<address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address> 
-		<p class="copyright">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</p>
-	</div>		   
-</footer>
-<!-- //푸터영역 -->
-
-<!-- Top버튼 -->
-<!--div class="btnGoTop"><a href="/" role="button">Top으로 이동</a></div-->
-<!-- //Top버튼 -->
-
-<!-- 하단 고정 메뉴 : Mobile -->
-<div id="floatingWrap" class="fixBotNav">
-	<nav class="floatingMenu">
-		<ul>
-			<li class="home"><a href="/"><span>홈</span></a></li>
-			<li class="search"><a href="/"><span>훈련상세<br>과정검색</span></a></li>
-			<li class="my"><a href="/"><span>My</span></a></li>
-			<li class="alam"><a href="/"><span>알림</span></a></li>
-		</ul>
-	</nav>
-</div> 
-<!-- //하단 고정 메뉴 : Mobile -->
-</div>
+		<!-- 푸터영역 -->
+		<footer id="footerWrap">
+			푸터영역
+		</footer>
+		<!--// 푸터영역 -->
+	</div>
 </body>
 </html>
