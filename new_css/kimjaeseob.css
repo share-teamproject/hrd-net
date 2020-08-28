@@ -119,6 +119,8 @@
 .nBoxDl > dd.red {color:#93480f;}
 .nBoxDl > dd .point {color:#292a2d;}
 
-
+.addrCont {max-width:480px;}
+.addrCont input[type="text"] {width:100%;}
+.addrCont .addrContEle {margin-top:10px;}
 
 
