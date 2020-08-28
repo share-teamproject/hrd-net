@@ -213,6 +213,15 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .goLinkLong {display:inline-block; min-width:235px; height:50px; line-height:46px; padding:0 20px; text-align:left; border:2px solid #cdcdd1; font-size:26px; color:#4e4f51; }
 .goLinkLong:after {content:''; display:inline-block; vertical-align:middle; width:6px; height:12px; margin-left:10px; margin-top:-5px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;}
 
+/* 높이 60px btn */
+.dotBtn {display:inline-block; width:53px; height:39px; background:url(../new_images/common/icoBtnDot.png) no-repeat center center;}
+.btnH60Group {font-size:0; text-align:center;}
+.btnH60Group .btnH60 + .btnH60 {margin-left:20px;}
+.btnH60 {display:inline-block; width:160px; height:60px; line-height:56px; text-align:center; border:1px solid #fff; background:#fff; font-weight:500; font-size:24px;}
+.btnH60.ty1 {color:#fff; background:#4171df; border:2px solid #4171df;} 
+.btnH60.ty2 {color:#4e4f51; border:2px solid #cdcdd1;}
+.btnH60.ty3 {color:#258384; border:2px solid #258384;}
+.btnH60.ty4 {color:#4171df; border:2px solid #4171df;}
 
 /* ==============================
 * input
@@ -264,6 +273,7 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 .verPC { display:none !important; }
 .verM { display:block !important; }
 .forPC { display:none !important; }  
+.dp_ib { display:inline-block !important; }
 .tl { text-align: left !important; }
 .tc { text-align: center !important; }
 .tr { text-align: right !important; }
@@ -277,6 +287,7 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 .color04 { color:#258384; }
 .color05 { color:#4171df; }
 .bg01 { background-color:#fff !important; }
+.bgType1 {background:#f0f0f2 !important;}
 .w100p { width:100% !important; }
 .w140 { width:140px !important; }
 .w145 { width:145px !important; }

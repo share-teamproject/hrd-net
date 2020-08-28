@@ -5,8 +5,6 @@
 * ============================== */
 .commentBox {min-height:53px; padding:25px 25px 25px 100px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 37px top 25px;}
 
-.bgType1 {background:#f0f0f2 !important;}
-
 .toolTipQ {display:inline-block; vertical-align:middle; width:26px; height:26px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover;}
 .iconTip {display:inline-block; width:45px; font-weight:500; font-size:20px; color:#fff; text-align:center; line-height:32px; background:#65646a;}
 .rndBoxTxt {display:inline-block; min-width:170px; padding:0 10px; line-height:40px; text-align:center; border:2px solid #d3d3d3; border-radius:25px; font-size:26px; color:#727476; background:#fff;}
@@ -28,12 +26,13 @@
 
 .moContInner {padding:0 30px;}
 .moContInner + .moContInner {margin-top:60px; padding-top:60px; border-top:8px solid #e7e9f0;}
-
 .moContInner.ty2 {padding-top:60px; border-top:8px solid #e7e9f0;}
 .moContInner.ty2 + .moContInner.ty2 {}
 
 .contBoxType2 {padding:50px 30px; background:#f7f7f7;}
 
+
+/* 모바일 전용 마진 */
 .moMt60 {margin-top:60px;}
 .moMt80 {margin-top:80px;}
 
@@ -41,16 +40,7 @@
 /* ==============================
 * common - btn
 * ============================== */
-.dotBtn {display:inline-block; width:53px; height:39px; background:url(../new_images/common/icoBtnDot.png) no-repeat center center;}
 
-.btnH60Group {font-size:0; text-align:center;}
-.btnH60Group .btnH60 + .btnH60 {margin-left:20px;}
-
-.btnH60 {display:inline-block; width:160px; height:60px; line-height:56px; text-align:center; border:1px solid #fff; background:#fff; font-weight:500; font-size:24px;}
-.btnH60.ty1 {color:#fff; background:#4171df; border:2px solid #4171df;} 
-.btnH60.ty2 {color:#4e4f51; border:2px solid #cdcdd1;}
-.btnH60.ty3 {color:#258384; border:2px solid #258384;}
-.btnH60.ty4 {color:#4171df; border:2px solid #4171df;}
 
 
 
@@ -170,8 +160,8 @@
 .detailListTy2 > li .tit > * {vertical-align:middle;}
 .detailListTy2 > li .tit a {display:inline-block; font-size:30px; color:#292a2d;}
 .detailListTy2 > li .tit .itemHash {margin-left:15px;}
-.detailListTy2 > li .txt01 {padding-top:20px; font-size:24px; color:#292a2d; overflow:hidden; }
-.detailListTy2 > li .txt02 {padding-top:7px; font-size:24px; color:#666; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+.detailListTy2 > li .txt01 {padding-top:20px; font-size:28px; color:#727476; overflow:hidden; line-height:34px;}
+.detailListTy2 > li .txt02 {padding-top:11px; font-size:24px; color:#727476; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
 .detailListTy2 .tag { display:inline-block; }
 .detailListTy2 .tag.verM { display:inline-block !important; margin-left:15px; }
 .detailListTy2 .tag:after { content:''; display:block; clear:both; }
@@ -180,6 +170,7 @@
 .detailListTy2 .tag li.border { box-sizing:border-box; min-width:40px; line-height:40px; padding:0 4px; border:1px solid #d3d3d3; border-radius:4px; text-align:center; }
 .detailListTy2 .tag li.fill { box-sizing:border-box; min-width:45px; line-height:32px; background-color:#65646a; color:#fff; text-align:center }
 .detailListTy2 .tag li.tip { margin-top:5px; margin-left:20px; }
+.detailListTy2 .tag + .iconTip {display:inline-block !important; margin-left:20px;}
 
 .detailListTy3 {}
 .detailListTy3 > li {padding:30px 25px; border-bottom:1px solid #e2e2e4;}
@@ -187,6 +178,7 @@
 .detailListTy3 > li .tit a {display:block; font-size:30px; color:#292a2d; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
 .detailListTy3 > li .tit .itemHash {margin-left:15px;}
 .detailListTy3 > li .date {padding-top:4px; font-size:24px; color:#727476;}
+.detailListTy3 > li .smallList {margin-top:20px;}
 
 .detailListTy4 {}
 .detailListTy4 > li {padding:30px 25px; border-bottom:1px solid #e2e2e4;}
@@ -199,7 +191,21 @@
 .detailListTy4 > li .st > .el.fs + .el {border-left:0;}
 .detailListTy4 > li .st > .el.fs + .el:before {content:''; position:absolute; top:50%; left:0; margin-top:-10px; height:20px; border-left:1px solid #ececef;}
 .detailListTy4 > li .co {padding-top:6px; font-size:24px; color:#727476;}
-.detailListTy4 > li .pay {padding-top:3px; font-size:0;}
+.detailListTy4 > li .pay {padding-top:30px; font-size:0;}
 .detailListTy4 > li .pay > span {display:inline-block; vertical-align:middle;}
 .detailListTy4 > li .pay > .pay01 {font-size:30px; color:#292a2d;}
-.detailListTy4 > li .pay > .lo {margin-left:10px; padding:0 15px; font-weight:500; font-size:18px; color:#fff; line-height:38px; background:#4870cf; border-radius:25px;}
+.detailListTy4 > li .pay > .lo {margin-left:25px; padding:0 15px; font-weight:500; font-size:18px; color:#fff; line-height:38px; background:#4870cf; border-radius:25px;}
+
+.smallList {margin-top:30px;}
+.smallList > .smlCont {display:table; width:100%; table-layout:fixed;}
+.smallList > .smlCont + .smlCont {margin-top:18px;}
+.smallList > .smlCont > span {position:relative; display:table-cell; vertical-align:top; font-size:28px; color:#727476; line-height:32px; text-align:left;}
+.smallList > .smlCont > span + span {padding-left:20px;}
+.smallList > .smlCont > span + span:before {content:''; position:absolute; top:6px; left:0; height:24px; border-left:1px solid #e2e2e4;}
+
+.latestViewList {padding:5px 30px 0 30px;}
+.latestViewList > li {padding:20px;}
+.latestViewList > li + li {border-top:1px solid #f2f4f6;}
+.latestViewList > li a {display:block; font-size:28px; color:#727476; line-height:1; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+
+
