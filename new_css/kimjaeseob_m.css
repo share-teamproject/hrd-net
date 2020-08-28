@@ -38,7 +38,7 @@
 
 
 /* ==============================
-* common - btn
+* common - 
 * ============================== */
 
 
@@ -159,9 +159,11 @@
 .detailListTy2 > li .tit {font-size:0;}
 .detailListTy2 > li .tit > * {vertical-align:middle;}
 .detailListTy2 > li .tit a {display:inline-block; font-size:30px; color:#292a2d;}
+.detailListTy2 > li .tit a.etc {font-weight:500;}
 .detailListTy2 > li .tit .itemHash {margin-left:15px;}
 .detailListTy2 > li .txt01 {padding-top:20px; font-size:28px; color:#727476; overflow:hidden; line-height:34px;}
 .detailListTy2 > li .txt02 {padding-top:11px; font-size:24px; color:#727476; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+.detailListTy2 > li .txt03 {padding-top:8px; font-size:28px; color:#4e4f51; line-height:34px;}
 .detailListTy2 .tag { display:inline-block; }
 .detailListTy2 .tag.verM { display:inline-block !important; margin-left:15px; }
 .detailListTy2 .tag:after { content:''; display:block; clear:both; }
@@ -207,5 +209,9 @@
 .latestViewList > li {padding:20px;}
 .latestViewList > li + li {border-top:1px solid #f2f4f6;}
 .latestViewList > li a {display:block; font-size:28px; color:#727476; line-height:1; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+
+.mapArea {padding:40px 30px 60px 30px;}
+
+
 
 
