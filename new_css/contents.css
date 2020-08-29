@@ -95,6 +95,7 @@
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 { width:210px }
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label { font-size:0; line-height:0; }
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label + input { width:210px; margin:0 12px 0 8px; }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd input.searchText { width:435px; margin:0 12px 0 12px; }
 
 /* 검색박스 Line */
 .searchBoxLineWrap { margin-bottom:50px; }
@@ -248,20 +249,23 @@
 .dotList.fs14 > li {font-size:14px;}
 
 /* ==============================
-* 자주묻는 질문 & 질문과 답변
+* 자주묻는 질문 & 질문과 답변 
 * ============================== */ 
 #subContentWrap .subContArea .qnaArea { padding:30px 0 0; }
 #subContentWrap .subContArea .qnaArea > ul { border-top:2px solid #2d4059; }
 #subContentWrap .subContArea .qnaArea > ul > li { border-bottom: 1px solid #e3e7ee; }
-#subContentWrap .subContArea .qnaArea .qnaQ { position:relative; cursor: pointer; padding: 25px 30px; }  
+#subContentWrap .subContArea .qnaArea .qnaQ { position:relative; cursor: pointer; padding: 25px 30px; } 
 #subContentWrap .subContArea .qnaArea .qnaQ:after { content:''; position:absolute; top:calc(50% - 4px); right:30px; display:inline-block; width:17px; height:8px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -8px; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ { padding:0px 25px 0px 0px; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection { display: flex; justify-content:flex-start; padding-bottom:10px; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li { font-size:14px; line-height:15px; color:#727476; padding:0 20px; border-right:1px solid #cccccc; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:first-child { padding-left:0; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:last-child { border-right:0; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check { color:#727476; font-size:18px; }  /* my서비스 알람 */
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check.point { color:#258384; }  /* my서비스 알람 */
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ .qnaText { font-size:18px; line-height:24px; color:#292a2d; }
 #subContentWrap .subContArea .qnaArea .qnaA { position:relative; padding:30px 50px 30px 95px; border-bottom: 1px dashed #e3e7ee; background:#f4f6f9; display:none; }
+#subContentWrap .subContArea .qnaArea.alam .qnaA { padding:30px 50px; }  /* my서비스 알람 */
 #subContentWrap .subContArea .qnaArea .iconA { position:absolute; top:50%; left:50px; margin-top:-9px; display:inline-block; width:16px; height:18px; background:url('../new_images/common/icoAnswer.png') no-repeat 0 0; background-size:100%; font-size:0; }
 #subContentWrap .subContArea .qnaArea .qnaA .txtA { color:#4e4f51; line-height:21px; font-size:14px; }
 #subContentWrap .subContArea .qnaArea > ul > li.on {border-bottom:none;}
@@ -272,6 +276,7 @@
 #subContentWrap .subContArea .qnaArea .btnGroup + .pagenation { margin-top:20px; }
 #subContentWrap .subContArea .icoLock { display:inline-block; vertical-align:middle; width:13px; height:15px; margin:0 10px 3px 0; font-size:0; line-height:0; background:url('../new_images/common/icoLock.png') no-repeat; background-size:13px 15px; }
 #subContentWrap .subContArea .icoNew { display:inline-block; vertical-align:middle; width:16px; height:16px; margin:0 0 3px 8px; font-size:0; line-height:0; background:url('../new_images/common/icoNew.png') no-repeat; background-size:16px 16px; }
+
 /* ==============================
 * 로그인
 * ============================== */  
