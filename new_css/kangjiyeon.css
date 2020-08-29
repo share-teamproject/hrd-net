@@ -252,3 +252,65 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl > dt > span { width:82px; display:inline-block; font-size:13px; color:#666; text-align:center; border:1px #d3d3d3 solid; border-radius:15px; }
 .divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl > dd { float:left; font-size:14px; color:#666; line-height:23px; padding-left:15px; }
 .divtableArea01 .divtableListSet .divtableList > li .none { font-size:14px; color:#727476; text-align:center; padding:20px; }
+
+
+/* MY카드 */
+.myCardArea {}
+.myCardArea .btnGroupMoTy1 { margin-top:60px; }
+.myCardArea .signUpFlowList > li { width:130px; }
+.myCardArea .signUpFlowList > li + li { margin-left:123px; }
+
+.myCardArea .partArea {}
+.myCardArea .partArea .partBox01,
+.myCardArea .partArea .partBox02 { margin-top:50px; }
+
+.bigTitle05 { font-size:22px; color:#292a2d; font-weight:500; height:60px; }
+.txtList01 {}
+.txtList01 + .txtList01 { margin-top:20px; }
+.txtList01 > dt { position:relative; font-size:16px; color:#5b648a; font-weight:500; padding-left:12px; }
+.txtList01 > dt:before{ content:''; position:absolute; top:10px; left:0; display:block; width:4px; height:4px; background:#5b648a; border-radius:50%; }
+.txtList01 > dd{ font-size:14px; color:#727476; line-height:26px; padding:7px 12px; }
+.txtList01 > dd .btn { padding-left:35px; }
+.txtList01 > dd .btn button { margin-top:-4px; }
+.txtList01 > dd .btn button + button { margin-left:5px; }
+
+.myCardArea .partArea .partBox01 .btmTxt { font-size:14px; color:#727476; text-align:right; padding-top:5px; }
+.txtBox01 { border:1px #e2e2e4 solid; padding:29px; }
+.txtBox01 > ul { overflow:hidden; width:100%; }
+.txtBox01 > ul > li { position:relative; float:left; text-align:center; padding-right:40px; }
+.txtBox01 > ul > li:last-child { padding-right:0; margin-right:-80px; width:0; }
+.txtBox01 > ul > li:before { content:''; position:absolute; top:45px; right:10px; width:18px; height:35px; background:url('../new_images/common/arrowStep.png') no-repeat; }
+.txtBox01 > ul > li > .innerTxtBox { width:136px; height:126px; border:1px #e2e2e4 solid; }
+.txtBox01 > ul > li > .innerTxtBox > dt { font-size:14px; color:#292a2d; padding-top:17px; }
+.txtBox01 > ul > li > .innerTxtBox > dd { font-size:14px; color:#727476; line-height:18px; padding-top:12px; }
+.txtBox01 > ul > li > .innerTxtBox > dd > span { display:block; }
+
+.txtBox02 { border-top:2px #5b648a solid; border-left:1px #e2e2e4 solid; border-right:1px #e2e2e4 solid; border-bottom:1px #e2e2e4 solid; padding:28px 28px 0 28px; }
+.innerTxtList01 {}
+.innerTxtList01 > li { font-size:14px; color:#727476; line-height:24px; padding-bottom:30px; }
+.checkBox01 { font-size:14px; color:#4e4f51; text-align:right; padding-top:20px; }
+
+.bigTitle06 { font-size:22px; color:#292a2d; font-weight:500; height:40px; margin-top:50px; }
+.bigTitle06 .txtPC { font-size:13px; color:#727476; font-weight:400; padding-left:15px; }
+
+.partArea .signUpForm {}
+.partArea .signUpFormList > li .inpArea .bgcolorGray { background:#ebebeb; }
+
+/* 입력 항목 */
+.adressInput { display:table; width:100%; }
+.adressInput > .ele { display:table-cell; vertical-align:top; height:43px; }
+.adressInput > .ele .uiBtn { padding:0 10px; }
+.adressInput > .ele.ty1 { width:490px; padding-right:10px; }
+.adressInput2 { display:table; width:100%; }
+.adressInput2 > .ele { display:table-row; vertical-align:top; height:50px; }
+.adressInput2 > .ele.ty1 { height:40px; }
+
+.educationInput { display:table; width:100%; }
+.educationInput > .ele { display:table-cell; vertical-align:top; height:43px; }
+.educationInput > .ele.ty1 {width:170px; padding-right:15px; }
+.educationInput > .ele.ty2 {width:170px; padding-right:15px; }
+.educationInput > .ele.ty3 {width:150px;}
+.educationInput > .ele input[type="text"],
+.educationInput > .ele .selectBox  {width:100%;}
+
+.radioInput .ui_radioBox { margin-right:-50px; }

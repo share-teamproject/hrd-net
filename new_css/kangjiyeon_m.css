@@ -34,7 +34,8 @@
 /* 바로가기 */
 .goLinkLong02 {display:inline-block; min-width:220px; height:45px; line-height:43px; padding:0 20px; text-align:center; border:2px solid #cdcdd1; font-size:26px; color:#4e4f51;}
 .btnH26 {display:inline-block; min-width:220px; height:45px; line-height:43px; padding:0 20px; text-align:center; font-size:26px; color:#258384; border:2px solid #258384; }
-
+/* 다운로드버튼 */
+button.lookupBtn, a.lookupBtn { display:inline-block; height:50px; line-height:46px; padding:0 30px; text-align:center; font-size:26px; color:#258384; border:2px solid #258384; }
 
 /* ==============================
 * etc
@@ -132,5 +133,74 @@
 
 /* 비대면 - 목록 */
 .applicationBox { text-align:center; }
-.applicationBox .title {font-size:28px; letter-spacing:-1px;word-break: keep-all; }
+.applicationBox .title {font-size:28px; letter-spacing:-1px; word-break: keep-all; }
 .applicationBox .btn { padding-top:30px; margin-bottom:30px;}
+
+/* MY카드 */
+#subContentWrap .subContArea .headingTitleArea h3.headingTitle.ty2 { letter-spacing:-2px;  padding:60px 0 0 0;  }
+#subContentWrap .subContArea .headingTitleArea h3.headingTitle.ty2 .depth4 { font-size:36px; color:#727476; font-weight:400; padding-left:10px; }
+
+.myCardArea {}
+.myCardArea .signUpFlow { padding:60px 20px 0 20px; border-top:8px #e7e9f0 solid; }
+.myCardArea .signUpFlow .signUpFlowList .txt { font-weight:300; line-height:36px; letter-spacing:-2px; word-break: keep-all; }
+.myCardArea .signUpFlow .signUpFlowList .on .txt { font-weight:500; }
+
+.partArea { padding:0 30px; }
+.myCardArea .btnGroup { margin-top:60px; }
+.myCardArea .partArea .partBox01,
+.myCardArea .partArea .partBox02 { margin-top:50px; }
+.myCardArea .partArea .partBox01 .btmTxt.verM { font-size:28px; color:#727476; line-height:40px; }
+
+.bigTitle05 { font-size:34px; color:#292a2d; padding-bottom:30px; height:70px; }
+.txtList01 { margin-top:40px; }
+.txtList01 > dt { position:relative; font-size:30px; color:#5b648a; font-weight:500; padding-left:27px; }
+.txtList01 > dt:before{ content:''; position:absolute; top:19px; left:0; display:block; width:8px; height:8px; background:#5b648a; border-radius:50%; }
+.txtList01 > dd{ font-size:26px; color:#727476; line-height:36px; padding:7px 27px; }
+.txtList01 > dd .btn { display:block; padding-top:10px; }
+.txtList01 > dd .btn button { display:block; margin:10px 0; }
+
+.txtBox01 { border:2px #e2e2e4 solid; padding:38px 30px 0 30px; margin-top:50px; }
+.txtBox01 > ul { overflow:hidden; min-width:570px; width:100%; text-align:center; }
+.txtBox01 > ul > li { position:relative; float:left; text-align:center; padding-right:40px; margin-bottom:40px; }
+@media ( max-width:640px ) {
+	.txtBox01 > ul > li:last-child { clear:both; padding-right:0; margin-right:-80px; width:0; }
+}
+.txtBox01 > ul > li:last-child { padding-right:0; margin-right:-80px; width:0; }
+.txtBox01 > ul > li:before { content:''; position:absolute; top:75px; right:10px; width:19px; height:35px; background:url('../new_images/common/arrowStepM.png') no-repeat; }
+.txtBox01 > ul > li > .innerTxtBox { width:216px; border:2px #e2e2e4 solid; padding-bottom:30px; }
+.txtBox01 > ul > li > .innerTxtBox.end { width:472px; }
+.txtBox01 > ul > li > .innerTxtBox > dt { font-size:32px; color:#292a2d; padding-top:17px; }
+.txtBox01 > ul > li > .innerTxtBox > dd { font-size:24px; color:#727476; line-height:30px; padding-top:12px; }
+
+.txtBox02 { background:#f7f7f7; padding:40px 25px 0 25px; }
+.innerTxtList01 { overflow:hidden; border-bottom:2px #cdcdd1 solid; }
+.innerTxtList01 > li { font-size:26px; color:#727476; line-height:38px; padding-bottom:30px; text-indent:-33px; }
+.checkBox01 { background:#f7f7f7; padding:30px 25px; height:105px; }
+.checkBox01 .ui_checkBox { }
+.checkBox01 .ui_checkBox > label{ font-size:22px; color:#727476; }
+
+.bigTitle06 { position:relative; font-size:34px; color:#292a2d; font-weight:500; height:60px; margin-top:50px; }
+.bigTitle06 .txt { position:absolute; top:15px; right:0; display:block; font-size:22px; color:#727476; font-weight:400; }
+.bigTitle06 .txtPC { display:none; }
+
+.partArea .signUpForm {}
+.partArea .signUpFormList > li .inpArea .bgcolorGray { background:#ebebeb; }
+
+/* 입력항목 */
+.adressInput { display:table; width:100%; }
+.adressInput > .ele { display:table-cell; vertical-align:top; height:82px; }
+.adressInput > .ele.ty1 { width:383px; padding-right:10px; }
+.adressInput > .ele .uiBtn { min-width:198px; color:#258384; padding:0 10px; height:70px; background-color:#fff; border:2px #258384 solid; }
+.adressInput2 { display:table; width:100%; }
+.adressInput2 > .ele { display:table-row; vertical-align:top; height:90px; }
+.adressInput2 > .ele.ty1 { height:70px; }
+
+.educationInput {font-size:0;}
+.educationInput > .ele {display:inline-block;}
+.educationInput > .ele.ty1 {width:50%; padding-right:10px; font-size:28px; color:#4e4f51; text-align:center; vertical-align:middle;}
+.educationInput > .ele.ty2 {width:50%; padding-right:0; font-size:28px; color:#4e4f51; text-align:center; vertical-align:middle;}
+.educationInput > .ele.ty3 {display:block; width:100%; padding-top:20px;}
+.educationInput > .ele input[type="text"],
+.educationInput > .ele .selectBox  {width:100%;}
+
+.radioInput .ui_radioBox { color:#727476; margin-right:100px; }
