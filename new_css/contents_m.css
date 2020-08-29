@@ -159,6 +159,9 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label + input { width:100%; margin:0; }
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label + input + .btnArea { margin-top:48px; width:100%; }
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect02 + label + input + .btnArea .searchBtn { width:100%; }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd input.searchText { width:100% }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd input.searchText + .btnArea {  margin-top:40px; width:100%; }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd input.searchText + .btnArea .searchBtn { width:100%; }
 
 /* qna */
 #subContentWrap .subContArea .qnaArea { width:100%; padding:80px 30px 0; }
@@ -172,6 +175,8 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li { font-size:24px; line-height:30px; color:#727476; padding:0 20px; border-right:2px solid #cccccc; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:first-child { padding-left:0; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:last-child { border-right:0; }
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check { color:#727476; font-size:30px; }  /* my서비스 알람 */
+#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check.point { color:#258384; }  /* my서비스 알람 */
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ .qnaText { font-size:30px; line-height:36px; color:#292a2d; }
 #subContentWrap .subContArea .qnaArea .qnaA { position:relative; padding:48px 38px 48px 76px; border-bottom: 2px dashed #e3e7ee; background:#f4f6f9; display:none; }
 #subContentWrap .subContArea .qnaArea .iconA { position:absolute; top:78px; left:30px; margin-top:-20px; display:inline-block; /*border-bottom:1px solid #4171df;*/ width:32px; height:40px; background:url('../new_images/common/icoAnswer.png') no-repeat center 0; background-size:26px 30px; font-size:0; }
