@@ -378,7 +378,7 @@
                                         <col style="width:90px;">
 										<col style="width:140px;">
                                         <col style="width:auto;">
-                                    </colgroup>                                    
+                                    </colgroup>
                                     <tbody>
                                         <tr>
                                             <th scope="row" colspan="2">성명 <span title="필수입력" class="color01">＊</span></th>
@@ -492,13 +492,15 @@
 										<tr>
 											<th scope="row" colspan="2">이메일·문자 수신 동의(선택)</th>
 											<td>
-												한국고용정보원은 회원 및 구직자를 대상으로 고용노동부에서 제공하는 소식 등 이메일 및 문자 서비스를 제공하고 있습니다.
-												<div class="tr">
-													<div class="ui_checkBox">
-														<input type="checkbox" name="chkReturn" id="ag01">
-														<label for="ag01">이메일·문자 수신 동의에 동의합니다.</label>
-													</div>
-												</div>
+                                                <div class="smAtgChk">
+                                                    <p class="txt">한국고용정보원은 회원 및 구직자를 대상으로 고용노동부에서 제공하는 소식 등 이메일 및 문자 서비스를 제공하고 있습니다.</p>
+                                                    <div class="smAtgChkbox">
+    													<div class="ui_checkBox">
+    														<input type="checkbox" name="chkReturn" id="ag01">
+    														<label for="ag01">이메일·문자 수신 동의에 동의합니다.</label>
+    													</div>
+                                                    </div>
+                                                </div>
 											</td>
 										</tr>
 										<tr>
@@ -509,10 +511,68 @@
                                 </table>
                             </div>
 
+                            <div class="fileAddEle">
+                                <div class="inner">
+                                    <div class="fileAddCont ig">
+                                        <div class="imgRdy">
+                                            <img src="../new_images/temp/@bnMainEvent.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="fileAddCont">
+                                        <ul class="addFileList">
+                                            <li>
+                                                <div class="ui_checkBox">
+                                                    <input type="checkbox" name="chkReturn" id="addFile01">
+                                                    <label for="addFile01">이메일·문자 수신 동의에 동의합니다.</label>
+                                                </div>
+                                                <button type="button" class="btnCloseCross">삭제</button>
+                                                <span class="byte">21.2KB</span>
+                                            </li>
+                                        </ul>
+                                        <div class="plugin">
+                                            이곳을 더블클릭 또는 파일을 드래그하세요.
+                                        </div>
+                                        <div class="options">
+                                            <div class="btns">
+                                                <button type="button" class="btnType2">파일추가</button>
+                                                <button type="button" class="btnType2">항목제거</button>
+                                                <button type="button" class="btnType2">전체 항목제거</button>
+                                            </div>
+                                            <ul class="dotList">
+                                                <li>사이즈는 반드시 150*200으로 등록하여 주시기 바랍니다.</li>
+                                                <li>이미지파일 확장자는 jpg(jpeg), gif, png, bmp 만 가능합니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<style>
+.fileAddEle {padding: 10px 50px; border-bottom: 1px solid #e2e2e4;}
+.fileAddEle > .inner {display: table; width: 100%; table-layout: fixed;}
+.fileAddEle .fileAddCont {position: relative; display: table-cell; vertical-align: top;}
+.fileAddEle .fileAddCont.ig {width: 210px; border: 1px solid #e2e2e4; vertical-align: middle;}
+*.fileAddEle .fileAddCont.ig .imgRdy {display: inline-block; padding: 10px;}
+*.fileAddEle .fileAddCont.ig .imgRdy img {max-width: 100%;}
+
+.fileAddEle .fileAddCont + .fileAddCont {padding-left: 20px;}
+.fileAddEle .fileAddCont .plugin {margin-top: 20px; height: 80px; padding-top: 30px; line-height: 1; font-size: 14px; color: #767676; text-align: center; border: 4px solid #e2e2e4; background: #fff;}
+.fileAddEle .options {}
+.fileAddEle .options .btns {padding: 25px 0; font-size: 0; text-align: center;}
+.fileAddEle .options .btns button + button {margin-left: 10px;}
+
+.addFileList {}
+.addFileList > li {overflow: hidden;}
+.addFileList > li + li {margin-top:10px;}
+.addFileList > li .byte {float: right;}
+</style>
+
+
                             <!-- 버튼  -->
                             <div class="btnGroup pt30">
                                 <button type="button" class="btnType1 primary">변경하기</button>
-                            </div>  
+                            </div>
+
                         </div>
                     </div>
                 </div>

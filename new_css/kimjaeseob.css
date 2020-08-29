@@ -123,4 +123,6 @@
 .addrCont input[type="text"] {width:100%;}
 .addrCont .addrContEle {margin-top:10px;}
 
-
+.smAtgChk {}
+.smAtgChk > .txt {}
+.smAtgChk > .smAtgChkbox {padding-top: 17px;  ext-align:right;}
