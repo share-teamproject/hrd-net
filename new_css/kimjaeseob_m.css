@@ -13,24 +13,19 @@
 .titleFs30 > small {padding-left:5px; font-weight:normal; font-size:26px; color:#666;}
 .titleFs32 {font-size:32px; color:#222; line-height:1.2;}
 
-.listType1 {}
-.listType1 > li {font-size:26px; color:#727476;}
-.listType1 > li  + li {margin-top:20px;}
-.listType1 > li .rndBoxTxt {margin-right:15px;}
-.listType1 + .btnH60Group {margin-top:50px;}
-
-.dashList {}
-.dashList > li {position:relative; padding-left:14px; font-size:22px; color:#767676; line-height:26px;}
-.dashList > li:before {content:''; position:absolute; top:13px; left:0; width:6px; border-bottom:2px solid #767676;}
-.dashList > li + li {margin-top:8px;}
-
-.moContInner {padding:0 30px;}
+.moContInner {position: relative; padding:0 30px;}
 .moContInner + .moContInner {margin-top:60px; padding-top:60px; border-top:8px solid #e7e9f0;}
 .moContInner.ty2 {padding-top:60px; border-top:8px solid #e7e9f0;}
 .moContInner.ty2 + .moContInner.ty2 {}
 
-.contBoxType2 {padding:50px 30px; background:#f7f7f7;}
+.moContInner.ty3 {margin: 0 30px; padding:28px 0 40px 0; border-top:4px solid #727476; border-bottom:1px solid #e7e9f0;}
+.moContInner.ty3 + .moContInner.ty3 {/*margin-top:40px;*/ border-top:0;}
+.moContInner.ty3 .tit {padding-bottom: 33px; font-weight: 500; font-size: 32px; color: #222;}
+.moContInner.ty3 .subTit {padding-bottom: 13px; font-size: 28px; color: #222;}
+.moContInner.ty3 .inCont {}
+.moContInner.ty3 .inCont + .inCont {margin-top: 36px;}
 
+.contBoxType2 {padding:50px 30px; background:#f7f7f7;}
 
 /* 모바일 전용 마진 */
 .moMt60 {margin-top:60px;}
@@ -40,7 +35,6 @@
 /* ==============================
 * common - 
 * ============================== */
-
 
 
 
@@ -78,7 +72,6 @@
 .attendProgress > li .attendBar {line-height:1;}
 .attendProgress > li .attendNoti {padding-top:20px; line-height:1; font-size:22px; color:#727476;}
 
-
 .btnSlideView {display:block; width:100%; text-align:center; font-size:24px; color:#333;}
 .btnSlideView > span {vertical-align:middle;}
 .btnSlideView:after {content:''; display:inline-block; margin-left:18px; vertical-align:middle; width:36px; height:36px; background:url(../new_images/common/btnMore.png) no-repeat; transform: rotate(180deg); transition:0.5s;}
@@ -112,8 +105,6 @@
 [data-calendar-table] td .msg {padding-top:8px; font-weight:500; font-size:22px; line-height:1; color: #5b648a;}
 
 
-
-
 /* 통합검색 */
 .totalSchRstTitle {padding:0 30px; text-align:center; font-size:36px; color:#4e4f51; line-height:1;}
 .totalSchRstTitle > .kwd {font-weight:500; font-size:40px; color:#258384}
@@ -127,9 +118,6 @@
 .schTabList > li a {position:relative; display:block; text-align:center; font-size:28px; color:#65646a; line-height:80px;}
 .schTabList > li a.on {font-weight:500; color:#3d5895}
 .schTabList > li a.on:before {content:''; position:absolute; top:-1px; left:0; width:100%; border-bottom:8px solid #3d5895;}
-
-
-
 
 .schEduCont {margin-top:50px;}
 .schEduCont + .schEduCont {margin-top:60px; padding-top:50px; border-top:6px solid #e1e4e9;}
@@ -210,8 +198,57 @@
 .latestViewList > li + li {border-top:1px solid #f2f4f6;}
 .latestViewList > li a {display:block; font-size:28px; color:#727476; line-height:1; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
 
+.listType1 {}
+.listType1 > li {font-size:26px; color:#727476;}
+.listType1 > li  + li {margin-top:20px;}
+.listType1 > li .rndBoxTxt {margin-right:15px;}
+.listType1 + .btnH60Group {margin-top:50px;}
+
+.dashList {}
+.dashList > li {position:relative; padding-left:14px; font-size:22px; color:#767676; line-height:26px;}
+.dashList > li:before {content:''; position:absolute; top:13px; left:0; width:6px; border-bottom:2px solid #767676;}
+.dashList > li + li {margin-top:8px;}
+
 .mapArea {padding:40px 30px 60px 30px;}
 
 
+/*마이정보*/
+.inpFile{display:inline-block;}
+.inpFile [type="file"] {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:none;}
+.inpFile .file-label {min-width:112px; display:inline-block; height:60px; line-height:56px; text-align:center; border:1px solid #fff; background:#fff; font-weight:500; font-size:24px; color:#4e4f51; border:2px solid #cdcdd1;}
+
+.fileAddEle {margin: 27px 30px 80px 30px; padding: 10px 0 40px 0; border-bottom: 1px solid #e2e2e4;}
+.fileAddEle > .inner {}
+.fileAddEle .fileAddCont {position: relative;}
+.fileAddEle .fileAddCont.ig {display: none;}
+*.fileAddEle .fileAddCont.ig .imgRdy {display: inline-block; padding: 10px;}
+*.fileAddEle .fileAddCont.ig .imgRdy img {max-width: 100%;}
+
+.fileAddEle .fileAddCont + .fileAddCont {}
+.fileAddEle .fileAddCont .plugin {margin-top: 35px; border: 4px solid #e2e2e4; background: #fff;}
+.fileAddEle .options {padding: 25px; background: #f7f7f7}
+.fileAddEle .options .btns {padding-bottom: 25px; font-size: 0; text-align: center;}
+.fileAddEle .options .btns > * {vertical-align: top; width: 160px; padding: 0;}
+.fileAddEle .options .btns > * label {width: 160px;}
+.fileAddEle .options .btns > * + * {margin-left: 20px;}
+.fileAddEle .options .btns > .btnH60.ty1 {width: 170px;}
+.addFileList {}
+.addFileList > li {overflow: hidden;}
+.addFileList > li + li {margin-top:10px;}
+.addFileList > li .ui_checkBox label {margin-right: 0;}
+.addFileList > li .byte {padding-top: 9px; float: right; font-size: 22px; color: #767676;}
+.addFileList > li .btnCloseCross {margin-left: 8px;}
+
+.addrCont {}
+.addrCont input[type="text"] {width:100%;}
+.addrCont .addrContEle {margin-top:20px;}
+
+.smAtgChk {}
+.smAtgChk > .txt {}
+.smAtgChk > .smAtgChkbox {padding-top: 30px;}
 
 
+
+
+/*테이블 상단 필수표시 단독 케이스*/
+.essSingle {padding: 20px 30px 25px 30px; text-align: right; font-size: 22px; color: #727476;}

@@ -365,18 +365,19 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="contentArea">                       
-                        <div class="qnaArea"> 
+                    <div class="contentArea">
+
+                        <div class="verPC">
                             <div class="tableArea">
-                                <!-- 작성자 정보 테이블 -->
-                                <div class="tableTitleArea">
+                                <!-- 회원정보 입력 -->
+                                <div class="tableTitleArea mt10">
                                     <div class="tableComment">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
                                 </div>                                
                                 <table class="view">
                                     <caption>회원정보 입력</caption>
                                     <colgroup>
                                         <col style="width:90px;">
-										<col style="width:140px;">
+                                        <col style="width:140px;">
                                         <col style="width:auto;">
                                     </colgroup>
                                     <tbody>
@@ -387,192 +388,324 @@
                                         <tr>
                                             <th scope="row" colspan="2">주소 <span title="필수입력" class="color01">＊</span></th>
                                             <td>
-												<div class="addrCont">
-													<div class="tblEle">
-														<div class="ele">
-															<input type="text" value="" title="우편번호 입력" name="" id="">
-														</div>
-														<div class="ele mini">
-															<button type="button" class="uiBtn">우편번호 찾기</button>
-														</div>
-													</div>
-													<div class="addrContEle">
-														<input type="text" value="" title="우편번호 입력" name="" id="">
-													</div>
-													<div class="addrContEle">
-														<input type="text" value="" title="우편번호 입력" name="" id="">
-													</div>
-												</div>
-											</td>
+                                                <div class="addrCont">
+                                                    <div class="tblEle">
+                                                        <div class="ele">
+                                                            <input type="text" value="" title="우편번호 입력" name="" id="">
+                                                        </div>
+                                                        <div class="ele mini">
+                                                            <button type="button" class="uiBtn">우편번호 찾기</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addrContEle">
+                                                        <input type="text" value="" title="주소 정보" name="" id="" readonly="readonly">
+                                                    </div>
+                                                    <div class="addrContEle">
+                                                        <input type="text" value="" title="상세주소" name="" id="" readonly="readonly">
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-										<tr>
-											<th scope="rowgroup" rowspan="2" class="pd0 brd-r-ty1 tc">택 1 <span title="필수입력" class="color01">＊</span></th>
-											<th scope="row">전화번호</th>
-											<td>
-												<div class="inpArea phoneInput">
-													<div class="ele ty1">
-														<select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
-															<option selected="selected" value="">선택</option>
-															<option value="032"> 032 </option>
-														</select>
-													</div>
-													<div class="ele ty2">-</div>
-													<div class="ele ty3">
-														<input type="text" title="전화번호 가운데 번호" name="userTel02" id="userTel02">
-													</div>
-													<div class="ele ty2">-</div>
-													<div class="ele ty3">
-														<input type="text" title="전화번호 마지막 번호" name="userTel03" id="userTel03">
-													</div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">휴대폰번호</th>
-											<td>
-												<div class="inpArea">
-													<div class="phoneInput">
-														<div class="ele ty1">
-															<select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
-																<option selected="selected" value="">선택</option>
-																<option value="010"> 010 </option>
-															</select>
-														</div>
-														<div class="ele ty2">-</div>
-														<div class="ele ty3">
-															<input type="text" title="핸드폰 가운데 번호" name="userHP02" id="userHP02">
-														</div>
-														<div class="ele ty2">-</div>
-														<div class="ele ty3">
-															<input type="text" title="핸드폰 마지막 번호" name="userHP03" id="userHP03">
-														</div>
-													</div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row" colspan="2">이메일 (e-mail) <span title="필수입력" class="color01">＊</span></th>
-											<td>
-												<div class="inpArea emailInput">
-													<div class="ele">
-														<input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
-													</div>
-													<div class="ele ty1">@</div>
-													<div class="ele">
-														<input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
-													</div>
-													<div class="ele ty2">
-														<select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
-															<option selected="selected" value="">직접입력</option>
-															<option value="chol.com"> chol.com </option>
-															<option value="dreamwiz.com"> dreamwiz.com </option>
-															<option value="empal.com"> empal.com </option>
-															<option value="freechal.com"> freechal.com </option>
-															<option value="gmail.com"> gmail.com </option>
-															<option value="hanmail.net"> hanmail.net </option>
-															<option value="hanmir.net"> hanmir.net </option>
-															<option value="hitel.com"> hitel.com </option>
-															<option value="hotmail.com"> hotmail.com </option>
-															<option value="korea.com"> korea.com </option>
-															<option value="nate.com"> nate.com </option>
-															<option value="naver.com"> naver.com </option>
-															<option value="orgio.com"> orgio.com </option>
-															<option value="paran.com"> paran.com </option>
-															<option value="sayclub.net"> sayclub.net </option>
-															<option value="shinbiro.com"> shinbiro.com </option>
-															<option value="yahoo.co.kr"> yahoo.co.kr </option>
-															<option value="yahoo.com"> yahoo.com </option>
-															<option value="molab.go.kr"> molab.go.kr </option>
-														</select>
-													</div>
-												</div>
-												<p class="inpAlertMsg">Gmail, yahoo 등에서 제공하는 메일계정을 사용하시는 경우 해당사의 보안정책 등에 의하여 HRD-Net의 메일 관련서비스 이용시 정상적으로 수신되지 않을 수도 있사오니 다른 메일계정을 사용하여 주시기 바랍니다.</p>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row" colspan="2">이메일·문자 수신 동의(선택)</th>
-											<td>
+                                        <tr>
+                                            <th scope="rowgroup" rowspan="2" class="pd0 brd-r-ty1 tc">택 1 <span title="필수입력" class="color01">＊</span></th>
+                                            <th scope="row">전화번호</th>
+                                            <td>
+                                                <div class="inpArea phoneInput">
+                                                    <div class="ele ty1">
+                                                        <select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
+                                                            <option selected="selected" value="">선택</option>
+                                                            <option value="032"> 032 </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="ele ty2">-</div>
+                                                    <div class="ele ty3">
+                                                        <input type="text" title="전화번호 가운데 번호" name="userTel02" id="userTel02">
+                                                    </div>
+                                                    <div class="ele ty2">-</div>
+                                                    <div class="ele ty3">
+                                                        <input type="text" title="전화번호 마지막 번호" name="userTel03" id="userTel03">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">휴대폰번호</th>
+                                            <td>
+                                                <div class="inpArea">
+                                                    <div class="phoneInput">
+                                                        <div class="ele ty1">
+                                                            <select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
+                                                                <option selected="selected" value="">선택</option>
+                                                                <option value="010"> 010 </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="ele ty2">-</div>
+                                                        <div class="ele ty3">
+                                                            <input type="text" title="핸드폰 가운데 번호" name="userHP02" id="userHP02">
+                                                        </div>
+                                                        <div class="ele ty2">-</div>
+                                                        <div class="ele ty3">
+                                                            <input type="text" title="핸드폰 마지막 번호" name="userHP03" id="userHP03">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">이메일 (e-mail) <span title="필수입력" class="color01">＊</span></th>
+                                            <td>
+                                                <div class="inpArea emailInput">
+                                                    <div class="ele">
+                                                        <input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
+                                                    </div>
+                                                    <div class="ele ty1">@</div>
+                                                    <div class="ele">
+                                                        <input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
+                                                    </div>
+                                                    <div class="ele ty2">
+                                                        <select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
+                                                            <option selected="selected" value="">직접입력</option>
+                                                            <option value="chol.com"> chol.com </option>
+                                                            <option value="dreamwiz.com"> dreamwiz.com </option>
+                                                            <option value="empal.com"> empal.com </option>
+                                                            <option value="freechal.com"> freechal.com </option>
+                                                            <option value="gmail.com"> gmail.com </option>
+                                                            <option value="hanmail.net"> hanmail.net </option>
+                                                            <option value="hanmir.net"> hanmir.net </option>
+                                                            <option value="hitel.com"> hitel.com </option>
+                                                            <option value="hotmail.com"> hotmail.com </option>
+                                                            <option value="korea.com"> korea.com </option>
+                                                            <option value="nate.com"> nate.com </option>
+                                                            <option value="naver.com"> naver.com </option>
+                                                            <option value="orgio.com"> orgio.com </option>
+                                                            <option value="paran.com"> paran.com </option>
+                                                            <option value="sayclub.net"> sayclub.net </option>
+                                                            <option value="shinbiro.com"> shinbiro.com </option>
+                                                            <option value="yahoo.co.kr"> yahoo.co.kr </option>
+                                                            <option value="yahoo.com"> yahoo.com </option>
+                                                            <option value="molab.go.kr"> molab.go.kr </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <p class="inpAlertMsg">Gmail, yahoo 등에서 제공하는 메일계정을 사용하시는 경우 해당사의 보안정책 등에 의하여 HRD-Net의 메일 관련서비스 이용시 정상적으로 수신되지 않을 수도 있사오니 다른 메일계정을 사용하여 주시기 바랍니다.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">이메일·문자 수신 동의(선택)</th>
+                                            <td>
                                                 <div class="smAtgChk">
                                                     <p class="txt">한국고용정보원은 회원 및 구직자를 대상으로 고용노동부에서 제공하는 소식 등 이메일 및 문자 서비스를 제공하고 있습니다.</p>
                                                     <div class="smAtgChkbox">
-    													<div class="ui_checkBox">
-    														<input type="checkbox" name="chkReturn" id="ag01">
-    														<label for="ag01">이메일·문자 수신 동의에 동의합니다.</label>
-    													</div>
+                                                        <div class="ui_checkBox">
+                                                            <input type="checkbox" name="chkReturn" id="ag01">
+                                                            <label for="ag01">이메일·문자 수신 동의에 동의합니다.</label>
+                                                        </div>
                                                     </div>
                                                 </div>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row" colspan="2">공인인증서</th>
-											<td>등록되어 있지 않음 공인인증서 “등록/변경” 은 “공인인증서 관리”메뉴에서 등록/변경 하실 수 있습니다.</td>
-										</tr>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">공인인증서</th>
+                                            <td>등록되어 있지 않음 공인인증서 “등록/변경” 은 “공인인증서 관리”메뉴에서 등록/변경 하실 수 있습니다.</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
 
-                            <div class="fileAddEle">
-                                <div class="inner">
-                                    <div class="fileAddCont ig">
-                                        <div class="imgRdy">
-                                            <img src="../new_images/temp/@bnMainEvent.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="fileAddCont">
-                                        <ul class="addFileList">
-                                            <li>
-                                                <div class="ui_checkBox">
-                                                    <input type="checkbox" name="chkReturn" id="addFile01">
-                                                    <label for="addFile01">이메일·문자 수신 동의에 동의합니다.</label>
-                                                </div>
-                                                <button type="button" class="btnCloseCross">삭제</button>
-                                                <span class="byte">21.2KB</span>
-                                            </li>
-                                        </ul>
-                                        <div class="plugin">
-                                            이곳을 더블클릭 또는 파일을 드래그하세요.
-                                        </div>
-                                        <div class="options">
-                                            <div class="btns">
-                                                <button type="button" class="btnType2">파일추가</button>
-                                                <button type="button" class="btnType2">항목제거</button>
-                                                <button type="button" class="btnType2">전체 항목제거</button>
+                        <div class="verM">
+                            <div class="essSingle">
+                                "<span class="color01">＊</span>" 필수 사항 입니다.
+                            </div>
+                            <div class="moContInner ty3">
+                                <div class="tit">성명 <span title="필수입력" class="color01">＊</span></div>
+                                <div class="inCont">
+                                    <input type="text" title="" name="" id="" value="홍길동" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="moContInner ty3">
+                                <div class="tit">주소 <span title="필수입력" class="color01">＊</span></div>
+                                <div class="inCont">
+                                    <div class="addrCont">
+                                        <div class="tblEle">
+                                            <div class="ele">
+                                                <input type="text" value="" title="우편번호 입력" name="" id="">
                                             </div>
-                                            <ul class="dotList">
-                                                <li>사이즈는 반드시 150*200으로 등록하여 주시기 바랍니다.</li>
-                                                <li>이미지파일 확장자는 jpg(jpeg), gif, png, bmp 만 가능합니다.</li>
-                                            </ul>
+                                            <div class="ele mini">
+                                                <button type="button" class="btnType2 etc">우편번호 찾기</button>
+                                            </div>
+                                        </div>
+                                        <div class="addrContEle">
+                                            <input type="text" value="" title="주소 정보" name="" id="" readonly="readonly">
+                                        </div>
+                                        <div class="addrContEle">
+                                            <input type="text" value="" title="상세주소" name="" id="" readonly="readonly">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-<style>
-.fileAddEle {padding: 10px 50px; border-bottom: 1px solid #e2e2e4;}
-.fileAddEle > .inner {display: table; width: 100%; table-layout: fixed;}
-.fileAddEle .fileAddCont {position: relative; display: table-cell; vertical-align: top;}
-.fileAddEle .fileAddCont.ig {width: 210px; border: 1px solid #e2e2e4; vertical-align: middle;}
-*.fileAddEle .fileAddCont.ig .imgRdy {display: inline-block; padding: 10px;}
-*.fileAddEle .fileAddCont.ig .imgRdy img {max-width: 100%;}
-
-.fileAddEle .fileAddCont + .fileAddCont {padding-left: 20px;}
-.fileAddEle .fileAddCont .plugin {margin-top: 20px; height: 80px; padding-top: 30px; line-height: 1; font-size: 14px; color: #767676; text-align: center; border: 4px solid #e2e2e4; background: #fff;}
-.fileAddEle .options {}
-.fileAddEle .options .btns {padding: 25px 0; font-size: 0; text-align: center;}
-.fileAddEle .options .btns button + button {margin-left: 10px;}
-
-.addFileList {}
-.addFileList > li {overflow: hidden;}
-.addFileList > li + li {margin-top:10px;}
-.addFileList > li .byte {float: right;}
-</style>
-
-
-                            <!-- 버튼  -->
-                            <div class="btnGroup pt30">
-                                <button type="button" class="btnType1 primary">변경하기</button>
+                            <div class="moContInner ty3">
+                                <div class="tit">택 1 <span title="필수입력" class="color01">＊</span></div>
+                                <div class="inCont">
+                                    <div class="subTit">전화번호</div>
+                                    <div class="inpArea phoneInput">
+                                        <div class="ele ty1">
+                                            <select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
+                                                <option selected="selected" value="">선택</option>
+                                                <option value="032"> 032 </option>
+                                            </select>
+                                        </div>
+                                        <div class="ele ty2">-</div>
+                                        <div class="ele ty3">
+                                            <input type="text" title="전화번호 가운데 번호" name="userTel02" id="userTel02">
+                                        </div>
+                                        <div class="ele ty2">-</div>
+                                        <div class="ele ty3">
+                                            <input type="text" title="전화번호 마지막 번호" name="userTel03" id="userTel03">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inCont">
+                                    <div class="subTit">휴대폰번호</div>
+                                    <div class="inpArea">
+                                        <div class="phoneInput">
+                                            <div class="ele ty1">
+                                                <select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
+                                                    <option selected="selected" value="">선택</option>
+                                                    <option value="010"> 010 </option>
+                                                </select>
+                                            </div>
+                                            <div class="ele ty2">-</div>
+                                            <div class="ele ty3">
+                                                <input type="text" title="핸드폰 가운데 번호" name="userHP02" id="userHP02">
+                                            </div>
+                                            <div class="ele ty2">-</div>
+                                            <div class="ele ty3">
+                                                <input type="text" title="핸드폰 마지막 번호" name="userHP03" id="userHP03">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="moContInner ty3">
+                                <div class="tit">이메일 (e-mail) <span title="필수입력" class="color01">＊</span></div>
+                                <div class="inCont">
+                                    <div class="inpArea emailInput">
+                                        <div class="ele">
+                                            <input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
+                                        </div>
+                                        <div class="ele ty1">@</div>
+                                        <div class="ele">
+                                            <input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
+                                        </div>
+                                        <div class="ele ty2">
+                                            <select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
+                                                <option selected="selected" value="">직접입력</option>
+                                                <option value="chol.com"> chol.com </option>
+                                                <option value="dreamwiz.com"> dreamwiz.com </option>
+                                                <option value="empal.com"> empal.com </option>
+                                                <option value="freechal.com"> freechal.com </option>
+                                                <option value="gmail.com"> gmail.com </option>
+                                                <option value="hanmail.net"> hanmail.net </option>
+                                                <option value="hanmir.net"> hanmir.net </option>
+                                                <option value="hitel.com"> hitel.com </option>
+                                                <option value="hotmail.com"> hotmail.com </option>
+                                                <option value="korea.com"> korea.com </option>
+                                                <option value="nate.com"> nate.com </option>
+                                                <option value="naver.com"> naver.com </option>
+                                                <option value="orgio.com"> orgio.com </option>
+                                                <option value="paran.com"> paran.com </option>
+                                                <option value="sayclub.net"> sayclub.net </option>
+                                                <option value="shinbiro.com"> shinbiro.com </option>
+                                                <option value="yahoo.co.kr"> yahoo.co.kr </option>
+                                                <option value="yahoo.com"> yahoo.com </option>
+                                                <option value="molab.go.kr"> molab.go.kr </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <p class="inpAlertMsg">Gmail, yahoo 등에서 제공하는 메일계정을 사용하시는 경우 해당사의 보안정책 등에 의하여 HRD-Net의 메일 관련서비스 이용시 정상적으로 수신되지 않을 수도 있사오니 다른 메일계정을 사용하여 주시기 바랍니다.</p>
+                                </div>
+                            </div>
+                            <div class="moContInner ty3">
+                                <div class="tit">이메일·문자 수신 동의(선택) <span title="필수입력" class="color01">＊</span></div>
+                                <div class="inCont">
+                                    <div class="smAtgChk">
+                                        <p class="txt">한국고용정보원은 회원 및 구직자를 대상으로 고용노동부에서 제공하는 소식 등 이메일 및 문자 서비스를 제공하고 있습니다.</p>
+                                        <div class="smAtgChkbox">
+                                            <div class="ui_checkBox">
+                                                <input type="checkbox" name="chkReturn" id="ag02">
+                                                <label for="ag02">이메일·문자 수신 동의에 동의합니다.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="moContInner ty3">
+                                <div class="tit">공인인증서 <span title="필수입력" class="color01">＊</span></div>
+                                <div class="inCont">
+                                    등록되어 있지 않음 공인인증서 “등록/변경” 은 “공인인증서 관리”메뉴에서 등록/변경 하실 수 있습니다.
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="fileAddEle">
+                            <div class="inner">
+                                <div class="fileAddCont ig">
+                                    <div class="imgRdy">
+                                        <img src="../new_images/temp/@bnMainEvent.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="fileAddCont">
+                                    <ul class="addFileList">
+                                        <li>
+                                            <div class="ui_checkBox">
+                                                <input type="checkbox" name="chkReturn" id="addFile01">
+                                                <label for="addFile01">첨부파일명.pptx</label>
+                                            </div>
+                                            <button type="button" class="btnCloseCross">삭제</button>
+                                            <span class="byte">21.2KB</span>
+                                        </li>
+                                    </ul>
+                                    <div class="plugin">
+                                        <div class="inner" style="padding: 30px 0; line-height: 1; font-size: 14px; color: #767676; text-align: center;">
+                                            이곳을 더블클릭 또는 파일을 드래그하세요.
+                                        </div>
+                                    </div>
+                                    <div class="options">
+                                        <div class="btns verPC">
+                                            <div class="inpFile">
+                                                <label for="ex_file" class="file-label02">파일추가</label>
+                                                <input type="file" id="ex_file" class="file-upload">
+                                            </div>
+                                            <button type="button" class="btnType2">항목제거</button>
+                                            <button type="button" class="btnType2">전체 항목제거</button>
+                                        </div>
+
+                                        <div class="btns verM">
+                                            <div class="inpFile">
+                                                <label for="ex_file02" class="file-label">파일추가</label>
+                                                <input type="file" id="ex_file02" class="file-upload">
+                                            </div>
+                                            <button type="button" class="btnH60 ty3">항목제거</button>
+                                            <button type="button" class="btnH60 ty1">전체 항목제거</button>
+                                        </div>
+
+                                        <ul class="dotList">
+                                            <li>사이즈는 반드시 150*200으로 등록하여 주시기 바랍니다.</li>
+                                            <li>이미지파일 확장자는 jpg(jpeg), gif, png, bmp 만 가능합니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 버튼  -->
+                        <div class="btnGroup verPC">
+                            <button type="button" class="btnType1 primary">변경하기</button>
+                        </div>
+
+                        <div class="btnGroup verM">
+                            <button type="button" class="btnType1 primary w280">변경하기</button>
                         </div>
                     </div>
                 </div>
