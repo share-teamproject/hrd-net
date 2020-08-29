@@ -106,6 +106,7 @@
 .idNumEle > .ele2 {width:30px; line-height:40px; text-align:center;}
 
 .nBox {margin-top:60px; border:3px solid #e2e2e4; padding:38px;}
+.nBox.top {margin-top:12px;}
 .nBoxDl + .nBoxDl {margin-top: 32px;}
 .nBoxDl > dt {padding-bottom:20px; font-weight:500; font-size:16px; color:#292a2d;}
 .nBoxDl > dd {position:relative; padding-left:18px; font-size:14px; color:#727476; line-height:22px;}
@@ -113,6 +114,18 @@
 .nBoxDl > dd + dd {margin-top:13px;}
 .nBoxDl > dd.red {color:#93480f;}
 .nBoxDl > dd .point {color:#292a2d;}
+.nBoxDl > dd.ba > .baDom {float: right;}
+
+.nBoxDl2 {}
+.nBoxDl2 > dt {padding:14px 0 40px 70px; margin-bottom: 24px; font-weight:500; font-size:22px; color:#292a2d; line-height: 26px; border-bottom: 1px solid #e2e2e4; background: url(../new_images/common/pageComment2.png) no-repeat left 9px top;}
+.nBoxDl2 > dt > strong  {color: #4171df;}
+.nBoxDl2 > dd {position:relative; padding-left:18px; font-size:14px; color:#727476; line-height:22px;}
+.nBoxDl2 > dd:before {content:''; position:absolute; top:9px; left:0; width:4px; border-bottom:4px solid #727476; border-radius:50%;}
+.nBoxDl2 > dd + dd {margin-top:11px;}
+.nBoxDl2 > dd.red {color:#93480f;}
+.nBoxDl2 > dd .point {color:#292a2d;}
+
+.ouBg {background:#f7f7f7; padding:30px 35px; font-size:12px; color:#727476; line-height:20px;}
 
 .addrCont {max-width:480px;}
 .addrCont input[type="text"] {width:100%;}

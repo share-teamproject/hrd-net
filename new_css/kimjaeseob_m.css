@@ -213,13 +213,27 @@
 .dashList > li + li {margin-top:8px;}
 
 .nBox {margin-top:70px; border:1px solid #e2e2e4; padding:30px;}
+.nBox.top {margin-top:12px;}
 .nBoxDl + .nBoxDl {margin-top: 32px;}
-.nBoxDl > dt {padding-bottom:35px; font-weight:500; font-size:32px; color:#292a2d;}
-.nBoxDl > dd {position:relative; padding-left:23px; font-size:26px; color:#727476; line-height:36px;}
+.nBoxDl > dt {padding-bottom:35px; font-weight:500; font-size:32px; color:#292a2d; line-height: 1.2;}
+.nBoxDl > dd {position:relative; padding-left:23px; font-size:26px; color:#727476; line-height:36px; word-break: keep-all;}
 .nBoxDl > dd:before {content:''; position:absolute; top:13px; left:0; width:8px; border-bottom:8px solid #727476; border-radius:50%;}
 .nBoxDl > dd + dd {margin-top:13px;}
 .nBoxDl > dd.red {color:#93480f;}
 .nBoxDl > dd .point {color:#292a2d;}
+.nBoxDl > dd.ba > .baDom {margin-top: 25px;}
+
+.nBoxDl2 {}
+.nBoxDl2 > dt {padding:13px 0 44px 70px; margin-bottom: 24px; font-weight:500; font-size:30px; color:#292a2d; line-height: 26px; border-bottom: 1px solid #e2e2e4; background: url(../new_images/common/pageComment2.png) no-repeat left 9px top; letter-spacing: -1px;}
+.nBoxDl2 > dt > strong  {color: #4171df;}
+.nBoxDl2 > dd {position:relative; padding-left:23px; font-size:26px; color:#727476; line-height:36px; word-break: keep-all;}
+.nBoxDl2 > dd:before {content:''; position:absolute; top:13px; left:0; width:8px; border-bottom:8px solid #727476; border-radius:50%;}
+.nBoxDl2 > dd + dd {margin-top:11px;}
+.nBoxDl2 > dd.red {color:#93480f;}
+.nBoxDl2 > dd .point {color:#292a2d;}
+
+.ouBg {background:#f7f7f7; padding:30px 35px; font-size:12px; color:#727476; line-height:20px;}
+
 .bold {font-weight: 500;}
 
 .mapArea {padding:40px 30px 60px 30px;}

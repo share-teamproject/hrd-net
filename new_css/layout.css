@@ -294,6 +294,7 @@ button.goLink, a.goLink { position:relative; display:inline-block; min-width:100
 button.goLink, a.goLink:after { position:absolute; top:6px; right:20px; width:6px; height:12px; content:''; background:url('../new_images/common/arrowGoLink.png') no-repeat; background-size:6px 12px; }
 .goLinkLong {display:inline-block; min-width:100px; height:26px; line-height:24px; padding:0 20px; text-align:left; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51; }
 .goLinkLong:after {content:''; display:inline-block; vertical-align:middle; width:6px; height:12px; margin-left:5px; margin-top:-3px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;}
+.btnH26 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:12px; color:#258384; border:1px solid #258384; line-height:24px; background: #fff;}
 .btnH30 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:28px;}
 .btnH30.ty1 {height:30px; line-height:30px; text-align:center; font-size:14px; color:#4e4f51; border:0; background:#c9d3e8;}
 
