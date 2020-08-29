@@ -1,96 +1,5 @@
 $(function(){	
-	$.fn.extend({
-		//fn_datepicker
-		fn_datepicker : function(options){
-			var defaults = {};
-			var opts = $.extend(defaults, options);
-
-			return this.each(function(){
-				var $this = $(this),
-					btnImg = $this.attr("data-button"),
-					range = $this.attr("data-range"),
-					from = $this.attr("data-from"),
-					to = $this.attr("data-to"),
-					minDate, maxDate, $elm, optDate,
-					enableDates = opts.enableDates,
-					onSelect = opts.onSelect;
-
-				var dateOptions = {
-					showOtherMonths:true,
-					selectOtherMonths:true,
-					dateFormat:'yy.mm.dd'
-				}
-
-				if(range !== undefined && $.trim(range) != ""){
-					var arrRange = range.split(",")
-					dateOptions.minDate =$.trim(arrRange[0]);
-					dateOptions.maxDate =$.trim(arrRange[1]);
-				}
-
-				if(btnImg === undefined || !btnImg){
-					dateOptions.showOn = "both";
-				}
-
-				if(to !== undefined && $.trim(to) != ""){
-					$elm = $(to);
-					optDate = "minDate";
-				}
-
-				if(from !== undefined && $.trim(from) != ""){
-					$elm = $(from);
-					optDate = "maxDate";
-				}
-
-				if($elm !== undefined){
-					dateOptions.onClose = function(selectedDate){
-						$elm.datepicker("option", optDate, selectedDate);
-					}
-				}
-
-				if(enableDates !== undefined){
-					dateOptions.beforeShowDay = function(d){
-						var dmy = d.getMonth() + 1;
-						if(d.getMonth() < 9) dmy = "0" + dmy;
-						dmy += "-";
-
-						if(d.getDate()<10) dmy += "0";
-						dmy = d.getFullYear() + "-" + dmy + d.getDate();
-
-						if($.inArray(dmy, enableDates) != -1){
-							return [true, "ui-datepicker-current-day"];
-						}else{
-							return [false, ""];
-						}
-					}
-				}
-
-				if(onSelect !== undefined){
-					dateOptions.onSelect = onSelect;
-				}
-
-				$.datepicker.regional['ko']={
-					closeText:'닫기',
-					prevText:'이전달',
-					nextText:'다음달',
-					currentText:'오늘',
-					monthNames:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-					monthNamesShort:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-					dayNames:['일','월','화','수','목','금','토'],
-					dayNamesShort:['일','월','화','수','목','금','토'],
-					dayNamesMin:['일','월','화','수','목','금','토'],
-					weekHeader:'Wk',
-					dateFormat:'yy.mm.dd',
-					firstDay:0,
-					isRTL:false,
-					showMonthAfterYear:true,
-					yearSuffix:'년'
-				}
-
-				$.datepicker.setDefaults($.datepicker.regional['ko']);
-				$this.datepicker(dateOptions);
-			});
-		},
-
+	$.fn.extend({	
 		//fn_tootip
 		fn_tooltip:function(){
 			return this.each(function(){
@@ -128,7 +37,6 @@ $(function(){
 			});
 		},	
 	});
-	$('.js_datepicker').fn_datepicker(); //datepicker
 	$('.toolTip').fn_tooltip();  //tooltip
 
 	headFixed();
@@ -430,6 +338,9 @@ var mainSearch = {
 					$tabSelect.hide('fast');
 					$tabSelect.eq(idx).show('slow');
 					$inputSearchKeyword.css('width','190px;')
+				}
+				if(idx==2) {
+					$('#inputPeriod').focus();
 				}
 			});		
 		});			

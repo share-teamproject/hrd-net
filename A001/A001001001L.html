@@ -15,12 +15,14 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
     <link href="../new_css/reset.css" rel="stylesheet" />
     <link href="../new_css/layout.css" rel="stylesheet" />
     <link href="../new_css/contents.css" rel="stylesheet" />
-    <link href="../new_css/main.css" rel="stylesheet" /> 
+    <link href="../new_css/main.css" rel="stylesheet" />     
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
-    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
     <script src="../new_js/lib/swiper.min.js"></script>
     <script src="../new_js/ui.js"></script>
 </head>
@@ -352,39 +354,17 @@
                                                 <p class="tit">대분류</p>
                                                         <div class="listWrap">
                                                     <ul class="list">
-                                                        <li class="on">
-                                                            <span>사업관리</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>경영&middot;회계&middot;사무</span>
-                                                        </li>
+                                                        <li class="on"><a href="javascript:void(0);"><span>사업관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>경영&middot;회계&middot;사무</span></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -392,27 +372,15 @@
                                                 <p class="tit">중분류</p>
                                                 <div class="listWrap">
                                                     <ul class="list">
-                                                        <li class="on">
-                                                            <a href="javascript:void(0);"><span>기획사무</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>기획사무</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>기획사무</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>기획사무</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>기획사무</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>기획사무</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>기획사무</span></a>
-                                                        </li>
+                                                        <li class="on"><a href="javascript:void(0);"><span>기획사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -420,82 +388,59 @@
                                                 <p class="tit">소분류</p>
                                                 <div class="listWrap">
                                                     <ul class="list">
-                                                        <li class="on">
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>생산관리</span></a>
-                                                        </li>                                                        
+                                                        <li class="on"><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>                                                       
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>생산관리</span></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="box">
+                                            <div class="box" id="calenderBox">
                                                 <p class="tit">세분류</p>
                                                 <div class="listWrap">
                                                     <ul class="list">
-                                                        <li class="on">
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:void(0);"><span>QM/QC관리</span></a>
-                                                        </li>
+                                                        <li class="on"><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
+                                                        <li><a href="javascript:void(0);"><span>QM/QC관리</span></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div> 
                                         <div class="boxWrap">
-                                            <div class="box"></div>
+                                            <div class="box">
+                                                <!--input type="text" name="datetimes" /-->
+                                                <script>
+                                                    $(function() {
+                                                        $('#inputPeriod').daterangepicker({
+                                                            timePicker: true,
+                                                            startDate: moment().startOf('hour'),
+                                                            endDate: moment().startOf('hour').add(32, 'hour'),
+                                                            locale: {
+                                                                format: 'MM.DD',
+                                                                daysOfWeek:["일","월","화","수","목","금","토"] ,
+                                                                monthNames:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]
+                                                            }
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>                           
@@ -527,7 +472,7 @@
                             <h2 class="mainHeadingTitle">디지털 신기술 인재 양성 과정</h2>
                             <div class="toolTip">
                                 <button type="button" class="toolTipBtn">툴팁</button>
-                                <div class="toolTipContent">
+                                <div class="toolTipContent right">
                                     <p class="toolTipTitle">디지털 신기술 인재 양성 과정</p>
                                     <p class="toolTipText">전공명을 <strong>정확하게</strong> 기재 바랍니다.<br>전공명을 <strong>정확하게</strong> 기재 바랍니다.</p>
                                 </div>
