@@ -3,7 +3,9 @@
 /* ==============================
 * common
 * ============================== */
-.commentBox {min-height:53px; padding:25px 25px 25px 100px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 37px top 25px;}
+.commentBox {margin-top:20px; min-height:53px; padding:25px 25px 25px 100px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 37px top 25px;}
+.commentBox + .tableArea {margin-top:40px;}
+.commentBox + form {margin-top:40px;}
 
 .toolTipQ {display:inline-block; vertical-align:middle; width:26px; height:26px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover;}
 .iconTip {display:inline-block; width:45px; font-weight:500; font-size:20px; color:#fff; text-align:center; line-height:32px; background:#65646a;}
@@ -35,10 +37,6 @@
 /* ==============================
 * common - 
 * ============================== */
-
-
-
-
 
 
 /* ==============================
@@ -205,9 +203,23 @@
 .listType1 + .btnH60Group {margin-top:50px;}
 
 .dashList {}
-.dashList > li {position:relative; padding-left:14px; font-size:22px; color:#767676; line-height:26px;}
-.dashList > li:before {content:''; position:absolute; top:13px; left:0; width:6px; border-bottom:2px solid #767676;}
+.dashList > li {position:relative; padding-left:14px; font-size:22px; color:#727476; line-height:26px;}
+.dashList > li:before {content:''; position:absolute; top:13px; left:0; width:6px; border-bottom:2px solid #727476;}
+
+.dlType1 {}
+.dlType1 > dt {padding-bottom: 8px; font-weight: 500; font-size: 22px; color: #292a2d; text-align: left;}
+.dlType1 > dd {font-size: 22px; color: #727476; line-height: 30px; text-align: left; word-break: keep-all;}
+.dlType1 > dd br {display: none;}
 .dashList > li + li {margin-top:8px;}
+
+.nBox {margin-top:70px; border:1px solid #e2e2e4; padding:30px;}
+.nBoxDl > dt {padding-bottom:35px; font-weight:500; font-size:32px; color:#292a2d;}
+.nBoxDl > dd {position:relative; padding-left:23px; font-size:26px; color:#727476; line-height:36px;}
+.nBoxDl > dd:before {content:''; position:absolute; top:13px; left:0; width:8px; border-bottom:8px solid #727476; border-radius:50%;}
+.nBoxDl > dd + dd {margin-top:13px;}
+.nBoxDl > dd.red {color:#93480f;}
+.nBoxDl > dd .point {color:#292a2d;}
+.bold {font-weight: 500;}
 
 .mapArea {padding:40px 30px 60px 30px;}
 
@@ -236,7 +248,7 @@
 .addFileList > li {overflow: hidden;}
 .addFileList > li + li {margin-top:10px;}
 .addFileList > li .ui_checkBox label {margin-right: 0;}
-.addFileList > li .byte {padding-top: 9px; float: right; font-size: 22px; color: #767676;}
+.addFileList > li .byte {padding-top: 9px; float: right; font-size: 22px; color: #727476;}
 .addFileList > li .btnCloseCross {margin-left: 8px;}
 
 .addrCont {}
