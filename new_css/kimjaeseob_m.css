@@ -213,6 +213,7 @@
 .dashList > li + li {margin-top:8px;}
 
 .nBox {margin-top:70px; border:1px solid #e2e2e4; padding:30px;}
+.nBoxDl + .nBoxDl {margin-top: 32px;}
 .nBoxDl > dt {padding-bottom:35px; font-weight:500; font-size:32px; color:#292a2d;}
 .nBoxDl > dd {position:relative; padding-left:23px; font-size:26px; color:#727476; line-height:36px;}
 .nBoxDl > dd:before {content:''; position:absolute; top:13px; left:0; width:8px; border-bottom:8px solid #727476; border-radius:50%;}
@@ -259,7 +260,9 @@
 .smAtgChk > .txt {}
 .smAtgChk > .smAtgChkbox {padding-top: 30px;}
 
-
+.moPwChg {padding: 0 20px 40px 20px; border-bottom: 1px solid #e2e2e4;}
+.moPwChg > input {display: block; width: 100%;}
+.moPwChg > input + input {margin-top: 20px;}
 
 
 /*테이블 상단 필수표시 단독 케이스*/

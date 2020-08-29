@@ -312,6 +312,7 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 .mb0 {margin-bottom:0 !important;}
 .mb50 {margin-bottom:50px !important;}
 .ml0 { margin-left:0px !important; }
+.pd0 { padding:0 !important; }
 .pt10 { padding-top:10px !important; }
 .pr0 {padding-right:0 !important;}
 .pl15 { padding-left:15px !important; }

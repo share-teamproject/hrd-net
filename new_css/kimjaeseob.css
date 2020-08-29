@@ -106,6 +106,7 @@
 .idNumEle > .ele2 {width:30px; line-height:40px; text-align:center;}
 
 .nBox {margin-top:60px; border:3px solid #e2e2e4; padding:38px;}
+.nBoxDl + .nBoxDl {margin-top: 32px;}
 .nBoxDl > dt {padding-bottom:20px; font-weight:500; font-size:16px; color:#292a2d;}
 .nBoxDl > dd {position:relative; padding-left:18px; font-size:14px; color:#727476; line-height:22px;}
 .nBoxDl > dd:before {content:''; position:absolute; top:9px; left:0; width:4px; border-bottom:4px solid #727476; border-radius:50%;}
