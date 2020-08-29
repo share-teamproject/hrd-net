@@ -3,13 +3,16 @@
 /* ==============================
 * common
 * ============================== */
-.commentBox {min-height:53px; padding:30px 20px 30px 125px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 46px center;}
+.commentBox {margin-top: 13px; min-height:53px; padding:30px 20px 30px 125px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 46px center;}
 .commentBox .dashList {display:inline-block; vertical-align:middle;}
+.commentBox .dlType1 {display:inline-block; vertical-align:middle;}
 .commentBox + .bigTitle02 {margin-top:62px;}
+.commentBox + .tableArea {margin-top:40px;}
+.commentBox + form {margin-top:40px;}
 
 .dashList {}
-.dashList > li {position:relative; padding-left:9px; font-size:14px; color:#767676; line-height:18px;}
-.dashList > li:before {content:''; position:absolute; top:9px; left:0; width:4px; border-bottom:1px solid #767676;}
+.dashList > li {position:relative; padding-left:9px; font-size:14px; color:#727476; line-height:18px;}
+.dashList > li:before {content:''; position:absolute; top:9px; left:0; width:4px; border-bottom:1px solid #727476;}
 .dashList > li + li {margin-top:4px;}
 
 .listType1 {}
@@ -17,6 +20,10 @@
 .listType1 > li  + li {margin-top:20px;}
 .listType1 > li .rndBoxTxt {margin-right:15px;}
 .listType1 + .btnH60Group {margin-top:50px;}
+
+.dlType1 {}
+.dlType1 > dt {padding-bottom: 12px; font-weight: 500; font-size: 16px; color: #292a2d; text-align: left;}
+.dlType1 > dd {font-size: 14px; color: #727476; line-height: 20px; text-align: left;}
 
 .flexMiddle {display:flex; align-items: center; justify-content: center; padding:0 8px 0 20px;}
 .heightAuto {min-height:0 !important;}
@@ -31,11 +38,6 @@
 .titleFs30 {font-weight:500; font-size:30px; color:#292a2d; line-height:1.2;}
 .titleFs30 > small {padding-left:5px; font-weight:normal; font-size:26px; color:#666;}
 
-.moContInner {padding:0 30px;}
-.moContInner + .moContInner {margin-top:60px; padding-top:60px; border-top:8px solid #e7e9f0;}
-.moContInner.ty2 {padding-top:60px; border-top:8px solid #e7e9f0;}
-.moContInner.ty2 + .moContInner.ty2 {}
-
 .contBoxType2 {padding:50px 30px; background:#f7f7f7;}
 
 .rndBoxTxt {display:inline-block; min-width:170px; padding:0 10px; line-height:40px; text-align:center; border:2px solid #d3d3d3; border-radius:25px; font-size:26px; color:#727476; background:#fff;}
@@ -47,16 +49,10 @@
 .bold {font-weight:500;}
 
 
-
 /* ==============================
 * common - btn
 * ============================== */
-
-
-
-
-
-
+.btnCloseCross {display: inline-block; width: 21px; height: 21px; background: url(../new_images/common/icoCloseCross.png) no-repeat; background-size: cover; overflow: hidden; text-indent: -999px;}
 
 
 /* 통합검색 */
@@ -103,8 +99,6 @@
 .detailListTy2 > li .txt02 {padding-top:7px; font-size:14px; color:#666; line-height:24px;}
 
 
-
-
 /* 마이 정보 */
 .idNumEle {display:table; width:350px; table-layout:fixed;}
 .idNumEle > div {display:table-cell; vertical-align:middle;}
@@ -112,9 +106,10 @@
 .idNumEle > .ele2 {width:30px; line-height:40px; text-align:center;}
 
 .nBox {margin-top:60px; border:3px solid #e2e2e4; padding:38px;}
-.nBoxDl > dt {padding-bottom:20px; font-weight:500; font-size:16px; color:#4e4f51;}
-.nBoxDl > dd {position:relative; padding-left:18px; font-size:14px; color:#767676; line-height:22px;}
-.nBoxDl > dd:before {content:''; position:absolute; top:9px; left:0; width:4px; border-bottom:4px solid #767676; border-radius:50%;}
+.nBoxDl + .nBoxDl {margin-top: 32px;}
+.nBoxDl > dt {padding-bottom:20px; font-weight:500; font-size:16px; color:#292a2d;}
+.nBoxDl > dd {position:relative; padding-left:18px; font-size:14px; color:#727476; line-height:22px;}
+.nBoxDl > dd:before {content:''; position:absolute; top:9px; left:0; width:4px; border-bottom:4px solid #727476; border-radius:50%;}
 .nBoxDl > dd + dd {margin-top:13px;}
 .nBoxDl > dd.red {color:#93480f;}
 .nBoxDl > dd .point {color:#292a2d;}
@@ -125,4 +120,32 @@
 
 .smAtgChk {}
 .smAtgChk > .txt {}
-.smAtgChk > .smAtgChkbox {padding-top: 17px;  ext-align:right;}
+.smAtgChk > .smAtgChkbox {padding-top: 17px;  text-align: right;}
+
+.inpFile{display:inline-block;}
+.inpFile [type="file"] {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:none;}
+.inpFile .file-label {min-width:112px; display:inline-block; text-align:center; background:#fff; border:1px solid #cdcdd1; color:#4e4f51; font-size:14px; line-height:38px; height:40px; padding:0 36px; box-sizing:border-box;}
+
+.fileAddEle {margin-bottom: 50px; padding: 10px 20px 30px 20px; border-bottom: 1px solid #e2e2e4;}
+.fileAddEle > .inner {display: table; width: 100%; table-layout: fixed;}
+.fileAddEle .fileAddCont {position: relative; display: table-cell; vertical-align: top;}
+.fileAddEle .fileAddCont.ig {width: 210px; border: 1px solid #e2e2e4; vertical-align: middle;}
+*.fileAddEle .fileAddCont.ig .imgRdy {display: inline-block; padding: 10px;}
+*.fileAddEle .fileAddCont.ig .imgRdy img {max-width: 100%;}
+
+.fileAddEle .fileAddCont + .fileAddCont {padding-left: 20px;}
+.fileAddEle .fileAddCont .plugin {margin-top: 20px; border: 4px solid #e2e2e4; background: #fff;}
+.fileAddEle .options {padding: 25px 20px; background: #f7f7f7}
+.fileAddEle .options .btns {padding-bottom: 25px; font-size: 0; text-align: center;}
+.fileAddEle .options .btns > * {vertical-align: top; width: 150px; padding: 0;}
+.fileAddEle .options .btns > * + * {margin-left: 10px;}
+
+.addFileList {}
+.addFileList > li {overflow: hidden;}
+.addFileList > li + li {margin-top:10px;}
+.addFileList > li .byte {float: right;}
+.addFileList > li .btnCloseCross {margin-left: 8px;}
+
+
+
+
