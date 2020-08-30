@@ -388,11 +388,11 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .fr { float:right;}
 .clear {clear:both;}
 .clearFixed:after {content:''; display:block; clear:both;}
-.color01 { color:#f68b2e; }
-.color02 { color:#93480f; }
-.color03 { color:#4870cf; }
-.color04 { color:#258384; }
-.color05 { color:#4171df; }
+.color01 { color:#f68b2e !important; }
+.color02 { color:#93480f !important; }
+.color03 { color:#4870cf !important; }
+.color04 { color:#258384 !important; }
+.color05 { color:#4171df !important; }
 .w100p { width:100% !important; }
 .w145 { width:145px !important; }
 .w150 { width:150px !important; }
