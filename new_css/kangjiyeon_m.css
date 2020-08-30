@@ -28,6 +28,12 @@
 .star.star01 { background-position:0 -95px; }
 
 /* ==============================
+* checkbox
+* ============================== */
+.ui_checkBox.single {width:26px; height:26px; padding-left:26px;}
+.ui_checkBox.single label { font-size:0; }
+
+/* ==============================
 * button
 * ============================== */
 .btnListTy1 li {width:100%; margin:7px 0; }
@@ -36,6 +42,7 @@
 .btnH26 {display:inline-block; min-width:220px; height:45px; line-height:43px; padding:0 20px; text-align:center; font-size:26px; color:#258384; border:2px solid #258384; }
 /* 다운로드버튼 */
 button.lookupBtn, a.lookupBtn { display:inline-block; height:50px; line-height:46px; padding:0 30px; text-align:center; font-size:26px; color:#258384; border:2px solid #258384; }
+button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; text-align:center; padding:0 30px; font-size:26px; color:#4e4f51; border:2px solid #cdcdd1; }
 
 /* ==============================
 * etc
@@ -71,7 +78,7 @@ button.lookupBtn, a.lookupBtn { display:inline-block; height:50px; line-height:4
 #subContentWrap .subContArea .searchBox.tyM3 { border-top :6px #e1e4e9 solid; margin-top:20px; margin-bottom:50px; background-color:#fff; padding:60px 70px;}
 
 /* qna */
-#subContentWrap .subContArea .qnaArea { width:100%; padding:80px 30px 0; }
+#subContentWrap .subContArea .qnaArea { width:100%; padding:0 0 0; }
 
 #subContentWrap .subContArea .qnaArea .txtQ.ty2 { height:80px; position:relative; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ.ty2 .txt01 {position:absolute; top:-25px; left:0; }
@@ -129,7 +136,22 @@ button.lookupBtn, a.lookupBtn { display:inline-block; height:50px; line-height:4
 .infoTextBoxS {  font-size:24px;  color:#727476; font-weight:400; background:#f7f7f7; padding:30px; margin:40px -20px 0 -20px; }
 
 /* 타이틀 */
-.bigTitle02 { font-size:34px; color:#292a2d; height:60px; }
+.bigTitle02 { position:relative; font-size:34px; color:#292a2d; height:70px; }
+.bigTitle02 .txt { position:absolute; top:15px; right:0; display:block; font-size:22px; color:#727476; font-weight:400; }
+
+.bigTitle05 { font-size:34px; color:#292a2d; padding-bottom:30px; height:70px; }
+
+.bigTitle06 { position:relative; font-size:34px; color:#292a2d; height:70px; margin-top:50px; }
+.bigTitle06 .txt { position:absolute; top:15px; right:0; display:block; font-size:22px; color:#727476; font-weight:400; }
+.bigTitle06 .txtPC { display:none; }
+
+.bigTitle07List {margin-top:50px;}
+.bigTitle07 { position:relative; font-size:34px; color:#292a2d; height:70px; }
+.bigTitle07 .txt { position:absolute; top:15px; right:0; display:block; font-size:22px; color:#727476; font-weight:400; }
+.bigTitle07List > dd { margin-top:-60px; }
+.bigTitle07List > dd > .btnGroup { width:100%; }
+.bigTitle07List > dd > .btnGroup button { width:330px; }
+.bigTitle07List > dd > .btnGroup button + button{ width:234px; margin-left:10px; }
 
 /* 비대면 - 목록 */
 .applicationBox { text-align:center; }
@@ -151,7 +173,6 @@ button.lookupBtn, a.lookupBtn { display:inline-block; height:50px; line-height:4
 .myCardArea .partArea .partBox02 { margin-top:50px; }
 .myCardArea .partArea .partBox01 .btmTxt.verM { font-size:28px; color:#727476; line-height:40px; }
 
-.bigTitle05 { font-size:34px; color:#292a2d; padding-bottom:30px; height:70px; }
 .txtList01 { margin-top:40px; }
 .txtList01 > dt { position:relative; font-size:30px; color:#5b648a; font-weight:500; padding-left:27px; }
 .txtList01 > dt:before{ content:''; position:absolute; top:19px; left:0; display:block; width:8px; height:8px; background:#5b648a; border-radius:50%; }
@@ -179,11 +200,7 @@ button.lookupBtn, a.lookupBtn { display:inline-block; height:50px; line-height:4
 .checkBox01 .ui_checkBox { }
 .checkBox01 .ui_checkBox > label{ font-size:22px; color:#727476; }
 
-.bigTitle06 { position:relative; font-size:34px; color:#292a2d; font-weight:500; height:60px; margin-top:50px; }
-.bigTitle06 .txt { position:absolute; top:15px; right:0; display:block; font-size:22px; color:#727476; font-weight:400; }
-.bigTitle06 .txtPC { display:none; }
-
-.partArea .signUpForm {}
+.partArea .signUpForm { border-top:4px #727476 solid; }
 .partArea .signUpFormList > li .inpArea .bgcolorGray { background:#ebebeb; }
 
 /* 입력항목 */
@@ -204,3 +221,94 @@ button.lookupBtn, a.lookupBtn { display:inline-block; height:50px; line-height:4
 .educationInput > .ele .selectBox  {width:100%;}
 
 .radioInput .ui_radioBox { color:#727476; margin-right:100px; }
+/**/
+
+/* info type */
+.tblInfoTxt02, 
+.tblInfoTxt04,
+.tblInfoTxt05 { background-color:#f7f7f7; padding:35px 30px; text-align:left; }
+.tblInfoTxt02 > ul > li,
+.tblInfoTxt03 > ul > li,
+.tblInfoTxt04 > ul > li,
+.tblInfoTxt05 > ul > li { position:relative; font-size:22px; color:#767676; letter-spacing:-0.8px; line-height:34px; padding-left:15px; }
+.tblInfoTxt02 > ul > li:before,
+.tblInfoTxt03 > ul > li:before,
+.tblInfoTxt04 > ul > li:before,
+.tblInfoTxt05 > ul > li:before { content:''; position:absolute; top:15px; left:0; width:3px; height:3px; background:#929495; border-radius:50%; }
+
+.tblInfoTxt03 { margin-top:-20px; background-color:#f7f7f7; padding:30px 30px; }
+.tblInfoTxt04 { border-top:2px #e2e2e4 solid; }
+.tblInfoTxt05 > ul { padding-top:25px; }
+.tblInfoTxt05 > ul > li > span { display:inline-block; } 
+.tblInfoTxt05.tblInfoTxt05p0 { padding-top:0; }
+/* 큰 안내 버튼 */
+.guidBtnM { position:relative; width:100%; height:120px; line-height:40px; padding:0 20px; text-align:left; border:2px solid #cdcdd1; font-size:28px; font-weight:500; color:#222; background:#fff; }
+.guidBtnM:before { content:''; position:absolute; top:47px; right:30px; width:12px; height:22px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; }
+.guidBtnM .txt { font-size:22px; color:#4e4f51; font-weight:400; }
+/**/
+
+/* 파일 첨부 테이블 type */
+.AddFilesArea { border-top:4px #727476 solid; margin-bottom:50px; }
+.AddFilesArea .fileBox {overflow:hidden; padding:25px 0 30px 0; }
+.AddFilesArea .fileBox dt { float:left; display:inline-block; position:relative; font-size:26px; padding-left:10px; }
+.AddFilesArea .fileBox dt .compareChk .ui_checkBox { margin-top:-20px; }
+.AddFilesArea .fileBox dt span { padding-left:20px; }
+.AddFilesArea .fileBox dt .btnDelete { position:absolute; top:3px; right:-50px; font-size:0; width:34px; height:34px; background:url('../new_images/common/icoFileDeleteM.png') no-repeat;  }
+.AddFilesArea .fileBox dd { float:right; color:#767676; font-size:22px; padding-right:10px; }
+.AddFilesArea .dragBox {color:#767676; font-size:22px; border:6px #e1e4e9 solid; padding:60px 30px; text-align:center; }
+.AddFilesArea .fileBtnBox { background:#f7f7f7; padding:25px 0; }
+.AddFilesArea .fileBtnBox .btnGroup { margin:0; }
+.AddFilesArea .fileBtnBox .btnGroup .btnType2 + .btnType2{ margin-left:15px; }
+.AddFilesArea .fileBtnBox .btnGroup .btnTy2 { width:155px; font-size:24px; padding:0; }
+.AddFilesArea .fileBtnBox .btnGroup .btnTy3 { width:155px; font-size:24px; color:#258384; padding:0; border:2px #258384 solid; }
+.AddFilesArea .fileBtnBox .btnGroup .btnTy4 { width:185px; font-size:24px; color:#fff; padding:0; background:#4171df; border:0; }
+
+/* MY카드- 실물 카드정보, 지원대상 */
+.divTableArea02 { border-top:4px #727476 solid; }
+.divTableArea02 .caption { font-size:0; }
+.divTableArea02 .divTable { width: 100%; }
+.divTableArea02 .divTable .divTableBody { }
+.divTableArea02 .divTable .divTableRow { border-bottom:2px #e2e2e4 solid; padding:35px 0; }
+.divTableArea02 .divTable .divTableRow .thCell, 
+.divTableArea02 .divTable .divTableRow .thCell02 { font-size:32px; color:#222; font-weight:500; }
+.divTableArea02 .divTable .divTableRow .tdCell, 
+.divTableArea02 .divTable .divTableRow .tdCell02 { font-size:28px; color:#727476; padding-top:25px; }
+.divTableArea02 .divTable .divTableRow .tdCell .ui_radioBox { margin:10px 0; padding-right:0; height:42px; width:50%; }
+.divTableArea02 .divTable .divTableRow .tdCell .ui_radioBox:first-child { width:275px; }
+.divTableArea02 .tdCell02 input[type="text"],
+.divTableArea02 .tdCell02 .selectBox  { width:100%; }
+.divTableArea02 .divTable .divTableRow .txt01 { position:relative; font-size:24px; color:#767676; padding:20px 0 0 20px; }
+.divTableArea02 .divTable .divTableRow .txt01:before{ content:''; position:absolute; top:36px; left:5px; width:4px; height:4px; background:#929495; border-radius:50%; }
+
+.divTableArea02 .divTable .divTableRow .tdCell02 > ul { overflow:hidden; }
+.divTableArea02 .divTable .divTableRow .tdCell02 > ul > li { margin-bottom:20px; }
+.divTableArea02 .divTable .divTableRow .tdCell02 > ul > li:last-child { margin-bottom:0; }
+.divTableArea02 .divTable .divTableRow .tdCell02 > ul > .flTxt { float:left; width:50%; }
+
+.helpBtn { font-size:0; line-height:0; width:26px; height:31px; background:url(../new_images/common/icoHelpM.jpg) no-repeat 0 0; margin-left:12px; }
+
+.innerTableArea02 { background:#f7f7f7; }
+.innerTableArea02 .list { border-top:2px #d5d5d5 solid; }
+.innerTableArea02 .list th { font-size:26px; color:#4e4f51; vertical-align:top; font-weight:400; background:#f0f0f2; padding:20px 15px; border-right:2px #e2e2e4 solid; border-bottom:2px #e2e2e4 solid; }
+.innerTableArea02 .list td { font-size:24px; color:#727476; vertical-align:top; text-align:center; background:#fff; padding:20px 15px; border-right:2px #e2e2e4 solid; border-bottom:2px #e2e2e4 solid; }
+.innerTableArea02 .list th.last, .innerTableArea02 .list td.last { border-right:0; }
+.innerTableArea02 .list .colW01 { width:130px; }
+.innerTableArea02 .list td.tl {padding-left:30px;}
+
+.txtBrM { display:block; }
+
+/* MY카드- 신용카드 체크카드 안내 */
+.tableArea02 { border-top:2px #e2e2e4 solid; }
+.tableArea02 .view th { font-size:26px; color:#4e4f51; font-weight:400; padding:20px 10px; background:#f0f0f2; border-right:1px #e2e2e4 solid; border-bottom:1px #e2e2e4 solid; }
+.tableArea02 .view td { font-size:24px; color:#4e4f51; font-weight:400; letter-spacing:-0.5px; line-height:34px; text-align:center; padding:20px; border-right:1px #e2e2e4 solid; border-bottom:1px #e2e2e4 solid; word-break: keep-all; }
+.tableArea02 .view td:last-child { border-right:0; }
+.tableArea02 .view .colW01 { min-width:65px; width:65px !important;}
+.tableArea02 .view .colW02 { min-width:65px; width:65px !important;}
+.tableArea02 .view .colW03 { min-width:180px; width:180px !important; padding:0 10px; }
+.tableArea02 .view .sTxt01 { display:inline-block; }
+
+/* MY카드- 훈련과정 탐색 */
+.tableArea03 { margin-top:-25px; }
+.tableArea03 > ul > li { position:relative; }
+.tableArea03 > ul > li .delBtnArea { position:absolute; top:30px; right:80px; z-index:100; }
+#subContentWrap .subContArea .tableArea03 .qnaA.innerTableArea03 { position:relative; padding:30px; border-bottom: 1px solid #e2e2e4; background:#fbfbfb; display:none; }
