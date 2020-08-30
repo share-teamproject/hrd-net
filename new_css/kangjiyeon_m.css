@@ -236,11 +236,15 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tblInfoTxt04 > ul > li:before,
 .tblInfoTxt05 > ul > li:before { content:''; position:absolute; top:15px; left:0; width:3px; height:3px; background:#929495; border-radius:50%; }
 
+.tblInfoTxt02 .goLinkLong { background:#fff; margin-top:15px; }
+
 .tblInfoTxt03 { margin-top:-20px; background-color:#f7f7f7; padding:30px 30px; }
 .tblInfoTxt04 { border-top:2px #e2e2e4 solid; }
 .tblInfoTxt05 > ul { padding-top:25px; }
 .tblInfoTxt05 > ul > li > span { display:inline-block; } 
 .tblInfoTxt05.tblInfoTxt05p0 { padding-top:0; }
+.tblInfoTxt05.ty2 { border-bottom:2px #e2e2e4 solid; }
+.tblInfoTxt05.ty2 > ul { padding-top:0; }
 /* 큰 안내 버튼 */
 .guidBtnM { position:relative; width:100%; height:120px; line-height:40px; padding:0 20px; text-align:left; border:2px solid #cdcdd1; font-size:28px; font-weight:500; color:#222; background:#fff; }
 .guidBtnM:before { content:''; position:absolute; top:47px; right:30px; width:12px; height:22px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; }
@@ -297,7 +301,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 .txtBrM { display:block; }
 
-/* MY카드- 신용카드 체크카드 안내 */
+/* MY카드- 신용카드 체크카드 안내, 신청 관할관서 */
 .tableArea02 { border-top:2px #e2e2e4 solid; }
 .tableArea02 .view th { font-size:26px; color:#4e4f51; font-weight:400; padding:20px 10px; background:#f0f0f2; border-right:1px #e2e2e4 solid; border-bottom:1px #e2e2e4 solid; }
 .tableArea02 .view td { font-size:24px; color:#4e4f51; font-weight:400; letter-spacing:-0.5px; line-height:34px; text-align:center; padding:20px; border-right:1px #e2e2e4 solid; border-bottom:1px #e2e2e4 solid; word-break: keep-all; }
@@ -306,9 +310,71 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tableArea02 .view .colW02 { min-width:65px; width:65px !important;}
 .tableArea02 .view .colW03 { min-width:180px; width:180px !important; padding:0 10px; }
 .tableArea02 .view .sTxt01 { display:inline-block; }
+.tableArea02 .view input[type="text"],
+.tableArea02 .view .selectBox  { width:100% !important; }
+
+.mapBtnList li {  font-size:24px; color:#4e4f51; font-weight:300; padding-left:30px; }
+.mapBtnList li:last-child { margin-top:15px; }
+.mapBtnList li.icoM01 { background:url('../new_images/common/icoMapM.png') no-repeat 0 7px; }
+.mapBtnList li.icoM02 { background:url('../new_images/common/icoPhoneM.png') no-repeat 0 8px; }
+.mapBtn { display:none; } 
 
 /* MY카드- 훈련과정 탐색 */
-.tableArea03 { margin-top:-25px; }
-.tableArea03 > ul > li { position:relative; }
-.tableArea03 > ul > li .delBtnArea { position:absolute; top:30px; right:80px; z-index:100; }
-#subContentWrap .subContArea .tableArea03 .qnaA.innerTableArea03 { position:relative; padding:30px; border-bottom: 1px solid #e2e2e4; background:#fbfbfb; display:none; }
+.tableArea03 { border-top:4px #727476 solid; margin-top:40px; }
+.tableArea03 > ul > li { border-bottom:2px #e2e2e4 solid; }
+.tableArea03 > ul > li .titleSection { padding:30px 20px; height:270px; border-bottom:2px #e2e2e4 solid; }
+.tableArea03 > ul > li .titleSection > .titleBox { position:relative; }
+.tableArea03 > ul > li .titleSection > .titleBox .txt01 { position:absolute; top:0; left:0; font-size:28px; color:#4e4f51; }
+.tableArea03 > ul > li .titleSection > .titleBox .txt02 { position:absolute; top:110px; left:0; font-size:28px; color:#727476; }
+.tableArea03 > ul > li .titleSection > .titleBox .txt03 { position:absolute; top:167px; left:0; font-size:29px; color:#292a2d; }
+.tableArea03 > ul > li .titleSection > .titleBox .titleText { position:absolute; top:50px; left:0; font-size:32px; color:#292a2d; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.divTableArea03 { background:#fbfbfb; padding:30px; }
+.divTableArea03 .caption { font-size:0; }
+.divTableArea03 .divTable { width: 100%; border:2px #e2e2e4 solid; background:#fff;}
+.divTableArea03 .divTable .divTableBody { }
+.divTableArea03 .divTable .divTableBody .divTableRow { position:relative; overflow:hidden; width:100%; border-bottom:2px #e2e2e4 solid; }
+.divTableArea03 .divTable .divTableBody .divTableRow:last-child { border-bottom:0; }
+.divTableArea03 .divTable .divTableBody .divTableRow .thCell { width:35%; float:left; font-size:28px; color:#4e4f51; padding:25px 0 25px 40px; }
+.divTableArea03 .divTable .divTableBody .divTableRow .tdCell { float:left; width:65%; font-size:28px; color:#292a2d; font-weight:bold; padding:25px 20px; }
+.divTableArea03 .divTable .divTableBody .divTableRow .thCell:before { content:''; position:absolute; top:31px; left:175px; height:calc(100% - 60px); border-left:3px solid #e3e7ee; }
+.divTableArea03 .delBtnBox { text-align:center; margin:40px 0 20px 0; } 
+.divTableArea03 .delBtnBox .btnType2 { width:250px; color:#4171df; border:2px #4171df solid; }
+
+.tableArea03 .pagenation { display:none; }
+
+/* MY카드- 진행완료 */
+.boxAreaType01 { border:1px #e2e2e4 solid; border-top:4px #727476 solid; text-align:center; padding:75px; margin-top:50px; }
+.boxAreaType01 > .textBox01 { position:relative; }
+.boxAreaType01 > .textBox01 > i { display:block; position:absolute; top:0; left:50%; margin-left:-33px; width:75px; height:54px; font-size:0; color:#292a2d; text-align:center; background:url('../new_images/common/icoMyState.png') no-repeat; background-size:320px; }
+.boxAreaType01 > .textBox01 > i.icon01 { background-position:0 0; }
+.boxAreaType01 > .textBox01 > .txt1 { font-size:24px; color:#727476; line-height:32px; padding-top:80px; }
+.boxAreaType01 > .textBox01 > .txt1 span { display:block; }
+.boxAreaType01 > .textBox01 > .txt2 { font-size:32px; color:#292a2d; line-height:46px; padding-top:30px; }
+
+/* MY카드- 자가진단 체크리스트 */
+.tableArea04 { border-top:4px #727476 solid; margin-bottom:60px; }
+.tableArea04 > ul > li {}
+.tableArea04 > ul > li .titleSection > .titleBox { padding:14px 20px; border-bottom:2px #e2e2e4 solid; }
+.tableArea04 > ul > li .titleSection > .titleBox > .titleText { font-size:28px; color:#727476; padding:10px 0; }
+
+.divTableArea04_01 { padding:20px 20px 0 20px; }
+.divTableArea04_01 > ul > li { font-size:28px; color:#4e4f51; margin:10px 0; }
+
+.divTableArea04_02 { background-color:#fbfbfb; }
+.divTableArea04_02 .titleBox { font-size:34px; color:#258384; letter-spacing:-1px; text-align:center; padding:30px 0; }
+.divTableArea04_02 .titleBox > span { display:block; }
+.divTableArea04_02 .checkList01 {}
+.divTableArea04_02 .checkList01 > ul { overflow:hidden; border-bottom:2px #e2e2e4 solid; }
+.divTableArea04_02 .checkList01 > ul > li { float:left; width:50%; padding:15px; }
+.divTableArea04_02 .checkList01 .ui_radioBox { margin-right:-30px; }
+.divTableArea04_02 .checkList01 .ui_radioBox > label { color:#727476; }
+.divTableArea04_02 .checkList01 .cnt { font-size:32px; color:#222; font-weight:500; margin-bottom:10px; padding:20px 20px 0 20px; }
+
+/* */
+
+
+/* 레이어팝업 버튼 영역  */
+.windowPop .btnGroup {text-align:center; padding:0 30px; font-size:0;}
+.windowPop .btnGroup .btnType2 {width:calc(50% - 10px); padding:0;}
+.windowPop .btnGroup .btnType2 + .btnType2 {margin-left:20px;}
