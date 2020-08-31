@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* ==============================
+* MY서비스(기업)
+* ============================== */ 
+
+/* MY서비스(기업) 컨텐츠 컨테이너 */
+.myInfoArea { margin-top: 12px; }
+
+/* view 테이블 간격 수정 */
+.myInfoArea .tableArea table.view.id { margin-bottom: 0; }
+.myInfoArea .tableArea table.view.id + table.view.form { border-top: 0;}
+
+/* view 테이블 폼 형태 */
+.myInfoArea .tableArea table.view.form td .full { width:100%; }
+
+/*등록 폼 > input group 전화번호, 이메일 등 */
+.myInfoArea .tableArea table.view.form .inputGroup { display:inline-block; }
+.myInfoArea .tableArea table.view.form .inputGroup .addrCodeInput { width:360px; }
+.myInfoArea .tableArea table.view.form .inputGroup .addrCodeBtn { width:116px; padding:0; margin-left:6px; border:1px solid #5b648a; color:#fff; background:#5b648a; }
+.myInfoArea .tableArea table.view.form .inputGroup .urlInput { width:500px; max-width:440px; }
+.myInfoArea .tableArea table.view.form .inputGroup .line { display:inline-block; line-height:65px; padding:0 5px; }
+.myInfoArea .tableArea table.view.form .inputGroup .telSelect { width:148px; }
+.myInfoArea .tableArea table.view.form .inputGroup .telInput { width:148px; }
+.myInfoArea .tableArea table.view.form .inputGroup .emailSelect { display:inline-block; width:148px; margin-left:10px; }
+.myInfoArea .tableArea table.view.form .inputGroup .emailInput { display:inline-block; width:148px; }
+
+.myInfoArea .ui_checkBox.type01 { float:right; }
+
+/* 등록 폼 > 텍스트 컨텐츠 영역 */
+.myInfoArea .txtList li { position:relative;}
+.myInfoArea .txtList li::before { content:''; position:absolute;}
+.myInfoArea .txtList.type01 li { padding-left:10px; }
+.myInfoArea .txtList.type01 li::before { content:'-'; top:0; left:0; }
+.myInfoArea .txtList.type02 li { padding-left:5px; margin: 10px 0 0;}
+.myInfoArea .txtList.type02 li::before { content:''; display:inline-block; position:absolute; top:8px; left:0; width:2px; height:2px; border-radius:100%; background-color: #727476; }
+.myInfoArea .txtList.type03 li { position:relative; padding-left:10px; margin: 10px 0 0; font-size: 14px; }
+.myInfoArea .txtList.type03 li::before { content:''; display:inline-block; position:absolute; top:8px; left:0; width:4px; height:4px; border-radius:100%; background-color: #727476; }
+
+/* 등록 폼 > 버튼 그룹 */
+.myInfoArea .btnGroup { margin-top:60px; }
+.myInfoArea .addrBox p {margin-top:10px;}
+
+/* 비밀번호 변경 안내 */
+#subContentWrap .subContArea .myInfoArea .boxArea { padding:30px 40px; }
+.myInfoArea .boxArea .pwChangeNotice { margin-top: 40px}
+.myInfoArea .boxArea .pwChangeNotice.first { margin-top: 0;}
+.myInfoArea .boxArea .noticeComment { font-size:16px; color:#4e4f51; }
+.myInfoArea .boxArea .noticeComment span { display:block; }
+
+.myInfoArea .comment { min-height:53px; padding: 20px 0 28px 63px; font-size:14px; line-height:53px; color:#727476; border-bottom:1px solid #e1e4e9; background:url('../new_images/common/pageComment2.png') no-repeat 0 50%; }
+.myInfoArea .comment.type01 { min-height:53px; padding: 4px 0 4px 63px; line-height:1.5; border:0; background:url('../new_images/common/pageComment2.png') no-repeat 0 50%; }
+.myInfoArea .comment .tit { padding:0; font-size:22px; color:#292a2d; }
+.myInfoArea .comment .tit strong { color:#4171df; }
+.myInfoArea .comment + .txtList.type03 { margin-top:20px; }
+
+/* 회원탈퇴 */
+#subContentWrap .subContArea .myInfoArea .boxArea.withDrawal { padding:10px 40px 30px; }
+#subContentWrap .subContArea .myInfoArea .boxArea.withDrawalNotice { position:relative; padding:40px 40px 50px; border:0; background-color:#f7f7f7; }
+
+.withDrawalNotice .noticeTit { font-size:16px; color:#4e4f51; }
+.withDrawalNotice .noticeTit + .txtList.type03 { margin-top:20px; }
+.withDrawalNotice .qnaBtn { display:inline-block; position:absolute; bottom:46px; right:40px; height:26px; padding:0 28px; border:1px solid #258384; line-height:24px; font-size:12px; color:#258384; background-color:#fff; }
+
+/* 나의 맞춤 설정 */
+.customCont { padding:50px 0 0; }
+
+/* 나의상담내역 */
+#subContentWrap .subContArea .myInfoArea .searchBox { padding: 20px 90px 15px; }
+#subContentWrap .subContArea .myInfoArea .searchBox .btnArea { margin-left: 25px; }
+#subContentWrap .subContArea .myInfoArea .searchBox input[type="text"] { width: 436px; }
+#subContentWrap .subContArea .myInfoArea .searchBox + .sortArea { margin-top: 50px; }
