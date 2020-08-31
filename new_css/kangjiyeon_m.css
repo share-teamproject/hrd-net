@@ -106,15 +106,20 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .inPdg30 {padding:0 30px; }
 
 #subContentWrap .subContArea .qnaArea .qnaA.ty01 { position:relative; padding:30px; border-bottom: 1px solid #e3e7ee; background:#fbfbfb; display:none; }
-.TrainingHistoryBox { background:#fff; margin-bottom:20px; border-top:1px #e2e2e4 solid; border-left:1px #e2e2e4 solid; border-right:1px #e2e2e4 solid; }
+.TrainingHistoryBox { background:#fff; margin-bottom:20px; border-top:2px #e2e2e4 solid; border-left:2px #e2e2e4 solid; border-right:2px #e2e2e4 solid; }
 .TrainingHistoryBox > ul { }
-.TrainingHistoryBox > ul > li { width:100%; border-bottom:1px #e2e2e4 solid; line-height:80px; }
+.TrainingHistoryBox > ul > li { width:100%; border-bottom:2px #e2e2e4 solid; line-height:80px; }
 .TrainingHistoryBox > ul > li > dl { position:relative; overflow:hidden; display:flex; align-items:center; margin:25px 0; }
 .TrainingHistoryBox > ul > li > dl > dt, .TrainingHistoryBox > ul > li > dl > dd { float:left; line-height:38px;}
 .TrainingHistoryBox > ul > li > dl > dt { width:205px;  font-size:28px; color:#4e4f51; text-align:center; }
 .TrainingHistoryBox > ul > li > dl > dd { color:#292a2d; font-size:28px; padding-left:40px; }
 .TrainingHistoryBox > ul > li > dl > dt:before { content:''; position:absolute; top:2px; left:205px; height:calc(100% - 2px); border-left:3px solid #e3e7ee; }
 .TrainingHistoryBox > ul > li > dl > .star { margin-left:40px; }
+
+.TrainingHistoryBox.ty2 > ul > li > dl > dd { width:62%; color:#292a2d; font-size:28px; padding-left:35px; }
+.TrainingHistoryBox.ty2 .btnH26 { border:2px #d3d3d3 solid; color:#666; }
+
+.TrainingHistoryBox.ty3 { margin-bottom:50px; }
 
 .inTextBox { margin-top:-20px; }
 .inTextBox .txtQ { margin:-10px 0; }
@@ -141,9 +146,16 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 .bigTitle05 { font-size:34px; color:#292a2d; padding-bottom:30px; height:70px; }
 
-.bigTitle06 { position:relative; font-size:34px; color:#292a2d; height:70px; margin-top:50px; }
+.bigTitle06 { position:relative; font-size:34px; color:#292a2d; padding-bottom:30px; margin-top:50px; }
+.bigTitle06.ty2 { margin-top:0; padding-bottom:20px; }
 .bigTitle06 .txt { position:absolute; top:15px; right:0; display:block; font-size:22px; color:#727476; font-weight:400; }
 .bigTitle06 .txtPC { display:none; }
+.bigTitle06 .txt01 { color:#727476; }
+.bigTitle06 .txt02 { display:block; font-size:28px; color:#727476; padding-top:10px; }
+
+.bigTitle06 .btnMbox { display:block; width:80%; line-height:40px; letter-spacing:-0.5px; }
+.bigTitle06 .btnMbox:after { content:''; position:absolute; top:calc(50% - 15px); right:25px; width:26px; height:24px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -13px; background-size:cover; }
+.bigTitle06.on .btnMbox:after { background-position:0 0;}
 
 .bigTitle07List {margin-top:50px;}
 .bigTitle07 { position:relative; font-size:34px; color:#292a2d; height:70px; }
@@ -193,6 +205,13 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .txtBox01 > ul > li > .innerTxtBox > dt { font-size:32px; color:#292a2d; padding-top:17px; }
 .txtBox01 > ul > li > .innerTxtBox > dd { font-size:24px; color:#727476; line-height:30px; padding-top:12px; }
 
+.txtBox01.ty2 { border:0; margin:0; }
+.txtBox01.ty2 > ul > li > .innerTxtBox { width:195px; height:195px; border:2px #e2e2e4 solid; padding-bottom:20px; }
+.txtBox01.ty2 > ul > li > .innerTxtBox.on { width:191px; height:199px; border:6px #416dd3 solid; }
+.txtBox01.ty2 > ul > li > .innerTxtBox.end { width:427px; height:140px;}
+.txtBox01.ty2 > ul > li > .innerTxtBox > dt { font-size:32px; color:#292a2d; padding-top:0; }
+.txtBox01.ty2 > ul > li > .innerTxtBox > dd { font-size:24px; color:#727476; line-height:30px; padding-top:0; }
+
 .txtBox02 { background:#f7f7f7; padding:40px 25px 0 25px; }
 .innerTxtList01 { overflow:hidden; border-bottom:2px #cdcdd1 solid; }
 .innerTxtList01 > li { font-size:26px; color:#727476; line-height:38px; padding-bottom:30px; text-indent:-33px; }
@@ -230,13 +249,14 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tblInfoTxt02 > ul > li,
 .tblInfoTxt03 > ul > li,
 .tblInfoTxt04 > ul > li,
-.tblInfoTxt05 > ul > li { position:relative; font-size:22px; color:#767676; letter-spacing:-0.8px; line-height:34px; padding-left:15px; }
+.tblInfoTxt05 > ul > li { position:relative; font-size:22px; color:#767676; letter-spacing:-0.8px; line-height:34px; padding:0 15px; }
 .tblInfoTxt02 > ul > li:before,
 .tblInfoTxt03 > ul > li:before,
 .tblInfoTxt04 > ul > li:before,
 .tblInfoTxt05 > ul > li:before { content:''; position:absolute; top:15px; left:0; width:3px; height:3px; background:#929495; border-radius:50%; }
 
 .tblInfoTxt02 .goLinkLong { background:#fff; margin-top:15px; }
+.tblInfoTxt02 .color04 { color:#727476; }
 
 .tblInfoTxt03 { margin-top:-20px; background-color:#f7f7f7; padding:30px 30px; }
 .tblInfoTxt04 { border-top:2px #e2e2e4 solid; }
@@ -245,6 +265,11 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tblInfoTxt05.tblInfoTxt05p0 { padding-top:0; }
 .tblInfoTxt05.ty2 { border-bottom:2px #e2e2e4 solid; }
 .tblInfoTxt05.ty2 > ul { padding-top:0; }
+
+.tblInfoTxt06 { border:3px solid #e7e9f0; background:url('../new_images/common/pageComment2.png') no-repeat 40px 50%; padding:28px 50px 28px 100px; margin-top:30px; }
+.tblInfoTxt06 > ul { display:inline-block; vertical-align:middle;}
+.tblInfoTxt06 > ul > li { font-size:22px; color:#767676; line-height:34px; }
+
 /* 큰 안내 버튼 */
 .guidBtnM { position:relative; width:100%; height:120px; line-height:40px; padding:0 20px; text-align:left; border:2px solid #cdcdd1; font-size:28px; font-weight:500; color:#222; background:#fff; }
 .guidBtnM:before { content:''; position:absolute; top:47px; right:30px; width:12px; height:22px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; }
@@ -289,7 +314,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .divTableArea02 .divTable .divTableRow .tdCell02 > ul > li:last-child { margin-bottom:0; }
 .divTableArea02 .divTable .divTableRow .tdCell02 > ul > .flTxt { float:left; width:50%; }
 
-.helpBtn { font-size:0; line-height:0; width:26px; height:31px; background:url(../new_images/common/icoHelpM.jpg) no-repeat 0 0; margin-left:12px; }
+.helpBtn { font-size:0; line-height:0; width:26px; height:31px; background:url('../new_images/common/icoHelpM.jpg') no-repeat 0 0; margin-left:12px; }
 
 .innerTableArea02 { background:#f7f7f7; }
 .innerTableArea02 .list { border-top:2px #d5d5d5 solid; }
@@ -303,6 +328,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 /* MY카드- 신용카드 체크카드 안내, 신청 관할관서 */
 .tableArea02 { border-top:2px #e2e2e4 solid; }
+.tableArea02.ty4 { margin:20px 0; }
 .tableArea02 .view th { font-size:26px; color:#4e4f51; font-weight:400; padding:20px 10px; background:#f0f0f2; border-right:1px #e2e2e4 solid; border-bottom:1px #e2e2e4 solid; }
 .tableArea02 .view td { font-size:24px; color:#4e4f51; font-weight:400; letter-spacing:-0.5px; line-height:34px; text-align:center; padding:20px; border-right:1px #e2e2e4 solid; border-bottom:1px #e2e2e4 solid; word-break: keep-all; }
 .tableArea02 .view td:last-child { border-right:0; }
@@ -328,6 +354,18 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tableArea03 > ul > li .titleSection > .titleBox .txt02 { position:absolute; top:110px; left:0; font-size:28px; color:#727476; }
 .tableArea03 > ul > li .titleSection > .titleBox .txt03 { position:absolute; top:167px; left:0; font-size:29px; color:#292a2d; }
 .tableArea03 > ul > li .titleSection > .titleBox .titleText { position:absolute; top:50px; left:0; font-size:32px; color:#292a2d; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tableArea03 > ul > li .contentsSection.ty2 { background:#fbfbfb; padding:30px; }
+
+.tableArea03.ty2 { border-top:4px #727476 solid;}
+.tableArea03.ty2 > ul > li .titleSection { position:relative; height:330px; cursor:pointer; }
+.tableArea03.ty2 > ul > li .titleSection:after { content:''; position:absolute; top:calc(50% - 15px); right:25px; width:26px; height:24px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -13px; background-size:cover; }
+.tableArea03.ty2 > ul > li.on .titleSection:after { background-position:0 0;}
+
+.tableArea03.ty3 { margin-top:0; }
+.tableArea03.ty3 > ul > li { border-bottom:0 #e2e2e4 solid; }
+.tableArea03.ty3 > ul > li .titleSection { padding:30px 20px; height:270px; border-bottom:0 #e2e2e4 solid; }
+.tableArea03.ty3 > ul > li .titleSection { position:relative; height:275px; cursor:pointer; }
+.tableArea03.ty3 > ul > li .titleSection:after { content:''; position:absolute; top:calc(50% - 15px); right:25px; width:26px; height:24px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -13px; background-size:cover; }
 
 .divTableArea03 { background:#fbfbfb; padding:30px; }
 .divTableArea03 .caption { font-size:0; }
@@ -336,7 +374,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .divTableArea03 .divTable .divTableBody .divTableRow { position:relative; overflow:hidden; width:100%; border-bottom:2px #e2e2e4 solid; }
 .divTableArea03 .divTable .divTableBody .divTableRow:last-child { border-bottom:0; }
 .divTableArea03 .divTable .divTableBody .divTableRow .thCell { width:35%; float:left; font-size:28px; color:#4e4f51; padding:25px 0 25px 40px; }
-.divTableArea03 .divTable .divTableBody .divTableRow .tdCell { float:left; width:65%; font-size:28px; color:#292a2d; font-weight:bold; padding:25px 20px; }
+.divTableArea03 .divTable .divTableBody .divTableRow .tdCell { float:left; width:65%; font-size:28px; color:#292a2d; padding:25px 20px; }
 .divTableArea03 .divTable .divTableBody .divTableRow .thCell:before { content:''; position:absolute; top:31px; left:175px; height:calc(100% - 60px); border-left:3px solid #e3e7ee; }
 .divTableArea03 .delBtnBox { text-align:center; margin:40px 0 20px 0; } 
 .divTableArea03 .delBtnBox .btnType2 { width:250px; color:#4171df; border:2px #4171df solid; }
@@ -371,8 +409,64 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .divTableArea04_02 .checkList01 .ui_radioBox > label { color:#727476; }
 .divTableArea04_02 .checkList01 .cnt { font-size:32px; color:#222; font-weight:500; margin-bottom:10px; padding:20px 20px 0 20px; }
 
-/* */
+/* MY카드- 신청자격 확인 및 신청 */
+.divTableArea05 { border-top:4px #727476 solid; padding:40px 0; }
+.divTableArea05 .caption { font-size:0; }
+.divTableArea05 .divTable .divTableRow { border-bottom:2px #e2e2e4 solid; padding-bottom:40px; }
+.divTableArea05 .divTable .divTableRow + .divTableRow { margin-top:40px; }
+.divTableArea05 .divTable .divTableRow .thCell { font-size:32px; color:#222; font-weight:500; line-height:40px; }
+.divTableArea05 .divTable .divTableRow .tdCell { padding-top:35px; } 
 
+.divTableArea06 { background:#f7f7f7; border-top:4px #727476 solid; padding:30px 30px 0 30px; }
+.divTableArea06 .divTable {border:2px solid #e2e2e4; font-size:0; background:#fff; }
+.divTableArea06 .divTable > li {position:relative; padding:14px 0;}
+.divTableArea06 .divTable.full > li {padding-right:0;}
+.divTableArea06 .divTable > li:before {content:''; position:absolute; top:25px; left:170px; height:calc(100% - 45px); border-left:3px solid #e3e7ee;}
+.divTableArea06 .divTable > li.etc {padding:0;}
+.divTableArea06 .divTable > li + li {border-top:1px solid #e2e2e4;}
+.divTableArea06 .divTable > li > .tit {display:inline-block; vertical-align:middle; width:170px; font-size:28px; color:#4e4f51; text-align:center;}
+.divTableArea06 .divTable > li > .txt {position:relative; display:inline-block; vertical-align:middle; width:calc(100% - 170px); padding:6px 20px 6px 30px; line-height:34px; font-size:28px; color:#292a2d;}
+.divTableArea06 .divTable > li > .txt > span { display:block; } 
+
+.divTableArea06.ty2 { border:0; padding-bottom:30px; }
+
+.divTableArea07 { border-top:2px solid #e2e2e4; padding:0 27px; background:#f7f7f7; }
+.divTableArea07 .inner { margin-top:-20px; }
+.divTableArea07 .inner > dt { display:none; }
+.divTableArea07 .inner > dd { }
+.divTableArea07 .inner > dd .lookupBtn.guidBtnM { position:relative; width:100%; height:90px; line-height:40px; padding:0 20px; text-align:left; border:2px solid #cdcdd1; font-size:28px; font-weight:500; color:#222; background:#fff; }
+.divTableArea07 .inner > dd .lookupBtn.guidBtnM:before { content:''; position:absolute; top:32px; right:30px; width:12px; height:22px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; }
+
+.myCardArea .partArea .partBox03 { border-top:4px #727476 solid; }
+.myCardArea .partArea .partBox04 { border-top:4px #727476 solid; }
+
+.txtList02 { display:none; margin:30px; }
+.txtList02 + .txtList02 { margin-top:40px; }
+.txtList02 > dt { position:relative; font-size:30px; color:#5b648a; font-weight:500; padding-left:27px; }
+.txtList02 > dt:before{ content:''; position:absolute; top:19px; left:0; display:block; width:8px; height:8px; background:#5b648a; border-radius:50%; }
+.txtList02 > dd { font-size:26px; color:#727476; line-height:36px; padding:7px 27px; }
+.conTtxt { font-size:26px; color:#727476; line-height:36px; word-break: keep-all; }
+
+.txtBlack { color:#292a2d; }
+
+.txtList03 { display:none; margin:30px;  }
+.txtList03 + .txtList03 { margin-top:20px; }
+.txtList03 > dt { font-size:26px; color:#4e4f51; font-weight:500; }
+.txtList03 > dd { position:relative; font-size:26px; color:#727476; line-height:38px; padding:7px 27px; }
+.txtList03 > dd:before{ content:'ㅇ'; color:#727476; position:absolute; top:7px; left:0; display:block;}
+
+.partChk { font-size:26px; color:#4e4f51; line-height:40px; letter-spacing:-1px; height:110px; padding:32px 0 0 25px; background-color:#f7f7f7; }
+.partChk .txt02 { color:#258384; }
+.partChk.ty2 { border-top:2px solid #e2e2e4; }
+
+/* MY카드- 신청내역 */
+.txtList04 {}
+.txtList04 > li > dl { display: inline-block; overflow:hidden; width:100%; padding:5px 0; }
+.txtList04 > li > dl > dt,
+.txtList04 > li > dl > dd { float:left; font-size:26px; line-height:46px; color:#727476; }
+.txtList04 > li > dl > dt { width:160px; }
+.txtList04 > li > dl > dt > span { display:inline-block; text-align:center; min-width:150px; border:2px #d3d3d3 solid; padding:0 10px; border-radius:25px; }
+.txtList04 > li > dl > dd { text-align:left; padding-left:10px; }
 
 /* 레이어팝업 버튼 영역  */
 .windowPop .btnGroup {text-align:center; padding:0 30px; font-size:0;}

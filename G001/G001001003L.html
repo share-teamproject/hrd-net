@@ -16,8 +16,8 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout.css" rel="stylesheet" />
-    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" /> 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
@@ -302,7 +302,7 @@
                         <li class="verPC"><a href="/">MY 서비스</a></li>
                         <li><a href="/">MY 카드</a></li>
 						<li><a href="/">국민내일배움카드</a></li>
-                        <li class="on"><a href="/">발급신청</a></li>
+                        <li class="on"><a href="/">카드사용내역 조회</a></li>
                     </ul>
                 </div>
             </div>
@@ -353,9 +353,9 @@
                             <ul class="dep02">
                                 <li><a href="javascript:void(0);">국민내일배움카드</a> 
                                     <ul class="dep03 on">
-                                        <li><a href="/" class="on">발급신청</a></li>
+                                        <li><a href="/">발급신청</a></li>
                                         <li><a href="/">카드신청내역</a></li>
-                                        <li><a href="/">카드사용내역조회</a></li>
+                                        <li><a href="/" class="on">카드사용내역조회</a></li>
                                         <li><a href="/">교육 동영상신청</a></li>
                                         <li><a href="/">계좌한도추가지원안내</a></li>
                                     </ul>
@@ -453,7 +453,7 @@
 
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle ty2">국민내일배움카드 <span class="depth4">발급신청</span></h3>
+                        <h3 class="headingTitle ty2">국민내일배움카드 <span class="depth4">카드사용내역조회</span></h3>
                         <!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
                         <div class="headingIcon">
                             <ul>
@@ -468,594 +468,95 @@
 
                         <!-- My카드 컨텐츠 -->
                         <div class="myCardArea">
-							<div class="signUpFlow">
-								<ol class="signUpFlowList" aria-label="총 4단계 중 현재단계 2단계">
-									<li aria-current="step"><em class="stepCount">1</em><span class="txt verPC">발급신청 안내 및 동의</span><span class="txt verM">발급신청<br />안내 및 동의</span></li>
-									<li class="on"><em class="stepCount">2</em><span class="txt verPC">발급신청서 작성</span><span class="txt verM">신청인<br />정보</span></li>
-									<li><em class="stepCount">3</em><span class="txt verPC">신청자격 확인 및 신청</span><span class="txt verM">발급자격<br />확인/신청</span></li>
-									<li><em class="stepCount">4</em><span class="txt verPC">자가진단 체크리스트</span><span class="txt verM">자가진단<br />리스트</span></li>
-								</ol>
-							</div> 
-							
 							<div class="partArea">
-								<h3 class="bigTitle06">신청인 정보 <span class="txtPC">“<span class="color01">＊</span>” 필수 사항 입니다.</span>
-								<span class="txt verM"><span class="color01">＊</span> 필수입력</span></h3>
-								<div class="signUpForm">
-									<div class="inner">
-										<ul class="signUpFormList">
-											<li>
-												<div class="tit">
-													<label for="forName">성명 <span class="color01">＊</span></label>
-												</div>
-												<div class="inpArea">
-													<input type="text" maxlength="24" placeholder="한고원" class="bgcolorGray" name="loginName" id="forName">
-												</div>
-											</li>
-											<li>
-												<div class="tit">
-													<label for="forName">자택주소 <span class="color01">＊</span></label>
-												</div>
-												<div class="inpArea adressInput">
-													<div class="ele ty1">
-														<input type="text" maxlength="24" placeholder="14302" name="userAdress" id="userAdress">
-													</div>
-													<div class="ele">
-														<button type="button" class="uiBtn">우편번호 찾기</button>
-													</div>
-												</div>
-												<div class="inpArea adressInput2">
-													<div class="ele">
-														<input type="text" maxlength="24" placeholder="경기도 광명시 모세로 27" name="userAdress2" id="userAdress2">
-													</div>
-													<div class="ele ty1">
-														<input type="text" maxlength="24" placeholder="855" name="userAdress3" id="userAdress3">
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="tit">
-													<label for="loginNameEng">영문성명 <span class="color01">＊</span></label>
-												</div>
-												<div class="inpArea">
-													<input type="text" maxlength="24" placeholder="" name="loginNameEng" id="loginNameEng">
-												</div>
-											</li>
-											<li>
-												<div class="tit">
-													<label for="userEmail01">이메일 (E-mail) <span class="color01">＊</span></label>
-												</div>
-												<div class="inpArea emailInput">
-													<div class="ele">
-														<input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
-													</div>
-													<div class="ele ty1">@</div>
-													<div class="ele">
-														<input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
-													</div>
-													<div class="ele ty2">
-														<select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
-															<option selected="selected" value="">직접입력</option>
-															<option value="chol.com"> chol.com </option>
-															<option value="dreamwiz.com"> dreamwiz.com </option>
-															<option value="empal.com"> empal.com </option>
-															<option value="freechal.com"> freechal.com </option>
-															<option value="gmail.com"> gmail.com </option>
-															<option value="hanmail.net"> hanmail.net </option>
-															<option value="hanmir.net"> hanmir.net </option>
-															<option value="hitel.com"> hitel.com </option>
-															<option value="hotmail.com"> hotmail.com </option>
-															<option value="korea.com"> korea.com </option>
-															<option value="nate.com"> nate.com </option>
-															<option value="naver.com"> naver.com </option>
-															<option value="orgio.com"> orgio.com </option>
-															<option value="paran.com"> paran.com </option>
-															<option value="sayclub.net"> sayclub.net </option>
-															<option value="shinbiro.com"> shinbiro.com </option>
-															<option value="yahoo.co.kr"> yahoo.co.kr </option>
-															<option value="yahoo.com"> yahoo.com </option>
-															<option value="molab.go.kr"> molab.go.kr </option>
-														</select>
-													</div>
-												</div>												
-											</li>
-											<li>
-												<div class="tit">
-													<label for="userTel01">휴대폰 번호 <span class="color01">＊</span></label>
-												</div>
-												<div class="inpArea phoneInput">
-													<div class="ele ty1">
-														<select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
-															<option selected="selected" value="">선택</option>
-															<option value="032"> 032 </option>
-														</select>
-													</div>
-													<div class="ele ty2">-</div>
-													<div class="ele ty3">
-														<input type="text" title="전화번호 가운데 자리" name="userTel02" id="userTel02">
-													</div>
-													<div class="ele ty2">-</div>
-													<div class="ele ty3">
-														<input type="text" title="전화번호 끝 자리" name="userTel03" id="userTel03">
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="tit">
-													<label for="userHP01">부재시 연락처</label>
-												</div>
-												<div class="inpArea">
-													<div class="phoneInput">
-														<div class="ele ty1">
-															<select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
-																<option selected="selected" value="">선택</option>
-																<option value="010"> 010 </option>
-															</select>
-														</div>
-														<div class="ele ty2">-</div>
-														<div class="ele ty3">
-															<input type="text" title="핸드폰 가운데 자리" name="userHP02" id="userHP02">
-														</div>
-														<div class="ele ty2">-</div>
-														<div class="ele ty3">
-															<input type="text" title="핸드폰 끝 자리" name="userHP03" id="userHP03">
-														</div>
-													</div>
-													<p class="inpAlertMsg">휴대폰 번호가 없을 경우 연락 가능한 전화 번호</p>
-												</div>
-											</li>
-											<li>
-												<div class="tit">
-													<label for="loginNameEng">SNS 수신동의 여부 <span class="color01">＊</span></label>
-												</div>
-												<div class="inpArea radioInput">
-													<div class="ui_radioBox">                                             
-														<input type="radio" checked="checked" value="snsYesN1" name="snsYesN" id="snsYesN1"> 
-														<label for="snsYesN1">예</label>
-													</div>
-													<div class="ui_radioBox">   
-														<input type="radio" value="snsYesN2" name="snsYesN" id="snsYesN2"> 
-														<label for="snsYesN2">아니오</label>
-													</div> 
-													<p class="inpAlertMsg verM">수신 선택시 발급 결과를 문자로 받으실 수 있습니다.</p>
-												</div>
-											</li>
-											<li>
-												<div class="tit">
-													<label for="userTel01">최종학력 <span class="color01">＊</span></label>
-												</div>
-												<div class="inpArea">
-													<div class="educationInput">
-														<div class="ele ty1">
-															<select title="" name="Education01" id="Education01" class="selectBox">
-																<option selected="selected" value="">선택</option>
-																<option value="Education01">학력</option>
-															</select>
-														</div>
-														<div class="ele ty2">
-															<select title="" name="Education02" id="Education02" class="selectBox">
-																<option selected="selected" value="">선택</option>
-																<option value="Education02">학력</option>
-															</select>
-														</div>
-														<div class="ele ty3">
-															<select title="" name="Education03" id="Education03" class="selectBox">
-																<option selected="selected" value="">선택</option>
-																<option value="Education03">학력</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>						
-								</div>		
-								<div class="tblInfoTxt02">
+								<h3 class="bigTitle02 ty2">카드현황</h3>
+								<div class="cardStatusBox">
 									<ul>
-										<li>영문성명은 카드 발급에 사용되니 정확한 영문명(여권상의 성명등)으로 입력하여 주시기 바랍니다.</li>
-										<li>학력정보는 자격확인을 위해 필요한 정보 입니다. 본인의 정확한 정보를 입력해주세요.</li>
+										<li>
+											<i class="icon01"></i>
+											<p class="txt1">계좌한도</p>
+											<p class="txt2">3,000,000 <span class="won">원</span></p>
+										</li>
+										<li>
+											<i class="icon02"></i>
+											<p class="txt1">사용액</p>
+											<p class="txt2">1,406,050 <span class="won">원</span></p>
+										</li>
+										<li>
+											<i class="icon03"></i>
+											<p class="txt1">추가 지원액</p>
+											<p class="txt2">593,950 <span class="won">원</span></p>
+										</li>
+										<li>
+											<i class="icon04"></i>
+											<p class="txt1">지원 잔액</p>
+											<p class="txt2">2,187,900 <span class="won">원</span></p>
+										</li>
 									</ul>
 								</div>
 
-								<h3 class="bigTitle06">실물 카드정보<span class="txtPC">“<span class="color01">＊</span>” 필수 사항 입니다.</span>
-								<span class="txt verM"><span class="color01">＊</span> 필수입력</span></h3>
-								<div class="divTableArea02">
-									<div class="caption">실물 카드정보 내용</div>
-									<div class="divTable"> 
-										<div class="divTableBody"> 
-											<div class="divTableRow"> 
-												<div class="thCell">카드 발급구분 <span class="color01">＊</span><button type="button" class="helpBtn">도움말?</button></div> 
-												<div class="tdCell">
-													<div class="ui_radioBox ty3">                                             
-														<input type="radio" checked="checked" value="Issued1" name="Issued" id="Issued1"> 
-														<label for="Issued1">신규발급</label>
-													</div>
-													<div class="ui_radioBox ty3">   
-														<input type="radio" value="Issued2" name="Issued" id="Issued2"> 
-														<label for="Issued2">기존 카드재사용</label>
-													</div>  
-												</div> 
-											</div> 
-											<div class="divTableRow"> 
-												<div class="thCell">제휴카드 <span class="color01">＊</span></div> 
-												<div class="tdCell">
-													<div class="ui_radioBox ty3">                                             
-														<input type="radio" checked="checked" value="NH" name="NH" id="NH"> 
-														<label for="NH">NH농협카드</label>
-													</div>
-													<div class="ui_radioBox ty3">   
-														<input type="radio" value="Shinhan" name="Shinhan" id="Shinhan"> 
-														<label for="Shinhan">신한카드</label>
-													</div>  
-												</div> 
-											</div>	
-											<div class="divTableRow"> 
-												<div class="thCell">카드유형 <span class="color01">＊</span></div> 
-												<div class="tdCell">
-													<div class="ui_radioBox ty3">                                             
-														<input type="radio" checked="checked" value="checkCard" name="checkCard" id="checkCard"> 
-														<label for="checkCard">체크카드</label>
-													</div>
-													<div class="ui_radioBox ty3">   
-														<input type="radio" value="creditCard" name="creditCard" id="creditCard"> 
-														<label for="creditCard">신용카드</label>
-													</div>  
-												</div> 
-											</div>	
-											<div class="divTableRow"> 
-												<div class="thCell">카드발급(신청)방법 <span class="color01">＊</span><button type="button" class="helpBtn">도움말?</button></div> 
-												<div class="tdCell">
-													<div class="ui_radioBox ty3">                                             
-														<input type="radio" checked="checked" value="phoneIssued" name="phoneIssued" id="phoneIssued"> 
-														<label for="phoneIssued">전화발급</label>
-													</div>
-													<div class="ui_radioBox ty3">   
-														<input type="radio" value="mobileIssued" name="mobileIssued" id="mobileIssued"> 
-														<label for="mobileIssued">모바일발급</label>
-													</div>  
-													<div class="ui_radioBox ty3">   
-														<input type="radio" value="placeIssued" name="placeIssued" id="placeIssued"> 
-														<label for="placeIssued">현장발급</label>
-													</div>  
-												</div> 
-											</div> 
-										</div>
-									</div>
-									<div class="tblInfoTxt02 verPC">
-										<p class="tit">카드발급방법 안내 - <span class="color04">현장발급</span></p>
-										<ul>
-											<li>발급 승인 후 관할 고용센터에 방문하여 확인증 수령 또는 홈페이지 My서비스 > 국민내일배움카드 > 신청내역 > 발급확인서출력 후 지정된 은행에 방문하여 카드를 수령하는 방법</li>
-											<li>체크카드의 경우 해당 은행 계좌가 있을 시 바로 발급 가능하나, 타 은행 계좌로 연결하려고 하거나 신용카드로 발급하려는 경우 1~2주 시간이 소요될 수 있습니다.<br />
-											 또한, 발급받은 카드는 수령 후 다음날부터 사용가능합니다.</li>
-											<li>센터와 지정은행간의 거리가 있을 수 있으며 자세한 내용은 관할센터에 전화문의 바랍니다.</li>
-										</ul>
-									</div>
-									<div class="tblInfoTxt05">
-										<button type="button" class="guidBtnM">카드발급방법 안내 <span class="txt">카드발급방법을 선택하여 주십시오</span></button>
-										<ul>
-											<li><span>계좌연결안내</span> <span>(고객센터 발급 확인 후 카드사를 통해 선택가능)</span></li>
-											<li>국민내일배움카드를 방문수령 (체크카드)하고자 하는 경우 관할고용센터에 별도로 문의하시어 신청하여야 합니다.</li>
-										</ul>
-									</div>
-								</div>								
-
-								<div class="tableArea02">                             
-									<table class="view">
-										<caption>신용카드 체크카드 안내</caption>
-										<colgroup>
-											<col style="width: auto;">
-											<col style="width: auto;">
-											<col style="width: auto;">
-											<col style="width: auto;">
-										</colgroup>                                    
-										<tbody>
-											<tr>
-												<th rowspan="2" class="colW01 tc brd-r-ty1">신용<br />카드</th>
-												<th class="colW02 tc">농협</th>
-												<td rowspan="2" class="tl">본인 명의의 모든 은행 계좌 가능</td>
-												<td rowspan="4" class="colW03 last">농협 :1644-4000<br />신한 : 1544-7000<br />(국민내일배움카드<br />영업점 : 농협, 신한)</td>
-											</tr>
-											<tr>
-											  <th class="colW02 tc">신한</th>
-										  </tr>
-											<tr>
-											  <th rowspan="2" class="brd-r-ty1 tc">체크<br />카드</th>
-											  <th class="colW02 tc">농협</th>
-											  <td class="tl">신청인 본인 명의의 농협계좌만 가능</td>
-										  </tr>
-											<tr>
-											  <th class="colW02 tc">신한</th>
-											  <td class="tl">신청인 본인 명의의 신한, 농협, 국민, 하나, 우리, 우체국, SC 제일은행 계좌 가능</td>
-										  </tr>
-										</tbody>
-									</table>
-								</div>								
-
-								<h3 class="bigTitle06">장려금 수령 계좌정보<span class="txtPC">“<span class="color01">＊</span>” 필수 사항 입니다.</span>
-								<span class="txt verM"><span class="color01">＊</span> 필수입력</span></h3>
-								<div class="divTableArea02">
-									<div class="caption">실물 카드정보 내용</div>
-									<div class="divTable"> 
-										<div class="divTableBody"> 
-											<div class="divTableRow"> 
-												<div class="thCell02">은행명 <span class="color01">＊</span></div> 
-												<div class="tdCell02">
-													<select title="" name="Bank" id="Bank" class="selectBox selectW150">
-														<option selected="selected" value="Bank">선택</option>
-														<option value="Bank1">우리은행</option>
-													</select>
-												</div> 
-											</div> 
-											<div class="divTableRow"> 
-												<div class="thCell02">계좌번호 <span class="color01">＊</span></div> 
-												<div class="tdCell02">
-													<ul>
-														<li><input type="text" maxlength="24" placeholder="" class="selectW486" name="accountNum" id="accountNum"></li>
-														<li><p class="txt01">'-' 제외하고 입력하여 주세요.</p></li>
-													</ul>
-												</div> 
-											</div>	
-											<div class="divTableRow"> 
-												<div class="thCell02">예금주명 <span class="color01">＊</span></div> 
-												<div class="tdCell02"><input type="text" maxlength="24" placeholder="영문성명을 입력해 주세요" class="selectW486" name="depositor" id="depositor"></div> 
-											</div>	
-										</div>
-									</div>
-									<div class="tblInfoTxt02">
-										<ul>
-											<li>국민내일배움카드와 연결계좌가 아닌 훈련과정 참여 후 장려금을 수령 받을 계좌입니다.</li>
-											<li>국민내일배움카드와 연결될 계좌는 전화(TM), 현장발급을 통해 입력받습니다.</li>
-										</ul>
-									</div>
-								</div>								
-
-								<h3 class="bigTitle06">고용보험 가입정보</h3>
-								<div class="tableArea02 ty2">                             
-									<table class="view">
-										<caption>신용카드 체크카드 안내</caption>
-										<colgroup>
-											<col style="width: 210px;">
-											<col style="width: auto;">
-										</colgroup>                                    
-										<tbody>
-											<tr>
-												<th>소속사업장명<span class="sTxt01">(소속사업장번호)</span></th>
-												<td class="tl last">엑사아이엔티㈜  (10787200000)</td>
-											</tr>
-											<tr>
-											  <th>기업규모</th>
-											  <td class="tl last">우선지원대상기업</td>
-										  </tr>
-										  <tr>
-											  <th>상시근로자수</th>
-											  <td class="tl last">37명</td>
-										  </tr>
-										  <tr>
-											  <th>취득일</th>
-											  <td class="tl last">2018.10.20</td>
-										  </tr>
-										  <tr>
-											  <th>퇴사일</th>
-											  <td class="tl last">-</td>
-										  </tr>
-										  <tr>
-											  <th>근무일수<span class="sTxt01">(일용직일 경우)</span></th>
-											  <td class="tl last">-</td>
-										  </tr>
-										</tbody>
-									</table>
-									<div class="tblInfoTxt02">
-										<ul>
-											<li>소속사업장 정보는 고용보험 취득정보를 표시하는 것으로 아래 ‘지원대상’ 입력시 참고하시기 바랍니다.</li>
-										</ul>
-									</div>	
-								</div>										
-								
-								<h3 class="bigTitle06">지원대상<span class="txtPC">“<span class="color01">＊</span>” 필수 사항 이며, 카드 신청일 기준입니다.</span>
-								<span class="txt verM">카드 신청일 기준</span></h3>
-								<div class="divTableArea02">
-									<div class="caption">지원대상 내용</div>
-									<div class="divTable"> 
-										<div class="divTableBody"> 
-											<div class="divTableRow"> 
-												<div class="thCell02"><span class="verPC">지원대상 <span class="color01">＊</span></span> <span class="verM">카드 발급부분 <span class="color01">＊</span></span></div> 
-												<div class="tdCell02">
-													<ul>
-														<li class="flTxt">
-															<div class="ui_radioBox ty4">                                             
-																<input type="radio" checked="checked" value="Target1" name="Target" id="Target1"> 
-																<label for="Target1">실업자</label>
-															</div>
-														</li>
-														<li class="flTxt">
-															<div class="ui_radioBox ty4">   
-																<input type="radio" value="Target2" name="Target" id="Target2"> 
-																<label for="Target2">근로자</label>
-															</div>
-														</li>
-														<li>
-															<div class="ui_radioBox ty4">   
-																<input type="radio" value="Target3" name="Target" id="Target3"> 
-																<label for="Target3">기존 무급휴직자</label>
-															</div>  
-														</li>
-														<li>
-															<div class="ui_radioBox ty4">   
-																<input type="radio" value="Target4" name="Target" id="Target4"> 
-																<label for="Target4">고보미가입근로자</label>
-															</div>  
-														</li>
-														<li>												
-															<div class="ui_radioBox ty4">   
-																<input type="radio" value="Target5" name="Target" id="Target5"> 
-																<label for="Target5">자영업자</label>
-															</div>
-														</li>
-														<li>
-															<div class="ui_radioBox ty4">   
-																<input type="radio" value="Target6" name="Target" id="Target6"> 
-																<label for="Target6">특수형태근로종사자</label>
-															</div>
-														</li>
-													</ul>
-												</div> 
-											</div> 
-										</div>
-									</div>
-									<div class="tblInfoTxt02">
-										<ul>
-											<li><span class="txtBlack">고용보험 피보험자정보</span>가 확인되었습니다. 고용보험 피보험자 관련 항목만 선택할 수 있습니다.</li>
-											<li>카드 지원 대상에 따라 추가 서류가 필요할 수 있습니다. 추가 서류가 필요할 경우 관할 고용센터에서 서류를 요청할 수 있습니다.</li>
-										</ul>
-									</div>
-									<div class="innerTableArea02">
-										<table class="list">
-											<caption>제출 서류 안내</caption>
-											<colgroup>
-												<col style="width: auto;">
-												<col style="width: auto;">
-											</colgroup>                                    
-											<tbody>
-												<tr>
-													<th class="colW01">번호</th>
-													<th class="last">제출서류안내</th>
-												</tr>
-												<tr>
-													<td>실업자</td>
-													<td class="tl last">첨부문서가 필요없습니다.</td>
-												</tr>
-												<tr>
-													<td>근로자</td>
-													<td class="tl last">대규모 기업 만 45세 미만인 근로자 : 최근 3개월 임금을 확인할 수 있는 자료 (급여명세서 등)</td>
-												</tr>
-												<tr>
-													<td>무급휴직자</td>
-													<td class="tl last">무급휴직확인서</td>
-												</tr>
-												<tr>
-													<td><span class="txtBrM">고보미</span>가입근로자</td>
-													<td class="tl last">근로계약서 또는 재직증명서, 급여이체내역 등</td>
-												</tr>
-												<tr>
-													<td>자영업자</td>
-													<td class="tl last">
-														<p class="txtIndent01"><span class="txtBrM">일반과세자 :</span> 
-														<span class="txtBrM">사업자등록증(휴업사실증명원), </span><span class="txtBrM">부가가치세과세표준증명원,</span><span class="txtBrM"> 부가가치세 
-														면세사업자 수입금액증명원(면세사업자의 경우), </span><span class="txtBrM">부동산 임대사업자의 경우 </span>
-														<span class="txtBrM">부동산임대공급가액명세서 또는</span> 수입금액증명원</p>
-														<p>간이과세자 : 사업자등록증</p>
-														<p>신용회복지원확인자 : 신용회복지원확정 승인확인서</p>
-													</td>
-												</tr>
-												<tr>
-													<td><span class="txtBrM">특수형태</span>근로종사자</td>
-													<td class="tl last">위촉(재직)증명서, 사업소득원천징수영수증 또는 소득금액증명원</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								
-								<h3 class="bigTitle06">제출서류 첨부</h3>
-								<div class="AddFilesArea">
-									<dl class="fileBox">
-										<dt>
-											<div class="compareChk">
-												<div class="ui_checkBox single">
-													<input type="checkbox" name="compareChk" id="compareChk04">
-													<label for="compareChk04">선택</label>
-												</div>
-												<span>첨부파일명.pptx <a href="/" class="btnDelete">삭제</a></span>
-											</div>										
-										</dt>
-										<dd>31.24KB</dd>
-									</dl>
-									<div class="dragBox">
-										이곳을 더블클릭 또는 파일을 드래그하세요.
-									</div>
-									<div class="fileBtnBox">
-										<div class="btnGroup">
-											<button type="button" class="btnType2 btnTy2">파일추가</button>
-											<button type="button" class="btnType2 btnTy3">항목제거</button>
-											<button type="button" class="btnType2 btnTy4">전체 항목제거</button>
-										</div>
-									</div>
-									<div class="tblInfoTxt03">
-										<ul>
-											<li>hwp,doc, jgp, zip, pdf 파일만 첨부 가능합니다.</li>
-											<li>파일은 최대 5개까지 첨부 가능하며, 그 이상은 압축(zip)하여 등록하시기 바랍니다.</li>
-											<li>첨부파일 용량은 10M 이내로 첨부 가능합니다.</li>
-										</ul>
-									</div>
-									<div class="tblInfoTxt04">
-										<ul>
-											<li>첨부파일에 개인정보가 포함될 경우 카드신청이 불가능합니다.</li>
-											<li>개인정보가 노출되지 않도록 일부 마스킹처리 후 등록하시기 바랍니다.  (주민등록번호, 휴대폰번호, 여권번호 등 [예시]123456 – 7******)</li>
-										</ul>
-									</div>
+								<h3 class="bigTitle02 ty2">카드정보</h3>
+								<div class="TrainingHistoryBox ty3">
+									<ul>
+										<li>
+											<dl>
+												<dt>관할관서</dt>
+												<dd>대구달성고용센터 (053-605-9510)</dd>
+											</dl>
+										</li>
+										<li class="borL">
+											<dl>
+												<dt>자격구분</dt>
+												<dd>근로자</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt>구분</dt>
+												<dd>재발급</dd>
+											</dl>
+										</li>
+										<li class="borL">
+											<dl>
+												<dt>카드사</dt>
+												<dd>신한카드</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt>카드번호</dt>
+												<dd>4499-1481-****-4887</dd>
+											</dl>
+										</li>
+										<li class="borL">
+											<dl>
+												<dt>발급일자</dt>
+												<dd>2020-04-24</dd>
+											</dl>
+										</li>
+									</ul>
 								</div>
 
-								<!-- 타이틀 -->
-								<dl class="bigTitle02List">
-									<dt><div class="bigTitle02">배송지 정보<span class="txt verM"><span class="color01">＊</span>필수입력</span></div></dt>
-									<dd class="verPC">
-										<div class="ui_checkBox single">
-											<input type="checkbox" name="compareChk" id="compareChk05">
-											<label for="compareChk05">선택</label>
-										</div>
-										<span>신청인 정보와 동일</span>
-									</dd>
-								</dl>
-								<!-- // 타이틀 -->
-								<div class="divTableArea02">
-									<div class="caption">배송지 정보 내용</div>
-									<div class="divTable"> 
-										<div class="divTableBody"> 
-											<div class="divTableRow"> 
-												<div class="thCell02">성명</div> 
-												<div class="tdCell02">
-													<div class="verPC">한고원</div>
-													<div class="inpArea verM">
-														<input type="text" maxlength="24" placeholder="한고원" class="bgcolorGray" name="forName2" id="forName2">
-													</div>
-												</div> 
-											</div> 
-											<div class="divTableRow"> 
-												<div class="thCell02">배송지 주소 <span class="color01">＊</span></div> 
-												<div class="tdCell02">
-													<div class="inpArea adressInput">
-														<div class="ele ty2">
-															<input type="text" maxlength="24" placeholder="14302" name="userAdress11" id="userAdress11">
-														</div>
-														<div class="ele">
-															<button type="button" class="uiBtn">우편번호 찾기</button>
-														</div>
-													</div>
-													<div class="inpArea adressInput2">
-														<div class="ele">
-															<input type="text" maxlength="24" placeholder="경기도 광명시 모세로 27" name="userAdress22" id="userAdress22">
-														</div>
-														<div class="ele ty2">
-															<input type="text" maxlength="24" placeholder="855" name="userAdress333" id="userAdress333">
-														</div>
-													</div>
-												</div> 
-											</div>												
-										</div>
-									</div>									
-								</div>			
-								
-								<!-- 타이틀 -->
-								<dl class="bigTitle07List">
-									<dt><div class="bigTitle07">훈련과정 탐색 <span class="txt verM"><span class="color01">＊</span>필수입력</span></div></dt>
-									<dd>
-										<div class="btnGroup">
-											<button type="button" class="lookupBtn">훈련과정 탐색 도움말</button>
-											<button type="button" class="delBtn">훈련과정 선택</button>
-										</div>
-									</dd>
-								</dl>
-								<!-- // 타이틀 -->
-								<div class="tableArea03">
+								<h3 class="bigTitle02 ty2">사용횟수</h3>
+								<div class="TrainingHistoryBox ty3">
+									<ul>
+										<li>
+											<dl>
+												<dt>년도</dt>
+												<dd>2020년</dd>
+											</dl>
+										</li>
+										<li class="borL">
+											<dl>
+												<dt>횟수</dt>
+												<dd>1회</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+
+								<h3 class="bigTitle02 ty2">사용내역</h3>
+								<div class="tableArea03 ty3">
 									<ul>
 										<li>
 											<div class="titleSection">
@@ -1063,28 +564,48 @@
 													<ul class="titleList">
 														<li class="txt01">화성전문학교</li>
 														<li class="txt02">2020.06.15 ~ 2020.07.16</li>
-														<li class="txt03 verM">12,641,280원</li>
 													</ul>
-													<p class="titleText">커피바리스타 실무과정 커피바리스타 실무과정 커피바리스타 실무과정 커피바리스타 실무과정 커피바리스타 실무과정</p>
+													<p class="titleText">제품디자인 및 3D프린팅 제품설계제작(캐드,CAD,인벤터,MAX,포토샵)-A</p>
+													<div class="txt03">12,641,280원  <span class="allTtxt">(전액 정부지원)</span></div>
 												</div>
 											</div>
 											<div class="contentsSection">
-												<div class="divTableArea03">
-													<div class="caption">커피바리스타 실무과정 내용</div>
-													<div class="divTable"> 
-														<div class="divTableBody">	
-															<div class="divTableRow"> 
-																<div class="thCell">훈련구분</div> 
-																<div class="tdCell">근로자직업능력개발훈련</div> 
-															</div>
-															<div class="divTableRow"> 
-																<div class="thCell">NCS 코드</div> 
-																<div class="tdCell">-</div> 
-															</div>
-														</div>
-													</div>
-													<div class="delBtnBox"><button type="button" class="btnType2">삭제</button></div>
-												</div>	
+												<div class="divTableArea06 ty2">
+													<ul class="divTable">
+														<li>
+															<strong class="tit">사용내역</strong>
+															<span class="txt">구직자 훈련과정 -  국가기간전략훈련</span>
+														</li>
+														<li>
+															<strong class="tit">훈련기관명</strong>
+															<span class="txt">화성 전문학교</span>
+														</li>
+														<li>
+															<strong class="tit">훈련과정명</strong>
+															<span class="txt">제품디자인 및 3D프린팅 제품설계제작(캐드,CAD,인벤터,MAX,포토샵)-A</span>
+														</li>
+														<li>
+															<strong class="tit">훈련비</strong>
+															<span class="txt">3,933,300원( 전액 정부지원 )</span>
+														</li>
+														<li>
+															<strong class="tit">정부지원금</strong>
+															<span class="txt">3,933,300원</span>
+														</li>
+														<li>
+															<strong class="tit">자비부담금</strong>
+															<span class="txt">0원</span>
+														</li>
+														<li>
+															<strong class="tit">훈련기간</strong>
+															<span class="txt">2020-06-08 ~ 2020-10-13</span>
+														</li>
+														<li>
+															<strong class="tit">훈련생 상태</strong>
+															<span class="txt">취업성공패키지 Ⅰ유형</span>
+														</li>
+													</ul>
+												</div>
 											</div>
 										</li>
 									</ul>
@@ -1102,64 +623,9 @@
 										<a href="/" class="pb next">다음보기</a>
 									</div> 
 									<!-- //paging : pc -->
-
-									<div class="tblInfoTxt05 ty2">
-										<ul>
-											<li>현재 선택가능한 훈련과정이 없을 시, ‘훈련과정 탐색 도움말’을 참고하시기 바랍니다.</li>
-											<li>선택한 훈련과정을 꼭 수강하실 필요는 없습니다. </li>
-										</ul>
-									</div>
 								</div>
 
-								<h3 class="bigTitle06">신청 관할관서</h3>
-								<div class="tableArea02 ty3">                             
-									<table class="view">
-										<caption>신청 관할관서 안내</caption>
-										<colgroup>
-											<col style="width: 210px;">
-											<col style="width: auto;">
-										</colgroup>                                    
-										<tbody>
-											<tr>
-												<th>관할관서</th>
-												<td class="tl last">
-													<select title="" name="Jurisdiction" id="Jurisdiction" class="selectBox w150">
-														<option selected="selected" value="">선택</option>
-														<option value="Jurisdiction01">천안고용센터</option>
-													</select>
-												</td>
-											</tr>
-											<tr>
-											  <th>주소 / 연락처</th>
-											  <td class="tl last">
-													<ul class="mapBtnList">
-														<li class="icoM01">[31110]충청남도 천안시 서북구 동서대로 163 , 2~5층 <button type="button" class="mapBtn">지도버튼</button></li>
-														<li class="icoM02">041-620-7400</li>
-													</ul>
-											  </td>
-										  </tr>
-										</tbody>
-									</table>
-									<div class="tblInfoTxt02">
-										<ul>
-											<li>자책주소 기관 관할고용센터로 기본 설정됩니다. </li>
-											<li>다른 고용센터를 원하실 경우 변경하시기 바랍니다.  </li>
-										</ul>
-										<button type="button" class="goLinkLong">지역별 고용센터 찾기</button>
-									</div>	
-								</div>	
-							</div>	
-							
-							<div class="btnGroup verPC">
-								<button type="button" class="btnType1">임시저장</button>
-								<button type="button" class="btnType1 primary">확인</button>
 							</div>
-							<!-- 버튼 : mobile -->
-							<div class="btnGroup btnGroupMoTy1 verM">
-								<button type="button" class="btnType1">취소</button>
-								<button type="button" class="btnType1 primary">확인</button>
-							</div>
-							<!-- // 버튼 : mobile -->
                         </div>
                         <!-- // My카드 컨텐츠 -->
 
