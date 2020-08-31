@@ -30,6 +30,7 @@
 .moContInner.ty3 .inCont + .inCont {margin-top: 36px;}
 
 .contBoxType2 {padding:50px 30px; background:#f7f7f7;}
+.underlineLink {/*text-decoration: underline;*/ color: #4171df;}
 
 /* 모바일 전용 마진 */
 .moMt60 {margin-top:60px;}
@@ -44,3 +45,52 @@
 
 /*테이블 상단 필수표시 단독 케이스*/
 .essSingle {padding: 20px 30px 25px 30px; text-align: right; font-size: 22px; color: #727476;}
+
+
+.mRadioList {font-size: 0;}
+.mRadioList > li {display: inline-block; vertical-align: top; margin-top: 20px;}
+.mRadioList > li .ui_radioBox {line-height: normal;}
+.mRadioList.col2 > li {width: 50%;}
+.mRadioList.col2 > li:nth-child(-n + 2) {margin-top: 0;}
+
+
+
+
+
+/*검색 영역*/
+
+.schDom {padding: 60px 70px; border-top: 8px solid #d8dfeb; border-bottom: 8px solid #d8dfeb;}
+.schDom.top {margin-top: 15px;}
+
+
+
+.schDom.top {margin-top: 100px;}
+
+
+
+.schDomCont {font-size: 0; text-align: left;}
+.schDomCont + .schDomCont {margin-top: 32px;}
+.schDomCont > .ele .selectBox,
+.schDomCont > .ele input[type="text"],
+.schDomCont > .ele input[type="pass"] {display: block; width: 100%;}
+.schDomCont > .tit {display: block; padding-bottom: 26px; font-weight: 500; font-size: 32px; color: #292a2d; line-height: 40px;}
+.schDom > .btnGroup {margin-top: 40px;}
+.schDom > .btnGroup .btnType3 {width: 100%; height: 70px; font-size: 28px;}
+
+
+.dateDom {font-size: 0;}
+.dateDom > .dateSelect {position: relative; display: inline-block; width: calc(50% - 20px); vertical-align: top;}
+.dateDom > .dateSelect + .dateSelect {margin-left: 40px;}
+.dateDom > .dateSelect + .dateSelect:before {content: '~'; position: absolute; left: -40px; width: 40px; text-align: center; line-height: 70px; font-size: 28px; color: #727476;} 
+.dateDom > .dateSelect input[type="text"] {width: 100%;}
+.dateDom > .dateSelect .btn_calendar {position: absolute; top: 50%; right: 21px; margin-top: -19px; width: 38px; height: 36px; background: url(../new_images/common/icocalendar_m.png) }
+.dateDom + .dateRangePick {margin-top: 20px;}
+
+.dateRangePick {font-size: 0;}
+.dateRangePick > button {position: relative; display: inline-block; vertical-align: top; width: calc(33% + 1px); height: 70px; border: 1px solid #cdcdd1; text-align: center; font-size: 28px; color: #4e4f51;}
+.dateRangePick > button:first-child {width: 34%;}
+.dateRangePick > button + button {margin-left: -1px;}
+.dateRangePick > button.on {z-index: 1; color: #4171df; border: 1px solid #4171df;}
+
+
+

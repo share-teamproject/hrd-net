@@ -290,6 +290,12 @@ $(function(){
 	});
 
 
+	// 달력 기간 선택 버튼
+	$('.dateRangePick > button').on('click', function(){
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+
+
 
 });
 

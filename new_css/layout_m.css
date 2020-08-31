@@ -305,11 +305,14 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 .mt26 {margin-top:26px !important;}
 .mt28 {margin-top:28px !important;}
 .mt30 { margin-top:30px !important; }
+.mt40 { margin-top:40px !important; }
 .mt50 { margin-top:50px !important; }
 .mt60 { margin-top:60px !important; }
 .mt70 {margin-top:70px !important;}
 .mt75 {margin-top:75px !important;}
+.mt80 {margin-top:80px !important;}
 .mb0 {margin-bottom:0 !important;}
+.mb17 {margin-bottom:17px !important;}
 .mb50 {margin-bottom:50px !important;}
 .ml0 { margin-left:0px !important; }
 .pd0 { padding:0 !important; }

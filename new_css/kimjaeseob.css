@@ -41,7 +41,7 @@
 .contBoxType2 {padding:50px 30px; background:#f7f7f7;}
 
 .rndBoxTxt {display:inline-block; min-width:170px; padding:0 10px; line-height:40px; text-align:center; border:2px solid #d3d3d3; border-radius:25px; font-size:26px; color:#727476; background:#fff;}
-
+.underlineLink {text-decoration: underline; color: #4171df;}
 /* ==============================
 * common
 * ============================== */
@@ -101,6 +101,29 @@
 
 
 
+/*검색 영역*/
+.schDom {padding: 25px 20px 25px 50px; border: 3px solid #d8dfeb;}
+.schDom.top {margin-top: 15px;}
+.schDomCont {font-size: 0; text-align: left;}
+.schDomCont + .schDomCont {margin-top: 10px;}
+.schDomCont > * {display: inline-block; vertical-align: top;}
+.schDomCont > .ele .selectBox,
+.schDomCont > .ele input[type="text"],
+.schDomCont > .ele input[type="pass"] {width: 435px;}
+.schDomCont > .tit {width: 125px; font-size: 18px; color: #4e4f51; line-height: 40px;}
+.schDom > .btnGroup {margin-top: 20px;}
 
 
+.dateDom {font-size: 0;}
+.dateDom > .dateSelect {position: relative; display: inline-block; width: 200px; vertical-align: top;}
+.dateDom > .dateSelect + .dateSelect {margin-left: 35px;}
+.dateDom > .dateSelect + .dateSelect:before {content: '~'; position: absolute; left: -35px; width: 35px; text-align: center; line-height: 40px; font-size: 14px; color: #727476;} 
+.dateDom > .dateSelect input[type="text"] {width: 100%;}
+.dateDom > .dateSelect .btn_calendar {position: absolute; top: 50%; right: 13px; margin-top: -10px;}
+.dateDom + .dateRangePick {margin-left: 20px;}
+
+.dateRangePick {font-size: 0;}
+.dateRangePick > button {position: relative; display: inline-block; vertical-align: top; width: 73px; height: 40px; border: 1px solid #cdcdd1; text-align: center; font-size: 14px; color: #4e4f51;}
+.dateRangePick > button + button {margin-left: -1px;}
+.dateRangePick > button.on {z-index: 1; color: #4171df; border: 1px solid #4171df;}
 
