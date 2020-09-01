@@ -1,0 +1,124 @@
+/* ==============================
+* 공통
+* ============================== */
+
+.tabmenuArea .pcTabmenuWrap { display:none; }
+
+.tabmenuArea .mobTabmenuWrap { padding:0 30px; }
+.tabmenuArea .mobTabmenu { display:table; width:100%; border-collapse:collapse; }
+.tabmenuArea .mobTabmenu .row { display:table-row; }
+.tabmenuArea .mobTabmenu .row a { box-sizing:border-box; display:table-cell; height:84px; line-height:80px; border:2px solid #f6f6f6; font-size:28px; color:#65646a; text-align:center; }
+.tabmenuArea .mobTabmenu .row a.on { border-top:5px solid #3d5895; color:#3d5895; }
+.tabmenuArea .mobTabmenu .row .count { display:none; }
+
+.searchBoxType2 .openConditionMob { display:block; width:100%; padding:24px 0; margin-top:40px; border-top:1px solid #f4f4f4; text-align:center; }
+.searchBoxType2 .openConditionMob span {color:#4e4f51; font-size:30px; position:relative;}
+.searchBoxType2 .openConditionMob span:after { content:''; display:block; width:24px;height:14px; background:url('../new_images/common/searchArrowDown.png') no-repeat; background-size:cover; position:absolute; top:16px; right:-40px;}
+.searchBoxType2 .openConditionMob.close span:after { background-image:url('../new_images/common/searchArrowUp.png'); }
+.searchBoxType2 .openConditionMob.open span:after { background-image:url('../new_images/common/searchArrowDown.png'); }
+
+.common-popup { box-sizing:border-box; width:100%; height:100%; padding:10px; background-color:rgba(0,0,0,.5); font-size:0; text-align:center; overflow:hidden; position:fixed; top:0; left:0; right:0; bottom:0; z-index:1000; }
+.common-popup:after { content:''; display:inline-block; width:0; height:100%; vertical-align:middle; }
+.common-popup.full { padding:0; }
+.common-popup.full .common-popup-inner { width:100%; max-width:none; height:100%; }
+.common-popup.full .common-popup-inner .content { height:calc(100vh - 150px); max-height:none; }
+.common-popup.full.title-hidden .common-popup-inner .content { height:100vh; max-height:none; }
+.common-popup.title-hidden .common-popup-inner .header:after { content:none; }
+.common-popup.title-hidden .common-popup-inner .header .title { position:absolute; left:-9999px; }
+.common-popup.title-hidden .common-popup-inner .content { max-height:calc(100vh - 52px); padding-top:40px; }
+.common-popup.full-scroll .common-popup-inner .content { height:auto; max-height:none; }
+.common-popup .common-popup-inner { display:inline-block; min-width:300px; max-width:500px; }
+.common-popup .common-popup-inner .header { box-sizing:border-box; padding:0 15px; background-color:#fff; position:relative; }
+.common-popup .common-popup-inner .header:after { content:''; display:block; width:100%; height:1px; background-color:#d1d1d1; position:absolute; bottom:0; left:0; }
+.common-popup .common-popup-inner .header .title { height:50px; line-height:50px; font-size:18px; white-space:nowrap; text-align:left; }
+.common-popup .btn-close { display:block; width:40px; height:0; max-height:0; padding-top:40px; background:url('../new_images/common/btnPopupClose.png') no-repeat; background-size:40px 40px; background-position:center center; overflow:hidden; position:absolute; top:35px; right:25px; }
+.common-popup .content { box-sizing:border-box; height:auto; max-height:calc(100vh - 70px); overflow-y:auto; padding:15px; background-color:#fff; font-size:14px; text-align:left; }
+
+.common-popup.popup-step { height:calc(100% - 100px); padding:0; }
+.common-popup.popup-step .common-popup-inner { width:100%; min-width:auto; max-width:none; height:100%; }
+.common-popup .common-popup-inner .header { box-shadow: 0 15px 15px rgba(6, 6, 6, .4); }
+.common-popup .common-popup-inner .header .title { height:108px; line-height:108px; color:#292a2d; font-size:36px; text-align:center; }
+.common-popup.popup-step .content { height:calc(100% - 108px); padding:75px 30px 30px; }
+
+
+/* ==============================
+* 훈련과정 공통
+* ============================== */
+
+.thumbnailWrap { overflow:hidden; }
+.thumbnail { width:455px; padding-bottom:78px; margin-top:40px; margin-bottom:90px; overflow:visible; }
+.thumbnail .swiper-slide { transform:scale(.8); }
+.thumbnail .swiper-slide.swiper-slide-active { transform:scale(1); }
+.thumbnail .swiper-paginatio{ height:auto; }
+.thumbnail .swiper-pagination-bullet { width:12px; height:12px; border-radius:12px; border:2px solid #434e65; background-color:transparent; opacity:1; }
+.thumbnail .swiper-pagination-bullet-active { width:50px; background-color:#434e65; }
+.thumbnailList { width:455px; }
+.thumbnailList li { width:455px; position:relative; }
+.thumbnailList a { display:block; width:455px; }
+.thumbnailList .img { width:100%; height:379px; position:relative; }
+.thumbnailList .img .inner { width:100%; height:100%; background-size:cover; position:absolute; top:0; left:0; }
+.thumbnailList .content { padding:25px 15px; }
+.thumbnailList .content .title { margin-bottom:10px; font-size:30px; color:#292a2d; }
+.thumbnailList .content .contents:after { content:''; display:block; clear:both; }
+.thumbnailList .content .zone { box-sizing:border-box; float:left; width:calc(100% - 100px); padding-right:10px; font-size:26px; color:#727476; }
+.thumbnailList .content .rate { box-sizing:border-box; float:right; width:100px; font-size:22px; color:#4e4f51; position:relative; }
+.thumbnailList .content .rate .con { box-sizing:border-box; width:100%; padding:0 10px; text-align:center; position:absolute; top:50%; left:0; transform:translateY(-50%); z-index:10; }
+.thumbnailList .content .rate .con span { display:block; width:50px; margin:0 auto; line-height:1.1; word-wrap:break-word; }
+.thumbnailList .content .rate .con .txt { display:none; }
+.thumbnailList .content .stsfc { box-sizing:border-box; float:left; width:calc(100% - 100px); padding-right:10px; margin-top:14px; font-size:22px; color:#727476; }
+.thumbnailList .content .stsfc .con { display:block; width:212px; height:0; max-height:0; padding-top:34px; background:url('../new_images/common/star4Mob.png') no-repeat; background-color:cover; overflow:hidden; }
+.thumbnailList .bookmark { width:80px; height:0; max-height:0; padding-top:80px; background:url('../new_images/common/icobookmarkMob.png') no-repeat; background-size: 46px 42px; background-position:center center; overflow:hidden; position:absolute; top:0; right:0; }
+
+.detailListWrap {  }
+.detailList {  }
+.detailList li {  }
+.detailList .title {  }
+.detailList .title .zone { display:none; }
+.detailList .title .school {color:#4e4f51; font-size:28px;}
+.detailList .title .iconCertify {  }
+.detailList .title .award { display:none; }
+.detailList .content {  }
+.detailList .content .tit { color:#292a2d; font-size:32px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.detailList .content .hashtag{ margin-top:10px; }
+.detailList .content .hashtag:after{ content:''; display:block; clear:both; }
+.detailList .content .hashtag li{ float:left; margin-left:10px; }
+.detailList .content .hashtag li:first-child{ margin-left:0; }
+.detailList .content .hashtag .seeking{ width:40px; height:0; max-height:0 ;padding-top:40px; border:1px solid #d3d3d3; border-radius:4px; overflow:hidden; position:relative; }
+.detailList .content .hashtag .seeking:after { content:'구'; width:100%; line-height:40px; color:#4e4f51; font-size:22px; text-align:center; position:absolute; top:0; left:0; }
+.detailList .content .hashtag .working{ width:40px; height:0; max-height:0 ;padding-top:40px; border:1px solid #d3d3d3; border-radius:4px; overflow:hidden; position:relative; }
+.detailList .content .hashtag .working:after { content:'근'; width:100%; line-height:40px; color:#4e4f51; font-size:22px; text-align:center; position:absolute; top:0; left:0; }
+.detailList .content .hashtag .tip { box-sizing:border-box; min-width:40px; line-height:32px; padding:0 4px; margin-top:4px; background-color:#65646a; color:#fff; font-size:20px; text-align:center; vertical-align:middle; }
+.detailList .content .info {  }
+.detailList .content .info .item {  }
+.detailList .content .info .item:after { content:''; display:block; clear:both; }
+.detailList .content .info .item dt { float:left; width:150px; color:#727476; font-size:28px; }
+.detailList .content .info .item dd { float:left; width:calc(100% - 162px); margin-left:12px; color:#727476; font-size:28px; position:relative; }
+.detailList .content .info .item dd:after { content:''; display:block; width:1px; height:28px; background-color:#ddd; position:absolute; top:6px; left:-12px; }
+.detailList .content .info .item .star { height:28px; margin-top:10px; background:url('../new_images/common/icoStar.png') no-repeat; background-size: 180px auto; background-position:0 0; }
+.detailList .content .info .item .star.star01 { background-position:0 -26px; }
+.detailList .content .info .item .star.star02 { background-position:0 -54px; }
+.detailList .content .info .item .star.star03 { background-position:0 -81px; }
+.detailList .content .info .item .star.star04 { background-position:0 -108px; }
+.detailList .content .info .item .star.star05 { background-position:0 -137px; }
+.detailList .content .info .item .star:after { top:0; }
+.detailList .content .info .item .graph { width:100%; padding-right:67px; margin:20px 0 0 0; background:url('../new_images/common/bgGraphMob.png') no-repeat; background-size:540px auto; background-position:right center; }
+.detailList .content .info .item .graph:after { content:none; }
+.detailList .util { display:flex; flex-wrap:wrap; margin-top:25px; }
+.detailList .util .status { display:none; }
+.detailList .util .price { color:#292a2d; font-size:30px; }
+.detailList .util .self { display:block; min-width:220px; height:48px; line-height:46px; padding:0 12px; margin-left:30px; border:1px solid #d3d3d3; color:#666; font-size:26px; }
+.detailList .util .btnLink.mark { display:none; }
+.detailList .util .btnLink.compare { display:none; }
+
+.section-training .searchBoxType2Wrap { margin-top:40px; }
+
+.section-training .searchBoxLineWrap {display:none;}
+
+.section-training .thumbnailWrap { overflow:hidden; width:auto; padding:0; margin:0; }
+.section-training .thumbnailWrap .swiper-button-next,
+.section-training .thumbnailWrap .swiper-button-prev { display:none; }
+
+.section-training #subContentWrap .sortArea { display:none; }
+
+.section-training .pagenation.pc { display:none; }
+.section-training .pagenation.mob { display:flex; }

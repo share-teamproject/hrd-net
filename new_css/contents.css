@@ -2,6 +2,7 @@
 @import 'kangjiyeon.css';
 @import 'kimjaeseob.css';
 @import 'parkseungwan.css';
+@import 'kimyongbeom.css';
 @import 'front.css';
 
 /* ==============================
@@ -231,12 +232,6 @@
 .star.star02 { background-position:0 -76px; }
 .star.star01 { background-position:0 -95px; }
 
-
-.starRating, .starRating span { display:inline-block;height:19px;background:url('../new_images/common/icoStar.png') no-repeat;overflow:hidden;vertical-align:-1px;text-align:left}
-.starRating { width:125px; }
-.starRating span{ line-height:0;vertical-align:top;background-position:left bottom; text-indent:-5000px}
-
-
 /* 담기토글 */
 .like { text-indent:-9999px; line-height:0; background:url('../new_images/common/likeSet.png') 0 0 no-repeat; width:27px; height:24px; }
 .like.on { background-position:-27px 0; }
@@ -278,14 +273,12 @@
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check.point { color:#258384; }  /* my서비스 알람 */
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ .qnaText { font-size:18px; line-height:24px; color:#292a2d; }
 #subContentWrap .subContArea .qnaArea .qnaA { position:relative; padding:30px 50px 30px 95px; border-bottom: 1px dashed #e3e7ee; background:#f4f6f9; display:none; }
-#subContentWrap .subContArea .qnaArea .qnaA.tblIn {padding: 30px;}
 #subContentWrap .subContArea .qnaArea.alam .qnaA { padding:30px 50px; }  /* my서비스 알람 */
 #subContentWrap .subContArea .qnaArea .iconA { position:absolute; top:50%; left:50px; margin-top:-9px; display:inline-block; width:16px; height:18px; background:url('../new_images/common/icoAnswer.png') no-repeat 0 0; background-size:100%; font-size:0; }
 #subContentWrap .subContArea .qnaArea .qnaA .txtA { color:#4e4f51; line-height:21px; font-size:14px; }
 #subContentWrap .subContArea .qnaArea > ul > li.on {border-bottom:none;}
 #subContentWrap .subContArea .qnaArea > ul > li.on .qnaQ:after { background-position:0 0;}
 #subContentWrap .subContArea .qnaArea > ul > li.on .txtQ {color:#333;}
-#subContentWrap .subContArea .qnaArea > ul > li.none {padding: 40px 0; text-align: center; font-size: 14px; color: #727476;}
 #subContentWrap .subContArea .qnaArea > ul + .pagenation { margin-top:20px; }
 #subContentWrap .subContArea .qnaArea .moreBtn { display:none; }
 #subContentWrap .subContArea .qnaArea .btnGroup + .pagenation { margin-top:20px; }
@@ -667,11 +660,7 @@
 .detailListWrap.ty2 .detailList .title .zone { margin-bottom:6px; color:#4e4f51; font-size:14px; text-align:center; }
 .detailListWrap.ty2 .detailList .title .school { line-height:1.1; color:#4e4f51; font-weight: 500; font-size:20px; text-align:center; }
 .detailListWrap.ty2 .detailList .title .iconCertify { width:33px; height:0; max-height:0; padding-top:30px; margin:16px auto 0; background:url('../new_images/common/icoCertify.png') no-repeat; background-size:cover; text-align:center; }
-.detailList .title .award { width:98px; height:0; max-height:0; padding-top: 35px; margin:auto auto 0; overflow:hidden; }
-.detailList .title .award.certi1 {  background:url('../new_images/common/icoCerti1.png') no-repeat; }
-.detailList .title .award.certi3 {  background:url('../new_images/common/icoCerti3.png') no-repeat; }
-.detailList .title .award.certiPro3 {  background:url('../new_images/common/icoProCerti3.png') no-repeat; }
-.detailList .title .award.certiPro5 {  background:url('../new_images/common/icoProCerti5.png') no-repeat; }
+.detailListWrap.ty2 .detailList .title .award { width:98px; height:0; max-height:0; padding-top: 35px; margin:auto auto 0; overflow:hidden; background:url('../new_images/common/iconCerti3.png') no-repeat; }
 .detailListWrap.ty2 .detailList .content { flex-grow:1; box-sizing:border-box; padding:7px 40px; border-left: 1px dashed #e2e2e4; }
 .detailListWrap.ty2 .detailList .content .tit { display:inline-block; line-height:33px; padding-right:50px; font-size:20px; }
 .detailListWrap.ty2 .detailList .content .tit.certify { width:475px; background:url('../new_images/common/icoCertify.png') no-repeat; background-size:33px 30px; background-position:right center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}

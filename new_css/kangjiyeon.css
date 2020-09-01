@@ -25,7 +25,7 @@
 .tableArea .selectW486, .selectW486 { min-width:486px; width:486px; }
 .tableArea .selectW585, .selectW585 { min-width:585px; width:585px; }
 .tableArea .selectW692, .selectW692 { min-width:692px; width:692px; }
-.tableArea .btnW60 { min-width:60px; width:60px; padding:0; }
+.btnW60 { min-width:60px; width:60px; padding:0; }
 .moreBtn { display:none; }
 
 /* ==============================
@@ -50,9 +50,6 @@
 * button
 * ============================== */
 .btnGroup.ty2 { display:block; text-align:right; }
-.btnGroup.ty3 { display:block; text-align:left; }
-.btnGroup.ty3 button + button{ margin-left:10px; }
-.btnGroup.ty4 { margin-top:60px; }
 /* 바로가기 */
 .goLinkLong02 {display:inline-block; min-width:80px; height:26px; line-height:24px; padding:0 20px; text-align:center; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51;}
 .btnH26 {display:inline-block; min-width:112px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:24px;}
@@ -60,7 +57,6 @@
 button.download, a.download { min-width:75px; display:inline-block; text-align:center; background:#c9d3e8; color:#4e4f51; font-size:12px; line-height:26px; height:26px; padding:0 10px; box-sizing:border-box; }
 .download.grey { border:1px #cdcdd1 solid; color:#4e4f51; background:#fff; }
 button.lookupBtn, a.lookupBtn { display:inline-block; min-width:65px; text-align:center; padding:0 10px; font-size:12px; color:#258384; border:1px solid #258384; line-height:24px; }
-button.blueBtn, a.blueBtn { display:inline-block; min-width:65px; text-align:center; padding:0 10px; font-size:12px; color:#4171df; border:1px solid #4171df; line-height:24px; }
 button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:center; padding:0 10px; font-size:12px; color:#4e4f51; border:1px solid #cdcdd1; line-height:24px; }
 
 
@@ -91,7 +87,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 /* 검색박스 */
 #subContentWrap .subContArea .searchBox.ty2 {margin-bottom:50px; padding:22px 0 20px 55px;}
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect03 { width:200px }
-#subContentWrap .subContArea .searchBox.ty2 .btnArea button { width:80px; padding:0; }
+#subContentWrap .subContArea .searchBox.ty2 .btnArea button { width:80px; padding:0; margin-left:-5px; }
 #subContentWrap .subContArea .searchBox.ty2 .btnArea button:last-child {border-left:1px #4171df solid;}
 #subContentWrap .subContArea .searchBox.ty2 .btnGroup { margin-top:10px; }
 .dateSelect { display:inline; position:relative;}
@@ -193,8 +189,6 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .AddFilesArea .fileBtnBox .btnGroup .btnTy3 { width:152px; padding:0; margin-right:10px; }
 .AddFilesArea .fileBtnBox .btnGroup .btnTy4 { width:152px; padding:0; }
 
-.AddFilesArea.ty2 { border:0; margin:-10px 10px 12px 10px; }
-
 
 .inTextBox {margin-bottom:20px; }
 .inTextBox .txt1 { font-size:14px; color:#4e4f51; padding-top:15px; }
@@ -234,16 +228,12 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .bigTitle03 {font-weight:500; font-size:18px; color:#292a2d; height:40px;}
 .bigTitle04 {position:relative;font-weight:500; font-size:16px; color:#5b648a; height:30px; padding-left:12px; }
 .bigTitle04:before{content:''; position:absolute; top:10px; left:0; width:4px;height:4px; background:#5b648a; border-radius:50%; }
-.bigTitle04.ty2 { font-size:18px; height:40px; margin-top:-5px; }
-.bigTitle04.ty2:before { top:12px;  }
-
 .bigTitle05 { font-size:22px; color:#292a2d; font-weight:500; height:60px; }
 
-.bigTitle06 { position:relative; font-size:22px; color:#292a2d; font-weight:500; padding-bottom:20px; margin-top:50px; }
+.bigTitle06 { font-size:22px; color:#292a2d; font-weight:500; padding-bottom:20px; margin-top:50px; }
 .bigTitle06 .txtPC { font-size:13px; color:#727476; font-weight:400; padding-left:15px; }
 .bigTitle06 .txt01 { color:#727476; }
 .bigTitle06 .txt02 { display:block; font-size:14px; color:#727476; font-weight:300; padding-top:2px; }
-.bigTitle06 .txtPC2 { position:absolute; top:15px; right:0; display:block; font-size:13px; color:#727476; font-weight:400; }
 
 .bigTitle07List {overflow:hidden; margin-top:50px; }
 .bigTitle07List dt {float:left;}
@@ -253,18 +243,6 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .bigTitle07List > dd > .btnGroup button + button{ margin-left:5px; }
 
 .bigTitle08 { font-size:22px; color:#292a2d; font-weight:500; height:45px; margin-top:50px; }
-
-.bigTitle09List {overflow:hidden; }
-.bigTitle09List dt {float:left; }
-.bigTitle09List .txt01 { position:relative; font-size:12px; color:#727476; padding-left:12px;   }
-.bigTitle09List .txt01:before { content:''; position:absolute; top:7px; left:5px; width:2px; height:2px; background:#929495; border-radius:50%; }
-.bigTitle09List dd {float:right; }
-.bigTitle09List.ty2 { margin-top:50px; }
-
-.tblInfoTxt01 { position:relative; padding:0; text-align:left; margin-top:-10px; }
-.tblInfoTxt01 > ul > li { position:relative; font-size:12px; color:#727476; line-height:20px; padding-left:10px; }
-.tblInfoTxt01 > ul > li:before { content:''; position:absolute; top:10px; left:0; width:2px; height:2px; background:#929495; border-radius:50%; }
-
 
 /* 비대면 훈련상담 */
 #myStateWrap .myStateArea .myStateBox .myState2 { max-width:182px; }
@@ -354,10 +332,8 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .adressInput { display:table; width:100%; }
 .adressInput > .ele { display:table-cell; vertical-align:top; height:43px; }
 .adressInput > .ele .uiBtn { padding:0 10px; }
-.adressInput > .ele .btnType2 { padding:0 10px; }
 .adressInput > .ele.ty1 { width:490px; padding-right:10px; }
 .adressInput > .ele.ty2 { width:490px; padding:0 10px 10px 0; }
-.adressInput > .ele.ty3 { padding:0 120px 10px 0; }
 .adressInput2 { display:table; width:100%; }
 .adressInput2 > .ele { display:table-row; vertical-align:top; height:50px; }
 .adressInput2 > .ele.ty1 { height:40px; }
@@ -373,10 +349,6 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .radioInput .ui_radioBox { margin-right:-50px; }
 
 /* info type */
-.tblInfoTxt01 { position:relative; padding:0; text-align:left; margin-top:-10px; }
-.tblInfoTxt01 > ul > li { position:relative; font-size:12px; color:#727476; line-height:20px; padding-left:10px; }
-.tblInfoTxt01 > ul > li:before { content:''; position:absolute; top:10px; left:0; width:2px; height:2px; background:#929495; border-radius:50%; }
-
 .tblInfoTxt02, 
 .tblInfoTxt04 { position:relative; background-color:#f7f7f7; padding:25px 30px; text-align:left; }
 .tblInfoTxt02 > ul > li,
@@ -392,16 +364,11 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tblInfoTxt02 .tit { font-size:14px; color:#727476; padding-bottom:5px; }
 .tblInfoTxt02 .goLinkLong { position:absolute; top:35%; right:20px; background:#fff; }
 
-.tblInfoTxt02.ty2 { margin-top:-20px; }
-
 .tblInfoTxt05 { border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat 45px 50%; padding:35px 20px 35px 120px; margin-top:30px; }
 .tblInfoTxt05 > ul { display:inline-block; vertical-align:middle;}
 .tblInfoTxt05 > ul > li { position:relative; font-size:14px; color:#767676; line-height:24px; padding-left:10px; }
 .tblInfoTxt05 > ul > li:before { content:'-'; position:absolute; top:0; left:0; color:#929495; }
 .tblInfoTxt05 > .guidBtnM { display:none; }
-
-.tblInfoTxt05.ty2 { position:relative; background-position:45px 35px; padding: 30px 110px 30px; margin-bottom:60px; }
-.tblInfoTxt05.ty2 .goBtnDiv { position:absolute; top:35px; right:30px; }
 
 .tblInfoTxt06 { background-color:#f7f7f7; padding:25px 105px; margin-top:30px; margin-bottom:60px; }
 .tblInfoTxt06 > ul > li { position:relative; font-size:16px; color:#4e4f51;  padding-left:20px; }
@@ -421,9 +388,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .divTableArea02 .divTable .divTableRow .tdCell02 { display: table-cell; font-size:14px; color:#727476; line-height:34px; padding:10px 20px; }
 .divTableArea02 .divTable .divTableRow .tdCell02 > ul { overflow:hidden; }
 .divTableArea02 .divTable .divTableRow .tdCell02 > ul > li { float:left; }
-.divTableArea02 .divTable .divTableRow .tdCell03 { display: table-cell; border:1px red solid;width:70%; }
 .divTableArea02 .divTable .divTableRow .txt01 { font-size:12px; padding:10px 0 0 20px; margin-bottom:-20px; }
-.divTableArea02 .divTable .divTableRow .txt02 { font-size:12px; line-height:20px; margin-bottom:10px; }
 .divTableArea02 .divTable .divTableRow .inpArea { width:480px; }
 .divTableArea02 .divTable .divTableRow .inpArea input[type="text"] {width:100%; }
 
@@ -471,9 +436,6 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tableArea03 > ul > li .titleSection > .titleBox > .txt03 { font-size:18px; position:absolute; top:42px; right:85px; }
 /*.tableArea03 > ul > li .contentsSection { display:none; }*/
 .tableArea03 > ul > li .contentsSection.ty2 { background:#fbfbfb; padding:30px; }
-
-.tableArea03.ty3 .allTtxtM { display:none; }
-.tableArea03.ty3 .allTtxt { display:inline-block; }
 
 .divTableArea03 { position:relative; background:#fbfbfb; padding:30px; }
 .divTableArea03 .caption { font-size:0; }
@@ -566,57 +528,15 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .cardStatusBox { border:1px #e2e2e4 solid; padding:25px 0; margin-bottom:50px; }
 .cardStatusBox > ul { overflow:hidden; }
 .cardStatusBox > ul > li { position:relative; float:left; width:25%; border-right:1px #ebebec solid; }
-.cardStatusBox > ul > li:last-child { border-right:0; }
 .cardStatusBox > ul > li > .txt1 { font-size:14px; color:#727476; padding-left:75px; }
 .cardStatusBox > ul > li > .txt2 { font-size:21px; color:#4e4f51; padding-left:75px; }
 .cardStatusBox > ul > li > .txt2 .won { font-size:14px; }
 
-.cardStatusBox > ul > li > i { display:block; position:absolute; top:6px; left:28px; font-size:0; color:#292a2d; text-align:center; background:url('../new_images/common/icoCardStatus.png') no-repeat; }
-.cardStatusBox > ul > li > i.icon01 { background-position:0 0; width:26px; height:34px; }
-.cardStatusBox > ul > li > i.icon02 { background-position:-27px 0; width:34px; height:34px; }
-.cardStatusBox > ul > li > i.icon03 { background-position:-62px 0; width:34px; height:34px; }
-.cardStatusBox > ul > li > i.icon04 { background-position:-97px 0; width:36px; height:34px; }
-
-/* MY카드- 교육동영상 시청 */
-.infoBoxArea02 { border:3px #e1e4e9 solid; padding:12px 25px; margin-top:12px; margin-bottom:30px; }
-.infoBoxArea02 > ul >li { position:relative; font-size:14px; color:#767676; line-height:44px; padding-left:12px; }
-.infoBoxArea02 > ul >li:before {content:""; position:absolute; top:20px; left:0; width:4px; height:4px; background-color:#727476; border-radius:50%;  }
-
-.infoBoxArea02.ty2 { border:1px #e2e2e4 solid; border-top:2px #727476 solid; padding:20px 30px; margin-top:0; }
-.infoBoxArea02.ty2 > ul >li { position:relative; font-size:14px; color:#767676; line-height:26px; padding-left:12px; }
-.infoBoxArea02.ty2 > ul >li:before {content:""; position:absolute; top:11px; left:0; width:2px; height:2px; background-color:#727476; border-radius:50%;  }
-
-.divTableArea08 { border-top:2px #727476 solid; border-bottom:1px #e2e2e4 solid; }
-.divTableArea08 > ul { overflow:hidden; padding:30px; }
-.divTableArea08 > ul > .left { float:left; }
-.divTableArea08 > ul > .left > .innerBox { border-bottom:1px #dfdfdf dashed; padding-bottom:20px; margin-bottom:20px; }
-.divTableArea08 > ul > .left > .innerBox .inner { overflow:hidden; }
-.divTableArea08 > ul > .left > .innerBox .inner + .inner { margin-top:10px; }
-.divTableArea08 > ul > .left > .innerBox .inner > dt { float:left; }
-.divTableArea08 > ul > .left > .innerBox .inner > dt > span { display:inline-block; font-size:13px; color:#666; text-align:center; min-width:90px; height:24px; line-height:22px; border:1px #d3d3d3 solid; padding:0 10px; border-radius:10px; }
-.divTableArea08 > ul > .left > .innerBox .inner > dd { float:left; font-size:14px; color:#666; width:450px; line-height:22px; padding:2px 0 0 15px; }
-.divTableArea08 > ul > .right { float:right; width:258px; }
-
-/* 강사신청 */
-.tabListArea.ty2 { margin-bottom:-20px; }
-
-.tableArea.ty3 .list { border-top:2px #727476 solid; }
-.tableArea.ty3 .list th { padding:14px; border-bottom:1px #e2e2e4 solid; }
-.tableArea.ty3 .list td { padding:14px 5px; }
-.tableArea.ty3 .list .none2 { text-align:left; line-height:24px; padding:15px 0 15px 20px; }
-
-.innerTableArea03 { border:1px #e2e2e4 solid; border-top:0; padding:30px 130px 30px 40px; }
-.txtList05 > dt { font-size:22px; color:#292a2d; margin-left:-10px; padding:30px 0 10px 0; }
-.txtList05 > dd { font-size:14px; color:#727476; line-height:24px; text-indent:-10px; padding-top:10px; }
-.txtList05 .none { display:none; }
-
-
-.partChk02 { font-size:14px; color:#4e4f51; text-align:right; background:#f7f7f7; padding:30px 20px; border-bottom:1px #e2e2e4 solid; }
-.signTxtLine { font-size:16px; color:#4e4f51; text-align:right;  background:#f7f7f7; padding:30px 20px; }
-.signTxtLine .sign1 { color:#292a2d; border-left:1px #e3e7ee solid; padding-left:20px; margin-left:20px; }
-
-
-
+.cardStatusBox > ul > li > i { display:block; position:absolute; left:28px; font-size:0; color:#292a2d; text-align:center; background:url('../new_images/common/icoCardStatus.png') no-repeat; }
+.cardStatusBox > ul > li > i.icon01 { top:6px; background-position:0 0; width:26px; height:34px; }
+.cardStatusBox > ul > li > i.icon02 { top:6px; background-position:-27px 0; width:34px; height:34px; }
+.cardStatusBox > ul > li > i.icon03 { top:6px; background-position:-62px 0; width:34px; height:34px; }
+.cardStatusBox > ul > li > i.icon04 { top:6px; background-position:-97px 0; width:36px; height:34px; }
 
 
 

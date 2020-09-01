@@ -112,7 +112,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .TrainingHistoryBox > ul > li > dl { position:relative; overflow:hidden; display:flex; align-items:center; margin:25px 0; }
 .TrainingHistoryBox > ul > li > dl > dt, .TrainingHistoryBox > ul > li > dl > dd { float:left; line-height:38px;}
 .TrainingHistoryBox > ul > li > dl > dt { width:205px;  font-size:28px; color:#4e4f51; text-align:center; }
-.TrainingHistoryBox > ul > li > dl > dd { color:#292a2d; font-size:28px; width:calc(100% - 170px); padding:0 20px 0 40px; word-break: keep-all; }
+.TrainingHistoryBox > ul > li > dl > dd { color:#292a2d; font-size:28px; padding-left:40px; }
 .TrainingHistoryBox > ul > li > dl > dt:before { content:''; position:absolute; top:2px; left:205px; height:calc(100% - 2px); border-left:3px solid #e3e7ee; }
 .TrainingHistoryBox > ul > li > dl > .star { margin-left:40px; }
 
@@ -120,7 +120,6 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .TrainingHistoryBox.ty2 .btnH26 { border:2px #d3d3d3 solid; color:#666; }
 
 .TrainingHistoryBox.ty3 { margin-bottom:50px; }
-
 
 .inTextBox { margin-top:-20px; }
 .inTextBox .txtQ { margin:-10px 0; }
@@ -366,8 +365,6 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tableArea03.ty3 > ul > li { border-bottom:0 #e2e2e4 solid; }
 .tableArea03.ty3 > ul > li .titleSection { padding:30px 20px; height:270px; border-bottom:0 #e2e2e4 solid; }
 .tableArea03.ty3 > ul > li .titleSection { position:relative; height:275px; cursor:pointer; }
-.tableArea03.ty3 .allTtxtM { display:inline-block; width:140px; height:40px; line-height:40px; font-size:22px; color:#292a2d; text-align:center; background:#e3e7ee; border-radius:10px; }
-.tableArea03.ty3 .allTtxt { display:none; }
 .tableArea03.ty3 > ul > li .titleSection:after { content:''; position:absolute; top:calc(50% - 15px); right:25px; width:26px; height:24px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -13px; background-size:cover; }
 
 .divTableArea03 { background:#fbfbfb; padding:30px; }
@@ -428,11 +425,10 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .divTableArea06 .divTable > li.etc {padding:0;}
 .divTableArea06 .divTable > li + li {border-top:1px solid #e2e2e4;}
 .divTableArea06 .divTable > li > .tit {display:inline-block; vertical-align:middle; width:170px; font-size:28px; color:#4e4f51; text-align:center;}
-.divTableArea06 .divTable > li > .txt {position:relative; display:inline-block; vertical-align:middle; width:calc(100% - 170px); padding:6px 20px 6px 30px; line-height:34px; font-size:28px; color:#292a2d; word-break:keep-all; }
-.divTableArea06 .divTable > li > .txt > span {  } 
+.divTableArea06 .divTable > li > .txt {position:relative; display:inline-block; vertical-align:middle; width:calc(100% - 170px); padding:6px 20px 6px 30px; line-height:34px; font-size:28px; color:#292a2d;}
+.divTableArea06 .divTable > li > .txt > span { display:block; } 
 
 .divTableArea06.ty2 { border:0; padding-bottom:30px; }
-.divTableArea06.ty2 .allTtxt { display:none; }
 
 .divTableArea07 { border-top:2px solid #e2e2e4; padding:0 27px; background:#f7f7f7; }
 .divTableArea07 .inner { margin-top:-20px; }
@@ -471,36 +467,6 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .txtList04 > li > dl > dt { width:160px; }
 .txtList04 > li > dl > dt > span { display:inline-block; text-align:center; min-width:150px; border:2px #d3d3d3 solid; padding:0 10px; border-radius:25px; }
 .txtList04 > li > dl > dd { text-align:left; padding-left:10px; }
-
-/* MY카드- 카드현황 */
-.cardStatusBox { border-top:2px #e2e2e4 solid; border-left:2px #e2e2e4 solid; margin:50px 0; }
-.cardStatusBox > ul { overflow:hidden; }
-.cardStatusBox > ul > li { position:relative; float:left; width:50%; border-right:2px #ebebec solid; border-bottom:2px #ebebec solid; }
-.cardStatusBox > ul > li > .txt1 { font-size:22px; color:#727476; padding:20px 0 0 90px; }
-.cardStatusBox > ul > li > .txt2 { font-size:30px; color:#4e4f51; font-weight:500; letter-spacing:-0.5px; padding:0 0 20px 90px; margin-top:-5px; }
-.cardStatusBox > ul > li > .txt2 .won {}
-
-.cardStatusBox > ul > li > i { display:block; position:absolute; top:34px; left:30px; font-size:0; color:#292a2d; text-align:center; background:url('../new_images/common/icoCardStatusM.png') no-repeat; }
-.cardStatusBox > ul > li > i.icon01 { background-position:0 0; width:34px; height:44px; }
-.cardStatusBox > ul > li > i.icon02 { background-position:-35px 0; width:48px; height:44px; }
-.cardStatusBox > ul > li > i.icon03 { background-position:-82px 0; width:48px; height:44px; }
-.cardStatusBox > ul > li > i.icon04 { background-position:-82px 0; width:48px; height:44px; }
-
-/* MY카드- 교육동영상 시청 */
-.infoBoxArea02 { border:3px #e1e4e9 solid; padding:20px; margin-top:50px; }
-.infoBoxArea02 > ul >li { position:relative; font-size:26px; color:#767676; line-height:34px; padding:15px 10px 15px 30px; word-break:keep-all; }
-.infoBoxArea02 > ul >li:before {content:""; position:absolute; top:29px; left:7px; width:8px; height:8px; background-color:#727476; border-radius:50%;  }
-
-.divTableArea08 { border-top:4px #727476 solid; border-bottom:2px #e2e2e4 solid; padding:40px 25px; margin-top:-10px; }
-.divTableArea08 > ul > .left > .innerBox { padding-bottom:30px; }
-.divTableArea08 > ul > .left > .innerBox .inner { overflow:hidden; width:100%;  }
-.divTableArea08 > ul > .left > .innerBox .inner + .inner { margin-top:10px; }
-.divTableArea08 > ul > .left > .innerBox .inner > dt { float:left; width:160px; }
-.divTableArea08 > ul > .left > .innerBox .inner > dt > span { display:inline-block; font-size:26px; color:#727476; text-align:center; min-width:155px; border:2px #d3d3d3 solid; padding:0 10px; border-radius:25px; }
-.divTableArea08 > ul > .left > .innerBox .inner > dd {position:relative; display:inline-block; vertical-align:middle; width:calc(100% - 170px); padding:2px 20px; line-height:40px; font-size:26px; color:#727476; word-break:keep-all; }
-.divTableArea08 .btnGroup.ty3 { margin-top:0; margin-bottom:40px; }
-.divTableArea08 .btnGroup.ty3 .btnType2 {width:100%;}
-.divTableArea08 .right img { width:100%; }
 
 /* 레이어팝업 버튼 영역  */
 .windowPop .btnGroup {text-align:center; padding:0 30px; font-size:0;}
