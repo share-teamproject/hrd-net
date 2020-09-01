@@ -401,6 +401,7 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .w180 { width:180px !important; }
 .w300 { width:300px !important; }
 .w480 { width:480px !important; }
+.mt5 { margin-top:5px !important; }
 .mt10 { margin-top:10px !important; }
 .mt15 { margin-top:15px !important; }
 .mt20 { margin-top:20px !important; }
