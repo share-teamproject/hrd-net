@@ -302,7 +302,7 @@
                         <li class="verPC"><a href="/">MY 서비스</a></li>
                         <li><a href="/">강사신청</a></li>
 						<li><a href="/">훈련교사관리</a></li>
-                        <li class="on"><a href="/">훈련교사 자격증발급신청</a></li>
+                        <li class="on"><a href="/">훈련교사 자격교육안내</a></li>
                     </ul>
                 </div>
             </div>
@@ -427,9 +427,9 @@
                                 <li><a href="javascript:void(0);">훈련교사관리</a> 
                                     <ul class="dep03 on">
                                         <li><a href="/">훈련교사 이력관리</a></li>
-                                        <li><a href="/" class="on">훈련교사 자격증발급신청</a></li>
+                                        <li><a href="/">훈련교사 자격증발급신청</a></li>
                                         <li><a href="/">훈련교사 경력증명원신청</a></li>
-                                        <li><a href="/">훈련교사 자격교육안내</a></li>
+                                        <li><a href="/" class="on">훈련교사 자격교육안내</a></li>
                                         <li><a href="/">훈련교사 자격교육일정</a></li>
                                         <li><a href="/">훈련교사 자격교육조회</a></li>
                                     </ul>
@@ -453,7 +453,7 @@
 
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle ty2 verPC">훈련교사관리 <span class="depth4">훈련교사 자격증발급신청</span></h3>
+                        <h3 class="headingTitle ty2 verPC">훈련교사관리 <span class="depth4">훈련교사 자격교육안내</span></h3>
                         <!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
                         <div class="headingIcon">
                             <ul>
@@ -470,24 +470,25 @@
                         <div class="InstructorApplication">
 
 							<div class="tblInfoTxt05 ty3">
-								<ul>
-									<li>발급(처리)관련 문의는 자격증을 신청하셨던 해당 고용센터로 하셔야 합니다.</li>
-									<li>훈련교사 자격증 갱신은 조회된 내역을 클릭하여 갱신가능합니다. (발급신청 버튼은 신규신청시에만 사용)</li>
-									<li>훈련교사 <span class="color04">자격증 발급 관련 문의는 고용센터(대표번호 1350유료)</span>로 연락주시기 바랍니다. </li>
-									<li>시스템 관련 문의는 <span class="color04">고객지원센터(1577-7114)</span>로 연락주시기 바랍니다.</li>
+								<div class="bigTxt ty2">
+									교육안내
+								</div>
+								<ul class="innerTxtList">
+									<li>직업능력개발훈련교사는 [근로자직업능력 개발법 제 33조에 따라 고용노동부장관으로부터 직업능력개발훈련교사 <br />자격증을 취득한 사람]입니다.</li>
 								</ul>
-								<div class="goBtnDiv"><button type="button" class="goLinkLong02">고객센터 위치찾기</button></div>
+								<div class="goBtnDiv"><button type="button" class="download">파일 다운로드</button></div>
 							</div>
 
 							<div class="">
 								<!-- 텝 인덱스 -->  
 								<div class="tabListArea ty2"> 
 									<ul class="tabList">
-										<li id="tab1" class="on"><button type="button">전체</button></li>
-										<li id="tab2"><button type="button">신청/회수</button></li>
-										<li id="tab3"><button type="button">승인</button></li>
-										<li id="tab4"><button type="button">반려</button></li>
-										<li id="tab5"><button type="button">정지/취소</button></li>
+										<li id="tab1" class="on"><button type="button">자격요건</button></li>
+										<li id="tab2"><button type="button">교육훈련</button></li>
+										<li id="tab3"><button type="button">교직훈련</button></li>
+										<li id="tab4"><button type="button">신중년교직훈련</button></li>
+										<li id="tab5"><button type="button">항상훈련</button></li>
+										<li id="tab6"><button type="button">진출방향</button></li>
 									</ul>
 								</div> 
 								<!--// 텝 인덱스 -->
@@ -495,773 +496,116 @@
 								<!-- 텝 컨텐츠 -->
                                 <div class="tabContents">
 									<section id="section1" role="tabpanel" class="tabCont on">
-										<h3>전체</h3>
-										<div class="sortArea">
-											<p class="totalNum">전체 <strong>1</strong> 건</p>
-											<div class="selectViewArea">
-												<div class="selectView">
-													<label for="pageRow">페이지당 조회건수</label>
-													<select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
-														<option value="10" selected="selected">10개씩</option>
-														<option value="20">20개씩</option>
-														<option value="30">30개씩</option>
-														<option value="50">50개씩</option>
-														<option value="100">100개씩</option>
-													</select>
-												</div> 
-											</div>
-										</div>	
-										<!-- 테이블 -->
-										<div class="tableArea ty3">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th>자격직종</th>
-														<th>등급</th>
-														<th>신청일</th>											
-														<th>발급일</th>
-														<th>신청구분</th>
-														<th>상태</th>
-														<th>처리관서</th>
-														<th>재발급</th>
-														<th class="last">비고</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td colspan="9" class="last none">해당 데이터가 없습니다.</td>
-													</tr>
-												</tbody>
-											</table>   
-											<div class="btnGroup ty2"><button type="button" class="btnType2 primary">발급신청</button></div>
-										</div>   
-										<!-- // 테이블 -->
-
-										<h4 class="bigTitle06">신청인</h4>			
-										<div class="TrainingHistoryBox ty3">
-											<ul>
-												<li>
-													<dl>
-														<dt>성명</dt>
-														<dd>이*진</dd>
-													</dl>
-												</li>
-												<li class="borL">
-													<dl>
-														<dt>생년월일</dt>
-														<dd>1965년 11월 12일</dd>
-													</dl>
-												</li>
-												<li>
-													<dl>
-														<dt>전화번호</dt>
-														<dd>- -</dd>
-													</dl>
-												</li>
-												<li class="borL">
-													<dl>
-														<dt>휴대폰번호</dt>
-														<dd>010-000-0000</dd>
-													</dl>
-												</li>
-												<li class="clearW100">
-													<dl>
-														<dt>주소</dt>
-														<dd>[44932] 울산광역시 울주군 장검길 88 (범서읍 울산 문수산 더샵) </dd>
-													</dl>
-												</li>
-												<li class="clearW100">
-													<dl>
-														<dt>등록기준지(본적)</dt>
-														<dd>[44932] 울산광역시 울주군 장검길 88 (범서읍 울산 문수산 더샵) </dd>
-													</dl>
-												</li>
-											</ul>
-										</div>
-
-										<h4 class="bigTitle06">신청정보</h4>			
-										<div class="TrainingHistoryBox ty3">
-											<ul>
-												<li>
-													<dl>
-														<dt>분야</dt>
-														<dd>전기·전자</dd>
-													</dl>
-												</li>
-												<li class="borL">
-													<dl>
-														<dt>교사자격직종</dt>
-														<dd>전자부품개발</dd>
-													</dl>
-												</li>
-												<li>
-													<dl>
-														<dt>등급</dt>
-														<dd>1급</dd>
-													</dl>
-												</li>
-												<li class="borL">
-													<dl>
-														<dt>자격기준</dt>
-														<dd>-</dd>
-													</dl>
-												</li>
-												<li class="clearW100">
-													<dl>
-														<dt>신청관서</dt>
-														<dd>울산고용센터</dd>
-													</dl>
-												</li>
-												<li class="clearW100">
-													<dl>
-														<dt>신청관서 전화번호</dt>
-														<dd>052-228-1919</dd>
-													</dl>
-												</li>
-											</ul>
-										</div>
-
-										<h4 class="bigTitle06">제출서류 첨부</h4>	
-										<p class="bigTitle04 ty2">경력정보</p>	
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th>번호</th>
-														<th>근무기관</th>
-														<th>근무기간</th>
-														<th>근무월수</th>
-														<th>증빙서류</th>
-														<th class="last">다운로드</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td colspan="6" class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<p class="bigTitle04 ty3">자격정보</p>	
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th class="last">table</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<p class="bigTitle04 ty3">자격교육(직업능력개발훈련교사)</p>	
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th class="last">table</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<p class="bigTitle04 ty3">기타정보</p>	
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th class="last">table</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<p class="bigTitle04 ty3">증명사진</p>	
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th class="last">table</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<div class="btnGroup ty4">
-											<button type="button" class="btnType1 primary">목록</button>
+										<h3>자격요건</h3>
+										<div class="partBox01">
+											<h4 class="bigTitle05">자격요건</h4>
+											<dl class="txtList01">
+												<dt>직업능력개발훈련교사는 어떤 사람이 될 수 있나요?</dt>
+												<dd>[근로자직업능력개발법 시행령 제28조 제2항 별표2]에 규정된 직업능력개발훈련교사 자격기준을 갖춘 사람은 직업능력개발훈련교사 자격증을 발급 받고 
+												직업능력개발훈련교사로 활동할 수 있습니다. 이에 해당되는 자격기준은 아래와 같습니다.</dd>
+											</dl>
+											<dl class="txtList01">
+												<dt class="tit01">직업능력개발훈련교사 자격기준(제28조제2항 관련)</dt>
+												<dd class="indent">
+													<div class="tableArea ty3">
+														<table class="list">
+															<caption></caption>
+															<colgroup>
+																<col style="width: 100px;">
+																<col style="width: auto;">
+															</colgroup>
+															<thead>
+																<tr>
+																	<th>구분</th>
+																	<th class="last">자격기준</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1급</td>
+																	<td class="tl last">직업능력개발훈련교사 2급의 자격을 취득한 후 고용노동부장관이 정하여 고시하는 직종에서 3년 이상의 교육훈련 경력이 있는 사람으로서 향상훈련을 받은 사람</td>
+																</tr>
+																<tr>
+																	<td>2급</td>
+																	<td class="tl last">1. 직업능력개발훈련교사 3급의 자격을 취득한 후 고용노동부장관이 정하여 고시하는 직종에서 3년 이상의 교육훈련 경력이 있는 사람으로서 향상훈련을 받은 사람<br />
+																	2. 고용노동부장관이 정하여 고시하는 직종에서 요구하는 기술사 또는 기능장 자격을 취득하고 고용노동부령으로 정하는 훈련을 받은 사람<br />
+																	3. 전문대학ㆍ기능대학 및 대학의 조교수 이상으로 재직한 후 고용노동부장관이 정하여 고시하는 직종에서 2년 이상의 교육훈련 경력이 있는 사람</td>
+																</tr>
+																<tr>
+																	<td>3급</td>
+																	<td class="tl last">1. 법 제52조의2에 따라 설립된 기술교육대학에서 고용노동부장관이 정하여 고시하는 직종에 관한 학사학위를 취득한 사람<br />
+																	2. 고용노동부장관이 정하여 고시하는 직종에 관한 학사 이상의 학위를 취득한 후 해당 직종에서 2년 이상의 교육훈련 경력 또는 
+																	실무경력이 있는 사람으로서 고용노동부령으로 정하는 훈련을 받은 사람<br />
+																	3. 고용노동부장관이 정하여 고시하는 직종에 관한 학사 이상의 학위를 취득한 후 해당 직종에서 요구하는 중등학교 정교사 1급 또는 
+																	2급의 자격을 취득한 사람<br />
+																	4. 고용노동부장관이 정하여 고시하는 직종에서 요구하는 기술ㆍ기능 분야의 기사 자격증을 취득한 후 해당 직종에서 1년 이상의 
+																	교육훈련 경력 또는 실무경력이 있는 사람으로서 고용노동부령으로 정하는 훈련을 받은 사람<br />
+																	5. 고용노동부장관이 정하여 고시하는 직종에서 요구하는 기술ㆍ기능 분야의 산업기사ㆍ기능사 자격증, 서비스 분야의 
+																	국가기술자격증 또는 그 밖의 법령에 따라 국가가 신설하여 관리ㆍ운영하는 자격증을 취득한 후 해당 직종에서 2년 이상의 교육훈련 경력 
+																	또는 실무경력이 있는 사람으로서 고용노동부령으로 정하는 훈련을 받은 사람<br />
+																	6. 고용노동부장관이 정하여 고시하는 직종에서 5년 이상의 교육훈련 경력 또는 실무경력이 있는 사람으로서 고용노동부령으로 정하는 
+																	훈련을 받은 사람<br />
+																	7. 그 밖에 고용노동부장관이 정하여 고시하는 기준에 적합한 사람으로서 고용노동부령으로 정하는 훈련을 받은 사람</td>
+																</tr>
+																<tr>
+																	<td>비고</td>
+																	<td class="tl last">직업능력개발훈련교사의 직종, 직종별 요구자격증과 경력인정기준, 교육훈련 경력 및 실무경력의 인정기준 등은 고용노동부장관이 정하여 고시한다.</td>
+																</tr>
+															</tbody>
+														</table>   
+														<div class="tblInfoTxt01 ty2">
+															<ul>
+																<li><span class="color04">국민내일배움카드와 연결계좌가 아닌 훈련과정 참여 후 장려금을 수령 받을 계좌입니다.</span></li>
+															</ul>
+														</div>
+													</div>   													
+												</dd>
+											</dl>
+											<dl class="txtList01">
+												<dt>고용노동부장관이 고시하는 직종이란 무엇이며 그 직종에 해당하는 자격증 및 경력사항은 무엇입니까?</dt>
+												<dd>고용노동부장관이 고시하는 직종은 [고용노동부 고시 제2019-100호, 직업능력개발훈련교사 자격기준]에서 확인할 수 있습니다.
+												교사의 자격직종별 요구자격증과 경력인정기준은 [고용노동부 고시 제2019-100호, 직업능력개발훈련교사 자격기준 별표2]에 있습니다.
+												교육훈련경력 및 실무경력의 인정기준은 [고용노동부 고시 제2019-100호, 직업능력개발훈련교사 자격기준 별표3]에 있습니다.
+												자세한 내용은 상단의 [ 파일 다운로드 ]를 참고해주시기 바랍니다.</dd>
+											</dl>
 										</div>
 									</section>
 
 									<section id="section2" role="tabpanel" class="tabCont">
-										<h3>신청/회수</h3>
+										<h3>교육훈련</h3>
+										<div class="partBox01">
+											<h4 class="bigTitle05">교육훈련</h4>
+											<dl class="txtList01">
+												<dt>직업능력개발훈련교사가 되기 위해 받아야 하는 훈련이란 무엇인가요?</dt>
+												<dd>직업능력개발훈련교사 자격증을 취득하거나 승급하기 위해서는 한국기술교육대학교에서 실시하는 자격교육를 이수해야 합니다.</dd>
+											</dl>
+											<dl class="txtList01">
+												<dt class="tit01">자격증 발급 흐름도</dt>
+												<dd class="indent">
+													<img src="../new_images/common/flowChar.jpg" alt="자격증 발급 흐름도" /> 													
+												</dd>
+												<dd>최초 자격증을 발급 받고자 하는 사람은 「교직훈련과정」, 「신중년 교직훈련과정」 연수를 이수해야 하며, 기존에 소지한 직업능력개발훈련교사 자격증을
+													승급시키고자 할 경우에는 「향상훈련과정」 이수해야 합니다.<br />
+													해당 연수는 연간 정해진 기간에 접수를 받으며, 이 중 선발기준에 따라 선발된 사람은 정해진 일정에 따른 교육에 참가할 수 있습니다. 교육의 세부일정은
+													‘MY서비스 > 훈련교사관리 > 훈련교사 자격교육 일정’ 항목에서 확인할 수 있습니다.</dd>
+											</dl>
+										</div>
 									</section>
 
 									<section id="section3" role="tabpanel" class="tabCont">
-										<h3>승인</h3>
+										<h3>교직훈련</h3>
 									</section>
 
 									<section id="section4" role="tabpanel" class="tabCont">
-										<h3>반려</h3>
+										<h3>신중년교직훈련</h3>
 									</section>
 
 									<section id="section5" role="tabpanel" class="tabCont">
-										<h3>정지/취소</h3>
-										<div class="sortArea">
-											<p class="totalNum">전체 <strong>1</strong> 건</p>
-											<div class="selectViewArea">
-												<div class="selectView">
-													<label for="pageRow2">페이지당 조회건수</label>
-													<select title="페이지당 조회건수" name="pageRow2" id="pageRow2" class="selectBox h30">
-														<option value="10" selected="selected">10개씩</option>
-														<option value="20">20개씩</option>
-														<option value="30">30개씩</option>
-														<option value="50">50개씩</option>
-														<option value="100">100개씩</option>
-													</select>
-												</div> 
-											</div>
-										</div>	
-										<!-- 테이블 -->
-										<div class="tableArea ty3">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th>자격직종</th>
-														<th>등급</th>
-														<th>신청일</th>											
-														<th>발급일</th>
-														<th>신청구분</th>
-														<th>상태</th>
-														<th>처리관서</th>
-														<th>재발급</th>
-														<th class="last">비고</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td colspan="9" class="last none">해당 데이터가 없습니다.</td>
-													</tr>
-												</tbody>
-											</table>   
-											<div class="btnGroup ty2"><button type="button" class="btnType2 primary">발급신청</button></div>
-										</div>   
-										<!-- // 테이블 -->
+										<h3>항상훈련</h3>
+									</section>
 
-										<h4 class="bigTitle06">신청인<span class="txtPC2">“<span class="color01">＊</span>” 항목은 필수 입력 항목 입니다.</span></h4>
-										<div class="divTableArea02">
-											<div class="caption">실물 카드정보 내용</div>
-											<div class="divTable"> 
-												<div class="divTableBody"> 
-													<div class="divTableRow"> 
-														<div class="thCell02">성명</div> 
-														<div class="tdCell02">한고원</div> 
-													</div> 
-													<div class="divTableRow"> 
-														<div class="thCell02">생년월일</div> 
-														<div class="tdCell02">1999.11.11</div> 
-													</div> 
-													<div class="divTableRow"> 
-														<div class="thCell02">주소(거주지) <span class="color01">＊</span></div> 
-														<div class="tdCell02">
-															<div class="inpArea adressInput">
-																<div class="ele ty3">
-																	<input type="text" maxlength="24" name="userAdress11" id="userAdress11">
-																</div>
-															</div>
-															<div class="inpArea adressInput2">
-																<div class="ele">
-																	<input type="text" maxlength="24" name="userAdress22" id="userAdress22">
-																</div>
-																<div class="ele ty2">
-																	<input type="text" maxlength="24" name="userAdress33" id="userAdress33">
-																</div>
-															</div>
-														</div> 
-													</div> 
-													<div class="divTableRow"> 
-														<div class="thCell02">전화번호</div> 
-														<div class="tdCell02">
-															<div class="inpArea phoneInput">
-																<div class="ele ty1">
-																	<select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
-																		<option selected="selected" value="">선택</option>
-																		<option value="032"> 032 </option>
-																	</select>
-																</div>
-																<div class="ele ty2">-</div>
-																<div class="ele ty3">
-																	<input type="text" title="전화번호 가운데 자리" name="userTel02" id="userTel02">
-																</div>
-																<div class="ele ty2">-</div>
-																<div class="ele ty3">
-																	<input type="text" title="전화번호 끝 자리" name="userTel03" id="userTel03">
-																</div>
-															</div>
-														</div> 
-													</div>	
-													<div class="divTableRow"> 
-														<div class="thCell02">휴대폰번호 <span class="color01">＊</span></div> 
-														<div class="tdCell02">
-															<div class="inpArea">
-																<div class="phoneInput">
-																	<div class="ele ty1">
-																		<select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
-																			<option selected="selected" value="">선택</option>
-																			<option value="010"> 010 </option>
-																		</select>
-																	</div>
-																	<div class="ele ty2">-</div>
-																	<div class="ele ty3">
-																		<input type="text" title="핸드폰 가운데 자리" name="userHP02" id="userHP02">
-																	</div>
-																	<div class="ele ty2">-</div>
-																	<div class="ele ty3">
-																		<input type="text" title="핸드폰 끝 자리" name="userHP03" id="userHP03">
-																	</div>
-																</div>
-															</div>
-														</div> 
-													</div>	
-													<div class="divTableRow"> 
-														<div class="thCell02">등록기준지 (본적)  <span class="color01">＊</span></div> 
-														<div class="tdCell02">
-															<div class="inpArea adressInput">
-																<div class="ele ty2">
-																	<input type="text" maxlength="24" name="userAdress111" id="userAdress111">
-																</div>
-																<div class="ele">
-																	<button type="button" class="btnType2 etc">우편번호 찾기</button>
-																</div>
-															</div>
-															<p class="txt02">※ 우편번호 찾기시 주소검색이 되지 않으면 도로명주소 안내시스템(http://www.juso.go.kr)에서 검색해 보시기 바랍니다. <br />
-															더불어 주소가 없어진 경우도 있어서 직접입력도 가능하오니 참고하시기 바랍니다.</p>
-															<div class="inpArea adressInput2">
-																<div class="ele">
-																	<input type="text" maxlength="24" name="userAdress222" id="userAdress222">
-																</div>
-																<div class="ele ty2">
-																	<input type="text" maxlength="24" name="userAdress333" id="userAdress333">
-																</div>
-															</div>
-															<p class="txt02">등록기준지: 예전 호적법상 본적을 의미하며 가족관계증명서 또는 기본증명서에서 확인하실 수있습니다.</p>
-														</div> 
-													</div>	
-												</div>
-											</div>											
-										</div>
-										
-										<h4 class="bigTitle06">신청정보</h4>
-										<div class="divTableArea02">
-											<div class="caption">실물 카드정보 내용</div>
-											<div class="divTable"> 
-												<div class="divTableBody"> 
-													<!-- row01 -->
-													<div class="divTableRow"> 
-														<div class="thCell02">분야 <span class="color01">＊</span></div> 
-														<div class="tdCell02">
-															<div class="InputType">
-																<div class="ele">
-																	<select title="" name="Applicant01" id="Applicant01" class="selectBox">
-																		<option selected="selected" value="">선택</option>
-																	</select>
-																</div>
-																<div class="ele">
-																	<button type="button" class="btnType2 etc">직무기술서</button>
-																</div>
-															</div>
-														</div> 
-													</div> 
-													<!-- row02 -->
-													<div class="divTableRow"> 
-														<div class="thCell02">교사자격직종 <span class="color01">＊</span></div> 
-														<div class="tdCell02">
-															<div class="InputType">
-																<div class="ele">
-																	<select title="" name="Applicant07" id="Applicant07" class="selectBox">
-																		<option selected="selected" value="">선택</option>
-																	</select>
-																</div>
-															</div>
-														</div> 
-													</div> 
-													<!-- row03 -->
-													<div class="divTableRow"> 
-														<div class="thCell02">등급 <span class="color01">＊</span></div> 
-														<div class="tdCell02">
-															<div class="InputType">
-																<div class="ele">
-																	<select title="" name="Applicant02" id="Applicant02" class="selectBox">
-																		<option selected="selected" value="">선택</option>
-																	</select>
-																</div>
-																<div class="ele">
-																	<select title="" name="Applicant03" id="Applicant03" class="selectBox">
-																		<option selected="selected" value="">선택</option>
-																	</select>
-																</div>
-																<div class="ele">
-																	<select title="" name="Applicant04" id="Applicant04" class="selectBox">
-																		<option selected="selected" value="">선택</option>
-																	</select>
-																</div>
-															</div>
-														</div> 
-													</div> 
-													<!-- row04 -->
-													<div class="divTableRow"> 
-														<div class="thCell02">신청지역 <span class="color01">＊</span></div> 
-														<div class="tdCell02">
-															<div class="InputType">
-																<div class="ele">
-																	<select title="" name="Applicant05" id="Applicant05" class="selectBox">
-																		<option selected="selected" value="">선택</option>
-																	</select>
-																</div>
-																<div class="ele">
-																	<select title="" name="Applicant06" id="Applicant06" class="selectBox">
-																		<option selected="selected" value="">선택</option>
-																	</select>
-																</div>
-															</div>
-														</div> 
-													</div> 
-													<!-- row05 -->
-													<div class="divTableRow"> 
-														<div class="thCell02">신청관서</div> 
-														<div class="tdCell02">
-															신청관서
-														</div> 
-													</div> 
-													<!-- row06 -->
-													<div class="divTableRow"> 
-														<div class="thCell02">신청관서 주소</div> 
-														<div class="tdCell02">
-															신청관서 주소
-														</div> 
-													</div> 
-													<!-- row07 -->
-													<div class="divTableRow"> 
-														<div class="thCell02">전화번호</div> 
-														<div class="tdCell02">
-															전화번호
-														</div> 
-													</div> 															
-												</div>
-											</div>											
-										</div>
-										
-										<div class="tblInfoTxt01">
-											<ul>
-												<li>국민내일배움카드와 연결계좌가 아닌 훈련과정 참여 후 장려금을 수령 받을 계좌입니다.</li>
-											</ul>
-										</div>
-
-										<h4 class="bigTitle06">제출서류 첨부</h4>	
-										<dl class="bigTitle09List">
-											<dt><div class="bigTitle04 ty2">훈련과정 탐색</div></dt>
-											<dd>
-												<div class="btnGroup">
-													<button type="button" class="blueBtn">조회</button>
-													<button type="button" class="lookupBtn">추가</button>
-													<button type="button" class="delBtn">삭제</button>
-												</div>
-											</dd>
-										</dl>
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th class="last">table</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<dl class="bigTitle09List ty2">
-											<dt><div class="bigTitle04 ty2">자격교육 정보</div></dt>
-											<dd>
-												<div class="btnGroup">
-													<button type="button" class="blueBtn">조회</button>
-													<button type="button" class="lookupBtn">추가</button>
-													<button type="button" class="delBtn">삭제</button>
-												</div>
-											</dd>
-										</dl>
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th class="last">table</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<dl class="bigTitle09List ty2">
-											<dt><div class="bigTitle04 ty2">자격교육(직업능력개발훈련교사)</div></dt>
-											<dd>
-												<div class="btnGroup">
-													<button type="button" class="blueBtn">조회</button>
-													<button type="button" class="lookupBtn">추가</button>
-													<button type="button" class="delBtn">삭제</button>
-												</div>
-											</dd>
-										</dl>
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th class="last">table</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<dl class="bigTitle09List ty2">
-											<dt><div class="bigTitle04 ty2">기타정보 <span class="txt01">훈련교사 이력관리에 등록된 학위정보를 선택할 수 있습니다.</span></div></dt>
-											<dd>
-												<div class="btnGroup">
-													<button type="button" class="blueBtn">조회</button>
-													<button type="button" class="lookupBtn">추가</button>
-													<button type="button" class="delBtn">삭제</button>
-												</div>
-											</dd>
-										</dl>
-										<!-- 테이블 -->
-										<div class="tableArea tableArea01">
-											<table class="list">
-												<caption></caption>
-												<colgroup>
-													<col style="width: auto;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th class="last">table</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="last none"></td>
-													</tr>
-												</tbody>
-											</table>   
-										</div>   
-										<!-- // 테이블 -->
-
-										<h4 class="bigTitle06">증명 사진</h4>
-										<div class="divTableArea02">
-											<div class="caption"></div>
-											<div class="divTable"> 
-												<div class="divTableBody"> 
-													<!-- row07 -->
-													<div class="divTableRow"> 
-														<div class="thCell02">증명사진</div> 
-														<div class="tdCell03">
-															<div class="AddFilesArea ty2">
-																<dl class="fileBox">
-																	<dt>
-																		<div class="compareChk">
-																			<div class="ui_checkBox single">
-																				<input type="checkbox" name="compareChk" id="compareChk04">
-																				<label for="compareChk04">선택</label>
-																			</div>
-																			<span>첨부파일명.pptx <a href="/" class="btnDelete">삭제</a></span>
-																		</div>										
-																	</dt>
-																	<dd>31.24KB</dd>
-																</dl>
-																<div class="dragBox">
-																	이곳을 더블클릭 또는 파일을 드래그하세요.
-																</div>
-																<div class="fileBtnBox">
-																	<div class="btnGroup">
-																		<button type="button" class="btnType2 btnTy2">파일추가</button>
-																		<button type="button" class="btnType2 btnTy3">항목제거</button>
-																		<button type="button" class="btnType2 btnTy4">전체 항목제거</button>
-																	</div>
-																</div>
-															</div>
-														</div> 
-													</div> 															
-												</div>
-											</div>		
-											<div class="tblInfoTxt02">
-												<ul>
-													<li>이미지 규격 : 2.5Cm * 3Cm</li>
-													<li>업로드 가능 확장자 : jpg, gif</li>
-													<li>첨부파일의 사이즈는 5MB로 제한합니다.</li>
-													<li>첨부파일은 1개만 등록이 가능합니다.</li>
-												</ul>
-											</div>
-										</div>
-
-										<h4 class="bigTitle06">행정정보 공동이용 동의</h4>
-										<div class="divTableArea02">
-											<div class="caption"></div>
-											<div class="divTable"> 
-												<div class="divTableBody"> 
-													<div class="divTableRow"> 
-														<div class="thCell02">행정정보 공동이용 동의 여부</div> 
-														<div class="tdCell02">
-															<ul>
-																<li class="flTxt">
-																	<div class="ui_radioBox">                                             
-																		<input type="radio" checked="checked" value="agree01" name="agree01" id="agree01"> 
-																		<label for="agree01">동의합니다.</label>
-																	</div>
-																</li>
-																<li class="flTxt">
-																	<div class="ui_radioBox">   
-																		<input type="radio" value="agree02" name="agree02" id="agree02"> 
-																		<label for="agree02">동의하지 않습니다.</label>
-																	</div>
-																</li>
-															</ul>
-														</div> 
-													</div> 
-												</div>
-											</div>
-											<div class="innerTableArea03">
-												<dl class="txtList05">
-													<dt class="none"></dt>
-													<dd>1. 상기 본인은 직업능력개발훈련교사 자격발급 요건 검토를 위하여 한국기술교육대학교 능력개발교육원에서 개인정보를 활용하는
-													것에 동의합니다.</dd>
-													<dt>개인정보 활용 내용</dt>
-													<dd>1. 정보활용<br />
-												   - 개인정보(성명, 생년월일, 주소, 전화번호)<br />
-												   - 학력, 경력, 자격 등 직업능력개발훈련교사 자격발급 요건을 검토하기 위한 내용<br />
-												   * 동의를 거부할 권리 및 동의를 거부할 경우의 불이익<br />
-													 위 개인정보는 직업능력개발훈련교사 자격발급 요건을 검토하기 위하여 필수적이며, 동의를 거부하실 경우 신청이 완료되지 않습니다.</dd>
-													 <dd>2. 위 내용에 명시되지 않은 사항은 HRD-Net 개인정보보호방침에서 정하는 바를 따릅니다.</dd>
-												</dl>
-											</div>
-											<div class="partChk02">
-												<div class="ui_checkBox">
-													<input type="checkbox" id="sign1">
-													<label for="sign1">정보수집 및 개인정보 수집 동의</label>
-												</div>
-											</div>
-											<div class="signTxtLine">
-												<span>신청자</span><span class="sign1">홍길동</span>
-											</div>
-										</div>
-
-										<div class="btnGroup ty4">
-											<button type="button" class="btnType1">목록</button>
-											<button type="button" class="btnType1 primary">신청</button>
-										</div>
+									<section id="section6" role="tabpanel" class="tabCont">
+										<h3>진출방향</h3>
 									</section>
 								</div>
 								<!-- // 텝 컨텐츠 -->

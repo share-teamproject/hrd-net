@@ -4,7 +4,7 @@
 * table
 * ============================== */
 .tableArea td { position:relative; }
-.tableArea table.list td.none { padding:40px 0;}
+.tableArea table.list td.none { padding:30px 0;}
 .tableBtnList {position:absolute;top:14px; right:20px;}
 .tableBtnList li {float:left;padding-left:12px;}
 .tblInfoTxt { font-size:12px; color:#727476; background-color:#f7f7f7; padding:30px; margin:-20px 0 20px 0; }
@@ -68,6 +68,8 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 * etc
 * ============================== */
 .brd-b-ty1 {border-bottom:1px solid #e2e2e4 !important;}
+.under { border-bottom:1px solid #4171df !important; padding-bottom:2px}
+
 
 
 
@@ -231,13 +233,17 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .bigTitle02List dd {float:right; font-size:14px; color:#727476; }
 .bigTitle02 {font-weight:500; font-size:22px; color:#292a2d; height:45px; }
 .bigTitle02.ty2 { margin-top:5px; }
+.bigTitle02.ty3 { margin-bottom:-15px; }
 .bigTitle03 {font-weight:500; font-size:18px; color:#292a2d; height:40px;}
 .bigTitle04 {position:relative;font-weight:500; font-size:16px; color:#5b648a; height:30px; padding-left:12px; }
 .bigTitle04:before{content:''; position:absolute; top:10px; left:0; width:4px;height:4px; background:#5b648a; border-radius:50%; }
 .bigTitle04.ty2 { font-size:18px; height:40px; margin-top:-5px; }
 .bigTitle04.ty2:before { top:12px;  }
+.bigTitle04.ty3 { font-size:18px; height:40px; margin-top:30px; }
+.bigTitle04.ty3:before { top:12px;  }
 
 .bigTitle05 { font-size:22px; color:#292a2d; font-weight:500; height:60px; }
+.bigTitle05.ty2 { margin-top:-10px; }
 
 .bigTitle06 { position:relative; font-size:22px; color:#292a2d; font-weight:500; padding-bottom:20px; margin-top:50px; }
 .bigTitle06 .txtPC { font-size:13px; color:#727476; font-weight:400; padding-left:15px; }
@@ -259,16 +265,10 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .bigTitle09List .txt01 { position:relative; font-size:12px; color:#727476; padding-left:12px;   }
 .bigTitle09List .txt01:before { content:''; position:absolute; top:7px; left:5px; width:2px; height:2px; background:#929495; border-radius:50%; }
 .bigTitle09List dd {float:right; }
-.bigTitle09List.ty2 { margin-top:50px; }
-
-.tblInfoTxt01 { display:inline-block; text-align:left; padding-top:10px; }
-.tblInfoTxt01 > ul > li { position:relative; font-size:12px; color:#727476; line-height:20px; padding-left:10px; }
-.tblInfoTxt01 > ul > li:before { content:''; position:absolute; top:10px; left:0; width:2px; height:2px; background:#929495; border-radius:50%; }
-
+.bigTitle09List.ty2 { margin-top:40px; }
 
 /* 비대면 훈련상담 */
 #myStateWrap .myStateArea .myStateBox .myState2 { max-width:182px; }
-
 
 
 /* MY관심 */
@@ -322,10 +322,14 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .txtList01 + .txtList01 { margin-top:20px; }
 .txtList01 > dt { position:relative; font-size:16px; color:#5b648a; font-weight:500; padding-left:12px; }
 .txtList01 > dt:before{ content:''; position:absolute; top:10px; left:0; display:block; width:4px; height:4px; background:#5b648a; border-radius:50%; }
+.txtList01 > dt.tit01{ height:30px; }
 .txtList01 > dd{ font-size:14px; color:#727476; line-height:26px; padding:7px 12px; }
 .txtList01 > dd .btn { padding-left:35px; }
 .txtList01 > dd .btn button { margin-top:-4px; }
 .txtList01 > dd .btn button + button { margin-left:5px; }
+.txtList01 > dd.indent { margin-left:-12px; }
+.txtList01 .txt01 { position:relative; font-size:12px; color:#727476; padding-left:22px; }
+.txtList01 .txt01:before { content:''; position:absolute; top:7px; left:15px; width:2px; height:2px; background:#929495; border-radius:50%; }
 
 .myCardArea .partArea .partBox01 .btmTxt { font-size:14px; color:#727476; text-align:right; padding-top:5px; }
 .txtBox01 { border:1px #e2e2e4 solid; padding:29px; }
@@ -378,9 +382,11 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .InputType > .ele .selectBox {width:100%;}
 
 /* info type */
-.tblInfoTxt01 { position:relative; padding:0; text-align:left; margin-top:-10px; }
+.tblInfoTxt01 { position:relative; padding-top:10px; text-align:left;  }
+.tblInfoTxt01.ty2 { margin-top:-20px; }
 .tblInfoTxt01 > ul > li { position:relative; font-size:12px; color:#727476; line-height:20px; padding-left:10px; }
 .tblInfoTxt01 > ul > li:before { content:''; position:absolute; top:10px; left:0; width:2px; height:2px; background:#929495; border-radius:50%; }
+
 
 .tblInfoTxt02, 
 .tblInfoTxt04 { position:relative; background-color:#f7f7f7; padding:25px 30px; text-align:left; }
@@ -405,8 +411,13 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tblInfoTxt05 > ul > li:before { content:'-'; position:absolute; top:0; left:0; color:#929495; }
 .tblInfoTxt05 > .guidBtnM { display:none; }
 
-.tblInfoTxt05.ty2 { position:relative; background-position:45px 35px; padding: 30px 110px 30px; margin-bottom:60px; }
-.tblInfoTxt05.ty2 .goBtnDiv { position:absolute; top:35px; right:30px; }
+.tblInfoTxt05.ty3 { position:relative; background-position:45px 35px; padding: 30px 110px 30px; margin-bottom:60px; }
+.tblInfoTxt05.ty3 .goBtnDiv { position:absolute; top:35px; right:30px; }
+.tblInfoTxt05.ty3 .bigTxt { font-size:22px; color:#292a2d; line-height:34px; margin-top:-2px; }
+.tblInfoTxt05.ty3 .bigTxt.ty2 { height:60px; padding-top:10px; }
+.tblInfoTxt05.ty3 .innerTxtList { padding-top:20px; border-top:1px #e1e4e9 solid; width:829px; margin:30px 0 0 -75px;}
+.tblInfoTxt05.ty3 .innerTxtList > li { position:relative; font-size:14px; color:#767676; line-height:24px; padding-left:15px; }
+.tblInfoTxt05.ty3 .innerTxtList > li:before { content:''; position:absolute; top:10px; left:0; background:#727476; width:4px; height:4px; border-radius:50%; }
 
 .tblInfoTxt06 { background-color:#f7f7f7; padding:25px 105px; margin-top:30px; margin-bottom:60px; }
 .tblInfoTxt06 > ul > li { position:relative; font-size:16px; color:#4e4f51;  padding-left:20px; }
@@ -427,6 +438,9 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .divTableArea02 .divTable .divTableRow .tdCell02 > ul { overflow:hidden; }
 .divTableArea02 .divTable .divTableRow .tdCell02 > ul > li { float:left; }
 .divTableArea02 .divTable .divTableRow .tdCell03 { display: table-cell; width:655px; }
+.divTableArea02 .divTable .divTableRow .tdCell04 { display: table-cell; font-size:14px; color:#4e4f51; line-height:24px; padding:20px; }
+.divTableArea02 .divTable .divTableRow .tdCell04.ty2 { width:210px; }
+.divTableArea02 .divTable .divTableRow .thCell02.ty2 { width:150px; }
 .divTableArea02 .divTable .divTableRow .txt01 { font-size:12px; padding:10px 0 0 20px; margin-bottom:-20px; }
 .divTableArea02 .divTable .divTableRow .txt02 { font-size:12px; line-height:20px; margin-bottom:10px; }
 .divTableArea02 .divTable .divTableRow .inpArea { width:480px; }
@@ -608,6 +622,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tableArea.ty3 .list { border-top:2px #727476 solid; }
 .tableArea.ty3 .list th { padding:14px; border-bottom:1px #e2e2e4 solid; }
 .tableArea.ty3 .list td { padding:14px 5px; }
+.tableArea.ty3 .list td.tl { padding:14px 20px; }
 .tableArea.ty3 .list .none2 { text-align:left; line-height:24px; padding:15px 0 15px 20px; }
 
 .innerTableArea03 { border:1px #e2e2e4 solid; border-top:0; padding:30px 130px 30px 40px; }

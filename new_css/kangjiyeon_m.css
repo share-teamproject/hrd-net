@@ -172,7 +172,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .applicationBox .btn { padding-top:30px; margin-bottom:30px;}
 
 /* MY카드 */
-#subContentWrap .subContArea .headingTitleArea h3.headingTitle.ty2 { letter-spacing:-2px;  padding:60px 0 0 0;  }
+#subContentWrap .subContArea .headingTitleArea h3.headingTitle.ty2 { letter-spacing:-2px;  padding:20px 0 0 0;  }
 #subContentWrap .subContArea .headingTitleArea h3.headingTitle.ty2 .depth4 { font-size:36px; color:#727476; font-weight:400; padding-left:10px; }
 
 .myCardArea {}
