@@ -28,14 +28,14 @@
 .myInfoArea .ui_checkBox.type01 { float:right; }
 
 /* 등록 폼 > 텍스트 컨텐츠 영역 */
-.myInfoArea .txtList li { position:relative;}
-.myInfoArea .txtList li::before { content:''; position:absolute;}
-.myInfoArea .txtList.type01 li { padding-left:10px; }
-.myInfoArea .txtList.type01 li::before { content:'-'; top:0; left:0; }
-.myInfoArea .txtList.type02 li { padding-left:5px; margin: 10px 0 0;}
-.myInfoArea .txtList.type02 li::before { content:''; display:inline-block; position:absolute; top:8px; left:0; width:2px; height:2px; border-radius:100%; background-color: #727476; }
-.myInfoArea .txtList.type03 li { position:relative; padding-left:10px; margin: 10px 0 0; font-size: 14px; }
-.myInfoArea .txtList.type03 li::before { content:''; display:inline-block; position:absolute; top:8px; left:0; width:4px; height:4px; border-radius:100%; background-color: #727476; }
+.txtList li { position:relative;}
+.txtList li::before { content:''; position:absolute;}
+.txtList.type01 li { padding-left:10px; }
+.txtList.type01 li::before { content:'-'; top:0; left:0; }
+.txtList.type02 li { padding-left:5px; margin: 10px 0 0;}
+.txtList.type02 li::before { content:''; display:inline-block; position:absolute; top:8px; left:0; width:2px; height:2px; border-radius:100%; background-color: #727476; }
+.txtList.type03 li { position:relative; padding-left:10px; margin: 10px 0 0; font-size: 14px; }
+.txtList.type03 li::before { content:''; display:inline-block; position:absolute; top:8px; left:0; width:4px; height:4px; border-radius:100%; background-color: #727476; }
 
 /* 등록 폼 > 버튼 그룹 */
 .myInfoArea .btnGroup { margin-top:60px; }
@@ -70,3 +70,80 @@
 #subContentWrap .subContArea .myInfoArea .searchBox .btnArea { margin-left: 25px; }
 #subContentWrap .subContArea .myInfoArea .searchBox input[type="text"] { width: 436px; }
 #subContentWrap .subContArea .myInfoArea .searchBox + .sortArea { margin-top: 50px; }
+
+
+/* ==============================
+* MY 카드
+* ============================== */ 
+
+/* 내일배움카드(구직자) > 훈련상담이력조회 */
+.tableArea table.list th.topLine { border-top: 1px solid #e2e2e4; }
+
+/* 내일배움카드(구직자) > 카드신청/계좌 사용내역조회 */
+.accountInfoBox { margin:40px 0 0; }
+.cardInfoBox { margin:40px 0 0; }
+.cardInfoBox .dataList { overflow:hidden; width:100%; border:1px solid #e2e2e4; border-bottom:0; }
+.cardInfoBox .dataList li { border-bottom:1px solid #e2e2e4; }
+.cardInfoBox .dataList li > dl { display:table; height:35px; margin:14px 0; }
+.cardInfoBox .dataList li > dl > dt, .cardInfoBox .dataList li > dl > dd { display:table-cell; vertical-align:middle; }
+.cardInfoBox .dataList li > dl > dt { width:170px; color:#4e4f51; text-align:center; }
+.cardInfoBox .dataList li > dl > dd { position:relative; width:720px; padding-left:40px; box-sizing:border-box; }
+.cardInfoBox .dataList li > dl > dd::before { content:''; position:absolute; top:0; left: 0; width:1px; height:35px; background-color:#e3e7ee; }
+.cardInfoBox .dataList.type01 li { float:left; width:50%; }
+.cardInfoBox .dataList.type01 li > dl > dd { width:auto; }
+
+.cardDataList .cardInfoBtn { display:inline-block; padding:0 12px; height:26px; border:1px solid #258384; color: #258384; line-height:24px; font-size:12px; background:#fff;}
+#subContentWrap .subContArea .boxArea.cardNotce { margin:60px 0 0; padding:40px 35px; }
+#subContentWrap .subContArea .boxArea.cardNotce .pageComment { padding:0; background:none; }
+.boxArea.cardNotce .pageComment .tit { display:block; font-weight:500; font-size:16px; color:#4e4f51; }
+.boxArea.cardNotce .pageComment .txtList > li { margin-top:5px; }
+.boxArea.cardNotce .pageComment .txtList > li:first-child { margin-top:10px; }
+.boxArea.cardNotce .pageComment .txtList > li > a { text-decoration:underline; }
+.boxArea.cardNotce .pageComment .txtList > li strong { color:#258384; }
+
+.myCardArea .bigTitle { margin:57px 0 0;font-size:22px; }
+.myCardArea .bigTitle + .boxArea { margin:20px 0 0; }
+.myCardArea .boxArea .comment { min-height:53px; padding:0 0 0 63px; font-size:14px; line-height:53px; color:#727476; background:url('../new_images/common/pageComment2.png') no-repeat 0 50%; }
+.myCardArea .boxArea .comment.type01 { line-height:22px; }
+.myCardArea .pastStandard{ display:none; }
+.myCardArea .txtArea { margin:20px 0 0; padding:40px 28px 28px; box-sizing:border-box; border:1px solid #e3e7ee; border-top:2px solid #5b648a; }
+.myCardArea .txtArea .mainTitle { font-size:22px; font-weight:400; color:#292a2d; }
+.myCardArea .txtArea .subTitle { position:relative; padding-left:12px; font-size: 16px; font-weight:500; color:#5b648a; }
+.myCardArea .txtArea .subTitle::before { content:''; display:inline-block; position:absolute; top:11px; left:0; width:4px; height:4px; border-radius:100%; background-color:#5b648a; }
+.myCardArea .txtArea .txtBox { margin:30px 0 0; }
+.myCardArea .txtArea .txtBox .txtList { padding-left:12px; font-size:14px; color:#727476;}
+.myCardArea .txtArea .txtBox .txtList > li { margin:5px 0 0; letter-spacing:0; }
+.myCardArea .txtArea .txtBox .txtList > li:first-child { margin-top:10px; }
+.myCardArea .txtArea .txtBox .txtList > li strong { font-weight:500; }
+.myCardArea .txtArea + .btnGroup { margin-top:-3px; }
+.myCardArea .txtArea + .btnGroup .prevViewBtn { position:relative; display:inline-block; height:26px; padding:0 40px 0 20px; box-sizing:border-box; border:1px solid #e3e7ee; line-height:24px; font-size:12px; color:#4e4f51; background:#fff; }
+.myCardArea .txtArea + .btnGroup .prevViewBtn::after { content:''; display:inline-block; position:absolute; top:6px; right:20px; width:6px; height:12px; transform:rotate(90deg); background:url('../new_images/common/arrowGoLink02.png') no-repeat 50% 50%; }
+.myCardArea .txtArea + .btnGroup .prevViewBtn.on::after { transform:rotate(-90deg); }
+
+#subContentWrap .subContArea .myCardArea .boxArea.limite { position:relative; padding:30px 40px 30px; border:0; background-color:#f7f7f7; }
+.myCardArea .boxArea.limite li { margin:0; font-size: 12px;}
+.myCardArea .refundsList { margin:40px 0 0; }
+.myCardArea .refundsList table.list tbody th, .myCardArea .refundsList table.list tfoot th { padding:14px; box-sizing:border-box; border-right:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4; font-size:14px; color:#727476; text-align:center; background:#fff; }
+.myCardArea .refundsList table.list .right { text-align:right; }
+.myCardArea .refundsList + .bigTitle { padding-top:0; }
+.myCardArea .refundsForm { margin:40px 0 0; }
+.myCardArea .refundsForm table.list .selectBox, .myCardArea .refundsForm table.list input[type="text"] { width:100%; }
+.myCardArea .btnGroup.util { margin:40px 0 0; text-align:right; }
+.myCardArea .btnGroup.util button { display:inline-block; width:58px; height:26px; border:1px solid #e2e2e4; line-height:24px; font-weight:400; font-size:12px; }
+.myCardArea .btnGroup.util .listAddBtn { margin-right:5px; border-color:#258384; color:#258384; }
+.myCardArea .processList { margin:12px 0 0; } 
+.myCardArea .processList table.list th { border-bottom:1px solid #e2e2e4; }
+.myCardArea .processList table.list td { height:52px; box-sizing:border-box; }
+/* .myCardArea  .tableArea table. */
+
+/* 근로자카드 */
+.tableArea table.list td.noData { padding: 40px 0; }
+#subContentWrap .subContArea .boxArea .status { text-align: center; font-size: 28px; font-weight: 500; padding: 13px 0; color: #4e4f51; }
+#subContentWrap .subContArea .boxArea .status strong { color: #4171df; font-weight: 500; }
+.myCardArea .partArea { margin-top: 40px; }
+.tableArea table.list td strong.bold { font-weight: 500; }
+#subContentWrap .subContArea .boxArea.noticeBox { padding: 38px 40px; }
+.myCardArea .boxArea .bold { margin-bottom: 20px; font-size: 16px; font-weight: 500; }
+.myCardArea .boxArea .dotList > li { padding-left: 15px; font-size: 14px; }
+#subContentWrap .subContArea .myCardArea .qnaArea { padding-top: 0; }
+.myCardArea .qnaArea .tableArea td { background-color: #fff; }
