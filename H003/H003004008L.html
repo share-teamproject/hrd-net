@@ -12,7 +12,7 @@
     <meta name="robots" content="all">
     <meta name="keywords" content="HRD">
     <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
-    <title>훈련비 미신청 과정 조회 | HRD-Net</title>
+    <title>훈련명단등록(위탁훈련) | HRD-Net</title>
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
@@ -258,8 +258,8 @@
                                             <li><a href="/">나의맞춤정보</a></li>
                                             <li><a href="/">나의관심정보</a></li>
                                             <li><a href="/">비대면 훈련상담</a></li>
-											<li><a href="/"  class="on">나의 상담내역</a></li>
-											<li><a href="/">알람</a></li>
+                                            <li><a href="/"  class="on">나의 상담내역</a></li>
+                                            <li><a href="/">알람</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -303,8 +303,7 @@
                         <li class="goHome verPC"><a href="/">홈</a></li>
                         <li class="verPC"><a href="/">MY 서비스</a></li>
                         <li><a href="/">사업주훈련</a></li>
-                        <li><a href="">비용관리(자체훈련 등)</a></li>
-                        <li class="on"><a href="/">훈련비 미신청 과정 조회</a></li>
+                        <li class="on"><a href="/">훈련명단등록(위탁훈련)</a></li>
                     </ul>
                 </div>
             </div>
@@ -454,7 +453,7 @@
 
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle ty2">비용관리(지체훈련 등) <span class="depth4">훈련비 미신청 과정 조회</span></h3>
+                        <h3 class="headingTitle ty2">비용관리(지체훈련 등) <span class="depth4">훈련명단등록(위탁훈련)</span></h3>
                         <!-- p class="headingText">고객님이 등록하신 질문과 답변, 개선 및 제안의 문의내역을 쉽게 확인해 보실 수 있습니다.</p -->
                         <div class="headingIcon">
                             <ul>
@@ -467,61 +466,11 @@
                     </div>
                     <div class="contentArea">
 
-                        <div class="commentBox top">
-                            <ul class="dashList">
-                                <li>훈련과정의 상태가 '결과보고확인'이고 비용 신청을 하지 않은 과정이 조회됩니다.</li>
-                                <li>훈련생 성명 검색 시 해당 훈련생이 있는 과정이 검색됩니다.</li>
-                                <li>채용예정자가 포함된 훈련과정(원격, 기업대학 제외)은 취업률 신고 후 비용신청이 가능합니다.(18.7.9 이후 시작한 훈련과정)</li>
-                            </ul>
-                        </div>
-
-                        <div class="schDom mt40">
-                            <div class="schDomCont">
-                                <strong class="tit">훈련기관명</strong>
-                                <div class="ele">
-                                    <input type="text" value="" title="훈련기관명 입력" name="" id="">
-                                </div>
-                            </div>
+                        <div class="schDom top">
                             <div class="schDomCont">
                                 <strong class="tit">훈련과정명</strong>
                                 <div class="ele">
                                     <input type="text" value="" title="훈련과정명 입력" name="" id="">
-                                </div>
-                            </div>
-                            <div class="schDomCont">
-                                <strong class="tit">훈련생성명</strong>
-                                <div class="ele">
-                                    <input type="text" value="" title="훈련생성명 입력" name="" id="">
-                                </div>
-                            </div>
-                            <div class="schDomCont">
-                                <strong class="tit normal">기간 검색</strong>
-                                <div class="ele">
-                                    <div class="mb5">
-                                        <div class="ui_radioBox">
-                                            <input type="radio" name="training" id="training01">
-                                            <label for="training01">훈련시작일</label>
-                                        </div>
-                                        <div class="ui_radioBox">
-                                            <input type="radio" name="training" id="training02">
-                                            <label for="training02">훈련종료일</label>
-                                        </div>
-                                    </div>
-                                    <div class="dateDom">
-                                        <div class="dateSelect">
-                                            <input type="text" value="" placeholder="20201012" title="달력" name="date" id="">
-                                            <a href="/" class="btn_calendar"></a>
-                                        </div>
-                                        <div class="dateSelect">
-                                            <input type="text" value="" placeholder="20201012" title="달력" name="date" id="">
-                                            <a href="/" class="btn_calendar"></a>
-                                        </div>
-                                    </div>
-                                    <div class="dateRangePick">
-                                        <button type="button">1주일</button>
-                                        <button type="button">1개월</button>
-                                        <button type="button">3개월</button>
-                                    </div>
                                 </div>
                             </div>
                             <div class="btnGroup">
@@ -547,33 +496,30 @@
 
                         <div class="tableArea">
                             <table class="list mb0">
-                                <caption>훈련비 미신청 과정 조회</caption>
+                                <caption>위탁훈련 비용지급 결과조회</caption>
                                 <colgroup>
-                                    <col style="width:80px;">
-                                    <col style="width:100px;">
+                                    <col style="width:70px;">
                                     <col style="width:auto;">
+                                    <col style="width:60px;">
+                                    <col style="width:200px;">
+                                    <col style="width:70px;">
                                     <col style="width:100px;">
-                                    <col style="width:180px;">
-                                    <col style="width:150px;">
+                                    <col style="width:120px;">
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th scope="col">
-                                            <div class="ui_checkBox single">
-                                                <input type="checkbox" name="" id="chk">
-                                                <label for="chk">선택</label>
-                                            </div>
-                                        </th>
                                         <th scope="col">연번</th>
                                         <th scope="col">훈련과정명</th>
                                         <th scope="col">회차</th>
                                         <th scope="col">훈련기간</th>
-                                        <th scope="col">미지급금액</th>
+                                        <th scope="col">명단수</th>
+                                        <th scope="col">상태</th>
+                                        <th scope="col">훈련생 명단등록</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td colspan="6" class="none last">검색 조건에 맞는 데이터가 없습니다</td>
+                                        <td colspan="7" class="none last">검색 조건에 맞는 데이터가 없습니다.</td>
                                     </tr>
                                 </tbody>
                             </table>
