@@ -106,15 +106,17 @@
 .schDom.top {margin-top: 15px;}
 .schDomCont {font-size: 0; text-align: left;}
 .schDomCont + .schDomCont {margin-top: 10px;}
-.schDomCont > * {display: inline-block; vertical-align: top;}
+.schDomCont > * {/*display: inline-block;*/ vertical-align: top;}
+.schDomCont > .ele {display: inline-block; width: calc(100% - 125px);}
 .schDomCont > .ele .selectBox,
 .schDomCont > .ele input[type="text"],
 .schDomCont > .ele input[type="pass"] {width: 435px;}
-.schDomCont > .tit {width: 125px; font-size: 18px; color: #4e4f51; line-height: 40px;}
+.schDomCont > .tit {width: 125px; display: inline-block; font-size: 18px; color: #4e4f51; line-height: 40px;}
+.schDomCont > .tit.normal {line-height: normal;}
 .schDom > .btnGroup {margin-top: 20px;}
 
 
-.dateDom {font-size: 0;}
+.dateDom {display: inline-block; vertical-align: top; font-size: 0;}
 .dateDom > .dateSelect {position: relative; display: inline-block; width: 200px; vertical-align: top;}
 .dateDom > .dateSelect + .dateSelect {margin-left: 35px;}
 .dateDom > .dateSelect + .dateSelect:before {content: '~'; position: absolute; left: -35px; width: 35px; text-align: center; line-height: 40px; font-size: 14px; color: #727476;} 
@@ -122,8 +124,17 @@
 .dateDom > .dateSelect .btn_calendar {position: absolute; top: 50%; right: 13px; margin-top: -10px;}
 .dateDom + .dateRangePick {margin-left: 20px;}
 
-.dateRangePick {font-size: 0;}
+.dateRangePick {display: inline-block; vertical-align: top; font-size: 0;}
 .dateRangePick > button {position: relative; display: inline-block; vertical-align: top; width: 73px; height: 40px; border: 1px solid #cdcdd1; text-align: center; font-size: 14px; color: #4e4f51;}
 .dateRangePick > button + button {margin-left: -1px;}
 .dateRangePick > button.on {z-index: 1; color: #4171df; border: 1px solid #4171df;}
+
+.mBtnDom {margin-top: 20px; text-align: right;}
+
+
+
+
+
+
+
 

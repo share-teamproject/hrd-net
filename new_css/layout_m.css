@@ -321,6 +321,7 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 .pl15 { padding-left:15px !important; }
 .brd-r-ty1 {border-right:1px solid #e2e2e4;}
 .brd-t-ty2 {border-top:4px solid #5b648a !important;}
+.brd-t-ty3 {border-top:2px solid #e2e2e4 !important;}
 .brd-r-ty2 {border-right:4px solid #5b648a !important;}
 .brd-b-ty2 {border-bottom:4px solid #5b648a !important;}
 .brd-l-ty2 {border-left:4px solid #5b648a !important;}
