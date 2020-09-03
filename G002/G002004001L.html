@@ -16,8 +16,8 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout.css" rel="stylesheet" />
-    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" /> 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
@@ -348,7 +348,7 @@
                 <!-- 좌측 메뉴 영역 -->
                 <div class="lnbArea">
                     <ul>
-                        <li><a href="javascript:void(0);"><span>MY</span> 카드</a>
+                        <li><a href="javascript:void(0);"><span class="color03">MY</span> 카드</a>
                             <ul class="dep02">
                                 <li><a href="javascript:void(0);">국민내일배움카드</a> 
                                     <ul class="dep03">
@@ -378,7 +378,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:void(0);" class="on"><span>MY</span> 훈련</a>
+                            <a href="javascript:void(0);" class="on"><span class="color03">MY</span> 훈련</a>
                             <ul class="dep02">
                                 <li><a href="/" class="noSub">직업훈련이력</a></li>
                                 <li><a href="/" class="noSub">청년취업아카데미신청</a></li>
@@ -395,7 +395,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:void(0);"><span>MY</span> 관심</a>
+                            <a href="javascript:void(0);"><span class="color03">MY</span> 관심</a>
                             <ul class="dep02">
                                 <li><a href="/" class="noSub">나의 맞춤정보</a></li>
                                 <li><a href="/" class="noSub">나의 관심정보</a></li>
@@ -405,7 +405,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:void(0);"><span>MY</span> 정보</a>
+                            <a href="javascript:void(0);"><span class="color03">MY</span> 정보</a>
                             <ul class="dep02">
                                 <li><a href="/" class="noSub">공인인증서 등록/변경</a></li>
                                 <li><a href="javascript:void(0);">회원정보관리</a> 
@@ -451,7 +451,7 @@
                 <!--// 좌측 메뉴 영역 -->
 
                 <div class="subContArea">
-                    <!-- 타이틀 : PC -->
+                    <!-- 타이틀 -->
 					<div class="headingTitleArea verPC">
                         <h3 class="headingTitle">일학습병행</h3>
                         <!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
@@ -464,38 +464,25 @@
                             </ul>
                         </div>
                     </div>
-					<!-- // 타이틀 : PC -->
-
-					<!-- 타이틀 : Mobile -->
-					<div class="headingTitleArea verM">
-                        <h3 class="headingTitle">학습활동서 작성</h3>
-                        <!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
-                        <div class="headingIcon">
-                            <ul>
-                                <li><button type="button" class="twitter">트위터</button></li>
-                                <li><button type="button" class="facebbok">페이스북</button></li>
-                                <!--li><button type="button" class="">링크복사</button></li-->
-                                <li><button type="button" class="print">프린트</button></li>
-                            </ul>
-                        </div>
-                    </div>
-					<!-- // 타이틀 : Mobile -->
+					<!-- // 타이틀 -->
 
                     <div class="contentArea">
 
-                        <!-- My훈련 컨텐츠 : PC -->
-                        <div class="myTrainingArea verPC">                          
+                        <!-- My훈련 컨텐츠 -->
+                        <div class="myTrainingArea">                          
 
 							<div class="">
-								<!-- 텝 인덱스 -->  
-								<div class="tabListArea"> 
-									<ul class="tabList">
-										<li id="tab1" class="on"><button type="button">학습활동서 작성</button></li>
-										<li id="tab2"><button type="button">발급대장</button></li>
-										<li id="tab3"><button type="button">출석입력요청 확인</button></li>
-									</ul>
-								</div> 
-								<!--// 텝 인덱스 -->
+								<div class="partArea ty2">
+									<!-- 텝 인덱스 -->  
+									<div class="tabListArea"> 
+										<ul class="tabList">
+											<li id="tab1" class="on"><button type="button">학습활동서 작성</button></li>
+											<li id="tab2" class="verPC"><button type="button">발급대장</button></li>
+											<li id="tab3"><button type="button">출석입력요청 확인</button></li>
+										</ul>
+									</div> 
+									<!--// 텝 인덱스 -->
+								</div>
 
 								<!-- 텝 컨텐츠 -->
                                 <div class="tabContents">
@@ -566,19 +553,19 @@
 																		<dt>OFF-JT</dt>
 																		<dd>
 																			<button type="button" class="btnH26">학습활동서 작성</button>
-																			<button type="button" class="btnH26">학습진행률</button>
+																			<button type="button" class="btnH26 mt5">학습진행률</button>
 																		</dd>
 																	</dl>
 																</li>
 															</ul>
 														</div>
-														<div class="txt3">증명사진 등록은 회원정보변경 화면에서 등록/변경 하실 수 있습니다.</div>													
+														<div class="txt3 verPC">증명사진 등록은 회원정보변경 화면에서 등록/변경 하실 수 있습니다.</div>													
 													</div>
 												</li>												                         
 											</ul>		
 
 											<!-- paging : pc -->
-											<div class="pagenation">
+											<div class="pagenation verPC">
 												<a href="/" class="pb prev">이전보기</a>
 												<a href="/" class="on">1</a>
 												<a href="/">2</a>
@@ -593,7 +580,7 @@
 										</div>
 									</section>
 
-									<section id="section2" role="tabpanel" class="tabCont">
+									<section id="section2" role="tabpanel" class="tabCont verPC">
 										<h3>발급대장</h3>
 										<div class="sortArea ty3">
 											<p class="totalNum">전체 <strong>14</strong> 건</p>
@@ -668,7 +655,7 @@
 															<table class="view">
 																<caption></caption>
 																<colgroup>
-																	<col style="width:25%;">
+																	<col style="width:27%;">
 																	<col style="width:auto;">
 																</colgroup>                                    
 																<tbody>																	
@@ -737,176 +724,6 @@
 							</div>         
                         </div>
                         <!-- // My훈련 컨텐츠 : PC -->
-
-
-						<!-- My훈련 컨텐츠 : mobile -->
-                        <div class="myTrainingArea verM">                          
-							<div class="endLineM endLineM2"></div>
-							<div class="">
-								<!-- 텝 인덱스 -->  
-								<div class="tabListArea inPdg30"> 
-									<ul class="tabList">
-										<li id="tab4" class="on"><button type="button">학습활동서 작성</button></li>
-										<li id="tab5"><button type="button">출석입력요청 확인</button></li>
-									</ul>
-								</div> 
-								<!--// 텝 인덱스 -->
-
-								<!-- 텝 컨텐츠 -->
-                                <div class="tabContents">
-									<section id="section4" role="tabpanel" class="tabCont on">
-										<h3>학습활동서 작성</h3>
-
-										<div class="qnaArea">  
-											<ul class="inTextBox">
-												<li>
-													<div tabindex="0" class="qnaQ ty3">
-														<div class="txtQ">
-															<p class="qnaText">12019년_(재직자)_패션머천다이징_L4_ver2.0_(주)티비에이치글로벌(1차)(ABF20193000677147</p>
-															<p class="txt1">(주)티비에이치글로벌</p>
-															<ul class="txt2List">
-																<li>
-																	<dl>
-																		<dt><span>월차</span></dt>
-																		<dd>12월차 </dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl>
-																		<dt><span>학습기간</span></dt>
-																		<dd>2020-01-02 ~ 2021-01-01</dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-													<div class="qnaA ty01">
-														<div class="TrainingHistoryBox">
-															<ul>
-																<li>
-																	<dl>
-																		<dt>OJT</dt>
-																		<dd>12 월차</dd>
-																	</dl>
-																</li>
-																<li class="borL">
-																	<dl>
-																		<dt>OFF-JT</dt>
-																		<dd>2 월차</dd>
-																	</dl>
-																</li>
-																<li class="clearW100">
-																	<dl>
-																		<dt>사진등록</dt>
-																		<dd>미등록</dd>
-																	</dl>
-																</li>
-																<li class="clearW100">
-																	<dl>
-																		<dt>OFF-JT</dt>
-																		<dd>
-																			<ul class="btnListTy1">
-																				<li><button type="button" class="btnH26">학습활동서 작성</button></li>
-																				<li><button type="button" class="goLinkLong02">학습진행률</button></li>
-																			</ul>
-																		</dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>											
-													</div>
-												</li>												                         
-											</ul>		
-										</div>
-									</section>
-
-									<section id="section5" role="tabpanel" class="tabCont">
-										<h3>출석입력요청 확인</h3>
-										<div class="qnaArea mt30">  
-											<ul class="inTextBox">
-												<li>
-													<div tabindex="0" class="qnaQ ty4">
-														<div class="txtQ">
-															<p class="qnaText">12019년_(재직자)_패션머천다이징_L4_ver2.0_(주)티비에이치글로벌(1차)(ABF20193000677147</p>
-															<p class="txt4">2018-12-10</p>
-														</div>
-													</div>
-													<div class="qnaA ty4">
-														<h5 class="bigTitle02">출결정보</h5>
-														<div class="innerTableArea">                             
-															<table class="view">
-																<caption></caption>
-																<colgroup>
-																	<col style="width:35%;">
-																	<col style="width:auto;">
-																</colgroup>                                    
-																<tbody>																	
-																	<tr>
-																		<th>출결상태</th>
-																		<td><input type="text" value="stateTm1" title="" name="stateTm" id="stateTm1" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>입실시간</th>
-																		<td><input type="text" value="stateTm2" title="" name="stateTm" id="stateTm2" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>외출시간</th>
-																		<td><input type="text" value="stateTm3" title="" name="stateTm" id="stateTm3" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>퇴실시간</th>
-																		<td><input type="text" value="stateTm4" title="" name="stateTm" id="stateTm4" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>복귀시간</th>
-																		<td><input type="text" value="stateTm5" title="" name="stateTm" id="stateTm5" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>출결상태</th>
-																		<td><input type="text" value="stateTm6" title="" name="stateTm" id="stateTm6" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>입실시간</th>
-																		<td><input type="text" value="stateTm7" title="" name="stateTm" id="stateTm7" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>외출시간</th>
-																		<td><input type="text" value="stateTm8" title="" name="stateTm" id="stateTm8" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>퇴실시간</th>
-																		<td><input type="text" value="stateTm9" title="" name="stateTm" id="stateTm9" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>복귀시간</th>
-																		<td><input type="text" value="stateTm10" title="" name="stateTm" id="stateTm10" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>사유</th>
-																		<td><input type="text" value="stateTm11" title="" name="stateTm" id="stateTm11" class="selectW585"></td>
-																	</tr>
-																	<tr>
-																		<th>증빙자료</th>
-																		<td><button type="button" class="btnType2 selectW300">확인</button></td>
-																	</tr>
-																	<tr>
-																		<th>확인</th>
-																		<td><button type="button" class="btnType2 etc selectW300">출석입력 요청 확인</button></td>
-																	</tr>
-																</tbody>
-															</table>
-														</div>											
-													</div>
-												</li>												                         
-											</ul>		
-										</div>
-									</section>
-								</div>
-								 <!--// 텝 컨텐츠 -->
-							</div>         
-                        </div>
-                        <!-- // My훈련 컨텐츠 : mobile -->
-
                     </div>
                 </div>
             </div>
