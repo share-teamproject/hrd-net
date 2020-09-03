@@ -94,3 +94,90 @@
 
 .mBtnDom {margin-top: 40px; text-align: right;}
 
+
+
+
+
+/*통합검색*/
+.esList {border-top: 4px solid #727476; margin: 0 30px;}
+.esList > li {border-bottom: 1px solid #e2e2e4; padding: 35px 20px;}
+.esList > li > .inner {}
+
+.esCont {}
+.esCont.c1 {}
+.esCont.c1 + .esCont.c2 {margin-top: 15px;}
+.esName { font-size: 28px; color: #4e4f51; word-break: keep-all; line-height: 32px; word-wrap: break-word;}
+.esName + .esCamDom {padding-top: 20px;}
+.esCamDom {font-size: 0;}
+.esCamDom + .esCert {padding-top: 16px;}
+
+.esCont.c2 {}
+.esTit {}
+.esTit > a {display: block; font-size: 32px; color: #292a2d; line-height: 1; vertical-align: middle; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+.esTit > a + .icoCam {margin-left: 20px;}
+.esHash {margin-top: 23px; font-size: 0;}
+
+.esHash > .hashs { display: inline-block; margin: 0 10px 10px 0; font-size: 20px; min-width:40px; line-height:36px; padding:0 4px; border:2px solid #d3d3d3; border-radius:4px; text-align:center; box-sizing:border-box; }
+.esHash > .hashs + .iconTip {margin-left: 10px;}
+.esHash + .esInfo {margin-top: 10px;}
+.esTit + .esInfo {margin-top: 20px;}
+.esInfo {font-size: 0;}
+.esInfo + .esInfo {margin-top: 20px;}
+.esInfoCont {font-size: 0;}
+.esInfoCont + .esInfoCont {margin-top: 16px;}
+.esInfoCont > .tit {position: relative; display: inline-block; vertical-align: top; width: 120px; font-size: 28px; color: #727476; line-height: 32px;}
+.esInfoCont > .tit.long {width: 152px;}
+.esInfoCont > .esIn {position: relative; display: inline-block; width: calc(100% - 120px); vertical-align: top; padding-left: 20px; font-size: 28px; color: #727476; line-height: 32px;}
+.esInfoCont > .esIn:before {content: ''; position: absolute; top: 6px; left: 0; height: 24px; border-right: 2px solid #e2e2e4;}
+.esInfoCont > .tit.long + .esIn {width: calc(100% - 152px);}
+.esInfoCont > .esIn.sGuage {height: 20px; font-size: 0;}
+.esInfoCont > .esIn.cGuage {position: relative; display: block; width: 100%; height: 32px; margin-top: 22px; padding-left: 0; font-size: 0;}
+.esInfoCont > .esIn.cGuage:before {content: none;}
+
+.esTit + .esSubTxt {margin-top: 27px;}
+.esSubTxt {font-size: 0;}
+.esSubTxt > .tit,
+.esSubTxt > .esIn {display: inline-block; vertical-align: top;}
+.esSubTxt > .tit {position: relative; display: inline-block; vertical-align: top; width: 120px; font-size: 28px; color: #727476; line-height: 32px;}
+.esSubTxt > .esIn {position: relative; display: inline-block; width: calc(100% - 120px); vertical-align: top; padding-left: 20px; font-size: 28px; color: #727476; line-height: 32px;}
+.esSubTxt > .esIn:before {content: ''; position: absolute; top: 6px; left: 0; height: 24px; border-right: 2px solid #e2e2e4;}
+.esSubTxt + .esInfo {margin-top: 16px;}
+
+.esCont.c3 {padding-top: 35px; font-size: 0;}
+.esCnt {display: inline-block; vertical-align: middle; font-size: 30px; color: #292a2d; line-height: 1;}
+.esUnit {display: inline-block; vertical-align: middle; margin-left: 8px; font-size: 30px; color: #727476; line-height: 1;}
+.esCnt + .esUnit {}
+
+.esCngDom2 {display: inline-block; vertical-align: middle; font-size: 0;}
+.esCnt + .btnViewLink {margin-left: 38px; vertical-align: middle;}
+.esCngDom2 + .rndTxt {vertical-align: middle; margin-left: 25px;}
+
+.icoCam {display: inline-block; vertical-align: middle; width: 33px; height: 30px; background: url(../new_images/common/icoCertify.png) no-repeat;}
+.rndTxt {display: inline-block; min-width: 48px; padding: 0 10px; line-height: 38px; font-weight: 700; font-size: 18px; color: #fff; text-align: center; border-radius: 25px;}
+.rndTxt.ty1 {background: #f68b2e;}
+.rndTxt.ty2 {background: #4870cf;}
+
+.acaLv {font-size: 28px; color: #727476; line-height: 32px;}
+.acaLv > span + span:before {content: ' / ';}
+
+.starGuage {position: relative; display: inline-block; vertical-align: middle; width: 212px; height: 34px; background: url(../new_images/common/icoStarM.png) no-repeat;  }
+.starGuage > .per {position: absolute; top: 0; left: 0; height: 34px; overflow: hidden; text-indent: -9999px; background: url(../new_images/common/icoStarM.png) no-repeat left center; background-position: 0 -34px;}
+.esCngDom {position: relative; vertical-align: middle;}
+.colorGauge {position: relative; display: inline-block; vertical-align: middle; width: calc(100% - 66px); height: 32px; background: #d8dfeb; overflow: hidden;}
+.cgBar {position: absolute; top: 0; left: 0; height: 32px; padding-right:15px; text-align: right; font-size: 20px; color: #fff; border-radius:0 25px 25px 0; line-height: 32px;}
+.cgBar {
+    background: #7d9eec; /* Old browsers */
+    background: -moz-linear-gradient(left,  #7d9eec 0%, #4171df 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #7d9eec 0%,#4171df 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #7d9eec 0%,#4171df 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d9eec', endColorstr='#4171df',GradientType=1 ); /* IE6-9 */
+}
+.colorGauge + .iconTip {margin-left: 21px; vertical-align: middle;}
+
+.btnViewLink {display: inline-block; min-width: 220px; padding: 0 15px; text-align: center; font-weight: 300; font-size: 26px; color: #666; line-height: 44px; border: 2px solid #d3d3d3;}
+.btnViewLink:after {content: ''; position: relative; top: -3px; display: inline-block; vertical-align: middle; margin-left: 10px; width: 7px; height: 11px; background: url(../new_images/common/arrowGoLink02.png) no-repeat; background-size: 100% 100%;}
+
+.moDpNone {display: none !important;}
+
+
+

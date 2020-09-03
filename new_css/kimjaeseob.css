@@ -30,7 +30,6 @@
 
 .itemHash {display:inline-block; line-height:26px; padding:0 12px; margin-right:15px; border-radius:4px; color:#222; font-size:11px; background-color:#e3e7ee; font-weight:300;}
 .toolTipQ {display:inline-block; vertical-align:middle; width:20px; height:20px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover;}
-/*.iconTip {display:inline-block; width:45px; font-weight:500; font-size:20px; color:#fff; text-align:center; line-height:32px; background:#65646a;}*/
 
 .bgType1 {background:#f0f0f2 !important;}
 
@@ -134,6 +133,95 @@
 
 
 
+
+
+/*통합검색*/
+.esList {border-top: 2px solid #727476;}
+.esList > li {padding: 10px 0; border-bottom: 1px solid #e2e2e4;}
+.esList > li > .inner {display: table; width: 100%; table-layout: fixed;}
+
+.esCont {display: table-cell; vertical-align: middle; padding: 10px 0;}
+.esCont.c1 {width: 180px; text-align: center; padding: 10px 20px;}
+.esLoc {font-size: 14px; color: #4e4f51; line-height: 18px;}
+.esLoc + .esName {padding-top: 7px;}
+.esName { font-weight: 500; font-size: 20px; color: #4e4f51; word-break: keep-all; line-height: 22px; word-wrap: break-word;}
+.esName + .esCamDom {padding-top: 20px;}
+.esCamDom {font-size: 0;}
+.esCamDom + .esCert {padding-top: 16px;}
+
+
+
+.esCont.c2 {vertical-align: top; border-left: 1px dashed #e2e2e4; border-right: 1px dashed #e2e2e4; padding: 10px 50px 10px 40px;}
+.esTit {}
+.esTit > a {display: block; font-size: 20px; color: #292a2d; line-height: 30px; vertical-align: middle;}
+.esTit > a {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+.esTit > a.etc {display: inline-block; max-width: calc(100% - 53px);}
+.esTit > a + .icoCam {margin-left: 20px;}
+.esHash {margin-top: 17px; font-size: 0;}
+.esHash > .hashs {display: inline-block; margin: 0 15px 15px 0; padding: 0 15px; font-weight: 300; font-size: 11px; color: #222; line-height: 26px; border-radius: 4px; background: #e3e7ee; }
+.esHash + .esInfo {margin-top: 10px;}
+.esTit + .esInfo {margin-top: 20px;}
+.esInfo {font-size: 0;}
+.esInfo + .esInfo {margin-top: 15px;}
+.esInfoCont {display: inline-block; vertical-align: middle; font-size: 0;}
+.esInfoCont.esFix {width: 427px;}
+.esInfoCont.rp {float: right;}
+.esInfoCont > .tit:not(.etc) {display: inline-block; vertical-align: middle; width: 82px; font-weight: 300; font-size: 13px; color: #666; line-height: 21px; border: 1px solid #d3d3d3; border-radius: 25px; text-align: center;}
+.esInfoCont > .tit.etc {display: inline-block; vertical-align: middle; font-size: 14px; color: #666;}
+.esInfoCont > .tit.dotAdd:after {content: ' : '; margin-right: 3px;}
+.esInfoCont > .esIn:not(.etc) {display: inline-block; vertical-align: middle; margin-left: 15px; font-size: 14px; color: #666;}
+.esInfoCont > .esIn.etc {display: inline-block; vertical-align: middle; font-size: 14px; color: #666;}
+.esInfoCont > .esIn.sGuage {height: 20px; font-size: 0;}
+.esInfoCont > .esIn.cGuage {position: relative; height: 20px; margin-left: 20px; font-size: 0;}
+
+.esTit + .esSubTxt {margin-top: 7px;}
+.esSubTxt {padding-left: 7px; font-size: 14px; color: #292a2d;}
+.esSubTxt > .tit,
+.esSubTxt > .esIn {display: inline;}
+.esSubTxt > .esIn:before {content: '(';}
+.esSubTxt > .esIn:after {content: ')';}
+.esSubTxt + .esInfo {margin-top: 23px;}
+
+.esCont.c3 {width: 166px; text-align: center;}
+.esCnt {display: block; font-size: 18px; color: #292a2d; line-height: 1;}
+.esUnit {display: block; font-size: 18px; color: #292a2d; line-height: 1;}
+.esCnt + .esUnit {padding-top: 8px;}
+
+.rndTxt + .esCngDom2 {padding-top: 13px;}
+.esCnt + .btnViewLink {margin-top: 12px;}
+.esCngDom2 + .esBtns {margin-top: 11px;}
+.esBtns > button + button {margin-top: 5px;}
+
+.icoCam {display: inline-block; vertical-align: middle; width: 33px; height: 30px; background: url(../new_images/common/icoCertify.png) no-repeat;}
+.rndTxt {display: inline-block; min-width: 48px; padding: 0 10px; line-height: 23px; font-weight: 700; font-size: 11px; color: #fff; text-align: center; border-radius: 25px;}
+.rndTxt.ty1 {background: #f68b2e;}
+.rndTxt.ty2 {background: #4870cf;}
+
+.acaLv {font-size: 14px; color: #666;}
+.acaLv > span + span:before {content: ' | ';}
+
+.starGuage {position: relative; display: inline-block; vertical-align: middle; width: 122px; height: 20px; background: url(../new_images/common/imgStarBlink.png) no-repeat; }
+.starGuage > .per {position: absolute; top: 0; left: 0; height: 20px; background: url(../new_images/common/imgStar.png) no-repeat left center; overflow: hidden; text-indent: -9999px;}
+.esCngDom {position: relative; display: inline-block; vertical-align: middle;}
+.colorGauge {position: relative; display: inline-block; vertical-align: middle; width: 431px; height: 20px; background: #d8dfeb; overflow: hidden;}
+.cgBar {position: absolute; top: 0; left: 0; height: 20px; padding-right:10px; text-align: right; font-size: 14px; color: #fff; border-radius:0 25px 25px 0; line-height: 20px;}
+.cgBar {
+    background: #7d9eec; /* Old browsers */
+    background: -moz-linear-gradient(left,  #7d9eec 0%, #4171df 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #7d9eec 0%,#4171df 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #7d9eec 0%,#4171df 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d9eec', endColorstr='#4171df',GradientType=1 ); /* IE6-9 */
+}
+.colorGauge + .iconTip {margin-left: 6px; vertical-align: middle;}
+
+.btnViewLink {display: inline-block; min-width: 136px; padding-left: 0 10px; text-align: center; font-weight: 300; font-size: 12px; color: #666; line-height: 21px; border: 1px solid #d3d3d3;}
+.btnViewLink:after {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-left: 4px; width: 6px; height: 6px; background: url(../new_images/common/arrowGoLink02.png) no-repeat; background-size: 100% 100%;}
+.btnSave {min-width: 136px; font-size: 14px; color: #65646a; text-align: center; border: 1px solid #d8dfeb; line-height: 28px; background: #f8f8f8;}
+.btnSave:before {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-right: 9px; width: 19px; height: 17px; background: url(../new_images/common/iconMark01.png) no-repeat; background-size: 100% 100%;}
+.btnCompare {min-width: 136px; font-size: 14px; color: #65646a; text-align: center; border: 1px solid #d8dfeb; line-height: 28px; background: #f8f8f8;}
+.btnCompare:before {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-right: 9px; width: 19px; height: 15px; background: url(../new_images/common/iconMark02.png) no-repeat; background-size: 100% 100%;}
+
+.pcDpNone {display: none !important;}
 
 
 
