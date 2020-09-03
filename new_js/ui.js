@@ -38,7 +38,7 @@ $(function(){
 		},	
 		fn_datepicker:function(){
 			$(".dateSelect input").datepicker({
-				dateFormat: 'yy-mm-dd'
+				dateFormat: 'yymmdd'
 			});
 			$( ".dateSelect .ui-datepicker-trigger").prop('src','../new_images/common/inoCalendar.png')	
 		}
