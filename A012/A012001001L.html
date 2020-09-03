@@ -15,8 +15,13 @@
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
 	<link href="../new_css/reset.css" rel="stylesheet" />
-	<link href="../new_css/layout_m.css" rel="stylesheet" />
-	<link href="../new_css/contents_m.css" rel="stylesheet" />
+
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+
+	<!-- <link href="../new_css/layout_m.css" rel="stylesheet" />
+	<link href="../new_css/contents_m.css" rel="stylesheet" /> -->
+
 	<script src="../new_js/lib/jquery-2.1.1.js"></script>
 	<script src="../new_js/lib/swiper.min.js"></script>
 	<script src="../new_js/ui_m.js"></script>
@@ -381,8 +386,224 @@
 								<!--// Mobile 노출 -->
 							</div>
 
-							<div class="verPC">
-								<div class="detailListWrap ">
+<style>
+/* pc */
+.esList {border-top: 2px solid #727476;}
+.esList > li {padding: 10px 0; border-bottom: 1px solid #e2e2e4;}
+.esList > li > .inner {display: table; width: 100%; table-layout: fixed;}
+
+.esCont {display: table-cell; vertical-align: middle; padding: 10px 0;}
+.esCont.c1 {width: 180px; text-align: center; padding: 10px 20px;}
+.esLoc {font-size: 14px; color: #4e4f51; line-height: 18px;}
+.esLoc + .esName {padding-top: 7px;}
+.esName { font-weight: 500; font-size: 20px; color: #4e4f51; word-break: keep-all; line-height: 22px;}
+.esName + .esCamDom {padding-top: 20px;}
+.esCamDom {font-size: 0;}
+.esCamDom + .esCert {padding-top: 16px;}
+
+
+
+
+
+.esCont.c3 {width: 166px; text-align: center;}
+.elCnt {display: block; font-size: 18px; color: #292a2d; line-height: 1;}
+.rndTxt + .esCngDom2 {padding-top: 13px;}
+.elCnt + .btnViewLink {margin-top: 12px;}
+.esCngDom2 + .esBtns {margin-top: 11px;}
+.esBtns > button + button {margin-top: 5px;}
+
+
+.icoCam {display: inline-block; vertical-align: middle; width: 33px; height: 30px; background: url(../new_images/common/icoCertify.png) no-repeat;}
+.rndTxt {display: inline-block; min-width: 48px; padding-top: 0 10px; line-height: 23px; font-weight: 700; font-size: 11px; color: #fff; text-align: center; border-radius: 25px; background: #f68b2e;}
+.btnViewLink {display: inline-block; min-width: 136px; text-align: center; font-weight: 300; font-size: 12px; color: #666; line-height: 21px; border: 1px solid #d3d3d3;}
+.btnViewLink:after {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-left: 4px; width: 6px; height: 6px; background: url(../new_images/common/arrowGoLink02.png) no-repeat; background-size: 100% 100%;}
+.btnSave {min-width: 136px; font-size: 14px; color: #65646a; text-align: center; border: 1px solid #d8dfeb; line-height: 28px; background: #f8f8f8;}
+.btnSave:before {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-right: 9px; width: 19px; height: 17px; background: url(../new_images/common/iconMark01.png) no-repeat; background-size: 100% 100%;}
+.btnCompare {min-width: 136px; font-size: 14px; color: #65646a; text-align: center; border: 1px solid #d8dfeb; line-height: 28px; background: #f8f8f8;}
+.btnCompare:before {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-right: 9px; width: 19px; height: 15px; background: url(../new_images/common/iconMark02.png) no-repeat; background-size: 100% 100%;}
+
+
+
+/* mobile */
+@media (max-width: 767px){
+
+}
+</style>
+
+                            <ul class="esList">
+                                <li>
+                                    <div class="inner">
+                                        <div class="esCont c1">
+                                            <div class="esLoc">경기도 화성</div>
+                                            <div class="esName">(주)화성직업 전문학교</div>
+                                            <div class="esCamDom">
+                                                <span class="icoCam"></span>
+                                            </div>
+                                            <div class="esCert">
+                                                <img src="../new_images/common/icoProCerti3.png" alt="3년 인증">
+                                            </div>
+                                        </div>
+
+<style>
+.esCont.c2 {vertical-align: top; border-left: 1px dashed #e2e2e4; border-right: 1px dashed #e2e2e4; padding: 10px 50px 10px 40px;}
+.esTit {}
+.esTit > a {display: block; font-size: 20px; color: #292a2d; line-height: 1; vertical-align: middle;}
+.esTit > a {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+.esTit > a.etc {display: inline-block; max-width: calc(100% - 53px);}
+.esTit > a + .icoCam {margin-left: 20px;}
+.esHash {margin-top: 17px; font-size: 0;}
+.esHash > .hashs {display: inline-block; margin: 0 15px 15px 0; padding: 0 15px; font-weight: 300; font-size: 11px; color: #222; line-height: 26px; border-radius: 4px; background: #e3e7ee; }
+.esHash + .esInfo {margin-top: 10px;}
+.esInfo {font-size: 0;}
+.esInfo + .esInfo {margin-top: 15px;}
+.esInfoCont {display: inline-block; vertical-align: middle; font-size: 0;}
+.esInfoCont.rp {float: right;}
+.esInfoCont > .tit:not(.etc) {display: inline-block; vertical-align: middle; width: 82px; font-weight: 300; font-size: 13px; color: #666; line-height: 21px; border: 1px solid #d3d3d3; border-radius: 25px; text-align: center;}
+.esInfoCont > .tit.etc {display: inline-block; vertical-align: middle; font-size: 14px; color: #666;}
+.esInfoCont > .esIn:not(.etc) {display: inline-block; vertical-align: middle; margin-left: 15px; font-size: 14px; color: #666;}
+.esInfoCont > .esIn.etc {display: inline-block; vertical-align: middle; font-size: 14px; color: #666;}
+.esInfoCont > .esIn.sGuage {height: 20px; font-size: 0;}
+.esInfoCont > .esIn.cGuage {position: relative; height: 20px; margin-left: 20px; font-size: 0;}
+
+.starGuage {position: relative; display: inline-block; vertical-align: middle; width: 122px; height: 20px; background: url(../new_images/common/imgStarBlink.png) no-repeat; }
+.starGuage > .per {position: absolute; top: 0; left: 0; height: 20px; background: url(../new_images/common/imgStar.png) no-repeat left center; overflow: hidden; text-indent: -9999px;}
+
+
+
+
+
+.esCngDom {position: relative; display: inline-block; vertical-align: middle;}
+.colorGauge {position: relative; display: inline-block; vertical-align: middle; width: 431px; height: 20px; background: #d8dfeb; overflow: hidden;}
+.cgBar {position: absolute; top: 0; left: 0; text-align: right; font-size: 14px; color: #fff;}
+.cgBar {
+    background: #7d9eec; /* Old browsers */
+    background: -moz-linear-gradient(left,  #7d9eec 0%, #4171df 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #7d9eec 0%,#4171df 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #7d9eec 0%,#4171df 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d9eec', endColorstr='#4171df',GradientType=1 ); /* IE6-9 */
+}
+.colorGauge + .iconTip {margin-left: 6px; vertical-align: middle;}
+</style>
+
+
+                                        <div class="esCont c2">
+                                            <div class="esTit">
+                                                <a href="">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a>
+                                            </div>
+                                            <div class="esHash">
+                                                <span class="hashs">#국민내일배움카드(구직자)</span>
+                                                <span class="hashs">#근로자 직무능력향상지원금</span>
+                                            </div>
+                                            <div class="esInfo">
+                                                <div class="esInfoCont">
+                                                    <div class="tit">훈련기간</div>
+                                                    <div class="esIn">2020-06-17 ~ 2020-12-14 (9회차)</div>
+                                                </div>
+                                                <div class="esInfoCont rp">
+                                                    <div class="tit etc">일자리 정보 : </div>
+                                                    <div class="esIn etc">1999개</div>
+                                                </div>
+                                            </div>
+                                            <div class="esInfo">
+                                                <div class="esInfoCont">
+                                                    <div class="tit">과정만족도</div>
+                                                    <div class="esIn sGuage">
+                                                        <div class="starGuage">
+                                                            <span class="per" style="width: 88.5%;">88.5%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="esIn cGuage">
+                                                        <div class="esCngDom">
+                                                            <div class="colorGauge">
+                                                                <span class="cgBar">88.5%</span>
+                                                            </div>
+                                                            <span class="iconTip">TIP</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="esCont c3">
+                                            <span class="rndTxt ty1">모집중</span>
+                                            <div class="esCngDom2">
+                                                <span class="elCnt">1,900,000원</span>
+                                                <a href="" class="btnViewLink">자비부담액보기</a>
+                                            </div>
+                                            <div class="esBtns">
+                                                <button type="button" class="btnSave">담아두기</button>
+                                                <button type="button" class="btnCompare">비교하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="esCont c1">
+                                            <div class="esLoc">경기도 화성</div>
+                                            <div class="esName">(주)화성직업 전문학교</div>
+                                            <div class="esCamDom">
+                                                <span class="icoCam"></span>
+                                            </div>
+                                            <div class="esCert">
+                                                <img src="../new_images/common/icoProCerti5.png" alt="5년 인증">
+                                            </div>
+                                        </div>
+                                        <div class="esCont c2">
+                                            <div class="esTit">
+                                                <a href="" class="etc">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a><span class="icoCam"></span>
+                                            </div>
+                                            <div class="esHash">
+                                                <span class="hashs">#국민내일배움카드(구직자)</span>
+                                                <span class="hashs">#근로자 직무능력향상지원금</span>
+                                            </div>
+                                            <div class="esInfo">
+                                                <div class="esInfoCont">
+                                                    <div class="tit">훈련기간</div>
+                                                    <div class="esIn">2020-06-17 ~ 2020-12-14 (9회차)</div>
+                                                </div>
+                                                <div class="esInfoCont rp">
+                                                    <div class="tit etc">일자리 정보 : </div>
+                                                    <div class="esIn etc">1999개</div>
+                                                </div>
+                                            </div>
+                                            <div class="esInfo">
+                                                <div class="esInfoCont">
+                                                    <div class="tit">과정만족도</div>
+                                                    <div class="esIn">
+                                                        <div class="starGuage" date-starGuage="88.5%">
+                                                            <span class="per">88.5%</span>
+                                                        </div>
+                                                        <div class="esCngDom">
+                                                            <div class="colorGauge" date-colorGauge="88.5%">
+                                                                <span class="cgBar">88.5%</span>
+                                                            </div>
+                                                            <span class="iconTip">TIP</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="esCont c3">
+                                            <span class="rndTxt ty1">모집중</span>
+                                            <div class="esCngDom2">
+                                                <span class="elCnt">1,900,000원</span>
+                                                <a href="" class="btnViewLink">자비부담액보기</a>
+                                            </div>
+                                            <div class="esBtns">
+                                                <button type="button" class="btnSave">담아두기</button>
+                                                <button type="button" class="btnCompare">비교하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+
+
+
+							<div class="verPC" style="display: none;">
+								<div class="detailListWrap">
 									<ul class="detailList">
 										<li>
 											<div class="title">
@@ -512,7 +733,7 @@
 								</div>
 							</div>
 
-							<div class="verM">
+							<div class="verM" style="display: none;">
 								<div class="detailListWrap">
 									<ul class="detailList">
 										<li>

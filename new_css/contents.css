@@ -13,7 +13,7 @@
 #subTopWrap.topVisu04 { background: url('../new_images/common/topVisual04.jpg') 50% 0 no-repeat; }
 #subTopWrap.topVisu12 { background: url('../new_images/common/topVisual12.jpg') 50% 0 no-repeat; }
 
-.iconTip { display:inline-block; width:24px; text-align:center; font-weight:500; font-size:11px; color:#fff; text-align:center; line-height:17px; background:#65646a;}
+.iconTip { display:inline-block; width:24px; font-weight:500; font-size:11px; color:#fff; text-align:center; line-height:17px; background:#65646a; }
 
 .toolTip { margin:-10px 0 0 10px; display:inline-block; vertical-align:middle; position:relative; }
 .toolTipBtn { margin:12px 0 0 0; font-size:0; line-height:0; width:20px; height:20px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover; }
