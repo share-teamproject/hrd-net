@@ -27,6 +27,7 @@
 .tableArea .selectW692, .selectW692 { min-width:692px; width:692px; }
 .tableArea .btnW60 { min-width:60px; width:60px; padding:0; }
 .w120 { min-width:130px; width:130px; }
+.h220 { min-height:220px; height:220px; }
 .moreBtn { display:none; }
 
 /* ==============================
@@ -80,7 +81,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 * ============================== */
 .brd-b-ty1 {border-bottom:1px solid #e2e2e4 !important;}
 .under { border-bottom:1px solid #4171df !important; padding-bottom:2px}
-
+.color03Link:hover { text-decoration: none; color:#4171df; border: #4171df solid; border-width: 0 0 1px 0; }
 
 
 
@@ -104,6 +105,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 /* 검색박스 */
 #subContentWrap .subContArea .searchBox.ty2 {margin-bottom:50px; padding:22px 0 20px 55px;}
 #subContentWrap .subContArea .searchBox > fieldset > dl > dd .searchSelect03 { width:200px }
+#subContentWrap .subContArea .searchBox > fieldset > dl > dd .selectBox { margin-right:10px; }
 #subContentWrap .subContArea .searchBox.ty2 .btnArea button { width:80px; padding:0; }
 #subContentWrap .subContArea .searchBox.ty2 .btnArea button:last-child {border-left:1px #4171df solid;}
 #subContentWrap .subContArea .searchBox.ty2 .btnGroup { margin-top:10px; }
@@ -243,6 +245,9 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .bigTitle02List {overflow:hidden;}
 .bigTitle02List dt {float:left;}
 .bigTitle02List dd {float:right; font-size:14px; color:#727476; }
+.bigTitle02List.ty2 { margin-top:20px; }
+.bigTitle02List.ty3 { margin-top:50px; }
+.smallTxtArea { font-size:14px; color:#727476;  }
 .bigTitle02 {font-weight:500; font-size:22px; color:#292a2d; height:45px; }
 .bigTitle02.ty2 { margin-top:5px; }
 .bigTitle02.ty3 { margin-bottom:-15px; }
@@ -258,6 +263,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .bigTitle05.ty2 { margin-top:-10px; }
 
 .bigTitle06 { position:relative; font-size:22px; color:#292a2d; font-weight:500; padding-bottom:20px; margin-top:50px; }
+.bigTitle06.ty3 { margin-bottom:-35px; }
 .bigTitle06 .txtPC { font-size:13px; color:#727476; font-weight:400; padding-left:15px; }
 .bigTitle06 .txt01 { color:#727476; }
 .bigTitle06 .txt02 { display:block; font-size:14px; color:#727476; font-weight:300; padding-top:2px; }
@@ -293,7 +299,8 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tableArea.tableArea01 .list th { padding:20px 14px; border-bottom:1px #e2e2e4 solid; }
 .tableArea.tableArea01 .list td { padding:20px 5px; }
 .tableArea.tableArea01 .list .none2 { text-align:left; line-height:24px; padding:15px 0 15px 20px; }
-
+.fileAddEle.ty2 { padding:0; margin:0; }
+ 
 .myInterestArea { margin-top:15px; }
 .myInterestArea .tabListArea { margin-bottom:60px; }
 .myInterestArea .tabContents .tabCont { margin-bottom:50px; }
@@ -320,10 +327,26 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl > dd { float:left; font-size:14px; color:#666; line-height:23px; padding-left:15px; }
 .divtableArea01 .divtableListSet .divtableList > li .none { font-size:14px; color:#727476; text-align:center; padding:20px; }
 
-/* MY관심 - 나의 관심정보 */
-.tableArea05 { border-top:2px #727476 solid; padding:18px; }
-.tableArea05 .titleText { font-size:22px; color:#292a2d; }
-.tableArea05 .btnSty {font-size:11px; color:#222; padding:4px 15px; margin-top:-5px; background:#e3e7ee; border-radius:5px; }
+/* MY관심 - 나의 관심정보 2020-09-03 */
+.tableArea05 { border-top:2px #727476 solid; }
+.tableArea05 .titleBox { position:relative; }
+.tableArea05 > ul > li {border-bottom:1px #e2e2e4 solid; padding:20px 20px 30px 15px; }
+.tableArea05 > ul > li.none { font-size:14px; color:#727476; text-align:center; padding:60px 20px; }
+.tableArea05 .titleList02 { overflow:hidden; padding-bottom:10px; }
+.tableArea05 .titleList02 > li { float:left; }
+.tableArea05 .titleList02 > li .titleText { font-size:22px; color:#292a2d; padding:0 20px; }
+.tableArea05 .titleList02 > li .titleText a:hover { text-decoration: none; color:#4171df; border: #4171df solid; border-width: 0 0 1px 0; }
+.tableArea05 .titleList02 > li .ui_checkBox { margin-top:5px; }
+.tableArea05 .titleList02 .btnSty {display:block; font-size:11px; color:#222; padding:4px 15px; margin-top:5px; background:#e3e7ee; border-radius:5px; }
+.tableArea05 .titleList02 .btnStyM {display:none; }
+.tableArea05 .titleList .txt01 { font-size:14px; color:#292a2d; padding:15px 0 0 15px;}
+.tableArea05 .titleList .txt02 { font-size:14px; color:#666; padding:5px 0 0 15px; }
+.tableArea05 .titleList .txt02 > dl {overflow:hidden;}
+.tableArea05 .titleList .txt02 > dl > dt { float:left; padding-right:5px;}
+.tableArea05 .titleList .txt02 > dl > dt:after {content:':'; font-size:14px; color:#727476; padding-left:5px; }
+.tableArea05 .titleList .txt03Box { position:absolute; top:5px; right:0; }
+.tableArea05 .titleList .txt03Box .goLinkLong { width:120px; }
+
 
 /* MY카드 */
 .myCardArea {}
@@ -395,6 +418,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 
 .InputType { display:table; width:100%; }
 .InputType > .ele { display:table-cell; width:170px; vertical-align:top; height:43px; padding-right:15px; }
+.InputType > .ele.ty2 { width:480px;}
 .InputType > .ele input[type="text"],
 .InputType > .ele .selectBox {width:100%;}
 
@@ -418,11 +442,13 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tblInfoTxt04 { border-top:1px #e2e2e4 solid; }
 
 .tblInfoTxt02 .tit { font-size:14px; color:#727476; padding-bottom:5px; }
+.tblInfoTxt02 .tit02 { font-size:14px; color:#292a2d; padding-bottom:5px; margin-top:-40px; }
 .tblInfoTxt02 .goLinkLong { position:absolute; top:35%; right:20px; background:#fff; }
 
 .tblInfoTxt02.ty2 { margin-top:-20px; }
 
-.tblInfoTxt05 { border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat 45px 50%; padding:35px 20px 35px 120px; margin-top:30px; }
+.tblInfoTxt05 { position:relative; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat 45px 50%; padding:35px 20px 35px 120px; margin-top:30px; }
+.tblInfoTxt05 .goBtnDiv { position:absolute; top:35px; right:30px; }
 .tblInfoTxt05 > ul { display:inline-block; vertical-align:middle;}
 .tblInfoTxt05 > ul > li { position:relative; font-size:14px; color:#767676; line-height:24px; padding-left:10px; }
 .tblInfoTxt05 > ul > li:before { content:'-'; position:absolute; top:0; left:0; color:#929495; }
@@ -435,10 +461,23 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tblInfoTxt05.ty3 .innerTxtList { padding-top:20px; border-top:1px #e1e4e9 solid; width:829px; margin:30px 0 0 -75px;}
 .tblInfoTxt05.ty3 .innerTxtList > li { position:relative; font-size:14px; color:#767676; line-height:24px; padding-left:15px; }
 .tblInfoTxt05.ty3 .innerTxtList > li:before { content:''; position:absolute; top:10px; left:0; background:#727476; width:4px; height:4px; border-radius:50%; }
+.tblInfoTxt05.ty3 .innerTxtList.ty2 > li {padding:5px 0 5px 15px; }
+.tblInfoTxt05.ty3 .innerTxtList.ty2 > li:before { top:15px;}
 
 .tblInfoTxt06 { background-color:#f7f7f7; padding:25px 105px; margin-top:30px; margin-bottom:60px; }
 .tblInfoTxt06 > ul > li { position:relative; font-size:16px; color:#4e4f51;  padding-left:20px; }
 .tblInfoTxt06 > ul > li:before { content:'※'; position:absolute; top:0; left:0; color:#929495; }
+
+.tblInfoTxt07 { position:relative; padding:20px 30px; border:3px solid #e7e9f0; margin:60px 0; }
+.tblInfoTxt07 .innerTxtList { }
+.tblInfoTxt07 .innerTxtList > li { position:relative; font-size:14px; color:#767676; line-height:24px; padding-left:15px; }
+.tblInfoTxt07 .innerTxtList > li:before { content:''; position:absolute; top:10px; left:0; background:#727476; width:4px; height:4px; border-radius:50%; }
+.tblInfoTxt07 .innerTxtList02 { padding-top:10px; }
+.tblInfoTxt07 .innerTxtList02 > dt { font-size:14px; color:#4e4f51; padding-left:18px;}
+.tblInfoTxt07 .innerTxtList02 > dd { font-size:14px; color:#767676; padding-left:30px;}
+.tblInfoTxt07 > .goBtnDiv { position:absolute; top:25px; right:30px; }
+
+
 
 .txtBlack { color:#292a2d; }
 
@@ -491,7 +530,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .mapBtnList li { float:left; padding-right:40px; }
 .mapBtn { font-size:0; line-height:0; width:25px; height:25px; background:url('../new_images/common/icoMap.png') no-repeat 0 0; margin-left:20px; } 
 
-/* MY카드- 훈련과정 탐색 */
+/* 훈련과정 탐색, NCS확인 강사신청 */
 .tableArea03 { border-top:2px #727476 solid; }
 .tableArea03.ty2 { margin-top:20px; }
 .tableArea03 > ul > li { border-bottom:1px #e2e2e4 solid; }
@@ -597,6 +636,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .txtList04 > li > dl > dt { width:100px; }
 .txtList04 > li > dl > dt > span { display:inline-block; text-align:center; min-width:90px; height:24px; line-height:22px; border:1px #d3d3d3 solid; padding:0 10px; border-radius:10px; }
 .txtList04 > li > dl > dd { text-align:left; }
+.txtList04 > li > dl > dd .titleBtn { margin-left:10px;}
 
 /* MY카드- 카드현황 */
 .cardStatusBox { border:1px #e2e2e4 solid; padding:25px 0; margin-bottom:50px; }
@@ -643,16 +683,62 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tableArea.ty3 .list .none2 { text-align:left; line-height:24px; padding:15px 0 15px 20px; }
 
 .innerTableArea03 { border:1px #e2e2e4 solid; border-top:0; padding:30px 130px 30px 40px; }
-.txtList05 > dt { font-size:22px; color:#292a2d; margin-left:-10px; padding:30px 0 10px 0; }
-.txtList05 > dd { font-size:14px; color:#727476; line-height:24px; text-indent:-10px; padding-top:10px; }
-.txtList05 .none { display:none; }
+.innerTableArea03 .txtList05 > dt { font-size:22px; color:#292a2d; margin-left:-10px; padding:30px 0 10px 0; }
+.innerTableArea03 .txtList05 > dd { font-size:14px; color:#727476; line-height:24px; text-indent:-10px; padding-top:10px; }
+.innerTableArea03 .txtList05 .none { display:none; }
 
+.innerTableArea03 .txtList06 > dt { position:relative; font-size:14px; width:835px; color:#292a2d; margin-left:-10px; padding:30px 0 10px 0; }
+.innerTableArea03 .txtList06 > dt .ui_checkBox { position:absolute; bottom:5px; right:0; }
+.innerTableArea03 .txtList06 > dd { font-size:14px; color:#727476; line-height:24px; padding-top:5px; }
+.innerTableArea03 .tit01 { font-size:22px; color:#292a2d; text-align:center; padding-top:10px; }
+.innerTableArea03 .txt01 { font-size:14px; color:#727476; text-align:center; padding:20px 0; }
+.innerTableArea03 .tit02 { font-size:22px; color:#292a2d; margin-left:-10px; padding-top:30px; }
+.innerTableArea03 .txt02 { font-size:14px; color:#727476; }
+.innerTableArea03 .txtList06 .none { display:none; }
 
-.partChk02 { font-size:14px; color:#4e4f51; text-align:right; background:#f7f7f7; padding:30px 20px; border-bottom:1px #e2e2e4 solid; }
-.signTxtLine { font-size:16px; color:#4e4f51; text-align:right;  background:#f7f7f7; padding:30px 20px; }
+.innerTableArea03 .innerTxtList { margin-right:-130px; }
+.innerTableArea03 .innerTxtList > li { position:relative; font-size:14px; color:#767676; line-height:24px; padding:5px 15px; }
+.innerTableArea03 .innerTxtList > li:before { content:''; position:absolute; top:15px; left:0; background:#727476; width:4px; height:4px; border-radius:50%; }
+
+.partChk02 { position:relative; font-size:14px; color:#4e4f51; text-align:right; background:#f7f7f7; padding:30px 20px; }
+.partChk02 .btnCloseagree { position:absolute; top:-1px; left:50%; margin-left:-45px; }
+.partChk03 { position:relative; font-size:14px; color:#4e4f51; text-align:right; padding:10px 20px; }
+.partChk03 .btnCloseagree { position:absolute; top:-1px; left:50%; margin-left:-45px; }
+.btnClose {display:inline-block; height:26px; line-height:24px; padding:0 20px; text-align:left; border:1px solid #cdcdd1; background:#fff; font-size:12px; color:#4e4f51; }
+.btnClose:after {content:''; display:inline-block; vertical-align:middle; width:12px; height:6px; margin-left:5px; margin-top:-3px; background:#fff url('../new_images/common/arrowClose.png') no-repeat; }
+.signTxtLine { font-size:16px; color:#4e4f51; text-align:right;  background:#f7f7f7; padding:30px 20px; border-top:1px #e2e2e4 solid; }
 .signTxtLine .sign1 { color:#292a2d; border-left:1px #e3e7ee solid; padding-left:20px; margin-left:20px; }
+.signTxtLine .date1 { color:#292a2d; }
+.signTxtLine > span { padding-left:20px; }
+
+.ui_radioBox.single {width:26px; height:26px; padding-left:26px;}
+.ui_radioBox.single label { font-size:0; }
 
 
+/* 레이어팝업 */
+.wP960 { width:960px; margin-left:-480px; padding-bottom:30px; }
+.windowPop .txtBoxType4 {padding:30px; background:#fff;}
+
+.windowPop .searchBox { width:900px; padding:22px 40px 20px 40px; border:3px solid #d8dfeb; }
+.windowPop .searchBox > fieldset > legend { font-size:0; line-height: 0; }
+.windowPop .searchBox > fieldset > dl { width:100%; display:flex; flex-wrap:wrap;  }
+.windowPop .searchBox > fieldset > dl > dt { width:120px; margin-bottom:8px; }
+.windowPop .searchBox > fieldset > dl > dt > label { color:#4e4f51; font-size:18px; line-height:40px; }
+.windowPop .searchBox > fieldset > dl > dd { margin-bottom:8px; }
+.windowPop .searchBox > fieldset > dl > dd:last-child { margin-bottom:0; }
+.windowPop .searchBox > fieldset > dl > dd .ui_radioBox { margin:8px 0 }
+.windowPop .searchBox > fieldset > dl > dd .searchSelect01 { width:435px;  }
+.windowPop .searchBox > fieldset > dl > dd .searchSelect02 { width:210px }
+.windowPop .searchBox > fieldset > dl > dd .searchSelect02 + label { font-size:0; line-height:0; }
+.windowPop .searchBox > fieldset > dl > dd .searchSelect02 + label + input { width:210px; margin:0 12px 0 8px; }
+.windowPop .searchBox > fieldset > dl > dd input.searchText { width:435px; margin:0 12px 0 12px; }
+
+.windowPop .sortArea { display: flex; justify-content: space-between; padding: 8px 0; margin-top:20px; }
+.windowPop .sortArea .totalNum { font-size:16px; line-height:30px; color:#727476; }
+.windowPop .sortArea .totalNum strong { color:#f58220; }
+.windowPop .sortArea .selectViewArea .selectView { display:inline-block; }
+.windowPop .sortArea .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
+.windowPop .sortArea .selectViewArea select { width:120px; }
 
 
 

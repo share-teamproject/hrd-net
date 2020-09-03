@@ -302,7 +302,7 @@
                         <li class="verPC"><a href="/">MY 서비스</a></li>
                         <li><a href="/">강사신청</a></li>
 						<li><a href="/">훈련교사관리</a></li>
-                        <li class="on"><a href="/">훈련교사 자격교육조회</a></li>
+                        <li class="on"><a href="/">NCS확인 강사신청</a></li>
                     </ul>
                 </div>
             </div>
@@ -423,15 +423,15 @@
                         </li>
                         <li><a href="javascript:void(0);" class="on">강사신청</a>
                             <ul class="dep02">
-                                <li><a href="/" class="noSub">NCS확인 강사신청</a></li>
+                                <li><a href="/" class="noSub on">NCS확인 강사신청</a></li>
                                 <li><a href="javascript:void(0);">훈련교사관리</a> 
-                                    <ul class="dep03 on">
+                                    <ul class="dep03">
                                         <li><a href="/">훈련교사 이력관리</a></li>
                                         <li><a href="/">훈련교사 자격증발급신청</a></li>
                                         <li><a href="/">훈련교사 경력증명원신청</a></li>
                                         <li><a href="/">훈련교사 자격교육안내</a></li>
                                         <li><a href="/">훈련교사 자격교육일정</a></li>
-                                        <li><a href="/" class="on">훈련교사 자격교육조회</a></li>
+                                        <li><a href="/">훈련교사 자격교육조회</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/" class="noSub">강사뱅크신청</a></li>
@@ -453,7 +453,7 @@
 
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle ty2 verPC">훈련교사관리 <span class="depth4">훈련교사 자격교육조회</span></h3>
+                        <h3 class="headingTitle ty2 verPC">NCS확인 강사신청</h3>
                         <!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
                         <div class="headingIcon">
                             <ul>
@@ -469,106 +469,180 @@
                         <!-- 강사신청 컨텐츠 -->
                         <div class="InstructorApplication">
 
-							<div class="tblInfoTxt05 ty3">
-								<ul>
-									<li>자격교육 신청 및 선발 관련 안내는 능력개발교육원 홈페이지 공지사항을 확인해주시기 바랍니다.</li>
-									<li>자격교육와 관련된 모든 문의는 ‘한국기술교육대학교 능력개발교육원’으로 문의하셔야 합니다.</li>
-									<li>능력개발교육원 자격교육 대표전화번호는 041-521-8090 입니다.</li>
+							<div class="tblInfoTxt05">
+								<ul class="innerTxtList">
+									<li> NCS확인강사를 신청하시기 전 [신청 매뉴얼]을 반드시 확인하시기 바랍니다.</li>
+									<li><span class="color04">교강사 배점 관련 문의 :</span>직업능력심사평가원 집체훈련심사센터 1644-5113(내선 2번)</li>
 								</ul>
-								<div class="goBtnDiv"><button type="button" class="goLinkLong02">공지사항</button></div>
-							</div>		
-
-							<div class="sortArea">
-								<p class="totalNum">전체 <strong>1</strong> 건</p>
-								<div class="selectViewArea">
-									<div class="selectView">
-										<label for="pageRow">페이지당 조회건수</label>
-										<select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
-											<option value="10" selected="selected">10개씩</option>
-											<option value="20">20개씩</option>
-											<option value="30">30개씩</option>
-											<option value="50">50개씩</option>
-											<option value="100">100개씩</option>
-										</select>
-									</div> 
+								<div class="goBtnDiv">
+									<button type="button" class="lookupBtn">신청메뉴얼</button>
+									<button type="button" class="goLinkLong02">직종별 인정 자격</button>
 								</div>
-							</div>	
+							</div>
 
-							<!-- 테이블 -->
-							<div class="tableArea">
-								<table class="list">
-									<caption></caption>
-									<colgroup>
-										<col style="width: auto;">
-										<col style="width: auto;">
-										<col style="width: auto;">
-										<col style="width: auto;">
-										<col style="width: auto;">
-										<col style="width: auto;">
-									</colgroup>
-									<thead>
-										<tr>									
-											<th rowspan="2">연번</th>
-											<th rowspan="2">신청년도</th>
-											<th>교육연도</th>
-											<th>신청일</th>
-											<th>선발여부</th>
-											<th class="last">수려증출력</th>
-										</tr>
-										<tr>
-										  <th class="brd-t-ty1">과정차수</th>
-										  <th class="brd-t-ty1">상태</th>
-										  <th class="brd-t-ty1">수료여부</th>
-										  <th class="brd-t-ty1 last">자격증신청</th>
-						              </tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td rowspan="2">1</td>
-											<td rowspan="2"><a href="/" class="color03Link">교직훈련</a></td>
-											<td>2019년</td>
-											<td>2019-08-21</td>
-											<td>-</td>
-											<td class="last">-</td>
-										</tr>
-										<tr>
-										  <td>주중 7차</td>
-										  <td>작성중</td>
-										  <td>-</td>
-										  <td class="last">-</td>
-						              </tr>
-									  <tr>
-											<td rowspan="2">1</td>
-											<td rowspan="2">교직훈련</td>
-											<td>2019년</td>
-											<td>2019-08-21</td>
-											<td>-</td>
-											<td class="last">-</td>
-										</tr>
-										<tr>
-										  <td>주중 7차</td>
-										  <td>작성중</td>
-										  <td>-</td>
-										  <td class="last">-</td>
-						              </tr>
-									</tbody>
-								</table>   
+							
+							<dl class="bigTitle02List ty3">
+								<dt><div class="bigTitle02">기본강사정보  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dd>
+								</dd>
+							</dl>
+							<div class="TrainingHistoryBox ty3">
+								<ul>
+									<li>
+										<dl>
+											<dt>생년월일</dt>
+											<dd>1965.11.11</dd>
+										</dl>
+									</li>
+									<li class="borL">
+										<dl>
+											<dt>성명(강사명)</dt>
+											<dd>강사명</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>연락처</dt>
+											<dd>- -</dd>
+										</dl>
+									</li>
+									<li class="borL">
+										<dl>
+											<dt>이메일</dt>
+											<dd>이메일@</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
 
-								<!-- paging : pc -->
-								<div class="pagenation">
-									<a href="/" class="pb prev">이전보기</a>
-									<a href="/" class="on">1</a>
-									<a href="/">2</a>
-									<a href="/">3</a>
-									<a href="/">4</a>
-									<a href="/">5</a>
-									<a href="/">6</a>
-									<a href="/">7</a>
-									<a href="/" class="pb next">다음보기</a>
-								</div> 
-								<!-- //paging : pc -->
-							</div>   
-							<!-- // 테이블 -->
+							<dl class="bigTitle02List ty3">
+								<dt><div class="bigTitle02">NCS직종 승인목록  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dd>
+									<span><button type="button" class="lookupBtn">NCS 직종 추가</button></span>
+									<span><button type="button" class="delBtn">훈련기관등록</button></span>
+								</dd>								
+							</dl>
+							<div class="smallTxtArea">※ 기승인된 NCS직종에 대해 변경신청시 점수가 조정(상향, 하향)또는 유지될 수 있으니, 관련 경력 및 배점기준을 확인하시고 신청하여주시기 바랍니다.</div>
+							<div class="tableArea03 ty2">
+									<ul>
+										<li>
+											<div class="titleSection">
+												<div class="titleBox">
+													<p class="titleText">(000000) 4차산업 활용강사</p>
+													<ul class="txtList04">
+														<li>
+															<dl>
+																<dt><span>최종점수</span></dt>
+																<dd>0000</dd>
+															</dl>
+														</li>
+														<li>
+															<dl>
+																<dt><span>상태</span></dt>
+																<dd>신청완료 <span class="titleBtn"><button type="button" class="lookupBtn">회수</button></span></dd>
+															</dl>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="contentsSection ty2">
+												<div class="TrainingHistoryBox ty2">
+													<ul>
+														<li class="clearW100">
+															<dl>
+																<dt>구분</dt>
+																<dd>최초신청</dd>
+															</dl>
+														</li>
+														<li class="clearW100">
+															<dl>
+																<dt>최초승인날짜</dt>
+																<dd>2020.08.10</dd>
+															</dl>
+														</li>
+														<li class="clearW100">
+															<dl>
+																<dt>최종승인날짜</dt>
+																<dd>2020.09.10</dd>
+															</dl>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<!-- paging : pc -->
+									<div class="pagenation verPC">
+										<a href="/" class="pb prev">이전보기</a>
+										<a href="/" class="on">1</a>
+										<a href="/">2</a>
+										<a href="/">3</a>
+										<a href="/">4</a>
+										<a href="/">5</a>
+										<a href="/">6</a>
+										<a href="/">7</a>
+										<a href="/" class="pb next">다음보기</a>
+									</div> 
+									<!-- //paging : pc -->
+								</div>
+
+								<dl class="bigTitle02List ty3">
+								<dt><div class="bigTitle02">NCS 직종 처리이력  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dd>
+								</dd>								
+							</dl>
+							<div class="smallTxtArea">※ 기승인된 NCS직종에 대해 변경신청시 점수가 조정(상향, 하향)또는 유지될 수 있으니, 관련 경력 및 배점기준을 확인하시고 신청하여주시기 바랍니다.</div>
+							<div class="tableArea03 ty2">
+									<ul>
+										<li>
+											<div class="titleSection">
+												<div class="titleBox">
+													<p class="titleText">(000000) 4차산업 활용강사</p>
+													<ul class="txtList04">
+														<li>
+															<dl>
+																<dt><span>상태</span></dt>
+																<dd>작성중 <span class="titleBtn"><button type="button" class="lookupBtn">신청</button></span></dd>
+															</dl>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="contentsSection ty2">
+												<div class="TrainingHistoryBox ty2">
+													<ul>
+														<li class="clearW100">
+															<dl>
+																<dt>구분</dt>
+																<dd>최초신청</dd>
+															</dl>
+														</li>
+														<li class="clearW100">
+															<dl>
+																<dt>최초승인날짜</dt>
+																<dd>2020.08.10</dd>
+															</dl>
+														</li>
+														<li class="clearW100">
+															<dl>
+																<dt>최종승인날짜</dt>
+																<dd>2020.09.10</dd>
+															</dl>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tblInfoTxt02">
+									<ul>
+                                        <li>작성중 : [신청]을 클릭 – 호출된 화면에 직종과 관련된 정보 입력 – 화면 하단 [신청] 클릭</li>
+                                        <li>반려<br />
+										- (반려/불승인 사유 확인) [반려] 상태인 ‘NCS 분류’ [직종명] 선택 – 반려/불승인 사유 확인 가능<br />
+										- (반려/불승인 확인 후 재신청) ‘상태’항목 [재신청] 클릭 – 반려/불승인 사유에 대한 보완(반영) 재신청 가능</li>
+									</ul>
+								</div>
 
                         </div>
                         <!-- // 강사신청 컨텐츠 -->

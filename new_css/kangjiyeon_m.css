@@ -60,7 +60,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 #subContentWrap .subContArea .sortArea .selectViewArea .selectView { display:inline-block; }
 #subContentWrap .subContArea .sortArea .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
 
-#subContentWrap .subContArea .sortArea.ty2 {display:none;}
+#subContentWrap .subContArea .sortArea {display:none;}
 
 
 #subContentWrap .subContArea .searchBox.ty2 { border-top :6px #e1e4e9 solid; margin-top:20px; }
@@ -531,6 +531,21 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .detailList .graph.ty2 { margin-top:25px; }
 .detailList .graph .all.ty2 { width:100%;}
 .detailList .util .self2 { display:block; height:40px; line-height:38px; padding:0 12px; margin-left:30px; margin-top:5px; background:#e3e3e4; color:#4e4f51; font-size:22px; border-radius:10px; }
+
+/* MY관심 - 나의 관심정보 2020-09-03 */
+.tableArea05 { border-top:2px #727476 solid; }
+.tableArea05 > ul > li {border-bottom:1px #e2e2e4 solid; padding:20px 15px; }
+.tableArea05 .titleList02 { overflow:hidden; padding-bottom:10px; }
+.tableArea05 .titleList02 > li { float:left; }
+.tableArea05 .titleList02 > li .titleText { font-size:30px; color:#292a2d; }
+.tableArea05 .titleList02 > li .ui_checkBox { display:none; }
+.tableArea05 .titleList02 .btnSty,
+.tableArea05 > ul > li.none {display:none; }
+.tableArea05 .titleList02 .btnStyM {display:block; font-size:22px; color:#4e4f51; width:38px; height:38px; line-height:34px; text-align:center; margin:5px 0 0 10px; border:2px #d3d3d3 solid; border-radius:5px; }
+.tableArea05 .titleList .txt01 { font-size:24px; color:#727476; font-weight:500; padding:15px 0 0 0;}
+.tableArea05 .titleList .txt02 { font-size:24px; color:#727476; padding:5px 0 0 0; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tableArea05 .btnGroup { display:none; }
+
 
 /* 레이어팝업 버튼 영역  */
 .windowPop .btnGroup {text-align:center; padding:0 30px; font-size:0;}

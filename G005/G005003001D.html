@@ -302,7 +302,7 @@
                         <li class="verPC"><a href="/">MY 서비스</a></li>
                         <li><a href="/">강사신청</a></li>
 						<li><a href="/">훈련교사관리</a></li>
-                        <li class="on"><a href="/">훈련교사 자격교육조회</a></li>
+                        <li class="on"><a href="/">강사뱅크신청</a></li>
                     </ul>
                 </div>
             </div>
@@ -425,16 +425,16 @@
                             <ul class="dep02">
                                 <li><a href="/" class="noSub">NCS확인 강사신청</a></li>
                                 <li><a href="javascript:void(0);">훈련교사관리</a> 
-                                    <ul class="dep03 on">
+                                    <ul class="dep03">
                                         <li><a href="/">훈련교사 이력관리</a></li>
                                         <li><a href="/">훈련교사 자격증발급신청</a></li>
                                         <li><a href="/">훈련교사 경력증명원신청</a></li>
                                         <li><a href="/">훈련교사 자격교육안내</a></li>
                                         <li><a href="/">훈련교사 자격교육일정</a></li>
-                                        <li><a href="/" class="on">훈련교사 자격교육조회</a></li>
+                                        <li><a href="/">훈련교사 자격교육조회</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="/" class="noSub">강사뱅크신청</a></li>
+                                <li><a href="/" class="noSub on">강사뱅크신청</a></li>
                             </ul>
                         </li>  
                         <li><a href="javascript:void(0);">심사평가위원</a></li>
@@ -453,7 +453,7 @@
 
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle ty2 verPC">훈련교사관리 <span class="depth4">훈련교사 자격교육조회</span></h3>
+                        <h3 class="headingTitle ty2 verPC">강사신청 <span class="depth4">강사뱅크신청</span></h3>
                         <!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
                         <div class="headingIcon">
                             <ul>
@@ -468,107 +468,348 @@
 
                         <!-- 강사신청 컨텐츠 -->
                         <div class="InstructorApplication">
-
-							<div class="tblInfoTxt05 ty3">
+							
+							<div class="tblInfoTxt05">
 								<ul>
-									<li>자격교육 신청 및 선발 관련 안내는 능력개발교육원 홈페이지 공지사항을 확인해주시기 바랍니다.</li>
-									<li>자격교육와 관련된 모든 문의는 ‘한국기술교육대학교 능력개발교육원’으로 문의하셔야 합니다.</li>
-									<li>능력개발교육원 자격교육 대표전화번호는 041-521-8090 입니다.</li>
+									<li> 직업훈련 교·강사 인력관리의 체계성과 효율성 제고 및 검증된 강사정보 제공을 통하여 중소기업에 자체훈련을 <br />활성화 하기 위한 제도입니다.</li>
 								</ul>
-								<div class="goBtnDiv"><button type="button" class="goLinkLong02">공지사항</button></div>
-							</div>		
+							</div>
 
-							<div class="sortArea">
-								<p class="totalNum">전체 <strong>1</strong> 건</p>
-								<div class="selectViewArea">
-									<div class="selectView">
-										<label for="pageRow">페이지당 조회건수</label>
-										<select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
-											<option value="10" selected="selected">10개씩</option>
-											<option value="20">20개씩</option>
-											<option value="30">30개씩</option>
-											<option value="50">50개씩</option>
-											<option value="100">100개씩</option>
-										</select>
-									</div> 
-								</div>
-							</div>	
-
+							<h4 class="bigTitle06">강사기본정보</h4>
 							<!-- 테이블 -->
-							<div class="tableArea">
-								<table class="list">
+							<div class="tableArea tableArea01">
+								<table class="view">
 									<caption></caption>
 									<colgroup>
 										<col style="width: auto;">
 										<col style="width: auto;">
 										<col style="width: auto;">
 										<col style="width: auto;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>성명</th>
+											<td>이정진</td>		
+											<th>생년월일</th>	
+											<td class="last">2020.01.01</td>
+										</tr>
+										<tr>
+											<th>NCS직종(분야)</th>
+											<td colspan="3" class="last">NCS직종(분야)</td>		
+										</tr>
+										<tr>
+											<th>전화번호</th>
+											<td colspan="3" class="last">
+												<div class="inpArea phoneInput">
+                                                    <div class="ele ty1">
+                                                        <select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
+                                                            <option selected="selected" value="">선택</option>
+                                                            <option value="032"> 032 </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="ele ty2">-</div>
+                                                    <div class="ele ty3">
+                                                        <input type="text" title="전화번호 가운데 번호" name="userTel02" id="userTel02">
+                                                    </div>
+                                                    <div class="ele ty2">-</div>
+                                                    <div class="ele ty3">
+                                                        <input type="text" title="전화번호 마지막 번호" name="userTel03" id="userTel03">
+                                                    </div>
+                                                </div>
+											</td>		
+										</tr>
+										<tr>
+											<th>이메일</th>
+											<td colspan="3" class="last">
+												<div class="inpArea emailInput">
+                                                    <div class="ele">
+                                                        <input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
+                                                    </div>
+                                                    <div class="ele ty1">@</div>
+                                                    <div class="ele">
+                                                        <input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
+                                                    </div>
+                                                    <div class="ele ty2">
+                                                        <select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
+                                                            <option selected="selected" value="">직접입력</option>
+                                                            <option value="chol.com"> chol.com </option>
+                                                            <option value="dreamwiz.com"> dreamwiz.com </option>
+                                                            <option value="empal.com"> empal.com </option>
+                                                            <option value="freechal.com"> freechal.com </option>
+                                                            <option value="gmail.com"> gmail.com </option>
+                                                            <option value="hanmail.net"> hanmail.net </option>
+                                                            <option value="hanmir.net"> hanmir.net </option>
+                                                            <option value="hitel.com"> hitel.com </option>
+                                                            <option value="hotmail.com"> hotmail.com </option>
+                                                            <option value="korea.com"> korea.com </option>
+                                                            <option value="nate.com"> nate.com </option>
+                                                            <option value="naver.com"> naver.com </option>
+                                                            <option value="orgio.com"> orgio.com </option>
+                                                            <option value="paran.com"> paran.com </option>
+                                                            <option value="sayclub.net"> sayclub.net </option>
+                                                            <option value="shinbiro.com"> shinbiro.com </option>
+                                                            <option value="yahoo.co.kr"> yahoo.co.kr </option>
+                                                            <option value="yahoo.com"> yahoo.com </option>
+                                                            <option value="molab.go.kr"> molab.go.kr </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+											</td>		
+										</tr>
+										<tr>
+											<th>주요강의 분야</th>
+											<td colspan="3" class="last"><textarea title="" placeholder="" rows="5" cols="60" name="Uniqueness" id="Uniqueness" class="h220" ></textarea></td>		
+										</tr>
+									</tbody>
+								</table>   
+								<div class="fileAddEle">
+									<div class="inner">
+										<div class="fileAddCont ig">
+											<div class="imgRdy">
+												<img src="../new_images/temp/@bnMainEvent.jpg" alt="">
+											</div>
+										</div>
+										<div class="fileAddCont">
+											<ul class="addFileList">
+												<li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="chkReturn" id="addFile01">
+														<label for="addFile01">첨부파일명.pptx</label>
+													</div>
+													<button type="button" class="btnCloseCross">삭제</button>
+													<span class="byte">21.2KB</span>
+												</li>
+											</ul>
+											<div class="plugin">
+												<div class="inner" style="padding: 30px 0; line-height: 1; font-size: 14px; color: #767676; text-align: center;">
+													이곳을 더블클릭 또는 파일을 드래그하세요.
+												</div>
+											</div>
+											<div class="options">
+												<div class="btns">
+													<button type="button" class="btnType2">파일추가</button>
+													<button type="button" class="btnType2">항목제거</button>
+													<button type="button" class="btnType2">전체 항목제거</button>
+												</div>
+
+												<ul class="dotList">
+													<li>사이즈는 반드시 150*200으로 등록하여 주시기 바랍니다.</li>
+													<li>이미지파일 확장자는 jpg(jpeg), gif, png, bmp 만 가능합니다.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>   
+							<!-- // 테이블 -->
+
+							<h4 class="bigTitle06">강사기본정보</h4>
+							<!-- 테이블 -->
+							<div class="tableArea tableArea01">
+								<table class="view">
+									<caption></caption>
+									<colgroup>
+										<col style="width: auto;">
 										<col style="width: auto;">
 										<col style="width: auto;">
 									</colgroup>
-									<thead>
-										<tr>									
-											<th rowspan="2">연번</th>
-											<th rowspan="2">신청년도</th>
-											<th>교육연도</th>
-											<th>신청일</th>
-											<th>선발여부</th>
-											<th class="last">수려증출력</th>
-										</tr>
-										<tr>
-										  <th class="brd-t-ty1">과정차수</th>
-										  <th class="brd-t-ty1">상태</th>
-										  <th class="brd-t-ty1">수료여부</th>
-										  <th class="brd-t-ty1 last">자격증신청</th>
-						              </tr>
-									</thead>
 									<tbody>
 										<tr>
-											<td rowspan="2">1</td>
-											<td rowspan="2"><a href="/" class="color03Link">교직훈련</a></td>
-											<td>2019년</td>
-											<td>2019-08-21</td>
-											<td>-</td>
-											<td class="last">-</td>
+											<th rowspan="3" class="brd-r-ty1">기본정보</th>
+											<th>출생년도</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open1" name="open1" id="open1"> 
+													<label for="open1">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private1" name="private1" id="private1"> 
+													<label for="private1">비공개</label>
+												</div> 
+											</td>
 										</tr>
 										<tr>
-										  <td>주중 7차</td>
-										  <td>작성중</td>
-										  <td>-</td>
-										  <td class="last">-</td>
-						              </tr>
-									  <tr>
-											<td rowspan="2">1</td>
-											<td rowspan="2">교직훈련</td>
-											<td>2019년</td>
-											<td>2019-08-21</td>
-											<td>-</td>
-											<td class="last">-</td>
+											<th>사진</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open2" name="open2" id="open2"> 
+													<label for="open2">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private2" name="private2" id="private2"> 
+													<label for="private2">비공개</label>
+												</div> 
+											</td>
 										</tr>
 										<tr>
-										  <td>주중 7차</td>
-										  <td>작성중</td>
-										  <td>-</td>
-										  <td class="last">-</td>
-						              </tr>
+											<th>연락처(전자우편)</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open3" name="open3" id="open3"> 
+													<label for="open3">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private3" name="private3" id="private3"> 
+													<label for="private3">비공개</label>
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<th rowspan="4" class="brd-r-ty1">경력 및 자격, 학력 등</th>
+											<th>교육경력사항</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open4" name="open4" id="open4"> 
+													<label for="open4">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private4" name="private4" id="private4"> 
+													<label for="private4">비공개</label>
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<th>현장경력사항</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open5" name="open5" id="open5"> 
+													<label for="open5">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private5" name="private5" id="private5"> 
+													<label for="private5">비공개</label>
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<th>자격(면허)사항</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open6" name="open6" id="open6"> 
+													<label for="open6">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private6" name="private6" id="private6"> 
+													<label for="private6">비공개</label>
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<th>학력사항(최종)</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open7" name="open7" id="open7"> 
+													<label for="open7">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private7" name="private7" id="private7"> 
+													<label for="private7">비공개</label>
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<th rowspan="3" class="brd-r-ty1">기타</th>
+											<th>스타훈련교사</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open8" name="open8" id="open8"> 
+													<label for="open8">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private8" name="private8" id="private8"> 
+													<label for="private8">비공개</label>
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<th>기능한국인(명장)</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open9" name="open9" id="open9"> 
+													<label for="open9">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private9" name="private9" id="private9"> 
+													<label for="private9">비공개</label>
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<th>직업능력개발 훈련교사 1급</th>	
+											<td class="last">
+												<div class="ui_radioBox">                                             
+													<input type="radio" checked="checked" value="open10" name="open10" id="open10"> 
+													<label for="open10">공개</label>
+												</div>
+												<div class="ui_radioBox">   
+													<input type="radio" value="private10" name="private10" id="private10"> 
+													<label for="private10">비공개</label>
+												</div> 
+											</td>
+										</tr>
 									</tbody>
 								</table>   
-
-								<!-- paging : pc -->
-								<div class="pagenation">
-									<a href="/" class="pb prev">이전보기</a>
-									<a href="/" class="on">1</a>
-									<a href="/">2</a>
-									<a href="/">3</a>
-									<a href="/">4</a>
-									<a href="/">5</a>
-									<a href="/">6</a>
-									<a href="/">7</a>
-									<a href="/" class="pb next">다음보기</a>
-								</div> 
-								<!-- //paging : pc -->
-							</div>   
+							</div>
 							<!-- // 테이블 -->
+
+							<h4 class="bigTitle06">개인정보 제공 동의</h4>
+							<div class="divTableArea02">
+								<div class="caption"></div>
+								<div class="innerTableArea03">
+									<p class="tit01">개인정보 수집·이용·제공에 관한 동의서(강사뱅크)</p>
+									<p class="txt01">한국고용정보원은 강사의 개인정보를 중요시하며, 개인정보에 관한 법률을 준수하고 있습니다.<br />
+한국고용정보원은 개인정보취급방침을 통하여 강사가 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있는지 알려드립니다.</p>
+									<dl class="txtList06">
+										<dt>1. 개인정보의 수집항목 및 이용목적</dt>
+										<dd>한국고용정보원은 강사 풀 관리 및 강사정보 홈페이지 게시 등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br />
+										- 수집항목 : 성명, 생년월일, 성별, 사진, 전화번호, 전자우편, 소속/부서, 현직급/직위, 경력정보, 자격정보, 학력정보, 전문분야<br />
+										- 이용목적 : 강사 풀 관리 및 과정심사 강사정보 홈페이지 게시, 공지사항 전달을 위한 이메일 발송 등<br />
+										* 동의를 거부할 권리 : 위 개인정보는 NCS확인강사 정보공개 및 활용을 위한 것이므로 공개를 원하지 않을 경우, 동의를 거부할 수 있으며, 거부하실 경우 신청이 완료되지 않습니다.</dd>
+										<dt>2. 개인정보 제공 동의</dt>
+										<dd>- 제공받는 자 : 홈페이지 이용자 및 법령상 의무이행을 위한 중앙행정기관, 지방자치단체 등 공공기관<br />
+										                                   (고용노동부, 한국산업인력공단, 한국고용정보원, 한국기술교육대학교 등)<br />
+										- 이용목적 : 강의의뢰 등을 위한 강사정보 활용 및 훈련과정 적부심사<br />
+										- 제공항목 : 성명, 생년월일, 성별, 사진, 전화번호, 전자우편, 소속/부서, 현직급/직위, 경력정보, 자격정보, 학력정보, 전문분야<br />
+										* 동의를 거부할 권리 : 위 개인정보는 NCS확인강사 정보공개 및 활용을 위한 것이므로 공개를 원하지 않을 경우, 동의를 거부할 수 있으며, 거부하실 경우 신청이 완료되지 않습니다.</dd>
+										<dt>3. 기타사항</dt>
+										<dd>- 위 내용에 명시되지 아니한 사항은 HRD-Net 개인정보보호방침에서 장하는 바에 따릅니다.</dd>
+									</dl>
+									<p class="tit02">개인정보 수집·이용·제공 동의</p>
+									<dl class="txtList06">
+										<dt>1. 개인정보(고유식별번호 제외) 수집·이용 :
+											<div class="ui_checkBox">
+												<input type="checkbox" id="sign1">
+												<label for="sign1">동의함</label>
+											</div>
+										</dt>
+										<dt>2. 홈페이지 게시 및 제3자(정부기관 등)에 개인정보 제공 :
+											<div class="ui_checkBox">
+												<input type="checkbox" id="sign2">
+												<label for="sign2">동의함</label>
+											</div>
+										</dt>
+										<dd>※ 개인정보 제공자가 동의한 내용외의 다른 목적으로 활용하지 않으며, 제공된 개인정보의 이용을 거부하고자 할 때에는 개인정보 관리책임자를
+										 통해 열람, 정정, 삭제를 요구할 수 있음<br />개인정보보호법등 관련 법규에 의거하여 본인은 위와 같이 개인정보 수집 및 활용에 동의함.</dd>
+									</dl>
+								</div>
+								<div class="partChk02">
+									<div class="btnCloseagree"><button type="button" class="btnClose">닫침</button></div>
+									<div class="ui_checkBox">
+										<input type="checkbox" id="sign3">
+										<label for="sign3">동의함</label>
+									</div>
+								</div>
+								<div class="signTxtLine">
+									<span class="date1">2020년</span><span class="date1">08월</span><span class="date1">24일</span>
+									<span>신청자</span><span class="sign1">홍길동</span>
+								</div>
+							</div>
+
+							<div class="btnGroup ty4">
+								<button type="button" class="btnType1">삭제</button>
+								<button type="button" class="btnType1">목록</button>
+								<button type="button" class="btnType1 primary">저장</button>
+							</div>
 
                         </div>
                         <!-- // 강사신청 컨텐츠 -->

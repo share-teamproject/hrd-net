@@ -302,7 +302,7 @@
                         <li class="verPC"><a href="/">MY 서비스</a></li>
                         <li><a href="/">강사신청</a></li>
 						<li><a href="/">훈련교사관리</a></li>
-                        <li class="on"><a href="/">훈련교사 자격교육조회</a></li>
+                        <li class="on"><a href="/">강사뱅크신청</a></li>
                     </ul>
                 </div>
             </div>
@@ -425,16 +425,16 @@
                             <ul class="dep02">
                                 <li><a href="/" class="noSub">NCS확인 강사신청</a></li>
                                 <li><a href="javascript:void(0);">훈련교사관리</a> 
-                                    <ul class="dep03 on">
+                                    <ul class="dep03">
                                         <li><a href="/">훈련교사 이력관리</a></li>
                                         <li><a href="/">훈련교사 자격증발급신청</a></li>
                                         <li><a href="/">훈련교사 경력증명원신청</a></li>
                                         <li><a href="/">훈련교사 자격교육안내</a></li>
                                         <li><a href="/">훈련교사 자격교육일정</a></li>
-                                        <li><a href="/" class="on">훈련교사 자격교육조회</a></li>
+                                        <li><a href="/">훈련교사 자격교육조회</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="/" class="noSub">강사뱅크신청</a></li>
+                                <li><a href="/" class="noSub on">강사뱅크신청</a></li>
                             </ul>
                         </li>  
                         <li><a href="javascript:void(0);">심사평가위원</a></li>
@@ -453,7 +453,7 @@
 
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle ty2 verPC">훈련교사관리 <span class="depth4">훈련교사 자격교육조회</span></h3>
+                        <h3 class="headingTitle ty2 verPC">강사신청 <span class="depth4">강사뱅크신청</span></h3>
                         <!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
                         <div class="headingIcon">
                             <ul>
@@ -468,20 +468,48 @@
 
                         <!-- 강사신청 컨텐츠 -->
                         <div class="InstructorApplication">
-
+							
 							<div class="tblInfoTxt05 ty3">
 								<ul>
-									<li>자격교육 신청 및 선발 관련 안내는 능력개발교육원 홈페이지 공지사항을 확인해주시기 바랍니다.</li>
-									<li>자격교육와 관련된 모든 문의는 ‘한국기술교육대학교 능력개발교육원’으로 문의하셔야 합니다.</li>
-									<li>능력개발교육원 자격교육 대표전화번호는 041-521-8090 입니다.</li>
+									<li> 직업훈련 교·강사 인력관리의 체계성과 효율성 제고 및 검증된 강사정보 제공을 통하여 중소기업에 자체훈련을 <br />활성화 하기 위한 제도입니다.</li>
 								</ul>
-								<div class="goBtnDiv"><button type="button" class="goLinkLong02">공지사항</button></div>
-							</div>		
+							</div>
 
-							<div class="sortArea">
+							<h4 class="bigTitle06 ty3">강사뱅크 신청목록 조회</h4>
+							<div class="searchBox ty2">
+								<fieldset>
+									<legend>평가결과신고 검색</legend>
+									<dl>                                    
+										<dt><label for="ncs1">NCS직종</label></dt>
+										<dd>
+											<select title="" name="ncs1" id="ncs1" class="selectBox selectW190">
+												<option selected="selected" value="">선택</option>
+											</select>
+											<select title="" name="ncs2" id="ncs2" class="selectBox selectW190">
+												<option selected="selected" value="">선택</option>
+											</select>
+											<select title="" name="ncs3" id="ncs3" class="selectBox selectW190">
+												<option selected="selected" value="">선택</option>
+											</select>
+										</dd>
+										<dt><label for="searchText">년도</label></dt>
+										<dd><input type="text" value="" title="검색어" name="searchText" id="searchText" class="searchSelect01"></dd>
+									</dl> 
+									<div class="btnGroup">
+										<button type="button" class="btnType3">검색</button>
+									</div>
+								</fieldset>
+                            </div>
+
+							<div class="sortArea ty3">
 								<p class="totalNum">전체 <strong>1</strong> 건</p>
 								<div class="selectViewArea">
 									<div class="selectView">
+										<label for="ncs"></label>
+										<select title="페이지당 조회건수" name="ncs" id="ncs" class="selectBox h30">
+											<option value="ncs01" selected="selected">NCS 직종</option>
+										</select>
+
 										<label for="pageRow">페이지당 조회건수</label>
 										<select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
 											<option value="10" selected="selected">10개씩</option>
@@ -493,66 +521,111 @@
 									</div> 
 								</div>
 							</div>	
-
 							<!-- 테이블 -->
-							<div class="tableArea">
+							<div class="tableArea ty2">
 								<table class="list">
-									<caption></caption>
+									<caption>평가결과 입력 리스트</caption>
 									<colgroup>
 										<col style="width: auto;">
 										<col style="width: auto;">
-										<col style="width: auto;">
+										<col style="width: 340px;">
 										<col style="width: auto;">
 										<col style="width: auto;">
 										<col style="width: auto;">
 									</colgroup>
 									<thead>
-										<tr>									
-											<th rowspan="2">연번</th>
-											<th rowspan="2">신청년도</th>
-											<th>교육연도</th>
-											<th>신청일</th>
-											<th>선발여부</th>
-											<th class="last">수려증출력</th>
-										</tr>
 										<tr>
-										  <th class="brd-t-ty1">과정차수</th>
-										  <th class="brd-t-ty1">상태</th>
-										  <th class="brd-t-ty1">수료여부</th>
-										  <th class="brd-t-ty1 last">자격증신청</th>
-						              </tr>
+										  <th>연번</th>
+										  <th>신청년도</th>
+										  <th>NCS직종</th>
+										  <th>훈련시작일</th>
+										  <th>공개여부</th>
+										  <th class="last">상세신청정보</th>
+									  </tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td rowspan="2">1</td>
-											<td rowspan="2"><a href="/" class="color03Link">교직훈련</a></td>
-											<td>2019년</td>
-											<td>2019-08-21</td>
-											<td>-</td>
-											<td class="last">-</td>
-										</tr>
-										<tr>
-										  <td>주중 7차</td>
-										  <td>작성중</td>
-										  <td>-</td>
-										  <td class="last">-</td>
-						              </tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
 									  <tr>
-											<td rowspan="2">1</td>
-											<td rowspan="2">교직훈련</td>
-											<td>2019년</td>
-											<td>2019-08-21</td>
-											<td>-</td>
-											<td class="last">-</td>
-										</tr>
-										<tr>
-										  <td>주중 7차</td>
-										  <td>작성중</td>
-										  <td>-</td>
-										  <td class="last">-</td>
-						              </tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
+									  <tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
+									  <tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
+									  <tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
+									  <tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
+									  <tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
+									  <tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
+									  <tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
+									  <tr>
+										 <td>10</td>
+										 <td>-</td>
+										 <td>(020203) 일반사무</td>
+										 <td>2020.04.01</td>
+										 <td>-</td>
+										 <td class="last none"><button type="button" class="download">다운로드</button></td>
+									  </tr>
 									</tbody>
-								</table>   
+								</table>
 
 								<!-- paging : pc -->
 								<div class="pagenation">
@@ -566,9 +639,8 @@
 									<a href="/">7</a>
 									<a href="/" class="pb next">다음보기</a>
 								</div> 
-								<!-- //paging : pc -->
-							</div>   
-							<!-- // 테이블 -->
+								<!-- //paging : pc -->     
+							</div>
 
                         </div>
                         <!-- // 강사신청 컨텐츠 -->
