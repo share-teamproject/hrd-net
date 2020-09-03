@@ -185,8 +185,9 @@
 #subContentWrap .subContArea .boxArea .pageComment { background:url('../new_images/common/pageComment.png') no-repeat 0 50%; font-size:14px; line-height:21px; color:#727476; min-height:48px; padding:4px 0 4px 90px; }
 #subContentWrap .subContArea .boxNote { font-size:14px; color:#767676; padding:0 0 55px 0; }  
 #subContentWrap .subContArea .boxNote p { display:inline-block; margin:0 35px 0 0; padding:10px 0 0 0; }
-#subContentWrap .subContArea .boxBltList { background:#f7f7f7; padding:30px 35px; font-size:12px; color:#727476; line-height:20px; }
+#subContentWrap .subContArea .boxBltList { background:#f7f7f7; padding:30px; font-size:12px; color:#727476; line-height:20px; }
 #subContentWrap .subContArea .boxLineGroup { border:1px solid #e2e2e4; border-top:2px solid #5b648a; }
+.boxTitle { font-size:22px; font-weight:500; padding:55px 0 20px; color:#292a2d; }
 
 /* 댓글 */
 #subContentWrap .subContArea .commentArea > ul { border-top:1px solid #b4b4b4; font-size:14px; color:#4e4f51; margin:60px 0 20px; }
@@ -1145,3 +1146,11 @@
 .partArea .contListType3 li.half { float:left; width:50%; }
 .partArea .contListType3 li.half:nth-child(even) { border-left:1px solid #e2e2e4; }
 .partArea .contListType3 li.bdtNo { border-top:none; }
+
+/* 부정행위신고 */
+.declareArea { padding:20px 0 0 0; }
+.boxText01 { font-size:14px; line-height:22px; color:#727476; }
+.boxText01 + .goLink { margin:20px 0 0 0;}
+.dlBtnSet { overflow:hidden; width:100%; margin-top:10px;}
+.dlBtnSet dt { clear:both; float:left; margin-top:10px; width:165px; font-size:14px; line-height:26px; color:#292a2d; }
+.dlBtnSet dd { float:left; margin-top:10px; }

@@ -21,6 +21,7 @@
     <link href="../new_css/contents.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" />     
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
     <script src="../new_js/lib/moment.min.js"></script>   
     <script src="../new_js/lib/daterangepicker.js"></script>     
     <script src="../new_js/lib/swiper.min.js"></script>
@@ -192,7 +193,7 @@
                                             </li>
                                             <li>
                                                 <button type="button" class="btn" id="btnCategory" title="분야검색">분야</button>
-                                                <input type="text" title="분야" name="inputCategory" id="inputCategory" placeholder="QM/QC관리" value=""><label for="inputCategory" class="hide">분야</label>
+                                                <input type="text" title="분야" name="inputCategory" id="inputCategory" placeholder="QM/QC관리" value="" style="width: 340px;"><label for="inputCategory" class="hide">분야</label>
                                             </li>
                                             <li>
                                                 <button type="button" class="btn" id="btnPeriod" title="기간검색">기간</button>
@@ -266,7 +267,7 @@
                                             <div class="box">
                                                 <p class="tit">중분류</p>
                                                 <div class="listWrap">
-                                                    <ul class="list">
+                                                    <ul class="list" id="">
                                                         <li>
                                                             <a href="javascript:void(0);"><span>전체</span></a>
                                                         </li>
@@ -371,7 +372,7 @@
                                             <div class="box">
                                                 <p class="tit">중분류</p>
                                                 <div class="listWrap">
-                                                    <ul class="list">
+                                                    <ul class="list" id="">
                                                         <li class="on"><a href="javascript:void(0);"><span>기획사무</span></a></li>
                                                         <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
                                                         <li><a href="javascript:void(0);"><span>기획사무</span></a></li>
@@ -433,7 +434,7 @@
                                                             startDate: moment().startOf('hour'),
                                                             endDate: moment().startOf('hour').add(32, 'hour'),
                                                             locale: {
-                                                                format: 'MM.DD',
+                                                                format: 'YYMMDD',
                                                                 daysOfWeek:["일","월","화","수","목","금","토"] ,
                                                                 monthNames:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]
                                                             }
