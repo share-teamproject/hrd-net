@@ -36,8 +36,15 @@ $(function(){
 				});
 			});
 		},	
+		fn_datepicker:function(){
+			$(".dateSelect input").datepicker({
+				dateFormat: 'yy-mm-dd'
+			});
+			$( ".dateSelect .ui-datepicker-trigger").prop('src','../new_images/common/inoCalendar.png')	
+		}
 	});
 	$('.toolTip').fn_tooltip();  //tooltip
+	$(".dateSelect input").fn_datepicker(); //calendar
 
 	headFixed();
 	uiForm();
@@ -319,9 +326,9 @@ var mainSearch = {
 	len : 0,
 
 	init : function() {
-		mainSearch.open();
+		this.open();
 	},
-	
+
 	open : function() {	
 		var $searchBtn = $('.btnTotalSearchArea .btn');
 		var $inputSearchBtn = $('.btnTotalSearchArea > li > input');
@@ -334,6 +341,7 @@ var mainSearch = {
 			idx = $searchBtn.index(this);	
 				if($(this).hasClass('on')){							
 					$(this).removeClass('on');
+					$inputSearchBtn.css('display','none');
 					$tabSelect.hide('fast');
 				}else{				
 					$searchBtn.removeClass('on');
@@ -344,6 +352,11 @@ var mainSearch = {
 					$tabSelect.eq(idx).show('slow');
 					$inputSearchKeyword.css('width','190px;')
 				}
+
+
+
+
+
 				if(idx==2) {
 					$('#inputPeriod').focus();
 				}

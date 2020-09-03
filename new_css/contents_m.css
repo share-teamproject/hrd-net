@@ -3,7 +3,6 @@
 @import 'kimjaeseob_m.css';
 @import 'kangjiyeon_m.css';
 @import 'parkseungwan_m.css';
-@import 'kimyongbeom_m.css';
 @import 'front_m.css';
 
 /* ==============================
@@ -125,6 +124,12 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .phoneInput > .ele .selectBox  {width:100%;}
 
 
+/* 별점 */
+.starRating, .starRating span { display:inline-block;height:34px;background:url('../new_images/common/icoStarM.png') no-repeat;overflow:hidden;vertical-align:-1px;text-align:left}
+.starRating { width:212px; }
+.starRating span{ line-height:0;vertical-align:top;background-position:left bottom; text-indent:-5000px}
+
+
 /* 레이어 팝업 */
 #mask { position:absolute; left:0; top:0; z-index:1000; background-color:#000; display:none; }
 .windowPop { display: none; position:absolute; left:50%; top:50%; width:580px; margin-left:-290px; padding-bottom:60px;  z-index:10000; background-color:#fff;}
@@ -173,6 +178,7 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 #subContentWrap .subContArea .qnaArea .sortArea { display: none; }
 #subContentWrap .subContArea .qnaArea > ul { border-top:4px solid #727476; }
 #subContentWrap .subContArea .qnaArea > ul > li {border-bottom: 2px solid #e3e7ee;}
+#subContentWrap .subContArea .qnaArea > ul > li.none {padding: 30px 0; text-align: center; font-size: 28px; color: #727476;}
 #subContentWrap .subContArea .qnaArea .qnaQ {position:relative; cursor: pointer; padding: 50px 20px; }  
 #subContentWrap .subContArea .qnaArea .qnaQ:after {content:''; position:absolute; top:calc(100% - 36px); right:30px; display:inline-block; width:24px; height:12px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -12px; background-size:24px; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ { padding:0px 50px 0px 0px; }
@@ -184,13 +190,12 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check.point { color:#258384; }  /* my서비스 알람 */
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ .qnaText { font-size:30px; line-height:36px; color:#292a2d; }
 #subContentWrap .subContArea .qnaArea .qnaA { position:relative; padding:48px 38px 48px 76px; border-bottom: 2px dashed #e3e7ee; background:#f4f6f9; display:none; }
-#subContentWrap .subContArea .qnaArea .qnaA.tblIn {padding: 50px 25px;}
+#subContentWrap .subContArea .qnaArea .qnaA.tblIn {padding: 50px 30px;}
 #subContentWrap .subContArea .qnaArea .iconA { position:absolute; top:78px; left:30px; margin-top:-20px; display:inline-block; /*border-bottom:1px solid #4171df;*/ width:32px; height:40px; background:url('../new_images/common/icoAnswer.png') no-repeat center 0; background-size:26px 30px; font-size:0; }
 #subContentWrap .subContArea .qnaArea .qnaA .txtA { color:#65646a; line-height:38px; font-size:26px; }
 #subContentWrap .subContArea .qnaArea > ul > li.on {border-bottom:none;}
 #subContentWrap .subContArea .qnaArea > ul > li.on .qnaQ:after { background-position:0 0;}
 #subContentWrap .subContArea .qnaArea > ul > li.on .txtQ {color:#333;}
-#subContentWrap .subContArea .qnaArea > ul > li.none {padding: 30px 0; text-align: center; font-size: 28px; color: #727476;}
 #subContentWrap .subContArea .qnaArea .tableArea .view th { width:180px; }
 #subContentWrap .subContArea .qnaArea .pagenation { display:none; }
 #subContentWrap .subContArea .qnaArea .moreBtn { display:block; margin-top:20px; text-align:center; }
@@ -462,8 +467,8 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .detailList .info .item .tit { box-sizing:border-box; width:154px; padding-right:10px; color:#727476; font-size:28px; position:relative; }
 .detailList .info .item .tit:after { content:''; display:block; width:2px; height:24px; background-color:#e2e2e4; position:absolute; top:22px; right:0; transform:translateY(-50%); }
 .detailList .info .item .con { box-sizing:border-box; width:calc(100% - 174px); margin-left: 20px; color:#727476; font-size:28px; }
-.detailList .info .item.satis .con { width:212px; height:0; max-height:0; padding-top:34px; background:url('../new_images/common/star4Mob.png') no-repeat; background-size:cover; overflow:hidden; }
-.detailList .info .item.satis .con.star4 { background-image:url('../new_images/common/star4Mob.png') }
+.detailList .info .item.satis .con { width:212px; height:0; max-height:0; padding-top:34px; /*background:url('../new_images/common/star4Mob.png') no-repeat; background-size:cover;*/ overflow:hidden; }
+.detailList .info .item.satis .con.star4 { /*background-image:url('../new_images/common/star4Mob.png')*/}
 .detailList .graph { margin-top:15px; background:url('../new_images/common/bgGraphMob.png') no-repeat; background-size:45px 32px; background-position:right center; }
 .detailList .graph .all { display:block; width:474px; background-color:#d8deea; }
 .detailList .graph .bar { display:block; width:100%; height:32px; line-height:32px; padding-right:19px; border-top-right-radius:19px; border-bottom-right-radius:19px; background:#4171df; color:#fff; font-size:20px; text-align:right; }

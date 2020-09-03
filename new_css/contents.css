@@ -256,6 +256,25 @@
 .dotList > li.ty1:before {border-bottom:3px solid #93480f;}
 .dotList.fs14 > li {font-size:14px;}
 
+/* calendar */
+.dateSelect { width:220px; height:40px; padding:4px 12px 10px 0; line-height:40px; border:1px solid #cdcdd1; box-sizing:border-box; }
+.dateSelect input { border:none; height:38px; }
+.ui-datepicker { padding:0; }
+.ui-datepicker .ui-datepicker-header { background:#f0f0f2; padding:12px 16px; line-height: 40px; }
+.ui-widget-header .ui-datepicker-prev { top: 15px; left:10px; }
+.ui-widget-header .ui-datepicker-prev .ui-icon { background:url('../new_images/common/arrowCalendar.png') no-repeat; }
+.ui-widget-header .ui-datepicker-next { top: 10px; right:10px; }
+.ui-widget-header .ui-datepicker-next .ui-icon { background:url('../new_images/common/arrowCalendar.png') no-repeat; transform: rotate(180deg); }
+.ui-datepicker table { margin:0 5px 10px 5px !important; width:calc(100% - 20px); box-sizing:border-box; }
+.ui-datepicker th, .ui-datepicker td { font-size:12px; color:#727476; text-align:center; } 
+.ui-datepicker th span, .ui-datepicker th a { width:21px; height:21px; border-radius:21px; }
+.ui-datepicker td span, .ui-datepicker td a { width:21px; height:21px; border-radius:21px; margin:0 auto; } 
+.ui-datepicker td.ui-datepicker-today span, .ui-datepicker td.ui-datepicker-today a { background:#d8deea; border:none; color:#727476; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color:#fff; background-color:#4171df; border:1px solid #4171df; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    color:#4171df; background-color:#fff; border:1px solid #4171df; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { color:#fff; background-color:#4171df; border:1px solid #4171df; text-decoration: none; }    
+    
 /* ==============================
 * 자주묻는 질문 & 질문과 답변 
 * ============================== */ 
@@ -273,14 +292,12 @@
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check.point { color:#258384; }  /* my서비스 알람 */
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ .qnaText { font-size:18px; line-height:24px; color:#292a2d; }
 #subContentWrap .subContArea .qnaArea .qnaA { position:relative; padding:30px 50px 30px 95px; border-bottom: 1px dashed #e3e7ee; background:#f4f6f9; display:none; }
-#subContentWrap .subContArea .qnaArea .qnaA.tblIn {padding: 30px;}
 #subContentWrap .subContArea .qnaArea.alam .qnaA { padding:30px 50px; }  /* my서비스 알람 */
 #subContentWrap .subContArea .qnaArea .iconA { position:absolute; top:50%; left:50px; margin-top:-9px; display:inline-block; width:16px; height:18px; background:url('../new_images/common/icoAnswer.png') no-repeat 0 0; background-size:100%; font-size:0; }
 #subContentWrap .subContArea .qnaArea .qnaA .txtA { color:#4e4f51; line-height:21px; font-size:14px; }
 #subContentWrap .subContArea .qnaArea > ul > li.on {border-bottom:none;}
 #subContentWrap .subContArea .qnaArea > ul > li.on .qnaQ:after { background-position:0 0;}
 #subContentWrap .subContArea .qnaArea > ul > li.on .txtQ {color:#333;}
-#subContentWrap .subContArea .qnaArea > ul > li.none {padding: 40px 0; text-align: center; font-size: 14px; color: #727476;}
 #subContentWrap .subContArea .qnaArea > ul + .pagenation { margin-top:20px; }
 #subContentWrap .subContArea .qnaArea .moreBtn { display:none; }
 #subContentWrap .subContArea .qnaArea .btnGroup + .pagenation { margin-top:20px; }
