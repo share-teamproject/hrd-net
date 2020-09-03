@@ -14,14 +14,16 @@
     <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
     <title>알람 | HRD-Net</title>
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout.css" rel="stylesheet" />
-    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" /> 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
-    <script src="../new_js/ui.js"></script>
+    <script src="../new_js/ui_m.js"></script>
 </head>
 
 <body>
@@ -532,9 +534,8 @@
                                     </div>
                                 </li>                                                           
                             </ul>
-
                             <!-- paging : pc -->
-                            <div class="pagenation">
+                            <div class="pagenation verPC">
                                 <a href="/" class="pb prev">이전보기</a>
                                 <a href="/" class="on">1</a>
                                 <a href="/">2</a>
@@ -545,14 +546,29 @@
                                 <a href="/">7</a>
                                 <a href="/" class="pb next">다음보기</a>
                             </div> 
-                            <!-- //paging : pc -->
-                            
-                            <!-- 검색결과 더보기 : mobile -->
-                            <div class="moreBtn">
-                                <button type="button">검색결과 더보기</button>
-                            </div> 
-                            <!-- //검색결과 더보기 : mobile --> 
+                            <!-- //paging : pc -->                            
+                        </div> 
+
+                        <!-- paging : mob -->
+                        <div class="verM">
+                            <div class="pagenation mt40">
+                                <a href="/" class="pb prev">이전보기</a>
+                                <p class="paging">
+                                    <span class="current">
+                                        <span class="hide">현재페이지</span>
+                                        <span class="count">1</span>
+                                    </span>
+                                    <span>/</span>
+                                    <span class="total">
+                                        <span class="hide">총페이지수</span>
+                                        <span class="count">10</span>
+                                    </span>
+                                </p>
+                                <a href="/" class="pb next">다음보기</a>
+                            </div>
                         </div>    
+                        <!-- //paging : mob -->
+
                     </div>
                 </div>
             </div>
