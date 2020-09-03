@@ -15,7 +15,7 @@
 
 .detailListWrap { border-top:2px solid #727476; }
 .detailListWrap + .pagenation { margin-top:20px; }
-.detailList > li { box-sizing:border-box; display:flex; width:100%; min-height:220px; padding:10px; border-bottom:1px solid #e2e2e4; }
+.detailList > li { box-sizing:border-box; display:flex; width:100%; min-height:auto!important; padding:10px; border-bottom:1px solid #e2e2e4; }
 .detailList .title { flex-shrink:0; display:flex; flex-direction:column; box-sizing:border-box; width:170px; padding:12px; }
 .detailList .title .zone { margin-bottom:6px; color:#4e4f51; font-size:14px; text-align:center; }
 .detailList .title .school { line-height:1.1; padding:0 20px; color:#4e4f51; font-weight: 500; font-size:20px; text-align:center; }
@@ -76,3 +76,7 @@
 
 .section-training .pagenation.pc { display:block; }
 .section-training .pagenation.mob { display:none; }
+
+.section-training .headingTitleArea .headingSubTitle { margin: 50px 0 30px; font-size:26px; }
+
+.section-training .btnArea.more { width:100%; margin-top:20px; text-align:right; }

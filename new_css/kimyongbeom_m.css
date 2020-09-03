@@ -146,6 +146,8 @@
 .section-training .inputDateTermWrap .btnArea:after {content:'';display:block;clear:both;}
 .section-training .inputDateTermWrap .btnArea > button {box-sizing:border-box;float:left;width:33.33%;min-width:auto;}
 
+.section-training .btnArea.more { width:100%; padding:0 30px; margin-top:20px; text-align:right; }
+
 .common-popup .referenceArea {padding:25px 30px;background-color:#f7f7f7;}
 .common-popup .referenceArea .list {}
 .common-popup .referenceArea .list li {padding:0 14px;color:#727476;font-size:22px;position:relative;}
