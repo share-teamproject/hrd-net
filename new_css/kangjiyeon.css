@@ -13,7 +13,7 @@
 .tableArea .selectW50, .selectW50 { min-width:50px; width:50px; }
 .tableArea .selectW65, .selectW65 { min-width:65px; width:65px; }
 .tableArea .selectW80, .selectW80 { min-width:80px; width:80px; }
-.tableArea .selectW130, .selectW130 { min-width:130px; width:130px; }
+.tableArea .selectW130, .selectW130, .btnW130 { min-width:130px; width:130px; }
 .tableArea .selectW150, .selectW150, .btnW150 { min-width:150px; width:150px; }
 .tableArea .selectW160, .selectW160 { min-width:160px; width:160px; }
 .tableArea .selectW180, .selectW180 { min-width:180px; width:180px; }
@@ -26,7 +26,17 @@
 .tableArea .selectW585, .selectW585 { min-width:585px; width:585px; }
 .tableArea .selectW692, .selectW692 { min-width:692px; width:692px; }
 .tableArea .btnW60 { min-width:60px; width:60px; padding:0; }
+.w120 { min-width:130px; width:130px; }
 .moreBtn { display:none; }
+
+/* ==============================
+* tab
+* ============================== */
+.tabListTy5 { display:flex; width:100%; }
+.tabListTy5 > li { flex:1; height: 60px; border:1px solid #e2e2e4; border-left:none; line-height: 58px; text-align: center; color:#65646a; cursor: pointer; }
+.tabListTy5 > li:first-child { border-left:1px solid #e2e2e4; } 
+.tabListTy5 > li button, .tabInterface .tabListTy5 li a { width:100%; font-size:18px; }
+.tabListTy5 > li.on { border:2px solid #5b648a; border-bottom:1px solid #fff; color:#434e65; }
 
 /* ==============================
 * radio
@@ -53,6 +63,7 @@
 .btnGroup.ty3 { display:block; text-align:left; }
 .btnGroup.ty3 button + button{ margin-left:10px; }
 .btnGroup.ty4 { margin-top:60px; }
+.btnGroup.ty5 { display:block; text-align:right; margin-top:20px; }
 /* 바로가기 */
 .goLinkLong02 {display:inline-block; min-width:80px; height:26px; line-height:24px; padding:0 20px; text-align:center; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51;}
 .btnH26 {display:inline-block; min-width:112px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:24px;}
@@ -116,6 +127,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 /* 정렬방식 */
 #subContentWrap .sortArea.ty2 { margin:35px 0 -30px 0; }
 #subContentWrap .sortArea.ty3 { margin:50px 0 0 0; }
+#subContentWrap .sortArea.ty4 { margin-top:-20px; }
 
 
 
@@ -307,6 +319,11 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl > dt > span { width:82px; display:inline-block; font-size:13px; color:#666; text-align:center; border:1px #d3d3d3 solid; border-radius:15px; }
 .divtableArea01 .divtableListSet .divtableList > li .innerList > li > dl > dd { float:left; font-size:14px; color:#666; line-height:23px; padding-left:15px; }
 .divtableArea01 .divtableListSet .divtableList > li .none { font-size:14px; color:#727476; text-align:center; padding:20px; }
+
+/* MY관심 - 나의 관심정보 */
+.tableArea05 { border-top:2px #727476 solid; padding:18px; }
+.tableArea05 .titleText { font-size:22px; color:#292a2d; }
+.tableArea05 .btnSty {font-size:11px; color:#222; padding:4px 15px; margin-top:-5px; background:#e3e7ee; border-radius:5px; }
 
 /* MY카드 */
 .myCardArea {}

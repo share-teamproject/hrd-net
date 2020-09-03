@@ -60,6 +60,8 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 #subContentWrap .subContArea .sortArea .selectViewArea .selectView { display:inline-block; }
 #subContentWrap .subContArea .sortArea .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
 
+#subContentWrap .subContArea .sortArea.ty2 {display:none;}
+
 
 #subContentWrap .subContArea .searchBox.ty2 { border-top :6px #e1e4e9 solid; margin-top:20px; }
 #subContentWrap .subContArea .searchBox.tyM2 { border-top :6px #e1e4e9 solid; margin-top:20px; margin-bottom:50px; background-color:#fff; padding:60px 70px;}
@@ -115,9 +117,11 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .TrainingHistoryBox > ul > li > dl > dd { color:#292a2d; font-size:28px; width:calc(100% - 170px); padding:0 20px 0 40px; word-break: keep-all; }
 .TrainingHistoryBox > ul > li > dl > dt:before { content:''; position:absolute; top:2px; left:205px; height:calc(100% - 2px); border-left:3px solid #e3e7ee; }
 .TrainingHistoryBox > ul > li > dl > .star { margin-left:40px; }
+.TrainingHistoryBox .btnH26.mt5 { margin-top:5px; }
 
 .TrainingHistoryBox.ty2 > ul > li > dl > dd { width:62%; color:#292a2d; font-size:28px; padding-left:35px; }
 .TrainingHistoryBox.ty2 .btnH26 { border:2px #d3d3d3 solid; color:#666; }
+
 
 .TrainingHistoryBox.ty3 { margin-bottom:50px; }
 
@@ -181,6 +185,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .myCardArea .signUpFlow .signUpFlowList .on .txt { font-weight:500; }
 
 .partArea { padding:0 30px; }
+.partArea.ty2 { margin-bottom:-60px; }
 .myCardArea .btnGroup { margin-top:60px; }
 .myCardArea .partArea .partBox01,
 .myCardArea .partArea .partBox02 { margin-top:50px; }
@@ -501,6 +506,31 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .divTableArea08 .btnGroup.ty3 { margin-top:0; margin-bottom:40px; }
 .divTableArea08 .btnGroup.ty3 .btnType2 {width:100%;}
 .divTableArea08 .right img { width:100%; }
+
+/* MY관심 */
+.myInterestArea { }
+.myInterestArea .schTabListWrap { margin-top:0; }
+
+.moreBtn { display:block; margin-top:20px; text-align:center; }
+.moreBtn > button { font-size:24px; color:#333333; text-align:left; height:36px; padding-right:55px; line-height:36px; background:url('../new_images/common/btnMore.png') 100% 0 no-repeat; background-size:36px; }
+
+.tabListTy5  { overflow:hidden; width:100%; border-bottom:2px #f6f6f6 solid; border-right:2px #f6f6f6 solid; margin-bottom:60px; }
+.tabListTy5 > li { float:left; font-size:28px; color:#65646a; width:33.3%; height:82px; line-height:78px; text-align:center; cursor:pointer; border-top:2px #f6f6f6 solid; border-left:2px #f6f6f6 solid;}
+.tabListTy5 > li.on { position:relative; color:#3d5895; }
+.tabListTy5 > li.on:before {content:''; position:absolute; top:-1px; left:0; width:100%; border-top:8px solid #3d5895;}
+.tabListTy5 > li button { width:100%; }
+
+.detailList .title2 { float:left; width:81%; color:#292a2d; font-size:32px;  }
+.detailList .tag2 {  float:right; width:19%; }
+.detailList .tag2:after { content:''; display:block;}
+.detailList .tag2 li { float:left; margin-left:10px; font-size:20px; }
+.detailList .tag2 li.border { box-sizing:border-box; min-width:40px; line-height:40px; padding:0 4px; border:2px solid #d3d3d3; border-radius:4px; text-align:center; }
+.detailList .info.ty2 { clear:both; width:100%; padding-top:15px; }
+.detailList .info .item .tit2 { box-sizing:border-box; width:275px; padding-right:10px; color:#727476; font-size:24px; position:relative; }
+.detailList .info .item .tit2:after { content:''; display:block; width:2px; height:24px; background-color:#e2e2e4; position:absolute; top:22px; right:0; transform:translateY(-50%); }
+.detailList .graph.ty2 { margin-top:25px; }
+.detailList .graph .all.ty2 { width:100%;}
+.detailList .util .self2 { display:block; height:40px; line-height:38px; padding:0 12px; margin-left:30px; margin-top:5px; background:#e3e3e4; color:#4e4f51; font-size:22px; border-radius:10px; }
 
 /* 레이어팝업 버튼 영역  */
 .windowPop .btnGroup {text-align:center; padding:0 30px; font-size:0;}
