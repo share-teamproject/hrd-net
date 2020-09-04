@@ -467,34 +467,507 @@
                         <div class="declareArea">                                                             
                             <!-- 테이블 -->
                             <div class="tableArea">
+                                <!-- (심평원 심사평가위원) 정보등록 -->
                                 <div class="tableTitleArea mt0">
                                     <h4 class="tableTitle">(심평원 심사평가위원) 정보등록</h4>
                                     <div class="tableComment">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
                                 </div>                  
-                                <table class="list">
-                                    <caption>심사평가위원 정보등록</caption>
+                                <table class="view">
+                                    <caption>회원정보 입력</caption>
                                     <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:150px;">
+                                        <col style="width:auto;">
+                                        <col style="width:140px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">성명 <span title="필수입력" class="color01">＊</span></th>
+                                            <td colspan="4">홍길동</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">직장명 <span title="필수입력" class="color01">＊</span></th>
+                                            <td colspan="4"><input type="text" value="" title="직장명 입력" name="" id="" class="w480"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">소속기관유형 <span title="필수입력" class="color01">＊</span></th>
+                                            <td colspan="4">
+                                                <select title="소속기관유형" name="occupation01" id="occupation01" class="selectBox w300">
+                                                    <option selected="selected" value="">선택</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2" class="brd-r-ty1">부서 (학과) 지위<span title="필수입력" class="color01">＊</span></th>
+                                            <th scope="row">부서 (학과)</th>
+                                            <td><input type="text" value="" title="부서 (학과) 입력" name="" id="" class="w180"></td>
+                                            <th scope="row" rowspan="2">직장내<br>주요담당업무</th>
+                                            <td rowspan="2"><input type="text" value="" title="직장내 주요담당업무" name="" id="" class="w180"></td>
+                                        </tr>
+                                        <tr>                                            
+                                            <th scope="row">지위</th>
+                                            <td><input type="text" value="" title="지위 입력" name="" id="" class="w180"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="rowgroup" rowspan="2" class="brd-r-ty1">택1 <span title="필수입력" class="color01">＊</span></th>
+                                            <th scope="row">자택주소</th>
+                                            <td colspan="3">
+                                                <div class="addrCont">
+                                                    <div class="tblEle">
+                                                        <div class="ele">
+                                                            <input type="text" value="" title="우편번호 입력" name="" id="">
+                                                        </div>
+                                                        <div class="ele mini">
+                                                            <button type="button" class="uiBtn">우편번호 찾기</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addrContEle">
+                                                        <input type="text" value="" title="주소 정보" name="" id="" readonly="readonly">
+                                                    </div>
+                                                    <div class="addrContEle">
+                                                        <input type="text" value="" title="상세주소" name="" id="" readonly="readonly">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">직장주소</th>
+                                            <td colspan="3">
+                                                <div class="addrCont">
+                                                    <div class="tblEle">
+                                                        <div class="ele">
+                                                            <input type="text" value="" title="우편번호 입력" name="" id="">
+                                                        </div>
+                                                        <div class="ele mini">
+                                                            <button type="button" class="uiBtn">우편번호 찾기</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addrContEle">
+                                                        <input type="text" value="" title="주소 정보" name="" id="" readonly="readonly">
+                                                    </div>
+                                                    <div class="addrContEle">
+                                                        <input type="text" value="" title="상세주소" name="" id="" readonly="readonly">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="rowgroup" rowspan="3" class="pd0 brd-r-ty1 tc">소속기관유형 <span title="필수입력" class="color01">＊</span></th>
+                                            <th scope="row">휴대폰번호 <span title="필수입력" class="color01">＊</span></th>
+                                            <td colspan="3">
+                                                <div class="inpArea">
+                                                    <div class="phoneInput">
+                                                        <div class="ele ty1">
+                                                            <select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
+                                                                <option selected="selected" value="">선택</option>
+                                                                <option value="010"> 010 </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="ele ty2">-</div>
+                                                        <div class="ele ty3">
+                                                            <input type="text" title="핸드폰 가운데 번호" name="userHP02" id="userHP02">
+                                                        </div>
+                                                        <div class="ele ty2">-</div>
+                                                        <div class="ele ty3">
+                                                            <input type="text" title="핸드폰 마지막 번호" name="userHP03" id="userHP03">
+                                                        </div>
+                                                    </div>
+                                                </div>                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">직장전화</th>
+                                            <td colspan="3">
+                                                <div class="inpArea phoneInput">
+                                                    <div class="ele ty1">
+                                                        <select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
+                                                            <option selected="selected" value="">선택</option>
+                                                            <option value="032"> 032 </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="ele ty2">-</div>
+                                                    <div class="ele ty3">
+                                                        <input type="text" title="전화번호 가운데 번호" name="userTel02" id="userTel02">
+                                                    </div>
+                                                    <div class="ele ty2">-</div>
+                                                    <div class="ele ty3">
+                                                        <input type="text" title="전화번호 마지막 번호" name="userTel03" id="userTel03">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">자택전화</th>
+                                            <td colspan="3">
+                                                <div class="inpArea phoneInput">
+                                                    <div class="ele ty1">
+                                                        <select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
+                                                            <option selected="selected" value="">선택</option>
+                                                            <option value="032"> 032 </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="ele ty2">-</div>
+                                                    <div class="ele ty3">
+                                                        <input type="text" title="전화번호 가운데 번호" name="userTel02" id="userTel02">
+                                                    </div>
+                                                    <div class="ele ty2">-</div>
+                                                    <div class="ele ty3">
+                                                        <input type="text" title="전화번호 마지막 번호" name="userTel03" id="userTel03">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">이메일 (e-mail) <span title="필수입력" class="color01">＊</span></th>
+                                            <td colspan="4">
+                                                <div class="inpArea emailInput">
+                                                    <div class="ele">
+                                                        <input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
+                                                    </div>
+                                                    <div class="ele ty1">@</div>
+                                                    <div class="ele">
+                                                        <input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
+                                                    </div>
+                                                    <div class="ele ty2">
+                                                        <select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
+                                                            <option selected="selected" value="">직접입력</option>
+                                                            <option value="chol.com"> chol.com </option>
+                                                            <option value="dreamwiz.com"> dreamwiz.com </option>
+                                                            <option value="empal.com"> empal.com </option>
+                                                            <option value="freechal.com"> freechal.com </option>
+                                                            <option value="gmail.com"> gmail.com </option>
+                                                            <option value="hanmail.net"> hanmail.net </option>
+                                                            <option value="hanmir.net"> hanmir.net </option>
+                                                            <option value="hitel.com"> hitel.com </option>
+                                                            <option value="hotmail.com"> hotmail.com </option>
+                                                            <option value="korea.com"> korea.com </option>
+                                                            <option value="nate.com"> nate.com </option>
+                                                            <option value="naver.com"> naver.com </option>
+                                                            <option value="orgio.com"> orgio.com </option>
+                                                            <option value="paran.com"> paran.com </option>
+                                                            <option value="sayclub.net"> sayclub.net </option>
+                                                            <option value="shinbiro.com"> shinbiro.com </option>
+                                                            <option value="yahoo.co.kr"> yahoo.co.kr </option>
+                                                            <option value="yahoo.com"> yahoo.com </option>
+                                                            <option value="molab.go.kr"> molab.go.kr </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">평가신청 구분 <span title="필수입력" class="color01">＊</span></th>
+                                            <td colspan="4">
+                                                <div class="ui_checkBox">
+                                                    <input type="checkbox" name="chkScreen" id="chkScreen01">
+                                                    <label for="chkScreen01">통합심사</label>
+                                                </div>
+                                                <div class="ui_checkBox">
+                                                    <input type="checkbox" name="chkScreen" id="chkScreen02">
+                                                    <label for="chkScreen02">인증 평가</label>
+                                                </div>
+                                                <div class="ui_checkBox">
+                                                    <input type="checkbox" name="chkScreen" id="chkScreen03">
+                                                    <label for="chkScreen03">이수자 평가</label>
+                                                </div>
+                                                <div class="ui_checkBox">
+                                                    <input type="checkbox" name="chkScreen" id="chkScreen04">
+                                                    <label for="chkScreen04">성과 평가</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">KECO 코드 <span title="필수입력" class="color01">＊</span></th>
+                                            <td colspan="4">
+                                                <select title="KECO 코드" name="codeKECO" id="codeKECO" class="selectBox w300">
+                                                    <option selected="selected" value="">선택</option>
+                                                </select>
+                                                <span class="tableNoti ml20">＊ 평가기능 직업군 선택</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">NCS 코드 <span title="필수입력" class="color01">＊</span></th>
+                                            <td colspan="4">
+                                                <div class="tblEle codeNCS">
+                                                    <div class="ele">
+                                                        <button type="button" class="uiBtn">찾기</button>
+                                                    </div>
+                                                    <div class="ele">
+                                                        <input type="text" value="" title="NCS 코드 입력" name="" id="" class="w150">
+                                                    </div> 
+                                                    <div class="ele">
+                                                        <input type="text" value="" title="NCS 코드 입력" name="" id="" class="w400">
+                                                    </div>                                                      
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">사진첨부</th>
+                                            <td colspan="4">
+                                                <div class="fileAddEle">
+                                                    <div class="inner">
+                                                        <div class="fileAddCont">
+                                                            <ul class="addFileList">
+                                                                <li>
+                                                                    <div class="ui_checkBox">
+                                                                        <input type="checkbox" name="chkReturn" id="addFile02">
+                                                                        <label for="addFile02">첨부파일명.pptx</label>
+                                                                    </div>
+                                                                    <button type="button" class="btnCloseCross">삭제</button>
+                                                                    <span class="byte">21.2KB</span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="plugin">
+                                                                <div class="inner" style="padding: 30px 0; line-height: 1; font-size: 14px; color: #767676; text-align: center;">
+                                                                    이곳을 더블클릭 또는 파일을 드래그하세요.
+                                                                </div>
+                                                            </div>
+                                                            <div class="options">
+                                                                <div class="btns">
+                                                                    <div class="inpFile">
+                                                                        <label for="ex_file2" class="file-label02">파일추가</label>
+                                                                        <input type="file" id="ex_file2" class="file-upload">
+                                                                    </div>
+                                                                    <button type="button" class="btnType2">파일추가</button>
+                                                                    <button type="button" class="btnType2">항목제거</button>
+                                                                    <button type="button" class="btnType2">전체 항목제거</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="brd-r-ty1">평가희망훈련직종 <span title="필수입력" class="color01">＊</span></th>
+                                            <th scope="row">1순위</th>
+                                            <td>
+                                                <select title="평가희망훈련직종 1순위" name="occupation01" id="occupation01" class="selectBox w170">
+                                                    <option selected="selected" value="">선택</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">2순위</th>
+                                            <td>
+                                                <select title="평가희망훈련직종 2순위" name="occupation02" id="occupation02" class="selectBox w170">
+                                                    <option selected="selected" value="">선택</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">전문가구분</th>
+                                            <td colspan="4">
+                                                <select title="전문가구분" name="expert" id="expert" class="selectBox w170">
+                                                    <option selected="selected" value="">선택</option>
+                                                </select>
+                                            </td>
+                                        </tr> 
+                                        <tr>
+                                            <th scope="row">평가희망지역</th>
+                                            <td colspan="4">
+                                                <select title="평가희망지역" name="region" id="region01" class="selectBox w170">
+                                                    <option selected="selected" value="">선택</option>
+                                                </select>
+                                                <select title="평가희망지역" name="region02" id="region02" class="selectBox w170">
+                                                    <option selected="selected" value="">선택</option>
+                                                </select>
+                                            </td>
+                                        </tr>  
+                                        <tr>
+                                            <th scope="row" class="brd-r-ty1">평가경험</th>
+                                            <th scope="row">평가경험유무</th>
+                                            <td colspan="3">
+                                                <div class="ui_radioBox">                                             
+                                                    <input type="radio" checked="checked" value="" name="YesNo" id="YesNo1"> 
+                                                    <label for="YesNo1">있음</label>
+                                                </div>
+                                                <div class="ui_radioBox">   
+                                                    <input type="radio" value="" name="YesNo" id="YesNo2"> 
+                                                    <label for="YesNo2">없음</label>
+                                                </div>
+                                            </td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                                <!-- 관련경력 -->
+                                <div class="tableTitleArea">
+                                    <h4 class="tableTitle">관련경력 (산업체 근무 경력 및 교육 훈련 경력은 동일기간 중 중복입력 불가)</h4>
+                                    <div class="tableBtnSet">
+                                        <button type="button" class="btnH26">추가</button><button type="button" class="btnH26s">삭제</button>
+                                    </div>
+                                </div>
+                                <table class="list mb0">
+                                    <caption>관련경력</caption>
+                                    <colgroup>
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
                                         <col style="width:auto;">
                                         <col style="width:auto;">
                                     </colgroup> 
                                     <thead>
-                                        <th>심사 신청구분</th>
-                                        <th>신청일</th>
-                                        <th>상태</th>
-                                        <th class="last">비고 (사유)</th>
+                                        <th>선택</th>
+                                        <th>기관명</th>
+                                        <th>직급/직위</th>
+                                        <th>산업체/교육<br>
+                                            경력구분</th>
+                                        <th>근무기간</th>
+                                        <th>근무개월수<br>
+                                            (개월)</th>
+                                        <th class="last">주요업무</th>
                                     </thead>                                   
                                     <tbody>
                                         <tr>
-                                            <td colspan="4" class="none last">심사위원 신청내역이 없습니다.</td>
+                                            <td colspan="7" class="none last">추가버튼을 클릭해 주세요.</td>
                                         </tr>
                                     </tbody>
                                 </table>
+                                <!-- 학력 -->
+                                <div class="tableTitleArea">
+                                    <h4 class="tableTitle">학력 (위로부터 상위학력 순으로 기재)</h4>
+                                    <div class="tableBtnSet">
+                                        <button type="button" class="btnH26">추가</button><button type="button" class="btnH26s">삭제</button>
+                                    </div>
+                                </div>
+                                <table class="list mb0">
+                                    <caption>학력</caption>
+                                    <colgroup>
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                    </colgroup> 
+                                    <thead>
+                                        <th>선택</th>
+                                        <th>학위</th>
+                                        <th>자격명</th>
+                                        <th>자격코드</th>
+                                        <th class="last">취득일</th>
+                                    </thead>                                   
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="5" class="none last">추가버튼을 클릭해 주세요.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- 자격 -->
+                                <div class="tableTitleArea">
+                                    <h4 class="tableTitle">자격 (위로부터 상위학력 순으로 기재)</h4>
+                                    <div class="tableBtnSet">
+                                        <button type="button" class="btnH26">추가</button><button type="button" class="btnH26s">삭제</button>
+                                    </div>
+                                </div>
+                                <table class="list mb0">
+                                    <caption>자격</caption>
+                                    <colgroup>
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                        <col style="width:auto;">
+                                    </colgroup> 
+                                    <thead>
+                                        <th>선택</th>
+                                        <th>자격유형</th>
+                                        <th>취득년도</th>
+                                        <th>자격명</th>
+                                        <th class="last">발급기관</th>
+                                    </thead>                                   
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="5" class="none last">추가버튼을 클릭해 주세요.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- 제출 서류 첨부 -->
+                                <div class="tableTitleArea">
+                                    <h4 class="tableTitle">제출 서류 첨부</h4>
+                                </div>                  
+                                <table class="view mb0">
+                                    <caption>제출 서류 첨부</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>                                     
+                                        <tr>
+                                            <th scope="row">제출 서류 첨부</th>
+                                            <td>
+                                                <div class="fileAddEle">
+                                                    <div class="inner">
+                                                        <div class="fileAddCont">
+                                                            <ul class="addFileList">
+                                                                <li>
+                                                                    <div class="ui_checkBox">
+                                                                        <input type="checkbox" name="chkReturn" id="addFile01">
+                                                                        <label for="addFile01">첨부파일명.pptx</label>
+                                                                    </div>
+                                                                    <button type="button" class="btnCloseCross">삭제</button>
+                                                                    <span class="byte">21.2KB</span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="plugin">
+                                                                <div class="inner" style="padding: 30px 0; line-height: 1; font-size: 14px; color: #767676; text-align: center;">
+                                                                    이곳을 더블클릭 또는 파일을 드래그하세요.
+                                                                </div>
+                                                            </div>
+                                                            <div class="options">
+                                                                <div class="btns">
+                                                                    <div class="inpFile">
+                                                                        <label for="ex_file" class="file-label02">파일추가</label>
+                                                                        <input type="file" id="ex_file" class="file-upload">
+                                                                    </div>
+                                                                    <button type="button" class="btnType2">파일추가</button>
+                                                                    <button type="button" class="btnType2">항목제거</button>
+                                                                    <button type="button" class="btnType2">전체 항목제거</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="boxBltList">
+                                    <ul class="dotList">
+                                        <li>제출서류 (최종학력, 학위증명서, 재직증명서, 경력증명서, 자격증 사본 )를 스캔하여 첨부하되 첨부파일은 모두 합쳐서 하나의 압축파일로 보내주시기 바랍니다.<br> 
+                                            ( *첨부가능 파일 확장자 : zip, 최대 5MB)
+                                         </li>
+                                    </ul>
+                                </div>
+                                <!-- 개인정보 제공 동의 -->
+                                <table class="view mt60 mb0">
+                                    <caption>개인정보 제공 동의</caption>
+                                    <colgroup>
+                                        <col style="width:100%;">
+                                    </colgroup>
+                                    <tbody>                                     
+                                        <tr>
+                                            <td class="pd0">
+                                                <div class="agreeContent">
+                                                    <p class="text01">상기 본인은 위 기재사항이 사실과 다름이 없음을 확인하며, 허위 기재로 인한 선정취소 등 불이익에 대해<br>
+                                                        일체의 이의를 제기하지 않을 것을 서약합니다. 또한, 본인 또는 친인척 등 이해관계자가 직업능력개발 훈련시설을<br>
+                                                        운영하고 있거나 재직 중에 있지 않음을 확인하며, 개인 정보 제공 및 활용에 동의합니다.</p>
+                                                    <p class="text02">개인정보의 보유 및 이용기간은 준영구이며, <br>
+                                                        심사위원 신청정보는 제3자에게 제공하지 않습니다.</p>
+                                                    <p class="text03">2020년 8월 24일  지원자 : 이정진</p>
+                                                    <p class="text04">한국기술교육대학교 직업능력심사평가원 원장 귀하</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="boxBltList tr">
+                                    <div class="ui_checkBox">
+                                        <input type="checkbox" name="chkReturn" id="termsChk01">
+                                        <label for="termsChk01">위 내용에 동의합니다.</label>
+                                    </div>
+                                </div> 
                             </div>
-                            <div class="boxBltList">
-                                본 '심사평가위원 정보등록'은 별도의 모집공고를 통해 선발된 직업능력심사평가원의 심사평가위원이 심사평가 수행을 위해 활용하는 메뉴입니다. 따라서 해당 메뉴에서<br> 
-                                정보등록을 하더라도 심사평가위원 신청자·예비자가 아님을 알려드립니다. 추가 궁금한 사항 있으면 직업능력심사평가원으로 문의하여 주시기 바랍니다. <br> 
-                                (ksqa@koreatech.ac.kr)
-                            </div> 
 
                             <!-- 버튼 -->
                             <div class="btnGroup">

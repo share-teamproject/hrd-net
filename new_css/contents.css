@@ -1148,12 +1148,24 @@
 .partArea .contListType3 li.half:nth-child(even) { border-left:1px solid #e2e2e4; }
 .partArea .contListType3 li.bdtNo { border-top:none; }
 
-/* 부정행위신고 */
+/* 심사평가위원 & 부정행위신고 & 오픈 API */
 .declareArea { padding:20px 0 0 0; }
-.declareArea table.list { margin:0; }
 .declareArea .btnGroup { margin:60px 0 0 0; }
 .boxText01 { font-size:14px; line-height:22px; color:#727476; }
 .boxText01 + .goLink { margin:20px 0 0 0;}
 .dlBtnSet { overflow:hidden; width:100%; margin-top:10px;}
 .dlBtnSet dt { clear:both; float:left; margin-top:10px; width:165px; font-size:14px; line-height:26px; color:#292a2d; }
 .dlBtnSet dd { float:left; margin-top:10px; }
+.declareArea .tableBtnSet .btnH26 { width:58px; min-width:58px; }
+.declareArea .tableBtnSet .btnH26s { width:58px; min-width:58px; margin-left:10px; }
+.declareArea .fileAddEle { border-bottom:none; margin:0; padding:10px; }
+.declareArea .fileAddEle .options .btns { padding:0; }
+.declareArea .fileAddEle .options .inpFile { width:100%; }
+.declareArea .agreeContent { text-align:center; padding:40px 40px 50px; border-left:1px solid #e2e2e4; border-right:1px solid #e2e2e4; }
+.declareArea .agreeContent .text01 { font-size:14px; color:#727476; line-height:24px; }
+.declareArea .agreeContent .text02 { font-size:22px; color:#292a2d; line-height:32px; margin:40px 0 0 0; }
+.declareArea .agreeContent .text03 { font-size:20px;  font-weight:500; color:#4e4f51; line-height:24px; margin:40px 0 30px; }
+.declareArea .agreeContent .text04 { font-size:16px; color:#727476; line-height:24px; }
+.declareArea .selectBox + .selectBox { margin-left:10px; }
+.codeNCS.tblEle > .ele { width:120px; text-align:left; } 
+.codeNCS.tblEle .ele + .ele { width:155px; text-align:left; }

@@ -137,6 +137,9 @@ body.noScroll { position: fixed; overflow: hidden;	width: 100%; height: 100% }
 .tableArea .tableTitleArea { display:table; width:100%; margin:50px 0 0 0; }
 .tableArea .tableTitleArea .tableTitle { display:table-cell; padding:0 0 15px 0; color:#292a2d; font-size:22px; font-weight:500; }
 .tableArea .tableTitleArea .tableComment { display:table-cell; padding:0 0 7px 0; vertical-align:bottom; text-align:right; color:#727476; font-size:12px; font-weight:400; }
+.tableArea .tableTitleArea .tableBtnSet { display:table-cell; padding:0 0 7px 0; vertical-align:middle; text-align:right; }
+.tableNoti { font-size:12px; line-height:20px; color:#727476; }
+
 .tableArea table.view { width:100%; border-top:2px solid #727476; margin-bottom:20px; box-sizing:border-box; background: #fff;}
 .tableArea table.view th { background:#f0f0f2; width:210px; border-bottom:1px solid #e2e2e4; padding:17px 30px; font-size: 14px; color:#222222; font-weight:400; text-align:left; box-sizing:border-box; }
 .tableArea table.view td { border-bottom:1px solid #e2e2e4; font-size: 14px; color:#727476; text-align:left; padding:12px;  box-sizing:border-box; }
@@ -272,7 +275,7 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 /* 대버튼 */
 button.btnType1 , a.btnType1 { min-width:136px; display:inline-block; text-align:center; background:#fff; border:1px solid #cdcdd1; color:#4e4f51; font-size:18px; line-height:50px; height:52px; padding:0 44px; box-sizing:border-box; }
 .btnType1.primary { background:#4171df; border:1px solid #4171df; color:#fff; } 
-.btnType1.etc { background:#258384; color:#fff; border:1px solid #258384; } 
+.btnType1.etc { background:#fff; color:#258384; border:1px solid #258384; } 
 button.btnType1[disabled="disabled"] { border-color:#86a6ff;color:#86a6ff;cursor:unset}
 button.btnType1 + button { margin:0 0 0 17px; }
 /* 중버튼 */
@@ -294,10 +297,12 @@ button.goLink, a.goLink { position:relative; display:inline-block; min-width:100
 button.goLink, a.goLink:after { position:absolute; top:6px; right:20px; width:6px; height:12px; content:''; background:url('../new_images/common/arrowGoLink.png') no-repeat; background-size:6px 12px; }
 .goLinkLong {display:inline-block; min-width:100px; height:26px; line-height:24px; padding:0 20px; text-align:left; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51; }
 .goLinkLong:after {content:''; display:inline-block; vertical-align:middle; width:6px; height:12px; margin-left:5px; margin-top:-3px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;}
+/* ETC */
 .btnH26 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:12px; color:#258384; border:1px solid #258384; line-height:24px; background: #fff;}
 .btnH26s {display:inline-block; padding:0 15px; min-width:88px; text-align:center; font-size:12px; color:#4e4f51; border:1px solid #cdcdd1; line-height:24px; background: #fff;}
 .btnH30 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:28px;}
 .btnH30.ty1 {height:30px; line-height:30px; text-align:center; font-size:14px; color:#4e4f51; border:0; background:#c9d3e8;}
+
 
 /* 댓글등록 버튼 */
 button.commentBtn, a.commentBtn { border:1px solid #5b648a; background:#fff; color:#5b648a; width:136px; height:105px; font-size:16px; font-weight:500; }
@@ -398,8 +403,10 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .w145 { width:145px !important; }
 .w150 { width:150px !important; }
 .w160 { width:160px !important; }
+.w170 { width:170px !important; }
 .w180 { width:180px !important; }
 .w300 { width:300px !important; }
+.w400 { width:400px !important; }
 .w480 { width:480px !important; }
 .mt0 { margin-top:0px !important; }
 .mt5 { margin-top:5px !important; }
@@ -411,6 +418,7 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .mt50 { margin-top:50px !important; }
 .mt60 { margin-top:60px !important; }
 .ml6 { margin-left:6px !important; }
+.ml20 { margin-left:6px !important; }
 .mb0 {margin-bottom:0 !important;}
 .mb5 {margin-bottom:5px !important;}
 .pd0 {padding:0 !important;}
