@@ -130,6 +130,8 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 #subContentWrap .sortArea.ty2 { margin:35px 0 -30px 0; }
 #subContentWrap .sortArea.ty3 { margin:50px 0 0 0; }
 #subContentWrap .sortArea.ty4 { margin-top:-20px; }
+#subContentWrap .sortArea.ty5 { margin:-20px 0 -50px 0; }
+#subContentWrap .sortArea.ty6 { margin:50px 0 -50px 0; }
 
 
 
@@ -310,9 +312,9 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .infoBtnList .txt { float:left; color:#4e4f51; font-size:16px; }
 .infoBtnList .btn { float:right; }
 
-.selectionBox { border:3px #e1e4e9 solid; height:180px; padding:30px; margin-bottom:20px; }
+.selectionBox { border:3px #e1e4e9 solid; padding:10px 30px; margin-bottom:20px; }
 .selectionBox .txt { font-size:14px; color:#727476; text-align:center; line-height:150%; padding:30px 0; }
-.selectionBox .selectionList > li { font-size:14px; color:#4e4f51; }
+.selectionBox .selectionList > li { font-size:14px; color:#4e4f51; margin:10px 0; }
 
 /* MY관심 - 나의 맞춤설정 */
 .divtableArea01 { border-top:2px #727476 solid; }
@@ -336,17 +338,25 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tableArea05 .titleList02 > li { float:left; }
 .tableArea05 .titleList02 > li .titleText { font-size:22px; color:#292a2d; padding:0 20px; }
 .tableArea05 .titleList02 > li .titleText a:hover { text-decoration: none; color:#4171df; border: #4171df solid; border-width: 0 0 1px 0; }
+.tableArea05 .titleList02 > li .titleText2 { font-size:22px; color:#292a2d; padding:0 20px; width:830px; vertical-align: middle; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all; }
+.tableArea05 .titleList02 > li .titleText2 a:hover { text-decoration: none; color:#4171df; border: #4171df solid; border-width: 0 0 1px 0; }
 .tableArea05 .titleList02 > li .ui_checkBox { margin-top:5px; }
-.tableArea05 .titleList02 .btnSty {display:block; font-size:11px; color:#222; padding:4px 15px; margin-top:5px; background:#e3e7ee; border-radius:5px; }
+.tableArea05 .titleList02 .btnSty, .tableArea05 .titleList02 .btnSty2 {display:block; font-size:11px; color:#222; padding:4px 15px; margin-top:5px; background:#e3e7ee; border-radius:5px; }
 .tableArea05 .titleList02 .btnStyM {display:none; }
 .tableArea05 .titleList .txt01 { font-size:14px; color:#292a2d; padding:15px 0 0 15px;}
 .tableArea05 .titleList .txt02 { font-size:14px; color:#666; padding:5px 0 0 15px; }
-.tableArea05 .titleList .txt02 > dl {overflow:hidden;}
-.tableArea05 .titleList .txt02 > dl > dt { float:left; padding-right:5px;}
-.tableArea05 .titleList .txt02 > dl > dt:after {content:':'; font-size:14px; color:#727476; padding-left:5px; }
-.tableArea05 .titleList .txt03Box { position:absolute; top:5px; right:0; }
+.tableArea05 .titleList .txt02list {overflow:hidden; font-size:14px; color:#727476; }
+.tableArea05 .titleList .txt02list > dt { float:left; padding-right:5px;}
+.tableArea05 .titleList .txt02list > dt:after {content:':'; padding-left:5px; }
+.tableArea05 .titleList .txt03Box { position:absolute; top:5px; right:0; text-align:right; }
 .tableArea05 .titleList .txt03Box .goLinkLong { width:120px; }
+.tableArea05 .titleList .txt03Box .txt03 { display:block; font-size:14px; color:#727476; padding-top:20px;  }
 
+.esCont .ui_checkBox.single { margin-bottom:5px; }
+.esCngDom02 {position: relative; display: inline-block; vertical-align: middle; margin:10px 0 0 -15px;}
+.colorGauge02 {position: relative; display: inline-block; vertical-align: middle; width: 425px; height: 20px; background: #d8dfeb; overflow: hidden;}
+
+.esInfoCont.esFix02 { width: 290px; }
 
 /* MY카드 */
 .myCardArea {}

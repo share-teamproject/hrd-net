@@ -303,7 +303,7 @@
                         <li class="goHome verPC"><a href="/">홈</a></li>
                         <li class="verPC"><a href="/">MY 서비스</a></li>
                         <li><a href="/">MY 관심</a></li>
-                        <li class="on"><a href="/">나의 맞춤설정</a></li>
+                        <li class="on"><a href="/">나의 맞춤정보</a></li>
                     </ul>
                 </div>
             </div>
@@ -454,7 +454,7 @@
 
                 <div class="subContArea">
                     <div class="headingTitleArea">
-                        <h3 class="headingTitle">나의 맞춤설정</h3>
+                        <h3 class="headingTitle verPC">나의 맞춤정보</h3>
                         <!--<p class="headingText">고객님이 등록하신 질문과 답변, 개선 및 제안의 문의내역을 쉽게 확인해 보실 수 있습니다.</p>-->
                         <div class="headingIcon">
                             <ul>
@@ -468,391 +468,785 @@
                     <div class="contentArea">
 
                         <!-- MY관심 컨텐츠 -->
-                        <div class="myInterestArea">    
-
-							<div class="">
-								<!-- 텝 인덱스 -->  
-								<div class="tabListArea"> 
-									<ul class="tabList">
-										<li id="tab1" class="on"><button type="button">훈련</button></li>
-										<li id="tab2"><button type="button">자격증</button></li>
-										<li id="tab3"><button type="button">일자리</button></li>
-										<li id="tab4"><button type="button">직업</button></li>
-										<li id="tab5"><button type="button">학과</button></li>
-									</ul>
-								</div> 
-								<!--// 텝 인덱스 -->
-								<!-- 텝 컨텐츠 -->
-                                <div class="tabContents">
-									<section id="section1" role="tabpanel" class="tabCont on">
-										<h3>훈련 section</h3>
-										<div class="infoBtnList">
-											<ul>
-												<li class="txt">‘훈련맞춤설정’은 5개까지만 선택이 가능합니다.</li>
-												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
-											</ul>
-										</div>
-										<div class="selectionBox">
-											<p class="txt">훈련 / 자격증 / 일자리 / 직업 / 학과<br /> 관심분야를 설정하면 맞춤 정보를 이용하실 수 있습니다. </p>
-										</div>
-										<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
-
-										<div class="sortArea sortArea01">
-											<p class="totalNum">전체 <strong>1</strong> 건</p>
-											<div class="selectViewArea">
-												<div class="selectView">
-													<label for="pageRow">페이지당 조회건수</label>
-													<select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
-														<option value="10" selected="selected">10개씩</option>
-														<option value="20">20개씩</option>
-														<option value="30">30개씩</option>
-														<option value="50">50개씩</option>
-														<option value="100">100개씩</option>
-													</select>
-												</div> 
-											</div>
-										</div>
-
-										<!-- div 테이블 -->
-										<div class="divtableArea01">
-											<div class="divtableListSet"> 
-												<ul class="divtableList">
-													<li>
-														<p class="txt">[DB SCHENKER KOREA] 물류 사무직 채용</p>
-														<ul class="innerList">
-															<li>
-																<dl>
-																	<dt><span>근무지역</span></dt>
-																	<dd>경기 용인시 수지구</dd>
-																</dl>
-															</li>
-															<li>
-																<dl>
-																	<dt><span>등록일</span></dt>
-																	<dd>2020-08-04</dd>
-																</dl>
-															</li>
-															<li>
-																<dl>
-																	<dt><span>임금</span></dt>
-																	<dd>30000000(연봉) 근로계약 학력: 대졸 채용</dd>
-																</dl>
-															</li>
-															<li>
-																<dl>
-																	<dt><span>마감일</span></dt>
-																	<dd>2020-08-04</dd>
-																</dl>
-															</li>
-															<li>
-																<dl>
-																	<dt><span>고용형태</span></dt>
-																	<dd>기간의 정함이 없는 근로계약</dd>
-																</dl>
-															</li>
-															<li>
-																<dl>
-																	<dt><span>제공처</span></dt>
-																	<dd>용인고용센터</dd>
-																</dl>
-															</li>
-															<li>
-																<dl>
-																	<dt><span>학력</span></dt>
-																	<dd>대졸(2~3년) | 대졸(4년)</dd>
-																</dl>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-
-											<!-- paging : pc -->
-											<div class="pagenation">
-												<a href="/" class="pb prev">이전보기</a>
-												<a href="/" class="on">1</a>
-												<a href="/">2</a>
-												<a href="/">3</a>
-												<a href="/">4</a>
-												<a href="/">5</a>
-												<a href="/">6</a>
-												<a href="/">7</a>
-												<a href="/" class="pb next">다음보기</a>
-											</div> 
-											 <!-- // paging : pc -->
-
-											<!-- 검색결과 더보기 : mobile -->
-											<div class="moreBtn">
-												<button type="button">검색결과 더보기</button>
-											</div> 
-											<!-- //검색결과 더보기 : mobile -->
-										</div>
-										<!-- // div 테이블 -->
-									</section>
-
-									<section id="section2" role="tabpanel" class="tabCont">
-										<h3>자격증 section</h3>
-										<div class="infoBtnList">
-											<ul>
-												<li class="txt">'자격증맞춤설정’은 3개까지만 선택이 가능합니다.</li>
-												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
-											</ul>
-										</div>
-										<div class="selectionBox">
-											<ul class="selectionList">
-												<li>
-													<div class="ui_checkBox">
-														<input type="checkbox" name="certificate" id="certificate"><label for="certificate">멀티미디어콘텐츠제작전문가</label>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
-
-										<div class="sortArea sortArea01">
-											<p class="totalNum">전체 <strong>1</strong> 건</p>
-											<div class="selectViewArea">
-												<div class="selectView">
-													<label for="pageRow2">페이지당 조회건수</label>
-													<select title="페이지당 조회건수" name="pageRow" id="pageRow2" class="selectBox h30">
-														<option value="10" selected="selected">10개씩</option>
-														<option value="20">20개씩</option>
-														<option value="30">30개씩</option>
-														<option value="50">50개씩</option>
-														<option value="100">100개씩</option>
-													</select>
-												</div> 
-											</div>
-										</div>
-
-										<!-- div 테이블 -->
-										<div class="divtableArea01">
-											<div class="divtableListSet"> 
-												<ul class="divtableList">
-													<li>
-														<p class="none">해당 데이터가 없습니다.</p>
-													</li>
-												</ul>
-											</div>
-
-											<!-- paging : pc -->
-											<div class="pagenation">
-												<a href="/" class="pb prev">이전보기</a>
-												<a href="/" class="on">1</a>
-												<a href="/">2</a>
-												<a href="/">3</a>
-												<a href="/">4</a>
-												<a href="/">5</a>
-												<a href="/">6</a>
-												<a href="/">7</a>
-												<a href="/" class="pb next">다음보기</a>
-											</div> 
-											 <!-- // paging : pc -->
-
-											<!-- 검색결과 더보기 : mobile -->
-											<div class="moreBtn">
-												<button type="button">검색결과 더보기</button>
-											</div> 
-											<!-- //검색결과 더보기 : mobile -->
-										</div>
-										<!-- // div 테이블 -->
-									</section>
-
-									<section id="section3" role="tabpanel" class="tabCont">
-										<h3>일자리 section</h3>
-										<div class="infoBtnList">
-											<ul>
-												<li class="txt">‘일자리맞춤설정’은 3개까지만 선택이 가능합니다.</li>
-												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
-											</ul>
-										</div>
-										<div class="selectionBox">
-											<ul class="selectionList">
-												<li>
-													<div class="ui_checkBox">
-														<input type="checkbox" name="Job" id="Job"><label for="Job">경영·행정·사무직 > 무역·운송·생산·품질 사무원 > 무역 사무원</label>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
-
-										<div class="sortArea sortArea01">
-											<p class="totalNum">전체 <strong>1</strong> 건</p>
-											<div class="selectViewArea">
-												<div class="selectView">
-													<label for="pageRow3">페이지당 조회건수</label>
-													<select title="페이지당 조회건수" name="pageRow" id="pageRow3" class="selectBox h30">
-														<option value="10" selected="selected">10개씩</option>
-														<option value="20">20개씩</option>
-														<option value="30">30개씩</option>
-														<option value="50">50개씩</option>
-														<option value="100">100개씩</option>
-													</select>
-												</div> 
-											</div>
-										</div>
-
-										<!-- div 테이블 -->
-										<div class="divtableArea01">
-											<div class="divtableListSet"> 
-												<ul class="divtableList">
-													<li>
-														<p class="none">해당 데이터가 없습니다.</p>
-													</li>
-												</ul>
-											</div>
-
-											<!-- paging : pc -->
-											<div class="pagenation">
-												<a href="/" class="pb prev">이전보기</a>
-												<a href="/" class="on">1</a>
-												<a href="/">2</a>
-												<a href="/">3</a>
-												<a href="/">4</a>
-												<a href="/">5</a>
-												<a href="/">6</a>
-												<a href="/">7</a>
-												<a href="/" class="pb next">다음보기</a>
-											</div> 
-											 <!-- // paging : pc -->
-
-											<!-- 검색결과 더보기 : mobile -->
-											<div class="moreBtn">
-												<button type="button">검색결과 더보기</button>
-											</div> 
-											<!-- //검색결과 더보기 : mobile -->
-										</div>
-										<!-- // div 테이블 -->
-									</section>
-
-									<section id="section4" role="tabpanel" class="tabCont">
-										<h3>직업 section</h3>
-										<div class="infoBtnList">
-											<ul>
-												<li class="txt">‘직업맞춤설정’은 3개까지만 선택이 가능합니다.</li>
-												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
-											</ul>
-										</div>
-										<div class="selectionBox">
-											<p class="txt">훈련 / 자격증 / 일자리 / 직업 / 학과<br />관심분야를 설정하면 맞춤 정보를 이용하실 수 있습니다.</p>
-										</div>
-										<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
-
-										<div class="sortArea sortArea01">
-											<p class="totalNum">전체 <strong>1</strong> 건</p>
-											<div class="selectViewArea">
-												<div class="selectView">
-													<label for="pageRow4">페이지당 조회건수</label>
-													<select title="페이지당 조회건수" name="pageRow" id="pageRow4" class="selectBox h30">
-														<option value="10" selected="selected">10개씩</option>
-														<option value="20">20개씩</option>
-														<option value="30">30개씩</option>
-														<option value="50">50개씩</option>
-														<option value="100">100개씩</option>
-													</select>
-												</div> 
-											</div>
-										</div>
-
-										<!-- div 테이블 -->
-										<div class="divtableArea01">
-											<div class="divtableListSet"> 
-												<ul class="divtableList">
-													<li>
-														<p class="none">해당 데이터가 없습니다.</p>
-													</li>
-												</ul>
-											</div>
-
-											<!-- paging : pc -->
-											<div class="pagenation">
-												<a href="/" class="pb prev">이전보기</a>
-												<a href="/" class="on">1</a>
-												<a href="/">2</a>
-												<a href="/">3</a>
-												<a href="/">4</a>
-												<a href="/">5</a>
-												<a href="/">6</a>
-												<a href="/">7</a>
-												<a href="/" class="pb next">다음보기</a>
-											</div> 
-											 <!-- // paging : pc -->
-
-											<!-- 검색결과 더보기 : mobile -->
-											<div class="moreBtn">
-												<button type="button">검색결과 더보기</button>
-											</div> 
-											<!-- //검색결과 더보기 : mobile -->
-										</div>
-										<!-- // div 테이블 -->
-									</section>
-
-									<section id="section5" role="tabpanel" class="tabCont">
-										<h3>학과 section</h3>
-										<div class="infoBtnList">
-											<ul>
-												<li class="txt">‘학과맞춤설정’은 3개까지만 선택이 가능합니다.</li>
-												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
-											</ul>
-										</div>
-										<div class="selectionBox">
-											<p class="txt">훈련 / 자격증 / 일자리 / 직업 / 학과<br />관심분야를 설정하면 맞춤 정보를 이용하실 수 있습니다.</p>
-										</div>
-										<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
-
-										<div class="sortArea sortArea01">
-											<p class="totalNum">전체 <strong>1</strong> 건</p>
-											<div class="selectViewArea">
-												<div class="selectView">
-													<label for="pageRow5">페이지당 조회건수</label>
-													<select title="페이지당 조회건수" name="pageRow" id="pageRow5" class="selectBox h30">
-														<option value="10" selected="selected">10개씩</option>
-														<option value="20">20개씩</option>
-														<option value="30">30개씩</option>
-														<option value="50">50개씩</option>
-														<option value="100">100개씩</option>
-													</select>
-												</div> 
-											</div>
-										</div>
-
-										<!-- div 테이블 -->
-										<div class="divtableArea01">
-											<div class="divtableListSet"> 
-												<ul class="divtableList">
-													<li>
-														<p class="none">해당 데이터가 없습니다.</p>
-													</li>
-												</ul>
-											</div>
-
-											<!-- paging : pc -->
-											<div class="pagenation">
-												<a href="/" class="pb prev">이전보기</a>
-												<a href="/" class="on">1</a>
-												<a href="/">2</a>
-												<a href="/">3</a>
-												<a href="/">4</a>
-												<a href="/">5</a>
-												<a href="/">6</a>
-												<a href="/">7</a>
-												<a href="/" class="pb next">다음보기</a>
-											</div> 
-											 <!-- // paging : pc -->
-
-											<!-- 검색결과 더보기 : mobile -->
-											<div class="moreBtn">
-												<button type="button">검색결과 더보기</button>
-											</div> 
-											<!-- //검색결과 더보기 : mobile -->
-										</div>
-										<!-- // div 테이블 -->
-									</section>
-								</div>
-								<!-- // 텝 컨텐츠 -->
-							</div>		
+                        <div class="myInterestArea">   
 						
+							<div class="">
+								<div class="partArea">
+									<!-- 텝 인덱스 -->  
+									<div class="tabListArea"> 
+										<ul class="tabListTy5">
+											<li id="tab1" class="on"><button type="button">훈련</button></li>
+											<li id="tab2"><button type="button">자격증</button></li>
+											<li id="tab3"><button type="button">일자리</button></li>
+											<li id="tab4"><button type="button">직업</button></li>
+											<li id="tab5"><button type="button">학과</button></li>
+										</ul>
+									</div> 
+								</div>
+
+								<div class="endLineM2"></div>
+								<!--// 텝 인덱스 -->
+
+
+									<!-- 텝 컨텐츠 -->
+									<div class="tabContents">
+										<section id="section1" role="tabpanel" class="tabCont">
+											<h3>훈련 section</h3>
+
+											<div class="infoBtnList verPC">
+												<ul>
+													<li class="txt">‘훈련맞춤설정’은 5개까지만 선택이 가능합니다.</li>
+													<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+												</ul>
+											</div>
+											<div class="selectionBox">
+												<ul class="selectionList">
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="training" id="training1"><label for="training1">경영·행정·사무직 > 무역·운송·생산·품질 사무원 > 무역 사무원</label>
+														</div>
+													</li>
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="training" id="training2"><label for="training2">경영·행정·사무직 > 무역·운송·생산·품질 사무원 > 무역 사무원</label>
+														</div>
+													</li>
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="training" id="training3"><label for="training3">경영·행정·사무직 > 무역·운송·생산·품질 사무원 > 무역 사무원</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="btnGroupSet">
+												<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+											</div>
+											
+											<div class="sortArea ty6">
+												<p class="totalNum">전체 <strong>1</strong> 건</p>
+												<div class="selectViewArea">
+													<div class="selectView">
+														<label for="pageRow1">페이지당 조회건수</label>
+														<select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
+															<option value="10" selected="selected">10개씩</option>
+															<option value="20">20개씩</option>
+															<option value="30">30개씩</option>
+															<option value="50">50개씩</option>
+															<option value="100">100개씩</option>
+														</select>
+													</div> 
+												</div>
+											</div>
+
+											<div class="schEduCont ty2">												
+												<ul class="esList">
+													<li>
+														<div class="inner">
+															<div class="esCont c1">
+																<div class="ui_checkBox single">
+																	<input type="checkbox" name="compareChk" id="compareChk">
+																	<label for="compareChk">선택</label>
+																</div>
+																<div class="esLoc moDpNone">경기도 화성</div>
+																<div class="esName">(주)화성직업 전문학교</div>
+																<div class="esCamDom moDpNone">
+																	<span class="icoCam"></span>
+																</div>
+																<div class="esCert moDpNone">
+																	<img src="../new_images/common/icoProCerti3.png" alt="3년 인증">
+																</div>
+															</div>
+															<div class="esCont c2">
+																<div class="esTit">
+																	<a href="" class="etc">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a><span class="icoCam moDpNone"></span>
+																</div>
+																<div class="esHash">
+																	<span class="hashs moDpNone">#국민내일배움카드(구직자)</span>
+																	<span class="hashs moDpNone">#근로자 직무능력향상지원금</span>
+																	<span class="hashs pcDpNone">구</span>
+																	<span class="hashs pcDpNone">근</span>
+																	<span class="iconTip pcDpNone">TIP</span>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont">
+																		<div class="tit long">훈련기간</div>
+																		<div class="esIn">2020-06-17 ~ 2020-12-14 <span class="moDpNone">(9회차)</span></div>
+																	</div>
+																	<div class="esInfoCont rp">
+																		<div class="tit etc long dotAdd">일자리 정보 </div>
+																		<div class="esIn etc">1999개</div>
+																	</div>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont">
+																		<div class="tit long">과정만족도</div>
+																		<div class="esIn sGuage">
+																			<div class="starGuage">
+																				<span class="per" style="width: 35.5%;">35.5%</span>
+																			</div>
+																		</div>
+																		<div class="esIn cGuage2">
+																			<div class="esCngDom02">
+																				<div class="colorGauge02">
+																					<span class="cgBar" style="width:35.5%">35.5%</span>
+																				</div>
+																				<span class="iconTip">TIP</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="esCont c3">
+																<span class="rndTxt ty1 moDpNone">모집중</span>
+																<div class="esCngDom2">
+																	<span class="esCnt">1,900,000원</span>
+																	<a href="" class="btnViewLink ty2">자비부담액보기</a>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="inner">
+															<div class="esCont c1">
+																<div class="ui_checkBox single">
+																	<input type="checkbox" name="compareChk1" id="compareChk1">
+																	<label for="compareChk1">선택</label>
+																</div>
+																<div class="esLoc moDpNone">경기도 화성</div>
+																<div class="esName">(주)화성직업 전문학교</div>
+																<div class="esCamDom moDpNone">
+																	<span class="icoCam"></span>
+																</div>
+																<div class="esCert moDpNone">
+																	<img src="../new_images/common/icoProCerti5.png" alt="5년 인증">
+																</div>
+															</div>
+															<div class="esCont c2">
+																<div class="esTit">
+																	<a href="" class="etc">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a><span class="icoCam moDpNone"></span>
+																</div>
+																<div class="esHash">
+																	<span class="hashs moDpNone">#국민내일배움카드(구직자)</span>
+																	<span class="hashs moDpNone">#근로자 직무능력향상지원금</span>
+																	<span class="hashs pcDpNone">구</span>
+																	<span class="hashs pcDpNone">근</span>
+																	<span class="iconTip pcDpNone">TIP</span>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont">
+																		<div class="tit long">훈련기간</div>
+																		<div class="esIn">2020-06-17 ~ 2020-12-14 <span class="moDpNone">(9회차)</span></div>
+																	</div>
+																	<div class="esInfoCont rp">
+																		<div class="tit etc long dotAdd">일자리 정보 : </div>
+																		<div class="esIn etc">1999개</div>
+																	</div>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont">
+																		<div class="tit long">과정만족도</div>
+																		<div class="esIn sGuage">
+																			<div class="starGuage">
+																				<span class="per" style="width: 88.5%;">88.5%</span>
+																			</div>
+																		</div>
+																		<div class="esIn cGuage2">
+																			<div class="esCngDom02">
+																				<div class="colorGauge02">
+																					<span class="cgBar" style="width:88.5%">88.5%</span>
+																				</div>
+																				<span class="iconTip">TIP</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="esCont c3">
+																<span class="rndTxt ty1 moDpNone">모집중</span>
+																<div class="esCngDom2">
+																	<span class="esCnt">1,900,000원</span>
+																	<a href="" class="btnViewLink ty2">자비부담액보기</a>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+
+												<!-- paging : pc -->
+												<div class="pagenation verPC">
+													<a href="/" class="pb prev">이전보기</a>
+													<a href="/" class="on">1</a>
+													<a href="/">2</a>
+													<a href="/">3</a>
+													<a href="/">4</a>
+													<a href="/">5</a>
+													<a href="/">6</a>
+													<a href="/">7</a>
+													<a href="/" class="pb next">다음보기</a>
+												</div> 
+												<!-- //paging : pc -->
+
+												<!-- paging : mobile -->
+												<div class="moreBtn">
+													<button type="button">5개 더보기</button>
+												</div> 
+												<!-- // paging : mobile -->
+											</div>
+											
+										</section>
+
+										<section id="section2" role="tabpanel" class="tabCont on">
+											<h3>자격증 section</h3>
+
+											<div class="infoBtnList verPC">
+												<ul>
+													<li class="txt">‘자격맞춤설정’은 3개까지만 선택이 가능합니다.</li>
+													<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+												</ul>
+											</div>
+											<div class="selectionBox">
+												<ul class="selectionList">
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="Job" id="Job"><label for="Job">멀티미디어콘텐츠제작전문가</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="btnGroupSet ty2">
+												<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+											</div>
+
+											<div class="sortArea ty3">
+												<p class="totalNum">전체 <strong>1</strong> 건</p>
+												<div class="selectViewArea">
+													<div class="selectView">
+														<label for="pageRow3">페이지당 조회건수</label>
+														<select title="페이지당 조회건수" name="pageRow3" id="pageRow3" class="selectBox h30">
+															<option value="10" selected="selected">10개씩</option>
+															<option value="20">20개씩</option>
+															<option value="30">30개씩</option>
+															<option value="50">50개씩</option>
+															<option value="100">100개씩</option>
+														</select>
+													</div> 
+												</div>
+											</div>
+								
+											<div class="partArea">
+												<div class="tableArea05">
+													<ul>
+														<li>
+															<div class="titleSection">
+																<div class="titleBox">
+																	<ul class="titleList02">
+																		<li>
+																			<div class="ui_checkBox single">
+																				<input type="checkbox" name="compareChk2" id="compareChk2">
+																				<label for="compareChk2">선택</label>
+																			</div>
+																		</li>
+																		<li><p class="titleText"><a href="/">통신기기능사</a></p></li>
+																		<li><span class="btnSty">국가기술자격</span><span class="btnStyM">구</span></li>
+																	</ul>
+																	<ul class="titleList">
+																		<li class="txt01">관련부처 : 한국산업인력공단</li>
+																		<li class="txt02">산업 및 통신기술의 발달과 통신량의 증가에 따라 케이블 선로 및 광케이블 선로시설을 가설하고 유지, 보수하는데 필요한 제반 환경조성과 
+																		인력양성을 위해 자격제도 제정.</li>																	
+																	</ul>																
+																</div>
+															</div>														
+														</li>
+														<li>
+															<div class="titleSection">
+																<div class="titleBox">
+																	<ul class="titleList02">
+																		<li>
+																			<div class="ui_checkBox single">
+																				<input type="checkbox" name="compareChk3" id="compareChk3">
+																				<label for="compareChk3">선택</label>
+																			</div>
+																		</li>
+																		<li><p class="titleText">통신기기능사</p></li>
+																		<li><span class="btnSty">국가기술자격</span><span class="btnStyM">공</span></li>
+																	</ul>
+																	<ul class="titleList">
+																		<li class="txt01">관련부처 : 한국산업인력공단</li>
+																	</ul>																
+																</div>
+															</div>														
+														</li>
+														<li class="none">
+															해당 데이터가 없습니다.
+														</li>
+													</ul>
+
+													
+
+													<!-- paging : pc -->
+													<div class="pagenation verPC">
+														<a href="/" class="pb prev">이전보기</a>
+														<a href="/" class="on">1</a>
+														<a href="/">2</a>
+														<a href="/">3</a>
+														<a href="/">4</a>
+														<a href="/">5</a>
+														<a href="/">6</a>
+														<a href="/">7</a>
+														<a href="/" class="pb next">다음보기</a>
+													</div> 
+													<!-- //paging : pc -->
+
+													<!-- mobile : 결과더보기 -->
+													<div class="moreBtn">
+														<button type="button">5개 더보기</button>
+													</div> 
+													<!-- // mobile : 결과더보기 -->
+												</div>
+											</div>
+										</section>
+
+										<section id="section3" role="tabpanel" class="tabCont">
+											<h3>일자리 section</h3>
+
+											<div class="infoBtnList verPC">
+												<ul>
+													<li class="txt">‘일자리맞춤설정’은 3개까지만 선택이 가능합니다.</li>
+													<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+												</ul>
+											</div>
+											<div class="selectionBox">
+												<ul class="selectionList">
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="Job" id="Job"><label for="Job">건설·채굴직 > 건설구조 기능원> 건축 목공</label>
+														</div>
+													</li>
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="Job" id="Job"><label for="Job">건설·채굴직 > 건설구조 기능원> 건축 목공</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="btnGroupSet ty2">
+												<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+											</div>
+
+											<div class="sortArea ty6">
+												<p class="totalNum">전체 <strong>1</strong> 건</p>
+												<div class="selectViewArea">
+													<div class="selectView">
+														<label for="pageRow4">페이지당 조회건수</label>
+														<select title="페이지당 조회건수" name="pageRow4" id="pageRow4" class="selectBox h30">
+															<option value="10" selected="selected">10개씩</option>
+															<option value="20">20개씩</option>
+															<option value="30">30개씩</option>
+															<option value="50">50개씩</option>
+															<option value="100">100개씩</option>
+														</select>
+													</div> 
+												</div>
+											</div>
+
+											<div class="schEduCont">
+												<ul class="esList">
+													<li>
+														<div class="inner">
+															<div class="esCont c1">
+																<div class="esLoc moDpNone">경기도 화성</div>
+																<div class="esName">주식회사케이에스테크</div>
+															</div>
+															<div class="esCont c2">
+																<div class="esTit">
+																	<a href="">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont esFix02">
+																		<div class="tit">경력</div>
+																		<div class="esIn">신입</div>
+																	</div>
+																	<div class="esInfoCont moDpNone">
+																		<div class="tit">등록일</div>
+																		<div class="esIn">2020.07.08</div>
+																	</div>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont esFix02">
+																		<div class="tit">학력</div>
+																		<div class="esIn">
+																			<span class="acaLv">
+																				<span>고졸</span>
+																				<span>대졸 (2~~3년)</span>
+																				<span>대졸 (4년)</span>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="esInfoCont moDpNone">
+																		<div class="tit">마감일</div>
+																		<div class="esIn">2020.07.08</div>
+																	</div>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont">
+																		<div class="tit">고용형태</div>
+																		<div class="esIn">
+																			기간의 정함이 있는 근로계약 (시간(선택)제)
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="esCont c3">
+																<span class="rndTxt ty2 moDpNone">워크넷</span>
+																<div class="esCngDom2">
+																	<span class="esCnt">3,400만원</span>
+																	<span class="esUnit">(연봉)</span>
+																</div>
+																<span class="rndTxt ty2 pcDpNone">워크넷</span>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="inner">
+															<div class="esCont c1">
+																<div class="esLoc moDpNone">경기도 화성</div>
+																<div class="esName">주식회사케이에스테크</div>
+															</div>
+															<div class="esCont c2">
+																<div class="esTit">
+																	<a href="">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont esFix02">
+																		<div class="tit">경력</div>
+																		<div class="esIn">신입</div>
+																	</div>
+																	<div class="esInfoCont moDpNone">
+																		<div class="tit">등록일</div>
+																		<div class="esIn">2020.07.08</div>
+																	</div>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont esFix02">
+																		<div class="tit">학력</div>
+																		<div class="esIn">
+																			<span class="acaLv">
+																				<span>고졸</span>
+																				<span>대졸 (2~~3년)</span>
+																				<span>대졸 (4년)</span>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="esInfoCont moDpNone">
+																		<div class="tit">마감일</div>
+																		<div class="esIn">2020.07.08</div>
+																	</div>
+																</div>
+																<div class="esInfo">
+																	<div class="esInfoCont">
+																		<div class="tit">고용형태</div>
+																		<div class="esIn">
+																			기간의 정함이 있는 근로계약 (시간(선택)제)
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="esCont c3">
+																<span class="rndTxt ty2 moDpNone">워크넷</span>
+																<div class="esCngDom2">
+																	<span class="esCnt">180만원</span>
+																	<span class="esUnit">(월급)</span>
+																</div>
+																<span class="rndTxt ty2 pcDpNone">워크넷</span>
+															</div>
+														</div>
+													</li>
+												</ul>
+											
+
+													<!-- paging : pc -->
+													<div class="pagenation verPC">
+														<a href="/" class="pb prev">이전보기</a>
+														<a href="/" class="on">1</a>
+														<a href="/">2</a>
+														<a href="/">3</a>
+														<a href="/">4</a>
+														<a href="/">5</a>
+														<a href="/">6</a>
+														<a href="/">7</a>
+														<a href="/" class="pb next">다음보기</a>
+													</div> 
+													<!-- //paging : pc -->
+
+													<!-- mobile : 결과더보기 -->
+													<div class="moreBtn">
+														<button type="button">5개 더보기</button>
+													</div> 
+													<!-- // mobile : 결과더보기 -->
+											</div>
+										</section>
+
+										<section id="section4" role="tabpanel" class="tabCont">
+											<h3>직업 section</h3>
+
+											<div class="infoBtnList verPC">
+												<ul>
+													<li class="txt">‘직업맞춤설정’은 3개까지만 선택이 가능합니다.</li>
+													<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+												</ul>
+											</div>
+											<div class="selectionBox">
+												<ul class="selectionList">
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="Job" id="Job"><label for="Job">건설·채굴직 > 건설구조 기능원> 건축 목공</label>
+														</div>
+													</li>
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="Job" id="Job"><label for="Job">건설·채굴직 > 건설구조 기능원> 건축 목공</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="btnGroupSet ty2">
+												<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+											</div>
+
+											<div class="sortArea ty3">
+												<p class="totalNum">전체 <strong>1</strong> 건</p>
+												<div class="selectViewArea">
+													<div class="selectView">
+														<label for="pageRow5">페이지당 조회건수</label>
+														<select title="페이지당 조회건수" name="pageRow5" id="pageRow5" class="selectBox h30">
+															<option value="10" selected="selected">10개씩</option>
+															<option value="20">20개씩</option>
+															<option value="30">30개씩</option>
+															<option value="50">50개씩</option>
+															<option value="100">100개씩</option>
+														</select>
+													</div> 
+												</div>
+											</div>
+
+											<div class="partArea">
+												<div class="tableArea05">
+													<ul>
+														<li>
+															<div class="titleSection">
+																<div class="titleBox">
+																	<ul class="titleList02">
+																		<li>
+																			<div class="ui_checkBox single">
+																				<input type="checkbox" name="compareChk4" id="compareChk4">
+																				<label for="compareChk4">선택</label>
+																			</div>
+																		</li>
+																		<li><p class="titleText"><a href="/">RFID 시스템 개발자</a></p></li>
+																	</ul>
+																	<ul class="titleList">
+																		<li class="txt01">전기·전자·정보통신 > 정보통신관련직 > RFID 시스템 개발자</li>
+																		<li class="txt02">RFID 시스템개발자는 RFID 기술을 응용하여 새로운 제품을 설계하거나, 기존의 제품을 개선하여 좀 더 편리하게 만드는 일을 수행한다.</li>
+																	</ul>																
+																</div>
+															</div>														
+														</li>
+														<li>
+															<div class="titleSection">
+																<div class="titleBox">
+																	<ul class="titleList02">
+																		<li>
+																			<div class="ui_checkBox single">
+																				<input type="checkbox" name="compareChk5" id="compareChk5">
+																				<label for="compareChk5">선택</label>
+																			</div>
+																		</li>
+																		<li><p class="titleText">RFID 시스템 개발자</p></li>
+																	</ul>
+																	<ul class="titleList">
+																		<li class="txt01">전기·전자·정보통신 > 정보통신관련직 > RFID 시스템 개발자</li>
+																		<li class="txt02">가상현실전문가는 3D모델링 및 VRML 등의 기술을 이용해서, 가상의 시공간에서 자유로운 세계를 체험할 수 있도록 각종 응용분야(게임, 비행기 
+																		조종훈련, 가상 모델하우스 등)에 적용될 수 있는 가상의 시스템을 개발하는데 전문적으로 종사한다.</li>
+																	</ul>																
+																</div>
+															</div>														
+														</li>
+														<li class="none">
+															해당 데이터가 없습니다.
+														</li>
+													</ul>
+
+												
+
+													<!-- paging : pc -->
+													<div class="pagenation verPC">
+														<a href="/" class="pb prev">이전보기</a>
+														<a href="/" class="on">1</a>
+														<a href="/">2</a>
+														<a href="/">3</a>
+														<a href="/">4</a>
+														<a href="/">5</a>
+														<a href="/">6</a>
+														<a href="/">7</a>
+														<a href="/" class="pb next">다음보기</a>
+													</div> 
+													<!-- //paging : pc -->
+
+													<!-- mobile : 결과더보기 -->
+													<div class="moreBtn">
+														<button type="button">5개 더보기</button>
+													</div> 
+													<!-- // mobile : 결과더보기 -->
+												</div>
+											</div>
+										</section>
+
+										<section id="section5" role="tabpanel" class="tabCont">
+											<h3>학과 section</h3>
+
+											<div class="infoBtnList verPC">
+												<ul>
+													<li class="txt">‘학과맞춤설정’은 3개까지만 선택이 가능합니다.</li>
+													<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+												</ul>
+											</div>
+											<div class="selectionBox">
+												<ul class="selectionList">
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="Job" id="Job"><label for="Job">사회계열 > 경찰행정학과</label>
+														</div>
+													</li>
+													<li>
+														<div class="ui_checkBox">
+															<input type="checkbox" name="Job" id="Job"><label for="Job">사회계열 > 경찰행정학과</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="btnGroupSet ty2">
+												<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+											</div>
+
+											<div class="sortArea ty3">
+												<p class="totalNum">전체 <strong>1</strong> 건</p>
+												<div class="selectViewArea">
+													<div class="selectView">
+														<label for="pageRow6">페이지당 조회건수</label>
+														<select title="페이지당 조회건수" name="pageRow6" id="pageRow6" class="selectBox h30">
+															<option value="10" selected="selected">10개씩</option>
+															<option value="20">20개씩</option>
+															<option value="30">30개씩</option>
+															<option value="50">50개씩</option>
+															<option value="100">100개씩</option>
+														</select>
+													</div> 
+												</div>
+											</div>
+
+											<div class="partArea">
+												<div class="tableArea05">
+													<ul>
+														<li>
+															<div class="titleSection">
+																<div class="titleBox">
+																	<ul class="titleList02">
+																		<li>
+																			<div class="ui_checkBox single">
+																				<input type="checkbox" name="compareChk6" id="compareChk6">
+																				<label for="compareChk6">선택</label>
+																			</div>
+																		</li>
+																		<li><p class="titleText"><a href="/">(애완)동물학과</a></p></li>
+																		<li><span class="btnSty2">자연계열</span></li>
+																	</ul>
+																	<ul class="titleList">
+																		<li>
+																			<dl class="txt02list">
+																				<dt>진출분야</dt>
+																				<dd>동물병원, 사료업체, 화장품회사, 동물훈련기관, 애견미용실, 동물원</dd>
+																			</dl>		
+																			<dl class="txt02list">
+																				<dt>관련직업</dt>
+																				<dd>애완동물미용사, 애완동물조련사, 애완동물옷디자이너</dd>
+																			</dl>
+																		</li>
+																		<li class="txt03Box">
+																			<button type="button" class="goLinkLong verPC">관련정보보기</button>
+																			<span class="txt03">관심등록 : 18명</span>
+																		</li>
+																	</ul>																
+																</div>
+															</div>														
+														</li>
+														<li>
+															<div class="titleSection">
+																<div class="titleBox">
+																	<ul class="titleList02">
+																		<li>
+																			<div class="ui_checkBox single">
+																				<input type="checkbox" name="compareChk7" id="compareChk7">
+																				<label for="compareChk7">선택</label>
+																			</div>
+																		</li>
+																		<li><p class="titleText">(애완)동물학과</p></li>
+																		<li><span class="btnSty2">자연계열</span></li>
+																	</ul>
+																	<ul class="titleList">
+																		<li>
+																			<dl class="txt02list">
+																				<dt>진출분야</dt>
+																				<dd>동물병원, 사료업체, 화장품회사, 동물훈련기관, 애견미용실, 동물원</dd>
+																			</dl>		
+																			<dl class="txt02list">
+																				<dt>관련직업</dt>
+																				<dd>애완동물미용사, 애완동물조련사, 애완동물옷디자이너</dd>
+																			</dl>
+																		</li>
+																		<li class="txt03Box">
+																			<button type="button" class="goLinkLong verPC">관련정보보기</button>
+																			<span class="txt03">관심등록 : 18명</span>
+																		</li>
+																	</ul>																
+																</div>
+															</div>														
+														</li>
+														<li class="none">
+															해당 데이터가 없습니다.
+														</li>
+													</ul>
+
+												
+
+													<!-- paging : pc -->
+													<div class="pagenation verPC">
+														<a href="/" class="pb prev">이전보기</a>
+														<a href="/" class="on">1</a>
+														<a href="/">2</a>
+														<a href="/">3</a>
+														<a href="/">4</a>
+														<a href="/">5</a>
+														<a href="/">6</a>
+														<a href="/">7</a>
+														<a href="/" class="pb next">다음보기</a>
+													</div> 
+													<!-- //paging : pc -->
+
+													<!-- mobile : 결과더보기 -->
+													<div class="moreBtn">
+														<button type="button">5개 더보기</button>
+													</div> 
+													<!-- // mobile : 결과더보기 -->
+												</div>
+											</div>
+										</section>
+
+										
+									</div>
+									<!-- // 텝 컨텐츠 -->
+								
+							</div>
+
                         </div>
                         <!-- // MY관심 컨텐츠 -->
 

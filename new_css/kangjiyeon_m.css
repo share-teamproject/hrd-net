@@ -514,8 +514,8 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .moreBtn { display:block; margin-top:20px; text-align:center; }
 .moreBtn > button { font-size:24px; color:#333333; text-align:left; height:36px; padding-right:55px; line-height:36px; background:url('../new_images/common/btnMore.png') 100% 0 no-repeat; background-size:36px; }
 
-.tabListTy5  { overflow:hidden; width:100%; border-bottom:2px #f6f6f6 solid; border-right:2px #f6f6f6 solid; margin-bottom:60px; }
-.tabListTy5 > li { float:left; font-size:28px; color:#65646a; width:33.3%; height:82px; line-height:78px; text-align:center; cursor:pointer; border-top:2px #f6f6f6 solid; border-left:2px #f6f6f6 solid;}
+.tabListTy5  { overflow:hidden; width:100%; border-top:2px #f6f6f6 solid; border-left:2px #f6f6f6 solid; margin-bottom:60px; }
+.tabListTy5 > li { float:left; font-size:28px; color:#65646a; width:33.3%; height:82px; line-height:78px; text-align:center; cursor:pointer; border-bottom:2px #f6f6f6 solid; border-right:2px #f6f6f6 solid;}
 .tabListTy5 > li.on { position:relative; color:#3d5895; }
 .tabListTy5 > li.on:before {content:''; position:absolute; top:-1px; left:0; width:100%; border-top:8px solid #3d5895;}
 .tabListTy5 > li button { width:100%; }
@@ -534,17 +534,44 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 /* MY관심 - 나의 관심정보 2020-09-03 */
 .tableArea05 { border-top:2px #727476 solid; }
-.tableArea05 > ul > li {border-bottom:1px #e2e2e4 solid; padding:20px 15px; }
+.tableArea05 > ul > li {border-bottom:2px #e2e2e4 solid; padding:25px 15px; }
 .tableArea05 .titleList02 { overflow:hidden; padding-bottom:10px; }
 .tableArea05 .titleList02 > li { float:left; }
-.tableArea05 .titleList02 > li .titleText { font-size:30px; color:#292a2d; }
+.tableArea05 .titleList02 > li .titleText, .tableArea05 .titleList02 > li .titleText2 { font-size:30px; color:#292a2d; }
 .tableArea05 .titleList02 > li .ui_checkBox { display:none; }
 .tableArea05 .titleList02 .btnSty,
 .tableArea05 > ul > li.none {display:none; }
+.tableArea05 .titleList02 .btnSty2 {display:block; font-size:22px; color:#4e4f51; padding:4px 15px; margin:4px 0 0 10px; background:#e3e3e4; border-radius:5px; }
 .tableArea05 .titleList02 .btnStyM {display:block; font-size:22px; color:#4e4f51; width:38px; height:38px; line-height:34px; text-align:center; margin:5px 0 0 10px; border:2px #d3d3d3 solid; border-radius:5px; }
-.tableArea05 .titleList .txt01 { font-size:24px; color:#727476; font-weight:500; padding:15px 0 0 0;}
+.tableArea05 .titleList .txt01 { font-size:26px; color:#727476; font-weight:500; padding:15px 0 0 0;}
 .tableArea05 .titleList .txt02 { font-size:24px; color:#727476; padding:5px 0 0 0; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tableArea05 .titleList .txt02list { overflow:hidden; font-size:24px; color:#727476; padding-top:10px; }
+.tableArea05 .titleList .txt02list > dt { float:left;  position:relative;  }
+.tableArea05 .titleList .txt02list > dt:before {content:''; position:absolute; top:6px; right:-20px; height:calc(100% - 10px); border-left:3px solid #ececef;  }
+.tableArea05 .titleList .txt02list > dd { float:left; padding-left:40px; width:80%;}
+.tableArea05 .titleList .txt03Box .txt03 {display:inline-block; font-size:24px; color:#727476; padding-top:10px; }
 .tableArea05 .btnGroup { display:none; }
+
+.schEduCont.ty2 { position:relative; }
+.schEduCont.ty2 .esCont .ui_checkBox.single { display:none; }
+.schEduCont.ty2 .esInfoCont > .esIn.cGuage2 {position: relative; display: block; width: 100%; height: 32px; margin-top: 22px; padding-left: 0; font-size: 0;}
+.schEduCont.ty2 .esInfoCont > .esIn.cGuage2:before {content: none;}
+.schEduCont.ty2 .esCngDom02 {position: relative; vertical-align: middle;}
+.schEduCont.ty2 .esCngDom02 .iconTip, 
+.schEduCont.ty2 .esHash .iconTip,
+.schEduCont.ty2 .esInfoCont.rp { display:none; }
+.schEduCont.ty2 .colorGauge02 {position: relative; display: inline-block; vertical-align: middle; width: calc(100% - 0px); height: 32px; background: #d8dfeb; overflow: hidden;}
+.schEduCont.ty2 .btnViewLink {display: inline-block; min-width: 220px; padding: 0 15px; text-align: center; font-weight: 300; font-size: 26px; color: #666; line-height: 44px; border:0; background:#e3e3e4; border-radius:10px; }
+.schEduCont.ty2 .btnViewLink:after { display:none; }
+.schEduCont.ty2 .esTit > a.etc {display: inline-block; max-width: calc(100% - 90px); margin-bottom:15px; }
+.schEduCont.ty2 .esHash { position:absolute; top:60px; right:30px; }
+
+.btnGroupSet { border-bottom:8px #e7e9f0 solid; padding-bottom:60px;  }
+.btnGroupSet.ty2 { margin-bottom:60px; }
+.btnGroupSet  .btnGroup { padding:0 70px;}
+.btnGroupSet  .btnGroup .btnType2 {width:100%; color:#fff; font-size:28px; height:78px; line-height:76px; background-color:#4171df; margin-top:20px; }
+.selectionBox { padding:0 60px; margin-bottom:20px; }
+.selectionBox .selectionList > li { font-size:28px; color:#727476; margin:20px 0; }
 
 
 /* 레이어팝업 버튼 영역  */
