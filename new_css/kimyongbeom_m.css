@@ -149,6 +149,6 @@
 .section-training .btnArea.more { width:100%; padding:0 30px; margin-top:20px; text-align:right; }
 
 .common-popup .referenceArea {padding:25px 30px;background-color:#f7f7f7;}
-.common-popup .referenceArea .list {}
+.common-popup .referenceArea .add { color:#727476;font-size:22px; }
 .common-popup .referenceArea .list li {padding:0 14px;color:#727476;font-size:22px;position:relative;}
 .common-popup .referenceArea .list li:before {content:'';display:block;width:3px;height:3px;background-color:#727476;border-radius:50%;position:absolute;top:14px;left:0;}

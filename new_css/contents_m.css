@@ -408,6 +408,7 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .searchBoxType2 .item .icon.daynight { background-image:url('../new_images/common/icoDaynight.jpg'); }
 .searchBoxType2 .item .icon.self { background-image:url('../new_images/common/icoSelf.jpg'); }
 .searchBoxType2 .item .icon.good { background-image:url('../new_images/common/icoGood.jpg'); }
+.searchBoxType2 .item .icon.training-course { background-image:url('../new_images/common/icoTrainingCourse.jpg'); }
 .searchBoxType2 .item .icon:after { content:''; display:block; width:1px; height:26px; background-color:#f3f3f3; position:absolute; top:50%; right:0; transform:translateY(-50%); }
 .searchBoxType2 .item .con { display:inline-block; width:calc(100% - 68px); height:66px; line-height:66px; padding-left:16px; font-size:28px; color:#4e4f51; text-align:left; vertical-align:top; position:relative; }
 .searchBoxType2 .item .con:after { content:''; display:block; width:14px; height:24px; background:url('../new_images/common/searchArrowRight.png') no-repeat; background-size: cover; position:absolute; top:50%; right:16px; transform:translateY(-50%); }
