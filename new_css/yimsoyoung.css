@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* ==============================
+* MY서비스(기업)
+* ============================== */
+
+/* 일학습병행 */
+.workStudyArea .bigTitle { padding: 0 0 15px 0; font-size: 22px; font-weight: bold; color: #292a2d; }
+.workStudyArea .bigTitle + .searchWrap { margin-top: 0; }
+.workStudyArea .searchWrap .selectWrap { font-size: 0; }
+.workStudyArea .searchWrap .selectWrap select + .btnArea { margin-left: 10px; }
+.workStudyArea .fileAddEle { margin-bottom: 0; border-bottom: 0; }
+.workStudyArea .fileAddEle .fileAddCont { display: block; }
+.workStudyArea .w220 { width: 220px; }
