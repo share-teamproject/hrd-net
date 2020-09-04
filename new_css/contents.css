@@ -242,6 +242,10 @@
 .star.star02 { background-position:0 -76px; }
 .star.star01 { background-position:0 -95px; }
 
+.starRating, .starRating span { display:inline-block;height:19px;background:url('../new_images/common/icoStar.png') no-repeat;overflow:hidden;vertical-align:-1px;text-align:left}
+.starRating { width:125px; }
+.starRating span{ line-height:0;vertical-align:top;background-position:left bottom; text-indent:-5000px}
+
 /* 담기토글 */
 .like { text-indent:-9999px; line-height:0; background:url('../new_images/common/likeSet.png') 0 0 no-repeat; width:27px; height:24px; }
 .like.on { background-position:-27px 0; }
