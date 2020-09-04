@@ -37,6 +37,7 @@
 * button
 * ============================== */
 .btnListTy1 li {width:100%; margin:7px 0; }
+.btnListTy2 { font-size:24px; color:#4e4f51; line-height:0; width:160px; height:59px; padding-left:15px; background:#c9d3e8 url('../new_images/common/icobookmarkFill.png') no-repeat 20px 50%; }
 /* 바로가기 */
 .goLinkLong02 {display:inline-block; min-width:220px; height:45px; line-height:43px; padding:0 20px; text-align:center; border:2px solid #cdcdd1; font-size:26px; color:#4e4f51;}
 .btnH26 {display:inline-block; min-width:220px; height:45px; line-height:43px; padding:0 20px; text-align:center; font-size:26px; color:#258384; border:2px solid #258384; }
@@ -153,6 +154,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 .bigTitle06 { position:relative; font-size:34px; color:#292a2d; padding-bottom:30px; margin-top:50px; }
 .bigTitle06.ty2 { margin-top:0; padding-bottom:20px; }
+.bigTitle06.ty4 { margin-top:30px; padding-bottom:20px; }
 .bigTitle06 .txt { position:absolute; top:15px; right:0; display:block; font-size:22px; color:#727476; font-weight:400; }
 .bigTitle06 .txtPC { display:none; }
 .bigTitle06 .txt01 { color:#727476; }
@@ -359,7 +361,8 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tableArea03 > ul > li .titleSection > .titleBox .txt01 { position:absolute; top:0; left:0; font-size:28px; color:#4e4f51; }
 .tableArea03 > ul > li .titleSection > .titleBox .txt02 { position:absolute; top:110px; left:0; font-size:28px; color:#727476; }
 .tableArea03 > ul > li .titleSection > .titleBox .txt03 { position:absolute; top:167px; left:0; font-size:29px; color:#292a2d; }
-.tableArea03 > ul > li .titleSection > .titleBox .titleText { position:absolute; top:50px; left:0; font-size:32px; color:#292a2d; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tableArea03 > ul > li .titleSection > .titleBox .titleText { position:absolute; top:50px; left:0; font-size:32px; color:#292a2d; width:95%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tableArea03 > ul > li .titleSection > .titleBox .titleText2 { position:absolute; top:50px; left:0; font-size:32px; color:#292a2d;  }
 .tableArea03 > ul > li .contentsSection.ty2 { background:#fbfbfb; padding:30px; }
 
 .tableArea03.ty2 { border-top:4px #727476 solid;}
@@ -374,6 +377,21 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tableArea03.ty3 .allTtxtM { display:inline-block; width:140px; height:40px; line-height:40px; font-size:22px; color:#292a2d; text-align:center; background:#e3e7ee; border-radius:10px; }
 .tableArea03.ty3 .allTtxt { display:none; }
 .tableArea03.ty3 > ul > li .titleSection:after { content:''; position:absolute; top:calc(50% - 15px); right:25px; width:26px; height:24px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -13px; background-size:cover; }
+
+.tableArea03-1 { border-top:4px #727476 solid; margin-top:40px;}
+.tableArea03-1.ty2 { margin-top:20px; }
+.tableArea03-1 > ul > li { border-bottom:2px #e2e2e4 solid; }
+.tableArea03-1 > ul > li .titleSection { position:relative; cursor:pointer; padding-top:15px; }
+.tableArea03-1 > ul > li .titleSection:after { content:''; position:absolute; top:49%; right:30px; width:17px; height:8px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -8px; }
+.tableArea03-1 > ul > li.on .titleSection:after { background-position:0 0;}
+.tableArea03-1 > ul > li .titleSection > .titleBox { padding:14px 30px; }
+.tableArea03-1 > ul > li .titleSection > .titleBox > .titleList { overflow:hidden; }
+.tableArea03-1 > ul > li .titleSection > .titleBox > .titleList > li { position:relative; float:left; font-size:22px; color:#727476; padding-right:25px; }
+.tableArea03-1 > ul > li .titleSection > .titleBox > .titleList > li:before { content:''; position:absolute; top:10px; left:-14px; width:2px; height:15px; background:#ccc; }
+.tableArea03-1 > ul > li .titleSection > .titleBox > .titleText { width:90%; font-size:32px; color:#292a2d; padding:10px 0; }
+.tableArea03-1 > ul > li .titleSection > .titleBox > .titleText.ty2 { width:67%; }
+.tableArea03-1 > ul > li .titleSection > .titleBox > .txt03 { margin:10px 0; padding-bottom:10px }
+.tableArea03-1 > ul > li .contentsSection.ty2 { background:#fbfbfb; padding:30px; }
 
 .divTableArea03 { background:#fbfbfb; padding:30px; }
 .divTableArea03 .caption { font-size:0; }
@@ -532,7 +550,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .detailList .graph .all.ty2 { width:100%;}
 .detailList .util .self2 { display:block; height:40px; line-height:38px; padding:0 12px; margin-left:30px; margin-top:5px; background:#e3e3e4; color:#4e4f51; font-size:22px; border-radius:10px; }
 
-/* MY관심 - 나의 관심정보 2020-09-03 */
+/* MY관심 - 나의 관심정보, 맞춤정보 */
 .tableArea05 { border-top:2px #727476 solid; }
 .tableArea05 > ul > li {border-bottom:2px #e2e2e4 solid; padding:25px 15px; }
 .tableArea05 .titleList02 { overflow:hidden; padding-bottom:10px; }
@@ -573,6 +591,22 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .selectionBox { padding:0 60px; margin-bottom:20px; }
 .selectionBox .selectionList > li { font-size:28px; color:#727476; margin:20px 0; }
 
+.partArea .leftGroup {padding-bottom:2px;}
+.partArea .leftGroup .title {display:inline-block; vertical-align:middle; font-weight:500; font-size:30px; color:#292a2d;}
+.partArea .leftGroup .txtCases {display:inline-block; vertical-align:middle; margin-left:5px; font-size:26px; color:#666;}
+.partArea .leftGroup .txtCases em {color:#f48b2f;}
+
+.tableArea06 { border:6px #d8dfeb solid; padding:30px; }
+.tableArea06 .title { font-size:34px; color:#292a2d; font-weight:500; margin-bottom:35px; }
+.tableArea06 .btnArea { text-align:right; width:100%; margin-top:10px; }
+.tableArea06 .btnSty2 {display:inline-block; font-size:22px; color:#4e4f51; height:40px; line-height:38px; padding:0 15px;  margin:4px 0 0 10px; background:#e3e3e4; border-radius:5px; }
+
+.infoTxtList { margin-top:50px; }
+.infoTxtList .txt01 { font-size:28px; color:#727476; line-height:44px; margin-top:-10px; }
+.infoTxtList .bult-h4 { font-size:32px; color:#292a2d; font-weight:500; }
+.infoTxtList .txt02list { font-size:28px; color:#727476; padding-left:120px; }
+.infoTxtList .txt02list > li { position:relative; padding-left:20px; text-indent:-118px; margin:5px 0; }
+.infoTxtList .txt02list > li:after { content:''; position:absolute; top:15px; left:-118px; width:8px; height:8px; background:#258384; border-radius:50%; }
 
 /* 레이어팝업 버튼 영역  */
 .windowPop .btnGroup {text-align:center; padding:0 30px; font-size:0;}
