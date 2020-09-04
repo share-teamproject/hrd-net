@@ -226,4 +226,37 @@
 
 
 
+/*카드발급안내*/
+.cardInfoDom {padding-top: 5px;}
+.cardInfoDom > .tit {font-weight: 500; font-size: 22px; color: #292a2d;}
+.cardInfoDom > .tit + .desc {padding-top: 9px; font-size: 14px; color: #727476; line-height: 23px;}
+
+.cardServDom {margin-top: 36px; font-size: 0;}
+.cardServDom > dl {display: inline-block; width: 300px; padding-top: 63px; text-align: left; background-repeat: no-repeat; background-position: left 40px top;}
+.cardServDom > dl.ty1 {background-image: url(../new_images/common/icoCardInfo01.jpg);}
+.cardServDom > dl.ty2 {background-image: url(../new_images/common/icoCardInfo02.jpg);}
+.cardServDom > dl.ty3 {background-image: url(../new_images/common/icoCardInfo03.jpg);}
+.cardServDom + .tit {margin-top: 57px;}
+
+.sCardInfo {margin-top: 50px; padding: 0 0 0 422px; background: url(../new_images/common/bgCardInfo01.jpg) no-repeat left center;}
+.sCardInfo ul {display: inline-block;}
+.sCardInfo ul > li {font-size: 14px; color: #727476;}
+.sCardInfo ul > li + li {margin-top: 3px;}
+.sCardInfo ul > li .tit {display: inline-block; width: 90px;}
+.sCardInfo + .tit {margin-top: 70px;}
+
+.dotDl {padding-left: 10px;}
+.dotDl > dt {position: relative; padding-bottom: 9px; font-weight: 500; font-size:16px; color: #5b648a;}
+.dotDl > dt:before {content: ''; position: absolute; top: 11px; left: -10px; width: 4px; border-bottom: 4px solid #5b648a; border-radius: 50%;}
+.dotDl > dd {font-size: 14px; color: #727476; line-height: 23px;}
+
+.cardTarget {min-height: 174px; margin-top: 12px; font-size: 0; background: url(../new_images/common/bgCardInfo02.jpg) no-repeat right bottom;}
+.cardTarget > dl {display: inline-block; width: 300px; margin-top: 30px;}
+
+
+
+
+
+
+
 
