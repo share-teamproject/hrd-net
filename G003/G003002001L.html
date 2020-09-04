@@ -18,15 +18,15 @@
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout.css" rel="stylesheet" />
-    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" />     
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/jquery-ui.js"></script>
     <script src="../new_js/lib/moment.min.js"></script>   
     <script src="../new_js/lib/daterangepicker.js"></script>     
     <script src="../new_js/lib/swiper.min.js"></script>
-    <script src="../new_js/ui.js"></script>
+    <script src="../new_js/ui_m.js"></script>
 </head>
 
 <body>
@@ -664,11 +664,25 @@
 												</div> 
 												<!-- //paging : pc -->
 
-												<!-- paging : mobile -->
-												<div class="moreBtn">
-													<button type="button">5개 더보기</button>
-												</div> 
-												<!-- // paging : mobile -->
+												<!-- paging : mob -->
+												<div class="verM">
+													<div class="pagenation mt40">
+														<a href="/" class="pb prev">이전보기</a>
+														<p class="paging">
+															<span class="current">
+																<span class="hide">현재페이지</span>
+																<span class="count">1</span>
+															</span>
+															<span>/</span>
+															<span class="total">
+																<span class="hide">총페이지수</span>
+																<span class="count">10</span>
+															</span>
+														</p>
+														<a href="/" class="pb next">다음보기</a>
+													</div>
+												</div>    
+												<!-- //paging : mob -->
 											</div>
 											
 										</section>
@@ -756,11 +770,25 @@
 													</div> 
 													<!-- //paging : pc -->
 
-													<!-- mobile : 결과더보기 -->
-													<div class="moreBtn">
-														<button type="button">5개 더보기</button>
-													</div> 
-													<!-- // mobile : 결과더보기 -->
+													<!-- paging : mob -->
+													<div class="verM">
+														<div class="pagenation mt40">
+															<a href="/" class="pb prev">이전보기</a>
+															<p class="paging">
+																<span class="current">
+																	<span class="hide">현재페이지</span>
+																	<span class="count">1</span>
+																</span>
+																<span>/</span>
+																<span class="total">
+																	<span class="hide">총페이지수</span>
+																	<span class="count">10</span>
+																</span>
+															</p>
+															<a href="/" class="pb next">다음보기</a>
+														</div>
+													</div>    
+													<!-- //paging : mob -->
 												</div>
 											</div>
 										</section>
@@ -912,11 +940,25 @@
 													</div> 
 													<!-- //paging : pc -->
 
-													<!-- mobile : 결과더보기 -->
-													<div class="moreBtn">
-														<button type="button">5개 더보기</button>
-													</div> 
-													<!-- // mobile : 결과더보기 -->
+													<!-- paging : mob -->
+													<div class="verM">
+														<div class="pagenation mt40">
+															<a href="/" class="pb prev">이전보기</a>
+															<p class="paging">
+																<span class="current">
+																	<span class="hide">현재페이지</span>
+																	<span class="count">1</span>
+																</span>
+																<span>/</span>
+																<span class="total">
+																	<span class="hide">총페이지수</span>
+																	<span class="count">10</span>
+																</span>
+															</p>
+															<a href="/" class="pb next">다음보기</a>
+														</div>
+													</div>    
+													<!-- //paging : mob -->
 											</div>
 										</section>
 
@@ -1001,11 +1043,25 @@
 													</div> 
 													<!-- //paging : pc -->
 
-													<!-- mobile : 결과더보기 -->
-													<div class="moreBtn">
-														<button type="button">5개 더보기</button>
-													</div> 
-													<!-- // mobile : 결과더보기 -->
+													<!-- paging : mob -->
+													<div class="verM">
+														<div class="pagenation mt40">
+															<a href="/" class="pb prev">이전보기</a>
+															<p class="paging">
+																<span class="current">
+																	<span class="hide">현재페이지</span>
+																	<span class="count">1</span>
+																</span>
+																<span>/</span>
+																<span class="total">
+																	<span class="hide">총페이지수</span>
+																	<span class="count">10</span>
+																</span>
+															</p>
+															<a href="/" class="pb next">다음보기</a>
+														</div>
+													</div>    
+													<!-- //paging : mob -->
 												</div>
 											</div>
 										</section>
@@ -1056,7 +1112,13 @@
 																			</dl>
 																		</li>
 																		<li class="txt03Box">
-																			<button type="button" class="goLinkLong verPC">관련정보보기</button>
+																			<span class="selectView verPC">
+																				<select title="관련정보보기" name="pageOrder" id="pageOrder" class="selectBox h30">
+																					<option value="pageOrder1" selected="selected">관련정보보기</option>
+																					<option value="pageOrder2">훈련과정 (58)</option>
+																					<option value="pageOrder3">일자리 (388)</option>
+																				</select>
+																			</span>
 																			<span class="txt03">관심등록 : 18명</span>
 																		</li>
 																	</ul>																
@@ -1088,7 +1150,13 @@
 																			</dl>
 																		</li>
 																		<li class="txt03Box">
-																			<button type="button" class="goLinkLong verPC">관련정보보기</button>
+																			<span class="selectView verPC">
+																				<select title="관련정보보기" name="pageOrder2" id="pageOrder2" class="selectBox h30">
+																					<option value="pageOrder21" selected="selected">관련정보보기</option>
+																					<option value="pageOrder22">훈련과정 (58)</option>
+																					<option value="pageOrder23">일자리 (388)</option>
+																				</select>
+																			</span>
 																			<span class="txt03">관심등록 : 18명</span>
 																		</li>
 																	</ul>																
@@ -1116,11 +1184,25 @@
 													</div> 
 													<!-- //paging : pc -->
 
-													<!-- mobile : 결과더보기 -->
-													<div class="moreBtn">
-														<button type="button">5개 더보기</button>
-													</div> 
-													<!-- // mobile : 결과더보기 -->
+													<!-- paging : mob -->
+													<div class="verM">
+														<div class="pagenation mt40">
+															<a href="/" class="pb prev">이전보기</a>
+															<p class="paging">
+																<span class="current">
+																	<span class="hide">현재페이지</span>
+																	<span class="count">1</span>
+																</span>
+																<span>/</span>
+																<span class="total">
+																	<span class="hide">총페이지수</span>
+																	<span class="count">10</span>
+																</span>
+															</p>
+															<a href="/" class="pb next">다음보기</a>
+														</div>
+													</div>    
+													<!-- //paging : mob -->
 												</div>
 											</div>
 										</section>
@@ -1209,11 +1291,25 @@
 													</div> 
 													<!-- //paging : pc -->
 
-													<!-- mobile : 결과더보기 -->
-													<div class="moreBtn">
-														<button type="button">5개 더보기</button>
-													</div> 
-													<!-- // mobile : 결과더보기 -->
+													<!-- paging : mob -->
+													<div class="verM">
+														<div class="pagenation mt40">
+															<a href="/" class="pb prev">이전보기</a>
+															<p class="paging">
+																<span class="current">
+																	<span class="hide">현재페이지</span>
+																	<span class="count">1</span>
+																</span>
+																<span>/</span>
+																<span class="total">
+																	<span class="hide">총페이지수</span>
+																	<span class="count">10</span>
+																</span>
+															</p>
+															<a href="/" class="pb next">다음보기</a>
+														</div>
+													</div>    
+													<!-- //paging : mob -->
 												</div>
 											</div>
 										</section>
