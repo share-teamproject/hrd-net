@@ -264,4 +264,16 @@
 .tableArea + .bigTitle02 {margin-top: 53px;}
 
 
+.progressDom {padding: 60px 0; text-align: center;}
+.progressDom > .inner {font-size: 0;}
+
+.guideDmpEle {position: relative; padding: 20px 0; margin: 10px 0;}
+.guideDmpEle:before {content: attr(data-guidetxt); position: absolute; top: 0; left: 0; width: 100%; text-align: center; font-size: 14px; color: #000; background: #ddd;}
+.guideDmpEle:after {content: attr(data-guidetxt); position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; font-size: 14px; color: #000; background: #ddd;}
+
+
+
+
+
+
 
