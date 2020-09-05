@@ -1130,11 +1130,12 @@
 .smAtgChk > .txt {}
 .smAtgChk > .smAtgChkbox {padding-top: 17px;  text-align: right;}
 
-.inpFile{display:inline-block;}
+.inpFile {position: relative; display:inline-block;}
 .inpFile [type="file"] {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:none;}
-.inpFile .file-label {min-width:112px; display:inline-block; text-align:center; background:#fff; border:1px solid #cdcdd1; color:#4e4f51; font-size:14px; line-height:38px; height:40px; padding:0 36px; box-sizing:border-box;}
+.inpFile .file-label {min-width:150px; display:inline-block; text-align:center; background:#fff; border:1px solid #cdcdd1; color:#4e4f51; font-size:14px; line-height:38px; height:40px; padding:0 36px; box-sizing:border-box;}
 
-.fileAddEle {margin-bottom: 50px; padding: 10px 20px 30px 20px; border-bottom: 1px solid #e2e2e4;}
+.fileAddEle {margin-bottom: 50px; padding: 10px 20px 30px 20px; border-bottom: 1px solid #e2e2e4; text-align: left;}
+.fileAddEle.tdType {margin-bottom: 0; padding: 6px; border-bottom: 0;}
 .fileAddEle > .inner {display: table; width: 100%; table-layout: fixed;}
 .fileAddEle .fileAddCont {position: relative; display: table-cell; vertical-align: top;}
 .fileAddEle .fileAddCont.ig {width: 210px; border: 1px solid #e2e2e4; vertical-align: middle;}
@@ -1144,9 +1145,11 @@
 .fileAddEle .fileAddCont + .fileAddCont {padding-left: 20px;}
 .fileAddEle .fileAddCont .plugin {margin-top: 20px; border: 4px solid #e2e2e4; background: #fff;}
 .fileAddEle .options {padding: 25px 20px; background: #f7f7f7}
-.fileAddEle .options .btns {padding-bottom: 25px; font-size: 0; text-align: center;}
+.fileAddEle .options .btns {/*padding-bottom: 25px;*/ font-size: 0; text-align: center;}
 .fileAddEle .options .btns > * {vertical-align: top; width: 150px; padding: 0;}
 .fileAddEle .options .btns > * + * {margin-left: 10px;}
+.fileAddEle .options .dotList {margin-top: 25px;}
+
 
 .addFileList {}
 .addFileList > li {overflow: hidden;}
@@ -1172,7 +1175,7 @@
 .declareArea .tableBtnSet .btnH26s { width:58px; min-width:58px; margin-left:10px; }
 .declareArea .fileAddEle { border-bottom:none; margin:0; padding:10px; }
 .declareArea .fileAddEle .options .btns { padding:0; }
-.declareArea .fileAddEle .options .inpFile { width:100%; }
+.declareArea .fileAddEle .options .inpFile { /*width:100%;*/ }
 .declareArea .agreeContent { text-align:center; padding:40px 40px 50px; border-left:1px solid #e2e2e4; border-right:1px solid #e2e2e4; }
 .declareArea .agreeContent .text01 { font-size:14px; color:#727476; line-height:24px; }
 .declareArea .agreeContent .text02 { font-size:22px; color:#292a2d; line-height:32px; margin:40px 0 0 0; }

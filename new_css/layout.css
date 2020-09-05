@@ -132,8 +132,9 @@ body.noScroll { position: fixed; overflow: hidden;	width: 100%; height: 100% }
 .tableArea { width:100%; }
 .tableArea table.list { width:100%; border-top:1px solid #727476; margin-bottom:20px; box-sizing:border-box; }
 .tableArea table.list th { background:#f0f0f2; border-right:1px solid #e2e2e4; padding:14px; font-size: 14px; color:#4e4f51; font-weight:400; box-sizing:border-box; }
-.tableArea table.list td { border-right:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4; font-size: 14px; color:#727476; text-align:center; padding:14px;  box-sizing:border-box; }
+.tableArea table.list td { border-right:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4; font-size: 14px; color:#727476; text-align:center; padding:14px;  box-sizing:border-box; word-wrap: break-word;}
 .tableArea table.list th.last, .tableArea table.list td.last { border-right:none; }
+.tableArea table.list tfoot td {position: static; background: #f0f0f2;}
 .tableArea .tableTitleArea { display:table; width:100%; margin:50px 0 0 0; }
 .tableArea .tableTitleArea .tableTitle { display:table-cell; padding:0 0 15px 0; color:#292a2d; font-size:22px; font-weight:500; }
 .tableArea .tableTitleArea .tableComment { display:table-cell; padding:0 0 7px 0; vertical-align:bottom; text-align:right; color:#727476; font-size:12px; font-weight:400; }
@@ -276,6 +277,9 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 button.btnType1 , a.btnType1 { min-width:136px; display:inline-block; text-align:center; background:#fff; border:1px solid #cdcdd1; color:#4e4f51; font-size:18px; line-height:50px; height:52px; padding:0 44px; box-sizing:border-box; }
 .btnType1.primary { background:#4171df; border:1px solid #4171df; color:#fff; } 
 .btnType1.etc { background:#fff; color:#258384; border:1px solid #258384; } 
+.btnType1.ty1 { border: 1px solid #4171df; color: #4171df; }
+.btnType1.ty2 { background: #258384; color: #fff; }
+.btnType1.ty3 { background: #4171df; color: #fff; }
 button.btnType1[disabled="disabled"] { border-color:#86a6ff;color:#86a6ff;cursor:unset}
 button.btnType1 + button { margin:0 0 0 17px; }
 /* 중버튼 */
@@ -300,6 +304,9 @@ button.goLink, a.goLink:after { position:absolute; top:6px; right:20px; width:6p
 /* ETC */
 .btnH26 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:12px; color:#258384; border:1px solid #258384; line-height:24px; background: #fff;}
 .btnH26s {display:inline-block; padding:0 15px; min-width:88px; text-align:center; font-size:12px; color:#4e4f51; border:1px solid #cdcdd1; line-height:24px; background: #fff;}
+.btnH26.ty1 {min-width:58px; border: 1px solid #258384; color: #258384;}
+.btnH26.ty2 {min-width:58px; border: 1px solid #cdcdd1; color: #4e4f51;}
+.btnH26.ty3 {min-width:58px; border: 1px solid #4171df; color: #4171df;}
 .btnH30 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:28px;}
 .btnH30.ty1 {height:30px; line-height:30px; text-align:center; font-size:14px; color:#4e4f51; border:0; background:#c9d3e8;}
 
@@ -429,6 +436,7 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .pt30 {padding-top:30px !important;}
 .brd-t-ty1 {border-top:1px solid #e2e2e4 !important;}
 .brd-r-ty1 {border-right:1px solid #e2e2e4;}
+.brd-b-ty1 {border-bottom:1px solid #e2e2e4 !important;}
 .brd-t-ty2 {border-top:2px solid #5b648a !important;}
 .brd-r-ty2 {border-right:2px solid #5b648a !important;}
 .brd-b-ty2 {border-bottom:2px solid #5b648a !important;}

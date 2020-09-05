@@ -4,11 +4,14 @@
 * common
 * ============================== */
 .commentBox {margin-top: 13px; min-height:53px; padding:30px 20px 30px 125px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 46px center;}
+.commentBox.ty1 {background-position: 46px 30px;}
 .commentBox .dashList {display:inline-block; vertical-align:middle;}
 .commentBox .dlType1 {display:inline-block; vertical-align:middle;}
 .commentBox + .bigTitle02 {margin-top:62px;}
 .commentBox + .tableArea {margin-top:40px;}
 .commentBox + form {margin-top:40px;}
+.commentTxt01 {font-weight: 500; font-size: 14px; color: #292a2d; line-height: 20px;}
+.bigTitle02 + .commentBox {margin-top: 3px;}
 
 .dashList {}
 .dashList > li {position:relative; padding-left:9px; font-size:14px; color:#727476; line-height:18px;}
@@ -24,6 +27,11 @@
 .dlType1 {}
 .dlType1 > dt {padding-bottom: 12px; font-weight: 500; font-size: 16px; color: #292a2d; text-align: left;}
 .dlType1 > dd {font-size: 14px; color: #727476; line-height: 20px; text-align: left;}
+
+.dlType2 {}
+.dlType2 > dt {padding-bottom: 6px; font-weight: 500; font-size: 14px; color: #292a2d; text-align: left;}
+.dlType2 > dd {font-size: 14px; color: #727476; line-height: 20px; text-align: left;}
+.commentTxt01 + .dlType2 {margin-top: 23px;}
 
 .flexMiddle {display:flex; align-items: center; justify-content: center; padding:0 8px 0 20px;}
 .heightAuto {min-height:0 !important;}
@@ -98,8 +106,6 @@
 .detailListTy2 > li .txt02 {padding-top:7px; font-size:14px; color:#666; line-height:24px;}
 
 
-
-
 /*검색 영역*/
 .schDom {padding: 25px 20px 25px 50px; border: 3px solid #d8dfeb;}
 .schDom.top {margin-top: 15px;}
@@ -130,10 +136,6 @@
 .dateRangePick > button.on {z-index: 1; color: #4171df; border: 1px solid #4171df;}
 
 .mBtnDom {margin-top: 20px; text-align: right;}
-
-
-
-
 
 
 /*통합검색*/
@@ -253,10 +255,13 @@
 .cardTarget {min-height: 174px; margin-top: 12px; font-size: 0; background: url(../new_images/common/bgCardInfo02.jpg) no-repeat right bottom;}
 .cardTarget > dl {display: inline-block; width: 300px; margin-top: 30px;}
 
-
-
-
-
+.btnHeading {display: table; width: 100%; table-layout: fixed; font-weight: 500; font-size: 22px; color: #292a2d;}
+.btnHeading > .title {display: table-cell; vertical-align: middle;}
+.btnHeading > .btns {display: table-cell; vertical-align: middle; text-align: right; font-size: 0; margin-top: 8px;}
+.btnHeading > .btns > button + button {margin-left: 10px;}
+.btnHeading + .tableArea {margin-top: 7px;}
+.tableArea + .btnHeading {margin-top: 52px;}
+.tableArea + .bigTitle02 {margin-top: 53px;}
 
 
 
