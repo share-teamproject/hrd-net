@@ -104,7 +104,7 @@
 #mainContentWrap .mainContentArea .trainingCourse > ul > li { position:relative; margin:0 0 0 20px; }
 #mainContentWrap .mainContentArea .trainingCourse > ul > li:first-child { margin:0; }
 #mainContentWrap .mainContentArea .trainingCourse > ul > li .contentsTitle { position:absolute; bottom:0; display:block; width:100%; text-align:center; background:#fff; opacity:0.8; color:#4e4f51; font-size:14px; height:40px; line-height:40px;}
-.mainBoardWrap { display:flex; justify-content: space-between; }
+.mainBoardWrap { display:flex; justify-content: space-between; margin-bottom:100px; }
 .mainBoardWrap .noticeArea { width:550px; }
 .mainBoardWrap .noticeArea .noticeList > li { font-size:14px; color:#000000; margin:0 0 10px 0; }
 .mainBoardWrap .noticeArea .noticeList > li:last-child { margin:0; }

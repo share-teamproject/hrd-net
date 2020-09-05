@@ -18,15 +18,16 @@
 
 .toolTip { margin:-10px 0 0 10px; display:inline-block; vertical-align:middle; position:relative; }
 .toolTipBtn { margin:12px 0 0 0; font-size:0; line-height:0; width:20px; height:20px; background:url(../new_images/common/icoTooltipQ.jpg) no-repeat; cursor:pointer; background-size:cover; }
-.toolTipContent.right { position:absolute; z-index:10; display:none; top:0; left:40px; width:300px; background:#fff; border:1px solid #cdcdd1; padding:20px; text-align:left; }
+.toolTipContent { position:absolute; top:0; left:0; z-index:10; display:none; background:#fff; border:1px solid #cdcdd1; padding:20px; text-align:left; }
+.toolTipContent.right { margin-left:50px; }
 .toolTipContent.right:before { position:absolute; top:13px; left:0; margin-left:-16px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; }
-.toolTipContent.left { position:absolute; z-index:10; display:none; top:0; left:0px; margin-left:-330px; width:300px; background:#fff; border:1px solid #cdcdd1; padding:20px; text-align:left; }
+.toolTipContent.left { }
 .toolTipContent.left:before { position:absolute; top:13px; right:0; margin-right:-16px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; transform: rotate(180deg); }
-.toolTipContent.top { position:absolute; z-index:10; display:none;top:0; left:40px; width:300px; background:#fff; border:1px solid #cdcdd1; padding:20px; text-align:left; }
+.toolTipContent.top { }
 .toolTipContent.top:before { position:absolute; bottom:0px; margin-bottom:-16px; left:50%; margin-left:-8px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; transform: rotate(270deg); }
-.toolTipContent.bottom { position:absolute; z-index:10; display:none;top:0; left:40px; width:300px; background:#fff; border:1px solid #cdcdd1; padding:20px; text-align:left; }
+.toolTipContent.bottom { }
 .toolTipContent.bottom:before { position:absolute; top:0px; margin-top:-17px; left:50%; margin-left:-8px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; transform: rotate(90deg); }
-.toolTipContent.on { display:block; }
+.toolTipContent.on { display:block;}
 .toolTipContent .toolTipTitle { font-size:13px; font-weight:500; color:#4e4f51; margin:0 0 10px 0; }
 .toolTipContent .toolTipText { font-size:13px; color:#767676; line-height:18px; }
 .toolTipContent .toolTipText strong { color:#727476; }

@@ -3,37 +3,59 @@ $(function(){
 		//fn_tootip
 		fn_tooltip:function(){
 			return this.each(function(){
-				var $this = $(this),
-					$tip = $('.toolTip').find('.tip');
-					//$tbY = $('#yearTable').offset().top,
-					//$tbHeight = $('#yearTable').height(),
-					//$tbBottom = $tbY + $tbHeight;
+			var $this = $(this),
+				$tip = $this.find('.toolTipBtn');					
+				idx = $tip.index(this)				
+				
+				$tip.click(function(e){
+					var	posX = e.clientX,
+						posY = e.clientY,
+						sWidth = window.innerWidth,
+						sHeight = window.innerHeight,
+						tooltipW = $this.siblings().outerWidth();
+						tooltipH = $this.siblings().outerHeight();
 
-				$tip.each(function(){
-					$(this).click(function(){
-						var $posX = $(this).offset().left,
-							$tooltip = $(this).children('.tooltip');
+					//우측으로 툴팁 오버시 
+					if( (posX+20+tooltipW) > sWidth ){
+						$(this).siblings().attr('class','toolTipContent');
+						$(this).siblings().addClass('left');
+						$(this).siblings().css({
+							"marginLeft": -(tooltipW+30)
+						})
+					//	$this.siblings().toggleClass('on');
+					}
+					//상단으로 툴팁 오버시 
+					if( (posY < 130)) { 
+						$(this).siblings().attr('class','toolTipContent');
+						$(this).siblings().addClass('bottom');
+						$(this).siblings().css({
+							"marginTop": '60px',
+							"marginLeft": -(tooltipW/2-10)
+						})
+					//	$this.siblings().toggleClass('on');
+					}
+					//하단으로 툴팁 오버시 
+					if( (posY+20+tooltipH) > sHeight) { 
+						$(this).siblings().attr('class','toolTipContent');
+						$(this).siblings().addClass('top');
+						$(this).siblings().css({
+							"marginTop": -(tooltipH+20),
+							"marginLeft": -(tooltipW/2-10)
+						})
+					//	$this.siblings().toggleClass('on');
+					}else{
+					//	$this.siblings().toggleClass('on');
+					}					
 
-						if($posX < 900){
-							if(!$tooltip.hasClass('open')){
-								$('.tooltip').removeClass('open');							
-								$tooltip.addClass('open');									
-							}else{
-								$('.tooltip').removeClass('open');							
-								$tooltip.removeClass('open');	
-							}			
-						}else{								
-							if(!$tooltip.hasClass('open')){
-								$('.tooltip').removeClass('open');
-								$tooltip.addClass('right');								
-								$tooltip.addClass('open');	
-							}else{
-								$('.tooltip').removeClass('open');			
-								$tooltip.removeClass('open');	
-							}							
-						}						
-					});
-				});
+					$(this).siblings().toggleClass('on');
+					console.log(posX);
+					console.log(posY);
+					console.log(sWidth);
+					console.log(sHeight);
+					console.log(tooltipW);
+					console.log(tooltipH);
+					console.log(idx);
+				});	
 			});
 		},	
 		fn_datepicker:function(){
@@ -43,6 +65,7 @@ $(function(){
 			$( ".dateSelect .ui-datepicker-trigger").prop('src','../new_images/common/inoCalendar.png')	
 		}
 	});
+
 	$('.toolTip').fn_tooltip();  //tooltip
 	$(".dateSelect input").fn_datepicker(); //calendar
 
@@ -261,12 +284,10 @@ $(function(){
 		if($('#radioDeputy01').is(':checked')){
 			$('#deputy01').css('display','block');
 			$('#deputy02').css('display','none');
-			console.log('1');
 		}
 		else if($('#radioDeputy02').is(':checked')){
 			$('#deputy01').css('display','none');
 			$('#deputy02').css('display','block');
-			console.log('2');
 		}
 	});
 
@@ -283,11 +304,7 @@ $(function(){
 		return false;
 	});	
 
-	// toolTip 토글 버튼
-	$('.toolTip .toolTipBtn').on('click',function() {
-		$(this).siblings().toggleClass('on');
-		return false;
-	});	
+
 
 	//기관찾기
 	$('.openMenu_2' ).hide();
@@ -392,7 +409,6 @@ var navigation = {
 				$gnb_sub.hide();
 				$gnb_sub.eq(idx).stop().slideDown();
 				
-				console.log(idx);
 				$("#headerWrap").addClass('fixed');
 				$("#gnb").addClass('fixed');
 				$("#tnb").addClass('fixed');
