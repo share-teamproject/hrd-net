@@ -22,7 +22,7 @@
 .toolTipContent.right { margin-left:50px; }
 .toolTipContent.right:before { position:absolute; top:13px; left:0; margin-left:-16px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; }
 .toolTipContent.left { }
-.toolTipContent.left:before { position:absolute; top:13px; right:0; margin-right:-16px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; transform: rotate(180deg); }
+.toolTipContent.left:before { position:absolute; top:13px; right:0; margin-right:-15px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; transform: rotate(180deg); }
 .toolTipContent.top { }
 .toolTipContent.top:before { position:absolute; bottom:0px; margin-bottom:-16px; left:50%; margin-left:-8px; width:16px; height:19px; background:url('../new_images/common/toolTipPointer.png') no-repeat; content:''; transform: rotate(270deg); }
 .toolTipContent.bottom { }
@@ -273,7 +273,7 @@
 
 /* calendar */
 .dateSelect { width:220px; height:40px; padding:4px 12px 10px 0; line-height:40px; border:1px solid #cdcdd1; box-sizing:border-box; }
-.dateSelect input { border:none; height:38px; }
+.dateSelect input { border:none; height:36px; line-height:25px !important; }
 .ui-datepicker { padding:0; }
 .ui-datepicker .ui-datepicker-header { background:#f0f0f2; padding:12px 16px; line-height: 40px; }
 .ui-widget-header .ui-datepicker-prev { top: 15px; left:10px; }
