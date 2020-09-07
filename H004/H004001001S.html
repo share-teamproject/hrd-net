@@ -517,7 +517,9 @@
 										<tr>
 											<th scope="row"><label for="acquisition">취득 일자</label></th>
 											<td colspan="3">
-												<input type="text" name="acquisition" id="acquisition" class="js_datepicker" value="">
+												<div class="dateSelect tableDate">
+													<input type="text" name="acquisition" id="acquisition" value="">
+												</div>
 											</td>
 										</tr>
 										<tr>
@@ -679,11 +681,15 @@
 										<tr>
 											<th scope="row"><label for="buyDate">구입 일자</label></th>
 											<td>
-												<input type="text" name="buyDate" id="buyDate" class="js_datepicker" value="">
+												<div class="dateSelect tableDate">
+													<input type="text" name="buyDate" id="buyDate" value="">
+												</div>
 											</td>
 											<th scope="row"><label for="madeDate">제조일자</label></th>
 											<td>
-												<input type="text" name="madeDate" id="madeDate" class="js_datepicker" value="">
+												<div class="dateSelect tableDate">
+													<input type="text" name="madeDate" id="madeDate" value="">
+												</div>
 											</td>
 										</tr>
 										<tr>
@@ -1180,7 +1186,9 @@
 														<tr>
 															<th scope="row"><label for="installDate">설치일자</label> <span class="color01">＊</span></th>
 															<td>
-																<input type="text" id="installDate" name="installDate" title="설치일자를 입력하세요" value="" class="js_datepicker">
+																<div class="dateSelect tableDate">
+																	<input type="text" id="installDate" name="installDate" title="설치일자를 입력하세요" value="">
+																</div>
 															</td>
 															<th scope="row">사용여부</th>
 															<td>신규</td>

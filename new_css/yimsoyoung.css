@@ -17,3 +17,4 @@
 .ui_checkBox.checkOnly { padding-left: 26px; }
 .ui_checkBox.checkOnly label { display: inline-block; width: 0; height: 0; overflow: hidden; }
 .workStudyArea .passportInput { display: none; }
+.dateSelect.tableDate input { width: 182px; height: 32px; }
