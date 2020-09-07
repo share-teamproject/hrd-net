@@ -126,7 +126,7 @@
 .dateDom > .dateSelect + .dateSelect {margin-left: 35px;}
 .dateDom > .dateSelect + .dateSelect:before {content: '~'; position: absolute; left: -35px; width: 35px; text-align: center; line-height: 40px; font-size: 14px; color: #727476;} 
 .dateDom > .dateSelect input[type="text"] {display: block; width: 100%;}
-.dateDom > .dateSelect input[type="text"] + img {position: absolute; top: 9px; right: 14px;}
+.dateDom > .dateSelect input[type="text"] + img {position: absolute; top: 9px; right: 14px; width: 20px; height: 19px;}
 .dateDom > .dateSelect .btn_calendar {position: absolute; top: 50%; right: 13px; margin-top: -10px;}
 .dateDom + .dateRangePick {margin-left: 20px;}
 

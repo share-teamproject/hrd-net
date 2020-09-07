@@ -313,6 +313,7 @@
 #subContentWrap .subContArea .qnaArea > ul > li.on {border-bottom:none;}
 #subContentWrap .subContArea .qnaArea > ul > li.on .qnaQ:after { background-position:0 0;}
 #subContentWrap .subContArea .qnaArea > ul > li.on .txtQ {color:#333;}
+#subContentWrap .subContArea .qnaArea > ul > li.none {text-align: center; padding: 30px 0;}
 #subContentWrap .subContArea .qnaArea > ul + .pagenation { margin-top:20px; }
 #subContentWrap .subContArea .qnaArea .moreBtn { display:none; }
 #subContentWrap .subContArea .qnaArea .btnGroup + .pagenation { margin-top:20px; }
