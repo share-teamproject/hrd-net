@@ -127,6 +127,7 @@
 .workStudyArea .tableArea.form table.view.form .inputGroup .etcSelect { margin-left:10px; }
 .workStudyArea .tableArea.form table.view.form .trainingGroup .checkGroup { margin-top: 10px; }
 .workStudyArea .tableArea.form table.view.form .trainingGroup .checkGroup:first-child { margin-top:0; }
+.workStudyArea .tableArea.form table.view.form .dateSelect input { height:33px; }
 
 .workStudyArea .tableArea.form table.list.form .ncsInput{ width:100%; max-width:100%; }
 
@@ -167,6 +168,8 @@
 .consortiumArea .comment { min-height:53px; padding: 20px 0 28px 63px; font-size:14px; line-height:53px; color:#727476; border-bottom:1px solid #e1e4e9; background:url('../new_images/common/pageComment2.png') no-repeat 0 50%; }
 .consortiumArea .comment.type01 { min-height:53px; padding: 4px 0 4px 63px; line-height:1.5; border:0; background:url('../new_images/common/pageComment2.png') no-repeat 0 50%; }
 .consortiumArea .boxArea + .sortArea { margin:30px 0 0; }
+.consortiumArea .dateSelect { width:145px; }
+.consortiumArea .dateSelect .selectW180 { width:100px; min-width:100px; }
 
 /* ==============================
 * MY 카드

@@ -659,7 +659,7 @@
 												</dd>
 											</dl>
 											<dl class="row">
-												<dt class="title"><label for="searchText1">훈련과정</label></dt>
+												<dt class="title"><label for="searchText2">훈련과정</label></dt>
 												<dd class="content">
 													<div class="inputKeyword">
 														<input type="text" value="" placeholder="훈련과정명을 입력해주세요." name="searchText2" id="searchText2">
@@ -670,12 +670,14 @@
 												<dt class="title">개강일자</dt>
 												<dd class="content">
 													<div class="inputDateTermWrap">
-														<div class="inputDateTerm">
-															<label for="date1" class="hide">개강시작일자</label>
-															<input type="text" name="date" id="date1" class="js_datepicker">
-															<span class="at">~</span>
-															<label for="date2" class="hide">개강마지막일자</label>
-															<input type="text" name="date" id="date2" class="js_datepicker">
+														<label for="date1" class="hide">개강시작일자</label>
+														<div class="dateSelect">
+															<input type="text" value="" placeholder="20201012" title="달력" name="date" id="date1" class="selectW180">
+														</div>
+														<span class="dateSelectTxt01">~</span>
+														<label for="date2" class="hide">개강마지막일자</label>
+														<div class="dateSelect">
+															<input type="text" value="" placeholder="20201012" title="달력" name="date" id="date2" class="selectW180">
 														</div>
 														<div class="btnArea">
 															<button type="button" class="btnType2 primary">1주일</button>
