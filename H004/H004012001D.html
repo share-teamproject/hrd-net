@@ -11,7 +11,7 @@
 	<meta name="robots" content="all">
 	<meta name="keywords" content="HRD">
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
-	<title>학습관리 | 일학습병행 | HRD-Net</title>
+	<title>이수/수료증발급대장 | 일학습병행 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
 	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
@@ -426,7 +426,7 @@
 				
 				<div class="subContArea">
 					<div class="headingTitleArea">
-						<h3 class="headingTitle">학습관리</h3>
+						<h3 class="headingTitle">이수/수료증발급대장</h3>
 						<div class="headingIcon">
 							<ul>
 								<li><button type="button" class="twitter">트위터</button></li>
@@ -439,77 +439,127 @@
 					<div class="contentArea">
 						<!-- 일학습 병행 컨텐츠 -->
 						<div class="workStudyArea">
-							<!-- 정렬 옵션 영역 -->
-							<div class="sortArea">
-								<p class="totalNum">전체 <strong>3</strong> 건</p>
-								<div class="selectViewArea">
-									<div class="selectView">
-										<label for="pageRowTest">페이지당 조회건수</label>
-										<select title="페이지당 조회건수" name="pageRowTest" id="pageRowTest" class="selectBox h30">
-											<option value="10" selected="selected">10개씩</option>
-											<option value="20">20개씩</option>
-											<option value="30">30개씩</option>
-											<option value="50">50개씩</option>
-											<option value="100">100개씩</option>
-										</select>
+							<!-- 기업 훈련과정 정보 목록 -->
+							<div class="tableArea">
+								<div class="tableTitleArea">
+									<h4 class="tableTitle">기업 훈련과정 정보</h4>
+								</div>
+								<table class="view">
+									<caption>기업 훈련과정 정보 입력 폼</caption>
+									<colgroup>
+									<col style="width:170px;">
+									<col style="width:270px;">
+									<col style="width:170px;">
+									<col style="width:100px;">
+									<col style="width:190px;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">기업(기관)명</th>
+											<td colspan="4">(주)거림 (13486464860)<br>()</td>
+										</tr>
+										<tr>
+											<th scope="row">운영형태</th>
+											<td>도제학교</td>
+											<th scope="row">관할지부지사</th>
+											<td colspan="2">한국산업인력공단 경기지사</td>
+										</tr>
+										<tr>
+											<th scope="row">훈련과정명</th>
+											<td colspan="4">2019년_(도제)_전자기기생산_L2_ver2.0_거림 (ABG20193000616916)</td>
+										</tr>
+										<tr>
+											<th scope="row">훈련직종명</th>
+											<td colspan="4">()</td>
+										</tr>
+										<tr>
+											<th scope="row">프로그램<br>유효기간</th>
+											<td>2019-03-18 ~ 2024-03-17</td>
+											<th scope="row" rowspan="3" class="rightBorLine">훈련기간</th>
+											<th>OJT</th>
+											<td>24 개월 / 720 일 / 720 시간</td>
+										</tr>
+										<tr>
+											<th scope="row">정원</th>
+											<td>2</td>
+											<th>Off-JT</th>
+											<td>24 개월 / 720 일 / 344 시간</td>
+										</tr>
+										<tr>
+											<th scope="row">적용단가</th>
+											<td>원(전자제품생산)</td>
+											<th>전체</th>
+											<td>24 개월 / 720 일 / 1064 시간</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //기업 훈련과정 정보 목록 -->
+							<!-- 학습근로자 정보 리스트 -->
+							<div class="tableArea">
+								<div class="tableTitleArea">
+									<h4 class="tableTitle">학습근로자 정보</h4>
+								</div>
+								<!-- 정렬 옵션 영역 -->
+								<div class="sortArea">
+									<p class="totalNum">전체 <strong>3</strong> 건</p>
+									<div class="selectViewArea">
+										<div class="selectView">
+											<label for="pageRowTest">페이지당 조회건수</label>
+											<select title="페이지당 조회건수" name="pageRowTest" id="pageRowTest" class="selectBox h30">
+												<option value="10" selected="selected">10개씩</option>
+												<option value="20">20개씩</option>
+												<option value="30">30개씩</option>
+												<option value="50">50개씩</option>
+												<option value="100">100개씩</option>
+											</select>
+										</div>
 									</div>
 								</div>
-							</div>
-							<!--// 정렬 옵션 영역 -->
-							<div class="tableArea">
+								<!--// 정렬 옵션 영역 -->
 								<table class="list">
-									<caption>학습관리 리스트</caption>
+									<caption>학습근로자 정보 리스트</caption>
 									<colgroup>
-									<col style="width: 80px;">
-									<col style="width: 300px;">
-									<col style="width: 60px;">
-									<col style="width: 100px;">
-									<col style="width: 100px;">
-									<col style="width: 130px;">
-									<col style="width: 130px;">
+									<col style="width: 55px;">
+									<col style="width: 400px;">
+									<col style="width: 145px;">
+									<col style="width: 150px;">
+									<col style="width: 150px;">
 									</colgroup>
 									<thead>
 										<tr>
 											<th scope="col">번호</th>
-											<th scope="col">훈련과정명<br>(훈련과정관리번호)</th>
-											<th scope="col">회차</th>
-											<th scope="col">훈련시작일</th>
-											<th scope="col">훈련종료일</th>
-											<th scope="col">관활 / 지부 / 지사</th>
-											<th scope="col" class="last">비고</th>
+											<th scope="col">훈련생 성명 (주민등록번호)</th>
+											<th scope="col">상태</th>
+											<th scope="col">이수증 (발급일자)</th>
+											<th scope="col" class="last">수료증 (발급일자)</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>4</td>
-											<td><a href="#">[P-TECH]정보통신기기하드웨어개발(전자기기하드웨어개발_L3_ver2.0)_(주)거림_2019_산업기사_대림대학교 (ABF20193000614947)</a></td>
 											<td>1</td>
-											<td>2019-03-09</td>
-											<td>2021-02-28</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td><a href="#">전자부품생산_L2_(군자공고)_(주)거림 (ABG20173000453769)</a></td>
-											<td>1</td>
-											<td>2017-03-01</td>
-											<td>2019-02-28</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
+											<td>김연수<br>(020828-3******)</td>
+											<td></td>
+											<td></td>
+											<td class="last"></td>
 										</tr>
 										<tr>
 											<td>2</td>
-											<td><a href="#">전자부품_전자기기생산_L2_평촌공고_군자공고_2018_(주)거림 (ABG20183000543950)</a></td>
-											<td>1</td>
-											<td>2018-03-02</td>
-											<td>2020-02-29</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
+											<td>김연수<br>(020828-3******)</td>
+											<td></td>
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>김연수<br>(020828-3******)</td>
+											<td></td>
+											<td></td>
+											<td class="last"></td>
 										</tr>
 										<!-- 데이터 없을 때
 										<tr>
-											<td colspan="8">학습관리 이력이 없습니다.</td>
+											<td colspan="8">학습근로자 정보 이력이 없습니다.</td>
 										</tr>
 										-->
 									</tbody>
@@ -526,7 +576,13 @@
 								<a href="/">7</a>
 								<a href="/" class="pb next">다음보기</a>
 							</div>
+							<div class="btnList btnListC">
+								<ul>
+									<li><button type="button" class="btnType3">확인</button></li>
+								</ul>
+							</div>
 						</div>
+						<!-- //학습근로자 정보 리스트 -->
 						<!-- // 일학습 병행 컨텐츠 -->
 					</div>
 				</div>

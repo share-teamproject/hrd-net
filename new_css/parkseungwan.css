@@ -29,6 +29,7 @@
 
 /* 등록 폼 > 텍스트 컨텐츠 영역 */
 .txtList li { position:relative;}
+.txtList li.first { margin-top:0 !important; }
 .txtList li::before { content:''; position:absolute;}
 .txtList.type01 li { padding-left:10px; }
 .txtList.type01 li::before { content:'-'; top:0; left:0; }
@@ -36,6 +37,7 @@
 .txtList.type02 li::before { content:''; display:inline-block; position:absolute; top:8px; left:0; width:2px; height:2px; border-radius:100%; background-color: #727476; }
 .txtList.type03 li { position:relative; padding-left:10px; margin: 10px 0 0; font-size: 14px; }
 .txtList.type03 li::before { content:''; display:inline-block; position:absolute; top:8px; left:0; width:4px; height:4px; border-radius:100%; background-color: #727476; }
+.txtList li strong { font-weight:500; }
 
 /* 등록 폼 > 버튼 그룹 */
 .myInfoArea .btnGroup { margin-top:60px; }
@@ -71,6 +73,100 @@
 #subContentWrap .subContArea .myInfoArea .searchBox input[type="text"] { width: 436px; }
 #subContentWrap .subContArea .myInfoArea .searchBox + .sortArea { margin-top: 50px; }
 
+/* ==============================
+* MY서비스(기업) > 일학습병행
+* ============================== */ 
+
+/* 참여신청 */
+.workStudyArea { margin-top: 12px; }
+.workStudyArea input[readonly] { background:#ebebeb; }
+.workStudyArea .regFlow { text-align:center; margin:30px 0 0; }
+.workStudyArea .regFlowList { position:relative; display:block; }
+.workStudyArea .regFlowList::after { content:''; position:absolute; top:18px; left:45px; width:calc(100% - 90px); border-bottom:4px solid #f4f6f9; }
+.workStudyArea .regFlowList > li { position:relative; display:inline-block; width:120px; padding-top:48px; vertical-align:top; }
+.workStudyArea .regFlowList > li .stepCount { position:absolute; top:0; left:50%; z-index:1; width:40px; height:40px; margin-left:-20px; border-radius:50%; font-size:16px; color:#727476; line-height:40px; background:#f4f6f9;}
+.workStudyArea .regFlowList > li.on .stepCount{ font-weight:500; color:#fff; background:#5b648a; }
+.workStudyArea .regFlowList > li .txt{ font-size:14px; color:#727476; }
+
+.workStudyArea .tableArea.form { margin-top:30px; }
+.workStudyArea .tableArea.form table.view.form th.rightLine { border-right: 1px solid #e2e2e4; }
+.workStudyArea .tableArea.form table.view.form .selectBox.type01 { width: 120px; }
+.workStudyArea .tableArea.form table.view.form .selectBox.type02,
+.workStudyArea .tableArea.form table.view.form .inputBox.type02 { width: 200px; }
+.workStudyArea .tableArea.form table.view.form .inputBox.type03 { width: 70px; max-width: 70px; min-width: 10px;}
+.workStudyArea .tableArea.form table.view.form .inputBox.type04 { width: 110px; min-width: 110px;}
+.workStudyArea .tableArea.form table.view.form .selectGroup select { margin-right: 10px; }
+.workStudyArea .tableArea.form table.view.form .checkGroup .ui_checkBox { width:120px; }
+.workStudyArea .tableArea.form table.view.form .checkGroup .ui_checkBox + .ui_checkBox { margin-left: 0;}
+.workStudyArea .tableArea.form table.view.form .checkGroup .ui_checkBox.type01 { width:auto; }
+.workStudyArea .tableArea.form table.view.form .checkGroup .ui_checkBox.type01  + .ui_checkBox { margin-left: 20px }
+.workStudyArea .tableArea.form table.view.form .checkGroup .ui_checkBox.type01 + input[type="text"] { margin-left:10px; }
+.workStudyArea .tableArea.form table.view.form .checkGroup.h40,
+.workStudyArea .tableArea.form table.view.form .checkGroup.h40 .ui_checkBox{ height: 40px; }
+.workStudyArea .tableArea.form table.view.form .checkGroup.h40 .ui_checkBox { box-sizing: border-box; top:5px; }
+.workStudyArea .tableArea.form table.view.form .radioGroup.block .ui_radioBox { display:block; }
+.workStudyArea .tableArea.form table.view.form .radioGroup.block .ui_radioBox + .ui_radioBox { margin:10px 0 0; }
+.workStudyArea .tableArea.form table.view.form .radioGroup.inlineB { display:inline-block; }
+
+.workStudyArea .tableArea.form table.view.form .inputBox.addrBox p {margin-top:10px;}
+.workStudyArea .tableArea.form table.view.form .inputGroup { display:inline-block; }
+.workStudyArea .tableArea.form table.view.form .inputGroup.block { display:block; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .addrCodeInput { width:360px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .addrCodeBtn { width:116px; padding:0; margin-left:6px; border:1px solid #5b648a; color:#fff; background:#5b648a; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .urlInput { width:482px; max-width:100%; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .line { display:inline-block; line-height:65px; padding:0 5px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .txt { display:inline-block; line-height:1.4; padding:0 5px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .telSelect { width:148px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .telInput { width:148px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .ojtInput,
+.workStudyArea .tableArea.form table.view.form .inputGroup .memInput { width:70px; min-width:70px; margin:0 0 0 5px; text-align:right; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .telSelect.type01 { width:100px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .telInput.type01 { width:100px; min-width:100px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .emailSelect { display:inline-block; width:148px; margin-left:10px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .emailInput { display:inline-block; width:148px; }
+.workStudyArea .tableArea.form table.view.form .inputGroup .etcSelect { margin-left:10px; }
+.workStudyArea .tableArea.form table.view.form .trainingGroup .checkGroup { margin-top: 10px; }
+.workStudyArea .tableArea.form table.view.form .trainingGroup .checkGroup:first-child { margin-top:0; }
+
+.workStudyArea .tableArea.form table.list.form .ncsInput{ width:100%; max-width:100%; }
+
+.workStudyArea .AddFilesArea { border-top:0; margin-bottom: 0; }
+.workStudyArea .AddFilesArea .fileBox {overflow:hidden; padding:20px 0; }
+.workStudyArea .AddFilesArea .fileBox dt { float:left; position:relative; font-size:14px; }
+.workStudyArea .AddFilesArea .fileBox dt span {padding-left:5px; }
+.workStudyArea .AddFilesArea .fileBox dt .btnDelete { position:absolute; top:2px; right:-30px; font-size:0; width:21px; height:21px; background:url('../new_images/common/icoFileDelete.png') no-repeat;  }
+.workStudyArea .AddFilesArea .fileBox dd { float:right; color:#767676; font-size:13px; }
+.workStudyArea .AddFilesArea .dragBox {color:#767676; font-size:14px; border:3px #e1e4e9 solid; padding:32px 0; text-align:center; }
+.workStudyArea .AddFilesArea .fileBtnBox { background:#f7f7f7; padding:25px; }
+.workStudyArea .AddFilesArea .fileBtnBox .btnGroup .btnTy2,
+.workStudyArea .AddFilesArea .fileBtnBox .btnGroup .btnTy3 { width:152px; padding:0; margin-right:10px; }
+.workStudyArea .AddFilesArea .fileBtnBox .btnGroup .btnTy4 { width:152px; padding:0; }
+
+.workStudyArea .btnGroup.util { margin:40px 0 0; text-align:right; }
+.workStudyArea .btnGroup.util button { display:inline-block; width:58px; height:26px; border:1px solid #e2e2e4; line-height:24px; font-weight:400; font-size:12px; }
+.workStudyArea .btnGroup.util .listAddBtn { margin-right:5px; border-color:#258384; color:#258384; }
+.workStudyArea .agreeBox { margin:50px 0 0; border-top: 2px #727476 solid; }
+.workStudyArea .agreeBox .innerBox { padding:30px; box-sizing: border-box; border: 1px solid #e2e2e4; border-top: 0; }
+.workStudyArea .agreeBox .innerBox .txtList li:first-child { margin-top:0; }
+.workStudyArea .agreeBox .radioGroup { float:right; margin:10px 0 0; }
+.workStudyArea .agreeBox .radioGroup .ui_radioBox label { margin-right:0; }
+
+/* ==============================
+* MY서비스(기업) > 컨소시엄
+* ============================== */ 
+
+/* 협약기업수강신청 */
+.consortiumArea { margin-top:12px; }
+.consortiumArea .tabSelect .content .boxWrap { width: calc(100% - 224px); }
+.consortiumArea .radioGroup .ui_radioBox { width:200px; }
+.consortiumArea .inputKeyword input[type="text"] { width:370px; max-width:370px; }
+.consortiumArea .addCondition input[type="text"].js_datepicker { width:170px; background-image:url('../new_images/common/icocalendar.png'); }
+.consortiumArea .searchBoxLine .openCondition.open span:after { background-position:0 -8px; }
+.consortiumArea .searchBoxLineWrap .keywordArea .list li { margin: 0 25px 0 0; }
+.consortiumArea .searchBoxLineWrap .keywordArea .list li:last-child { margin: 0; }
+.consortiumArea .comment { min-height:53px; padding: 20px 0 28px 63px; font-size:14px; line-height:53px; color:#727476; border-bottom:1px solid #e1e4e9; background:url('../new_images/common/pageComment2.png') no-repeat 0 50%; }
+.consortiumArea .comment.type01 { min-height:53px; padding: 4px 0 4px 63px; line-height:1.5; border:0; background:url('../new_images/common/pageComment2.png') no-repeat 0 50%; }
+.consortiumArea .boxArea + .sortArea { margin:30px 0 0; }
 
 /* ==============================
 * MY 카드
@@ -147,3 +243,19 @@
 .myCardArea .boxArea .dotList > li { padding-left: 15px; font-size: 14px; }
 #subContentWrap .subContArea .myCardArea .qnaArea { padding-top: 0; }
 .myCardArea .qnaArea .tableArea td { background-color: #fff; }
+
+/* ==============================
+* 일학습병행
+* ============================== */ 
+
+/* 학습관리 */
+.workStudyArea .tableArea .list .tableSmallBtn { height: 26px; line-height: 24px; font-size: 12px; background: #fff; padding:0 12px; border: 1px solid #258384; color: #258384; }
+
+/* OJT 비용신청(재직자) */
+.workStudyArea .tableArea table.view th.rightBorLine { border-right: 1px solid #e2e2e4; }
+.workStudyArea .btnList.btnListC ul { text-align: center; margin-top: 50px;}
+.workStudyArea .btnList ul li { display: inline-block; padding: 0 5px;}
+
+/* 전담인력활동수당신청 */
+.workStudyArea .btnList.btnListL ul { text-align:left; margin-top: 20px; }
+.workStudyArea .btnList.btnListL ul li.btnRight { float: right; }

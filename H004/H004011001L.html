@@ -11,7 +11,7 @@
 	<meta name="robots" content="all">
 	<meta name="keywords" content="HRD">
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
-	<title>학습관리 | 일학습병행 | HRD-Net</title>
+	<title>전담인력활동수당신청 | 일학습병행 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
 	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
@@ -426,7 +426,7 @@
 				
 				<div class="subContArea">
 					<div class="headingTitleArea">
-						<h3 class="headingTitle">학습관리</h3>
+						<h3 class="headingTitle">전담인력활동수당신청</h3>
 						<div class="headingIcon">
 							<ul>
 								<li><button type="button" class="twitter">트위터</button></li>
@@ -439,81 +439,139 @@
 					<div class="contentArea">
 						<!-- 일학습 병행 컨텐츠 -->
 						<div class="workStudyArea">
-							<!-- 정렬 옵션 영역 -->
-							<div class="sortArea">
-								<p class="totalNum">전체 <strong>3</strong> 건</p>
-								<div class="selectViewArea">
-									<div class="selectView">
-										<label for="pageRowTest">페이지당 조회건수</label>
-										<select title="페이지당 조회건수" name="pageRowTest" id="pageRowTest" class="selectBox h30">
-											<option value="10" selected="selected">10개씩</option>
-											<option value="20">20개씩</option>
-											<option value="30">30개씩</option>
-											<option value="50">50개씩</option>
-											<option value="100">100개씩</option>
-										</select>
+							<!-- 전담인력활동수당신청 -->
+							<div class="tableArea">
+								<div class="tableTitleArea">
+									<h4 class="tableTitle">전담인력 활동수당 내역</h4>
+								</div>
+								<table class="view">
+									<caption>전담인력 활동수당 내역 폼</caption>
+									<colgroup>
+									<col style="width:auto;">
+									<col style="width:auto;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">기업(기관)명</th>
+											<td colspan="3">(주)거림</td>
+										</tr>
+										<tr>
+											<th scope="row">대표자명</th>
+											<td>김인택</td>
+											<th scope="row" >사업자등록번호</th>
+											<td>1348646486</td>
+										</tr>
+										<tr>
+											<th scope="row">기업규모</th>
+											<td colspan="3">23</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //전담인력활동수당신청 -->
+							<!-- 전담인력 활동수당 신청내역 목록 -->
+							<div class="tableArea">
+								<div class="tableTitleArea">
+									<h4 class="tableTitle">비용신청 내역 목록</h4>
+								</div>
+								<!-- 정렬 옵션 영역 -->
+								<div class="sortArea">
+									<p class="totalNum">전체 <strong>3</strong> 건</p>
+									<div class="selectViewArea">
+										<div class="selectView">
+											<label for="pageRowTest">페이지당 조회건수</label>
+											<select title="페이지당 조회건수" name="pageRowTest" id="pageRowTest" class="selectBox h30">
+												<option value="10" selected="selected">10개씩</option>
+												<option value="20">20개씩</option>
+												<option value="30">30개씩</option>
+												<option value="50">50개씩</option>
+												<option value="100">100개씩</option>
+											</select>
+										</div>
 									</div>
 								</div>
-							</div>
-							<!--// 정렬 옵션 영역 -->
-							<div class="tableArea">
+								<!--// 정렬 옵션 영역 -->
 								<table class="list">
-									<caption>학습관리 리스트</caption>
+									<caption>전담인력 활동수당 신청내역 목록</caption>
 									<colgroup>
-									<col style="width: 80px;">
-									<col style="width: 300px;">
+									<col style="width: 55px;">
+									<col style="width: 60px;">
+									<col style="width: 125px;">
 									<col style="width: 60px;">
 									<col style="width: 100px;">
 									<col style="width: 100px;">
-									<col style="width: 130px;">
-									<col style="width: 130px;">
+									<col style="width: 100px;">
+									<col style="width: 80px;">
+									<col style="width: 110px;">
+									<col style="width: 110px;">
 									</colgroup>
 									<thead>
 										<tr>
-											<th scope="col">번호</th>
-											<th scope="col">훈련과정명<br>(훈련과정관리번호)</th>
-											<th scope="col">회차</th>
-											<th scope="col">훈련시작일</th>
-											<th scope="col">훈련종료일</th>
-											<th scope="col">관활 / 지부 / 지사</th>
-											<th scope="col" class="last">비고</th>
+											<th scope="col">
+												<div class="ui_checkBox single">
+													<input type="checkbox" name="chkReturn" id="chkReturn01">
+													<label for="chkReturn01"></label>
+												</div>
+											</th>
+											<th scope="col">연번</th>
+											<th scope="col">비용 신청기간</th>
+											<th scope="col">정산<br>회차</th>
+											<th scope="col">산출액</th>
+											<th scope="col">신청액</th>
+											<th scope="col">지급액</th>
+											<th scope="col">비용<br>신청상태</th>
+											<th scope="col">신청일</th>
+											<th scope="col" class="last">승인일</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>4</td>
-											<td><a href="#">[P-TECH]정보통신기기하드웨어개발(전자기기하드웨어개발_L3_ver2.0)_(주)거림_2019_산업기사_대림대학교 (ABF20193000614947)</a></td>
-											<td>1</td>
-											<td>2019-03-09</td>
-											<td>2021-02-28</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
-										</tr>
-										<tr>
+											<td>
+												<div class="ui_checkBox single">
+													<input type="checkbox" name="chkReturn" id="chkReturn02">
+													<label for="chkReturn02"></label>
+												</div>
+											</td>
 											<td>3</td>
-											<td><a href="#">전자부품생산_L2_(군자공고)_(주)거림 (ABG20173000453769)</a></td>
-											<td>1</td>
-											<td>2017-03-01</td>
-											<td>2019-02-28</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
+											<td><a href="#">2019-05-01 ~<br>2019-05-31</a></td>
+											<td>31</td>
+											<td>1,891,580</td>
+											<td>1,891,580</td>
+											<td>1,891,580</td>
+											<td>지급완료</td>
+											<td>2019-08-01</td>
+											<td class="last">2019-08-21</td>
 										</tr>
 										<tr>
+											<td>
+												<div class="ui_checkBox single">
+													<input type="checkbox" name="chkReturn" id="chkReturn03">
+													<label for="chkReturn03"></label>
+												</div>
+											</td>
 											<td>2</td>
-											<td><a href="#">전자부품_전자기기생산_L2_평촌공고_군자공고_2018_(주)거림 (ABG20183000543950)</a></td>
-											<td>1</td>
-											<td>2018-03-02</td>
-											<td>2020-02-29</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
+											<td><a href="#">2019-05-01 ~<br>2019-05-31</a></td>
+											<td>31</td>
+											<td>1,891,580</td>
+											<td>1,891,580</td>
+											<td>1,891,580</td>
+											<td>지급완료</td>
+											<td>2019-08-01</td>
+											<td class="last">2019-08-21</td>
 										</tr>
 										<!-- 데이터 없을 때
 										<tr>
-											<td colspan="8">학습관리 이력이 없습니다.</td>
+											<td colspan="8">전담인력 활동수당 신청내역 이력이 없습니다.</td>
 										</tr>
 										-->
 									</tbody>
 								</table>
+							</div>
+							<div class="btnList btnListL">
+								<ul>
+									<li><button type="button" class="btnType2">삭제</button></li>
+									<li class="btnRight"><button type="button" class="btnType3">정산회차 추가</button></li>
+								</ul>
 							</div>
 							<div class="pagenation">
 								<a href="/" class="pb prev">이전보기</a>
@@ -526,6 +584,7 @@
 								<a href="/">7</a>
 								<a href="/" class="pb next">다음보기</a>
 							</div>
+							<!-- //전담인력 활동수당 신청내역 목록 -->
 						</div>
 						<!-- // 일학습 병행 컨텐츠 -->
 					</div>

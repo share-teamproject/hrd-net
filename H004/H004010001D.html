@@ -11,7 +11,7 @@
 	<meta name="robots" content="all">
 	<meta name="keywords" content="HRD">
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
-	<title>학습관리 | 일학습병행 | HRD-Net</title>
+	<title>OJT 비용신청(재직자) | 일학습병행 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
 	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
@@ -426,7 +426,7 @@
 				
 				<div class="subContArea">
 					<div class="headingTitleArea">
-						<h3 class="headingTitle">학습관리</h3>
+						<h3 class="headingTitle">OJT 비용신청(재직자)</h3>
 						<div class="headingIcon">
 							<ul>
 								<li><button type="button" class="twitter">트위터</button></li>
@@ -439,77 +439,165 @@
 					<div class="contentArea">
 						<!-- 일학습 병행 컨텐츠 -->
 						<div class="workStudyArea">
-							<!-- 정렬 옵션 영역 -->
-							<div class="sortArea">
-								<p class="totalNum">전체 <strong>3</strong> 건</p>
-								<div class="selectViewArea">
-									<div class="selectView">
-										<label for="pageRowTest">페이지당 조회건수</label>
-										<select title="페이지당 조회건수" name="pageRowTest" id="pageRowTest" class="selectBox h30">
-											<option value="10" selected="selected">10개씩</option>
-											<option value="20">20개씩</option>
-											<option value="30">30개씩</option>
-											<option value="50">50개씩</option>
-											<option value="100">100개씩</option>
-										</select>
+							<!-- OJT 비용신청 내역 목록 -->
+							<div class="tableArea">
+								<div class="tableTitleArea">
+									<h4 class="tableTitle">OJT 비용신청 내역 목록</h4>
+								</div>
+								<table class="view">
+									<caption>OJT 비용신청 내역 목록 입력 폼</caption>
+									<colgroup>
+									<col style="width:170px;">
+									<col style="width:260px;">
+									<col style="width:170px;">
+									<col style="width:130px;">
+									<col style="width:170px;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">기업(기관명)명</th>
+											<td colspan="4">(주)거림<br>[15616] 경기도 안산시 단원구 엠티브이12로21번길 18 (성곡동)</td>
+										</tr>
+										<tr>
+											<th scope="row">운영형태</th>
+											<td>도제학교<br>(NCS기반 자격 과정)</td>
+											<th scope="row">관할 지부 · 지사</th>
+											<td>경기지사</td>
+										</tr>
+										<tr>
+											<th scope="row">훈련과정명</th>
+											<td colspan="4">전자부품생산_L2_(군자공고)_(주)거림 (ABG20173000453769)</td>
+										</tr>
+										<tr>
+											<th scope="row">인증일자</th>
+											<td>2017-02-08</td>
+											<th scope="row">인증유효기간</th>
+											<td colspan="2">2017-02-08 ~ 2022-02-07</td>
+										</tr>
+										<tr>
+											<th scope="row">NCS직종/단가</th>
+											<td>전자부품생산 (19020202) / 2,414원</td>
+											<th scope="row">(구)훈련직종/단가</th>
+											<td colspan="2">() / 0원</td>
+										</tr>
+										<tr>
+											<th scope="row">훈련과정구분</th>
+											<td>일반</td>
+											<th scope="row">신청기업구분</th>
+											<td colspan="2">사업장 ( 1,000명 이하 )</td>
+										</tr>
+										<tr>
+											<th scope="row">OFF-JT 훈련방법</th>
+											<td>외부위탁</td>
+											<th scope="row" rowspan="3" class="rightBorLine">훈련기간</th>
+											<th>실시기간<br>(회차)</th>
+											<td>2017-03-01 ~ 2019-02-28(1회차)</td>
+										</tr>
+										<tr>
+											<th scope="row">훈련실시인원</th>
+											<td>3 명</td>
+											<th>OJT</th>
+											<td>24개월 / 750일 / 750시간 (온라인:0시간)</td>
+										</tr>
+										<tr>
+											<th scope="row">적용단가</th>
+											<td>2,414원 (NCS직종단가)</td>
+											<th>OFF-JT</th>
+											<td>24개월 / 464일 / 464시간 (온라인:0시간)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //OJT 비용신청 내역 목록 -->
+							<!-- 비용신청 내역 목록 -->
+							<div class="tableArea">
+								<div class="tableTitleArea">
+									<h4 class="tableTitle">비용신청 내역 목록</h4>
+								</div>
+								<!-- 정렬 옵션 영역 -->
+								<div class="sortArea">
+									<p class="totalNum">전체 <strong>3</strong> 건</p>
+									<div class="selectViewArea">
+										<div class="selectView">
+											<label for="pageRowTest">페이지당 조회건수</label>
+											<select title="페이지당 조회건수" name="pageRowTest" id="pageRowTest" class="selectBox h30">
+												<option value="10" selected="selected">10개씩</option>
+												<option value="20">20개씩</option>
+												<option value="30">30개씩</option>
+												<option value="50">50개씩</option>
+												<option value="100">100개씩</option>
+											</select>
+										</div>
 									</div>
 								</div>
-							</div>
-							<!--// 정렬 옵션 영역 -->
-							<div class="tableArea">
+								<!--// 정렬 옵션 영역 -->
 								<table class="list">
-									<caption>학습관리 리스트</caption>
+									<caption>비용신청 내역 조회 리스트</caption>
 									<colgroup>
-									<col style="width: 80px;">
-									<col style="width: 300px;">
+									<col style="width: 55px;">
 									<col style="width: 60px;">
+									<col style="width: 160px;">
 									<col style="width: 100px;">
 									<col style="width: 100px;">
-									<col style="width: 130px;">
-									<col style="width: 130px;">
+									<col style="width: 100px;">
+									<col style="width: 100px;">
+									<col style="width: 100px;">
+									<col style="width: 125px;">
 									</colgroup>
 									<thead>
 										<tr>
+											<th scope="col">
+												<div class="ui_checkBox single">
+													<input type="checkbox" name="chkReturn" id="chkReturn01">
+													<label for="chkReturn01"></label>
+												</div>
+											</th>
 											<th scope="col">번호</th>
-											<th scope="col">훈련과정명<br>(훈련과정관리번호)</th>
-											<th scope="col">회차</th>
-											<th scope="col">훈련시작일</th>
-											<th scope="col">훈련종료일</th>
-											<th scope="col">관활 / 지부 / 지사</th>
-											<th scope="col" class="last">비고</th>
+											<th scope="col">비용 신청기간</th>
+											<th scope="col">중도정산<br>회차</th>
+											<th scope="col">학습<br>근로자수</th>
+											<th scope="col">연차</th>
+											<th scope="col">신청액<br>총계</th>
+											<th scope="col">비용<br>신청상태</th>
+											<th scope="col" class="last">신청일</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>4</td>
-											<td><a href="#">[P-TECH]정보통신기기하드웨어개발(전자기기하드웨어개발_L3_ver2.0)_(주)거림_2019_산업기사_대림대학교 (ABF20193000614947)</a></td>
-											<td>1</td>
-											<td>2019-03-09</td>
-											<td>2021-02-28</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td><a href="#">전자부품생산_L2_(군자공고)_(주)거림 (ABG20173000453769)</a></td>
-											<td>1</td>
-											<td>2017-03-01</td>
-											<td>2019-02-28</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
-										</tr>
-										<tr>
+											<td>
+												<div class="ui_checkBox single">
+													<input type="checkbox" name="chkReturn" id="chkReturn02">
+													<label for="chkReturn02"></label>
+												</div>
+											</td>
 											<td>2</td>
-											<td><a href="#">전자부품_전자기기생산_L2_평촌공고_군자공고_2018_(주)거림 (ABG20183000543950)</a></td>
+											<td><a href="#">2018-12-01 ~<br>2018-12-31</a></td>
+											<td>30</td>
+											<td>3</td>
+											<td>2</td>
+											<td>521,420</td>
+											<td>정상지급<br>(확정)</td>
+											<td class="last">2019-03-05</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="ui_checkBox single">
+													<input type="checkbox" name="chkReturn" id="chkReturn03">
+													<label for="chkReturn03"></label>
+												</div>
+											</td>
 											<td>1</td>
-											<td>2018-03-02</td>
-											<td>2020-02-29</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
+											<td><a href="#">2018-12-01 ~<br>2018-12-31</a></td>
+											<td>30</td>
+											<td>3</td>
+											<td>2</td>
+											<td>521,420</td>
+											<td>정상지급<br>(확정)</td>
+											<td class="last">2019-03-05</td>
 										</tr>
 										<!-- 데이터 없을 때
 										<tr>
-											<td colspan="8">학습관리 이력이 없습니다.</td>
+											<td colspan="8">비용신청 이력이 없습니다.</td>
 										</tr>
 										-->
 									</tbody>
@@ -526,7 +614,15 @@
 								<a href="/">7</a>
 								<a href="/" class="pb next">다음보기</a>
 							</div>
+							<div class="btnList btnListC">
+								<ul>
+									<li><button type="button" class="btnType2">목록</button></li>
+									<li><button type="button" class="uiBtn">삭제</button></li>
+									<li><button type="button" class="btnType3">신청</button></li>
+								</ul>
+							</div>
 						</div>
+						<!-- //비용신청 내역 목록 -->
 						<!-- // 일학습 병행 컨텐츠 -->
 					</div>
 				</div>

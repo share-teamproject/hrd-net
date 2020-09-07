@@ -11,7 +11,7 @@
 	<meta name="robots" content="all">
 	<meta name="keywords" content="HRD">
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
-	<title>학습관리 | 일학습병행 | HRD-Net</title>
+	<title>OJT 비용신청 | 일학습병행 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
 	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
@@ -426,7 +426,7 @@
 				
 				<div class="subContArea">
 					<div class="headingTitleArea">
-						<h3 class="headingTitle">학습관리</h3>
+						<h3 class="headingTitle">OJT 비용신청</h3>
 						<div class="headingIcon">
 							<ul>
 								<li><button type="button" class="twitter">트위터</button></li>
@@ -458,58 +458,68 @@
 							<!--// 정렬 옵션 영역 -->
 							<div class="tableArea">
 								<table class="list">
-									<caption>학습관리 리스트</caption>
+									<caption>OJT 비용신청 조회 리스트</caption>
 									<colgroup>
-									<col style="width: 80px;">
-									<col style="width: 300px;">
 									<col style="width: 60px;">
-									<col style="width: 100px;">
-									<col style="width: 100px;">
-									<col style="width: 130px;">
-									<col style="width: 130px;">
+									<col style="width: 85px;">
+									<col style="width: 80px;">
+									<col style="width: 290px;">
+									<col style="width: 55px;">
+									<col style="width: 125px;">
+									<col style="width: 125px;">
+									<col style="width: 80px;">
 									</colgroup>
 									<thead>
 										<tr>
-											<th scope="col">번호</th>
-											<th scope="col">훈련과정명<br>(훈련과정관리번호)</th>
-											<th scope="col">회차</th>
+											<th scope="col" rowspan="2">번호</th>
+											<th scope="col">운영형태</th>
+											<th scope="col" rowspan="2">훈련과정구분</th>
+											<th scope="col" rowspan="2">훈련과정명<br>(훈련과정관리정보)</th>
+											<th scope="col" rowspan="2">회차</th>
 											<th scope="col">훈련시작일</th>
-											<th scope="col">훈련종료일</th>
-											<th scope="col">관활 / 지부 / 지사</th>
-											<th scope="col" class="last">비고</th>
+											<th scope="col">관할 지부 / 지사</th>
+											<th scope="col" rowspan="2" class="last">신청내역</th>
+										</tr>
+										<tr>
+											<th scope="col" class="topLine">기관명</th>
+											<th scope="col" class="topLine">훈련종료일</th>
+											<th scope="col" class="topLine">중도정산횟수</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>4</td>
-											<td><a href="#">[P-TECH]정보통신기기하드웨어개발(전자기기하드웨어개발_L3_ver2.0)_(주)거림_2019_산업기사_대림대학교 (ABF20193000614947)</a></td>
-											<td>1</td>
-											<td>2019-03-09</td>
-											<td>2021-02-28</td>
-											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td><a href="#">전자부품생산_L2_(군자공고)_(주)거림 (ABG20173000453769)</a></td>
-											<td>1</td>
+											<td rowspan="2">4</td>
+											<td>도제학교</td>
+											<td rowspan="2">일반</td>
+											<td rowspan="2"><a href="#">전자부품생산_L2_(군자공고)_(주)거림 (ABG20173000453769)</a></td>
+											<td rowspan="2">1</td>
 											<td>2017-03-01</td>
-											<td>2019-02-28</td>
 											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
+											<td rowspan="2" class="last"><button type="button" class="tableSmallBtn">조회</button></td>
 										</tr>
 										<tr>
-											<td>2</td>
-											<td><a href="#">전자부품_전자기기생산_L2_평촌공고_군자공고_2018_(주)거림 (ABG20183000543950)</a></td>
-											<td>1</td>
-											<td>2018-03-02</td>
-											<td>2020-02-29</td>
+											<td>평촌공업고등학교</td>
+											<td>2019-02-28</td>
+											<td>22</td>
+										</tr>
+										<tr>
+											<td rowspan="2">3</td>
+											<td>도제학교</td>
+											<td rowspan="2">일반</td>
+											<td rowspan="2"><a href="#">전자부품생산_L2_(군자공고)_(주)거림 (ABG20173000453769)</a></td>
+											<td rowspan="2">1</td>
+											<td>2017-03-01</td>
 											<td>경기지사</td>
-											<td class="last"><button type="button" class="tableSmallBtn">학습월차관리</button></td>
+											<td rowspan="2" class="last"><button type="button" class="tableSmallBtn">조회</button></td>
+										</tr>
+										<tr>
+											<td>평촌공업고등학교</td>
+											<td>2019-02-28</td>
+											<td>22</td>
 										</tr>
 										<!-- 데이터 없을 때
 										<tr>
-											<td colspan="8">학습관리 이력이 없습니다.</td>
+											<td colspan="8">OJT 비용신청 이력이 없습니다.</td>
 										</tr>
 										-->
 									</tbody>
