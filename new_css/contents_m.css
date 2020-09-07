@@ -443,7 +443,7 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .thumbnail .content .rate .con { box-sizing:border-box; width:100%; padding:0 10px; text-align:center; position:absolute; top:50%; left:0; transform:translateY(-50%); z-index:10; }
 .thumbnail .content .rate .con span { line-height:1.1; }
 .thumbnail .content .stsfc { box-sizing:border-box; float:left; width:calc(100% - 100px); padding-right:10px; margin-top:14px; font-size:22px; color:#727476; }
-.thumbnail .content .stsfc .con { display:block; width:212px; height:0; max-height:0; padding-top:34px; background:url('../new_images/common/star4Mob.png') no-repeat; background-color:cover; overflow:hidden; }
+.thumbnail .content .stsfc .con { display:block; margin-top:2px; }
 .thumbnail .bookmark { width:80px; height:0; max-height:0; padding-top:80px; background:url('../new_images/common/icobookmarkMob.png') no-repeat; background-size: 46px 42px; background-position:center center; overflow:hidden; position:absolute; top:0; right:0; }
 
 .tabmenuWrap { padding:0 30px; }

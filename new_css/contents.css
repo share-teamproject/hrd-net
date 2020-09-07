@@ -641,7 +641,7 @@
 .thumbnailList .rate .con span { line-height:1; }
 .thumbnailList .rate .chartDoughnut { width:100%; height:100%; position:absolute; top:0; left:0; z-index:5; }
 .thumbnailList .stsfc { float:left; width:calc(100% - 86px); margin-top:8px; color:#727476; font-size:12px; }
-.thumbnailList .stsfc .con { display:block; width:121px; height:0; max-height:0; padding-top:20px; margin-top:5px; overflow:hidden; background:url('../new_images/common/star4.png') no-repeat; background-size:cover; }
+.thumbnailList .stsfc .con { display:block; margin-top:10px; }
 
 .tabmenu { display:table; width:100%; margin-bottom:40px; border-top:1px solid #f6f6f6; }
 .tabmenu li { display:table-cell; }
@@ -652,7 +652,7 @@
 .detailListWrap + .pagenation { margin-top:20px; }
 .detailList > li { box-sizing:border-box; display:flex; width:100%; min-height:220px; padding:10px; border-bottom:1px solid #e2e2e4; }
 .detailList .title { flex-shrink:0; display:flex; flex-direction:column; box-sizing:border-box; width:170px; padding:12px; }
-.detailList .title .zone { margin-bottom:6px; color:#4e4f51; font-size:14px; text-align:center; }
+.detailList .title .zone { margin-top:6px; color:#4e4f51; font-size:14px; text-align:center; }
 .detailList .title .school { line-height:1.1; color:#4e4f51; font-weight: 500; font-size:20px; text-align:center; }
 .detailList .title .iconCertify { width:33px; height:0; max-height:0; padding-top:30px; margin:16px auto 0; background:url('../new_images/common/icoCertify.png') no-repeat; background-size:cover; text-align:center; }
 .detailList .title .award { width:98px; height:0; max-height:0; padding-top: 35px; margin:auto auto 0; overflow:hidden; background:url('../new_images/common/iconCerti3.png') no-repeat; }

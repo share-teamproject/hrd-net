@@ -67,7 +67,7 @@
 .thumbnailList .content .rate .con span { display:block; width:50px; margin:0 auto; line-height:1.1; word-wrap:break-word; }
 .thumbnailList .content .rate .con .txt { display:none; }
 .thumbnailList .content .stsfc { box-sizing:border-box; float:left; width:calc(100% - 100px); padding-right:10px; margin-top:14px; font-size:22px; color:#727476; }
-.thumbnailList .content .stsfc .con { display:block; width:212px; height:0; max-height:0; padding-top:34px; background:url('../new_images/common/star4Mob.png') no-repeat; background-color:cover; overflow:hidden; }
+.thumbnailList .content .stsfc .con { display:block; margin-top:2px; }
 .thumbnailList .bookmark { width:80px; height:0; max-height:0; padding-top:80px; background:url('../new_images/common/icobookmarkMob.png') no-repeat; background-size: 46px 42px; background-position:center center; overflow:hidden; position:absolute; top:0; right:0; }
 
 .detailListWrap {  }
@@ -127,24 +127,23 @@
 .section-training .tabListArea + .selectList { margin-top:40px; }
 
 .section-training .selectList { border-top:4px solid #727476; }
-.section-training .selectList .list {}
 .section-training .selectList .list li { min-height:86px; line-height:84px; border-bottom:2px solid #e2e2e4; color:#4e4f51; font-size:28px; }
 .section-training .selectList .list li.next { position:relative; }
 .section-training .selectList .list li.next:after { content:''; display:block; width:14px; height:24px; background:url('../new_images/common/searchArrowRight.png') no-repeat; background-size:cover; position:absolute; top:30px; right:20px; }
 .section-training .selectList .list li > a,
 .section-training .selectList .list li > button { box-sizing:border-box; display:block; width:100%; height:86px; line-height:86px; padding:0 20px; color:#4e4f51; font-size:28px; text-align:left; }
-/* .section-training .selectList .list li > label.radio { display:block; width:100%; line-height:86px; }
-.section-training .selectList .list li > label.radio > input[type="radio"] { position:absolute; left:-9999px; }
-.section-training .selectList .list li > label.radio > input[type="radio"] + span { box-sizing:border-box; display:block; width:100%; height:100%; padding:0 20px; color:#4e4f51; font-size:28px; }
-.section-training .selectList .list li > label.radio > input[type="radio"]:checked + span { background-color:#c9d3e8; } */
 
-.section-training .inputDateTermWrap {}
 .section-training .inputDateTermWrap .inputDateTerm {font-size:0;}
 .section-training .inputDateTermWrap .inputDateTerm input[type="text"].js_datepicker { box-sizing:border-box; width:calc((100% - 46px) / 2); height:70px; line-height:66px; border:2px solid #cdcdd1; background: url('../new_images/common/icoCalendarMob.png') no-repeat; background-size: 32px auto; background-position:calc(100% - 20px) center; }
 .section-training .inputDateTermWrap .inputDateTerm .at { display:inline-block; width:46px; height:70px; line-height:70px; font-size:28px; text-align:center; }
 .section-training .inputDateTermWrap .btnArea {width:100%;margin-top:30px;font-size:0;}
 .section-training .inputDateTermWrap .btnArea:after {content:'';display:block;clear:both;}
 .section-training .inputDateTermWrap .btnArea > button {box-sizing:border-box;float:left;width:33.33%;min-width:auto;}
+
+.section-training .inputDateTer { font-size:0; }
+.section-training .inputDateTer .dateSelect { box-sizing:border-box; display:inline-block; width:calc((100% - 40px) / 2); padding:0; border:2px solid #cdcdd1; vertical-align:top; }
+.section-training .inputDateTer .dateSelect .ui-datepicker-trigger { width:32px; margin-left:10px; margin-top:20px; }
+.section-training .inputDateTer .at { display:inline-block; width:40px; height:70px; line-height:70px; padding:0 10px; font-size:26px; text-align:center; }
 
 .section-training .btnArea.more { width:100%; padding:0 30px; margin-top:20px; text-align:right; }
 
