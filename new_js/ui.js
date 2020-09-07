@@ -24,36 +24,36 @@ $(function(){
 		},
 		// qna 
 		fn_qna:function(){
-			var qnaList = $('.qnaArea > ul > li')
+			var qnaList = $('.qnaArea > ul > li').find('.qnaQ')
 			$(qnaList).each(function(qna){
 				$(this).on('click',function(){	
-					$(this).attr('aria-selected',true).siblings().attr('aria-selected',false)
-					$(this).attr('title','선택됨').siblings().attr('title','');
-					if ( $(this).hasClass('on') )
+					$(this).parent().attr('aria-selected',true).siblings().attr('aria-selected',false)
+					$(this).parent().attr('title','선택됨').siblings().attr('title','');
+					if ( $(this).parent().hasClass('on') )
 					{
-						$(qnaList).removeClass('on');
-						$(qnaList).find('.qnaA').slideUp(200);
+						$(qnaList).parent().removeClass('on');
+						$(qnaList).parent().find('.qnaA').slideUp(200);
 					} else {
-						$(qnaList).removeClass('on');
-						$(qnaList).find('.qnaA').slideUp(200);
-						$(this).addClass('on');
-						$(this).find('.qnaA').slideDown(200);
+						$(qnaList).parent().removeClass('on');
+						$(qnaList).parent().find('.qnaA').slideUp(200);
+						$(this).parent().addClass('on');
+						$(this).parent().find('.qnaA').slideDown(200);
 					}
 				});
 
 				$(this).on('keydown',function(e){	
 					if (e.keyCode == 13) { // enter key
-						$(this).attr('aria-selected',true).siblings().attr('aria-selected',false)
-						$(this).attr('title','선택됨').siblings().attr('title','');
-						if ( $(this).hasClass('on') )
+						$(this).parent().attr('aria-selected',true).siblings().attr('aria-selected',false)
+						$(this).parent().attr('title','선택됨').siblings().attr('title','');
+						if ( $(this).parent().hasClass('on') )
 						{
-							$(qnaList).removeClass('on');
-							$(qnaList).find('.qnaA').slideUp(200);
+							$(qnaList).parent().removeClass('on');
+							$(qnaList).parent().find('.qnaA').slideUp(200);
 						} else {
-							$(qnaList).removeClass('on');
-							$(qnaList).find('.qnaA').slideUp(200);
-							$(this).addClass('on');
-							$(this).find('.qnaA').slideDown(200);
+							$(qnaList).parent().removeClass('on');
+							$(qnaList).parent().find('.qnaA').slideUp(200);
+							$(this).parent().addClass('on');
+							$(this).parent().find('.qnaA').slideDown(200);
 						}
 					}	
 				});
@@ -98,7 +98,7 @@ $(function(){
 	$(".qnaArea").fn_qna(); //qna
 	$(".tabInterface").fn_tab(); //tab
 	uiForm();
-	wrapWindowByMask();
+	//wrapWindowByMask();
 
 	// Form
 	function uiForm(){	
@@ -325,7 +325,7 @@ var mainSearch = {
 
 	open : function() {	
 		var $searchBtn = $('.btnTotalSearchArea .btn');
-		var $inputSearchBtn = $('.btnTotalSearchArea > li > input');
+		//var $inputSearchBtn = $('.btnTotalSearchArea > li > input');
 		var $tabSelect = $('.tabSelect .content .boxWrap');
 		var $inputSearchKeyword = $('.searchArea .inputArea');
 		mainSearch.len = $searchBtn.length;	
@@ -333,7 +333,7 @@ var mainSearch = {
 		$searchBtn.each(function(){
 			$(this).on('click', function(){	
 			idx = $searchBtn.index(this);	
-				if($(this).hasClass('on')){							
+			/*	if($(this).hasClass('on')){							
 					$(this).removeClass('on');
 					$inputSearchBtn.css('display','none');
 					$tabSelect.hide('fast');
@@ -345,14 +345,137 @@ var mainSearch = {
 					$tabSelect.hide('fast');
 					$tabSelect.eq(idx).show('slow');
 					$inputSearchKeyword.css('width','190px;')
-				}
-
-
-
-
-
-				if(idx==2) {
-					$('#inputPeriod').focus();
+				}*/
+				if(!$searchBtn.hasClass('on')){$inputSearchKeyword.css('width','430px;')};
+				
+				if(idx==0){
+					if($(this).hasClass('on')){
+						$(this).removeClass('on');
+						$(this).css('width','70px');
+						$(this).siblings().css('display','none')
+						$tabSelect.eq(idx).hide();
+					}else{						
+						if($searchBtn.eq(1).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(1).css('width','190px');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+							$(this).css('width','310px');
+						}else if($searchBtn.eq(2).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(2).css('width','190px');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+							$(this).css('width','310px');	
+						}else if($searchBtn.eq(1).hasClass('on') && $searchBtn.eq(2).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(1).css('width','190px');
+							$searchBtn.eq(2).css('width','190px');	
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')						
+							$(this).css('width','190px');	
+							console.log('check');
+						}else{
+							$(this).addClass('on');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css({width:'190px'})
+							$(this).css('width','430px');
+						}
+					}					
+				}else if(idx==1){
+					if($(this).hasClass('on')){
+						$(this).removeClass('on');
+						$(this).css('width','70px');
+						$(this).siblings().css('display','none')
+						$tabSelect.eq(idx).hide();
+					}else{						
+						if($searchBtn.eq(0).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(0).css('width','190px');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+							$(this).css('width','310px');
+						}else if($searchBtn.eq(2).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(2).css('width','190px');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+							$(this).css('width','310px');	
+						}else if($searchBtn.eq(0).hasClass('on') && $searchBtn.eq(2).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(0).css('width','190px');
+							$searchBtn.eq(2).css('width','190px');	
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')						
+							$(this).css('width','190px');	
+						}else{
+							$(this).addClass('on');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+							$(this).css('width','430px');
+						}
+					}					
+				}else if(idx==2) {					
+					if($(this).hasClass('on')){
+						$(this).removeClass('on');
+						$(this).css('width','70px');
+						$(this).siblings().css('display','none')
+						$tabSelect.eq(idx).hide();
+					}else{											
+						if($searchBtn.eq(0).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(0).css('width','190px');
+							$(this).siblings().css('display','block')
+							$('#inputPeriod').focus();
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+							$(this).css('width','310px');
+						}else if($searchBtn.eq(1).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(1).css('width','190px');
+							$(this).siblings().css('display','block')							
+							$('#inputPeriod').focus();
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+							$(this).css('width','310px');	
+						}else if($searchBtn.eq(0).hasClass('on') && $searchBtn.eq(1).hasClass('on')){
+							$(this).addClass('on');
+							$searchBtn.eq(0).css('width','190px');
+							$searchBtn.eq(1).css('width','190px');	
+							$(this).siblings().css('display','block')
+							$('#inputPeriod').focus();
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')						
+							$(this).css('width','190px');	
+						}else{
+							$(this).addClass('on');
+							$(this).css('width','430px');
+							$inputSearchKeyword.css('width','190px;')
+							$(this).siblings().css('display','block')
+							$('#inputPeriod').focus();	
+							$tabSelect.hide('fast');
+							$tabSelect.eq(idx).show('slow');
+						}
+					}						
 				}
 			});		
 		});			
@@ -369,8 +492,8 @@ var navigation = {
 	len : 0,
 
 	init : function() {
-		navigation.gnb();
-		navigation.lnb();
+		this.gnb();
+		this.lnb();
 	},
 	
 	gnb : function() {	

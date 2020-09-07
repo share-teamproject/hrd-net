@@ -26,9 +26,10 @@
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea #btnCategory.on:after { background-position: -30px -23px; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea #btnPeriod.on:after { background-position: -60px -23px; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn::before { position:absolute; top:26px; left:0; width:1px; height:16px; content:''; background:#ecedef; }
-#mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn.on { width:430px; transition: all 0.4s linear; }
+#mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn.on { width:190px; transition: all 0.4s linear; }
 #mainTopWrap .tabSelect .content { position:absolute; top:0; float:none; width:864px; z-index:1; }
 #mainTopWrap .tabSelect .boxWrap { top:68px; left:calc(50% - 432px); background:#fff; width:864px; float:none; overflow:hidden; }
+
 /* 키비주얼 */
 #mainTopWrap .mainKeyVisual { position:relative; height:870px; }
 #mainTopWrap .mainTopArea { position:absolute; }
@@ -40,19 +41,20 @@
 #mainTopWrap .mainKeyVisual .mainKeyVisual04 { background:url('../new_images/main/mainTopVisual04.jpg') center top no-repeat; height:870px; }
 #mainTopWrap .mainKeyVisual .mainKeyVisual05 { background:url('../new_images/main/mainTopVisual05.jpg') center top no-repeat; height:870px; }
 #mainTopWrap .mainKeyVisual .mainKeyVisual06 { background:url('../new_images/main/mainTopVisual06.jpg') center top no-repeat; height:870px; }
-#mainTopWrap .movieControlArea { position:absolute; top:225px; right:60px; z-index: 10; }
+#mainTopWrap .movieControlArea { position:absolute; top:225px; left:60px; z-index: 10; }/*0907_수정 right:60px*/
 #mainTopWrap .movieControlArea .linkList { z-index:15; padding:28px 0 0 0; }
 #mainTopWrap .movieControlArea .linkList > span { position:relative; display:block; overflow:hidden; width:114px; height:28px; line-height:26px; padding:0 11px 0 0; margin:0 0 3px 0; box-sizing:border-box; background:none; }
-#mainTopWrap .movieControlArea .linkList span:after { position:absolute; top:8px; right:11px; width:12px; height:12px; border-radius:12px; background:#e4e4e4; content:''; }
-#mainTopWrap .movieControlArea .linkList span a { float:left; display:block; width:32px; height:28px; font-size:0; line-height:0; }
-#mainTopWrap .movieControlArea .linkList span span { float:left; display:block; width:50px; height:28px; line-height:26px; text-align:right; color:#e4e4e4; font-size:14px; }
+#mainTopWrap .movieControlArea .linkList span:after { position:absolute; top:8px; left:11px; width:12px; height:12px; border-radius:12px; background:#e4e4e4; content:''; }/*0907_수정 right:11px*/
+#mainTopWrap .movieControlArea .linkList span a { float:right; display:block; width:20px; height:28px; font-size:0; line-height:0; } /*0907_수정 float:left; width:32px*/
+#mainTopWrap .movieControlArea .linkList span span { float:left; display:block; width:74px; height:28px; line-height:26px; text-align:left; color:#e4e4e4; font-size:16px; padding-left:30px;}/*0907_수정 width:50px; text-align:left;font-size:14px; 추가 padding-left:30px;*/
 #mainTopWrap .movieControlArea .linkList span.a { background:#fff; }
 #mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active { background:#fff; border-radius:28px; }
 #mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active span { color:#4870cf;}
-#mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active a { background:url('../new_images/main/arrowGoPage.png') center no-repeat #fff; }
+#mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active a { background:url('../new_images/main/arrowGoPage_r.png') center no-repeat #fff;  }/*0907_수정 이미지교체*/
 #mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active:after { position:absolute; top:8px; right:11px; width:12px; height:12px; border-radius:12px; background:#4870cf; content:''; }
-#mainTopWrap .movieControlArea .btnGroup { position:absolute; top:0; right:10px; width:40px; }
-#mainKeyVisualPagination.swiper-pagination { top:5px; right:0px; }
+#mainTopWrap .movieControlArea .btnGroup { position:absolute; top:0; left:10px; width:40px; }/*0907_수정 right:10px; */
+#mainKeyVisualPagination.swiper-pagination { top:5px; left:0px; }/*0907_수정 right:0px; */
+
 /* 국민내일배움카드 */
 #mainTopWrap .learningCard .mainHeadingTitle { position:relative; margin:100px 0 0; font-size:24px; font-weight:500px; color:#fff; text-align:center; }
 #mainTopWrap .learningCard .mainHeadingTitle:before { position:absolute; top:20px; left:290px; width:160px; height:1px; background:#fff; opacity:.5; content:''; }
