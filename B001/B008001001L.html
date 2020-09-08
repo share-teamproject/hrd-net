@@ -15,15 +15,15 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
-    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
     <link href="../new_css/layout.css" rel="stylesheet" />
     <link href="../new_css/contents.css" rel="stylesheet" />
-    <link href="../new_css/main.css" rel="stylesheet" />     
+    <link href="../new_css/main.css" rel="stylesheet" />
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/jquery-ui.js"></script>
-    <script src="../new_js/lib/moment.min.js"></script>   
-    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/moment.min.js"></script>
+    <script src="../new_js/lib/daterangepicker.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
     <script src="../new_js/ui.js"></script>
 </head>
@@ -739,11 +739,15 @@
                                         <dd class="content">
                                             <div class="inputDateTermWrap">
                                                 <div class="inputDateTerm">
-                                                    <label for="date1" class="hide">개강시작일자</label>
-                                                    <input type="text" name="date" id="date1" class="js_datepicker">
+                                                    <label for="date01" class="hide">개강시작일자</label>
+                                                    <div class="dateSelect">
+                                                        <input type="text" value="" placeholder="20201012" title="달력" name="date" id="date01" class="selectW180">
+                                                    </div>
                                                     <span class="at">~</span>
-                                                    <label for="date2" class="hide">개강마지막일자</label>
-                                                    <input type="text" name="date" id="date2" class="js_datepicker">
+                                                    <label for="date02" class="hide">개강마지막일자</label>
+                                                    <div class="dateSelect">
+                                                        <input type="text" value="" placeholder="20201012" title="달력" name="date" id="date02" class="selectW180">
+                                                    </div>
                                                 </div>
                                                 <div class="btnArea">
                                                     <button type="button" class="btnType2 primary">1주일</button>
@@ -1204,12 +1208,16 @@
                                             </div>
                                             <div class="content">
                                                 <div class="inputDateTermWrap">
-                                                    <div class="inputDateTerm">
-                                                        <label for="dateStart" class="hide">개강시작일자</label>
-                                                        <input type="text" name="date" id="dateStart" class="js_datepicker">
+                                                    <div class="inputDateTer">
+                                                        <label for="date03" class="hide">개강시작일자</label>
+                                                        <div class="dateSelect">
+                                                            <input type="text" value="" placeholder="20201012" title="달력" name="date" id="date03" class="selectW180">
+                                                        </div>
                                                         <span class="at">~</span>
-                                                        <label for="dateEnd" class="hide">개강마지막일자</label>
-                                                        <input type="text" name="date" id="dateEnd" class="js_datepicker">
+                                                        <label for="date04" class="hide">개강마지막일자</label>
+                                                        <div class="dateSelect">
+                                                            <input type="text" value="" placeholder="20201012" title="달력" name="date" id="date04" class="selectW180">
+                                                        </div>
                                                     </div>
                                                     <div class="btnArea">
                                                         <button type="button" class="btnType2 primary">1주일</button>
@@ -1511,7 +1519,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1551,7 +1559,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1591,7 +1599,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1631,7 +1639,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1671,7 +1679,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1711,7 +1719,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1751,7 +1759,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1829,8 +1837,38 @@
 
                         <div class="sortArea">
                             <p class="totalNum"></p>
-                            <div class="selectViewArea">
+                            <div class="downloadArea">
                                 <button type="button" class="btnDownload">다운로드</button>
+                                <ul class="downloadList" style="display: none;">
+                                    <li class="excell">
+                                        <button type="button" onclick="">엑셀</button>
+                                    </li>
+                                    <li class="hancell">
+                                        <button type="button" onclick="">한셀</button>
+                                    </li>
+                                    <li class="text">
+                                        <button type="button" onclick="">텍스트</button>
+                                    </li>
+                                    <li class="pdf">
+                                        <button type="button" onclick="">PDF</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <script>
+                                $('.downloadArea .btnDownload').on('click', function() {
+                                    console.log($(this).next().is(':visible'))
+                                    if($(this).next().is(':visible')) {
+                                        $(this).removeClass('on');
+                                        $(this).next().hide();
+
+                                        return false;
+                                    }
+
+                                    $(this).addClass('on');
+                                    $(this).next().show();
+                                });
+                            </script>
+                            <div class="selectViewArea">
                                 <div class="selectView">
                                     <label for="pageRow1">정렬</label>
                                     <select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
@@ -1858,11 +1896,11 @@
                             <ul class="detailList">
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -1922,11 +1960,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -1986,11 +2024,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2050,11 +2088,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2114,11 +2152,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">

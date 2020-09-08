@@ -13,12 +13,17 @@
     <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
     <title>과정별 상세검색 | HRD-Net</title> 
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <link href="../new_css/layout.css" rel="stylesheet" />
-    <link href="../new_css/contents.css" rel="stylesheet" />
-    <link href="../new_css/main.css" rel="stylesheet" />  
+    <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" />
+    <link href="../new_css/main_m.css" rel="stylesheet" />
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>
+    <script src="../new_js/lib/daterangepicker.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
     <script src="../new_js/ui.js"></script>
 </head>
@@ -30,7 +35,7 @@
         <a href="#footerWrap">푸터 바로가기</a>
     </div>
 
-	<div id="wrap">
+    <div id="wrap">
         <!-- 헤더영역 -->
         <header id="headerWrap">
             <div class="headArea">
@@ -762,11 +767,15 @@
                                         <dd class="content">
                                             <div class="inputDateTermWrap">
                                                 <div class="inputDateTerm">
-                                                    <label for="date1" class="hide">개강시작일자</label>
-                                                    <input type="text" name="date" id="date1" class="js_datepicker">
+                                                    <label for="date01" class="hide">개강시작일자</label>
+                                                    <div class="dateSelect">
+                                                        <input type="text" value="" placeholder="20201012" title="달력" name="date" id="date01" class="selectW180">
+                                                    </div>
                                                     <span class="at">~</span>
-                                                    <label for="date2" class="hide">개강마지막일자</label>
-                                                    <input type="text" name="date" id="date2" class="js_datepicker">
+                                                    <label for="date02" class="hide">개강마지막일자</label>
+                                                    <div class="dateSelect">
+                                                        <input type="text" value="" placeholder="20201012" title="달력" name="date" id="date02" class="selectW180">
+                                                    </div>
                                                 </div>
                                                 <div class="btnArea">
                                                     <button type="button" class="btnType2 primary">1주일</button>
@@ -1247,12 +1256,16 @@
                                             </div>
                                             <div class="content">
                                                 <div class="inputDateTermWrap">
-                                                    <div class="inputDateTerm">
-                                                        <label for="dateStart" class="hide">개강시작일자</label>
-                                                        <input type="text" name="date" id="dateStart" class="js_datepicker">
+                                                    <div class="inputDateTer">
+                                                        <label for="date03" class="hide">개강시작일자</label>
+                                                        <div class="dateSelect">
+                                                            <input type="text" value="" placeholder="20201012" title="달력" name="date" id="date03" class="selectW180">
+                                                        </div>
                                                         <span class="at">~</span>
-                                                        <label for="dateEnd" class="hide">개강마지막일자</label>
-                                                        <input type="text" name="date" id="dateEnd" class="js_datepicker">
+                                                        <label for="date04" class="hide">개강마지막일자</label>
+                                                        <div class="dateSelect">
+                                                            <input type="text" value="" placeholder="20201012" title="달력" name="date" id="date04" class="selectW180">
+                                                        </div>
                                                     </div>
                                                     <div class="btnArea">
                                                         <button type="button" class="btnType2 primary">1주일</button>
@@ -1265,7 +1278,7 @@
                                     </article>
                                     <!-- // 개강일자 - 레이어팝업 -->
                                 </div>
-                                <div class="addCondition" style="display: block;">
+                                <div class="addCondition" style="display: none;">
                                     <div class="item">
                                         <a href="#">
                                             <span class="icon weekend"></span>
@@ -1457,19 +1470,19 @@
                                                             <li>
                                                                 <div class="ui_checkBox">
                                                                     <input type="checkbox" name="chkTrainingCourse" id="chkTrainingCourse2">
-                                                                    <label for="chkTrainingCourse1" class="on">모듈형</label>
+                                                                    <label for="chkTrainingCourse2" class="on">모듈형</label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="ui_checkBox">
                                                                     <input type="checkbox" name="chkTrainingCourse" id="chkTrainingCourse3">
-                                                                    <label for="chkTrainingCourse1" class="on">자격연계형(NCS 기반자격형)</label>
+                                                                    <label for="chkTrainingCourse3" class="on">자격연계형(NCS 기반자격형)</label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="ui_checkBox">
                                                                     <input type="checkbox" name="chkTrainingCourse" id="chkTrainingCourse4">
-                                                                    <label for="chkTrainingCourse1" class="on">자격연계형(대학연계형)</label>
+                                                                    <label for="chkTrainingCourse4" class="on">자격연계형(대학연계형)</label>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -1568,7 +1581,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1608,7 +1621,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1648,7 +1661,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1688,7 +1701,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1728,7 +1741,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1768,7 +1781,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1808,7 +1821,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -1884,11 +1897,11 @@
                             <ul class="detailList">
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -1948,11 +1961,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2012,11 +2025,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2076,11 +2089,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2140,11 +2153,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2248,7 +2261,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -2288,7 +2301,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -2328,7 +2341,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -2368,7 +2381,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -2408,7 +2421,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -2448,7 +2461,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -2488,7 +2501,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -2563,11 +2576,11 @@
                             <ul class="detailList">
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2627,11 +2640,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2691,11 +2704,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2755,11 +2768,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2819,11 +2832,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -2927,7 +2940,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -2967,7 +2980,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3007,7 +3020,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3047,7 +3060,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3087,7 +3100,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3127,7 +3140,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3167,7 +3180,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3350,7 +3363,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3390,7 +3403,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3430,7 +3443,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3470,7 +3483,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3510,7 +3523,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3550,7 +3563,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3590,7 +3603,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -3665,11 +3678,11 @@
                             <ul class="detailList">
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -3729,11 +3742,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -3793,11 +3806,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -3857,11 +3870,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -3921,11 +3934,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -4029,7 +4042,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4069,7 +4082,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4109,7 +4122,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4149,7 +4162,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4189,7 +4202,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4229,7 +4242,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4269,7 +4282,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4508,7 +4521,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4548,7 +4561,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4588,7 +4601,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4628,7 +4641,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4668,7 +4681,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4708,7 +4721,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4748,7 +4761,7 @@
                                                     <p class="stsfc">
                                                         <span class="tit">만족도</span>
                                                         <span class="con">
-                                                            별4개
+                                                            <span class="starRating"><span style="width:20%"></span></span>
                                                         </span>
                                                     </p>
                                                 </dd>
@@ -4767,11 +4780,11 @@
                             <ul class="detailList">
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -4831,11 +4844,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -4895,11 +4908,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -4959,11 +4972,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
@@ -5023,11 +5036,11 @@
                                 </li>
                                 <li>
                                     <div class="title">
-                                        <p class="zone">
-                                            경기도 화성
-                                        </p>
                                         <p class="school">
                                             ㈜화성직업전문학교
+                                        </p>
+                                        <p class="zone">
+                                            경기도 화성
                                         </p>
                                         <div class="iconCertify"></div>
                                         <p class="award certi3">
