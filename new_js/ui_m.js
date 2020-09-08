@@ -181,7 +181,7 @@ $(function(){
 			$('#deputy02').css('display','block');
 		}
 	});
-
+	/* 기관칮기 : 기존 기관찾기 사용
 	$('.openMenu_2' ).hide();
 	$('.zone').on('click', function () {
 	//버튼 색 제거,추가
@@ -193,7 +193,7 @@ $(function(){
 
 	$('.zoneBox').hide();
 	$('.zoneBox').eq(idx).show();
-	});
+	});*/
 	
 	$(function(){
 		// 팝업 호출

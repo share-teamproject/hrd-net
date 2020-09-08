@@ -26,8 +26,54 @@
     <script src="../new_js/lib/moment.min.js"></script>   
     <script src="../new_js/lib/daterangepicker.js"></script>     
     <script src="../new_js/lib/swiper.min.js"></script>
-    <script src="../new_js/ui.js"></script>
-</head>
+	<script src="../new_js/ui.js"></script>
+	<script>
+		$(document).ready(function() {
+			var $radioList = $('#radioCard .ui_radioBox').find('input[type=radio]');				
+
+			$radioList.each(function () {				
+				$radioList.click(function () {
+					var idx = $radioList.index(this)	
+					if(idx == 0) { 
+						$('#cardInfo').html(
+							'<p class="toolTipTitle">카드발급 신청 방법</p>'+
+							'<p class="toolTipText">카드발급방법 안내  - <strong>전화발급</strong><br />카드사를 통해 전화상으로 상담후 우편을 통해 발급받는 방법<br>'+
+								'카드발급을 위해 금융기관(카드사)에서 전화가 올 수 있으므로 스팸으로 오인하지 마시기 바랍니다.</p>'
+						)
+					}else if(idx == 1){
+						$('#cardInfo').html(
+							'<p class="toolTipTitle">카드발급 신청 방법</p>'+
+							'<p class="toolTipText">카드발급방법 안내  - <strong>모바일 발급</strong><br />카드사 모바일 홈페이지에 접속하여 신청한 뒤, 우편을 통해 발급받는 방법<br>'+
+							'카드발급을 위해 금융기관(카드사)에서 카카오톡 또는 문자로 홈페이지 연결 주소(URL)가<br>'+
+							'발송되오니 스펨으로 오인하지 마시기 바랍니다.<br>'+
+							'농협 : 1644-4000 신한 : 1544-7000 으로 발송되오니 해당 번호에 대한 수신차단을<br>'+ 
+							'해지해주시기 바랍니다.</p>'
+						)
+					}
+					else if(idx == 2){
+						$('#cardInfo').html(
+							'<p class="toolTipTitle">카드발급 신청 방법</p>'+
+							'<p class="toolTipText">카드발급방법 안내 - <strong>현장발급</strong><br />'+
+								'발급 승인 후 관할 고용센터에 방문하여 확인증 수령<br />'+ 
+								'또는 홈페이지 My서비스 > 국민내일배움카드 > 신청내역 > 발급확인서출력 후<br />'+
+								'지정된 은행에 방문하여 카드를 수령하는 방법<br />'+
+								'체크카드의 경우 해당 은행 계좌가 있을 시 바로 발급 가능하나,<br />'+
+								'타 은행 계좌로 연결하려고 하거나 신용카드로 발급하려는 경우 1~2주 시간이 소요될 수 있습니다.<br />'+
+								'또한, 발급받은 카드는 수령 후 다음날부터 사용가능합니다.<br />'+
+								'센터와 지정은행간의 거리가 있을 수 있으며 자세한 내용은 관할센터에 전화문의 바랍니다.</p>'
+						)
+					}
+					else{
+						$('#cardInfo').html(
+							'<p class="toolTipTitle">카드발급 신청 방법</p>'+
+							'<p class="toolTipText">카드발급방법 안내 -<br />카드발급방법을 선택하여 주십시오</p>'
+						)
+					}
+				});
+			});
+		});		
+	</script>
+</head>		
 
 <body>
     <div id="skipnav">
@@ -694,11 +740,11 @@
 												<div class="thCell">제휴카드 <span class="color01">＊</span></div> 
 												<div class="tdCell">
 													<div class="ui_radioBox ty3">                                             
-														<input type="radio" checked="checked" value="NH" name="NH" id="NH"> 
+														<input type="radio" checked="checked" value="NH" name="cardName" id="NH"> 
 														<label for="NH">NH농협카드</label>
 													</div>
 													<div class="ui_radioBox ty3">   
-														<input type="radio" value="Shinhan" name="Shinhan" id="Shinhan"> 
+														<input type="radio" value="Shinhan" name="cardName" id="Shinhan"> 
 														<label for="Shinhan">신한카드</label>
 													</div>  
 												</div> 
@@ -707,11 +753,11 @@
 												<div class="thCell">카드유형 <span class="color01">＊</span></div> 
 												<div class="tdCell">
 													<div class="ui_radioBox ty3">                                             
-														<input type="radio" checked="checked" value="checkCard" name="checkCard" id="checkCard"> 
+														<input type="radio" checked="checked" value="checkCard" name="cardType" id="checkCard"> 
 														<label for="checkCard">체크카드</label>
 													</div>
 													<div class="ui_radioBox ty3">   
-														<input type="radio" value="creditCard" name="creditCard" id="creditCard"> 
+														<input type="radio" value="creditCard" name="cardType" id="creditCard"> 
 														<label for="creditCard">신용카드</label>
 													</div>  
 												</div> 
@@ -720,23 +766,23 @@
 												<div class="thCell">카드발급(신청)방법 <span class="color01">＊</span>
 													<div class="toolTip ty3">
 														<button type="button" class="toolTipBtn">툴팁</button>
-														<div class="toolTipContent right" style="width:420px;">
+														<div class="toolTipContent right" id='cardInfo' style="width:530px;">
 															<p class="toolTipTitle">카드발급 신청 방법</p>
 															<p class="toolTipText">카드발급방법 안내 -<br />카드발급방법을 선택하여 주십시오</p>
 														</div>        
 													</div>
 												</div> 
-												<div class="tdCell">
+												<div class="tdCell" id="radioCard">
 													<div class="ui_radioBox ty3">                                             
-														<input type="radio" checked="checked" value="phoneIssued" name="phoneIssued" id="phoneIssued"> 
+														<input type="radio" value="phoneIssued" name="phoneIssued" id="phoneIssued"> 
 														<label for="phoneIssued">전화발급</label>
 													</div>
 													<div class="ui_radioBox ty3">   
-														<input type="radio" value="mobileIssued" name="mobileIssued" id="mobileIssued"> 
+														<input type="radio" value="mobileIssued" name="phoneIssued" id="mobileIssued"> 
 														<label for="mobileIssued">모바일발급</label>
 													</div>  
 													<div class="ui_radioBox ty3">   
-														<input type="radio" value="placeIssued" name="placeIssued" id="placeIssued"> 
+														<input type="radio" value="placeIssued" name="phoneIssued" id="placeIssued"> 
 														<label for="placeIssued">현장발급</label>
 													</div>  
 												</div> 
@@ -762,11 +808,11 @@
 													</div> 
 													<div class="tdCell">
 														<div class="ui_radioBox ty3">                                             
-															<input type="radio" value="Issued3" name="Issued3" id="Issued3"> 
+															<input type="radio" value="Issued3" name="cardChange" id="Issued3"> 
 															<label for="Issued3">신규발급</label>
 														</div>
 														<div class="ui_radioBox ty3">   
-															<input type="radio" checked="checked" value="Issued4" name="Issued4" id="Issued4"> 
+															<input type="radio" checked="checked" value="Issued4" name="cardChange" id="Issued4"> 
 															<label for="Issued4">기존 카드재사용</label>
 														</div>  
 													</div> 
@@ -781,11 +827,11 @@
 													<div class="thCell">제휴카드 <span class="color01">＊</span></div> 
 													<div class="tdCell">
 														<div class="ui_radioBox ty3">                                             
-															<input type="radio" checked="checked" value="NH2" name="NH2" id="NH2"> 
+															<input type="radio" checked="checked" value="NH2" name="cardName2" id="NH2"> 
 															<label for="NH2">NH농협카드</label>
 														</div>
 														<div class="ui_radioBox ty3">   
-															<input type="radio" value="Shinhan2" name="Shinhan2" id="Shinhan2"> 
+															<input type="radio" value="Shinhan2" name="cardName2" id="Shinhan2"> 
 															<label for="Shinhan2">신한카드</label>
 														</div>  
 													</div> 
@@ -794,11 +840,11 @@
 													<div class="thCell">카드유형 <span class="color01">＊</span></div> 
 													<div class="tdCell">
 														<div class="ui_radioBox ty3">                                             
-															<input type="radio" checked="checked" value="checkCard2" name="checkCard2" id="checkCard2"> 
+															<input type="radio" checked="checked" value="checkCard2" name="cardType2" id="checkCard2"> 
 															<label for="checkCard2">체크카드</label>
 														</div>
 														<div class="ui_radioBox ty3">   
-															<input type="radio" value="checkCard3" name="checkCard3" id="checkCard3"> 
+															<input type="radio" value="checkCard3" name="cardType2" id="checkCard3"> 
 															<label for="checkCard3">신용카드</label>
 														</div>  
 													</div> 

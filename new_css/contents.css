@@ -30,7 +30,7 @@
 .toolTipContent.on { display:block;}
 .toolTipContent .toolTipTitle { font-size:13px; font-weight:500; color:#4e4f51; margin:0 0 10px 0; }
 .toolTipContent .toolTipText { font-size:13px; color:#767676; line-height:18px; }
-.toolTipContent .toolTipText strong { color:#727476; }
+.toolTipContent .toolTipText strong { color:#4171df; }
 
 /* 4xx, 5xx error */
 .errorArea { position:absolute; top:calc(50% - 150px); left:0; width:100%; height:300px; text-align:center; padding:100px 0 0 0; background:url('../new_images/common/imgError.png') center 0 no-repeat; background-size:64px 56px; }

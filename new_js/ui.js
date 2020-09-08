@@ -147,8 +147,8 @@ $(function(){
 		});	
 	}	
 
-	// popup
-	function wrapWindowByMask(){
+	// popup : 개발팀 자체 팝업 사용
+	/*function wrapWindowByMask(){
 		var maskHeight = $(document).height();  
 		var maskWidth = '100%';
 
@@ -172,7 +172,7 @@ $(function(){
 	$('#mask').click(function () {  
 		$(this).hide();  
 		$('.windowPop').hide();  
-	});	
+	});	*/
 
 	//로그인 라디오버튼
 	$("#radioMemberType input[type='radio']").change(function(){
@@ -216,8 +216,8 @@ $(function(){
 		return false;
 	});	
 
-	//기관찾기
-	$('.openMenu_2' ).hide();
+	//기관찾기 : 기존 기관찾기 사용
+	/*$('.openMenu_2' ).hide();
 	$('.zone').on('click', function () {
 		//버튼 색 제거,추가
 		$('.zone').removeClass('on');
@@ -226,7 +226,7 @@ $(function(){
 		var idx = $('.zone').index(this);
 		$('.zoneBox').hide();
 		$('.zoneBox').eq(idx).show();
-	});
+	});*/
 
 	// 직무검색 탭
 	$('.dpTabAreaList').find('button').on('click', function(){
@@ -238,10 +238,6 @@ $(function(){
 		$(this).closest('li').addClass('on')
 	})	
 
-	// 달력 기간 선택 버튼
-	$('.dateRangePick > button').on('click', function(){
-        $(this).addClass('on').siblings().removeClass('on');
-    });
 });
 
 /* ==============================
