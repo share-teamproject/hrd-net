@@ -73,7 +73,10 @@ button.download, a.download { min-width:75px; display:inline-block; text-align:c
 .download.grey { border:1px #cdcdd1 solid; color:#4e4f51; background:#fff; }
 button.lookupBtn, a.lookupBtn { display:inline-block; min-width:65px; text-align:center; padding:0 10px; font-size:12px; color:#258384; border:1px solid #258384; line-height:24px; }
 button.blueBtn, a.blueBtn { display:inline-block; min-width:65px; text-align:center; padding:0 10px; font-size:12px; color:#4171df; border:1px solid #4171df; line-height:24px; }
+button.blueBtn02, a.blueBtn02 { display:inline-block; min-width:65px; text-align:center; padding:0 10px; font-size:12px; color:#fff; background:#5b648a; line-height:24px; }
 button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:center; padding:0 10px; font-size:12px; color:#4e4f51; border:1px solid #cdcdd1; line-height:24px; }
+
+.btnFile {display:inline-block;width:15px; height:16px;line-height:24px;padding:0 15px 3px 10px;color:#4870cf;font-size:0;text-align:left;background:url('../new_images/common/icoFile.jpg') no-repeat; }
 
 
 /* ==============================
@@ -244,7 +247,11 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .processArea { margin-top:50px;}
 
 /* 타이틀 */
-.bigTitle02List {overflow:hidden;}
+.toolTip.ty2 { margin:-20px 0 0 10px; }
+.toolTip.ty3 { margin:-15px 0 0 10px; }
+.toolTip.ty2 .toolTipContent, .toolTip.ty3 .toolTipContent { z-index:1000; }
+.toolTip .toolTipTitle.ty2 {margin-top:20px;}
+.bigTitle02List { display:inline-block; width:100%; }
 .bigTitle02List dt {float:left;}
 .bigTitle02List dd {float:right; font-size:14px; color:#727476; }
 .bigTitle02List.ty2 { margin-top:20px; }
@@ -499,6 +506,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .divTableArea02 .divTable .divTableRow { border-bottom:1px #e2e2e4 solid; }
 .divTableArea02 .divTable .divTableRow .thCell { display: table-cell; vertical-align:middle; width:210px; font-size:14px; color:#222; background:#f0f0f2; padding:22px 0 22px 30px; }
 .divTableArea02 .divTable .divTableRow .tdCell { display: table-cell; font-size:14px; color:#727476; line-height:34px; padding:22px 20px; }
+.divTableArea02 .divTable .divTableRow .tdCell .color02.ty2 { padding-left:20px; }
 .divTableArea02 .divTable .divTableRow .thCell02 { display: table-cell; vertical-align:middle; width:210px; font-size:14px; color:#222; background:#f0f0f2; padding:10px 0 10px 30px; }
 .divTableArea02 .divTable .divTableRow .tdCell02 { display: table-cell; font-size:14px; color:#727476; line-height:34px; padding:10px 20px; }
 .divTableArea02 .divTable .divTableRow .tdCell02 > ul { overflow:hidden; }
@@ -740,6 +748,25 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 
 .ui_radioBox.single {width:26px; height:26px; padding-left:26px;}
 .ui_radioBox.single label { font-size:0; }
+
+/* 개인정보처리방침,이메일수집거부,저작권보호정책*/
+.commonBottomArea {}
+.commonBottomArea .cBotAreaBox { padding:30px; margin-top:15px; border:1px #e2e2e4 solid; } 
+.commonBottomArea .cBotAreaBox .txt01 { font-size:16px; color:#4e4f51; margin-top:10px; }
+.commonBottomArea .cBotAreaBox .txt01.indent { text-indent:-24px; padding-left:24px; }
+.commonBottomArea .cBotAreaBox .txt01.pl { padding-left:24px; }
+.commonBottomArea .cBotAreaBox .txt02 { font-size:14px; color:#727476; line-height:26px; margin-top:-5px; padding-left:24px; }
+.commonBottomArea .cBotAreaBox .txt01_big { font-size:18px; color:#292a2d; }
+.commonBottomArea .cBotAreaBox .txt03 { font-size:14px; color:#727476; line-height:26px; margin-top:10px; padding-left:24px; }
+.commonBottomArea .cBotAreaBox .txt03 .download { margin-left:10px; }
+.commonBottomArea .cBotAreaBox .txt04 li { font-size:14px; color:#727476;  line-height:26px; text-indent:-7px; padding-left:28px; }
+.commonBottomArea .cBotAreaBox .title01 { font-size:18px; color:#292a2d; margin-top:60px; }
+.commonBottomArea .cBotAreaBox .title02 { font-size:18px; color:#292a2d; margin-top:10px; }
+.commonBottomArea .cBotAreaBox .title02_big { font-size:18px; color:#292a2d; }
+.commonBottomArea .cBotAreaBox .img01 {text-align:center; margin:20px 0; }
+
+.commonBottomArea .cBotAreaBox2 { font-size:12px; color:#727476; background:#f7f7f7; text-align:center; padding:25px 0; margin-top:80px; }
+.commonBottomArea .cBotAreaBox2 .selectBox { height:26px; font-size:12px; min-width:95px; margin:0 7px; }
 
 
 /* 레이어팝업 */

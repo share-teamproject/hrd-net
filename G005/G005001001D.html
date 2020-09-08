@@ -485,7 +485,7 @@
 							<h4 class="bigTitle06">주요 반려사유</h4>
 							<div class="divTableArea02">
 								<div class="caption"></div>
-								<div class="innerTableArea03">
+								<div class="innerTableArea03"  id="openPlain1">
 									<ul class="innerTxtList">
 										<li>신청한 NCS직종(소분류)와 관련 없는 경력 및 자격이 등록된 경우</li>
 										<li>육안으로 내용을 알 수 없는 증빙서류를 등록한 경우</li>
@@ -494,7 +494,7 @@
 									</ul>
 								</div>
 								<div class="partChk02">
-									<div class="btnCloseagree"><button type="button" class="btnClose">반려사유닫기</button></div>	
+									<div class="btnCloseagree"><button type="button" class="btnClose" id="openPage1" onclick="if(openPlain1.style.display=='none') {openPlain1.style.display='';openPage1.innerText='반려사유닫기'} else {openPlain1.style.display='none';openPage1.innerText='반려사유열기'}">반려사유닫기</button></div>	
 								</div>
 								<div class="tblInfoTxt02 ty2">
 									<p class="tit02">※ 근로자직업능력 개발법 시행령 제27조</p>
@@ -521,8 +521,18 @@
 								</div>
 							</div>
 							
-							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">강사정보  <button type="button" class="helpBtn">도움말?</button></div></dt>
+							<dl class="bigTitle02List">
+								<dt>
+									<div class="bigTitle02">강사정보  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:250px;">
+												<p class="toolTipTitle">강사정보</p>
+												<p class="toolTipText">강사정보를 정확하게 기재 바랍니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 								</dd>
 							</dl>
@@ -574,7 +584,17 @@
 							</div>
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">강사직종정보  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">강사직종정보  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:250px;">
+												<p class="toolTipTitle">강사직종정보</p>
+												<p class="toolTipText">강사직종정보를 정확하게 기재 바랍니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 								</dd>
 							</dl>
@@ -590,7 +610,17 @@
 							</div>
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">강사학력정보  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">강사학력정보  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:250px;">
+												<p class="toolTipTitle">강사학력정보</p>
+												<p class="toolTipText">강사학력정보를 정확하게 기재 바랍니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 								</dd>
 							</dl>
@@ -600,7 +630,15 @@
 									<div class="divTableBody"> 
 										<!-- row01 -->
 										<div class="divTableRow"> 
-											<div class="thCell02">신청년도 <button type="button" class="helpBtn">도움말?</button></div> 
+											<div class="thCell02">전공 
+												<div class="toolTip ty2">
+													<button type="button" class="toolTipBtn">툴팁</button>
+													<div class="toolTipContent right" style="width:250px;">
+														<p class="toolTipTitle">전공</p>
+														<p class="toolTipText">전공를 정확하게 기재 바랍니다.</p>
+													</div>                                
+												</div>
+											</div> 
 											<div class="tdCell02">
 												<div class="InputType">
 													<div class="ele ty2">
@@ -611,7 +649,15 @@
 										</div>
 										<!-- row02 -->
 										<div class="divTableRow"> 
-											<div class="thCell02">수여일자 <button type="button" class="helpBtn">도움말?</button></div> 
+											<div class="thCell02">수여일자 
+												<div class="toolTip ty2">
+													<button type="button" class="toolTipBtn">툴팁</button>
+													<div class="toolTipContent right" style="width:250px;">
+														<p class="toolTipTitle">수여일자</p>
+														<p class="toolTipText">수여일자를 정확하게 기재 바랍니다.</p>
+													</div>                                
+												</div>
+											</div> 
 											<div class="tdCell02">
 												<div class="InputType">
 													<div class="ele">
@@ -622,7 +668,15 @@
 										</div>
 										<!-- row03 -->
 										<div class="divTableRow"> 
-											<div class="thCell02">최종연구경력 <button type="button" class="helpBtn">도움말?</button></div> 
+											<div class="thCell02">최종연구경력 
+												<div class="toolTip ty2">
+													<button type="button" class="toolTipBtn">툴팁</button>
+													<div class="toolTipContent right" style="width:250px;">
+														<p class="toolTipTitle">최종연구경력</p>
+														<p class="toolTipText">최종연구경력를 정확하게 기재 바랍니다.</p>
+													</div>                                
+												</div>
+											</div> 
 											<div class="tdCell02">
 												<div class="InputType">
 													<div class="ele">
@@ -633,7 +687,15 @@
 										</div>
 										<!-- row04 -->
 										<div class="divTableRow"> 
-											<div class="thCell02">강사학력정보 <button type="button" class="helpBtn">도움말?</button></div> 
+											<div class="thCell02">증빙자료 
+												<div class="toolTip ty2">
+													<button type="button" class="toolTipBtn">툴팁</button>
+													<div class="toolTipContent right" style="width:250px;">
+														<p class="toolTipTitle">증빙자료</p>
+														<p class="toolTipText">증빙자료를 정확하게 기재 바랍니다.</p>
+													</div>                                
+												</div>
+											</div> 
 											<div class="tdCell03">
 												<div class="AddFilesArea ty2">
 													<dl class="fileBox">
@@ -666,7 +728,17 @@
 							</div>
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">교육 경력정보  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">교육 경력정보  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:300px;">
+												<p class="toolTipTitle">교육 경력정보</p>
+												<p class="toolTipText">교육 경력정보 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 									<span><button type="button" class="lookupBtn">추가</button></span>
 									<span><button type="button" class="delBtn">삭제</button></span>
@@ -709,7 +781,17 @@
 							<!-- // 테이블 -->
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">현장 경력정보  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">현장 경력정보  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:300px;">
+												<p class="toolTipTitle">현장 경력정보</p>
+												<p class="toolTipText">현장 경력정보 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 									<span><button type="button" class="lookupBtn">추가</button></span>
 									<span><button type="button" class="delBtn">삭제</button></span>
@@ -752,7 +834,17 @@
 							<!-- // 테이블 -->
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">훈련교사자격증  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">훈련교사자격증  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:300px;">
+												<p class="toolTipTitle">훈련교사자격증</p>
+												<p class="toolTipText">훈련교사자격증 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 									<span><button type="button" class="lookupBtn">추가</button></span>
 									<span><button type="button" class="delBtn">삭제</button></span>
@@ -789,7 +881,17 @@
 							<!-- // 테이블 -->
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">국가자격증  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">국가자격증  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:300px;">
+												<p class="toolTipTitle">국가자격증</p>
+												<p class="toolTipText">국가자격증 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 									<span><button type="button" class="lookupBtn">추가</button></span>
 									<span><button type="button" class="delBtn">삭제</button></span>
@@ -826,7 +928,17 @@
 							<!-- // 테이블 -->
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">그외 기타자격증 (민간자격증 포함)  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">그외 기타자격증 (민간자격증 포함)  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:350px;">
+												<p class="toolTipTitle">그외 기타자격증</p>
+												<p class="toolTipText">그외 기타자격증 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 									<span><button type="button" class="lookupBtn">추가</button></span>
 									<span><button type="button" class="delBtn">삭제</button></span>
@@ -848,7 +960,7 @@
 											<th>선택</th>
 											<th>자격종류</th>
 											<th>자격명</th>
-											<th>자격코드</th>
+											<th>발급기관</th>
 											<th>취득일</th>
 											<th class="last">증빙서류</th>
 										</tr>
@@ -863,7 +975,17 @@
 							<!-- // 테이블 -->
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">보수교육 이수여부  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">보수교육 이수여부  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:350px;">
+												<p class="toolTipTitle">보수교육 이수여부 </p>
+												<p class="toolTipText">보수교육 이수여부  추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 									<span><button type="button" class="lookupBtn">추가</button></span>
 									<span><button type="button" class="delBtn">삭제</button></span>
@@ -878,21 +1000,19 @@
 										<col style="width: auto;">
 										<col style="width: auto;">
 										<col style="width: auto;">
-										<col style="width: auto;">
 									</colgroup>
 									<thead>
 										<tr>
 											<th>선택</th>
-											<th>자격종류</th>
-											<th>자격명</th>
-											<th>자격코드</th>
-											<th>취득일</th>
+											<th>구분</th>
+											<th>이수년도</th>
+											<th>이수시간</th>
 											<th class="last">증빙서류</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td colspan="6" class="last none">정보가 없습니다.</td>
+											<td colspan="5" class="last none">정보가 없습니다.</td>
 										</tr>
 									</tbody>
 								</table>   
@@ -900,7 +1020,17 @@
 							<!-- // 테이블 -->
 							
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">스타훈련교사  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">스타훈련교사  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:350px;">
+												<p class="toolTipTitle">스타훈련교사</p>
+												<p class="toolTipText">스타훈련교사 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 								</dd>
 							</dl>
@@ -910,7 +1040,15 @@
 									<div class="divTableBody"> 
 										<!-- row01 -->
 										<div class="divTableRow"> 
-											<div class="thCell02">신청년도 <button type="button" class="helpBtn">도움말?</button></div> 
+											<div class="thCell02">신청년도 
+												<div class="toolTip ty2">
+													<button type="button" class="toolTipBtn">툴팁</button>
+													<div class="toolTipContent right" style="width:300px;">
+														<p class="toolTipTitle">신청년도</p>
+														<p class="toolTipText">신청년도를 정확하게 기재 바랍니다.</p>
+													</div>                                
+												</div>
+											</div> 
 											<div class="tdCell02">
 												<div class="InputType">
 													<div class="ele">
@@ -923,7 +1061,15 @@
 										</div>
 										<!-- row02 -->
 										<div class="divTableRow"> 
-											<div class="thCell02">증빙서류 <button type="button" class="helpBtn">도움말?</button></div> 
+											<div class="thCell02">증빙서류 
+												<div class="toolTip ty2">
+													<button type="button" class="toolTipBtn">툴팁</button>
+													<div class="toolTipContent right" style="width:300px;">
+														<p class="toolTipTitle">증빙서류</p>
+														<p class="toolTipText">증빙서류를 정확하게 기재 바랍니다.</p>
+													</div>                                
+												</div>
+											</div> 
 											<div class="tdCell03">
 												<div class="AddFilesArea ty2">
 													<dl class="fileBox">
@@ -956,10 +1102,61 @@
 							</div>
 
 							<dl class="bigTitle02List ty3">
-								<dt><div class="bigTitle02">직업능력개발훈련교사 1급 자격 소지자(우수교사)  <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">기능한국인 또는 대한민국명장(우수교사)
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:400px;">
+												<p class="toolTipTitle">기능한국인 또는 대한민국명장(우수교사)</p>
+												<p class="toolTipText">기능한국인 또는 대한민국명장(우수교사) 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
 									<span><button type="button" class="lookupBtn">추가</button></span>
 									<span><button type="button" class="delBtn">삭제</button></span>
+								</dd>
+							</dl>
+							<div class="tableArea tableArea01">
+								<table class="list">
+									<caption></caption>
+									<colgroup>
+										<col style="width: auto;">
+										<col style="width: auto;">
+										<col style="width: auto;">
+										<col style="width: auto;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>선택</th>
+											<th>구분</th>
+											<th>선정일</th>
+											<th class="last">증빙서류</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="4" class="last none">정보가 없습니다.</td>
+										</tr>
+									</tbody>
+								</table>   
+							</div>   
+							<!-- // 테이블 -->
+
+							<dl class="bigTitle02List ty3">
+								<dt>
+									<div class="bigTitle02">직업능력개발훈련교사 1급 자격 소지자(우수교사)  
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:390px;">
+												<p class="toolTipTitle">직업능력개발훈련교사 1급 자격 소지자</p>
+												<p class="toolTipText">직업능력개발훈련교사 1급 자격 소지자 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
+								<dd>
 								</dd>
 							</dl>
 							<div class="TrainingHistoryBox ty3">
@@ -967,17 +1164,30 @@
 									<li class="clearW100">
 										<dl>
 											<dt>해당</dt>
-											<dd>비해당</dd>
+											<dd>
+												<div class="ui_checkBox">
+													<input type="checkbox" id="sign1">
+													<label for="sign1">직업능력개발훈련교사 1급 자격 소지</label>
+												</div>
+											</dd>
 										</dl>
 									</li>
 								</ul>
 							</div>
 
 							<dl class="bigTitle02List ty2">
-								<dt><div class="bigTitle02">자격 <button type="button" class="helpBtn">도움말?</button></div></dt>
+								<dt>
+									<div class="bigTitle02">자격 
+										<div class="toolTip ty2">
+											<button type="button" class="toolTipBtn">툴팁</button>
+											<div class="toolTipContent right" style="width:300px;">
+												<p class="toolTipTitle">자격</p>
+												<p class="toolTipText">자격 추가를 클릭하여 입력합니다.</p>
+											</div>                                
+										</div>
+									</div>
+								</dt>
 								<dd>
-									<span><button type="button" class="lookupBtn">추가</button></span>
-									<span><button type="button" class="delBtn">삭제</button></span>
 								</dd>
 							</dl>
 							<!-- 테이블 -->
@@ -993,7 +1203,7 @@
 										<tr>
 											<th>구분</th>
 											<th>선택</th>
-											<th class="last">사용내역</th>
+											<th class="last">세부내역</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -1131,7 +1341,7 @@
 										<dd>3. 상기 본인은 고용노동부, 한국기술교육대학교 직업능력심사평가원, 한국산업인력공단 등에서 본인에 대한 NCS확인강사 업무 처리 및 과정 신청, 변경강사 신청 검토를 위하여 다음의 개인정보를 제공하고 활용하는 것에 동의합니다.</dd>
 									</dl>
 									<p class="tit02">정보수집 및 개인정보 제공 내용</p>			
-									<dl class="txtList06">
+									<dl class="txtList06" id="openPlain2">
 										<dt>1. 정보수집</dt>
 										<dd>- 개인정보(성명, 성별, 사진, 생년월일, 주소, 전화번호, 전자메일)<br />
 										- 학력, 경력, 자격, 전문분야<br />
@@ -1146,7 +1356,7 @@
 									</dl>
 								</div>
 								<div class="partChk02">
-									<div class="btnCloseagree"><button type="button" class="btnClose">닫침</button></div>
+									<div class="btnCloseagree"><button type="button" class="btnClose" id="openPage2" onclick="if(openPlain2.style.display=='none') {openPlain2.style.display='';openPage2.innerText='닫침'} else {openPlain2.style.display='none';openPage2.innerText='열림'}">닫침</button></div>
 									<div class="ui_checkBox">
 										<input type="checkbox" id="sign3">
 										<label for="sign3">정보수집 및 개인정보 수집 동의</label>

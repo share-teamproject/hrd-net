@@ -660,15 +660,25 @@
 										<li>학력정보는 자격확인을 위해 필요한 정보 입니다. 본인의 정확한 정보를 입력해주세요.</li>
 									</ul>
 								</div>
-
+								
+								
 								<h3 class="bigTitle06">실물 카드정보<span class="txtPC">“<span class="color01">＊</span>” 필수 사항 입니다.</span>
 								<span class="txt verM"><span class="color01">＊</span> 필수입력</span></h3>
+								<!-- 실물 카드정보 : 신규발급 선택 테이블 -->
 								<div class="divTableArea02">
 									<div class="caption">실물 카드정보 내용</div>
 									<div class="divTable"> 
 										<div class="divTableBody"> 
 											<div class="divTableRow"> 
-												<div class="thCell">카드 발급구분 <span class="color01">＊</span><button type="button" class="helpBtn">도움말?</button></div> 
+												<div class="thCell">카드 발급구분 <span class="color01">＊</span>
+													<div class="toolTip ty3">
+														<button type="button" class="toolTipBtn">툴팁</button>
+														<div class="toolTipContent right" style="width:300px;">
+															<p class="toolTipTitle">카드 발급구분</p>
+															<p class="toolTipText">카드 발급구분을 선택하여 주시기 바랍니다.</p>
+														</div>                                
+													</div>
+												</div> 
 												<div class="tdCell">
 													<div class="ui_radioBox ty3">                                             
 														<input type="radio" checked="checked" value="Issued1" name="Issued" id="Issued1"> 
@@ -707,7 +717,15 @@
 												</div> 
 											</div>	
 											<div class="divTableRow"> 
-												<div class="thCell">카드발급(신청)방법 <span class="color01">＊</span><button type="button" class="helpBtn">도움말?</button></div> 
+												<div class="thCell">카드발급(신청)방법 <span class="color01">＊</span>
+													<div class="toolTip ty3">
+														<button type="button" class="toolTipBtn">툴팁</button>
+														<div class="toolTipContent right" style="width:420px;">
+															<p class="toolTipTitle">카드발급 신청 방법</p>
+															<p class="toolTipText">카드발급방법 안내 -<br />카드발급방법을 선택하여 주십시오</p>
+														</div>        
+													</div>
+												</div> 
 												<div class="tdCell">
 													<div class="ui_radioBox ty3">                                             
 														<input type="radio" checked="checked" value="phoneIssued" name="phoneIssued" id="phoneIssued"> 
@@ -725,6 +743,71 @@
 											</div> 
 										</div>
 									</div>
+									<!-- 실물 카드정보 : 신규발급 선택 테이블 -->
+
+									<!-- 실물 카드정보 : 기존 카드재사용 선택 테이블 -->
+									<div class="divTableArea02">
+										<div class="caption">실물 카드정보 내용</div>
+										<div class="divTable"> 
+											<div class="divTableBody"> 
+												<div class="divTableRow"> 
+													<div class="thCell">카드 발급구분 <span class="color01">＊</span>
+														<div class="toolTip ty3">
+															<button type="button" class="toolTipBtn">툴팁</button>
+															<div class="toolTipContent right" style="width:300px;">
+																<p class="toolTipTitle">카드 발급구분</p>
+																<p class="toolTipText">카드 발급구분을 선택하여 주시기 바랍니다.</p>
+															</div>                                
+														</div>
+													</div> 
+													<div class="tdCell">
+														<div class="ui_radioBox ty3">                                             
+															<input type="radio" value="Issued3" name="Issued3" id="Issued3"> 
+															<label for="Issued3">신규발급</label>
+														</div>
+														<div class="ui_radioBox ty3">   
+															<input type="radio" checked="checked" value="Issued4" name="Issued4" id="Issued4"> 
+															<label for="Issued4">기존 카드재사용</label>
+														</div>  
+													</div> 
+												</div> 
+												<div class="divTableRow"> 
+													<div class="thCell">카드번호 <span class="color01">＊</span></div> 
+													<div class="tdCell">
+														4364-2007-****-0513 <span class="color02 ty2">※카드 유효기간 및 사용가능 여부를 꼭 확인하시기 바랍니다.</span>
+													</div> 
+												</div>	
+												<div class="divTableRow"> 
+													<div class="thCell">제휴카드 <span class="color01">＊</span></div> 
+													<div class="tdCell">
+														<div class="ui_radioBox ty3">                                             
+															<input type="radio" checked="checked" value="NH2" name="NH2" id="NH2"> 
+															<label for="NH2">NH농협카드</label>
+														</div>
+														<div class="ui_radioBox ty3">   
+															<input type="radio" value="Shinhan2" name="Shinhan2" id="Shinhan2"> 
+															<label for="Shinhan2">신한카드</label>
+														</div>  
+													</div> 
+												</div>	
+												<div class="divTableRow"> 
+													<div class="thCell">카드유형 <span class="color01">＊</span></div> 
+													<div class="tdCell">
+														<div class="ui_radioBox ty3">                                             
+															<input type="radio" checked="checked" value="checkCard2" name="checkCard2" id="checkCard2"> 
+															<label for="checkCard2">체크카드</label>
+														</div>
+														<div class="ui_radioBox ty3">   
+															<input type="radio" value="checkCard3" name="checkCard3" id="checkCard3"> 
+															<label for="checkCard3">신용카드</label>
+														</div>  
+													</div> 
+												</div>												
+											</div>
+										</div>
+									</div>
+
+
 									<div class="tblInfoTxt02 verPC">
 										<p class="tit">카드발급방법 안내 - <span class="color04">현장발급</span></p>
 										<ul>
@@ -741,7 +824,9 @@
 											<li>국민내일배움카드를 방문수령 (체크카드)하고자 하는 경우 관할고용센터에 별도로 문의하시어 신청하여야 합니다.</li>
 										</ul>
 									</div>
-								</div>								
+								</div>	
+								
+
 
 								<div class="tableArea02">                             
 									<table class="view">
