@@ -119,7 +119,8 @@
 .schDomCont > .tit {width: 125px; display: inline-block; font-size: 18px; color: #4e4f51; line-height: 40px;}
 .schDomCont > .tit.normal {line-height: normal;}
 .schDom > .btnGroup {margin-top: 20px;}
-
+.schDom + .sortArea {margin-top: 52px;}
+.schDom + form {margin-top: 52px;}
 
 .dateDom {display: inline-block; vertical-align: top; font-size: 0;}
 .dateDom > .dateSelect {position: relative; display: inline-block; width: 200px; vertical-align: top; padding: 0 38px 0 0; }

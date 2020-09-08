@@ -18,6 +18,7 @@
 .moContInner {position: relative; padding:0 30px;}
 .moContInner + .moContInner {margin-top:60px; padding-top:60px; border-top:8px solid #e7e9f0;}
 .moContInner .btnGroupMoTy1 {padding: 0;}
+.sortArea + .tableArea.moContInner {margin-top: 4px;}
 
 .moContInner.ty2 {padding-top:60px; border-top:8px solid #e7e9f0;}
 .moContInner.ty2 + .moContInner.ty2 {}
@@ -40,13 +41,13 @@
 /* ==============================
 * common - 
 * ============================== */
+.btnH48 {display: inline-block; min-width: 157px; text-align: center; line-height: 44px; background: #fff; border: 2px solid #d3d3d3; font-weight: 300; font-size: 26px; color: #666; }
 
+.mo-brd-t-ty1 {border-top: 2px solid #e2e2e4 !important;}
 
 
 /*테이블 상단 필수표시 단독 케이스*/
 .essSingle {padding: 20px 30px 25px 30px; text-align: right; font-size: 22px; color: #727476;}
-
-
 .mRadioList {font-size: 0;}
 .mRadioList > li {display: inline-block; vertical-align: top; margin-top: 20px;}
 .mRadioList > li .ui_radioBox {line-height: normal;}
@@ -54,20 +55,9 @@
 .mRadioList.col2 > li:nth-child(-n + 2) {margin-top: 0;}
 
 
-
-
-
 /*검색 영역*/
-
 .schDom {padding: 60px 70px; border-top: 8px solid #d8dfeb; border-bottom: 8px solid #d8dfeb;}
 .schDom.top {margin-top: 15px;}
-
-
-
-.schDom.top {margin-top: 100px;}
-
-
-
 .schDomCont {font-size: 0; text-align: left;}
 .schDomCont + .schDomCont {margin-top: 32px;}
 .schDomCont > .ele .selectBox,
@@ -76,6 +66,9 @@
 .schDomCont > .tit {display: block; padding-bottom: 26px; font-weight: 500; font-size: 32px; color: #292a2d; line-height: 40px;}
 .schDom > .btnGroup {margin-top: 40px;}
 .schDom > .btnGroup .btnType3 {width: 100%; height: 70px; font-size: 28px;}
+.schDom + .sortArea {margin-top: 72px; display: flex !important;}
+.schDom + form {margin-top: 72px;}
+
 
 
 .dateDom {font-size: 0;}
@@ -94,9 +87,6 @@
 .dateRangePick > button.on {z-index: 1; color: #4171df; border: 1px solid #4171df;}
 
 .mBtnDom {margin-top: 40px; text-align: right;}
-
-
-
 
 
 /*통합검색*/
@@ -179,6 +169,6 @@
 .btnViewLink:after {content: ''; position: relative; top: -3px; display: inline-block; vertical-align: middle; margin-left: 10px; width: 7px; height: 11px; background: url(../new_images/common/arrowGoLink02.png) no-repeat; background-size: 100% 100%;}
 
 .moDpNone {display: none !important;}
-
+.moBrdRNone {border-right: 0 !important;}
 
 

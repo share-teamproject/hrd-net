@@ -503,173 +503,116 @@
                             </div>
                         </div>
 
-                        <div class="verPC">
-                            <div class="sortArea mt50">
-                                <p class="totalNum">전체 <strong>5</strong> 건</p>
-                                <div class="selectViewArea">
-                                    <div class="selectView">
-                                        <label for="pageRow">페이지당 조회건수</label>
-                                        <select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
-                                            <option value="10" selected="selected">10개씩</option>
-                                            <option value="20">20개씩</option>
-                                            <option value="30">30개씩</option>
-                                            <option value="50">50개씩</option>
-                                            <option value="100">100개씩</option>
-                                        </select>
-                                    </div>                                     
-                                </div>
-                            </div>
-                            <div class="tableArea">
-                                <table class="list">
-                                    <caption>훈련이력 리스트</caption>
-                                    <colgroup>
-                                        <col style="width: 80px;">
-                                        <col style="width: 170px">
-                                        <col style="width: auto;">
-                                        <col style="width: 140px;">
-                                        <col style="width: 75px;">
-                                        <col style="width: 95px;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">번호</th>
-                                            <th scope="col">훈련기관</th>
-                                            <th scope="col">훈련과정</th>
-                                            <th scope="col">교육기간</th>
-                                            <th scope="col">소재지</th>
-                                            <th scope="col" class="last">훈련인원</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>
-                                                <a href="" class="underlineLink">씨에프오아카데미평생교육원</a>
-                                            </td>
-                                            <td>
-                                                <a href="" class="underlineLink">재무제표 분석과 관리회계 입문과정</a>
-                                            </td>
-                                            <td>2020-07-16 ~ 2020-07-17</td>
-                                            <td>서울</td>
-                                            <td class="last">2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>
-                                                <a href="" class="underlineLink">씨에프오아카데미평생교육원</a>
-                                            </td>
-                                            <td>
-                                                <a href="" class="underlineLink">재무제표 분석과 관리회계 입문과정</a>
-                                            </td>
-                                            <td>2020-07-16 ~ 2020-07-17</td>
-                                            <td>서울</td>
-                                            <td class="last">2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>
-                                                <a href="" class="underlineLink">씨에프오아카데미평생교육원</a>
-                                            </td>
-                                            <td>
-                                                <a href="" class="underlineLink">재무제표 분석과 관리회계 입문과정</a>
-                                            </td>
-                                            <td>2020-07-16 ~ 2020-07-17</td>
-                                            <td>서울</td>
-                                            <td class="last">2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>                          
-
-                                <!-- paging : pc -->
-                                <div class="pagenation">
-                                    <a href="/" class="pb prev">이전보기</a>
-                                    <a href="/" class="on">1</a>
-                                    <a href="/">2</a>
-                                    <a href="/">3</a>
-                                    <a href="/">4</a>
-                                    <a href="/">5</a>
-                                    <a href="/">6</a>
-                                    <a href="/">7</a>
-                                    <a href="/" class="pb next">다음보기</a>
-                                </div> 
-                                <!-- //paging : pc -->                               
+                        <div class="sortArea">
+                            <p class="totalNum">전체 <strong>5</strong> 건</p>
+                            <div class="selectViewArea">
+                                <div class="selectView">
+                                    <label for="pageRow">페이지당 조회건수</label>
+                                    <select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
+                                        <option value="10" selected="selected">10개씩</option>
+                                        <option value="20">20개씩</option>
+                                        <option value="30">30개씩</option>
+                                        <option value="50">50개씩</option>
+                                        <option value="100">100개씩</option>
+                                    </select>
+                                </div>                                     
                             </div>
                         </div>
+                        <div class="tableArea moContInner">
+                            <table class="list">
+                                <caption>훈련이력 리스트</caption>
+                                <colgroup>
+                                    <col style="width: 80px;" class="moDpNone">
+                                    <col style="width: 170px" class="moDpNone">
+                                    <col style="width: auto;" class="moDpNone">
+                                    <col style="width: 140px;" class="moDpNone">
+                                    <col style="width: 75px;" class="moDpNone">
+                                    <col style="width: 95px;" class="moDpNone">
+                                    <col style="width: 33%;" class="pcDpNone">
+                                    <col style="width: 33%" class="pcDpNone">
+                                    <col style="width: auto;" class="pcDpNone">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="moDpNone">번호</th>
+                                        <th scope="col">훈련기관</th>
+                                        <th scope="col">훈련과정</th>
+                                        <th scope="col">교육기간</th>
+                                        <th scope="col" class="moDpNone">소재지</th>
+                                        <th scope="col" class="moDpNone last">훈련인원</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="moDpNone">1</td>
+                                        <td>
+                                            <a href="" class="underlineLink">씨에프오아카데미평생교육원</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="underlineLink">재무제표 분석과 관리회계 입문과정</a>
+                                        </td>
+                                        <td class="moBrdRNone">2020-07-16 ~ 2020-07-17</td>
+                                        <td class="moDpNone">서울</td>
+                                        <td class="moDpNone last">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="moDpNone">2</td>
+                                        <td>
+                                            <a href="" class="underlineLink">씨에프오아카데미평생교육원</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="underlineLink">재무제표 분석과 관리회계 입문과정</a>
+                                        </td>
+                                        <td class="moBrdRNone">2020-07-16 ~ 2020-07-17</td>
+                                        <td class="moDpNone">서울</td>
+                                        <td class="moDpNone last">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="moDpNone">3</td>
+                                        <td>
+                                            <a href="" class="underlineLink">씨에프오아카데미평생교육원</a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="underlineLink">재무제표 분석과 관리회계 입문과정</a>
+                                        </td>
+                                        <td class="moBrdRNone">2020-07-16 ~ 2020-07-17</td>
+                                        <td class="moDpNone">서울</td>
+                                        <td class="moDpNone last">2</td>
+                                    </tr>
+                                </tbody>
+                            </table>                          
 
-                        <div class="verM">
-                            <div class="sortArea">
-                                <p class="totalNum">전체 <strong>5</strong> 건</p>
-                                <div class="selectViewArea">
-                                    <div class="selectView">
-                                        <label for="pageRow">페이지당 조회건수</label>
-                                        <select title="페이지당 조회건수" name="pageRow" id="pageRow" class="selectBox h30">
-                                            <option value="10" selected="selected">10개씩</option>
-                                            <option value="20">20개씩</option>
-                                            <option value="30">30개씩</option>
-                                            <option value="50">50개씩</option>
-                                            <option value="100">100개씩</option>
-                                        </select>
-                                    </div>                                     
-                                </div>
-                            </div>
+                            <!-- paging : pc -->
+                            <div class="pagenation moDpNone">
+                                <a href="/" class="pb prev">이전보기</a>
+                                <a href="/" class="on">1</a>
+                                <a href="/">2</a>
+                                <a href="/">3</a>
+                                <a href="/">4</a>
+                                <a href="/">5</a>
+                                <a href="/">6</a>
+                                <a href="/">7</a>
+                                <a href="/" class="pb next">다음보기</a>
+                            </div> 
+                            <!-- //paging : pc -->
 
-                            <div class="moContInner mt60">
-                                <div class="tableArea">
-                                    <table class="list">
-                                        <caption>훈련이력 리스트</caption>
-                                        <colgroup>
-                                            <col style="width: 33%;">
-                                            <col style="width: 33%">
-                                            <col style="width: auto;">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">훈련기관</th>
-                                                <th scope="col">훈련과정</th>
-                                                <th scope="col" class="last">교육기간</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <a href="" class="underlineLink">씨에프오아카데미평생교육원</a>
-                                                </td>
-                                                <td>
-                                                    <a href="" class="underlineLink">재무제표 분석과 관리회계 입문과정</a>
-                                                </td>
-                                                <td class="last">2020-07-16 ~ 2020-07-17</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="" class="underlineLink">씨에프오아카데미평생교육원</a>
-                                                </td>
-                                                <td>
-                                                    <a href="" class="underlineLink">재무제표 분석과 관리회계 입문과정</a>
-                                                </td>
-                                                <td class="last">2020-07-16 ~ 2020-07-17</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <!-- paging : mob -->
-                                <div class="pagenation mt40">
-                                    <a href="/" class="pb prev">이전보기</a>
-                                    <p class="paging">
-                                        <span class="current">
-                                            <span class="hide">현재페이지</span>
-                                            <span class="count">1</span>
-                                        </span>
-                                        <span>/</span>
-                                        <span class="total">
-                                            <span class="hide">총페이지수</span>
-                                            <span class="count">10</span>
-                                        </span>
-                                    </p>
-                                    <a href="/" class="pb next">다음보기</a>
-                                </div> 
-                                <!-- //paging : mob -->
-                            </div>
+                            <!-- paging : mo -->
+                            <div class="pagenation mt40 pcDpNone">
+                                <a href="/" class="pb prev">이전보기</a>
+                                <p class="paging">
+                                    <span class="current">
+                                        <span class="hide">현재페이지</span>
+                                        <span class="count">1</span>
+                                    </span>
+                                    <span>/</span>
+                                    <span class="total">
+                                        <span class="hide">총페이지수</span>
+                                        <span class="count">10</span>
+                                    </span>
+                                </p>
+                                <a href="/" class="pb next">다음보기</a>
+                            </div> 
+                            <!-- paging : mo -->
                         </div>
 
                     </div>
