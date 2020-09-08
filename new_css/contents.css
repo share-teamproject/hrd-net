@@ -145,7 +145,7 @@
 .tabSelect:after { content:''; display:block; clear:both; }
 .tabSelect .title { float:left; width:108px; height:50px; padding-left: 10px; }
 .tabSelect .title label { color: #4e4f51; font-size: 18px; line-height: 40px; }
-.tabSelect .content { float:left; width:calc(100% - 108px);}
+.tabSelect .content { float:left; width:calc(100% - 108px); position:inherit } /* 0908 : position:inherit 추가 요청에 의해 추가 */
 .tabSelect .content:after { content:''; display:block; clear:both; }
 .tabSelect .content .btn { float:left; width:116px; line-height:50px; background-color:#e4ecf7; }
 .tabSelect.on .content .btn { background-color:#5b648a; color:#fff; }
