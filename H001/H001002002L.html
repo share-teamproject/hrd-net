@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>맞춤설정 | 나의관심정보 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	<div id="skipnav">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#contentWrap">본문 바로가기</a>
+		<a href="#footerWrap">푸터 바로가기</a>
+	</div>
+	<div id="wrap">
+		<!-- 헤더영역 -->
+		<header id="headerWrap">
+			<div class="headArea">
+				<h1 class="logoTop"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1>
+				<div class="headTop">
+					<ul id="tnb">
+						<li><a href="/">로그인</a></li>
+						<li><a href="/">회원가입</a></li>
+						<li><a href="/">고객센터</a></li>
+						<li><a href="/">HRD-Net 소개</a></li>
+						<li><a href="/">원격지원</a></li>
+					</ul>
+				</div>
+				<div class="headBot">
+					<ul id="gnb">
+						<li><a href="javascript:void(0);">훈련과정</a>
+							<div class="gnbSubArea gnbSub01">
+								<ul>
+									<li>
+										<a href="/">과정별 상세검색</a><br>
+										<a href="/">국민내일배움카드 훈련과정</a><br>
+										<a href="/">기업 훈련과정</a>
+									</li>
+									<li>
+										<a href="/">일학습병행과정</a><br>
+										<a href="/">정부부처별 훈련과정</a><br>
+										<a href="/">디지털 신기술 훈련과정</a>
+									</li>
+									<li>
+										<a href="/">한기대 스마트 직업훈련과정(STEP)</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="javascript:void(0);">지원제도</a>
+							<div class="gnbSubArea gnbSub02">
+								<ul>
+									<li>
+										<a href="">정부지원사업안내</a>
+										<ul class="navDepthArea02">
+											<li><a href="/">정부지원사업안내</a></li>
+											<li><a href="/">훈련안내 및 절차</a></li>
+											<li><a href="/">훈련기관 유형 안내</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="/">정부부처훈련안내</a><br>
+										<a href="/">법정/서식/규정</a>
+										<ul class="navDepthArea02">
+											<li><a href="/">법령정보</a></li>
+											<li><a href="/">업무서식 및 규정</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="javascript:void(0);">직업ㆍ기관정보</a>
+							<div class="gnbSubArea gnbSub03">
+								<ul>
+									<li>
+										<a href="/">구인정보</a><br>
+										<a href="/">자격정보</a>
+										<ul>
+											<li><a href="/">국가자격</a></li>
+											<li><a href="/">공인민간자격</a></li>
+											<li><a href="/">국가기술자격 시험일정</a></li>
+										</ul>
+										<a href="/">기업훈련과정</a>
+										<ul>
+											<li><a href="/">직업사전소개</a></li>
+											<li><a href="/">직업사전검색</a></li>
+										</ul>
+									</li>
+									<li><a href="">학과정보</a>
+										<ul>
+											<li><a href="/">법령정보</a></li>
+											<li><a href="/">업무서식 및 규정</a></li>
+										</ul>
+										<a href="">NCS 분류체계</a><br>
+										<a href="">훈련/교육통계</a><br>
+										<a href="">스타훈련교사</a>
+									</li>
+									<li><a href="">강사뱅크</a><br>
+										<a href="">훈련기관평가정보</a>
+										<ul>
+											<li><a href="">집체훈련</a></li>
+											<li><a href="">혼합훈련</a></li>
+											<li><a href="">원격훈련</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="javascript:void(0);">일학습병행</a>
+							<div class="gnbSubArea gnbSub04">
+								<ul>
+									<li><a href="">일학습병행제란</a><br>
+										<a href="">운영기관</a><br>
+										<a href="">자료공강</a>
+									</li>
+									<li><a href="">외부평가</a><br>
+										<a href="">훈련과정개발보고서(PDMS)</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="gnbSearchBtn">
+							<a href="javascript:void(0);">검색</a>
+							<div class="gnbSubArea gnbSub05">
+								<ul class="searchArea">
+									<li>
+										<form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
+											<fieldset>
+												<legend>통합검색</legend>
+												<label for="searchTotalKeyword" class="hide">검색어</label>
+												<input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value=""><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색">검색</button>
+											</fieldset>
+										</form>
+									</li>
+									<li class="searchKeywordArea">
+										<P>인기검색어</P>
+										<div class="searchKeyword">
+											<a href="javascript:void(0);">#바리스타</a>
+											<a href="javascript:void(0);">#컴퓨터</a>
+											<a href="javascript:void(0);">#요양보호사</a>
+											<a href="javascript:void(0);">#제빵</a>
+											<a href="javascript:void(0);">#포토샵</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 헤더 : mobile -->
+			<div class="headerBtn">
+				<!--h1>class="headerLogo"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1-->
+				<button type="button" class="backBtn btn">이전 단계로 돌아가기</button>
+				<button type="button" class="searhBtn btn">검색</button>
+				<button type="button" class="totalMenuBtn btn">전체메뉴</button>
+				<!--button type="button"class="closeBtn btn">닫기</button-->
+			</div>
+			<!-- 전체메뉴 : mobile  -->
+			<nav class="totalMenuWrap">
+				<div class="overlay"></div>
+				<div class="totalMenuArea">
+					<div class="navHead">
+						<div class="navLeftHead">
+							<button type="button" class="loginBtn btn">로그인</button>
+							<!--button type="button" class="logoutBtn btn">로그아웃</button-->
+							<button type="button" class="joinBtn btn">회원가입</button>
+						</div>
+						<div class="navLeftHead">
+							<button type="button" class="setBtn btn">설정</button>
+							<button type="button" class="closeTotalMenu btn">전체메뉴 닫기</button>
+						</div>
+					</div>
+					<div class="navBody">
+						<ul class="navDepthArea01">
+							<li><a href="javascript:void(0);" class="navDepth01_01 on">훈련과정</a>
+								<p class="navTitle">훈련과정</p>
+								<ul class="navDepthArea02">
+									<li><a href="/">과정별 상세검색</a></li>
+									<li><a href="/">국민내일배움카드 훈련과정</a></li>
+									<li><a href="/">기업 훈련과정</a></li>
+									<li><a href="/">일학습병행과정</a></li>
+									<li><a href="/">정부부처별 훈련과정</a></li>
+									<li><a href="/">디지털 신기술 훈련과정</a></li>
+									<li><a href="/" class="spacing-3">한기대 스마트 직업훈련과정(STEP)</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="navDepth01_02">지원제도</a>
+								<p class="navTitle">지원제도</p>
+								<ul class="navDepthArea02">
+									<li><a href="/">정부지원사업</a></li>
+									<li><a href="/">정부부처훈련안내</a></li>
+									<li><a href="/">법정/서식/규정</a>
+										<ul>
+											<li><a href="/">법령정보</a></li>
+											<li><a href="/">업무서식 및 규정</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="navDepth01_03">고객센터</a>
+								<p class="navTitle">고객센터</p>
+								<ul class="navDepthArea02">
+									<li><a href="/">자주묻는 질문</a></li>
+									<li><a href="/">질문과 답변</a></li>
+									<li><a href="/">기관찾기</a></li>
+									<li><a href="/">공지/행사 안내</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="navDepth01_04">MY 서비스</a>
+								<p class="navTitle">MY 서비스</p>
+								<ul class="navDepthArea02">
+									<li>
+										<a href="/" class="navSubTitle on">MY 카드</a>
+										<ul>
+											<li><a href="/" class="on">국민내일배움카드</a>
+												<ul>
+													<li><a href="/" class="on">발급신청</a></li>
+													<li><a href="/">카드신청내역</a></li>
+													<li><a href="/">카드사용내역 조회</a></li>
+													<li><a href="/">교육동영상신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									
+									<li><a href="/" class="navSubTitle">MY 훈련</a>
+										<ul>
+											<li><a href="/">직업훈련이력</a></li>
+											<li><a href="/">일학습병행</a></li>
+											<li><a href="/">온라인 수강신청이력</a></li>
+											<li><a href="/">훈련상담이력조회</a></li>
+											<li><a href="/">훈련문의 내역</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="/" class="navSubTitle">MY 관심</a>
+										<ul>
+											<li><a href="/">나의맞춤정보</a></li>
+											<li><a href="/">나의관심정보</a></li>
+											<li><a href="/">비대면 훈련상담</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="/" class="navSubTitle">MY 정보</a>
+										<ul>
+											<li><a href="/">회원정보</a>
+												<ul>
+													<li><a href="/">정보변경</a></li>
+													<li><a href="/">성명변경</a></li>
+													<li><a href="/">비밀번호 변경</a></li>
+													<li><a href="/">회원탈퇴</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="/" class="navSubTitle">강사신청</a>
+										<ul>
+											<li><a href="/">NCS확인강사신청</a></li>
+											<li><a href="/">훈련교사관리</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- //헤더영역 -->
+		<!-- 메인 컨텐츠영역 -->
+		<div id="contentWrap">
+			
+			<!-- 상단 비주얼 영역 -->
+			<div id="subTopWrap" class="topVisu04">
+				<div class="subTopArea">
+					<h2 class="subTopTilte">MY서비스</h2>
+					<p class="subTopText">고객센터를 이용하시면 필요하신 사항을 해결하실 수 있습니다.</p>
+				</div>
+				<div class="location">
+					<ul>
+						<li class="goHome verPC"><a href="/">홈</a></li>
+						<li class="verPC"><a href="/">MY 서비스</a></li>
+						<li><a href="/">회원서비스관리</a></li>
+						<li><a href="/">나의관심정보</a></li>
+						<li class="on"><a href="/">맞춤설정</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //상단 비주얼 영역 -->
+			
+			<div id="myStateWrap">
+				<div class="myStateArea">
+					<ul class="myStateBox">
+						<li class="myPhoto">
+							<img src="../new_images/common/imgMy.jpg" alt="내사진">
+						</li>
+						<li class="myState">
+							<p class="text1">한고원 님</p>
+							<p class="text2">국민내일배움카드 <span>발급 상태</span></p>
+							<p class="text3">발급일자 : 2020.04.24</p>
+						</li>
+						<li class="myState2">
+							<div class="icon01"></div>
+							<p class="text1"><span class="color03">My</span> 카드</p>
+							<p class="text2"><span>발급</span></p>
+						</li>
+						<li class="myState2">
+							<div class="icon02"></div>
+							<p class="text1"><span class="color03">My</span> 상담</p>
+							<p class="text2">상담내역 <span>3건</span></p>
+						</li>
+						<li class="myState2">
+							<div class="icon03"></div>
+							<p class="text1"><span class="color03">My</span> 훈련</p>
+							<p class="text2">훈련수료 <span>3개</span></p>
+						</li>
+						<li class="myState2">
+							<div class="icon03"></div>
+							<p class="text1"><span class="color03">My</span> 관심 (훈련)</p>
+							<p class="text2">맞춤훈련 <span>5개</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="subContentWrap">
+				
+				<!-- 좌측 메뉴 영역 -->
+				<div class="lnbArea">
+					<ul>
+						<li><a href="javascript:void(0);">회원서비스관리</a>
+							<ul class="dep02">
+								<li><a href="/" class="noSub">공인인증서관리</a></li>
+								<li><a href="javascript:void(0);">회원정보관리</a>
+									<ul class="dep03">
+										<li><a href="/">회원정보변경</a></li>
+										<li><a href="/">비밀번호변경</a></li>
+										<li><a href="/">회원탈퇴</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">나의관심정보</a>
+									<ul class="dep03">
+										<li><a href="/">관심정보</a></li>
+										<li><a href="/">맞춤설정</a></li>
+									</ul>
+								</li>
+								<li><a href="/" class="noSub">나의상담내역</a></li>
+								<li><a href="/" class="noSub">알람</a></li>
+								<li><a href="/" class="noSub">훈련문의내역</a></li>
+								<li><a href="/" class="noSub">오픈API신청</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0);">사업장관리</a>
+							<ul class="dep02">
+								<li><a href="/" class="noSub">대리인현황</a></li>
+								<li><a href="/" class="noSub">사업주 훈련이력</a></li>
+								<li><a href="/" class="noSub">지도점검 조회</a></li>
+								<li><a href="/" class="noSub">신청결과 통지내역</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0);">사업주훈련</a>
+							<ul class="dep02">
+								<li><a href="/" class="noSub">지급가능금액조회</a></li>
+								<li><a href="/">비용관리(자체훈련 등)</a>
+									<ul class="dep03">
+										<li><a href="/">비용신청</a></li>
+										<li><a href="/">비용신청(중도정산)</a></li>
+										<li><a href="/">비용신청 작성중/반려</a></li>
+										<li><a href="/">비용신청 조회</a></li>
+										<li><a href="/">훈련비 미신청 과정 조회</a></li>
+									</ul>
+								</li>
+								<li><a href="/">비용관리(위탁훈련)</a>
+									<ul class="dep03">
+										<li><a href="/">비용신청</a></li>
+										<li><a href="/">비용신청(중도정산)</a></li>
+										<li><a href="/">비용신청 작성중/반려</a></li>
+										<li><a href="/">비용신청 조회</a></li>
+										<li><a href="/">비용 미신청 과정 조회</a></li>
+										<li><a href="/">위탁훈련비 비용지급 결과조회</a></li>
+									</ul>
+								</li>
+								<li><a href="/">카드결제관리</a>
+									<ul class="dep03">
+										<li><a href="/">카드발급안내</a></li>
+										<li><a href="/">훈련비 카드결제관리</a></li>
+										<li><a href="/">온라인결제</a></li>
+										<li><a href="/">결제완료 내역조회</a></li>
+										<li><a href="/">카드승인 내역조회</a></li>
+										<li><a href="/">비용입금계좌관리</a></li>
+										<li><a href="/">비용신청대행동의관리</a></li>
+									</ul>
+								</li>
+								<li><a href="/" class="noSub">훈련명단등록(위탁훈련)</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="javascript:void(0);">일학습병행</a></li>
+					</ul>
+				</div>
+				<!--// 좌측 메뉴 영역 -->
+				
+				<div class="subContArea">
+					<div class="headingTitleArea">
+						<h3 class="headingTitle">맞춤설정</h3>
+						<!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
+						<div class="headingIcon">
+							<ul>
+								<li><button type="button" class="twitter">트위터</button></li>
+								<li><button type="button" class="facebbok">페이스북</button></li>
+								<!--li><button type="button" class="">링크복사</button></li-->
+								<li><button type="button" class="print">프린트</button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentArea">
+						<!-- My서비스 컨텐츠 -->
+						<div class="myInfoArea">
+							
+							<div class="tabInterface">
+								<div class="tabListArea">
+									<ul class="tabList five" role="tablist"><!-- 활성화 클래스 on-->
+										<li role="tab" aria-controls="section1" aria-selected="true" id="tab1" class="on" title="선택됨"><button type="button">훈련</button></li>
+										<li role="tab" aria-controls="section2" aria-selected="false" id="tab2" title=""><button type="button">자격증</button></li>
+										<li role="tab" aria-controls="section3" aria-selected="false" id="tab3" title=""><button type="button">일자리</button></li>
+										<li role="tab" aria-controls="section4" aria-selected="false" id="tab4" title=""><button type="button">직업</button></li>
+										<li role="tab" aria-controls="section5" aria-selected="false" id="tab5" title=""><button type="button">학과</button></li>
+									</ul>
+								</div>
+								
+								<div class="tabContents"><!-- 활성화 클래스 on-->
+									<section id="section1" role="tabpanel" class="tabCont on">
+										<h3>훈련 section</h3>
+										<div class="infoBtnList verPC">
+											<ul>
+												<li class="txt">‘훈련맞춤설정’은 5개까지만 선택이 가능합니다.</li>
+												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+											</ul>
+										</div>
+										<div class="selectionBox">
+											<ul class="selectionList">
+												<li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="trainingCateChk1" id="trainingCateChk1"><label for="trainingCateChk1">금속분야 &gt; 금속가공  &gt; 비철용해</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="trainingCateChk2" id="trainingCateChk2"><label for="trainingCateChk2">금속분야 &gt; 금속가공  &gt; 비철용해</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="trainingCateChk3" id="trainingCateChk3"><label for="trainingCateChk3">금속분야 &gt; 금속가공  &gt; 비철용해</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="btnGroupSet">
+											<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+										</div>
+										
+										<div class="sortArea ty2">
+											<p class="totalNum">전체 <strong>1</strong> 건</p>
+											<div class="selectViewArea">
+												<div class="selectView">
+													<label for="pageRow1">페이지당 조회건수</label>
+													<select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
+														<option value="10" selected="selected">10개씩</option>
+														<option value="20">20개씩</option>
+														<option value="30">30개씩</option>
+														<option value="50">50개씩</option>
+														<option value="100">100개씩</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="schEduCont ty2">
+											<ul class="esList">
+												<li>
+													<div class="inner">
+														<div class="esCont c1">
+															<div class="ui_checkBox single">
+																<input type="checkbox" name="trainingChk1" id="trainingChk1">
+																<label for="trainingChk1">선택</label>
+															</div>
+															<div class="esLoc moDpNone">경기도 화성</div>
+															<div class="esName">(주)화성직업 전문학교</div>
+															<div class="esCamDom moDpNone">
+																<span class="icoCam"></span>
+															</div>
+															<div class="esCert moDpNone">
+																<img src="../new_images/common/icoProCerti3.png" alt="3년 인증">
+															</div>
+														</div>
+														<div class="esCont c2">
+															<div class="esTit">
+																<a href="" class="etc">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a><span class="icoCam moDpNone"></span>
+															</div>
+															<div class="esHash">
+																<span class="hashs moDpNone">#국민내일배움카드(구직자)</span>
+																<span class="hashs moDpNone">#근로자 직무능력향상지원금</span>
+																<span class="hashs pcDpNone">구</span>
+																<span class="hashs pcDpNone">근</span>
+																<span class="iconTip pcDpNone">TIP</span>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont">
+																	<div class="tit long">훈련기간</div>
+																	<div class="esIn">2020-06-17 ~ 2020-12-14 <span class="moDpNone">(9회차)</span></div>
+																</div>
+																<div class="esInfoCont rp">
+																	<div class="tit etc long dotAdd">일자리 정보 </div>
+																	<div class="esIn etc">1999개</div>
+																</div>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont">
+																	<div class="tit long">과정만족도</div>
+																	<div class="esIn sGuage">
+																		<div class="starGuage">
+																			<span class="per" style="width: 35.5%;">35.5%</span>
+																		</div>
+																	</div>
+																	<div class="esIn cGuage2">
+																		<div class="esCngDom02">
+																			<div class="colorGauge02">
+																				<span class="cgBar" style="width:35.5%">35.5%</span>
+																			</div>
+																			<span class="iconTip">TIP</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="esCont c3">
+															<span class="rndTxt ty1 moDpNone">모집중</span>
+															<div class="esCngDom2">
+																<span class="esCnt">1,900,000원</span>
+																<a href="" class="btnViewLink ty2">자비부담액보기</a>
+															</div>
+														</div>
+													</div>
+												</li><li>
+													<div class="inner">
+														<div class="esCont c1">
+															<div class="ui_checkBox single">
+																<input type="checkbox" name="trainingChk2" id="trainingChk2">
+																<label for="trainingChk2">선택</label>
+															</div>
+															<div class="esLoc moDpNone">경기도 화성</div>
+															<div class="esName">(주)화성직업 전문학교</div>
+															<div class="esCamDom moDpNone">
+																<span class="icoCam"></span>
+															</div>
+															<div class="esCert moDpNone">
+																<img src="../new_images/common/icoProCerti3.png" alt="3년 인증">
+															</div>
+														</div>
+														<div class="esCont c2">
+															<div class="esTit">
+																<a href="" class="etc">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a><span class="icoCam moDpNone"></span>
+															</div>
+															<div class="esHash">
+																<span class="hashs moDpNone">#국민내일배움카드(구직자)</span>
+																<span class="hashs moDpNone">#근로자 직무능력향상지원금</span>
+																<span class="hashs pcDpNone">구</span>
+																<span class="hashs pcDpNone">근</span>
+																<span class="iconTip pcDpNone">TIP</span>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont">
+																	<div class="tit long">훈련기간</div>
+																	<div class="esIn">2020-06-17 ~ 2020-12-14 <span class="moDpNone">(9회차)</span></div>
+																</div>
+																<div class="esInfoCont rp">
+																	<div class="tit etc long dotAdd">일자리 정보 </div>
+																	<div class="esIn etc">1999개</div>
+																</div>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont">
+																	<div class="tit long">과정만족도</div>
+																	<div class="esIn sGuage">
+																		<div class="starGuage">
+																			<span class="per" style="width: 35.5%;">35.5%</span>
+																		</div>
+																	</div>
+																	<div class="esIn cGuage2">
+																		<div class="esCngDom02">
+																			<div class="colorGauge02">
+																				<span class="cgBar" style="width:35.5%">35.5%</span>
+																			</div>
+																			<span class="iconTip">TIP</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="esCont c3">
+															<span class="rndTxt ty1 moDpNone">모집중</span>
+															<div class="esCngDom2">
+																<span class="esCnt">1,900,000원</span>
+																<a href="" class="btnViewLink ty2">자비부담액보기</a>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="none" style="display:none;"><!-- 데이터가 없을 때-->
+													해당 데이터가 없습니다.
+												</li>
+											</ul>
+											<!-- paging : pc -->
+											<div class="pagenation verPC">
+												<a href="/" class="pb prev">이전보기</a>
+												<a href="/" class="on">1</a>
+												<a href="/">2</a>
+												<a href="/">3</a>
+												<a href="/">4</a>
+												<a href="/">5</a>
+												<a href="/">6</a>
+												<a href="/">7</a>
+												<a href="/" class="pb next">다음보기</a>
+											</div>
+											<!--// paging : pc -->
+											
+											<!-- paging : mob -->
+											<div class="verM">
+												<div class="pagenation mt40">
+													<a href="/" class="pb prev">이전보기</a>
+													<p class="paging">
+														<span class="current">
+															<span class="hide">현재페이지</span>
+															<span class="count">1</span>
+														</span>
+														<span>/</span>
+														<span class="total">
+															<span class="hide">총페이지수</span>
+															<span class="count">10</span>
+														</span>
+													</p>
+													<a href="/" class="pb next">다음보기</a>
+												</div>
+											</div>
+											<!--// paging : mob -->
+											
+										</div>
+										
+										
+									</section>
+									<section id="section2" role="tabpanel" class="tabCont">
+										<h3>자격증 section</h3>
+										<div class="infoBtnList verPC">
+											<ul>
+												<li class="txt">‘자격증맞춤설정’은 3개까지만 선택이 가능합니다.</li>
+												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+											</ul>
+										</div>
+										<div class="selectionBox">
+											<ul class="selectionList">
+												<li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="certifiCateChk1" id="certifiCateChk1"><label for="certifiCateChk1">농림토양평가관리산업기사</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="certifiCateChk2" id="certifiCateChk2"><label for="certifiCateChk2">농림토양평가관리산업기사</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="certifiCateChk3" id="certifiCateChk3"><label for="certifiCateChk3">농림토양평가관리산업기사</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="btnGroupSet">
+											<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+										</div>
+										
+										<div class="sortArea ty2">
+											<p class="totalNum">전체 <strong>1</strong> 건</p>
+											<div class="selectViewArea">
+												<div class="selectView">
+													<label for="pageRow2">페이지당 조회건수</label>
+													<select title="페이지당 조회건수" name="pageRow2" id="pageRow2" class="selectBox h30">
+														<option value="10" selected="selected">10개씩</option>
+														<option value="20">20개씩</option>
+														<option value="30">30개씩</option>
+														<option value="50">50개씩</option>
+														<option value="100">100개씩</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="partArea">
+											<div class="tableArea05">
+												<ul>
+													<li>
+														<div class="titleSection">
+															<div class="titleBox">
+																<ul class="titleList02">
+																	<li>
+																		<div class="ui_checkBox single">
+																			<input type="checkbox" name="certifiChk1" id="certifiChk1">
+																			<label for="certifiChk1">선택</label>
+																		</div>
+																	</li>
+																	<li><p class="titleText"><a href="/">통신기기능사</a></p></li>
+																	<li><span class="btnSty">국가기술자격</span><span class="btnStyM">구</span></li>
+																</ul>
+																<ul class="titleList">
+																	<li class="txt01">관련부처 : 한국산업인력공단</li>
+																	<li class="txt02">산업 및 통신기술의 발달과 통신량의 증가에 따라 케이블 선로 및 광케이블 선로시설을 가설하고 유지, 보수하는데 필요한 제반 환경조성과
+																		인력양성을 위해 자격제도 제정.</li>
+																</ul>
+															</div>
+														</div>
+													</li><li>
+														<div class="titleSection">
+															<div class="titleBox">
+																<ul class="titleList02">
+																	<li>
+																		<div class="ui_checkBox single">
+																			<input type="checkbox" name="certifiChk2" id="certifiChk2">
+																			<label for="certifiChk2">선택</label>
+																		</div>
+																	</li>
+																	<li><p class="titleText"><a href="/">통신기기능사</a></p></li>
+																	<li><span class="btnSty">국가기술자격</span><span class="btnStyM">구</span></li>
+																</ul>
+																<ul class="titleList">
+																	<li class="txt01">관련부처 : 한국산업인력공단</li>
+																	<li class="txt02">산업 및 통신기술의 발달과 통신량의 증가에 따라 케이블 선로 및 광케이블 선로시설을 가설하고 유지, 보수하는데 필요한 제반 환경조성과
+																		인력양성을 위해 자격제도 제정.</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li class="none" style="display:none;"><!-- 데이터가 없을 때-->
+														해당 데이터가 없습니다.
+													</li>
+												</ul>
+											</div>
+											
+											<!-- paging : pc -->
+											<div class="pagenation verPC">
+												<a href="/" class="pb prev">이전보기</a>
+												<a href="/" class="on">1</a>
+												<a href="/">2</a>
+												<a href="/">3</a>
+												<a href="/">4</a>
+												<a href="/">5</a>
+												<a href="/">6</a>
+												<a href="/">7</a>
+												<a href="/" class="pb next">다음보기</a>
+											</div>
+											<!--// paging : pc -->
+											
+											<!-- paging : mob -->
+											<div class="verM">
+												<div class="pagenation mt40">
+													<a href="/" class="pb prev">이전보기</a>
+													<p class="paging">
+														<span class="current">
+															<span class="hide">현재페이지</span>
+															<span class="count">1</span>
+														</span>
+														<span>/</span>
+														<span class="total">
+															<span class="hide">총페이지수</span>
+															<span class="count">10</span>
+														</span>
+													</p>
+													<a href="/" class="pb next">다음보기</a>
+												</div>
+											</div>
+											<!--// paging : mob -->
+											
+										</div>
+									</section>
+									<section id="section3" role="tabpanel" class="tabCont">
+										<h3>일자리 section</h3>
+										<div class="infoBtnList verPC">
+											<ul>
+												<li class="txt">‘일자리맞춤설정’은 3개까지만 선택이 가능합니다.</li>
+												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+											</ul>
+										</div>
+										<div class="selectionBox">
+											<ul class="selectionList">
+												<li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="jobCateChk1" id="jobCateChk1"><label for="jobCateChk1">건설채굴직 &gt; 건설구조 기능원  &gt; 건축 목공</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="jobCateChk2" id="jobCateChk2"><label for="jobCateChk2">건설채굴직 &gt; 건설구조 기능원  &gt; 건축 목공</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="jobCateChk3" id="jobCateChk3"><label for="jobCateChk3">건설채굴직 &gt; 건설구조 기능원  &gt; 건축 목공</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="btnGroupSet">
+											<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+										</div>
+										
+										<div class="sortArea ty2">
+											<p class="totalNum">전체 <strong>1</strong> 건</p>
+											<div class="selectViewArea">
+												<div class="selectView">
+													<label for="pageRow3">페이지당 조회건수</label>
+													<select title="페이지당 조회건수" name="pageRow3" id="pageRow3" class="selectBox h30">
+														<option value="10" selected="selected">10개씩</option>
+														<option value="20">20개씩</option>
+														<option value="30">30개씩</option>
+														<option value="50">50개씩</option>
+														<option value="100">100개씩</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="schEduCont ty2">
+											<ul class="esList">
+												<li>
+													<div class="inner">
+														<div class="esCont c1">
+															<div class="esLoc moDpNone">경기도 화성</div>
+															<div class="esName">주식회사케이에스테크</div>
+														</div>
+														<div class="esCont c2">
+															<div class="esTit">
+																<a href="">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont esFix02">
+																	<div class="tit">경력</div>
+																	<div class="esIn">신입</div>
+																</div>
+																<div class="esInfoCont moDpNone">
+																	<div class="tit">등록일</div>
+																	<div class="esIn">2020.07.08</div>
+																</div>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont esFix02">
+																	<div class="tit">학력</div>
+																	<div class="esIn">
+																		<span class="acaLv">
+																			<span>고졸</span>
+																			<span>대졸 (2~~3년)</span>
+																			<span>대졸 (4년)</span>
+																		</span>
+																	</div>
+																</div>
+																<div class="esInfoCont moDpNone">
+																	<div class="tit">마감일</div>
+																	<div class="esIn">2020.07.08</div>
+																</div>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont">
+																	<div class="tit">고용형태</div>
+																	<div class="esIn">
+																		기간의 정함이 있는 근로계약 (시간(선택)제)
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="esCont c3">
+															<span class="rndTxt ty2 moDpNone">워크넷</span>
+															<div class="esCngDom2">
+																<span class="esCnt">3,400만원</span>
+																<span class="esUnit">(연봉)</span>
+															</div>
+															<span class="rndTxt ty2 pcDpNone">워크넷</span>
+														</div>
+													</div>
+												</li><li>
+													<div class="inner">
+														<div class="esCont c1">
+															<div class="esLoc moDpNone">경기도 화성</div>
+															<div class="esName">주식회사케이에스테크</div>
+														</div>
+														<div class="esCont c2">
+															<div class="esTit">
+																<a href="">모션 그래픽 디자이너 양성과정 &amp; 그래픽 자격증 취득 양성과정 9회차 모집</a>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont esFix02">
+																	<div class="tit">경력</div>
+																	<div class="esIn">신입</div>
+																</div>
+																<div class="esInfoCont moDpNone">
+																	<div class="tit">등록일</div>
+																	<div class="esIn">2020.07.08</div>
+																</div>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont esFix02">
+																	<div class="tit">학력</div>
+																	<div class="esIn">
+																		<span class="acaLv">
+																			<span>고졸</span>
+																			<span>대졸 (2~~3년)</span>
+																			<span>대졸 (4년)</span>
+																		</span>
+																	</div>
+																</div>
+																<div class="esInfoCont moDpNone">
+																	<div class="tit">마감일</div>
+																	<div class="esIn">2020.07.08</div>
+																</div>
+															</div>
+															<div class="esInfo">
+																<div class="esInfoCont">
+																	<div class="tit">고용형태</div>
+																	<div class="esIn">
+																		기간의 정함이 있는 근로계약 (시간(선택)제)
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="esCont c3">
+															<span class="rndTxt ty2 moDpNone">워크넷</span>
+															<div class="esCngDom2">
+																<span class="esCnt">3,400만원</span>
+																<span class="esUnit">(연봉)</span>
+															</div>
+															<span class="rndTxt ty2 pcDpNone">워크넷</span>
+														</div>
+													</div>
+												</li>
+												<li class="none" style="display:none;"><!-- 데이터가 없을 때-->
+													해당 데이터가 없습니다.
+												</li>
+											</ul>
+											<!-- paging : pc -->
+											<div class="pagenation verPC">
+												<a href="/" class="pb prev">이전보기</a>
+												<a href="/" class="on">1</a>
+												<a href="/">2</a>
+												<a href="/">3</a>
+												<a href="/">4</a>
+												<a href="/">5</a>
+												<a href="/">6</a>
+												<a href="/">7</a>
+												<a href="/" class="pb next">다음보기</a>
+											</div>
+											<!--// paging : pc -->
+											
+											<!-- paging : mob -->
+											<div class="verM">
+												<div class="pagenation mt40">
+													<a href="/" class="pb prev">이전보기</a>
+													<p class="paging">
+														<span class="current">
+															<span class="hide">현재페이지</span>
+															<span class="count">1</span>
+														</span>
+														<span>/</span>
+														<span class="total">
+															<span class="hide">총페이지수</span>
+															<span class="count">10</span>
+														</span>
+													</p>
+													<a href="/" class="pb next">다음보기</a>
+												</div>
+											</div>
+											<!--// paging : mob -->
+											
+										</div>
+									</section>
+									<section id="section4" role="tabpanel" class="tabCont">
+										<h3>직업 section</h3>
+										<div class="infoBtnList verPC">
+											<ul>
+												<li class="txt">‘직업맞춤설정’은 3개까지만 선택이 가능합니다.</li>
+												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+											</ul>
+										</div>
+										<div class="selectionBox">
+											<ul class="selectionList">
+												<li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="careerCateChk1" id="careerCateChk1">
+														<label for="careerCateChk1">관리&middot;경영&middot;금융&middot;보험 &gt; 관리직 &gt; 경영지원,행정및금융관련관리자 &gt; 금융및보험관리자</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="careerCateChk2" id="careerCateChk2">
+														<label for="careerCateChk2">관리&middot;경영&middot;금융&middot;보험 &gt; 관리직 &gt; 경영지원,행정및금융관련관리자 &gt; 금융및보험관리자</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="careerCateChk3" id="careerCateChk3">
+														<label for="careerCateChk3">관리&middot;경영&middot;금융&middot;보험 &gt; 관리직 &gt; 경영지원,행정및금융관련관리자 &gt; 금융및보험관리자</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="btnGroupSet">
+											<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+										</div>
+										
+										<div class="sortArea ty2">
+											<p class="totalNum">전체 <strong>1</strong> 건</p>
+											<div class="selectViewArea">
+												<div class="selectView">
+													<label for="pageRow4">페이지당 조회건수</label>
+													<select title="페이지당 조회건수" name="pageRow4" id="pageRow4" class="selectBox h30">
+														<option value="10" selected="selected">10개씩</option>
+														<option value="20">20개씩</option>
+														<option value="30">30개씩</option>
+														<option value="50">50개씩</option>
+														<option value="100">100개씩</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="partArea">
+											<div class="tableArea05">
+												<ul>
+													<li>
+														<div class="titleSection">
+															<div class="titleBox">
+																<ul class="titleList02">
+																	<li>
+																		<div class="ui_checkBox single">
+																			<input type="checkbox" name="careerChk1" id="careerChk1">
+																			<label for="careerChk1">선택</label>
+																		</div>
+																	</li>
+																	<li><p class="titleText"><a href="/">RFID 시스템 개발자</a></p></li>
+																</ul>
+																<ul class="titleList">
+																	<li class="txt01">전기·전자·정보통신 &gt; 정보통신관련직 &gt; RFID 시스템 개발자</li>
+																	<li class="txt02">RFID 시스템개발자는 RFID 기술을 응용하여 새로운 제품을 설계하거나, 기존의 제품을 개선하여 좀 더 편리하게 만드는 일을 수행한다.</li>
+																</ul>
+															</div>
+														</div>
+													</li><li>
+														<div class="titleSection">
+															<div class="titleBox">
+																<ul class="titleList02">
+																	<li>
+																		<div class="ui_checkBox single">
+																			<input type="checkbox" name="careerChk2" id="careerChk2">
+																			<label for="careerChk2">선택</label>
+																		</div>
+																	</li>
+																	<li><p class="titleText"><a href="/">RFID 시스템 개발자</a></p></li>
+																</ul>
+																<ul class="titleList">
+																	<li class="txt01">전기·전자·정보통신 &gt; 정보통신관련직 &gt; RFID 시스템 개발자</li>
+																	<li class="txt02">RFID 시스템개발자는 RFID 기술을 응용하여 새로운 제품을 설계하거나, 기존의 제품을 개선하여 좀 더 편리하게 만드는 일을 수행한다.</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li class="none" style="display:none;"><!-- 데이터가 없을 때-->
+														해당 데이터가 없습니다.
+													</li>
+												</ul>
+											</div>
+											
+											<!-- paging : pc -->
+											<div class="pagenation verPC">
+												<a href="/" class="pb prev">이전보기</a>
+												<a href="/" class="on">1</a>
+												<a href="/">2</a>
+												<a href="/">3</a>
+												<a href="/">4</a>
+												<a href="/">5</a>
+												<a href="/">6</a>
+												<a href="/">7</a>
+												<a href="/" class="pb next">다음보기</a>
+											</div>
+											<!--// paging : pc -->
+											
+											<!-- paging : mob -->
+											<div class="verM">
+												<div class="pagenation mt40">
+													<a href="/" class="pb prev">이전보기</a>
+													<p class="paging">
+														<span class="current">
+															<span class="hide">현재페이지</span>
+															<span class="count">1</span>
+														</span>
+														<span>/</span>
+														<span class="total">
+															<span class="hide">총페이지수</span>
+															<span class="count">10</span>
+														</span>
+													</p>
+													<a href="/" class="pb next">다음보기</a>
+												</div>
+											</div>
+											<!--// paging : mob -->
+											
+										</div>
+									</section>
+									<section id="section5" role="tabpanel" class="tabCont">
+										<h3>학과 section</h3>
+										<div class="infoBtnList verPC">
+											<ul>
+												<li class="txt">‘학과맞춤설정’은 3개까지만 선택이 가능합니다.</li>
+												<li class="btn"><button type="button" class="goLinkLong">맞춤정보 설정</button></li>
+											</ul>
+										</div>
+										<div class="selectionBox">
+											<ul class="selectionList">
+												<li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="depCateChk1" id="depCateChk1">
+														<label for="depCateChk1">관리&middot;경영&middot;금융&middot;보험 &gt; 관리직 &gt; 경영지원,행정및금융관련관리자 &gt; 금융및보험관리자</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="depCateChk2" id="depCateChk2">
+														<label for="depCateChk2">관리&middot;경영&middot;금융&middot;보험 &gt; 관리직 &gt; 경영지원,행정및금융관련관리자 &gt; 금융및보험관리자</label>
+													</div>
+												</li><li>
+													<div class="ui_checkBox">
+														<input type="checkbox" name="depCateChk3" id="depCateChk3">
+														<label for="depCateChk3">관리&middot;경영&middot;금융&middot;보험 &gt; 관리직 &gt; 경영지원,행정및금융관련관리자 &gt; 금융및보험관리자</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="btnGroupSet">
+											<div class="btnGroup ty2"><button type="button" class="btnType2 primary btnW150">삭제</button></div>
+										</div>
+										
+										<div class="sortArea ty2">
+											<p class="totalNum">전체 <strong>1</strong> 건</p>
+											<div class="selectViewArea">
+												<div class="selectView">
+													<label for="pageRow5">페이지당 조회건수</label>
+													<select title="페이지당 조회건수" name="pageRow5" id="pageRow5" class="selectBox h30">
+														<option value="10" selected="selected">10개씩</option>
+														<option value="20">20개씩</option>
+														<option value="30">30개씩</option>
+														<option value="50">50개씩</option>
+														<option value="100">100개씩</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="partArea">
+											<div class="tableArea05">
+												<ul>
+													<li>
+														<div class="titleSection">
+															<div class="titleBox">
+																<ul class="titleList02">
+																	<li>
+																		<div class="ui_checkBox single">
+																			<input type="checkbox" name="depChk1" id="depChk1">
+																			<label for="depChk1">선택</label>
+																		</div>
+																	</li>
+																	<li><p class="titleText"><a href="/">(애완)동물학과</a></p></li>
+																	<li><span class="btnSty2">자연계열</span></li>
+																</ul>
+																<ul class="titleList">
+																	<li>
+																		<dl class="txt02list">
+																			<dt>진출분야</dt>
+																			<dd>동물병원, 사료업체, 화장품회사, 동물훈련기관, 애견미용실, 동물원</dd>
+																		</dl>
+																		<dl class="txt02list">
+																			<dt>관련직업</dt>
+																			<dd>애완동물미용사, 애완동물조련사, 애완동물옷디자이너</dd>
+																		</dl>
+																	</li>
+																	<li class="txt03Box">
+																		<button type="button" class="goLinkLong verPC">관련정보보기</button>
+																		<span class="txt03">관심등록 : 18명</span>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li><li>
+														<div class="titleSection">
+															<div class="titleBox">
+																<ul class="titleList02">
+																	<li>
+																		<div class="ui_checkBox single">
+																			<input type="checkbox" name="depChk2" id="depChk2">
+																			<label for="depChk2">선택</label>
+																		</div>
+																	</li>
+																	<li><p class="titleText"><a href="/">(애완)동물학과</a></p></li>
+																	<li><span class="btnSty2">자연계열</span></li>
+																</ul>
+																<ul class="titleList">
+																	<li>
+																		<dl class="txt02list">
+																			<dt>진출분야</dt>
+																			<dd>동물병원, 사료업체, 화장품회사, 동물훈련기관, 애견미용실, 동물원</dd>
+																		</dl>
+																		<dl class="txt02list">
+																			<dt>관련직업</dt>
+																			<dd>애완동물미용사, 애완동물조련사, 애완동물옷디자이너</dd>
+																		</dl>
+																	</li>
+																	<li class="txt03Box">
+																		<button type="button" class="goLinkLong verPC">관련정보보기</button>
+																		<span class="txt03">관심등록 : 18명</span>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+													<li class="none" style="display:none;"><!-- 데이터가 없을 때-->
+														해당 데이터가 없습니다.
+													</li>
+												</ul>
+											</div>
+											
+											<!-- paging : pc -->
+											<div class="pagenation verPC">
+												<a href="/" class="pb prev">이전보기</a>
+												<a href="/" class="on">1</a>
+												<a href="/">2</a>
+												<a href="/">3</a>
+												<a href="/">4</a>
+												<a href="/">5</a>
+												<a href="/">6</a>
+												<a href="/">7</a>
+												<a href="/" class="pb next">다음보기</a>
+											</div>
+											<!--// paging : pc -->
+											
+											<!-- paging : mob -->
+											<div class="verM">
+												<div class="pagenation mt40">
+													<a href="/" class="pb prev">이전보기</a>
+													<p class="paging">
+														<span class="current">
+															<span class="hide">현재페이지</span>
+															<span class="count">1</span>
+														</span>
+														<span>/</span>
+														<span class="total">
+															<span class="hide">총페이지수</span>
+															<span class="count">10</span>
+														</span>
+													</p>
+													<a href="/" class="pb next">다음보기</a>
+												</div>
+											</div>
+											<!--// paging : mob -->
+											
+										</div>
+									</section>
+								</div>
+								
+							</div>
+							
+						</div>
+						<!-- // My서비스 컨텐츠 -->
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- //메인 컨텐츠영역 -->
+		<!-- 푸터영역 -->
+		<footer id="footerWrap">
+			<div class="footerArea">
+				<div class="footerCont">
+					<div class="footerLink">
+						<div class="swiper-container" id="footerLink">
+							<ul class="swiper-wrapper">
+								<li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
+								<li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
+								<li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
+								<li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
+								<li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
+								<li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
+								<li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
+								<li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
+								<li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
+								<li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
+							</ul>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+					<ul class="footerLogo">
+						<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
+						<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
+					</ul>
+					<div class="footerPolicy">
+						<ul>
+							<li><a href="/">기관소개</a></li>
+							<li><a href="/">찾아오시는 길</a></li>
+							<li class="on"><a href="/">개인정보처리방침</a></li>
+							<li><a href="/">저작권보호정책</a></li>
+							<li><a href="/">공인인증센터</a></li>
+							<li><a href="/">이메일수집거부</a></li>
+							<li><a href="/">오픈 API 서비스</a></li>
+						</ul>
+					</div>
+					<ul class="footerMark">
+						<li><a href="javascript:window.open('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&amp;certNum=2019-N009','seal','width=527,height=720,location=no,status=no,scrollbars=no')" title="새창"><img src="../new_images/common/footerMark01.png" alt="ePRIVACY마크(개인정보보호마크)"></a></li>
+						<li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerMark02.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"></a></li>
+					</ul>
+				</div>
+				<address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address>
+				<p class="copyright">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!-- //푸터영역 -->
+		
+		<!-- Top버튼 -->
+		<!--div class="btnGoTop"><a href="/" role="button">Top으로 이동</a></div-->
+		<!-- //Top버튼 -->
+		
+		<!-- 하단 고정 메뉴 : Mobile -->
+		<div id="floatingWrap" class="fixBotNav">
+			<nav class="floatingMenu">
+				<ul>
+					<li class="home on"><a href="/"><span>홈</span></a></li>
+					<li class="search"><a href="/"><span>과정검색</span></a></li>
+					<li class="my"><a href="/"><span>My</span></a></li>
+					<li class="alam"><a href="/"><span>알림</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- //하단 고정 메뉴 : Mobile -->
+	</div>
+</body>
+</html>
