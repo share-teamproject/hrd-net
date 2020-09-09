@@ -550,6 +550,7 @@
 .signUpFlowList > li .stepCount {position:absolute; top:0; left:50%; z-index:1; margin-left:-20px; width:40px; height:40px; border-radius:50%; font-size:16px; color:#727476; line-height:40px; background:#f4f6f9;}
 .signUpFlowList > li.on .stepCount {font-weight:500; color:#fff; background:#5b648a;}
 .signUpFlowList > li .txt {font-size:14px; color:#727476;}
+.signUpFlow + .bigTitle02 {margin-top: 50px;}
 
 .singUpCert {margin-top:57px; padding:52px 0 55px 0; text-align:center; border:1px solid #e2e2e4; border-top:2px solid #5b648a;}
 .singUpCertTit > strong {font-weight:500; font-size:22px; color:#292a2d;}
@@ -567,6 +568,7 @@
 .termsDiv {margin-top:49px;}
 .termsDiv + .termsDiv {margin-top:51px;}
 .termsDiv + .tableArea {margin-top:60px;}
+.termsDiv + .btnGroup {margin-top:60px;}
 .termsDiv + form {margin-top:60px;}
 .termsDiv > .tremsTit {padding-bottom:15px; font-weight:500; font-size:22px; color:#292a2d;}
 .termsDiv > .tremsTit > span {color:#727476;}
@@ -577,6 +579,7 @@
 .termsChk {padding-top:20px; text-align:right;}
 .termsDivAll {margin-top:60px; padding:30px 35px; background:#f7f7f7; text-align:center;}
 .termsDivAll + .btnGroup {margin-top:60px;}
+.boxBltList + .termsDiv {margin-top: 30px;}
 
 /* 회원가입 - 회원정보입력 */
 .signUpForm {border:1px solid #e2e2e4; border-top:2px solid #5b648a; text-align:center;}
