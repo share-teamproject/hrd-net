@@ -260,6 +260,7 @@ input[type="text"].js_datepicker { box-sizing:border-box; width:220px; padding:0
 .ui_checkBox input:checked + label:after { background-position:-26px 0; }
 .ui_checkBox input:disabled + label:after { background-position:0 0; } 
 .ui_checkBox input:disabled + label.on:after { background-position:-52px 0; } 
+.ui_checkBox input:checked:disabled + label:after { background-position:-52px 0; } 
 .ui_checkBox + .ui_checkBox { margin-left:40px; }
 .ui_checkBox + br + .ui_checkBox { margin-left:40px; }
 
@@ -406,6 +407,8 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .color03 { color:#4870cf !important; }
 .color04 { color:#258384 !important; }
 .color05 { color:#4171df !important; }
+.minwDefault { min-width:0 !important; }
+.maxwDefault { max-width:none !important; }
 .w100p { width:100% !important; }
 .w145 { width:145px !important; }
 .w150 { width:150px !important; }

@@ -542,6 +542,7 @@
 
 /* 회원가입 - 가입인증 */
 .signUpFlow {text-align:center;}
+.signUpFlow.etc {font-size: 0;}
 .signUpFlowList {position:relative; display:inline-block; font-size:0; text-align:center;}
 .signUpFlowList:after {content:''; position:absolute; top:18px; left:45px; width:calc(100% - 90px); border-bottom:4px solid #f4f6f9;}
 .signUpFlowList > li {position:relative; display:inline-block; vertical-align:top; width:120px; padding-top:48px;}
@@ -880,6 +881,7 @@
 .contListType1Wrap {font-size:0;}
 .contListType1Wrap > .contListType1 {width:50%;}
 .contListType1Wrap > .contListType1 + .contListType1 {width:50%; border-left:none;}
+#subContentWrap .contListType1Wrap + .sortArea {margin-top: 40px;}
 .contListType1 {display:inline-block; border:1px solid #e2e2e4;}
 .contListType1 > li {position:relative; padding:14px 0;}
 .contListType1 > li:before {content:''; position:absolute; top:14px; left:170px; height:calc(100% - 28px); border-left:1px solid #e3e7ee;}
