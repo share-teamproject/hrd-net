@@ -105,19 +105,29 @@
 .detailListTy2 > li .txt01 {padding-top:20px; font-size:14px; color:#292a2d;}
 .detailListTy2 > li .txt02 {padding-top:7px; font-size:14px; color:#666; line-height:24px;}
 
+.domTit {text-align: right; overflow: hidden;}
+.domTit > .hTxt {float: left; font-size: 16px; color: #4e4f51;}
+.domTit > .essTxt {font-size: 13px; color: #727476;}
+.domTit + .schDom {margin-top: 16px;}
+.domTit + form {margin-top: 16px;}
+
 
 /*검색 영역*/
 .schDom {padding: 25px 20px 25px 50px; border: 3px solid #d8dfeb;}
 .schDom.top {margin-top: 15px;}
 .schDomCont {font-size: 0; text-align: left;}
 .schDomCont + .schDomCont {margin-top: 10px;}
-.schDomCont > * {/*display: inline-block;*/ vertical-align: top;}
+.schDomCont > * {vertical-align: top;}
 .schDomCont > .ele {display: inline-block; width: calc(100% - 125px);}
 .schDomCont > .ele .selectBox,
 .schDomCont > .ele input[type="text"],
 .schDomCont > .ele input[type="pass"] {width: 435px;}
 .schDomCont > .tit {width: 125px; display: inline-block; font-size: 18px; color: #4e4f51; line-height: 40px;}
 .schDomCont > .tit.normal {line-height: normal;}
+.schDom.ty2 {padding: 25px 20px 25px 30px;}
+.schDom.ty2 {padding: 25px 20px 25px 30px;}
+.schDom.ty2 .schDomCont > .tit {width: 160px;}
+.schDom.ty2 .schDomCont > .ele {width: calc(100% - 160px);}
 .schDom > .btnGroup {margin-top: 20px;}
 .schDom + .sortArea {margin-top: 52px;}
 .schDom + form {margin-top: 52px;}
