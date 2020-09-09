@@ -477,8 +477,8 @@
                             <div class="tabListArea"> 
                                 <ul class="tabList" role="tablist">
                                     <li role="tab" aria-controls="section1" aria-selected="false" id="tab1"><button type="button">온라인결제</button></li>
-                                    <li role="tab" aria-controls="section2" aria-selected="true" id="tab2" class="on"><button type="button">장바구니</button></li>
-                                    <li role="tab" aria-controls="section3" aria-selected="false" id="tab3"><button type="button">선결제</button></li>
+                                    <li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">장바구니</button></li>
+                                    <li role="tab" aria-controls="section3" aria-selected="true" id="tab3" class="on"><button type="button">선결제</button></li>
                                 </ul>
                             </div> 
                             <!--// 텝 인덱스 -->
@@ -491,100 +491,125 @@
                                 </section>
                                 <!--// 온라인결제 -->
                                 <!-- 장바구니 -->
-                                <section role="tabpane2" id="section2" class="tabCont on">
+                                <section role="tabpane2" id="section2" class="tabCont">
+                                    장바구니
+                                </section>
+                                <!--// 장바구니 -->
+                                <!-- 선결제 -->
+                                <section role="tabpane3" id="section3" class="tabCont on">
                                     <div class="signUpFlow etc">
-                                        <ol class="signUpFlowList" aria-label="총 3단계 중 현재단계 3단계">
+                                        <ol class="signUpFlowList" aria-label="총 3단계 중 현재단계 2단계">
                                             <li><em class="stepCount">1</em><span class="txt">장바구니</span></li>
-                                            <li><em class="stepCount">2</em><span class="txt">결제</span></li>
-                                            <li aria-current="step" class="on"><em class="stepCount">3</em><span class="txt">완료</span></li>
+                                            <li aria-current="step" class="on"><em class="stepCount">2</em><span class="txt">결제</span></li>
+                                            <li><em class="stepCount">3</em><span class="txt">완료</span></li>
                                         </ol>
                                     </div>
 
-                                    <div class="commentBox02">
-                                        <span class="color05">결제가 완료</span>되었습니다.
-                                    </div>
-
-                                    <h5 class="bigTitle02">승인정보</h5>
+                                    <h5 class="bigTitle02">선결제 훈련과정</h5>
                                     <div class="tableArea">
-                                        <table class="view">
-                                            <caption>승인정보</caption>
+                                        <table class="list mb0">
+                                            <caption>선결제 훈련과정</caption>
                                             <colgroup>
-                                                <col style="width:180px;">
+                                                <col style="width:80px;">
                                                 <col style="width:auto;">
-                                                <col style="width:180px;">
-                                                <col style="width:auto;">
-                                            </colgroup>
-                                            <tfoot>
-                                                <tr>
-                                                    <th scope="row">총결제 금액</th>
-                                                    <td colspan="3" class="last color05">450,000 원</td>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">결제번호</th>
-                                                    <td colspan="3" class="last">812014111313543029260090</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">지원과정수</th>
-                                                    <td>1 개</td>
-                                                    <th scope="row">지원과정 훈련비(계)</th>
-                                                    <td class="last">450,000 원</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">비지원과정수</th>
-                                                    <td>0 개</td>
-                                                    <th scope="row">비지원과정 훈련비(계)</th>
-                                                    <td class="last">0 원</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <h5 class="bigTitle02">카드승인내역</h5>
-                                    <div class="tableArea">
-                                        <table class="list">
-                                            <caption>카드승인내역</caption>
-                                            <colgroup>
-                                                <col style="width:150px;">
-                                                <col style="width:auto;">
-                                                <col style="width:150px;">
-                                                <col style="width:150px;">
-                                                <col style="width:150px;">
-                                                <col style="width:150px;">
+                                                <col style="width:240px;">
+                                                <col style="width:190px;">
                                             </colgroup>
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">카드종류</th>
-                                                    <th scope="col">카드번호</th>
-                                                    <th scope="col">거래상태</th>
-                                                    <th scope="col">승인일자</th>
-                                                    <th scope="col">승인번호</th>
-                                                    <th scope="col" class="last">승인금액</th>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">훈련기관</th>
+                                                    <th scope="col">카드결제 유효기간</th>
+                                                    <th scope="col" class="last">선결제금액</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>신한카드 법인카드</td>
-                                                    <td>123456789123</td>
-                                                    <td>정상</td>
-                                                    <td>20141113</td>
-                                                    <td>2698745</td>
-                                                    <td class="last">450,000</td>
+                                                    <td>1</td>
+                                                    <td class="tl">러닝뱅크 원격평생교육원 (5000123124)</td>
+                                                    <td>2011-10-14 ~ 2020-08-05</td>
+                                                    <td class="last">
+                                                        <input type="text" value="" title="선결제금액" name="" id="" class="minwDefault w100p">
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
-                                    <div class="btnGroup mt60">
-                                        <button type="button" class="btnType1 ty3 w190 pd0">다음과정 결제하기</button>
+                                    <h5 class="bigTitle02">결제정보입력</h5>
+                                    <div class="tableArea">
+                                        <table class="view mb0">
+                                            <caption>결제정보입력</caption>
+                                            <colgroup>
+                                                <col style="width:160px;">
+                                                <col style="width:auto;">
+                                                <col style="width:160px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">카드종류</th>
+                                                    <td>
+                                                        <div class="ui_radioBox">
+                                                            <input type="radio" name="r01" id="r0101"> 
+                                                            <label for="r0101">법인카드</label>
+                                                        </div>
+                                                        <div class="ui_radioBox">
+                                                            <input type="radio" name="r01" id="r0102"> 
+                                                            <label for="r0102">개인카드</label>
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row">할부방식</th>
+                                                    <td class="last">
+                                                        <select name="" id="" class="selectBox w100p" title="할부방식 선택" disabled="disabled">
+                                                            <option value="">선택</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="boxBltList">
+                                        <ul>
+                                            <li>* 법인카드는 할부를 지원하지 않습니다.</li>
+                                            <li>* 개인카드의 경우 5만원 이상 결제시 할부기능을 제공합니다.</li>
+                                        </ul>
                                     </div>
 
-                                </section>
-                                <!--// 장바구니 -->
-                                <!-- 선결제 -->
-                                <section role="tabpane3" id="section3" class="tabCont">
-                                    선결제
+                                    <div class="termsDiv">
+                                        <div class="termsEle">
+                                            <div class="termsCont">
+                                                고용노동부 사업주 훈련지원 카드 온라인 결제는 기존 소지하신 법인카드 포인트율 및 항공마일리지 적립율과 관계없이 아래와 같이 적용합니다.<br>
+                                                <span class="color04">법인포인트 : 0.1%</span> <span class="color04 ml15">항공마일리지 : 미적립</span>
+                                            </div>
+                                        </div>
+                                        <div class="termsChk">
+                                            <div class="ui_checkBox">
+                                                <input type="checkbox" name="" id="tchk01">
+                                                <label for="tchk01">동의 합니다.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="termsDiv">
+                                        <div class="termsEle">
+                                            <div class="termsCont">
+                                                본 고용노동부 교육비 지원시스템과 관련한 카드 결제는 ‘본인소속의 범인카드(개인사업자인 경우 대표자명의의 개인카드)로만 하여야 하며, 이를 확인하기 위해서 본인의 성명, 카드번호 등의 결제 정보를 신한 카드와 고용노동부가 상호간에 제공함에 동의 합니다.
+                                            </div>
+                                        </div>
+                                        <div class="termsChk">
+                                            <div class="ui_checkBox">
+                                                <input type="checkbox" name="" id="tchk02">
+                                                <label for="tchk02">동의 합니다.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnType1 w190 pd0">취소</button>
+                                        <button type="button" class="btnType1 ty3 w190">결제하기</button>
+                                    </div>
+
                                 </section>
                                 <!--// 선결제 -->
                             </div>

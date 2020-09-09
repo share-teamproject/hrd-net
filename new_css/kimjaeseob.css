@@ -115,7 +115,11 @@
 .domTit > .essTxt {font-size: 13px; color: #727476;}
 .domTit + .schDom {margin-top: 16px;}
 .domTit + form {margin-top: 16px;}
+.signUpFlow + .domTit {margin-top: 50px;}
 
+.notiTxt01 {font-size: 14px; color: #258384;}
+.schDom + .notiTxt01 {margin-top: 16px;}
+#subContentWrap .notiTxt01 + .sortArea {margin-top: 57px;}
 
 /*검색 영역*/
 .schDom {padding: 25px 20px 25px 50px; border: 3px solid #d8dfeb;}

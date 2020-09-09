@@ -477,8 +477,8 @@
                             <div class="tabListArea"> 
                                 <ul class="tabList" role="tablist">
                                     <li role="tab" aria-controls="section1" aria-selected="false" id="tab1"><button type="button">온라인결제</button></li>
-                                    <li role="tab" aria-controls="section2" aria-selected="true" id="tab2" class="on"><button type="button">장바구니</button></li>
-                                    <li role="tab" aria-controls="section3" aria-selected="false" id="tab3"><button type="button">선결제</button></li>
+                                    <li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">장바구니</button></li>
+                                    <li role="tab" aria-controls="section3" aria-selected="true" id="tab3" class="on"><button type="button">선결제</button></li>
                                 </ul>
                             </div> 
                             <!--// 텝 인덱스 -->
@@ -491,7 +491,12 @@
                                 </section>
                                 <!--// 온라인결제 -->
                                 <!-- 장바구니 -->
-                                <section role="tabpane2" id="section2" class="tabCont on">
+                                <section role="tabpane2" id="section2" class="tabCont">
+                                    장바구니
+                                </section>
+                                <!--// 장바구니 -->
+                                <!-- 선결제 -->
+                                <section role="tabpane3" id="section3" class="tabCont on">
                                     <div class="signUpFlow etc">
                                         <ol class="signUpFlowList" aria-label="총 3단계 중 현재단계 3단계">
                                             <li><em class="stepCount">1</em><span class="txt">장바구니</span></li>
@@ -502,43 +507,6 @@
 
                                     <div class="commentBox02">
                                         <span class="color05">결제가 완료</span>되었습니다.
-                                    </div>
-
-                                    <h5 class="bigTitle02">승인정보</h5>
-                                    <div class="tableArea">
-                                        <table class="view">
-                                            <caption>승인정보</caption>
-                                            <colgroup>
-                                                <col style="width:180px;">
-                                                <col style="width:auto;">
-                                                <col style="width:180px;">
-                                                <col style="width:auto;">
-                                            </colgroup>
-                                            <tfoot>
-                                                <tr>
-                                                    <th scope="row">총결제 금액</th>
-                                                    <td colspan="3" class="last color05">450,000 원</td>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">결제번호</th>
-                                                    <td colspan="3" class="last">812014111313543029260090</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">지원과정수</th>
-                                                    <td>1 개</td>
-                                                    <th scope="row">지원과정 훈련비(계)</th>
-                                                    <td class="last">450,000 원</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">비지원과정수</th>
-                                                    <td>0 개</td>
-                                                    <th scope="row">비지원과정 훈련비(계)</th>
-                                                    <td class="last">0 원</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
                                     </div>
 
                                     <h5 class="bigTitle02">카드승인내역</h5>
@@ -580,11 +548,6 @@
                                         <button type="button" class="btnType1 ty3 w190 pd0">다음과정 결제하기</button>
                                     </div>
 
-                                </section>
-                                <!--// 장바구니 -->
-                                <!-- 선결제 -->
-                                <section role="tabpane3" id="section3" class="tabCont">
-                                    선결제
                                 </section>
                                 <!--// 선결제 -->
                             </div>
