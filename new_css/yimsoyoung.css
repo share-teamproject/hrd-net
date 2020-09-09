@@ -18,3 +18,9 @@
 .ui_checkBox.checkOnly label { display: inline-block; width: 0; height: 0; overflow: hidden; }
 .workStudyArea .passportInput { display: none; }
 .dateSelect.tableDate input { width: 182px; height: 32px; }
+
+/* 나의 관심정보 */
+.esTit > .checkOnly + a { display: inline-block; margin-left: 10px; }
+.esCont.c2.first { border-left: 0; }
+.titleList.half { width: 85%; overflow: hidden; margin-top: 10px; }
+.titleList.half dl { float: left; width: 50%; }

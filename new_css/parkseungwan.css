@@ -73,6 +73,12 @@
 #subContentWrap .subContArea .myInfoArea .searchBox input[type="text"] { width: 436px; }
 #subContentWrap .subContArea .myInfoArea .searchBox + .sortArea { margin-top: 50px; }
 
+/* 나의 맞춤 정보*/
+.myInfoArea .btnGroupSet .btnGroup { margin-top:0; }
+.myInfoArea .schEduCont,.myInfoArea .partArea { margin-top:0; }
+
+#subContentWrap .myInfoArea .sortArea.ty2 { margin:50px 0 0 0; }
+
 /* ==============================
 * MY서비스(기업) > 일학습병행
 * ============================== */ 
@@ -151,6 +157,8 @@
 .workStudyArea .agreeBox .innerBox .txtList li:first-child { margin-top:0; }
 .workStudyArea .agreeBox .radioGroup { float:right; margin:10px 0 0; }
 .workStudyArea .agreeBox .radioGroup .ui_radioBox label { margin-right:0; }
+
+.workStudyArea .tabInterface.join { margin-top: 60px; }
 
 /* ==============================
 * MY서비스(기업) > 컨소시엄
@@ -262,3 +270,10 @@
 /* 전담인력활동수당신청 */
 .workStudyArea .btnList.btnListL ul { text-align:left; margin-top: 20px; }
 .workStudyArea .btnList.btnListL ul li.btnRight { float: right; }
+
+/* ==============================
+* 회원서비스관리
+* ============================== */ 
+
+/* 나의 상담내역 */
+.memberServiceArea .searchBox .btnArea01{margin-left: 15px;}

@@ -62,7 +62,17 @@
 
 /* 관심정보 */
 .myInfoArea .tabList { flex-wrap:wrap; }
-.myInfoArea .tabList li { flex: 1 25%; }
+.myInfoArea .tabList li { flex: 1 33.3%; height:80px; line-height:68px; }
+.myInfoArea .tabList li.on { position:relative; border:2px solid #f6f6f6; color:#3d5895; }
+.myInfoArea .tabList li.on::before { content:''; position: absolute; top:-1px; left:0; width:100%; border-top:8px solid #3d5895; }
+.myInfoArea .tabList li button, 
+.myInfoArea .tabInterface .tabList li a { font-size:26px; }
+.myInfoArea .tabList.five li:nth-child(4) { border-left:1px solid #e2e2e4; }
+.myInfoArea .partArea { margin-top:50px; }
+.myInfoArea .selectionBox { padding-top:30px; border-top:8px #e7e9f0 solid; }
+.myInfoArea .btnGroupSet .btnGroup { margin-top:0; }
+/* .myInfoArea .btnGroupSet .btnGroup .btnType2 { margin-top:0; } */
+.myInfoArea .selectionBox .selectionList li { min-height:70px; }
 
 /*나의 상담 내역*/
 #subContentWrap .subContArea .myInfoArea .searchBox input[type="text"] { width: 100%; }
