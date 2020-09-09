@@ -65,6 +65,7 @@
 .btnGroup.ty3 button + button{ margin-left:10px; }
 .btnGroup.ty4 { margin-top:60px; }
 .btnGroup.ty5 { display:block; text-align:right; margin-top:20px; }
+.btnGroup.ty6 { display:block; text-align:center; margin-top:30px; }
 /* 바로가기 */
 .goLinkLong02 {display:inline-block; min-width:80px; height:26px; line-height:24px; padding:0 20px; text-align:center; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51;}
 .btnH26 {display:inline-block; min-width:112px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:24px;}
@@ -313,6 +314,7 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .myInterestArea { margin-top:15px; }
 .myInterestArea .tabListArea { margin-bottom:60px; }
 .myInterestArea .tabContents .tabCont { margin-bottom:50px; }
+.tabContents.ty2 { margin-top:-50px; }
 
 .infoBtnList { height:45px; }
 .infoBtnList ul { overflow:hidden; }
@@ -494,7 +496,10 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tblInfoTxt07 .innerTxtList02 > dd { font-size:14px; color:#767676; padding-left:30px;}
 .tblInfoTxt07 > .goBtnDiv { position:absolute; top:25px; right:30px; }
 
-
+.tblInfoTxt08 { position:relative; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat 45px 50%; padding:35px 20px 35px 120px; margin-top:30px; }
+.tblInfoTxt08 > ul { display:inline-block; vertical-align:middle;}
+.tblInfoTxt08 > ul > li { position:relative; font-size:14px; color:#767676; line-height:24px; padding-left:10px; }
+.tblInfoTxt08 > ul > li:before { content:'-'; position:absolute; top:0; left:0; color:#929495; }
 
 .txtBlack { color:#292a2d; }
 
@@ -793,6 +798,20 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .windowPop .sortArea .selectViewArea .selectView { display:inline-block; }
 .windowPop .sortArea .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
 .windowPop .sortArea .selectViewArea select { width:120px; }
+
+/* 아이디 비밀번호 찾기 */
+.singUpCert.ty2, .singUpCert.ty3 { margin-top:0; margin-bottom:40px; }
+.singUpCert.ty2 .signUpForm { border:0; border-bottom:1px #e2e2e4 solid; }
+.singUpCert.ty2 .signUpForm.ty2 { border:0; margin-bottom:-40px; }
+.singUpCert.ty2 .signUpForm > .inner {display:inline-block; width:480px; padding:40px 0;}
+.singUpCert.ty2 .singUpCertLink { font-size:16px; }
+.singUpCert.ty2 .singUpCertLink .singUpTxt { font-size:14px; color:#727476; margin-top:25px; }
+.singUpCert.ty2 .singUpCertTit.ty2 > strong, .singUpCert.ty3 .singUpCertTit.ty2 > strong {font-weight:400; font-size:22px; color:#292a2d;}
+.singUpCompList02 > li { text-align:left;  border-bottom:1px #f5f5f5 solid; }
+.singUpCompList02 > li > .ui_radioBox {margin-left:90px;}
+.singUpCompList02 > li > .titSet { display:inline-block; } 
+.singUpCompList02 > li > .titSet .tit {display:inline-block; width:169px; padding-left:15px; line-height:54px; vertical-align:middle; font-size:16px; color:#4e4f51;}
+.singUpCompList02 > li > .titSet .detail {display:inline-block; vertical-align:middle; font-size:14px; color:#727476;}
 
 
 
