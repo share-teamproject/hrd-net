@@ -270,7 +270,6 @@ var toolTip = {
 					$(this).siblings().css({
 						"marginLeft": -(tooltipW+30)
 					})
-				//	$this.siblings().toggleClass('on');
 				}
 				//상단으로 툴팁 오버시 
 				if( (posY < 140)) { 
@@ -280,7 +279,6 @@ var toolTip = {
 						"marginTop": '60px',
 						"marginLeft": -(tooltipW/2-10)
 					})
-				//	$this.siblings().toggleClass('on');
 				}
 				//하단으로 툴팁 오버시 
 				if( (posY+20+tooltipH) > sHeight) { 
@@ -290,19 +288,10 @@ var toolTip = {
 						"marginTop": -(tooltipH+20),
 						"marginLeft": -(tooltipW/2-10)
 					})
-				//	$this.siblings().toggleClass('on');
 				}else{
 				//	$this.siblings().toggleClass('on');
-				}					
-
+				}	
 				$(this).siblings().toggleClass('on');
-				console.log(posX);
-				console.log(posY);
-				console.log(sWidth);
-				console.log(sHeight);
-				console.log(tooltipW);
-				console.log(tooltipH);
-				console.log(idx);
 			});	
 		});		
 	}
@@ -313,7 +302,6 @@ var toolTip = {
 
 var mainSearch = {
 	idx : 0,
-	len : 0,
 
 	init : function() {
 		this.open();
@@ -321,163 +309,122 @@ var mainSearch = {
 
 	open : function() {	
 		var $searchBtn = $('.btnTotalSearchArea .btn');
-		//var $inputSearchBtn = $('.btnTotalSearchArea > li > input');
 		var $tabSelect = $('.tabSelect .content .boxWrap');
-		var $inputSearchKeyword = $('.searchArea .inputArea');
-		mainSearch.len = $searchBtn.length;	
+		var $inputSearchKeyword = $('.searchArea .inputArea').find('input');
 		
 		$searchBtn.each(function(){
 			$(this).on('click', function(){	
-			idx = $searchBtn.index(this);	
-			/*	if($(this).hasClass('on')){							
-					$(this).removeClass('on');
-					$inputSearchBtn.css('display','none');
-					$tabSelect.hide('fast');
-				}else{				
-					$searchBtn.removeClass('on');
-					$searchBtn.eq(idx).addClass('on');
-					$inputSearchBtn.css('display','none')
-					$searchBtn.eq(idx).siblings().css('display','block')
-					$tabSelect.hide('fast');
-					$tabSelect.eq(idx).show('slow');
-					$inputSearchKeyword.css('width','190px;')
-				}*/
-				if(!$searchBtn.hasClass('on')){$inputSearchKeyword.css('width','430px;')};
+				idx = $searchBtn.index(this);
 				
 				if(idx==0){
 					if($(this).hasClass('on')){
-						$(this).removeClass('on');
-						$(this).css('width','70px');
+						$(this).removeClass('on').css('width','60px');
 						$(this).siblings().css('display','none')
 						$tabSelect.eq(idx).hide();
-					}else{						
-						if($searchBtn.eq(1).hasClass('on')){
-							$(this).addClass('on');
-							$searchBtn.eq(1).css('width','190px');
-							$(this).siblings().css('display','block')
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
-							$inputSearchKeyword.css('width','190px;')
-							$(this).css('width','310px');
-						}else if($searchBtn.eq(2).hasClass('on')){
-							$(this).addClass('on');
-							$searchBtn.eq(2).css('width','190px');
-							$(this).siblings().css('display','block')
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
-							$inputSearchKeyword.css('width','190px;')
-							$(this).css('width','310px');	
-						}else if($searchBtn.eq(1).hasClass('on') && $searchBtn.eq(2).hasClass('on')){
-							$(this).addClass('on');
+					}else{	
+						if($searchBtn.eq(1).hasClass('on') && $searchBtn.eq(2).hasClass('on')){							
 							$searchBtn.eq(1).css('width','190px');
 							$searchBtn.eq(2).css('width','190px');	
+							$(this).addClass('on').css('width','190px');
 							$(this).siblings().css('display','block')
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
-							$inputSearchKeyword.css('width','190px;')						
-							$(this).css('width','190px');	
-							console.log('check');
+							$tabSelect.hide('fast').eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')	
+						}else if($searchBtn.eq(1).hasClass('on')){							
+							$searchBtn.eq(1).css('width','190px');
+							$(this).addClass('on').css('width','310px');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast').eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+						}else if($searchBtn.eq(2).hasClass('on')){							
+							$searchBtn.eq(2).css('width','190px');
+							$(this).addClass('on').css('width','310px');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast').eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
 						}else{
-							$(this).addClass('on');
+							$(this).addClass('on').css('width','430px');
 							$(this).siblings().css('display','block')
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
+							$tabSelect.hide('fast').eq(idx).show('slow');
 							$inputSearchKeyword.css({width:'190px'})
-							$(this).css('width','430px');
 						}
 					}					
 				}else if(idx==1){
 					if($(this).hasClass('on')){
-						$(this).removeClass('on');
-						$(this).css('width','70px');
+						$(this).removeClass('on').css('width','60px');
 						$(this).siblings().css('display','none')
 						$tabSelect.eq(idx).hide();
-					}else{						
-						if($searchBtn.eq(0).hasClass('on')){
-							$(this).addClass('on');
+					}else{
+						if($searchBtn.eq(0).hasClass('on') && $searchBtn.eq(2).hasClass('on')){								
 							$searchBtn.eq(0).css('width','190px');
-							$(this).siblings().css('display','block')
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
-							$inputSearchKeyword.css('width','190px;')
-							$(this).css('width','310px');
-						}else if($searchBtn.eq(2).hasClass('on')){
-							$(this).addClass('on');
 							$searchBtn.eq(2).css('width','190px');
+							$(this).addClass('on').css('width','190px');	
 							$(this).siblings().css('display','block')
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
+							$tabSelect.hide('fast').eq(idx).show('slow');
 							$inputSearchKeyword.css('width','190px;')
-							$(this).css('width','310px');	
-						}else if($searchBtn.eq(0).hasClass('on') && $searchBtn.eq(2).hasClass('on')){
-							$(this).addClass('on');
+						}else if($searchBtn.eq(0).hasClass('on')){							
 							$searchBtn.eq(0).css('width','190px');
-							$searchBtn.eq(2).css('width','190px');	
+							$(this).addClass('on').css('width','310px');
 							$(this).siblings().css('display','block')
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
-							$inputSearchKeyword.css('width','190px;')						
-							$(this).css('width','190px');	
-						}else{
-							$(this).addClass('on');
-							$(this).siblings().css('display','block')
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
+							$tabSelect.hide('fast').eq(idx).show('slow');
 							$inputSearchKeyword.css('width','190px;')
-							$(this).css('width','430px');
+						}else if($searchBtn.eq(2).hasClass('on')){
+							$searchBtn.eq(2).css('width','190px');
+							$(this).addClass('on').css('width','310px');							
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast').eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+						}else{
+							$(this).addClass('on').css('width','430px');
+							$(this).siblings().css('display','block')
+							$tabSelect.hide('fast').eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
 						}
 					}					
 				}else if(idx==2) {					
 					if($(this).hasClass('on')){
-						$(this).removeClass('on');
-						$(this).css('width','70px');
+						$(this).removeClass('on').css('width','60px');
 						$(this).siblings().css('display','none')
 						$tabSelect.eq(idx).hide();
-					}else{											
-						if($searchBtn.eq(0).hasClass('on')){
-							$(this).addClass('on');
-							$searchBtn.eq(0).css('width','190px');
-							$(this).siblings().css('display','block')
-							$('#inputPeriod').focus();
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
-							$inputSearchKeyword.css('width','190px;')
-							$(this).css('width','310px');
-						}else if($searchBtn.eq(1).hasClass('on')){
-							$(this).addClass('on');
-							$searchBtn.eq(1).css('width','190px');
-							$(this).siblings().css('display','block')							
-							$('#inputPeriod').focus();
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
-							$inputSearchKeyword.css('width','190px;')
-							$(this).css('width','310px');	
-						}else if($searchBtn.eq(0).hasClass('on') && $searchBtn.eq(1).hasClass('on')){
-							$(this).addClass('on');
+					}else{
+						if($searchBtn.eq(0).hasClass('on') && $searchBtn.eq(1).hasClass('on')){							
 							$searchBtn.eq(0).css('width','190px');
 							$searchBtn.eq(1).css('width','190px');	
 							$(this).siblings().css('display','block')
 							$('#inputPeriod').focus();
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
-							$inputSearchKeyword.css('width','190px;')						
-							$(this).css('width','190px');	
+							$tabSelect.hide('fast').eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')	
+							$(this).addClass('on').css('width','190px');						
+						}else if($searchBtn.eq(0).hasClass('on')){							
+							$searchBtn.eq(0).css('width','190px');
+							$(this).addClass('on').css('width','310px');
+							$(this).siblings().css('display','block')
+							$('#inputPeriod').focus();
+							$tabSelect.hide('fast').eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
+						}else if($searchBtn.eq(1).hasClass('on')){							
+							$searchBtn.eq(1).css('width','190px');
+							$(this).addClass('on').css('width','310px');
+							$(this).siblings().css('display','block')
+							$('#inputPeriod').focus();
+							$tabSelect.hide('fast').eq(idx).show('slow');
+							$inputSearchKeyword.css('width','190px;')
 						}else{
-							$(this).addClass('on');
-							$(this).css('width','430px');
+							$(this).addClass('on').css('width','430px');
 							$inputSearchKeyword.css('width','190px;')
 							$(this).siblings().css('display','block')
 							$('#inputPeriod').focus();	
-							$tabSelect.hide('fast');
-							$tabSelect.eq(idx).show('slow');
+							$tabSelect.hide('fast').eq(idx).show('slow');
 						}
 					}						
 				}
+
+				if(!$searchBtn.hasClass('on')){ 
+					$inputSearchKeyword.css('width','560px')
+				};
 			});		
-		});			
+		});					
 	}
 };
-
 
 /* ==============================
 	* navigation 

@@ -16,9 +16,9 @@
 #mainTopWrap .searchArea .btnArea { display:table-cell; box-sizing:border-box; vertical-align:top; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea { display:flex; justify-content:flex-end; width:100%; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea > li { position:relative; }
-#mainTopWrap .searchArea .btnArea .btnTotalSearchArea > li > button + input { display:none; position:absolute; top:0; left:70px; z-index:1; width:125px; height:68px; border:none; }
-#mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn { position:relative; width:70px; height:68px; text-align:left; padding:32px 20px 0 23px; font-size:14px; color:#727476; } 
-#mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn:after { position:absolute; top:13px; left:20px; width:30px; height:24px; content:''; background:url('../new_images/common/icoSearchSet.png') no-repeat; }
+#mainTopWrap .searchArea .btnArea .btnTotalSearchArea > li > button + input { display:none; position:absolute; top:0; left:60px; z-index:1; width:130px; min-width:130px !important; height:68px; border:none; }
+#mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn { position:relative; width:60px; height:68px; text-align:left; padding:32px 16px 0 17px; font-size:14px; color:#727476; } 
+#mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn:after { position:absolute; top:13px; left:15px; width:30px; height:24px; content:''; background:url('../new_images/common/icoSearchSet.png') no-repeat; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn#btnRegion:after { background-position: 0 0; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn#btnCategory:after { background-position: -30px 0; }
 #mainTopWrap .searchArea .btnArea .btnTotalSearchArea .btn#btnPeriod:after { background-position: -60px 0; }

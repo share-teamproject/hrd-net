@@ -197,7 +197,7 @@
                                             </li>
                                             <li>
                                                 <button type="button" class="btn" id="btnPeriod" title="기간검색">기간</button>
-                                                <input type="text" title="기간" name="inputPeriod" id="inputPeriod" placeholder="8.11~8.21" value=""><label for="inputPeriod" class="hide">기간</label>
+                                                <input type="text" title="기간" name="inputPeriod" id="inputPeriod" placeholder="202009 - 202010" value=""><label for="inputPeriod" class="hide">기간</label>
                                             </li>
                                             <li><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색"><img src="../new_images/common/btnSearch02.png" alt="검색"></button></li>
                                         </ul>
@@ -430,7 +430,7 @@
                                                 <script>
                                                     $(function() {
                                                         $('#inputPeriod').daterangepicker({
-                                                            timePicker: true,
+                                                            timePicker: false,
                                                             startDate: moment().startOf('hour'),
                                                             endDate: moment().startOf('hour').add(32, 'hour'),
                                                             locale: {

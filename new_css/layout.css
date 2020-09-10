@@ -335,6 +335,7 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .pagenation > a.on { border-bottom:4px solid #4270e0; color: #4270e0; }
 .pagenation > a:hover:not(.pb) { border-bottom:4px solid #4270e0; color: #4270e0; }
 .pagenation > .pb { border:1px solid #ccc; font-size:0; overflow:hidden; margin:0 15px; width:30px; height:30px; background:url('../new_images/common/btnPage.png') center no-repeat; background-size: 6px 10px;}
+.pagenation > .pb2 { border:1px solid #ccc; font-size:0; overflow:hidden; margin:0 15px; width:30px; height:30px; background:url('../new_images/common/btnPage2.png') center no-repeat;}
 .pagenation > .next { transform: rotate(180deg); }
 
 /* ==============================
