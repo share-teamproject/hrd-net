@@ -60,7 +60,7 @@
 #mainTopWrap .learningCard .mainHeadingTitle:before { position:absolute; top:20px; left:290px; width:160px; height:1px; background:#fff; opacity:.5; content:''; }
 #mainTopWrap .learningCard .mainHeadingTitle:after { position:absolute; top:20px; right:290px; width:160px; height:1px; background:#fff; opacity:.5; content:''; }
 #mainTopWrap .learningCard ul { display:flex; justify-content:center; margin:25px 0 0; }
-#mainTopWrap .learningCard ul > li { width:99px; height:50px; text-align:center; margin:0 0 0 30px; }
+#mainTopWrap .learningCard ul > li { width:99px; height:50px; text-align:center; margin:0 0 0 50px; }
 #mainTopWrap .learningCard ul > li:first-child { margin:0; }
 #mainTopWrap .learningCard ul > li a { display:block; width:100%; height:100%; color:#fff; font-size:22px; background:url('../new_images/main/learningCardSet.png') no-repeat; background-size: 984px 50px; padding: 60px 0 0 0; }
 #mainTopWrap .learningCard ul > li.learningCard01 a { background-position:0 0; }
