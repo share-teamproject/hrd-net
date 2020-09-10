@@ -3,15 +3,20 @@
 /* ==============================
 * common
 * ============================== */
-.commentBox {margin-top: 13px; min-height:53px; padding:30px 20px 30px 125px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 46px center;}
+.commentBox {margin-top: 13px; min-height:53px; padding:30px 20px 30px 125px; border:3px solid #e7e9f0; background:url(../new_images/common/pageComment2.png) no-repeat left 46px center; text-align: left;}
 .commentBox.ty1 {background-position: 46px 30px;}
 .commentBox .dashList {display:inline-block; vertical-align:middle;}
 .commentBox .dlType1 {display:inline-block; vertical-align:middle;}
-.commentBox + .bigTitle02 {margin-top:62px;}
+.commentBox + .bigTitle02 {margin-top:52px;}
 .commentBox + .tableArea {margin-top:40px;}
 .commentBox + form {margin-top:40px;}
 .commentTxt01 {font-weight: 500; font-size: 14px; color: #292a2d; line-height: 20px;}
 .bigTitle02 + .commentBox {margin-top: 3px;}
+.signUpFlow + .commentBox {margin-top: 57px;}
+
+.commentBox02 {padding: 32px 10px 34px 10px; text-align: center; border: 1px solid #e2e2e4; font-weight: 500; font-size: 22px; color: #292a2d;}
+.commentBox02 + .bigTitle02 {margin-top: 52px;}
+.signUpFlow + .commentBox02 {margin-top: 57px;}
 
 .dashList {}
 .dashList > li {position:relative; padding-left:9px; font-size:14px; color:#727476; line-height:18px;}
@@ -110,7 +115,11 @@
 .domTit > .essTxt {font-size: 13px; color: #727476;}
 .domTit + .schDom {margin-top: 16px;}
 .domTit + form {margin-top: 16px;}
+.signUpFlow + .domTit {margin-top: 50px;}
 
+.notiTxt01 {font-size: 14px; color: #258384;}
+.schDom + .notiTxt01 {margin-top: 16px;}
+#subContentWrap .notiTxt01 + .sortArea {margin-top: 57px;}
 
 /*검색 영역*/
 .schDom {padding: 25px 20px 25px 50px; border: 3px solid #d8dfeb;}
@@ -282,8 +291,25 @@
 .guideDmpEle:before {content: attr(data-guidetxt); position: absolute; top: 0; left: 0; width: 100%; text-align: center; font-size: 14px; color: #000; background: #ddd;}
 .guideDmpEle:after {content: attr(data-guidetxt); position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; font-size: 14px; color: #000; background: #ddd;}
 
+/*카드결제 정보*/
+.tableArea + .tBox {padding-top: 10px;}
+.tBox {}
+.tBox > .inner {display: table; width: 100%; table-layout: fixed; border: 1px solid #e2e2e4; padding: 30px 0;}
+.tBox > .inner > .ele {display: table-cell; vertical-align: middle;}
+.tBox > .inner > .ele.int {width: 280px; border-right: 2px solid #e1e4e9; text-align: center;}
+.tBox > .inner > .ele.summ {padding: 0 40px 0 100px;}
+.tBox .tcnt {display: inline-block;} 
+.tBox .tcnt em {display: inline-block; width: 80px; border: 2px solid #258384; font-size: 32px; color: #258384; line-height: 76px; border-radius: 50%;}
+.tBox .tcnt span {display: block; font-size: 18px; color: #292a2d; margin-top: 4px;}
+.tBox + .btnGroup {margin-top: 60px;}
+.tBox + .bigTitle02 {margin-top: 52px;}
 
-
+.pList {}
+.pList > li {font-size: 0;}
+.pList > li + li {margin-top: 16px;}
+.pList > li > .txt {display: inline-block; vertical-align: middle; width: 50%; font-size: 16px; color: #4e4f51;}
+.pList > li > .cont {display: inline-block; vertical-align: middle; width: 50%; text-align: right; font-size: 16px; color: #4e4f51;} 
+.pList > li.ty1 .txt, .pList > li.ty1 .cont {color: #4270e0;}
 
 
 

@@ -476,8 +476,8 @@
                             <!-- 텝 인덱스 -->  
                             <div class="tabListArea"> 
                                 <ul class="tabList" role="tablist">
-                                    <li role="tab" aria-controls="section1" aria-selected="true" id="tab1" class="on"><button type="button">온라인결제</button></li>
-                                    <li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">장바구니</button></li>
+                                    <li role="tab" aria-controls="section1" aria-selected="false" id="tab1"><button type="button">온라인결제</button></li>
+                                    <li role="tab" aria-controls="section2" aria-selected="true" id="tab2" class="on"><button type="button">장바구니</button></li>
                                     <li role="tab" aria-controls="section3" aria-selected="false" id="tab3"><button type="button">선결제</button></li>
                                 </ul>
                             </div> 
@@ -486,146 +486,100 @@
                             <!-- 텝 컨텐츠 -->
                             <div class="tabContents">
                                 <!-- 온라인결제 -->
-                                <section role="tabpanel" id="section1" class="tabCont on">
-                                    <div class="domTit">
-                                        <p class="hTxt">장바구니에 <span class="color05">한국고용정보원</span>의 훈련과정 <span class="cnt color01">2</span>건이 있습니다.</p>
-                                        <span class="essTxt">“<span class="color01">＊</span>” 항목은 필수 입력 항목 입니다.</span>
-                                    </div>
-                                    <div class="schDom ty2">
-                                        <div class="schDomCont">
-                                            <strong class="tit">훈련기관명 <span title="필수입력" class="color01">＊</span></strong>
-                                            <div class="ele">
-                                                <input type="text" value="" title="훈련기관명 입력" name="" id="">
-                                            </div>
-                                        </div>
-                                        <div class="schDomCont">
-                                            <strong class="tit">훈련기관 관리번호</strong>
-                                            <div class="ele">
-                                                <input type="text" value="" title="훈련기관 관리번호 입력" name="" id="">
-                                            </div>
-                                        </div>
-                                        <div class="schDomCont">
-                                            <strong class="tit">훈련과정명</strong>
-                                            <div class="ele">
-                                                <input type="text" value="" title="훈련과정명 입력" name="" id="">
-                                            </div>
-                                        </div>
-                                        <div class="schDomCont">
-                                            <strong class="tit">훈련과정번호</strong>
-                                            <div class="ele">
-                                                <input type="text" value="" title="훈련과정번호 입력" name="" id="">
-                                            </div>
-                                        </div>
-                                        <div class="schDomCont">
-                                            <strong class="tit normal">검색 기간</strong>
-                                            <div class="ele">
-                                                <div class="dateDom">
-                                                    <div class="dateSelect">
-                                                        <input type="text" value="" placeholder="20200903" title="달력" name="date" id="date01">
-                                                    </div>
-                                                    <div class="dateSelect">
-                                                        <input type="text" value="" placeholder="20200903" title="달력" name="date" id="date02">
-                                                    </div>   
-                                                </div>
-                                                <div class="dateRangePick">
-                                                    <button type="button">1주일</button>
-                                                    <button type="button">1개월</button>
-                                                    <button type="button">3개월</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="btnGroup">
-                                            <button type="button" class="btnType3">검색</button>
-                                        </div>
+                                <section role="tabpanel" id="section1" class="tabCont">
+                                    온라인결제
+                                </section>
+                                <!--// 온라인결제 -->
+                                <!-- 장바구니 -->
+                                <section role="tabpane2" id="section2" class="tabCont on">
+                                    <div class="signUpFlow etc">
+                                        <ol class="signUpFlowList" aria-label="총 3단계 중 현재단계 3단계">
+                                            <li><em class="stepCount">1</em><span class="txt">장바구니</span></li>
+                                            <li><em class="stepCount">2</em><span class="txt">결제</span></li>
+                                            <li aria-current="step" class="on"><em class="stepCount">3</em><span class="txt">완료</span></li>
+                                        </ol>
                                     </div>
 
-                                    <div class="sortArea ty3">
-                                        <p class="totalNum">전체 <strong>14</strong> 건</p>
-                                        <div class="selectViewArea">
-                                            <div class="selectView">
-                                                <label for="pageRow1">페이지당 조회건수</label>
-                                                <select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
-                                                    <option value="10" selected="selected">10개씩</option>
-                                                    <option value="20">20개씩</option>
-                                                    <option value="30">30개씩</option>
-                                                    <option value="50">50개씩</option>
-                                                    <option value="100">100개씩</option>
-                                                </select>
-                                            </div>                                     
-                                        </div>
+                                    <div class="commentBox02">
+                                        <span class="color05">결제가 완료</span>되었습니다.
                                     </div>
 
+                                    <h5 class="bigTitle02">승인정보</h5>
                                     <div class="tableArea">
-                                        <table class="list mb0">
-                                            <caption>온라인 결제 목록</caption>
+                                        <table class="view">
+                                            <caption>승인정보</caption>
                                             <colgroup>
-                                                <col style="width:80px;">
+                                                <col style="width:180px;">
                                                 <col style="width:auto;">
-                                                <col style="width:140px;">
-                                                <col style="width:80px;">
-                                                <col style="width:110px;">
-                                                <col style="width:110px;">
-                                                <col style="width:110px;">
-                                                <col style="width:110px;">
+                                                <col style="width:180px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tfoot>
+                                                <tr>
+                                                    <th scope="row">총결제 금액</th>
+                                                    <td colspan="3" class="last color05">450,000 원</td>
+                                                </tr>
+                                            </tfoot>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">결제번호</th>
+                                                    <td colspan="3" class="last">812014111313543029260090</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">지원과정수</th>
+                                                    <td>1 개</td>
+                                                    <th scope="row">지원과정 훈련비(계)</th>
+                                                    <td class="last">450,000 원</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">비지원과정수</th>
+                                                    <td>0 개</td>
+                                                    <th scope="row">비지원과정 훈련비(계)</th>
+                                                    <td class="last">0 원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h5 class="bigTitle02">카드승인내역</h5>
+                                    <div class="tableArea">
+                                        <table class="list">
+                                            <caption>카드승인내역</caption>
+                                            <colgroup>
+                                                <col style="width:150px;">
+                                                <col style="width:auto;">
+                                                <col style="width:150px;">
+                                                <col style="width:150px;">
+                                                <col style="width:150px;">
+                                                <col style="width:150px;">
                                             </colgroup>
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">선택</th>
-                                                    <th scope="col">훈련기관</th>
-                                                    <th scope="col">훈련과정명</th>
-                                                    <th scope="col">회차</th>
-                                                    <th scope="col">훈련기간</th>
-                                                    <th scope="col">훈련비</th>
-                                                    <th scope="col">결제완료금액</th>
-                                                    <th scope="col" class="last">잔액</th>
+                                                    <th scope="col">카드종류</th>
+                                                    <th scope="col">카드번호</th>
+                                                    <th scope="col">거래상태</th>
+                                                    <th scope="col">승인일자</th>
+                                                    <th scope="col">승인번호</th>
+                                                    <th scope="col" class="last">승인금액</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>
-                                                        <div class="ui_checkBox single">
-                                                            <input type="checkbox" name="chkReturn" id="sel01">
-                                                            <label for="sel01">선택</label>
-                                                        </div>
-                                                    </td>
-                                                    <td>훈련기관명</td>
-                                                    <td>훈련과정명</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>221,130</td>
-                                                    <td>221,130</td>
-                                                    <td class="last">221,130</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="8" class="none last">검색 조건에 맞는 데이터가 없습니다.</td>
+                                                    <td>신한카드 법인카드</td>
+                                                    <td>123456789123</td>
+                                                    <td>정상</td>
+                                                    <td>20141113</td>
+                                                    <td>2698745</td>
+                                                    <td class="last">450,000</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-
-                                        <div class="mBtnDom">
-                                            <button type="button" class="btnType2 primary">장바구니 담기</button>
-                                        </div>
-
-                                        <!-- paging : pc -->
-                                        <div class="pagenation">
-                                            <a href="/" class="pb prev">이전보기</a>
-                                            <a href="/" class="on">1</a>
-                                            <a href="/">2</a>
-                                            <a href="/">3</a>
-                                            <a href="/">4</a>
-                                            <a href="/">5</a>
-                                            <a href="/">6</a>
-                                            <a href="/">7</a>
-                                            <a href="/" class="pb next">다음보기</a>
-                                        </div> 
-                                        <!-- //paging : pc -->
                                     </div>
 
-                                </section>
-                                <!--// 온라인결제 -->
-                                <!-- 장바구니 -->
-                                <section role="tabpane2" id="section2" class="tabCont">
-                                    장바구니
+                                    <div class="btnGroup mt60">
+                                        <button type="button" class="btnType1 ty3 w190 pd0">다음과정 결제하기</button>
+                                    </div>
+
                                 </section>
                                 <!--// 장바구니 -->
                                 <!-- 선결제 -->
@@ -635,7 +589,7 @@
                                 <!--// 선결제 -->
                             </div>
                             <!--// 텝 컨텐츠 -->
-                        </div>                        
+                        </div>
 
                     </div>
                 </div>
