@@ -754,10 +754,10 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .ui_radioBox.single {width:26px; height:26px; padding-left:26px;}
 .ui_radioBox.single label { font-size:0; }
 
-/* 개인정보처리방침,이메일수집거부,저작권보호정책*/
+/* 개인정보처리방침,이메일수집거부,저작권보호정책, 이용약관*/
 .commonBottomArea {}
 .commonBottomArea .cBotAreaBox { padding:30px; margin-top:15px; border:1px #e2e2e4 solid; } 
-.commonBottomArea .cBotAreaBox .txt01 { font-size:16px; color:#4e4f51; margin-top:10px; }
+.commonBottomArea .cBotAreaBox .txt01 { font-size:16px; color:#4e4f51; margin-top:15px; }
 .commonBottomArea .cBotAreaBox .txt01.indent { text-indent:-24px; padding-left:24px; }
 .commonBottomArea .cBotAreaBox .txt01.pl { padding-left:24px; }
 .commonBottomArea .cBotAreaBox .txt02 { font-size:14px; color:#727476; line-height:26px; margin-top:-5px; padding-left:24px; }
@@ -765,8 +765,11 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .commonBottomArea .cBotAreaBox .txt03 { font-size:14px; color:#727476; line-height:26px; margin-top:10px; padding-left:24px; }
 .commonBottomArea .cBotAreaBox .txt03 .download { margin-left:10px; }
 .commonBottomArea .cBotAreaBox .txt04 li { font-size:14px; color:#727476;  line-height:26px; text-indent:-7px; padding-left:28px; }
-.commonBottomArea .cBotAreaBox .title01 { font-size:18px; color:#292a2d; margin-top:60px; }
-.commonBottomArea .cBotAreaBox .title02 { font-size:18px; color:#292a2d; margin-top:10px; }
+.commonBottomArea .cBotAreaBox .txt05 { margin-top:10px; }
+.commonBottomArea .cBotAreaBox .txt05 li { font-size:14px; color:#727476;  line-height:26px; text-indent:-17px; padding-left:42px; }
+.commonBottomArea .cBotAreaBox .title01 { font-size:18px; color:#292a2d; margin-top:60px; font-weight:500; }
+.commonBottomArea .cBotAreaBox .title01.ty2 {margin-top:30px; }
+.commonBottomArea .cBotAreaBox .title02 { font-size:18px; color:#292a2d; margin-top:10px; font-weight:500; }
 .commonBottomArea .cBotAreaBox .title02_big { font-size:18px; color:#292a2d; }
 .commonBottomArea .cBotAreaBox .img01 {text-align:center; margin:20px 0; }
 
@@ -812,6 +815,45 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .singUpCompList02 > li > .titSet { display:inline-block; } 
 .singUpCompList02 > li > .titSet .tit {display:inline-block; width:169px; padding-left:15px; line-height:54px; vertical-align:middle; font-size:16px; color:#4e4f51;}
 .singUpCompList02 > li > .titSet .detail {display:inline-block; vertical-align:middle; font-size:14px; color:#727476;}
+
+
+/* HRD-Net 소개 */
+#subTopWrap.topVisu08 { height:344px; background: url('../new_images/common/topVisual08.jpg') 50% 0 no-repeat; }
+#subTopWrap.topVisu08 .subTopArea { width:1140px; height:304px; margin:0 auto; color:#fff; }
+#subTopWrap.topVisu08 .subTopArea .subTopTilte { font-size:40px; text-align:center; padding:130px 0 10px; font-weight:500; }
+.subTopIcon { text-align:right; } 
+.subTopIcon .print{font-size:0; line-height:0; width:40px; height:40px; background:url('../new_images/common/icoPrint.png') no-repeat 0 0;}
+.IntroduceBottomArea {}
+.IntroduceBottomArea .title01 { font-size:26px; color:#292a2d; font-weight:500; text-align:center; }
+.IntroduceBottomArea .title02 { position:relative; font-size:26px; color:#292a2d; font-weight:500; text-align:center; padding-top:60px; margin-top:50px; }
+.IntroduceBottomArea .title02:before { content:''; position:absolute; top:0; left:50%; margin-left:-40px; width:80px; height:6px; background:#4171df; }
+.IntroduceBottomArea .title02_1 { font-size:16px; color:#727476; text-align:center; margin-top:30px; }
+.IntroduceBottomArea .logoBox { font-size:16px; color:#727476; height:120px; line-height:28px; padding:5px 0 0 420px; margin-top:40px; background: url('../new_images/common/logoBox.png') 0 0 no-repeat;  }
+.IntroduceBottomArea .historyBox {margin-top:-30px; }
+.IntroduceBottomArea .historyBox > .historyList { overflow:hidden;}
+.IntroduceBottomArea .historyBox > .historyList > dt { float:left; position:relative; width:230px; font-size:80px; color:#eeeeef; font-weight:600; letter-spacing:-2px; padding-top:30px; }
+.IntroduceBottomArea .historyBox > .historyList > dd { position:relative; float:left; padding-left:66px; padding-top:60px; }
+.IntroduceBottomArea .historyBox > .historyList > dd:after { content:''; position:absolute; top:85px; left:-16px; width:16px; height:16px; background:#27b8ba; border-radius:50%; }
+.IntroduceBottomArea .historyBox > .historyList > dd:before { content:''; position:absolute; top:0; left:-8px; height:calc(100% - 0px); border-left:1px solid #e1e4e9;  }
+.IntroduceBottomArea .historyBox > .historyList.first > dd:before { top:85px; }
+.IntroduceBottomArea .historyBox > .historyList.End > dd:before { top:-85px; }
+.IntroduceBottomArea .historyBox > .historyList .historyTit { font-size:22px; font-weight:500; height:40px; }
+.IntroduceBottomArea .historyBox > .historyList .historyTxt { overflow:hidden; width:840px;  }
+.IntroduceBottomArea .historyBox > .historyList .historyTxt > li { float:left; width:33.3%; height:100%; margin-bottom:20px; }
+.IntroduceBottomArea .historyBox > .historyList .historyTxt > li > p { font-size:18px; color:#4e4f51; }
+.IntroduceBottomArea .historyBox > .historyList .historyTxt > li > span { display:block; font-size:14px; color:#727476; line-height:24px; padding:0 0 5px 7px;  text-indent:-7px; }
+.IntroduceBottomArea .serviceList { overflow:hidden; margin:50px 0; }
+.IntroduceBottomArea .serviceList > li { float:left; width:50%; text-align:center; }
+.IntroduceBottomArea .serviceList > li.type1 { background: url('../new_images/common/imgService01.png') 50% 0 no-repeat; padding-top:250px; }
+.IntroduceBottomArea .serviceList > li.type2 { background: url('../new_images/common/imgService02.png') 50% 0 no-repeat; padding-top:250px; }
+.IntroduceBottomArea .serviceList > li > p { font-size:22px; padding-bottom:10px;  }
+.IntroduceBottomArea .serviceList > li > span { font-size:14px; color:#727476; }
+.serviceList02 { margin-bottom:40px; }
+.serviceList02 .title { font-size:18px; padding-bottom:10px; }
+.serviceList02 .txtList > li { position:relative; font-size:14px; color:#727476; line-height:28px; padding-left:28px; }
+.serviceList02 .txtList > li:before {content:''; position:absolute; top:12px; left:10px; width:8px; height:4px; background:#27b8ba; }
+
+
 
 
 
