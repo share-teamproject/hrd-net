@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* ==============================
+* 0831 일학습병행제 : front.css
+* ============================== */
+/* 블릿타이틀 + 컨텐츠 */
+#front .txtCon02{width:100%;margin-bottom:20px;}
+#front .txtCon02 .scon{line-height:22px;color:#727476;font-size:14px;}
+
+/* 그린색 글씨 */
+.tabDescG{width:100%;line-height:1.3;margin-top:10px;margin-bottom:20px;margin-left:20px;text-indent:-10px;color:#258384;font-size:14px;}
+.tabDescG01{width:100%;line-height:1.3;margin-left:10px;margin-bottom:10px;text-indent:-10px;color:#258384;font-size:14px;}
+
+
+/* 테이블 왼쪽정렬 */
+.tableArea table.view.tc td.left{text-align:left;}
+.tableArea table.list td.left{text-align:left;}
+
+/* 외부평가 및 훈련과정개발보고서(PDMS) 영역 */
+.studyArea01{margin:0 auto; margin-top:100px; width:900px; height:430px; background:url('../new_images/common/eva.png') no-repeat 0 0;}
+.studyArea02{margin:0 auto; margin-top:100px; width:900px; height:430px; background:url('../new_images/common/pdms.png') no-repeat 0 0;}
+.studyText{float:right; width:290px; margin:130px 40px; text-align:center;}
+.studyText .Title{font-size:22px; line-height:34px; margin-bottom: 20px;}
+.studyText .Small{line-height:24px; color:#727476;}
+
+/* 팝업 영역 */
+#popupWrap{padding:40px !important;}
+#popupWrap .line{padding-top:40px; border-top:2px solid #a0a0a0;}
+.bultPopup-h4{width:900px;margin-bottom:20px;padding-top:16px;color:#292a2d;font-size:22px;background:url('../new_images/common/bult_blueline.png') no-repeat 0 0;background-size:4px 0 0 23px;}
+
+
+/* ==============================
+* 일학습병행제_0831 : contents.css
+* ============================== */ 
+#subContentWrap .subContArea .studyArea {padding:30px 0 0;}
+#subContentWrap .subContArea .studyAreaList {margin-top:-20px;}
+.study01 {min-width:100%; height:138px;}
+.study01 > li {float:left; width:270px; height:138px; border-bottom:1px solid #d8dfeb;background: url(../new_images/common/studyImg01.png) no-repeat; margin-top:20px; margin-right:14px;}
+.study01 > li > img {float:left; margin-top:20px;}
+.study01 > li > p {width:200px; font-size:14px; font-weight:300; line-height:24px; margin:26px 0 0 70px;}
+
+.study02 {min-width:100%; height:200px; padding-top:20px;}
+.study02 > li {float:left; width:222px; height:180px; border-right:1px solid #d8dfeb; margin:20px 12px;}
+.study02 > li.tit {margin:0 auto; background: url(../new_images/common/study_ico05.png)no-repeat center top;}
+.study02 > li > p {margin:0 auto; width:200px; font-size:14px; font-weight:300; text-align:center; line-height:24px; padding-top:70px;}
+.study02  > li:last-child { border-right:none; }
+
+.study03 {min-width:100%; height:140px; background: url(../new_images/common/studyImg02.png) no-repeat; margin-top:20px;}
+.study03 > li {float:left; width:264px; height:92px; border-right:1px solid #d8dfeb; margin-top:24px; margin-left:20px;}
+.study03  > li:last-child { border-right:none;}
+.study03 > li > img {float:left; margin-top:20px;}
+.study03 > li > p {width:200px; font-size:14px; font-weight:300; line-height:24px; padding-top:6px; margin-left:64px;}
+
+.study04 {min-width:120%; height:144px;}
+.study04 > li {float:left; width:300px; height:144px; margin-top:20px; margin-right:20px;}
+.study04  > li:last-child {margin-left:100px;}
+.study04 > li > img {float:left;}
+.study04 > li > p {width:250px; font-size:14px; font-weight:300; line-height:24px; padding-top:26px; margin-left:140px;}
