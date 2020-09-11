@@ -11,7 +11,7 @@
 	<meta name="robots" content="all">
 	<meta name="keywords" content="HRD">
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
-	<title>회원정보변경 | 회원정보관리 | HRD-Net</title>
+	<title>회원탈퇴 | 회원정보관리 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
 	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
@@ -306,7 +306,7 @@
 						<li class="verPC"><a href="/">MY 서비스</a></li>
 						<li><a href="/">회원서비스관리</a></li>
 						<li><a href="/">회원정보관리</a></li>
-						<li class="on"><a href="/">회원정보변경</a></li>
+						<li class="on"><a href="/">회원탈퇴</a></li>
 					</ul>
 				</div>
 			</div>
@@ -426,7 +426,7 @@
 				
 				<div class="subContArea">
 					<div class="headingTitleArea">
-						<h3 class="headingTitle">회원정보변경</h3>
+						<h3 class="headingTitle">회원탈퇴</h3>
 						<!--p class="headingText">직업능력개발정보망(HRD-Net) 서비스 이용에 대하여 궁금한 점이나 문의사항을 등록해주시면 빠른 시간 내에 답변해 드리겠습니다.</p-->
 						<div class="headingIcon">
 							<ul>
@@ -440,167 +440,65 @@
 					<div class="contentArea">
 						<!-- My서비스 컨텐츠 -->
 						<div class="myInfoArea">
-							<div class="boxArea">
-								<div class="pageComment">
-									<ul>
-										<li>- HRD-Net은 회원님의 개인정보를 신중히 취급하여, 회원님의 동의 없이 기재하신 회원정보가 공개되지 않습니다.</li>
-										<li>- 개인정보를 안정하게 보호하기 위해 비밀번호를 다시 한번 입력해주세요.</li>
-									</ul>
+							<div class="boxArea withDrawal">
+								<div class="comment">
+									<p class="tit"><strong>잠깐!</strong> 지금 회원 탈퇴를 하시게 되면</p>
+								</div>
+								<ul class="txtList type03">
+									<li>추후 재가입 시 동일한 아이디로는 재가입이 불가능합니다.</li>
+									<li>탈퇴 시 각 게시판 (질문과답변, 개선및제안 등)에 작성하신 게시물은 삭제되지 않습니다.</li>
+									<li>홈페이지 로그인을 하실 수 없으며, 지금까지 운영한 직업훈련이력 및 행정시스템 승인권한은 유지됩니다.</li>
+								</ul>
+							</div>
+							
+							<div class="agreeChkBox">
+								<div class="ui_checkBox">
+									<input type="checkbox" name="agreeChk" id="agreeChk">
+									<label for="agreeChk">위 내용에 동의 합니다.</label>
 								</div>
 							</div>
-							<div class="tableArea">
-								<!-- 고용보험 가입정보 테이블 -->
-								<div class="tableTitleArea">
-									<h4 class="tableTitle">고용보험 가입정보</h4>
-								</div>
-								<table class="view">
-									<caption>고용보험 가입정보 입력 폼</caption>
-									<colgroup>
-									<col style="width:auto;">
-									<col style="width:auto;">
-									</colgroup>
-									<tbody>
-										<tr>
-											<th scope="row">기업체명</th>
-											<td>biz0123</td>
-										</tr>
-										<tr>
-											<th scope="row">고용보험관리번호</th>
-											<td>10782112550</td>
-										</tr>
-										<tr>
-											<th scope="row">사업자등록번호</th>
-											<td>631025-*******</td>
-										</tr>
-										<tr>
-											<th scope="row">대표자성명</th>
-											<td>나영돈</td>
-										</tr>
-										<tr>
-											<th scope="row">대표자 주민번호</th>
-											<td>631025 - ********</td>
-										</tr>
-										<tr>
-											<th scope="row">전화번호</th>
-											<td>043–870-8726</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="tableArea">
-								<div class="tableTitleArea">
-									<h4 class="tableTitle">기업회원정보</h4>
-									<div class="tableComment">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
-								</div>
+							
+							<div class="tableArea mt30">
 								<table class="view form">
-									<caption>기업회원정보 입력 폼</caption>
+									<caption>탈퇴정보 입력 폼</caption>
 									<colgroup>
 									<col style="width:auto;">
 									<col style="width:auto;">
 									</colgroup>
 									<tbody>
 										<tr>
-											<th scope="row"><label for="userAddr01">주소</label> <span class="color01">＊</span></th>
+											<th scope="row">회원구분</th>
+											<td>
+												<p class="labelTitle verM">회원구분</p>
+												회원
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">아이디</th>
+											<td>
+												<p class="labelTitle verM">아이디</p>
+												biz0123
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="userPw">비밀번호 확인</label> <span class="color01">*</span></th>
+											<td>
+												<p class="labelTitle verM">비밀번호 확인</p>
+												<input type="password" value=""  name="userPw" id="userPw">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">탈퇴 신청자(성명)</th>
+											<td>
+												<p class="labelTitle verM">탈퇴 신청자(성명)</p>
+												최호준
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="userMail01">e-mail</label></th>
 											<td>
 												<fieldset>
-													<legend class="labelTitle verM">주소 <span class="color01">＊</span></legend>
-													<div class="inputBox addrBox">
-														<div class="inputGroup">
-															<input type="text" id="userAddr01" name="userAddr01" title="우편번호를 입력하세요" class="addrCodeInput">
-															<button type="button" class="btnType2 addrCodeBtn">우편번호 찾기</button>
-														</div>
-														<p><input type="text" class="w100p" id="userAddr02" name="userAddr02" title="주소를 입력하세요"></p>
-														<p><input type="text" class="w100p" id="userAddr03" name="userAddr03" title="상세주소를 입력하세요"></p>
-													</div>
-												</fieldset>
-												<ul class="txtList type02">
-													<li>해당 주소는 회원정보의 주소만 업데이트됩니다.<br class="verM">기업 관할주소를 변경하실 경우 관할센터에 문의바랍니다.</li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">관할주소</th>
-											<td>
-												<p class="labelTitle verM">관할주소</p>
-												(27740) 충청북도 음성군 맹동면 (맹동면) 두성리175
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="userUrl">홈페이지</label></th>
-											<td>
-												<p class="labelTitle verM">홈페이지</p>
-												<div class="inputGroup">
-													<span class="urlTxt">http://</span>
-													<input type="text" id="userUrl" name="userUrl" title="홈페이지 주소를 입력하세요" class="urlInput">
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="userName">담당자 성명</label> <span class="color01">＊</span></th>
-											<td>
-												<p class="labelTitle verM">담당자 성명 <span class="color01">＊</span></p>
-												<input type="text" id="userName" name="userName" title="담당자 성명을 입력하세요" class="full">
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="userTel01">담당자 전화번호</label></th>
-											<td>
-												<fieldset>
-													<legend class="labelTitle verM">담당자 전화번호</legend>
-													<div class="inputGroup">
-														<select title="지역번호를 선택하세요." name="userTel01" id="userTel01" class="selectBox telSelect">
-															<option selected="selected" value="">선택</option>
-															<option value="010"> 032 </option>
-														</select>
-														<span class="line">-</span>
-														<input type="text" title="중간자리를 입력하세요" name="userTel02" id="userTel02" class="telInput">
-														<span class="line">-</span>
-														<input type="text" title="끝자리를 입력하세요" name="userTel03" id="userTel03" class="telInput">
-													</div>
-												</fieldset>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="userFax01">담당자 팩스번호</label></th>
-											<td>
-												<fieldset>
-													<legend class="labelTitle verM">담당자 팩스번호</legend>
-													<div class="inputGroup">
-														<select title="지역번호를 선택하세요." name="userFax01" id="userFax01" class="selectBox telSelect">
-															<option selected="selected" value="">선택</option>
-															<option value="010"> 032 </option>
-														</select>
-														<span class="line">-</span>
-														<input type="text" title="중간자리를 입력하세요" name="userFax02" id="userFax02" class="telInput">
-														<span class="line">-</span>
-														<input type="text" title="끝자리를 입력하세요" name="userFax03" id="userFax03" class="telInput">
-													</div>
-												</fieldset>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="userHp01">담당자<br>휴대전화번호</label> <span class="color01">＊</span></th>
-											<td>
-												<fieldset>
-													<legend class="labelTitle verM">담당자 휴대전화번호 <span class="color01">＊</span></legend>
-													<div class="inputGroup">
-														<select title="지역번호를 선택하세요." name="userHp01" id="userHp01" class="selectBox telSelect">
-															<option selected="selected" value="">선택</option>
-															<option value="010"> 010 </option>
-														</select>
-														<span class="line">-</span>
-														<input type="text" title="중간4자리를 입력하세요" name="userHp02" id="userHp02" class="telInput">
-														<span class="line">-</span>
-														<input type="text" title="끝4자리를 입력하세요" name="userHp03" id="userHp03" class="telInput">
-													</div>
-												</fieldset>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="userMail01">담당자 이메일</label></th>
-											<td>
-												<fieldset>
-													<legend class="labelTitle verM">담당자 이메일</legend>
+													<legend class="labelTitle verM">e-mail</legend>
 													<div class="inputGroup">
 														<input type="text" value="" title="메일 계정을 입력하세요" name="userMail01" id="userMail01" class="emailInput">
 														<span class="line">@</span>
@@ -615,123 +513,25 @@
 														</select>
 													</div>
 												</fieldset>
-												<ul class="txtList type02">
-													<li class="first">비밀번호 찾기 시 활용 됩니다.</li>
-												</ul>
 											</td>
 										</tr>
 										<tr>
-											<th scope="row">이메일 수신동의</th>
+											<th scope="row"><label for="content">탈퇴사유</label> <span class="color01">*</span></th>
 											<td>
-												<fieldset>
-													<legend class="labelTitle verM">이메일 수신동의</legend>
-													<div class="radioGroup">
-														<div class="ui_radioBox">
-															<input type="radio" name="emailYn" id="emailY">
-															<label for="emailY">예</label>
-														</div>
-														<div class="ui_radioBox">
-															<input type="radio" checked="checked" name="emailYn" id="emailN">
-															<label for="emailN">아니오</label>
-														</div>
-													</div>
-												</fieldset>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">SMS 수신동의</th>
-											<td>
-												<fieldset>
-													<legend class="labelTitle verM">SMS 수신동의</legend>
-													<div class="radioGroup">
-														<div class="ui_radioBox">
-															<input type="radio" name="smsYn" id="smsY">
-															<label for="smsY">예</label>
-														</div>
-														<div class="ui_radioBox">
-															<input type="radio" checked="checked" name="smsYn" id="smsN">
-															<label for="smsN">아니오</label>
-														</div>
-													</div>
-												</fieldset>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">카카오 알림톡 동의</th>
-											<td>
-												<fieldset>
-													<legend class="labelTitle verM">카카오 알림톡 동의</legend>
-													<div class="radioGroup">
-														<div class="ui_radioBox">
-															<input type="radio" name="openYn" id="openYn01">
-															<label for="openYn01">예</label>
-														</div>
-														<div class="ui_radioBox">
-															<input type="radio" checked="checked" name="openYn" id="openYn02">
-															<label for="openYn02">아니오</label>
-														</div>
-													</div>
-												</fieldset>
-												<ul class="txtList type02">
-													<li>
-														카카오 알림톡 동의시 각 과정인정시(비용신청시) 입력한<br class="forPC">
-														담당자 휴대폰번호로 카카오 알림톡이 발송됩니다.<br class="forPC">
-														사업주훈련의 경우 과정별 담당자 전부가 동의한 경우에만 동의처리 부탁드립니다.
-													</li>
-													<li>개별적으로 카카오 알림톡을 수신거부하고 싶은 경우엔 알림톡에서 차단처리가 가능합니다.</li>
-												</ul>
+												<p class="labelTitle verM">탈퇴사유</p>
+												<textarea name="content" id="content" cols="30" rows="10"></textarea>
 											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<div class="tableArea">
-								<div class="tableTitleArea">
-									<h4 class="tableTitle">공인인증서 및 전자통지</h4>
-								</div>
-								<table class="view form">
-									<caption>기업회원정보 입력 폼</caption>
-									<colgroup>
-									<col style="width:auto;">
-									<col style="width:auto;">
-									</colgroup>
-									<tbody>
-										<tr>
-											<th scope="row">전자통지 서비스 <span class="color01">*</span></th>
-											<td>
-												<fieldset>
-													<legend class="labelTitle verM">전자통지 서비스</legend>
-													<div class="radioGroup">
-														<div class="ui_radioBox">
-															<input type="radio" name="serviceYn" id="serviceYn01">
-															<label for="serviceYn01">예</label>
-														</div>
-														<div class="ui_radioBox">
-															<input type="radio" checked="checked" name="serviceYn" id="serviceYn02">
-															<label for="serviceYn02">아니오</label>
-														</div>
-													</div>
-												</fieldset>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">공인인증서</th>
-											<td>
-												<p class="labelTitle verM">공인인증서</p>
-												<strong>등록되어 있음</strong>
-												<ul class="txtList type02">
-													<li>공인인증서 “등록/변경” 은 “공인인증서 관리”메뉴에서 등록/변경 하실 수 있습니다.</li>
-												</ul>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								
-								<div class="btnGroup">
-									<button type="button" class="btnType1 primary">변경하기</button>
-								</div>
-								
+							
+							<div class="btnGroup">
+								<button type="button" class="btnType1">취소</button>
+								<button type="button" class="btnType1 primary">확인</button>
 							</div>
+							
+							
 						</div>
 						<!-- // My서비스 컨텐츠 -->
 					</div>

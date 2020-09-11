@@ -59,6 +59,9 @@
 .withDrawalNotice .noticeTit { font-size:28px; color:#4e4f51; }
 .withDrawalNotice .noticeTit + .txtList.type03 { margin-top:20px; }
 .withDrawalNotice .qnaBtn { display:block; height:50px; margin:20px 0 0; border:1px solid #258384; text-align:center; line-height:44px; font-size:28px; color:#258384; background-color:#fff; }
+.myInfoArea .agreeChkBox { margin: 10px 0 0; text-align: right; }
+.myInfoArea .agreeChkBox .ui_checkBox label { margin-right: 0; }
+.myInfoArea .agreeChkBox + .tableArea + .btnGroup button.btnType1 + button { margin-left: 17px; }
 
 /* 관심정보 */
 .myInfoArea .tabList { flex-wrap:wrap; }
