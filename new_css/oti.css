@@ -1,7 +1,133 @@
 @charset "utf-8";
 
+/* layout.css 시작 */
+
 /* ==============================
-* 0831 일학습병행제 : front.css
+* tablePopup 일학습병행제_0905
+* ============================== */
+.tableAreaPopup { width:900px;}
+.tableAreaPopup table.list { width:100%; border-top:1px solid #727476; margin-bottom:20px; box-sizing:border-box;}
+.tableAreaPopup table.list th { background:#f0f0f2; border-right:1px solid #e2e2e4; padding:14px; font-size: 14px; color:#4e4f51; font-weight:400; box-sizing:border-box;}
+.tableAreaPopup table.list td { border-right:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4; font-size: 14px; color:#727476; text-align:center; padding:14px;  box-sizing:border-box; }
+.tableAreaPopup table.list th.last, .tableAreaPopup table.list td.last { border-right:none; }
+.tableAreaPopup .tableTitleArea { display:table; width:100%; margin:50px 0 0 0; }
+.tableAreaPopup .tableTitleArea .tableTitle { display:table-cell; padding:0 0 15px 0; color:#292a2d; font-size:22px; font-weight:bold; }
+
+/* ==============================
+* button
+* ============================== */
+.btnGroupStudy { display:block; text-align:center; margin-top:60px; margin-bottom:60px;}/* 일학습병행제_0905 */
+
+/* 대버튼 */
+.btnType2.primary { background:#5e7cbf; border:1px solid #4171df; color:#fff;}/*일학습병행제_0905*/
+
+/* 바로가기 */
+.goLinkLong01 {display:inline-block; margin-top:4px; min-width:100px; height:26px; line-height:24px; padding:0 20px; text-align:left; border:1px solid #cdcdd1; font-size:13px; color:#4e4f51; } /*일학습병행제_0902*/
+.goLinkLong01:after {content:''; display:inline-block; vertical-align:middle; width:6px; height:12px; margin-left:5px; margin-top:-3px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;} /*일학습병행제_0902*/
+.btnH27 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:14px; color:#4e4f51; border:1px solid #cdcdd1; line-height:28px; background: #fff;} /*일학습병행제_0902*/
+
+/* layout.css 끝 */
+
+
+
+/* contents.css 시작 */
+
+/* ==============================
+* 공통 컨텐츠
+* ============================== */
+#subTopWrap.topVisu13 { background: url('../new_images/common/topVisual13.jpg') 50% 0 no-repeat;} /* 0831_일학습병행제 */
+
+/* 정렬방식 0902_일학습병행제*/
+#subContentWrap .subContArea .sortArea_study01 { display: flex; justify-content: space-between; padding: 8px 0 0 8px; float:left; }
+#subContentWrap .subContArea .sortArea_study01 .totalNum { font-size:16px; line-height:30px; color:#727476; }
+#subContentWrap .subContArea .sortArea_study01 .totalNum strong { color:#f58220; }
+#subContentWrap .subContArea .sortArea_study02 { display: flex; justify-content: space-between; padding: 8px 0; float:right; }
+#subContentWrap .subContArea .sortArea_study02 .selectViewArea .selectView { display:inline-block; }
+#subContentWrap .subContArea .sortArea_study02 .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
+#subContentWrap .subContArea .sortArea_study02 .selectViewArea select { width:120px; }
+
+/* box */
+#subContentWrap .subContArea .boxArea_rong { border:3px solid #e1e4e9; width:100%; color:#93480f; padding:20px 20px; margin:0 auto;} /* 일학습병행_0902 */
+#subContentWrap .subContArea .boxArea_small { border:3px solid #e1e4e9; width:900px; color:#767676; padding:20px 40px; margin:0 auto;} /* 일학습병행_0831 */
+#subContentWrap .subContArea .boxArea_small .pageComment { background:url('../new_images/common/imgstudy.png') no-repeat 0 100%; font-size:14px; line-height:21px; color:#727476; min-height:68px; padding:4px 0 4px 230px; } /* 일학습병행_0831 */
+
+/* ==============================
+* 일학습병행제_0831
+* ============================== */ 
+#subContentWrap .subContArea .studyArea {padding:30px 0 0;}
+#subContentWrap .subContArea .studyAreaList {margin-top:-20px;}
+.study01 {min-width:100%; height:138px;}
+.study01 > li {float:left; width:270px; height:138px; border-bottom:1px solid #d8dfeb;background: url(../new_images/common/studyImg01.png) no-repeat; margin-top:20px; margin-right:14px;}
+.study01 > li > img {float:left; margin-top:20px;}
+.study01 > li > p {width:200px; font-size:14px; font-weight:300; line-height:24px; margin:26px 0 0 70px;}
+
+.study02 {min-width:100%; height:200px; padding-top:20px;}
+.study02 > li {float:left; width:222px; height:180px; border-right:1px solid #d8dfeb; margin:20px 12px;}
+.study02 > li.tit {margin:0 auto; background: url(../new_images/common/study_ico05.png)no-repeat center top;}
+.study02 > li > p {margin:0 auto; width:200px; font-size:14px; font-weight:300; text-align:center; line-height:24px; padding-top:70px;}
+.study02  > li:last-child { border-right:none; }
+
+.study03 {min-width:100%; height:140px; background: url(../new_images/common/studyImg02.png) no-repeat; margin-top:20px;}
+.study03 > li {float:left; width:264px; height:92px; border-right:1px solid #d8dfeb; margin-top:24px; margin-left:20px;}
+.study03  > li:last-child { border-right:none;}
+.study03 > li > img {float:left; margin-top:20px;}
+.study03 > li > p {width:200px; font-size:14px; font-weight:300; line-height:24px; padding-top:6px; margin-left:64px;}
+
+.study04 {min-width:120%; height:144px;}
+.study04 > li {float:left; width:300px; height:144px; margin-top:20px; margin-right:20px;}
+.study04  > li:last-child {margin-left:100px;}
+.study04 > li > img {float:left;}
+.study04 > li > p {width:250px; font-size:14px; font-weight:300; line-height:24px; padding-top:26px; margin-left:140px;}
+
+/* contents.css 끝 */
+
+
+
+/* kangjiyeon.css 시작 */
+
+/* ==============================
+* table
+* ============================== */
+.tableArea td.left{ position:relative; text-align:left;} /* 일학습병행_0903 */
+
+/* ==============================
+* button
+* ============================== */
+button.studyBtn { display:inline-block; min-width:65px; text-align:center; padding:0 10px; font-size:14px; color:#4e4f51; border:1px solid #cdcdd1; line-height:28px; margin-right:2px;} /* 일학습병행제_0903 */
+
+/* 타이틀 */
+.bigTitle08 {font-weight:500; font-size:22px; color:#292a2d; height:45px; margin-top:12px; float:left;}/*일학습병행제_0902*/
+
+/* kangjiyeon.css 끝 */
+
+
+
+/* kimjaeseob.css 시작 */
+
+/* ==============================
+* common
+* ============================== */
+.commentBoxStudy {margin:0 auto; width:900px; margin-top: 40px; min-height:53px; padding:30px 20px 30px 125px; border:3px solid #e7e9f0; background:url(../new_images/common/imgstudy.png) no-repeat left 46px center;} /* 일학습병행제_0906 */
+.commentBox .dashListStudy {display:inline-block; vertical-align:middle;} /* 일학습병행제_0906 */
+.commentBoxStudy01 {margin-top: 20px; min-height:190px; padding:30px 20px 30px 125px; border:1px solid #e7e9f0; background:url(../new_images/common/imgstudy01.png) no-repeat left 46px center; background-color:#f3f5f5;} /* 일학습병행제_0906 */
+.commentBoxStudy01 .dashListStudy {display:inline-block; vertical-align:middle;} /* 일학습병행제_0906 */
+
+.dashList > li + li {margin-top:4px;}
+.dashListStudy {} /* 일학습병행제_0906 */
+.dashListStudy > li {position:relative; padding-left:150px; font-size:14px; color:#727476; line-height:18px;} /* 일학습병행제_0906 */
+.dashListStudy > li + li {margin-top:4px;} /* 일학습병행제_0906 */
+.dashListStudy01 {} /* 일학습병행제_0906 */
+.dashListStudy01 > li {position:relative; margin-left:250px; font-size:14px; color:#727476; line-height:38px; border-bottom:1px dotted #747575;} /* 일학습병행제_0906 */
+.dashListStudy01 > li + li {margin-top:4px;} /* 일학습병행제_0906 */
+
+/* kimjaeseob.css 끝 */
+
+
+
+/* front.css 시작 */
+
+/* ==============================
+* 0831 일학습병행제
 * ============================== */
 /* 블릿타이틀 + 컨텐츠 */
 #front .txtCon02{width:100%;margin-bottom:20px;}
@@ -28,31 +154,6 @@
 #popupWrap .line{padding-top:40px; border-top:2px solid #a0a0a0;}
 .bultPopup-h4{width:900px;margin-bottom:20px;padding-top:16px;color:#292a2d;font-size:22px;background:url('../new_images/common/bult_blueline.png') no-repeat 0 0;background-size:4px 0 0 23px;}
 
+/* front.css 끝 */
 
-/* ==============================
-* 일학습병행제_0831 : contents.css
-* ============================== */ 
-#subContentWrap .subContArea .studyArea {padding:30px 0 0;}
-#subContentWrap .subContArea .studyAreaList {margin-top:-20px;}
-.study01 {min-width:100%; height:138px;}
-.study01 > li {float:left; width:270px; height:138px; border-bottom:1px solid #d8dfeb;background: url(../new_images/common/studyImg01.png) no-repeat; margin-top:20px; margin-right:14px;}
-.study01 > li > img {float:left; margin-top:20px;}
-.study01 > li > p {width:200px; font-size:14px; font-weight:300; line-height:24px; margin:26px 0 0 70px;}
 
-.study02 {min-width:100%; height:200px; padding-top:20px;}
-.study02 > li {float:left; width:222px; height:180px; border-right:1px solid #d8dfeb; margin:20px 12px;}
-.study02 > li.tit {margin:0 auto; background: url(../new_images/common/study_ico05.png)no-repeat center top;}
-.study02 > li > p {margin:0 auto; width:200px; font-size:14px; font-weight:300; text-align:center; line-height:24px; padding-top:70px;}
-.study02  > li:last-child { border-right:none; }
-
-.study03 {min-width:100%; height:140px; background: url(../new_images/common/studyImg02.png) no-repeat; margin-top:20px;}
-.study03 > li {float:left; width:264px; height:92px; border-right:1px solid #d8dfeb; margin-top:24px; margin-left:20px;}
-.study03  > li:last-child { border-right:none;}
-.study03 > li > img {float:left; margin-top:20px;}
-.study03 > li > p {width:200px; font-size:14px; font-weight:300; line-height:24px; padding-top:6px; margin-left:64px;}
-
-.study04 {min-width:120%; height:144px;}
-.study04 > li {float:left; width:300px; height:144px; margin-top:20px; margin-right:20px;}
-.study04  > li:last-child {margin-left:100px;}
-.study04 > li > img {float:left;}
-.study04 > li > p {width:250px; font-size:14px; font-weight:300; line-height:24px; padding-top:26px; margin-left:140px;}

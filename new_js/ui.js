@@ -5,7 +5,7 @@ $(function(){
 			$(".dateSelect input").datepicker({
 				dateFormat: 'yymmdd'
 			});
-			$( ".dateSelect .ui-datepicker-trigger").prop('src','../new_images/common/inoCalendar.png')	
+			$( ".dateSelect .ui-datepicker-trigger").prop('src','/new_images/common/inoCalendar.png')	
 		},
 		// 헤더 고정	
 		fn_headFixed:function(){
