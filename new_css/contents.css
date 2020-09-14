@@ -1,11 +1,6 @@
 @charset "utf-8";
-@import 'kangjiyeon.css';
-@import 'kimjaeseob.css';
-@import 'parkseungwan.css';
-@import 'yimsoyoung.css'; /* 2020-09-04 추가 */
-@import 'kimyongbeom.css';
+@import 'myservice.css';
 @import 'front.css';
-@import 'oti.css';
 
 /* ==============================
 * 공통 컨텐츠

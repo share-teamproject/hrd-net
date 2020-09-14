@@ -1,9 +1,0 @@
-@charset "utf-8";
-
-/* ==============================
-* MY서비스(기업)
-* ============================== */
-.tabList.tabListTy5.mob { display: block; }
-.tabList.tabListTy5.mob li.on { border: 2px solid #f6f6f6; }
-.tabList.tabListTy5.mob li button { font-size: 28px; }
-.esTit .ui_checkBox.checkOnly { display: none; }
