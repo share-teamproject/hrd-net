@@ -266,7 +266,14 @@
 .section-training .downloadList li button { width:85px; height:34px; line-height:34px; border-radius:17px; background-color:#c9d3e8; font-size:14px; }
 
 .section-training .pagenation + .addExplainBox { margin-top:40px; }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 .section-training .pagenation + .commentBox { margin-top:40px; }
+>>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
+=======
+.section-training .pagenation + .commentBox { margin-top:40px; }
+>>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
 .section-training .pagenation.pc { display:block; }
 .section-training .pagenation.mob { display:none; }
 
@@ -288,6 +295,16 @@
 .section-training .tableArea > .btnArea .btnType2 { margin-left:20px; }
 .section-training .tableArea .btnOpenPopup:hover { font-weight:700; color:#4270e0; text-decoration:underline; }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
+=======
 .section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
 
 .section-training .commentBox { min-height:120px; }
+>>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
+=======
+.section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
+
+.section-training .commentBox { min-height:120px; }
+>>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
