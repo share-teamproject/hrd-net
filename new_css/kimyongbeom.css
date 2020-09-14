@@ -225,11 +225,12 @@
 .detailList .util .btnLink.compare:before { background-image:url('../new_images/common/icoCheck.png'); }
 .detailList .util .btnLink + .btnLink { margin-top:5px; }
 
-.section-training .contentTitleArea { margin:50px 0 15px; position:relative; }
-.section-training .contentTitleArea .title {}
+.section-training .contentTitleArea { display:flex; flex-wrap:wrap; margin:50px 0 15px; position:relative; }
 .section-training .contentTitleArea .title .tit { color:#292a2d; font-weight:500; font-size:22px; }
 .section-training .contentTitleArea .title + .btnArea { font-size:0; position:absolute; top:0; right:0; }
 .section-training .contentTitleArea .title + .btnArea .btnDownload { margin-left:10px; }
+.section-training .contentTitleArea .selectViewArea { margin-left:auto; }
+.section-training .contentTitleArea .selectViewArea .selectBox { min-width:120px; }
 
 .section-training .contentSubTitleArea .title { margin:30px 0 15px; }
 .section-training .contentSubTitleArea .title .tit { color:#292a2d; font-weight:500; font-size:18px; }
@@ -266,14 +267,7 @@
 .section-training .downloadList li button { width:85px; height:34px; line-height:34px; border-radius:17px; background-color:#c9d3e8; font-size:14px; }
 
 .section-training .pagenation + .addExplainBox { margin-top:40px; }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 .section-training .pagenation + .commentBox { margin-top:40px; }
->>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
-=======
-.section-training .pagenation + .commentBox { margin-top:40px; }
->>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
 .section-training .pagenation.pc { display:block; }
 .section-training .pagenation.mob { display:none; }
 
@@ -295,16 +289,6 @@
 .section-training .tableArea > .btnArea .btnType2 { margin-left:20px; }
 .section-training .tableArea .btnOpenPopup:hover { font-weight:700; color:#4270e0; text-decoration:underline; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
-=======
 .section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
 
 .section-training .commentBox { min-height:120px; }
->>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
-=======
-.section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
-
-.section-training .commentBox { min-height:120px; }
->>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
