@@ -656,19 +656,19 @@
 .detailListWrap { border-top:2px solid #727476; }
 .detailListWrap + .pagenation { margin-top:20px; }
 .detailList > li { box-sizing:border-box; display:flex; width:100%; min-height:220px; padding:10px; border-bottom:1px solid #e2e2e4; }
-.detailList .title { flex-shrink:0; display:flex; flex-direction:column; box-sizing:border-box; width:170px; padding:12px; }
+.detailList .title { flex-shrink:0; display:flex; flex-direction:column; box-sizing:border-box; width:170px; padding:12px; border-right: 1px dashed #e2e2e4; }
 .detailList .title .zone { margin-top:6px; color:#4e4f51; font-size:14px; text-align:center; }
 .detailList .title .school { line-height:1.1; color:#4e4f51; font-weight: 500; font-size:20px; text-align:center; }
 .detailList .title .iconCertify { width:33px; height:0; max-height:0; padding-top:30px; margin:16px auto 0; background:url('../new_images/common/icoCertify.png') no-repeat; background-size:cover; text-align:center; }
 .detailList .title .award { width:98px; height:0; max-height:0; padding-top: 35px; margin:auto auto 0; overflow:hidden; background:url('../new_images/common/iconCerti3.png') no-repeat; }
-.detailList .content { flex-grow:1; box-sizing:border-box; padding:7px 40px; border-left: 1px dashed #e2e2e4; }
+.detailList .content { flex-grow:1; box-sizing:border-box; padding:7px 40px; }
 .detailList .content .tit { display:inline-block; line-height:33px; padding-right:50px; font-size:20px; }
 .detailList .content .tit.certify { background:url('../new_images/common/icoCertify.png') no-repeat; background-size:33px 30px; background-position:right center; }
 .detailList .content .txt {padding-top:5px; font-size:14px; color:#292a2d;}
 .detailList .content .hashtag { display:flex; flex-wrap:wrap; margin-top:12px; }
 .detailList .content .hashtag li { line-height:26px; padding:0 12px; margin-right:15px; margin-bottom:6px; border-radius:4px; color:#222; font-size:11px; background-color:#e3e7ee; }
 .detailList .content .info { display:flex; flex-wrap:wrap; margin-top:25px; }
-.detailList .content .info .item { display:flex; width:100%; margin-bottom:15px; }
+.detailList .content .info .item { display:flex; width:50%; margin-bottom:15px; }
 .detailList .content .info .item.term { width:calc(100% - 152px); }
 .detailList .content .info .item.term.etc { width:calc(100% - 285px); }
 .detailList .content .info .item.work { width:152px; }
@@ -678,7 +678,7 @@
 .detailList .content .info .item dd.star.star4 { background-image: url('../new_images/common/star4.png'); }
 .detailList .content .info .item dd.graph { width:463px; height:19px; margin-top:3px; background:url('../new_images/common/bgGraph.png') no-repeat; background-size:cover; }
 .detailList .content .info .item dd.graph .bar { display:block; width:100%; padding-right:10px; line-height:19px; background-color:#4171df; color:#fff; border-top-right-radius: 9px; border-bottom-right-radius: 9px; text-align:right;}
-.detailList .util { flex-shrink:0; box-sizing:border-box; width:155px; padding:12px 8px 12px 20px; border-left:1px dashed #e2e2e4; text-align:center; }
+.detailList .util { flex-shrink:0; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center; width:155px; padding:12px 8px 12px 20px; border-left:1px dashed #e2e2e4; text-align:center; }
 .detailList .util .status { box-sizing:border-box; display:inline-block; min-width:48px; line-height:22px; padding:0 4px; color:#fff; font-size:11px; background-color:#f68b2e; border-radius:11px; text-align:center; }
 .detailList .util .status.ty2 {background:#4870cf;}
 .detailList .util .price { margin-top:12px; }

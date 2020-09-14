@@ -267,6 +267,10 @@
 
 .section-training .pagenation + .addExplainBox { margin-top:40px; }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.section-training .pagenation + .commentBox { margin-top:40px; }
+>>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
 =======
 .section-training .pagenation + .commentBox { margin-top:40px; }
 >>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
@@ -292,7 +296,13 @@
 .section-training .tableArea .btnOpenPopup:hover { font-weight:700; color:#4270e0; text-decoration:underline; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
+=======
+.section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
+
+.section-training .commentBox { min-height:120px; }
+>>>>>>> d99807a9c375de8839ceb74d3fe196ce02dc90b1
 =======
 .section-training #subContentWrap .subContArea .searchBox + .sortArea { margin-top:60px; }
 
