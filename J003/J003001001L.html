@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=640, user-scale=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>공인인증센터 | HRD-Net</title>
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+
+	<script>
+	function show_layer(section_name){
+	 document.all.section_01.style.display="none";
+	 document.all.section_02.style.display="none";
+	 document.all.section_03.style.display="none"; 
+	 document.all.section_04.style.display="none"; 
+
+	 switch(section_name)
+	 {
+	  case '1':
+	  document.all.section_01.style.display="";
+	  break;
+	  case '2':
+	  document.all.section_02.style.display="";
+	  break;
+	  case '3':
+	  document.all.section_03.style.display="";
+	  break;
+	  case '4':
+	  document.all.section_04.style.display="";
+	  break;
+	 }
+	}
+	</script>
+
+</head>
+
+<body>
+    <div id="skipnav">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#contentWrap">본문 바로가기</a>
+        <a href="#footerWrap">푸터 바로가기</a>
+    </div>
+
+    <div id="wrap">
+        <!-- 헤더영역 -->
+        <header id="headerWrap">
+            <div class="headArea">
+                <h1 class="logoTop"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1>
+                <div class="headTop">
+                    <ul id="tnb">
+                        <li><a href="/">로그인</a></li>
+                        <li><a href="/">회원가입</a></li>
+                        <li><a href="/">고객센터</a></li>
+                        <li><a href="/">HRD-Net 소개</a></li>
+                        <li><a href="/">원격지원</a></li>
+                    </ul>
+                </div>
+                <div class="headBot">
+                    <ul id="gnb">
+                        <li><a href="javascript:void(0);">훈련과정</a>
+                            <div class="gnbSubArea gnbSub01">
+                                <ul>
+                                    <li>
+                                        <a href="/">과정별 상세검색</a><br>
+                                        <a href="/">국민내일배움카드 훈련과정</a><br>
+                                        <a href="/">기업 훈련과정</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">일학습병행과정</a><br>
+                                        <a href="/">정부부처별 훈련과정</a><br>
+                                        <a href="/">디지털 신기술 훈련과정</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">한기대 스마트 직업훈련과정(STEP)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0);">지원제도</a>
+                            <div class="gnbSubArea gnbSub02">
+                                <ul>
+                                    <li>
+                                        <a href="">정부지원사업안내</a>
+                                        <ul class="navDepthArea02">
+                                            <li><a href="/">정부지원사업안내</a></li>
+                                            <li><a href="/">훈련안내 및 절차</a></li>
+                                            <li><a href="/">훈련기관 유형 안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/">정부부처훈련안내</a><br>
+                                        <a href="/">법정/서식/규정</a>
+                                        <ul class="navDepthArea02">
+                                            <li><a href="/">법령정보</a></li>
+                                            <li><a href="/">업무서식 및 규정</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0);">직업ㆍ기관정보</a>
+                            <div class="gnbSubArea gnbSub03">
+                                <ul>
+                                    <li>
+                                        <a href="/">구인정보</a><br>
+                                        <a href="/">자격정보</a>
+                                        <ul>
+                                            <li><a href="/">국가자격</a></li>
+                                            <li><a href="/">공인민간자격</a></li>
+                                            <li><a href="/">국가기술자격 시험일정</a></li>
+                                        </ul>
+                                        <a href="/">기업훈련과정</a>
+                                        <ul>
+                                            <li><a href="/">직업사전소개</a></li>
+                                            <li><a href="/">직업사전검색</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">학과정보</a>
+                                        <ul>
+                                            <li><a href="/">법령정보</a></li>
+                                            <li><a href="/">업무서식 및 규정</a></li>
+                                        </ul>
+                                        <a href="">NCS 분류체계</a><br>
+                                        <a href="">훈련/교육통계</a><br>
+                                        <a href="">스타훈련교사</a>
+                                    </li>
+                                    <li><a href="">강사뱅크</a><br>
+                                        <a href="">훈련기관평가정보</a>
+                                        <ul>
+                                            <li><a href="">집체훈련</a></li>
+                                            <li><a href="">혼합훈련</a></li>
+                                            <li><a href="">원격훈련</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0);">일학습병행</a>
+                            <div class="gnbSubArea gnbSub04">
+                                <ul>
+                                    <li><a href="">일학습병행제란</a><br>
+                                        <a href="">운영기관</a><br>
+                                        <a href="">자료공강</a>
+                                    </li>
+                                    <li><a href="">외부평가</a><br>
+                                        <a href="">훈련과정개발보고서(PDMS)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbSearchBtn">
+                            <a href="javascript:void(0);">검색</a>            
+                            <div class="gnbSubArea gnbSub05">
+                                <ul class="searchArea">
+                                    <li>
+                                        <form name="searchTotalForm" id="searchTotalForm" method="post" autocomplete="off">
+                                            <fieldset>
+                                                <legend>통합검색</legend>
+                                                <label for="searchTotalKeyword" class="hide">검색어</label>
+                                                <input type="text" title="검색어" name="searchTotalKeyword" id="searchTotalKeyword" placeholder="무엇을 찾으세요?" value=""><button type="button" class="btnTotalSearch" id="btnTotalSearch" title="검색">검색</button>
+                                            </fieldset>
+                                        </form>                                    
+                                    </li>  
+                                    <li class="searchKeywordArea">
+                                        <P>인기검색어</P>
+                                        <div class="searchKeyword">
+                                            <a href="javascript:void(0);">#바리스타</a>
+                                            <a href="javascript:void(0);">#컴퓨터</a>
+                                            <a href="javascript:void(0);">#요양보호사</a>
+                                            <a href="javascript:void(0);">#제빵</a>
+                                            <a href="javascript:void(0);">#포토샵</a>
+                                        </div>    
+                                    </li>
+                                </ul> 
+                            </div> 
+                        </li>            
+                    </ul>
+                </div>
+            </div>
+            <!-- 헤더 : mobile -->
+            <div class="headerBtn">
+                <!--div class="headerLogo"><a href="/"><img src="../newimages/common/headerLogo.png" alt="직업훈련포털 HRD-Net"></a></div-->
+                <button type="button" class="backBtn btn">이전 단계로 돌아가기</button>
+                <button type="button" class="searhBtn btn">검색</button>
+                <button type="button" class="totalMenuBtn btn">전체메뉴</button>
+                <!--button type="button"class="closeBtn btn">닫기</button-->
+            </div>
+            <!-- 전체메뉴 : mobile  -->
+            <nav class="totalMenuWrap">
+                <div class="overlay"></div>
+                <div class="totalMenuArea">
+                    <div class="navHead">
+                        <div class="navLeftHead">
+                            <button type="button" class="loginBtn btn">로그인</button>
+                            <!--button type="button" class="logoutBtn btn">로그아웃</button-->
+                            <button type="button" class="joinBtn btn">회원가입</button>
+                        </div>
+                        <div class="navLeftHead">
+                            <button type="button" class="setBtn btn">설정</button>
+                            <button type="button" class="closeTotalMenu btn">전체메뉴 닫기</button>
+                        </div>
+                    </div>
+                    <div class="navBody">
+                        <ul class="navDepthArea01">
+                            <li><a href="javascript:void(0);" class="navDepth01_01 on">훈련과정</a>
+                                <p class="navTitle">훈련과정</p>
+                                <ul class="navDepthArea02">
+                                    <li><a href="/">과정별 상세검색</a></li>
+                                    <li><a href="/">국민내일배움카드 훈련과정</a></li>
+                                    <li><a href="/">기업 훈련과정</a></li>
+                                    <li><a href="/">일학습병행과정</a></li>
+                                    <li><a href="/">정부부처별 훈련과정</a></li>
+                                    <li><a href="/">디지털 신기술 훈련과정</a></li>
+                                    <li><a href="/" class="spacing-3">한기대 스마트 직업훈련과정(STEP)</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0);" class="navDepth01_02">지원제도</a>
+                                <p class="navTitle">지원제도</p>
+                                <ul class="navDepthArea02">
+                                    <li><a href="/">정부지원사업</a></li>
+                                    <li><a href="/">정부부처훈련안내</a></li>
+                                    <li><a href="/">법정/서식/규정</a>
+                                        <ul>
+                                            <li><a href="/">법령정보</a></li>
+                                            <li><a href="/">업무서식 및 규정</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0);" class="navDepth01_03">고객센터</a>
+                                <p class="navTitle">고객센터</p>
+                                <ul class="navDepthArea02">
+                                    <li><a href="/">자주묻는 질문</a></li>
+                                    <li><a href="/">질문과 답변</a></li>
+                                    <li><a href="/">기관찾기</a></li>
+                                    <li><a href="/">공지/행사 안내</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0);" class="navDepth01_04">MY 서비스</a>
+                                <p class="navTitle">MY 서비스</p>
+                                <ul class="navDepthArea02">
+                                    <li>
+                                        <a href="/" class="navSubTitle on">MY 카드</a>
+                                        <ul>
+                                            <li><a href="/" class="on">국민내일배움카드</a>
+                                                <ul>
+                                                    <li><a href="/" class="on">발급신청</a></li>
+                                                    <li><a href="/">카드신청내역</a></li>
+                                                    <li><a href="/">카드사용내역 조회</a></li>
+                                                    <li><a href="/">교육동영상신청</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="/" class="navSubTitle">MY 훈련</a>
+                                        <ul>
+                                            <li><a href="/">직업훈련이력</a></li>
+                                            <li><a href="/">일학습병행</a></li>
+                                            <li><a href="/">온라인 수강신청이력</a></li>
+                                            <li><a href="/">훈련상담이력조회</a></li>
+                                            <li><a href="/">훈련문의 내역</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/" class="navSubTitle">MY 관심</a>
+                                        <ul>
+                                            <li><a href="/">나의맞춤정보</a></li>
+                                            <li><a href="/">나의관심정보</a></li>
+                                            <li><a href="/">비대면 훈련상담</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/" class="navSubTitle">MY 정보</a>
+                                        <ul>
+                                            <li><a href="/">회원정보</a>
+                                                <ul>
+                                                    <li><a href="/">정보변경</a></li>
+                                                    <li><a href="/">성명변경</a></li>
+                                                    <li><a href="/">비밀번호 변경</a></li>
+                                                    <li><a href="/">회원탈퇴</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/" class="navSubTitle">강사신청</a>
+                                        <ul>
+                                            <li><a href="/">NCS확인강사신청</a></li>
+                                            <li><a href="/">훈련교사관리</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- //헤더영역 -->
+
+        <!-- 메인 컨텐츠영역 -->
+        <div id="contentWrap">
+			<!-- 상단 비주얼 영역 -->
+            <div id="subTopWrap" class="topVisu01 noneType">
+                <div class="subTopArea">
+                    <h2 class="subTopTilte">공인인증센터</h2>
+                    <p class="subTopText">HRD-Net에서는, 개인정보의 보호 및 보안을 위하여 공인인증서로 본인여부를 확인합니다.</p>
+                </div>
+                <div class="location verPC">
+                    <!-- 2depth-->
+                    <ul>
+                        <li class="goHome verPC"><a href="/">홈</a></li>
+                        <li class="verPC"><a href="/">공인인증센터</a></li>
+                    </ul>
+
+                    
+                </div>
+            </div>
+            <!-- //상단 비주얼 영역 -->
+
+            <div id="subContentWrap" class="fullContents">
+                <div class="subContArea">
+                    <div class="contentArea">
+
+                        <div class="loginArea">
+                            <div class="tabInterface">
+                                <!-- 텝 인덱스 -->  
+                                <div class="tabListArea"> 
+                                    <ul class="tabList">
+                                        <li id="tab1" class="on"><button type="button">인증서 사용안내</button></li>
+                                        <li id="tab2"><button type="button">인증서 관리</button></li>
+                                    </ul>
+                                </div> 
+                                <!--// 텝 인덱스 -->
+                
+                                <!-- 텝 컨텐츠 -->
+                                <div class="tabContents">
+                                    <!-- 인증서 사용안내 -->
+                                    <section role="tabpanel" id="section1" class="tabCont on">     
+									<h3>인증서 사용안내</h3>
+										<div class="tblInfoTxt08 ty2">
+											<ul>
+												<li>전자서명을 생성하기 위하여 이용된 정보가 가입자에게 유일하게 속한다는 사실 등을 확인하고, 이를 증명하는 전자적 정보로서 공인인증기관(Certificate Authority)이<br /> 발급한 인증서를 말합니다.</li>
+												<li>공인인증서에는 가입자 이름, 공인인증서의 유효기간, 발급 기관명, 가입자의 전자서명 검증정보, 전자서명 방식,공인인증서 일련번호 등이 포함되어 있습니다.</li>
+												<li><span class="color04">HRD-Net 별도의 인증서를 발행하지 않으며 기존에 은행 등 금융기관을 통하여 받급받은 공인인증서를 사용하실 수 있습니다.</span></li>
+											</ul>
+										</div>
+
+										<div id="section_01">
+											<ul class="tabList04">
+												<li class="on">공인인증서발급/재발급</li>
+												<li><a href="javascript:show_layer('2');">공인인증서 발급기관</a></li>
+												<li><a href="javascript:show_layer('3');">공인인증서 발급절차</a></li>
+												<li><a href="javascript:show_layer('4');">HRD-Net 이용 가능한 인증서 종류</a></li>
+											</ul>
+											 <div>
+												<h5 class="bigTitle06">공인인증서 발급</h5>
+												<div class="certificationTxtBox">
+													<p class="tit01">공인인증서가 있는 경우</p>
+													<p class="txt01"><span class="gray">기존 인증서 사용이 가능합니다. (범용 및 일부 용도제안용 인증서)</span><br />
+													훈련기관 및 기업 대표자 회원은 사업자번호 기반으로 발급된 법인인증서를 사용해 주시기 바랍니다.<br />
+													개인회원 및 대리인 회원은 개인인증서를 사용하실 수 있습니다.</p>
+
+													<p class="tit01 ty2">사설 인증서를 사용하는 경우</p>
+													<p class="txt01"><span class="gray">사설 인증서를 사용하는 경우 비공인 인증기관에서 발급된 사설인증서는 HRD-Net에서 이용하실 수 없습니다.<br />
+													공인인증기관에서 발급받은 인증서를 사용해 주시기 바랍니다.</span></p>
+
+													<p class="tit01 ty2">공인인증서를 사용하시지 않은 경우</p>
+													<p class="txt01"><span class="gray">HRD-Net 홈페이지에서 공인인증서 발급에 대한 안내를 확인하신 후 관련 공인인증서를 발급받아야 이용이 가능합니다.</span></p>
+
+													<p class="tit01 ty2">주식거래용, 전자입찰, 전자상거래용, 무역거래, 세금계산용 등의 인증서</p>
+													<p class="txt01"><span class="gray">인터넷 뱅킹용이 아닌 일부 사용 가능하나 주식거래용, 전자입찰, 전자거래용, 무역거래, 세금계산용 등의 인증서는 사용이 불가능합니다.</span></p>
+												</div>
+
+												<h5 class="bigTitle06">공인인증서 재발급</h5>
+												<div class="certificationTxtBox">
+													<p class="tit01">컴퓨터(PC)을 포맷하거나 변경·교체된 경우</p>
+													<p class="txt01"><span class="gray">컴퓨터(PC)을 포맷하거나 변경·교체된 경우 발급기관에서 인증서를 재발급 받거나 다운로드 후 이용하셔야 합니다.</span></p>
+
+													<p class="tit01 ty2">수수료를 지불한 인증서의 경우</p>
+													<p class="txt01"><span class="gray">수수료를 지불한 인증서의 경우 재발급을 받더라도 수수료를 추가로 지불 하지 않으며, 유효기간은 기존 인증서의 유효기간으로 발급됩니다.</span><br />
+													자세한 사항은 공인인증서 발급기관으로 문의하시기 바랍니다.</p>
+												</div>
+											 </div>
+										</div>
+
+										<div id="section_02" style="display:none;">
+											<ul class="tabList04">
+												<li><a href="javascript:show_layer('1');">공인인증서발급/재발급</a></li>
+												<li class="on">공인인증서 발급기관</li>
+												<li><a href="javascript:show_layer('3');">공인인증서 발급절차</a></li>
+												<li><a href="javascript:show_layer('4');">HRD-Net 이용 가능한 인증서 종류</a></li>
+											</ul>
+											 <div>
+												<h5 class="bigTitle06">공인인증기관(Certifiation Authority ; CA)</h5>
+												<div class="certificationTxtBox">
+													<p class="tit01">공인인증기관(Certifiation Authority ; CA)은 전자서명법에 의해 규정된 자격요건을 갖추어 미래창조 과학 부로부터 지정된 기관을 말합니다.</p>
+													<p class="txt01"><span class="gray">현재 국내 공인인증체계는 한국인터넷진흥원 (KISA)을 최상위인증기관으로 하여 하위 공인인증기관으로 금융결제원, ㈜코스콤, ㈜한국정보인증 5개 기관이 지정되어 있습니다.<br /><br />
+
+													미래창조과학부는 공인인증정책 수립 및 인증체계를 관리하고 외국정부와 인증서 연동에 대한 협약 등을 추진하며 최상위 인증기관인 한국인터넷진흥원은 외국의 최상위 기관과 상호인증, <br />
+													하위 공인인증기관에게 공인인증서 발급, 공인인증서 검사 및 안전운영지원, 전자서명인증기술 개발 및 보급 등의 역할을 하고 있습니다.<br /><br />
+
+													5개 공인인증기관들은 가입자들의 신원을 확인하여 공인인증서비스를 발급하고 발급된 공인인증서를 관리하며 해당 공인인증서의 유효성 여부를 확인해주는 서비스와 공인인증서를 이용한<br />
+													부가서비스를 제공하고 있습니다.</span></p>
+												</div>
+
+												<h5 class="bigTitle06">공인인증을 주관하고 있는 기관들 (NPKI주관 기관)</h5>
+												<div class="certificationBox2">
+													<ul class="certificationBoxList2">
+														<li><a class="btn01">한국정보인증(Sign Gate)</a><a class="btn01">한국무역정보통신(Trade Sign)</a></li>
+														<li><a class="btn01">한국전자인증(Crosscourt)</a><a class="btn01">금융결제원(Yessign KFTC)</a></li>
+														<li><a class="btn01">한국증권전산(코스콤, Signkorea)</a></li>
+													</ul>
+												</div>
+											 </div>
+										</div>
+
+										<div id="section_03" style="display:none;">
+											<ul class="tabList04">
+												<li><a href="javascript:show_layer('1');">공인인증서발급/재발급</a></li>
+												<li><a href="javascript:show_layer('2');">공인인증서 발급기관</a></li>
+												<li class="on">공인인증서 발급절차</li>
+												<li><a href="javascript:show_layer('4');">HRD-Net 이용 가능한 인증서 종류</a></li>
+											</ul>
+											 <div>
+												<div class="certificationTxtList">
+													<ul>	
+														<li class="step01">
+															<p class="txt01">STEP 01</p>
+															<p class="txt02">공인인증서 발급신청</p>
+															<p class="txt03">공인인증서 신청을 희망하는 사용자(법인/개인)는 공인인증기관이나 등록대행기관을 직접방문하여 공인인증서 발급 신청을 합니다. (신원확인 서류 제출)</p>
+														</li>
+														<li class="step02">
+															<p class="txt01">STEP 02</p>
+															<p class="txt02">번호 및 코드 부여 받음</p>
+															<p class="txt03">공인인증기관 또는 등록대행 기관에서는 공인인증서 발급신청자의 신원을 확인한 후, 참조번호와 인가코드가 기재된 등록 확인서를 사용자에게 전달합니다.</p>
+														</li>
+														<li class="step03">
+															<p class="txt01">STEP 03</p>
+															<p class="txt02">발급기관 홈페이지 접속</p>
+															<p class="txt03">참조번호와 인가코드가 기재된 등록확인서를 가지고 공인인증기관 또는 등록대행 기관의 홈페이지에 접속하여 공인인증서 발급 신청을 합니다.</p>
+														</li>
+														<li class="step04">
+															<p class="txt01">STEP 04</p>
+															<p class="txt02">공인인증서 발급</p>
+															<p class="txt03">해당기관의 홈페이지 상의 메뉴를 통하여 공인인증서 파일이 생성됩니다. 공인인증서는 사용자 컴퓨터의 저장매체(하드디스크, USB, 플로피디스크 등)에 저장이 됩니다. <br />
+															공인인증서를 발급할 때 공인인증서 암호를 지정하게 되는데 이 암호를 꼭 기억하셔야 합니다. 공인인증서 암호는 추후 공인인증서 이용 시에 사용됩니다.</p>
+														</li>
+														<li class="step05">
+															<p class="txt01">STEP 05</p>
+															<p class="txt02">HRD-Net에서 공인인증서 등록</p>
+															<p class="txt03">공인 인증서 등록 후 암호를 입력하고 로그인하면 HRD-Net의 다양한 서비스를 사용할 수 있습니다. 
+															<button type="button" class="lookupBtn">HRD-Net 인증서 등록 바로가기</button></p>
+														</li>
+													</ul>
+												</div>
+											 </div>
+										</div>
+
+										<div id="section_04" style="display:none;">
+											<ul class="tabList04">
+												<li><a href="javascript:show_layer('1');">공인인증서발급/재발급</a></li>
+												<li><a href="javascript:show_layer('2');">공인인증서 발급기관</a></li>
+												<li><a href="javascript:show_layer('3');">공인인증서 발급절차</a></li>
+												<li class="on">HRD-Net 이용 가능한 인증서 종류</li>
+											</ul>
+											 <div>
+												<h5 class="bigTitle06">금융결제원</h5>
+												<!-- 테이블 -->
+												<div class="tableArea ty3">
+													<table class="list">
+														<caption></caption>
+														<colgroup>
+															<col style="width: auto;">
+															<col style="width: auto;">
+															<col style="width: auto;">
+															<col style="width: auto;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th>구분</th>
+																<th colspan="2">인증서종류 </th>
+																<th class="last">이용 가능 여부</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td rowspan="2" class="tl">개인</td>
+																<td colspan="2" class="tl">범용</td>
+																<td class="last"><span class="color03">이용 가능</span></td>
+															</tr>
+															<tr>
+																<td class="tl">용도제한용</td>
+																<td class="tl">은행/신용카드/보험용</td>
+																<td class="last"><span class="color03">이용 가능</span></td>
+															</tr>
+															<tr>
+															  <td rowspan="4" class="tl">법인/단체</td>
+															  <td colspan="2" class="tl">범용</td>
+															  <td class="last"><span class="color03">이용 가능</span></td>
+														  </tr>
+															<tr>
+															  <td rowspan="3" class="tl">용도제한용</td>
+															  <td class="tl">은행/신용카드/보험용</td>
+															  <td class="last"><span class="color03">이용 가능</span></td>
+														  </tr>
+															<tr>
+															  <td class="tl">은행/신용카드/보험용</td>
+															  <td class="last">이용 불가능</td>
+														  </tr>
+															<tr>
+															  <td class="tl">은행/신용카드/보험용</td>
+															  <td class="last">이용 불가능</td>
+														  </tr>
+														</tbody>
+													</table>  
+												</div>   
+												<!-- // 테이블 -->
+
+												<h5 class="bigTitle06">코스콤</h5>
+												<!-- 테이블 -->
+												<div class="tableArea ty3">
+													<table class="list">
+														<caption></caption>
+														<colgroup>
+															<col style="width: auto;">
+															<col style="width: auto;">
+															<col style="width: auto;">
+															<col style="width: auto;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th>구분</th>
+																<th colspan="2">인증서종류 </th>
+																<th class="last">이용 가능 여부</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td rowspan="3" class="tl">개인</td>
+																<td colspan="2" class="tl">범용</td>
+																<td class="last"><span class="color03">이용 가능</span></td>
+															</tr>
+															<tr>
+																<td rowspan="2" class="tl">용도제한용</td>
+																<td class="tl">Gold</td>
+																<td class="last"><span class="color03">이용 가능</span></td>
+															</tr>
+															<tr>
+															  <td class="tl">Silver</td>
+															  <td class="last"><span class="color03">이용 가능</span></td>
+													      </tr>
+															<tr>
+															  <td rowspan="3" class="tl">법인/단체</td>
+															  <td colspan="2" class="tl">범용</td>
+															  <td class="last"><span class="color03">이용 가능</span></td>
+														  </tr>
+															<tr>
+															  <td rowspan="2" class="tl">용도제한용</td>
+															  <td class="tl">Gold</td>
+															  <td class="last"><span class="color03">이용 가능</span></td>
+														  </tr>
+															<tr>
+															  <td class="tl">Silver</td>
+															  <td class="last"><span class="color03">이용 가능</span></td>
+														  </tr>
+														</tbody>
+													</table>  
+												</div>   
+												<!-- // 테이블 -->
+
+												<h5 class="bigTitle06">한국전자인증</h5>
+												<!-- 테이블 -->
+												<div class="tableArea ty3">
+													<table class="list">
+														<caption></caption>
+														<colgroup>
+															<col style="width: auto;">
+															<col style="width: auto;">
+															<col style="width: auto;">
+															<col style="width: auto;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th>구분</th>
+																<th colspan="2">인증서종류 </th>
+																<th class="last">이용 가능 여부</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td rowspan="2" class="tl">개인</td>
+																<td colspan="2" class="tl">범용</td>
+																<td class="last"><span class="color03">이용 가능</span></td>
+															</tr>
+															<tr>
+															  <td colspan="2" class="tl">용도제한용</td>
+																<td class="last"><span class="color03">이용 가능</span></td>
+															</tr>
+															<tr>
+															  <td class="tl">법인/단체/개인사업자</td>
+															  <td colspan="2" class="tl">범용</td>
+															  <td class="last"><span class="color03">이용 가능</span></td>
+														  </tr>
+															<tr>
+															  <td class="tl">법인/개인사업자</td>
+															  <td class="tl">용도제한용</td>
+															  <td class="tl">전자세금계산서, 은행용도</td>
+															  <td class="last">이용 불가능</td>
+														  </tr>
+														</tbody>
+													</table>  
+												</div>   
+												<!-- // 테이블 -->
+
+												<h5 class="bigTitle06">한국무역정보통신</h5>
+												<!-- 테이블 -->
+												<div class="tableArea ty3">
+													<table class="list">
+														<caption></caption>
+														<colgroup>
+															<col style="width: auto;">
+															<col style="width: auto;">
+															<col style="width: auto;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th>구분</th>
+																<th>인증서종류 </th>
+																<th class="last">이용 가능 여부</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="tl">개인</td>
+																<td class="tl">전자거래범용</td>
+																<td class="last"><span class="color03">이용 가능</span></td>
+															</tr>
+															<tr>
+															  <td class="tl">법인/단체/개인사업자</td>
+															  <td class="tl">전자거래범용</td>
+																<td class="last"><span class="color03">이용 가능</span></td>
+															</tr>
+															<tr>
+															  <td rowspan="2" class="tl">법인/단체</td>
+															  <td class="tl">지문보안토크 용도 (조달청 나라장터 등)</td>
+															  <td class="last">이용 불가능</td>
+														  </tr>
+															<tr>
+															  <td class="tl">전자무역 용도 (관체청/상고회의소 등)</td>
+															  <td class="last">이용 불가능</td>
+														  </tr>
+														</tbody>
+													</table>  
+												</div>   
+												<!-- // 테이블 -->
+
+												<div class="tblInfoTxt08">
+													<ul>
+														<li><span class="color04">HRD-Net 시스템 이용이 불가능한 인증서를 보유하고 있는 기업 및 훈련기관 회원님은 서비스 이용에 차질이 없도록 이용 가능한 인증서로 변경하여 주시기 바랍니다.</span></li>
+													</ul>
+												</div>
+
+												<h5 class="bigTitle06">관련 법령 등 근거 (전자서명 법)</h5>
+												<div class="certificationTxtBox">
+													<p class="tit01">제 15조(공인인증서의 발급) </p>
+													<p class="txt01"><span class="gray">④공인인증기관은 공인인증서를 발급 받고자 하는 자의 신청이 있는 경우에는 공인인증서의 이용범위 또는 용도를 제한하는 공인인증서를 발급할 수 있다.</span></p>
+
+													<p class="tit01 ty2">제23조(전자서명생성정보의 보호 등) </p>
+													<p class="txt01"><span class="gray">④누구든지 공인인증서를 이용범위 또는 용도에서 벗어나 부정하게 사용하여서는 아니된다.</span></p>
+
+													<p class="tit01 ty2">제32조(벌칙) </p>
+													<p class="txt01"><span class="gray">다음 각 호에 어느 하나에 해당하는 자는 <strong>1년 이하의 징역 또는 1천만원 이하의 벌금에 처한다.</strong><br />
+														3. 제 23조제4항의 규정을 위반하여 공인인증서를 이용범위 또는 용도에서 벗어나 부정하게 사용한 자</span></p>
+												 </div>
+											</div>
+										</div>										
+                                    </section>  
+
+                                    <!-- 인증서 관리 -->
+                                    <section role="tabpanel" id="section2" class="tabCont">  
+									<h3>인증서 관리</h3>
+                                        <div class="tblInfoTxt08">
+											<ul>
+												<li>공인인증서 관리를 할 수 있도록 도움을 드리는 페이지입니다.</li>
+												<li>공인인증서 복사, 삭제, 내보내기/가져오기, 보기/검증, 암호 변경, 소유자 검증 작업을 하실 수 있습니다.</li>
+											</ul>
+										</div>
+										
+										<h5 class="bigTitle06">인증서 내보내기</h5>
+										<div class="certificationBox">
+											<ul class="certificationBoxList">
+												<li>PC → 모바일<a class="ico ico01">PC → 모바일 아이콘</a></li>
+												<li>PC → 온라인<a class="ico ico02">PC → 온라인 아이콘</a></li>
+												<li>PC → 이동식 저장매체<a class="ico ico03">PC → 이동식 저장매체 아이콘</a></li>
+											</ul>
+										</div>
+										<div class="certificationBtnBox">
+											<span class="txt01">인증서 내보내기 과정을 자세히 알고 싶으세요?</span>
+											<button type="button" class="btnType01">PC → 모바일 안내</button>
+											<button type="button" class="btnType01">PC → 온라인 안내</button>
+											<button type="button" class="btnType01">PC → 이동식 저장매체 안내</button>
+										</div>
+
+										<h5 class="bigTitle06">인증서 가져오기</h5>
+										<div class="certificationBox">
+											<ul class="certificationBoxList ty2">
+												<li>온라인 → PC<a class="ico ico04">온라인 → PC 아이콘</a></li>
+												<li>이동식 저장매체 → PC<a class="ico ico05">이동식 저장매체 → PC 아이콘</a></li>
+											</ul>
+										</div>
+										<div class="certificationBtnBox">
+											<span class="txt01">인증서 가져오기 과정을 자세히 알고 싶으세요?</span>
+											<button type="button" class="btnType01">온라인 → PC 안내</button>
+											<button type="button" class="btnType01">이동식 저장매체 → PC 안내</button>
+										</div>
+
+										<h5 class="bigTitle06">인증서 암호 변경ㆍ삭제ㆍ소유자 검증</h5>
+										<div class="certificationBox">
+											<ul class="certificationBoxList">
+												<li>암호변경<a class="ico ico06">암호변경 아이콘</a></li>
+												<li>삭제<a class="ico ico07">삭제 아이콘</a></li>
+												<li>소유자 검증<a class="ico ico08">소유자 검증 아이콘</a></li>
+											</ul>
+										</div>
+										<div class="certificationBtnBox">
+											<span class="txt01">인증서 기타 과정을 자세히 알고 싶으세요?</span>
+											<button type="button" class="btnType01">인증서 암호변경 안내</button>
+											<button type="button" class="btnType01">인증서 삭제 안내</button>
+											<button type="button" class="btnType01">인증서 소유자 검증 안내</button>
+										</div>
+                                    </section>   
+                                </div> 
+                                <!--// 텝 컨텐츠 -->
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!-- //메인 컨텐츠영역 -->
+
+        <!-- 푸터영역 -->
+        <footer id="footerWrap">
+            <div class="footerArea">                
+                <div class="footerCont">
+                    <div class="footerLink">
+                        <div class="swiper-container" id="footerLink">
+                            <ul class="swiper-wrapper">
+                                <li class="footerLink01 swiper-slide"><a href="http://www.moel.go.kr" target="_blank" title="새창">고용노동부</a></li>
+                                <li class="footerLink02 swiper-slide"><a href="http://work.go.kr" target="_blank" title="새창">워크넷</a></li>
+                                <li class="footerLink03 swiper-slide"><a href="http://www.kcomwel.or.kr" target="_blank" title="새창">근로복지공단</a></li>
+                                <li class="footerLink04 swiper-slide"><a href="http://www.keis.or.kr" target="_blank" title="새창">한국고용정보원</a></li>
+                                <li class="footerLink05 swiper-slide"><a href="https://www.eps.go.kr" target="_blank" title="새창">외국인고용</a></li>
+                                <li class="footerLink06 swiper-slide"><a href="https://www.ei.go.kr" target="_blank" title="새창">고용보험</a></li>
+                                <li class="footerLink07 swiper-slide"><a href="https://www.ncs.go.kr" target="_blank" title="새창">직무능력표준</a></li>
+                                <li class="footerLink08 swiper-slide"><a href="https://c.q-net.or.kr/cont/bbs/wldsBbsList.do" target="_blank" title="새창">CQ넷</a></li>
+                                <li class="footerLink09 swiper-slide"><a href="http://www.hrdkorea.or.kr" target="_blank" title="새창">한국산업인력공단</a></li>
+                                <li class="footerLink10 swiper-slide"><a href="https://eis.work.go.kr" target="_blank" title="새창">EIS고용행정통계</a></li>
+                            </ul>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>    
+                    </div> 
+                    <ul class="footerLogo">
+                        <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo01.png" alt="고용노동부"></a></li>
+                        <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerLogo02.png" alt="한국고용정보원"></a></li>
+                    </ul>
+                    <div class="footerPolicy">
+                        <ul>  
+                            <li class="verM"><a href="/">이용약관</a></li>                              
+                            <li class="verPC"><a href="/">기관소개</a></li>
+                            <li class="verPC"><a href="/">찾아오시는 길</a></li>
+                            <li class="on"><a href="/">개인정보처리방침</a></li>
+                            <li class="verPC"><a href="/">저작권보호정책</a></li>
+                            <li class="verPC"><a href="/">공인인증센터</a></li>
+                            <li class="verPC"><a href="/">이메일수집거부</a></li>
+                            <li class="verPC"><a href="/">오픈 API 서비스</a></li>
+                            <li class="verM"><a href="/">PC화면</a></li>
+                        </ul>
+                    </div>
+                    <ul class="footerMark">
+                        <li><a href="javascript:window.open('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=E&amp;certNum=2019-N009','seal','width=527,height=720,location=no,status=no,scrollbars=no')" title="새창"><img src="../new_images/common/footerMark01.png" alt="ePRIVACY마크(개인정보보호마크)"></a></li>
+                        <li><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="새창"><img src="../new_images/common/footerMark02.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"></a></li>
+                    </ul>
+                </div>                 
+                <address class="post">(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 1577-7114</address> 
+                <p class="copyright">Copyright ⓒ 2016 Human Resources Development Service Of Korea. All Rights Reserved.</p>
+            </div>           
+        </footer>
+        <!-- //푸터영역 -->
+        
+        <!-- Top버튼 -->
+        <!--div class="btnGoTop"><a href="/" role="button">Top으로 이동</a></div-->
+        <!-- //Top버튼 -->
+
+        <!-- 하단 고정 메뉴 : Mobile -->
+        <div id="floatingWrap" class="fixBotNav">
+            <nav class="floatingMenu">            
+                <ul>
+                    <li class="home"><a href="/"><span>홈</span></a></li>
+                    <li class="search"><a href="/"><span>훈련상세<br>과정검색</span></a></li>                    
+                    <li class="my"><a href="/"><span>My</span></a></li>
+                    <li class="alam"><a href="/"><span>알림</span></a></li>
+                </ul>
+            </nav>            
+        </div> 
+        <!-- //하단 고정 메뉴 : Mobile -->
+    </div>
+</body>
+</html>

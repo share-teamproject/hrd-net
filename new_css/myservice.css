@@ -836,6 +836,49 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .serviceList02 .title { font-size:18px; padding-bottom:10px; }
 .serviceList02 .txtList > li { position:relative; font-size:14px; color:#727476; line-height:28px; padding-left:28px; }
 .serviceList02 .txtList > li:before {content:''; position:absolute; top:12px; left:10px; width:8px; height:4px; background:#27b8ba; }
+
+/* 공인인증센터 */
+.tblInfoTxt08.ty2 { padding:20px 20px 20px 120px; margin-top:-10px; }
+.certificationBox { border:1px #e2e2e4 solid; border-top:2px #727476 solid; padding:40px; }
+.certificationBoxList { overflow:hidden; width:100%; }
+.certificationBoxList li { float:left; width:33.3%; text-align:center; font-size:18px; color:#292a2d; font-weight:500; border-right:1px #e2e2e4 solid; }
+.certificationBoxList li:last-child { border-right:0; }
+.certificationBoxList.ty2 li { width:50%; }
+.certificationBoxList .ico { display:block; font-size:0; cursor:pointer; width:100px; height:80px; margin:0 auto; margin-top:20px; }
+.certificationBoxList .ico01 { background: url('../new_images/common/icoCertification01.jpg') no-repeat; }
+.certificationBoxList .ico02 { background: url('../new_images/common/icoCertification02.jpg') no-repeat; }
+.certificationBoxList .ico03 { background: url('../new_images/common/icoCertification03.jpg') no-repeat; }
+.certificationBoxList .ico04 { background: url('../new_images/common/icoCertification04.jpg') no-repeat; }
+.certificationBoxList .ico05 { background: url('../new_images/common/icoCertification05.jpg') no-repeat; }
+.certificationBoxList .ico06 { background: url('../new_images/common/icoCertification06.jpg') no-repeat; }
+.certificationBoxList .ico07 { background: url('../new_images/common/icoCertification07.jpg') no-repeat; }
+.certificationBoxList .ico08 { background: url('../new_images/common/icoCertification08.jpg') no-repeat; }
+.certificationBtnBox { border:1px #e2e2e4 solid; margin-top:-1px; padding:30px; }
+.certificationBtnBox .txt01 { font-size:16px; color:#4e4f51; padding:0 25px; }
+button.btnType01 { min-width:220px; display:inline-block; text-align:center; background:#fff; border:1px solid #cdcdd1; color:#4e4f51; font-size:14px; line-height:40px; height:42px; padding:0 30px; box-sizing:border-box; margin:0 8px; }
+.certificationTxtBox { border:1px #e2e2e4 solid; border-top:3px #727476 solid; padding:25px; font-size:14px; }
+.certificationTxtBox .tit01 { position:relative; font-size:16px; color:#5b648a; font-weight:500; padding-left:15px; }
+.certificationTxtBox .tit01:before { content:''; position:absolute; top:10px; left:0; width:4px; height:4px; background:#5b648a; border-radius:50%; }
+.certificationTxtBox .tit01.ty2 { margin-top:20px; }
+.certificationTxtBox .txt01 { padding:10px 0 0 15px; line-height:25px; }
+.certificationTxtBox .gray { color:#727476; }
+.certificationTxtBox .gray strong { color:#4e4f51; }
+.certificationBox2 { border:3px #d8dfeb solid; padding:30px 30px 30px 0; }
+.certificationBoxList2 { overflow:hidden; width:100%; }
+.certificationBoxList2 li { float:left; width:33.3%; font-size:18px; color:#292a2d; font-weight:500; border-right:1px #d8dfeb solid; padding-left:45px; }
+.certificationBoxList2 li:last-child { border-right:0; } 
+.certificationBoxList2 .btn01 { display:block; cursor:pointer; height:30px; line-height:30px; width:290px; font-size:16px; color:#4e4f51; margin:10px 0; background: url('../new_images/common/arrowBtn01.png') no-repeat 100% 0; }
+.certificationTxtList { margin-top:40px; }
+.certificationTxtList li { border-bottom:1px #e9e9e9 dashed; padding:25px 40px 30px 170px; }
+.certificationTxtList li.step01 { background: url('../new_images/common/icoIssueStep01.png') no-repeat 40px 10px; }
+.certificationTxtList li.step02 { background: url('../new_images/common/icoIssueStep02.png') no-repeat 40px 10px; }
+.certificationTxtList li.step03 { background: url('../new_images/common/icoIssueStep03.png') no-repeat 40px 10px; }
+.certificationTxtList li.step04 { background: url('../new_images/common/icoIssueStep04.png') no-repeat 40px 10px; }
+.certificationTxtList li.step05 { background: url('../new_images/common/icoIssueStep05.png') no-repeat 40px 10px; }
+.certificationTxtList .txt01 { font-size:14px; color:#292a2d; }
+.certificationTxtList .txt02 { font-size:16px; color:#292a2d; }
+.certificationTxtList .txt03 { font-size:14px; color:#727476; line-height:20px; padding-top:15px; }
+.certificationTxtList .lookupBtn { margin-left:30px; }
 /* kangjiyeon.css end */
 
 /* kimjaeseob.css start */
