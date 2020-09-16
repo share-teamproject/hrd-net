@@ -879,6 +879,11 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .certificationTxtList .txt02 { font-size:16px; color:#292a2d; }
 .certificationTxtList .txt03 { font-size:14px; color:#727476; line-height:20px; padding-top:15px; }
 .certificationTxtList .lookupBtn { margin-left:30px; }
+
+/* 기관찾기 2020-09-16 추가 됨 */
+.veiwMap .veiwList .Sejong.on{ background-position:0 0; }
+.veiwMap .Sejong { top:105px; left:165px; }
+.veiwMap .Sejong.on { margin:-15px 0 0 -15px; }
 /* kangjiyeon.css end */
 
 /* kimjaeseob.css start */
