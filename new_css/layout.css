@@ -288,6 +288,7 @@ button.btnType1 + button { margin:0 0 0 17px; }
 button.btnType2, a.btnType2 { min-width:112px; display:inline-block; text-align:center; background:#fff; border:1px solid #cdcdd1; color:#4e4f51; font-size:14px; line-height:38px; height:40px; padding:0 36px; box-sizing:border-box; }
 .btnType2.primary { background:#fff; border:1px solid #4171df; color:#4171df; } 
 .btnType2.etc,.btnType2 a.etc { background:#fff; color:#258384; border:1px solid #258384; }
+.btnType2.etc2 { border:1px solid #4171df; color:#4171df; } 
 .btnType2.loginBtn,.btnType2 a.loginBtn { background:#4171df; color:#fff; font-size:14px; }
 button.btnType2[disabled="disabled"] { border-color:#86a6ff;color:#86a6ff;cursor:unset}
 /* 소버튼 */
