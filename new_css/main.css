@@ -52,7 +52,8 @@
 #mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active span { color:#4870cf;}
 #mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active a { background:url('../new_images/main/arrowGoPage_r.png') center no-repeat #fff;  }/*0907_수정 이미지교체*/
 #mainTopWrap .movieControlArea .linkList span.swiper-pagination-bullet-active:after { position:absolute; top:8px; right:11px; width:12px; height:12px; border-radius:12px; background:#4870cf; content:''; }
-#mainTopWrap .movieControlArea .btnGroup { position:absolute; top:0; left:10px; width:40px; }/*0907_수정 right:10px; */
+#mainTopWrap .movieControlArea .btnGroup { position:absolute; top:0; left:10px; width:40px; z-index:16; }/*0907_수정 right:10px; */
+#mainTopWrap .movieControlArea .btnGroup button { cursor:pointer; }
 #mainKeyVisualPagination.swiper-pagination { top:5px; left:0px; }/*0907_수정 right:0px; */
 
 /* 국민내일배움카드 */
