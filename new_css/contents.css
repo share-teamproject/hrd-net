@@ -286,6 +286,13 @@
     color:#4171df; background-color:#fff; border:1px solid #4171df; text-decoration: none; }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { color:#fff; background-color:#4171df; border:1px solid #4171df; text-decoration: none; }    
     
+/* 관심정보보기 */
+.infoView{position:relative;display:inline-block;border:1px solid #cdcdd1;width:132px;text-align:left;color:#4e4f51;height:30px;font-size:14px;box-sizing:border-box;}
+.infoView p a{display:block;width:120px;height:28px;padding-left:15px;line-height:28px;background:#fff url('../new_images/common/arrowSelect.png') no-repeat right 12px; background-size:10px 6px;}
+.infoView ul{display:none;position:absolute;top:28px;left:-1px;width:132px;padding:9px 0;border:1px solid #ccc;background:#fafafa;z-index:100;}
+.infoView ul li a{display:block;height:25px;padding-left:15px;line-height:25px;}
+.infoView ul li a:hover{font-weight:600;}
+
 /* ==============================
 * 자주묻는 질문 & 질문과 답변 
 * ============================== */ 

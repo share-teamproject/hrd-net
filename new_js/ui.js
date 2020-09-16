@@ -90,6 +90,20 @@ $(function(){
 					});		
 				});
 			});		
+		},	
+		fn_selView:function(){
+			var $infoView = $('.infoView > p').find('a')
+
+            $infoView.on('click',function(){	
+                if ($(this).parent().hasClass('on'))
+                {
+                    $(this).parent().removeClass('on');
+                    $(this).parent().siblings().slideUp('fast');
+                }else{
+                    $(this).parent().addClass('on');
+                    $(this).parent().siblings().slideDown('fast');
+                }
+            });
 		}	
 	});
 
@@ -97,6 +111,7 @@ $(function(){
 	$("#headerWrap").fn_headFixed(); //head Fixed
 	$(".qnaArea").fn_qna(); //qna
 	$(".tabInterface").fn_tab(); //tab
+	$(".infoView").fn_selView(); //관심정보보기
 	uiForm();
 	//wrapWindowByMask();
 
