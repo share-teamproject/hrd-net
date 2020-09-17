@@ -14,7 +14,9 @@
 	<title>지원제도 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
 
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
 	<link href="../new_css/reset.css" rel="stylesheet" />
 	<link href="../new_css/layout.css" rel="stylesheet" />
 	<link href="../new_css/contents.css" rel="stylesheet" />
@@ -27,6 +29,9 @@
 	<link rel="stylesheet" href="../new_css/front_m.css" media="only screen and (max-device-width:768px)" />
 
 	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
 	<script src="../new_js/lib/swiper.min.js"></script>
 	<script src="../new_js/ui.js"></script>
 </head>
@@ -72,7 +77,7 @@
 					<!-- 본문제목 -->
 					<div class="headingTitleArea">
 						<h3 class="headingTitle">정부부처훈련안내</h3>
-						<p class="headingText">대한민국정부 각 부처엥서 실시하고 있는 직업능력개발 훈련지원 프로그램 및 유관 사업들을 안내 합니다. </p>
+						<p class="headingText">대한민국정부 각 부처에서 실시하고 있는 직업능력개발 훈련지원 프로그램 및 유관 사업들을 안내 합니다. </p>
 						<div class="headingIcon">
 							<ul>
 								<li><button type="button" class="twitter">트위터</button></li>
@@ -87,51 +92,568 @@
 							<div class="viewCon">
 								<h4 class="bult-h4">교육부</h4>
 								<p class="scon">기쁨학습, 미래학습, 통합학습이라는 비전을 가지고 평생학습 인프라 구축과 네트워크 활성화를 통하여 생애단계별 창조적 학습자 및 국가 경쟁력을 높이는 창조적 지식근로자 육성</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" title="새창으로 열림">https://www.moe.go.kr/main.do?s=moe</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="http://www.nile.or.kr/index.jsp" target="_blank" title="새창으로 열림">http://www.nile.or.kr/index.jsp</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="https://bdes.nile.or.kr:444/nile/base/bdesMain.do?" target="_blank" title="새창으로 열림">독학학위제</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://www.cb.or.kr/creditbank/base/nPerSeason.do" target="_blank" title="새창으로 열림">학점은행제</a></li>
+												</ul>
+											</div>
+											<div></div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">국가보훈처</h4>
 								<p class="scon">국가유공자나 보훈 가족에 대한 보상과 지원을 담당하는 국무총리 산하의 중앙행정기관으로, 보상금 지급, 교육, 취업, 의료 혜택 같은 보훈 정책을 수립해 유공자나 보훈 가족을 지원한다.</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="https://www.mpva.go.kr/mpva/main.do" target="_blank" title="새창으로 열림">https://www.mpva.go.kr/mpva/main.do</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="https://www.vnet.go.kr/" target="_blank" title="새창으로 열림">https://www.vnet.go.kr/</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="https://www.vnet.go.kr/" target="_blank" title="새창으로 열림">제대군인지원센터</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://bohunedu.or.kr:8443/" target="_blank" title="새창으로 열림">보훈교육연구원</a></li>
+												</ul>
+											</div>
+											<div></div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">국방부</h4>
 								<p class="scon">새로운 출발과 인생을 준비하는 전역(예정) 간부들의 충실한 조력자 또는 길잡이로서 취업능력개발과 안정적인 사회정착 지원</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="https://www.mnd.go.kr/mbshome/mbs/mnd/index.jsp" target="_blank" title="새창으로 열림">https://www.mnd.go.kr/mbshome/mbs/mnd/index.jsp</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="https://www.moti.or.kr/r_index.jsp" target="_blank" title="새창으로 열림">https://www.moti.or.kr/r_index.jsp</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="https://www.moti.or.kr/r_index.jsp" target="_blank" title="새창으로 열림">국방전직교육원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://www.armyjob.mil.kr:446/ " target="_blank" title="새창으로 열림">육군취업지원센터</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://rokaf.airforce.mil.kr/airforce/index.do" target="_blank" title="새창으로 열림">공군본부</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">국토교통부</h4>
 								<p class="scon">유능하고 신뢰받는 국토해양분야 핵심인재양성을 목표로 국토해양정책을 선도하는 전문인재 육성</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.molit.go.kr/portal.do " target="_blank" title="새창으로 열림">http://www.molit.go.kr/portal.do </a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="http://tilit.molit.go.kr/intro.do " target="_blank" title="새창으로 열림">http://tilit.molit.go.kr/intro.do </a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="http://www.seaman.or.kr/intro/eduGuid1.htm " target="_blank" title="새창으로 열림">한국해양수산연구원</a></li>
+													<li><a href="http://www.kmou.ac.kr/edu/main.do" target="_blank" title="새창으로 열림">한국해양대학교육 팽생교육원</a></li>
+													<li><a href="/" target="_blank" title="새창으로 열림">한국건설감리협회</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="/" target="_blank" title="새창으로 열림">건설기술교육원</a></li>
+													<li><a href="https://www.kscfcac.co.kr/jsp/studentHome/index.jsp" target="_blank" title="새창으로 열림">전문건설공제조합 기술교육원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://homenet.kocea.or.kr:1443/home/index.do" target="_blank" title="새창으로 열림">한국건설기술인협회</a></li>
+													<li><a href="http://www.seaman.or.kr/intro/eduGuid1.htm " target="_blank" title="새창으로 열림">한국기술사회</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">금융위원회</h4>
 								<p class="scon">우리나라 금융 산업의 선진화와 경쟁력 강화에 기여할 수 있는 최고의 금융인재 양성</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.fsc.go.kr/ " target="_blank" title="새창으로 열림">http://www.fsc.go.kr/ </a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="http://www.kbi.or.kr/platformWeb/Common.do?cmd=goIndex" target="_blank" title="새창으로 열림">http://www.kbi.or.kr/platformWeb/Common.do?cmd=goIndex</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="https://www.crefia.or.kr/" target="_blank" title="새창으로 열림">여신금융협회</a></li>
+													<li><a href="/" target="_blank" title="새창으로 열림">금융인력네트워크센터</a></li>
+													<li><a href="https://www.ksd.or.kr/ko/" target="_blank" title="새창으로 열림">한국예탁결제원(KSD)</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.kofia.or.kr/" target="_blank" title="새창으로 열림">금융투자협회</a></li>
+													<li><a href="http://license.kofia.or.kr/" target="_blank" title="새창으로 열림">금융투자협회-자격시험접수센터 </a></li>
+													<li><a href="https://www.in.or.kr/" target="_blank" title="새창으로 열림">보험연수원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.cica.or.kr/" target="_blank" title="새창으로 열림">(사)신용정보협회</a></li>
+													<li><a href="https://www.kcie.or.kr/" target="_blank" title="새창으로 열림">전국투자자교육협의회</a></li>
+													<li><a href="http://www.kifin.or.kr/index.jsp" target="_blank" title="새창으로 열림">금융투자교육원</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">기상청</h4>
 								<p class="scon">기상예보 정확도 향상을 위한 역량강화 중심 교육</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="https://www.weather.go.kr/w/index.do" target="_blank" title="새창으로 열림">https://www.weather.go.kr/w/index.do</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="https://www.weather.go.kr/w/index.do" target="_blank" title="새창으로 열림">한국기상기후아카데미</a></li>
+												</ul>
+											</div>
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">기획재정부</h4>
 								<p class="scon">국내외 경쟁 환경뿐만 아니라 미래의 환경변화를 예측하고, 정부 및 기업의 경쟁력 향상에 적합한 선진인류경제를 만들어 나갈 핵심인재 양성</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.moef.go.kr/" target="_blank" title="새창으로 열림">http://www.moef.go.kr/</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="http://www.ips.or.kr/" target="_blank" title="새창으로 열림">http://www.ips.or.kr/</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="http://cyber.kicpa.or.kr/" target="_blank" title="새창으로 열림">국세청</a></li>
+													<li><a href="http://kostat.go.kr/portal/korea/index.action" target="_blank" title="새창으로 열림">통계청</a></li>
+													<li><a href="http://www.pps.go.kr/kor/index.do" target="_blank" title="새창으로 열림">조달청</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.kacpta.or.kr/" target="_blank" title="새창으로 열림">국세청 - 한국세무사회</a></li>
+													<li><a href="http://kostat.go.kr/portal/korea/index.action" target="_blank" title="새창으로 열림">관세청 - 한국조세연구원</a></li>
+													<li><a href="http://www.customs.go.kr/kcs/main.do" target="_blank" title="새창으로 열림">관세청</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://www.kicpa.or.kr/" target="_blank" title="새창으로 열림">국세청 - 한국공인회계사회</a></li>
+													<li><a href="http://www.kcba.or.kr/main.aspx" target="_blank" title="새창으로 열림">관세청 - 한국관세사회</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">농림축산식품부</h4>
 								<p class="scon">녹색성장을 선도하는 산림강국 시대를 만들어 나갈 유능하고 신뢰받는 산림인재 양성</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="https://www.mafra.go.kr/" target="_blank" title="새창으로 열림">https://www.mafra.go.kr/</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="https://agriedu.net/" target="_blank" title="새창으로 열림">https://agriedu.net/</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="http://www.forest.go.kr/kfsweb/kfs/idx/Index.do" target="_blank" title="새창으로 열림">산림인력개발원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://www.ati.go.kr/" target="_blank" title="새창으로 열림">농수산식품연수원</a></li>
+												</ul>
+											</div>
+											<div></div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">문화체육관광부</h4>
 								<p class="scon">운동선수(학생) 및 체육전공자 등 체육전문 인력에 대한 경력개발 서비스, 체육인재의 소질개발 및 전문성 배양</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="https://www.mcst.go.kr/kor/main.jsp" target="_blank" title="새창으로 열림">https://www.mcst.go.kr/kor/main.jsp</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="/" target="_blank" title="새창으로 열림"></a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="/" target="_blank" title="새창으로 열림">예술경영아카데미</a></li>
+													<li><a href="http://www.kidp.or.kr/?menuno=773" target="_blank" title="새창으로 열림">한국디자인진흥원</a></li>
+													<li><a href="https://www.arte.or.kr/index.do " target="_blank" title="새창으로 열림">한국문화예술교육진흥원</a></li>
+													<li><a href="http://www.kocca.kr/cop/main.do" target="_blank" title="새창으로 열림">한국콘텐츠진흥원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.gokams.or.kr/main/main.aspx" target="_blank" title="새창으로 열림">예술경영지원센터</a></li>
+													<li><a href="https://edu.ktrwa.or.kr/web/user/main.do" target="_blank" title="새창으로 열림">한국방송작가협회 교육원</a></li>
+													<li><a href="https://www.kpf.or.kr/front/user/main.do" target="_blank" title="새창으로 열림">한국언론진흥재단</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://www.kdata.or.kr/" target="_blank" title="새창으로 열림">한국데이터베이스 진흥원</a></li>
+													<li><a href="https://edu.kobaco.co.kr/" target="_blank" title="새창으로 열림">한국방송광고공사 광고교육원 </a></li>
+													<li><a href="http://nest.kspo.or.kr/site/main/index001" target="_blank" title="새창으로 열림">체육인재육성재단</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">방송통신위원회</h4>
 								<p class="scon">정보화 취약계층의 디지털 역량을 높이기 위한 정부차원의 교육사업 및 정부와 민간에서 실시하는 정보화교육 지원</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.kcc.go.kr/" target="_blank" title="새창으로 열림">http://www.kcc.go.kr/</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p ><a href="https://academy.kisa.or.kr/main.kisa " target="_blank" title="새창으로 열림">https://academy.kisa.or.kr/main.kisa </a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="https://www.kisa.or.kr/main.jsp" target="_blank" title="새창으로 열림">한국인터넷진흥원</a></li>
+													<li><a href="https://www.nipa.kr/index.jsp" target="_blank" title="새창으로 열림">Nipa 정보통신산업진흥원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.kait.or.kr/" target="_blank" title="새창으로 열림">한국정보통신진흥협회 (KAIT)</a></li>
+													<li><a href="https://www.etri.re.kr/intro.html" target="_blank" title="새창으로 열림">한국전자통신연구원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.rapa.or.kr/design/index.asp" target="_blank" title="새창으로 열림">한국전파진흥협회</a></li>
+													<li><a href="https://www.nia.or.kr/" target="_blank" title="새창으로 열림">한국정보문화진흥원</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">보건복지부</h4>
 								<p class="scon">역량과 경쟁력을 갖추고 지속적인 변화경영을 통한 고성과 창출과 보건복지 인재개발의 HUB 역할을 수행할 수 있는 최고의 인재 양성</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.mohw.go.kr/" target="_blank" title="새창으로 열림">http://www.mohw.go.kr/</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="http://www.kohi.or.kr/index.do " target="_blank" title="새창으로 열림">http://www.kohi.or.kr/index.do </a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="/" target="_blank" title="새창으로 열림">한국노인인력개발원</a></li>
+													<li><a href="http://www.hira.or.kr/main.do " target="_blank" title="새창으로 열림">건강보험심사평가원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.kuksiwon.or.kr/ " target="_blank" title="새창으로 열림">한국보건의료인국가시험원</a></li>
+													<li><a href="http://www.cdc.go.kr/" target="_blank" title="새창으로 열림">질병관리본부</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://www.bokji.net/ " target="_blank" title="새창으로 열림">한국사회복지협의회</a></li>
+													<li><a href="https://www.khidi.or.kr/edu " target="_blank" title="새창으로 열림">한국보건산업진흥원</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">산업통상자원부</h4>
 								<p class="scon">실물경제에 정통한 전문가, 현장 중심의 행정서비스를 실천하는 행동인, 창조적 실용주의로 지식산업강국을 이끌어 나갈 미래 주도형 전문 지식경제인 양성 </p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.motie.go.kr/www/main.do " target="_blank" title="새창으로 열림">http://www.motie.go.kr/www/main.do </a></p>
+										</li>
+										<li class="site02">
+											<p">훈련관련 홈페이지</p>
+											<p><a href="https://www.kpc.or.kr/index.asp" target="_blank" title="새창으로 열림">https://www.kpc.or.kr/index.asp</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="http://www.fki.or.kr/Main.aspx" target="_blank" title="새창으로 열림">전국경제인연합회</a></li>
+													<li><a href="http://www.kotra.or.kr/kh/main/KHMIUI010M.html" target="_blank" title="새창으로 열림">KOTRA (대한무역투자진흥공사)</a></li>
+													<li><a href="http://www.korcham.net/nCham/Service/Main/appl/Main.asp" target="_blank" title="새창으로 열림">전국은행연합회</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.fki.or.kr/Main.aspx" target="_blank" title="새창으로 열림">대한상사중재원</a></li>
+													<li><a href="https://www.ccrs.or.kr/index.jsp " target="_blank" title="새창으로 열림">신용회복위원회</a></li>
+													<li><a href="https://www.kfb.or.kr/main/main.php" target="_blank" title="새창으로 열림">대한상공회의소</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.fki.or.kr/Main.aspx" target="_blank" title="새창으로 열림">한국생산성본부</a></li>
+													<li><a href="https://www.ksure.or.kr/index.do" target="_blank" title="새창으로 열림">한국무역보험공사</a></li>
+													<li><a href="https://www.ktc.go.kr/main.do" target="_blank" title="새창으로 열림">무역위원회</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">여성가족부</h4>
 								<p class="scon">체계적인 양성평등 및 성인지 교육을 통한 우리사회의 남녀 차별적 의식과 관행을 개선하고 성별에 관계없이 개인 능력과 소질을 계발할 수 있는 건강한 사회 기반 조성</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.mogef.go.kr/" target="_blank" title="새창으로 열림">http://www.mogef.go.kr/</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="http://www.kigepe.or.kr/" target="_blank" title="새창으로 열림">http://www.kigepe.or.kr/</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="https://www.stop.or.kr/contents/siteMain.do" target="_blank" title="새창으로 열림">한국여성인권진흥원</a></li>
+													<li><a href="https://www.familynet.or.kr/web/index.do" target="_blank" title="새창으로 열림">건강가정지원센터</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://www.kyci.or.kr/userSite/index.asp" target="_blank" title="새창으로 열림">한국청소년상담원</a></li>
+													<li><a href="https://www.kywa.or.kr/main/main.jsp " target="_blank" title="새창으로 열림">한국청소년활동진흥원<br />(청소년지도자연수센터)</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://central.childcare.go.kr/ccef/main.jsp" target="_blank" title="새창으로 열림">중앙보육정보센터</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">외교부</h4>
 								<p class="scon">국민행복, 희망의 새 시대를 여는 신뢰외교</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.mofa.go.kr/" target="_blank" title="새창으로 열림">http://www.mofa.go.kr/</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="http://study.korean.net/servlet/action.home.MainAction" target="_blank" title="새창으로 열림">http://study.korean.net/servlet/action.home.MainAction</a></p>
+										</li>
+									</ul>
+									<!-- <div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="#" target="_blank" title="새창으로 열림"></a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="#" target="_blank" title="새창으로 열림"></a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="#" target="_blank" title="새창으로 열림"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div> -->
+								</div>
 
 								<h4 class="bult-h4">중소기업청</h4>
 								<p class="scon">지식기반시대의 경영환경변화에 대응하여 창의적 대처능력과 다양한 업무역량을 갖춘 중소기업 인재 양성</p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.smba.go.kr/" target="_blank" title="새창으로 열림">http://www.smba.go.kr/</a></p>
+										</li>
+										<li class="site02">
+											<p class="siteName">훈련관련 홈페이지</p>
+											<p class="siteUrl"><a href="https://www.sbhrdc.re.kr/" target="_blank" title="새창으로 열림">https://www.sbhrdc.re.kr/</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="http://www.k-startup.go.kr/main.do" target="_blank" title="새창으로 열림">창업넷</a></li>
+													<li><a href="https://www.tipa.or.kr/" target="_blank" title="새창으로 열림">중소기업정보화사회</a></li>
+													<li><a href="http://cyber.kosmes.or.kr/cyber_new/index_new.jsp" target="_blank" title="새창으로 열림">중소기업연수원</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="https://www.kpc.or.kr/education/CourseYear.asp?UMEduType=49049039" target="_blank" title="새창으로 열림">중소기업핵심직무</a></li>
+													<li><a href="https://www.smes.go.kr/index " target="_blank" title="새창으로 열림">중소기업그린넷</a></li>
+													<li><a href="" target="_blank" title="새창으로 열림">중소기업인력양성사업</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.ceoedu.co.kr/" target="_blank" title="새창으로 열림">중소기업CEO교육</a></li>
+													<li><a href="http://www.bizinfo.go.kr/cmm/main/mainPage.do" target="_blank" title="새창으로 열림">중소기업지원사이트</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
 								<h4 class="bult-h4">환경부</h4>
 								<p class="scon">지식정보화 시대를 선도할 전문역량을 강화한 창조적 환경전문인 양성 </p>
+								<div class="linkWrap"><!-- 2020-09-17 -->
+									<ul class="hpLink">
+										<li class="site01">
+											<p>부처 홈페이지</p>
+											<p><a href="http://www.me.go.kr/" target="_blank" title="새창으로 열림">http://www.me.go.kr/</a></p>
+										</li>
+										<li class="site02">
+											<p>훈련관련 홈페이지</p>
+											<p><a href="http://ehrd.me.go.kr/" target="_blank" title="새창으로 열림">http://ehrd.me.go.kr/</a></p>
+										</li>
+									</ul>
+									<div class="gridWrap">
+										<div class="outer-grid">
+											<div>
+												<ul>
+													<li><a href="https://www.kfpa.or.kr/" target="_blank" title="새창으로 열림">한국화재보험협회</a></li>
+													<li><a href="https://www.energy.or.kr/web/kem_home_new/new_main.asp " target="_blank" title="새창으로 열림">에너지관리공단</a></li>
+													<li><a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank" title="새창으로 열림">한국수자원공사</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="#" target="_blank" title="새창으로 열림">국립방재교육연구원</a></li>
+													<li><a href="http://www.keco.or.kr/kr/main/index.do" target="_blank" title="새창으로 열림">한국환경공단</a></li>
+												</ul>
+											</div>
+											<div>
+												<ul>
+													<li><a href="http://www.khnp.co.kr/main.do#main" target="_blank" title="새창으로 열림">한국수력원자력</a></li>
+													<li><a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank" title="새창으로 열림">소방장재청</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<!--// 컨텐츠 -->
 

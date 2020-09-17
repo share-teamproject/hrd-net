@@ -3,6 +3,8 @@
 body{letter-spacing:-0.05em;}
 #front{line-height:1;}
 .visually-hidden {position: absolute;white-space: nowrap;width: 1px;height: 1px;overflow: hidden;border: 0;padding: 0;clip: rect(0 0 0 0);clip-path: inset(50%); margin: -1px;}
+.flexWrap{display: -webkit-flex;display: flex;-ms-flex-direction: row;flex-direction: row;align-items: stretch;}		/* 2020-09-17*/
+.flexWrap .col-2-1, .flexWrap .flex1{-ms-flex: 1;-webkit-flex: 1;flex: 1;}
 
 /* For desktop: */
 .col-1 {width: 100%;}
@@ -245,24 +247,17 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 .li-disc .col-4{float:left;width:25%;margin:5px 0;}
 
 /* -----  박스목록 > 블릿타이틀+설명+해시태그+자세히보기 ----- */
-.lineBox{overflow:hidden;width:100%;margin-top:40px;}
-.lineBox > div{position:relative;vertical-align:top;margin:0;padding:40px 30px;border:1px solid #e2e2e4;}
+.lineBox{display:flex;flex-wrap:wrap;width:100%;margin-top:40px;}
+.lineBox + .lineBox{margin-top:0;}
+.lineBox > div, .lineBox > li{position:relative;flex:1;vertical-align:top;margin:0;padding:40px 30px;border:1px solid #e2e2e4;}
 .lineBox .stit{width:100%;line-height:1.4;color:#292a2d;font-size:22px;text-align:center;}
-.lineBox .scon{display:block;width:100%;padding:30px 0;text-align:center;}
+.lineBox .scon{display:block;width:100%;min-height:200px;padding:30px 0;text-align:center;}
 .lineBox .scon p{line-height:1.8;}
 .lineBox .dashlineT{margin-top:20px;padding:20px 0 0;background-position:10px 0;}
-/* 박스 높이 */
-.lineBox.h600 > div{height:400px;}
-.lineBox.h600 .scon.h100{height:100px;padding:20px 0;text-align:center;}
-.lineBox.h200 > div{padding-bottom:0;}
-.lineBox.h200 > div .scon{height:200px;}
-.lineBox.pb0 > div{padding-bottom:0;}
-
 /* 하단고정영역 */
 .lineBox .linkArea{display:block;width:100%;height:60px;line-height:60px;background:url('../new_images/common/bg_dash.png') repeat-x 30px 0;}
 
 /* 단처리  */
-.lineBox .col-4, .lineBox .col-3, .lineBox .col-2, .lineBox .col-2-1{float:left;}
 .lineBox .col-2-1 + .col-2-1{margin-left:20px;}
 .col-2-1 .li-disc{min-height:60px;}
 
@@ -273,6 +268,9 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 .lineBox_b .li-disc.col-3{overflow:hidden;width:100%;}
 .lineBox_b .li-disc.col-3 li{display:block;float:left;width:282px;height:60px;margin-bottom:30px;padding:10px 30px 10px 40px;color:#595478;font-weight:500;vertical-align:top;border-right:1px solid #dfdfdf;background-position:30px 18px;}
 .lineBox_b .li-disc.col-3 li:nth-child(4n){border-right:0;}
+
+
+
 
 /* -----  상세 > 타이틀+버튼+해시태그+배경이미지 ----- */
 .viewTitleArea{width:100%;height:150px;margin-top:40px;padding:40px 50px;background:#f1f2f7 url('../new_images/front/bg_viewTitle.png') no-repeat right 0;background-size:500px 150px;}
@@ -406,6 +404,11 @@ button.studyBtn { display:inline-block; min-width:65px; text-align:center; paddi
 /* kimjaeseob.css 끝 */
 
 /* front.css 시작 */
+/* ==============================
+* 0917 정부지원사업안내
+* ============================== */
+.hgroup h4{display:inline-block;margin-right:40px;vertical-align:top;}
+.btn_view2{display:inline-block;line-height:26px;padding:0 35px 0 20px;color:#65646a;font-size:12px;border:1px solid #dfdfdf;background:#fff url('../new_images/common/arrowGoLink02.png') no-repeat 85% center; }
 
 /* ==============================
 * 0831 일학습병행제
@@ -417,7 +420,6 @@ button.studyBtn { display:inline-block; min-width:65px; text-align:center; paddi
 /* 그린색 글씨 */
 .tabDescG{width:100%;line-height:1.3;margin-top:10px;margin-bottom:20px;margin-left:20px;text-indent:-10px;color:#258384;font-size:14px;}
 .tabDescG01{width:100%;line-height:1.3;margin-left:10px;margin-bottom:10px;text-indent:-10px;color:#258384;font-size:14px;}
-
 
 /* 테이블 왼쪽정렬 */
 .tableArea table.view.tc td.left{text-align:left;}
@@ -434,5 +436,106 @@ button.studyBtn { display:inline-block; min-width:65px; text-align:center; paddi
 #popupWrap{padding:40px !important;}
 #popupWrap .line{padding-top:40px; border-top:2px solid #a0a0a0;}
 .bultPopup-h4{width:900px;margin-bottom:20px;padding-top:16px;color:#292a2d;font-size:22px;background:url('../new_images/common/bult_blueline.png') no-repeat 0 0;background-size:4px 0 0 23px;}
+
+/* ==============================
+* 0917 정부부처훈련안내
+* ============================== */
+.hpLink{display:flex;flex-wrap:wrap;width:100%;padding:40px 0 20px;}
+.hpLink li{flex:1;position:relative;min-height:80px;padding:10px 0 0 100px;}
+.hpLink li:before{content:"";position:absolute;left:0;top:0;width:80px;height:80px;background:url('../new_images/front/img_C005001001L_icon.png');background-repeat:no-repeat;}
+.hpLink li.site01:before{background-position:0 0;}
+.hpLink li.site02:before{background-position:-80px 0;}
+.hpLink li p{line-height:1.8;color:#4e4f51;font-size:16px;}
+.hpLink li p a{font-size:14px;letter-spacing:0;}
+
+/* ==============================
+* 0917 업무서식 및 규정
+* ============================== */
+.searchArea dd select + select{margin-left:10px;}
+.searchArea dd select + input, .searchArea dd select + .btnArea, input + .btnArea{margin-left:10px;}
+
+/* ==============================
+* 0917 행정지원이용신청
+* ============================== */
+.checkBoxList li{padding:5px 0;}
+.innerTxtList01{display:flex;flex-wrap:wrap;width:100%;}
+.innerTxtList01 li{flex:1;}
+.innerTxtList01 li .download{margin-left:10px;}
+
+/* ==============================
+* 0917 레이어팝업
+* ============================== */
+.w1140{width:1140px;}
+.y-scroll{overflow-y:scroll;height:740px;}
+.layerPop{position:absolute;left:50%;top:100px;;z-index:10000;margin-left:-570px;background-color:#fff;}
+.layerPop .layerTitle{position:relative;width:100%;height:54px;padding:0 30px;border-bottom:1px #e2e2e4 solid;}
+.layerPop .layerTitle .text{line-height:54px;color:#4e4f51;font-size:22px;text-align:left;}
+.layerPop .layerTitle .close{position:absolute;top:16px;right:22px;width:22px;height:22px;background:url('../new_images/common/btnClose.png') no-repeat;cursor: pointer;}
+.layerPop .layerTitle .close a{font-size:0;}
+/* ---------- Layout_컨텐츠 ----------  */
+.layerPopCon{position:relative;width:100%;padding:30px 40px 40px;}
+.layerPopCon .Title{width:100%;line-height:1;margin:0;color:#292a2d;font-size:26px;font-weight:500;text-align:center;}
+.layerPopCon .absolute.logo_moel{position:absolute;left:40px;top:30px;width:100px;height:38px;font-size:0;background:url('../new_images/front/logo_moel.png') no-repeat 0 0;background-size:100px 38px;}
+
+/* ---------- 파란막대타이틀 ----------  */
+.layerPopCon .bult-Title{width:100%;line-height:1;margin-top:60px;padding-top:16px;color:#292a2d;font-size:22px;background:url('../new_images/front/bult_tit.png') no-repeat 0 0;background-size:4px 0 0 23px;}
+.layerPopCon .bult-Title-desc{width:100%;line-height:22.5px;margin-top:10px;color:#727476;font-size:14px;}
+/* ---------- 파란블릿소타이틀 + 컨텐츠 ----------  */
+.layerPopCon .bstit-scon{width:100%;}
+.layerPopCon .bstit-scon .stit{width:100%;margin:30px 0 10px;padding:0 0 0 10px;color:#595478;font-size:16px;font-weight:500;background:url('../new_images/front/bult_bDot.png') no-repeat 0 5px;background-size:10px 16px;}
+.layerPopCon .bstit-scon .scon{width:100%;line-height:22.5px;padding-left:10px;color:#727476;font-size:14px;}
+.layerPopCon .bstit-scon .scon:after{content:"";display:block;clear:both;}
+
+/* ---------- 컨텐츠이미지 ----------  */
+.layerPopCon .pimg_c001001001L{background:url('../new_images/front/pimg_c001001001L.png') no-repeat right bottom;background-size:350px 112px;}
+
+.imgstit-scon{position:relative;width:100%;min-height:140px;padding:30px 0;border-bottom:1px dashed #dfdfdf;}
+.imgstit-scon:before{content:"";display:inline-block;position:absolute;top:20px;left:60px;width:100px;height:100px;margin-left:-20px;background:url('../new_images/front/bg_C002001001L_02.png') no-repeat;}
+.imgstit-scon.icon_01:before{background-position:0 0;}
+.imgstit-scon.icon_02:before{background-position:-100px 0;}
+.imgstit-scon.icon_03:before{background-position:-200px 0;}
+.imgstit-scon.icon_04:before{background-position:-300px 0;}
+.imgstit-scon.thump:before{background-position:-400px 0;}
+.imgstit-scon:after{content:"";display:block;clear:both;}
+.imgstit-scon .stit{float:left;width:30%;height:100%;padding:0 0 0 170px;color:#595478;font-size:14px;}
+.imgstit-scon .scon{float:left;width:70%;height:100%;line-height:22.5px;padding-left:10px;color:#727476;font-size:14px;}
+.imgstit-scon .scon em{color:#268486;}
+
+.box-scon{width:100%;min-height:186px;display: -webkit-flex;display: flex;-ms-flex-direction: row;flex-direction: row;align-items: stretch;}
+.box-scon:after{content:"";display:block;clear:both;}
+.box-scon li{position:relative;-ms-flex: 1;-webkit-flex: 1;flex: 1;padding:90px 20px 30px 10px;text-align:center;background-color:#f6f6f6;}
+.box-scon li:before{content:"";display:inline-block;position:absolute;top:30px;left:50%;width:40px;height:40px;margin-left:-20px;background-image:url('../new_images/front/bg_C002001001L.png');background-repeat:no-repeat;}
+.box-scon li.bg_01:before{background-position:0 0;}
+.box-scon li.bg_02:before{background-position:-40px 0;}
+.box-scon li.bg_03:before{background-position:-80px 0;}
+.box-scon li.bg_04:before{background-position:-120px 0;}
+.box-scon li.bg_05:before{background-position:-160px 0;}
+.box-scon li:nth-child(2n){background-color:#fff;}
+.box-scon li .scon{display:inline-block;text-align:center;}
+.box-scon.fl-4{display:block !important;}
+.box-scon.fl-4 li{flex:none;float:left !important;width:25% !important;height:250px;padding-left:10px;padding-right:20px;}
+.box-scon.fl-4 li:nth-child(5), .box-scon.fl-4 li:nth-child(7){background-color:#fff !important;}
+.box-scon.fl-4 li:nth-child(6), .box-scon.fl-4 li:nth-child(8){background-color:#f6f6f6 !important;}
+.box-scon.fl-2{display:block !important;}
+.box-scon.fl-2 li{flex:none;float:left !important;width:50% !important;height:250px;padding-left:10px;padding-right:20px;}
+.box-scon.fl-2 li:nth-child(3){background-color:#fff !important;}
+.box-scon.fl-2 li:nth-child(4){background-color:#f6f6f6 !important;}
+
+.flexWrap .bstit-scon{-ms-flex: 1;-webkit-flex: 1;flex: 1;}
+.bstit-scon .scon{display:flex;flex-wrap:wrap;width:100%;}
+.bstit-scon .scon span:nth-child(2){-ms-flex: 1;-webkit-flex: 1;flex: 1;}
+.bstit-scon .scon .sstit{width:30%;}
+
+/* ==============================
+* 0917 기관로고 홈페이지주소
+* ============================== */
+.lineTB-flex{display:flex;flex-wrap:wrap;width:100%;padding:30px 10px 40px;border-top:3px solid #727476;border-bottom:1px solid #e2e2e4;}
+.lineTB-flex .imgLogo{width:200px;height:280px;margin-right:30px;border:1px solid #e2e2e4;}
+.lineTB-flex .fileAddEle{-ms-flex: 1;-webkit-flex: 1;flex: 1;}
+.lineTB-flex .filePlug{width:100%;padding:20px 14px 0;border:4px solid #e1e4e9;}
+.lineTB-flex .dashList{margin-top:20px;}
+.lineTB-flex .dashList li{line-height:1.2;font-size:12px;}
+#front .comment .tit{line-height:1.4;}
+#front .comment .tit em{color:#4071df;}
 
 /* front.css 끝 */

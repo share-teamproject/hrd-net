@@ -14,7 +14,9 @@
 	<title>지원제도 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
 
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
 	<link href="../new_css/reset.css" rel="stylesheet" />
 	<link href="../new_css/layout.css" rel="stylesheet" />
 	<link href="../new_css/contents.css" rel="stylesheet" />
@@ -27,6 +29,9 @@
 	<link rel="stylesheet" href="../new_css/front_m.css" media="only screen and (max-device-width:768px)" />
 
 	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
 	<script src="../new_js/lib/swiper.min.js"></script>
 	<script src="../new_js/ui.js"></script>
 </head>
@@ -90,7 +95,7 @@
 								<dl class="searchArea">
 									<dt><label for="searchItem">법령명</label></dt>
 									<dd>
-										<select name="searchItem" title="검색 항목 선택" id="searchItem" class="selectBox w35p">
+										<select name="searchItem" title="검색 항목 선택" id="searchItem" class="selectBox w80p"><!-- 2020-09-17 -->
 											<option value="all">전체</option>
 											<option value="title">제목</option>
 											<option value="name">작성자</option>
@@ -102,8 +107,8 @@
 						</div>
 
 						<div class="cont1 contentTline">
-							<div class="lineBox pb0">
-								<div class="col-3">
+							<ul class="lineBox pb0"><!-- 2020-09-17  태그 수정 및 col-3삭제 -->
+								<li>
 									<h4 class="bult-title-center">고용노동법</h4>
 									<div class="scon tl">
 										<p>법률 제16269호</p>
@@ -114,8 +119,8 @@
 										<span class="hashtag"># 고용노동부</span>
 										<span class="fr"><a href="C002002001D.html" class="btn_detail">자세히보기</a></span>
 									</p>
-								</div>
-								<div class="col-3">
+								</li>
+								<li>
 									<h4 class="bult-title-center">고용노동법</h4>
 									<div class="scon tl">
 										<p>법률 제16269호</p>
@@ -126,8 +131,8 @@
 										<span class="hashtag"># 고용노동부</span>
 										<span class="fr"><a href="#" class="btn_detail">자세히보기</a></span>
 									</p>
-								</div>
-								<div class="col-3">
+								</li>
+								<li>
 									<h4 class="bult-title-center">고용노동법</h4>
 									<div class="scon tl">
 										<p>법률 제16269호</p>
@@ -138,8 +143,10 @@
 										<span class="hashtag"># 고용노동부</span>
 										<span class="fr"><a href="#" class="btn_detail">자세히보기</a></span>
 									</p>
-								</div>
-								<div class="col-3">
+								</li>
+							</ul>
+							<ul class="lineBox pb0">
+								<li>
 									<h4 class="bult-title-center">고용노동법</h4>
 									<div class="scon tl">
 										<p>법률 제16269호</p>
@@ -150,8 +157,8 @@
 										<span class="hashtag"># 고용노동부</span>
 										<span class="fr"><a href="C002002001D.html" class="btn_detail">자세히보기</a></span>
 									</p>
-								</div>
-								<div class="col-3">
+								</li>
+								<li>
 									<h4 class="bult-title-center">고용노동법</h4>
 									<div class="scon tl">
 										<p>법률 제16269호</p>
@@ -162,8 +169,8 @@
 										<span class="hashtag"># 고용노동부</span>
 										<span class="fr"><a href="#" class="btn_detail">자세히보기</a></span>
 									</p>
-								</div>
-								<div class="col-3">
+								</li>
+								<li>
 									<h4 class="bult-title-center">고용노동법</h4>
 									<div class="scon tl">
 										<p>법률 제16269호</p>
@@ -174,8 +181,8 @@
 										<span class="hashtag"># 고용노동부</span>
 										<span class="fr"><a href="#" class="btn_detail">자세히보기</a></span>
 									</p>
-								</div>
-							</div>
+								</li>
+							</ul>
 
 							<!-- paging : pc -->
 							<div class="pagenation">

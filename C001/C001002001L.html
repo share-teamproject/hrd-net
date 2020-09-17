@@ -13,7 +13,10 @@
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
 	<title>지원제도 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
 	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
 	<link href="../new_css/reset.css" rel="stylesheet" />
 	<link href="../new_css/layout.css" rel="stylesheet" />
 	<link href="../new_css/contents.css" rel="stylesheet" />
@@ -26,8 +29,11 @@
 	<link rel="stylesheet" href="../new_css/front_m.css" media="only screen and (max-device-width:768px)" />
 
 	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
 	<script src="../new_js/lib/swiper.min.js"></script>
-    <script src="../new_js/ui_m.js"></script>
+	<script src="../new_js/ui.js"></script>
 </head>
 
 <body>
@@ -85,8 +91,8 @@
 						<div class="cont1 contentTline">
 							<h4 class="bult-h4 mb10">훈련안내 및 절차</h4>
 							<p class="hDesc-s">근로자, 청년 구직자, 구직자, 기업지원과정 등 해당 신청 절차를 안내합니다</p>
-							<div class="lineBox h600">
-								<div class="col-3">
+							<ul class="lineBox"><!-- 2020-09-17 태그수정 및 class 제거  -->
+								<li>
 									<h5 class="stit">구직자 지원사업 신청절차</h5>
 									<p class="scon h100">본인거주 지방 고용노동관서(고용센터)에 우선 구직 신청 및 상담을 받으셔야 합니다.</p>
 									<div class="dashlineT">
@@ -100,8 +106,8 @@
 											<li><span>7</span>. 취업 및 창업</li>
 										</ol>
 									</div>
-								</div>
-								<div class="col-3">
+								</li>
+								<li>
 									<h5 class="stit">근로자 지원사업 신청절차</h5>
 									<p class="scon h100">자격요건을 확인하신 후 훈련내용에 따라 온라인 신청 및 해당 지방 고용노동관서(고용센터)에 방문하여 신청이 가능합니다.</p>
 									<ol class="dashlineT li-decimal">
@@ -111,8 +117,8 @@
 										<li><span>4</span>. 훈련수강 및 자부담 결제</li>
 										<li><span>5</span>. 훈련종료</li>
 									</ol>
-								</div>
-								<div class="col-3">
+								</li>
+								<li>
 									<h5 class="stit">기업(사업주) 지원사업 신청절차</h5>
 									<p class="scon h100">지원기업의 경우 모집 공고를 통한 사업참여 신청이 가능하며 심사위원회의 심의, 의결을 통해 선정이 됩니다.</p>
 									<ol class="dashlineT li-decimal">
@@ -122,8 +128,8 @@
 										<li><span>4</span>. 훈련비용 지급신청</li>
 										<li><span>5</span>. 훈련비용 지원</li>
 									</ol>
-								</div>
-							</div>
+								</li>
+							</ul>
 						</div>
 
 						<div class="cont1">

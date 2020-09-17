@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>훈련기관관리 | MY 서비스 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	<link href="../new_css/front.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="../new_css/layout_m.css" media="only screen and (max-device-width:768px)" />
+	<link rel="stylesheet" href="../new_css/contents_m.css" media="only screen and (max-device-width:768px)" />
+	<link rel="stylesheet" href="../new_css/main_m.css" media="only screen and (max-device-width:768px)" />
+	<link rel="stylesheet" href="../new_css/front_m.css" media="only screen and (max-device-width:768px)" />
+
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+	<div id="skipnav">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#contentWrap">본문 바로가기</a>
+		<a href="#footerWrap">푸터 바로가기</a>
+	</div>
+
+	<div id="wrap">
+		<!-- 헤더영역 -->
+		<header id="headerWrap">
+			<div class="headArea">
+				헤더영역
+			</div>
+			<!-- 헤더 : mobile -->
+			<div class="headerBtn">
+				<!--h1>class="headerLogo"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1-->
+				<button type="button" class="backBtn btn">이전 단계로 돌아가기</button>
+				<button type="button" class="searhBtn btn">검색</button>
+				<button type="button" class="totalMenuBtn btn">전체메뉴</button>
+				<!--button type="button"class="closeBtn btn">닫기</button-->
+			</div>
+			<!-- 전체메뉴 : mobile  -->
+			<nav class="totalMenuWrap">
+				<div class="overlay"></div>
+				<div class="totalMenuArea">
+					전체메뉴 : mobile
+				</div>
+			</nav>
+		</header>
+		<!-- //헤더영역 -->
+
+		<!-- 메인 컨텐츠영역 -->
+		<div id="contentWrap">
+			<!-- 상단 비주얼 영역 -->
+			<div id="subTopWrap" class="topVisu04">
+				<div class="subTopArea">
+					<h2 class="subTopTilte">MY서비스</h2>
+					<p class="subTopText">고객센터를 이용하시면 필요하신 사항을 해결하실 수 있습니다.</p>
+				</div>
+				<div class="location">
+					<ul>
+						<li class="goHome verPC"><a href="/">홈</a></li>
+						<li class="verPC"><a href="/">MY 서비스</a></li>
+						<li><a href="/">훈련기관관리</a></li>
+						<li class="on"><a href="/">대리인현황</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //상단 비주얼 영역 -->
+
+			<div id="myStateWrap">
+				<div class="myStateArea">
+					<ul class="myStateBox">
+						<li class="myPhoto">
+							<img src="../new_images/common/imgMy.jpg" alt="내사진">
+						</li>
+						<li class="myState">
+							<p class="text1">한고원 님</p>
+							<p class="text2">국민내일배움카드 <span>발급 상태</span></p>
+							<p class="text3">발급일자 :2020.04.24</p>
+						</li>
+						<li class="myState2">
+							<div class="icon01"></div>
+							<p class="text1"><span class="color03">My</span> 카드</p>
+							<p class="text2"><span>발급</span></p>
+						</li>
+						<li class="myState2">
+							<div class="icon02"></div>
+							<p class="text1"><span class="color03">My</span> 상담</p>
+							<p class="text2">상담내역 <span>3건</span></p>
+						</li>
+						<li class="myState2">
+							<div class="icon03"></div>
+							<p class="text1"><span class="color03">My</span> 훈련</p>
+							<p class="text2">훈련수료 <span>3개</span></p>
+						</li>
+						<li class="myState2">
+							<div class="icon03"></div>
+							<p class="text1"><span class="color03">My</span> 관심 (훈련)</p>
+							<p class="text2">맞춤훈련 <span>5개</span></p>
+						</li>
+					</ul>
+				</div>
+			</div><!-- // #myStateWrap -->
+
+			<div id="subContentWrap">
+				<!-- 좌측 메뉴 영역 -->
+				<div class="lnbArea">
+					좌측 메뉴 영역
+				</div>
+				<!--// 좌측 메뉴 영역 -->
+
+				<div class="subContArea">
+					<div class="headingTitleArea">
+						<h3 class="headingTitle ty2">대리인현황</h3>
+						<div class="headingIcon">
+							<ul>
+								<li><button type="button" class="twitter">트위터</button></li>
+								<li><button type="button" class="facebbok">페이스북</button></li>
+								<!--li><button type="button" class="">링크복사</button></li-->
+								<li><button type="button" class="print">프린트</button></li>
+							</ul>
+						</div>
+					</div><!-- //headingTitleArea -->
+
+					<div class="contentArea">
+						<div class="qnaArea">
+							<ul>
+								<li>
+									<div tabindex="0" class="qnaQ">
+										<div class="txtQ">
+											<ul class="qnaSection">
+												<li>홍길동</li>
+												<li>010-1234-1234</li>
+												<li>선임</li>
+											</ul>
+											<p class="qnaText">포항고용센터</p>
+										</div>
+									</div>
+									<div class="qnaA tblIn">
+										<div class="tableArea">
+											<table class="view mb0 brd-t-ty1 mo-brd-t-ty1">
+												<caption>대리인 정보</caption>
+												<colgroup>
+													<col style="width:210px;">
+													<col style="width:auto;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">주민등록번호</th>
+														<td>860423 - 2******</td>
+													</tr>
+													<tr>
+														<th scope="row">구분</th>
+														<td>훈련기관 대리인</td>
+													</tr>
+													<tr>
+														<th scope="row">주소</th>
+														<td>[15695]  서울시 동작구 사당동 동작대로 29길 216호</td>
+													</tr>
+													<tr>
+														<th scope="row">이메일</th>
+														<td>keis@keis.com</td>
+													</tr>
+													<tr>
+														<th scope="row">대리인 직책</th>
+														<td>대리</td>
+													</tr>
+													<tr>
+														<th scope="row">선임일</th>
+														<td>2020-09-10</td>
+													</tr>
+													<tr>
+														<th scope="row">해임일</th>
+														<td>2020-09-10</td>
+													</tr>
+													<tr>
+														<th scope="row">전자통지 수신</th>
+														<td>
+															<div class="inpArea radioInput">
+																<div class="ui_radioBox">
+																	<input type="radio" checked="checked" value="rd3-1" name="rd3" id="rd3-1">
+																	<label for="rd3-1">예</label>
+																</div>
+																<div class="ui_radioBox">
+																	<input type="radio" value="rd3-2" name="rd3" id="rd3-2">
+																	<label for="rd3-2">아니오</label>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div tabindex="0" class="qnaQ">
+										<div class="txtQ">
+											<ul class="qnaSection">
+												<li>홍길동</li>
+												<li>010-1234-1234</li>
+												<li>선임</li>
+											</ul>
+											<p class="qnaText">포항고용센터</p>
+										</div>
+									</div>
+									<div class="qnaA tblIn">
+										<div class="tableArea">
+											<table class="view mb0 brd-t-ty1 mo-brd-t-ty1">
+												<caption>대리인 정보</caption>
+												<colgroup>
+													<col style="width:210px;">
+													<col style="width:auto;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">주민등록번호</th>
+														<td>860423 - 2******</td>
+													</tr>
+													<tr>
+														<th scope="row">구분</th>
+														<td>훈련기관 대리인</td>
+													</tr>
+													<tr>
+														<th scope="row">주소</th>
+														<td>[15695]  서울시 동작구 사당동 동작대로 29길 216호</td>
+													</tr>
+													<tr>
+														<th scope="row">이메일</th>
+														<td>keis@keis.com</td>
+													</tr>
+													<tr>
+														<th scope="row">대리인 직책</th>
+														<td>대리</td>
+													</tr>
+													<tr>
+														<th scope="row">선임일</th>
+														<td>2020-09-10</td>
+													</tr>
+													<tr>
+														<th scope="row">해임일</th>
+														<td>2020-09-10</td>
+													</tr>
+													<tr>
+														<th scope="row">전자통지 수신</th>
+														<td>
+															<div class="inpArea radioInput">
+																<div class="ui_radioBox">
+																	<input type="radio" checked="checked" value="rd3-1" name="rd3" id="rd3-1">
+																	<label for="rd3-1">예</label>
+																</div>
+																<div class="ui_radioBox">
+																	<input type="radio" value="rd3-2" name="rd3" id="rd3-2">
+																	<label for="rd3-2">아니오</label>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li class="none">
+									자료가 없습니다. 다른 검색조건을 선택해주세요.
+								</li>
+							</ul>
+							<div class="verPC">
+								<!-- paging : pc -->
+								<div class="pagenation">
+									<a href="/" class="pb prev">이전보기</a>
+									<a href="/" class="on">1</a>
+									<a href="/">2</a>
+									<a href="/">3</a>
+									<a href="/">4</a>
+									<a href="/">5</a>
+									<a href="/">6</a>
+									<a href="/">7</a>
+									<a href="/" class="pb next">다음보기</a>
+								</div>
+								<!-- //paging : pc -->
+							</div>
+						</div><!-- //qnaArea -->
+
+						<div class="mBtnDom moInner">
+							<button type="button" class="btnType2 primary">대리인 선임/해임신청서</button>
+						</div><!-- //mBtnDom -->
+
+						<div class="commentBox m-maLR">
+							<ul class="dashList">
+								<li>대리인 온라인 선임신청 서비스 준비중입니다.</li>
+								<li>서비스 오픈전까지는 <span class="color04">행정지원시스템 > 공통업무 > 대리인관리 메뉴</span>를 통해 신청이 가능하시며, HRD-Net 전자서비스 대리인 신청서 서식을 작성하신 후 사업장 주소지 관할 고용센터에 제출하시어 선임신청이 가능하오니 참고하시기 바랍니다.</li>
+								<li>대리인선임 승인이 된 경우 대리인 로그인화면에서 공인인증서 등록 후 서비스 이용이 가능합니다.</li>
+							</ul>
+						</div><!-- //commentBox -->
+
+					</div><!-- //contentArea -->
+				</div><!-- //subContArea -->
+			</div>
+		</div>
+		<!-- //메인 컨텐츠영역 -->
+
+		<!-- 푸터영역 -->
+		<footer id="footerWrap">
+			<div class="footerArea">
+				푸터영역
+			</div>
+		</footer>
+		<!-- //푸터영역 -->
+
+		<!-- Top버튼 -->
+		<!--div class="btnGoTop"><a href="/" role="button">Top으로 이동</a></div-->
+		<!-- //Top버튼 -->
+
+		<!-- 하단 고정 메뉴 : Mobile -->
+		<div id="floatingWrap" class="fixBotNav">
+			<nav class="floatingMenu">
+				하단 고정 메뉴 : Mobile
+			</nav>
+		</div>
+		<!-- //하단 고정 메뉴 : Mobile -->
+	</div><!-- // #wrap -->
+</body>
+
+</html>
