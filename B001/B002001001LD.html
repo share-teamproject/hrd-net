@@ -4166,24 +4166,6 @@
                                                 </div>
                                                 <!-- // 훈련기관 사진 PC -->
 
-                                                <script>
-                                                    var mySwiper = new Swiper('.thumbnailIntroList.swiper-container', {
-                                                        slidesPerView: 4,
-                                                        spaceBetween: 6,
-                                                        breakpoints: {
-                                                            1024: {
-                                                                slidesPerView: 1,
-                                                                spaceBetween: 10,
-                                                            }
-                                                        },
-                                                        loop: false,
-                                                        navigation: {
-                                                            nextEl: '.thumbnailIntroListArea .swiper-button-next',
-                                                            prevEl: '.thumbnailIntroListArea .swiper-button-prev',
-                                                        },
-                                                    });
-                                                </script>
-
                                                 <div class="contentTitleArea">
                                                     <div class="title">
                                                         <h5 class="tit">훈련과정 소개</h5>
@@ -4250,7 +4232,23 @@
 							$(this).addClass('on').siblings().removeClass('on');
 							$(this).parents('.infoTabInterface').find('.infoTabContents').children('.infoTabCont').removeClass('on');
 							$(this).parents('.infoTabInterface').find('.infoTabContents').children('.infoTabCont').eq(idx).addClass('on');
-						}
+                        }
+                        
+                        var mySwiper = new Swiper('.thumbnailIntroList.swiper-container', {
+                            slidesPerView: 4,
+                            spaceBetween: 6,
+                            breakpoints: {
+                                1024: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                }
+                            },
+                            loop: false,
+                            navigation: {
+                                nextEl: '.thumbnailIntroListArea .swiper-button-next',
+                                prevEl: '.thumbnailIntroListArea .swiper-button-prev',
+                            },
+                        });
 					});
 
 					$(this).on('keydown', function(e){
@@ -4262,11 +4260,45 @@
 								$(this).addClass('on').siblings().removeClass('on');
 								$(this).parents('.infoTabInterface').find('.infoTabContents').children('.infoTabCont').removeClass('on');
 								$(this).parents('.infoTabInterface').find('.infoTabContents').children('.infoTabCont').eq(idx).addClass('on');
-							}
+                            }
+
+                            var mySwiper = new Swiper('.thumbnailIntroList.swiper-container', {
+                                slidesPerView: 4,
+                                spaceBetween: 6,
+                                breakpoints: {
+                                    1024: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    }
+                                },
+                                loop: false,
+                                navigation: {
+                                    nextEl: '.thumbnailIntroListArea .swiper-button-next',
+                                    prevEl: '.thumbnailIntroListArea .swiper-button-prev',
+                                },
+                            });
 						}
 					});
 				});
-			});
+            });
+
+            $('.tabInterface #tab2').on('click', function() {
+                var mySwiper = new Swiper('.thumbnailIntroList.swiper-container', {
+                    slidesPerView: 4,
+                    spaceBetween: 6,
+                    breakpoints: {
+                        1024: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        }
+                    },
+                    loop: false,
+                    navigation: {
+                        nextEl: '.thumbnailIntroListArea .swiper-button-next',
+                        prevEl: '.thumbnailIntroListArea .swiper-button-prev',
+                    },
+                });
+            });
         </script>
         <!-- //메인 컨텐츠영역 -->
 
