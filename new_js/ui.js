@@ -23,7 +23,7 @@ $(function(){
 			})
 		},
 		// qna 
-		fn_qna:function(){
+		/*fn_qna:function(){
 			var qnaList = $('.qnaArea > ul > li').find('.qnaQ')
 			$(qnaList).each(function(qna){
 				$(this).on('click',function(){	
@@ -40,25 +40,33 @@ $(function(){
 						$(this).parent().find('.qnaA').slideDown(200);
 					}
 				});
-
-				$(this).on('keydown',function(e){	
-					if (e.keyCode == 13) { // enter key
-						$(this).parent().attr('aria-selected',true).siblings().attr('aria-selected',false)
-						$(this).parent().attr('title','선택됨').siblings().attr('title','');
-						if ( $(this).parent().hasClass('on') )
-						{
-							$(qnaList).parent().removeClass('on');
-							$(qnaList).parent().find('.qnaA').slideUp(200);
-						} else {
-							$(qnaList).parent().removeClass('on');
-							$(qnaList).parent().find('.qnaA').slideUp(200);
-							$(this).parent().addClass('on');
-							$(this).parent().find('.qnaA').slideDown(200);
-						}
-					}	
-				});
 			});
+		},*/
+		fn_qna:function(){
+			$(".qnaQ").append("<button type='button' class='arrowBtn'></button>");
+			var qnaList = $('.qnaArea > ul > li .qnaQ')
+			var toggleBtn = qnaList.find('.arrowBtn')			
+
+			//$(qnaList).each(function(qna){
+				$(toggleBtn).on('click',function(){	
+					if ( $(this).parent().parent().hasClass('on') )
+					{
+						$(qnaList).parent().removeClass('on');
+						$(qnaList).parent().find('.qnaA').slideUp(200);
+						$(this).parent().parent().attr({'aria-selected':false,'title':''})
+					} else {
+						$(qnaList).parent().removeClass('on');
+						$(qnaList).parent().find('.qnaA').slideUp(200);
+						$(this).parent().parent().addClass('on');
+						$(this).parent().parent().find('.qnaA').slideDown(200);
+						$(this).parent().parent().attr({'aria-selected':true,'title':'선택됨'})
+						$(this).parent().parent().siblings().attr({'aria-selected':false,'title':''})
+					}
+				});
+			//});
 		},
+
+
 		// tab
 		fn_tab:function(){
 			$('.tabInterface').each(function(tab){
@@ -73,21 +81,7 @@ $(function(){
 							$('.tabContents').children('.tabCont').removeClass('on');
 							$('.tabContents').children('.tabCont').eq(idx).addClass('on');
 						}
-					});
-		
-					$(this).on('keydown', function(e){
-						if (e.keyCode == 13) { // enter key	
-							$(this).attr('aria-selected',true).siblings().attr('aria-selected',false);
-							$(this).attr('title','선택됨').siblings().attr('title','');
-							if ( !$(this).hasClass('on') )
-							{					
-								$(this).addClass('on').siblings().removeClass('on');
-		
-								$('.tabContents').children('.tabCont').removeClass('on');
-								$('.tabContents').children('.tabCont').eq(idx).addClass('on');
-							}
-						}	
-					});		
+					});	
 				});
 			});		
 		},	

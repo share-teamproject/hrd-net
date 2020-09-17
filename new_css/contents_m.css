@@ -179,6 +179,7 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 #subContentWrap .subContArea .qnaArea .qnaQ {position:relative; cursor: pointer; padding: 50px 20px; }  
 #subContentWrap .subContArea .qnaArea .qnaQ:after {content:''; position:absolute; top:calc(100% - 36px); right:30px; display:inline-block; width:24px; height:12px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -12px; background-size:24px; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ { padding:0px 50px 0px 0px; }
+#subContentWrap .subContArea .qnaArea .qnaQ .arrowBtn {position:absolute; top:calc(100% - 40px); right:30px; display:block; width:25px; height:25px; z-index:1; background:transparent; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection { display: flex; justify-content:flex-start; padding-bottom:20px; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li { font-size:24px; line-height:30px; color:#727476; padding:0 20px; border-right:2px solid #cccccc; }
 #subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:first-child { padding-left:0; }
