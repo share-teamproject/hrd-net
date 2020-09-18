@@ -347,6 +347,8 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tableArea05 .titleList02 .btnSty, .tableArea05 .titleList02 .btnSty2 {display:block; font-size:11px; color:#222; padding:4px 15px; margin-top:5px; background:#e3e7ee; border-radius:5px; }
 .tableArea05 .titleList02 .btnStyM {display:none; }
 .tableArea05 .titleList .txt01 { font-size:14px; color:#292a2d; padding:15px 0 0 15px;}
+.tableArea05 .titleList .ctdText { width:100%; display:flex; justify-content: space-between; font-size:14px; color:#292a2d; padding:15px 0 0 15px;}
+
 .tableArea05 .titleList .txt02 { font-size:14px; color:#666; padding:5px 0 0 15px; }
 .tableArea05 .titleList .txt02list {overflow:hidden; font-size:14px; color:#727476; }
 .tableArea05 .titleList .txt02list > dt { float:left; padding-right:5px;}
