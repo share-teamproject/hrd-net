@@ -160,7 +160,8 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .TrainingHistoryBox.ty3 { margin-bottom:50px; }
 
 .PathArea > .bigTitle02 { margin-top:50px; }
-.PathArea > .tableArea .btnH26 { margin:5px 0; }
+/* 2020-09-18 수정 */
+.PathArea > .tableArea .btnH26 { margin:5px 0; font-size:12px; }
 
 .RouteSearchBox { border:3px #e1e4e9 solid;  padding:30px; margin-bottom:30px; }
 .RouteSearchBox > dl {overflow:hidden; margin-bottom:30px; }
@@ -231,6 +232,30 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .innerTableArea .view td { border-bottom:1px #e2e2e4 solid; background:#fff; padding:7px 20px; }
 
 .infoTextBoxS {  font-size:12px;  color:#727476; font-weight:400; background:#f7f7f7; padding:30px; margin-bottom:60px; }
+
+/* 2020-09-18 추가 */
+.stepTblBoxSet { }
+.stepTblBoxSet > div { display:inline-block; width:160px; padding:15px; margin:0 10px; font-size:14px; color:#727476; }
+.stepTblBoxSet > div .tit01 { font-size:16px; color:#4171df; font-weight:500; padding-bottom:10px; }
+.stepTblBoxSet > div .tit02 { font-size:16px; color:#258384; font-weight:500; padding-bottom:10px; }
+.stepTblBoxSet > div .tit03 { font-size:16px; color:#fa9a19; font-weight:500; padding-bottom:10px; }
+.stepTblBoxSet > div .txt01 { font-size:14px; color:#4e4f51; padding-bottom:10px; }
+.stepTblBox01 { border:4px #d9e3fb solid; }
+.stepTblBox02 { border:4px #c9e3e3 solid; }
+.stepTblBox03 { border:4px #efddc5 solid; }
+.TblLayerTy { padding:0 !important; vertical-align:top;  position:relative; }
+.TblLayerTy > div { min-height:105px; height:100%; width:100%; }
+.TblLayerTy .close { position:absolute; top:0; right:0; font-size:0; width:18px; height:18px; cursor:pointer; background:url('../new_images/common/icoStepClose.png') no-repeat 0 0; }
+.TblLayerTy > .stepLayer01 {  position:absolute; top:0; left:0; border:1px #4171df solid; background:#fff; padding:15px 10px; }
+.TblLayerTy > .stepLayer02 {  position:absolute; top:0; left:0; border:1px #258384 solid; background:#fff; padding:15px 10px; }
+.TblLayerTy > .stepLayer03 {  position:absolute; top:0; left:0; border:1px #fa9a19 solid; background:#fff; padding:15px 10px; }
+.TblLayerTy > .box01 { background:#f6efe6; padding:16px 10px; }
+.TblLayerTy > .box02 { background:#fff; padding:16px 10px; }
+.TblLayerTy p { padding:0 0 0 10px; height:30px; }
+.TblLayerTy .icoTxt01 { font-size:14px; color:#4e4f51; font-weight:500;  background:url('../new_images/common/icoStepCheck01.png') no-repeat 0 0;  }
+.TblLayerTy .icoTxt02 { font-size:14px; color:#4e4f51; font-weight:500;  background:url('../new_images/common/icoStepCheck02.png') no-repeat 0 0;  }
+.TblLayerTy .icoTxt03 { font-size:14px; color:#4e4f51; font-weight:500;  background:url('../new_images/common/icoStepCheck03.png') no-repeat 0 0;  }
+.TblLayerTy .icoTxt04 { font-size:14px; color:#4e4f51; font-weight:500;  background:url('../new_images/common/icoStepCheck04.png') no-repeat 0 0;  }
 
 /* 비대면 - 목록 */
 .applicationBox { position:relative; border:1px #e4e7ee solid; padding:15px 0; margin:15px 0 20px 0; }
