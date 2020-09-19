@@ -312,6 +312,8 @@ button.goLink, a.goLink:after { position:absolute; top:6px; right:20px; width:6p
 .btnH26.ty3 {min-width:58px; border: 1px solid #4171df; color: #4171df;}
 .btnH30 {display:inline-block; padding:0 15px; min-width:105px; text-align:center; font-size:14px; color:#258384; border:1px solid #258384; line-height:28px;}
 .btnH30.ty1 {height:30px; line-height:30px; text-align:center; font-size:14px; color:#4e4f51; border:0; background:#c9d3e8;}
+.btnH30.ty2 {border:1px solid #4171df; color: #4171df;}
+.btnH30.ty3 {border:1px solid #d3d3d3; color: #4e4f51;}
 
 
 /* 댓글등록 버튼 */

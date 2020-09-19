@@ -1249,7 +1249,8 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .cmBox {padding: 30px; background: #f7f7f7; font-size: 24px; color: #727476;}
 
 .tblBtnBox {}
-.tblBtnBox button + button {margin-top: 20px;}
+.tblBtnBox > li {}
+.tblBtnBox > li + li {margin-top: 20px;}
 
 
 .mFlex {display: flex !important;}

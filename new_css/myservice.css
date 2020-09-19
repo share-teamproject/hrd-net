@@ -1865,6 +1865,10 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 
 .tblIpRe {width: 320px;}
 
+.tblBtnBox {font-size: 0;}
+.tblBtnBox > li {display: inline-block;}
+.tblBtnBox > li + li {margin-left: 10px;}
+
 /*kjs*/
 
 
