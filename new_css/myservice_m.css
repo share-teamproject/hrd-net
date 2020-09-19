@@ -57,6 +57,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 /* 검색박스 */
 #subContentWrap .subContArea .sortArea { display: flex; justify-content: space-between; padding: 8px 30px; }
+#subContentWrap .subContArea .sortArea.etc {padding: 8px 0;}
 #subContentWrap .subContArea .sortArea .totalNum { font-size:26px; height:30px; padding-top:10px; color:#727476; }
 #subContentWrap .subContArea .sortArea .totalNum strong { color:#f58220; }
 #subContentWrap .subContArea .sortArea .selectViewArea .selectView { display:inline-block; }
@@ -1244,6 +1245,14 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .fIner > img {width: 100%;}
 
 .tblIpRe {width: 100%;}
+
+.cmBox {padding: 30px; background: #f7f7f7; font-size: 24px; color: #727476;}
+
+.tblBtnBox {}
+.tblBtnBox button + button {margin-top: 20px;}
+
+
+.mFlex {display: flex !important;}
 /*kjs*/
 
 

@@ -471,7 +471,7 @@
                     </div>
                     <div class="contentArea">  
                         <!-- 검색 -->
-                        <div class="searchBox">
+                        <div class="searchBox etc">
                             <fieldset>
                                 <legend>나의 상담내역 검색</legend>
                                 <dl>                                    
@@ -484,8 +484,13 @@
                                         <label for="searchText">검색어</label>
                                         <input type="text" value="" placeholder="검색어를 입력하세요." title="검색어" name="searchText" id="searchText">
                                         <div class="btnArea"><button type="button" class="searchBtn">검색</button></div>                                        
-                                    </dd>                                    
+                                    </dd>
                                 </dl> 
+                                <div class="verM mt40">
+                                    <div class="cmBox">
+                                        상담 답변이 늦어지는 경우에는 해당 훈련기관에 직접 문의하여 주시기 바랍니다.
+                                    </div>
+                                </div>
                             </fieldset>
                         </div>
                         <div class="boxList forPC">
@@ -494,7 +499,7 @@
                         <!-- // 검색 -->
                         
                         <div class="qnaArea alam">  
-                            <div class="sortArea sortArea01">
+                            <div class="sortArea sortArea01 mFlex etc">
                                 <p class="totalNum">전체 <strong>1</strong> 건</p>
                                 <div class="selectViewArea">
                                     <div class="selectView">
@@ -508,7 +513,8 @@
                                         </select>
                                     </div> 
                                 </div>
-                            </div>	
+                            </div>
+
                             <ul>
                                 <li>
                                     <div tabindex="0" class="qnaQ">
@@ -523,8 +529,40 @@
                                             <p class="qnaText">훈련원해요.</p>
                                         </div>
                                     </div>
-                                    <div class="qnaA">
-                                        <p class="txtA">문의내용이 들어감</p>
+                                    <div class="qnaA tblIn">
+                                        <div class="tableArea">
+                                            <table class="view mb0 brd-t-ty1 mo-brd-t-ty1">
+                                                <caption>문의내용</caption>
+                                                <colgroup>
+                                                    <col style="width:210px;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">훈련구분</th>
+                                                        <td>훈련기관 대리인</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">훈련기관</th>
+                                                        <td>컴퓨터학원</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">문의내용</th>
+                                                        <td>문의내용</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">상태</th>
+                                                        <td>
+                                                            <div class="tblBtnBox">
+                                                                <button type="button" class="btnH30 ty1">삭제</button>
+                                                                <button type="button" class="btnH30">수정</button>
+                                                                <button type="button" class="btnH30 ty2">신청</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -540,14 +578,44 @@
                                             <p class="qnaText">훈련원해요!</p>
                                         </div>
                                     </div>
-                                    <div class="qnaA">
-                                        <p class="txtA">문의내용이 들어감</p>
+                                    <div class="qnaA tblIn">
+                                        <div class="tableArea">
+                                            <table class="view mb0 brd-t-ty1 mo-brd-t-ty1">
+                                                <caption>문의내용</caption>
+                                                <colgroup>
+                                                    <col style="width:210px;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">훈련구분</th>
+                                                        <td>훈련기관 대리인</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">훈련기관</th>
+                                                        <td>컴퓨터학원</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">문의내용</th>
+                                                        <td>문의내용</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">상태</th>
+                                                        <td>
+                                                            <button type="button" class="btnH30 ty1">삭제</button>
+                                                            <button type="button" class="btnH30 mt20">수정</button>
+                                                            <button type="button" class="btnH30 ty2 mt20">신청</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </li>                                                           
                             </ul>
 
                             <!-- paging : pc -->
-                            <div class="pagenation">
+                            <div class="pagenation verPC">
                                 <a href="/" class="pb prev">이전보기</a>
                                 <a href="/" class="on">1</a>
                                 <a href="/">2</a>
@@ -561,9 +629,25 @@
                             <!-- //paging : pc -->
                             
                             <!-- 검색결과 더보기 : mobile -->
-                            <div class="moreBtn">
-                                <button type="button">검색결과 더보기</button>
-                            </div> 
+                            <!-- paging : mob -->
+                            <div class="verM">
+                                <div class="pagenation mt40 mFlex">
+                                    <a href="/" class="pb prev">이전보기</a>
+                                    <p class="paging">
+                                        <span class="current">
+                                            <span class="hide">현재페이지</span>
+                                            <span class="count">1</span>
+                                        </span>
+                                        <span>/</span>
+                                        <span class="total">
+                                            <span class="hide">총페이지수</span>
+                                            <span class="count">10</span>
+                                        </span>
+                                    </p>
+                                    <a href="/" class="pb next">다음보기</a>
+                                </div>
+                            </div>
+                            <!-- //paging : mob -->
                             <!-- //검색결과 더보기 : mobile --> 
                         </div>    
                     </div>
