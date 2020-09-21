@@ -1898,12 +1898,6 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .pBtnType2 {display: inline-block; width: 136px; height: 50px; font-size: 18px; color: #fff; text-align: center; background: #4171df;}
 
 
-
-
-@media (max-width: 767px){
-.popEle {position: relative; width: 100% !important;}
-
-
-
-}
 /*popup*/
+
+
