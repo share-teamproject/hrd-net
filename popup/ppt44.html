@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>편성시설 목록 선택 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">편성시설 목록 선택</h2>
+        </div>
+        <div class="popContEle">
+            <div id="subContentWrap">
+                <div class="subContArea">
+                    <div class="sortArea pt0">
+                        <p class="totalNum">전체 <strong>14</strong> 건</p>
+                        <div class="selectViewArea">
+                            <div class="selectView">
+                                <label for="pageRow1">페이지당 조회건수</label>
+                                <select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
+                                    <option value="10" selected="selected">10개씩</option>
+                                    <option value="20">20개씩</option>
+                                    <option value="30">30개씩</option>
+                                    <option value="50">50개씩</option>
+                                    <option value="100">100개씩</option>
+                                </select>
+                            </div>                                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tableArea">
+                <table class="list">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:80px;">
+                        <col style="width:80px;">
+                        <col style="width:auto;">
+                        <col style="width:150px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">선택</th>
+                            <th scope="col">연번</th>
+                            <th scope="col">시설명</th>
+                            <th scope="col" class="last">기준면적</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="ui_checkBox single">
+                                    <input type="checkbox" name="chkReturn" id="sel01">
+                                    <label for="sel01">선택</label>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td class="tl">강의실(컴퓨터실 전용)</td>
+                            <td class="last">45</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui_checkBox single">
+                                    <input type="checkbox" name="chkReturn" id="sel02">
+                                    <label for="sel02">선택</label>
+                                </div>
+                            </td>
+                            <td>2</td>
+                            <td class="tl">강의실(컴퓨터실 전용)</td>
+                            <td class="last">45</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- paging : pc -->
+            <div class="pagenation">
+                <a href="/" class="pb prev">이전보기</a>
+                <a href="/" class="on">1</a>
+                <a href="/">2</a>
+                <a href="/">3</a>
+                <a href="/">4</a>
+                <a href="/">5</a>
+                <a href="/">6</a>
+                <a href="/">7</a>
+                <a href="/" class="pb next">다음보기</a>
+            </div> 
+            <!-- //paging : pc -->
+        </div>
+
+        <div class="popBtnArea">
+            <button type="button" class="pBtnType2">선택</button>
+        </div>
+
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</body>
+</html>

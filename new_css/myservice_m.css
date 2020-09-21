@@ -1235,11 +1235,6 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 /* kimyoungbeom_m.css end */
 
 
-
-
-
-
-
 /*kjs*/
 .fIner {padding: 20px; background: #fff;}
 .fIner > img {width: 100%;}
@@ -1255,7 +1250,6 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 .mFlex {display: flex !important;}
 /*kjs*/
-
 
 
 /*popup*/
@@ -1275,9 +1269,4 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .popBtnArea.ty2 > button {width: calc(50% - 10px);}
 .pBtnType1 {display: inline-block; width: 280px; height: 90px; font-size: 28px; color: #4e4f51; text-align: center; border: 2px solid #ededed;}
 .pBtnType2 {display: inline-block; width: 280px; height: 90px; font-size: 28px; color: #fff; text-align: center; background: #4171df;}
-
-
-
 /*popup*/
-
-

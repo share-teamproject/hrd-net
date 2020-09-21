@@ -1852,13 +1852,6 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 /* kimyongbeom.css end */
 
 
-
-
-
-
-
-
-
 /*kjs*/
 .fIner {padding: 20px; background: #fff;}
 .fIner > img {width: 100%;}
@@ -1873,19 +1866,15 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 
 
 
-
-
-
-
-
-
-
 /*popup*/
 .popEle {position: relative; padding-bottom: 60px;}
 .popHeader {padding: 11px 30px; border-bottom: 1px solid #e2e2e4;}
 .popHeader > .popHeaderTit {font-size: 22px; color: #4e4f51; line-height: 30px;}
 
 .popContEle {padding: 50px 30px 0 30px;}
+
+.popContEle > #subContentWrap {display: block; width: auto; padding: 0 !important;}
+.popContEle > #subContentWrap .subContArea {width: auto;}
 
 .ctyTit {text-align: center; font-weight: 500; font-size: 32px; color: #4e4f51; line-height: 44px; margin-bottom: 35px;}
 
@@ -1896,10 +1885,4 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .popBtnArea > button + button {margin-left: 20px;}
 .pBtnType1 {display: inline-block; width: 136px; height: 50px; font-size: 18px; color: #4e4f51; text-align: center; border: 1px solid #ededed;}
 .pBtnType2 {display: inline-block; width: 136px; height: 50px; font-size: 18px; color: #fff; text-align: center; background: #4171df;}
-
-
-
-
 /*popup*/
-
-

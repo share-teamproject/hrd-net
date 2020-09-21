@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>평가결과 개요 추가 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">편성시설 목록 선택</h2>
+        </div>
+        <div class="popContEle">
+            <div class="tableArea">
+                <div class="tableTitleArea mt0">
+                    <h4 class="tableTitle">경력정보</h4>
+                    <div class="tableComment">"<span class="color01">＊</span>" 는 필수 입력 항목입니다.</div>
+                </div>
+                <table class="view mb0">
+                    <caption>경력정보</caption>
+                    <colgroup>
+                        <col style="width:180px;">
+                        <col style="width:auto;">
+                        <col style="width:180px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">구분 <span class="color01">＊</span></th>
+                            <td class="last" colspan="3">출제위원 시행(평가)위원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">참여일자 <span class="color01">＊</span></th>
+                            <td>
+                                <div class="dateDom">
+                                    <div class="dateSelect w100p">
+                                        <input type="text" value="" placeholder="20200903" title="달력" name="date" id="date01">
+                                    </div>
+                                </div>
+                            </td>
+                            <th scope="row">소속 <span class="color01">＊</span></th>
+                            <td class="last">
+                                <input type="text" value="" title="소속 입력" name="" id="" class="minwDefault w100p">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">직위 <span class="color01">＊</span></th>
+                            <td>
+                                <input type="text" value="" title="소속 입력" name="" id="" class="minwDefault w100p">
+                            </td>
+                            <th scope="row">성명 <span class="color01">＊</span></th>
+                            <td class="last">
+                                <input type="text" value="" title="소속 입력" name="" id="" class="minwDefault w100p">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">내외부 구분 <span class="color01">＊</span></th>
+                            <td>
+                                <div class="ui_radioBox">
+                                    <input type="radio" name="rd1" id="rd101"> 
+                                    <label for="rd101">내 외부</label>
+                                </div>
+                                <div class="ui_radioBox">
+                                    <input type="radio" name="rd1" id="rd102"> 
+                                    <label for="rd102">내부</label>
+                                </div>
+                            </td>
+                            <th scope="row">활용구분 <span class="color01">＊</span></th>
+                            <td class="last">
+                                <div class="ui_radioBox">
+                                    <input type="radio" name="rd2" id="rd201"> 
+                                    <label for="rd201">산업계</label>
+                                </div>
+                                <div class="ui_radioBox">
+                                    <input type="radio" name="rd2" id="rd202"> 
+                                    <label for="rd202">교육계</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="popBtnArea">
+            <button type="button" class="pBtnType2">저장</button>
+        </div>
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</body>
+</html>

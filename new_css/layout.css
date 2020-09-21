@@ -444,6 +444,7 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .pd0 {padding:0 !important;}
 .pd30 { padding:30px !important; }
 .pr0 {padding-right:0 !important;}
+.pt0 {padding-top:0 !important;}
 .pt30 {padding-top:30px !important;}
 .brd-t-ty1 {border-top:1px solid #e2e2e4 !important;}
 .brd-r-ty1 {border-right:1px solid #e2e2e4;}
