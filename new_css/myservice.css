@@ -580,6 +580,10 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .tableArea03 > ul > li .titleSection > .titleBox > .titleList { overflow:hidden; }
 .tableArea03 > ul > li .titleSection > .titleBox > .titleList > li { position:relative; float:left; font-size:14px; color:#727476; padding-right:16px; }
 .tableArea03 > ul > li .titleSection > .titleBox > .titleList > li:before { content:''; position:absolute; top:4px; left:-8px; width:1px; height:15px; background:#ccc; }
+/* 2020-09-22 추가 */ 
+.tableArea03 > ul > li .titleSection > .titleBox > .ui_checkBox { float:left; margin-right:15px; }
+.tableArea03 > ul > li .titleSection > .titleBox > .titleText2 { width:80%; font-size:18px; color:#292a2d; padding:10px 0 10px 40px; }
+
 .tableArea03 > ul > li .titleSection > .titleBox > .titleText { width:80%; font-size:18px; color:#292a2d; padding:10px 0; }
 .tableArea03 > ul > li .titleSection > .titleBox > .titleText.ty2 { width:67%; }
 .tableArea03 > ul > li .titleSection > .titleBox > .txt03 { font-size:18px; position:absolute; top:42px; right:85px; }
@@ -1885,4 +1889,30 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .popBtnArea > button + button {margin-left: 20px;}
 .pBtnType1 {display: inline-block; width: 136px; height: 50px; font-size: 18px; color: #4e4f51; text-align: center; border: 1px solid #ededed;}
 .pBtnType2 {display: inline-block; width: 136px; height: 50px; font-size: 18px; color: #fff; text-align: center; background: #4171df;}
+
 /*popup*/
+.ctyTit2 {text-align: center; font-weight: 500; font-size: 32px; color: #4e4f51; line-height: 44px; margin-bottom: 35px;}
+
+.popContBoxType1 { border:1px #e2e2e4 solid; border-top:2px #5b648a solid; padding:28px; }
+.popContBoxType1 > .pCbTxt01 { font-size:14px; color:#727476; }
+.popContBoxType1 > .pCbTxt02 { overflow:hidden; font-size:14px; color:#4e4f51; }
+.popContBoxType1 > .pCbTxt02 > li { float:left; padding-right: 10px; }
+.popContBoxType1 > .pCbTxt02 > li > span { padding-right: 10px; }
+
+.popBtnAreaRight { text-align: right; margin-top:20px; }
+.popBtnAreaRight.ty2 { text-align: right; margin:10px 0; }
+.popBtnAreaRight > button + button {margin-left: 10px;}
+.pSmallBtnType1 {display:inline-block; line-height:26px; padding:0 20px; text-align:left; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51; }
+.pSmallBtnType1:after {content:''; display:inline-block; vertical-align:middle; width:6px; height:12px; margin-left:5px; margin-top:-3px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;}
+.pSmallBtnType2 {display:inline-block; line-height:26px; padding:0 20px; text-align:left; border:1px solid #4171df; font-size:12px; color:#4171df; }
+.pSmallBtnType3 {display:inline-block; line-height:26px; padding:0 20px; text-align:left; border:1px solid #258384; font-size:12px; color:#258384; }
+.pSmallBtnType3.verPC { display:inline-block !important; }
+
+.popContBoxType2 { border:1px #e2e2e4 solid; padding:40px; }
+.popContBoxType2 > .pCbTxt01 { font-size:22px; color:#292a2d; text-align:center; padding:0 60px; }
+.popContBoxType2 > .pCbTxt02 { font-size:22px; color:#292a2d; text-align:center; padding-top:20px; }
+.popContBoxType2 > .pCbLogo01 { height:32px; font-size:0; background:url('../new_images/common/footerLogo01.png') no-repeat 100% 0; margin-top:30px; }
+
+.contentsSection.popTy1 { background:#fbfbfb; border-top:1px #e2e2e4 solid; padding:30px; }
+.tableArea.popTy1 { margin-bottom:-20px; }
+.tableArea.popTy1 .view { border-top:1px #e2e2e4 solid; }

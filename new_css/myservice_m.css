@@ -372,6 +372,16 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tableArea03 > ul > li .titleSection > .titleBox .titleText2 { position:absolute; top:50px; left:0; font-size:32px; color:#292a2d;  }
 .tableArea03 > ul > li .contentsSection.ty2 { background:#fbfbfb; padding:30px; }
 
+/* 2020-09-22 추가 */ 
+.tableArea03 > ul > li .titleSection.ty2 { position:relative; height:230px;  cursor:pointer; }
+.tableArea03 > ul > li .titleSection.ty2:after { content:''; position:absolute; top:49%; right:30px; width:26px; height:24px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -13px; background-size:cover;}
+.tableArea03 > ul > li.on .titleSection.ty2:after { background-position:0 0;}
+.tableArea03 > ul > li .titleSection > .titleBox > .titleList.ty2 { overflow:hidden; }
+.tableArea03 > ul > li .titleSection > .titleBox > .titleList.ty2 > li { position:relative; font-size:24px; color:#727476; padding-right:32px; }
+.tableArea03 > ul > li .titleSection > .titleBox > .titleList.ty2 > li:before { content:''; position:absolute; top:4px; left:-8px; width:1px; height:15px; background:#ccc; }
+.tableArea03 > ul > li .titleSection > .titleBox > .ui_checkBox { float:left; margin-right:30px; margin-top:7px; }
+.tableArea03 > ul > li .titleSection > .titleBox > .titleText2 { width:80%; font-size:30px; color:#292a2d; padding:30px 0 10px 55px; }
+
 .tableArea03.ty2 { border-top:4px #727476 solid;}
 .tableArea03.ty2 > ul > li .titleSection { position:relative; height:330px; cursor:pointer; }
 .tableArea03.ty2 > ul > li .titleSection:after { content:''; position:absolute; top:calc(50% - 15px); right:25px; width:26px; height:24px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -13px; background-size:cover; }
@@ -1269,4 +1279,32 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .popBtnArea.ty2 > button {width: calc(50% - 10px);}
 .pBtnType1 {display: inline-block; width: 280px; height: 90px; font-size: 28px; color: #4e4f51; text-align: center; border: 2px solid #ededed;}
 .pBtnType2 {display: inline-block; width: 280px; height: 90px; font-size: 28px; color: #fff; text-align: center; background: #4171df;}
+
 /*popup*/
+.ctyTit2 {text-align: center; font-weight: 500; font-size: 46px; color: #292a2d; line-height: 70px; margin-bottom: 35px; padding:0 50px; word-wrap: break-word;}
+.ctyTit2 > span { display:inline-block; }
+
+.popContBoxType1 { border:2px #e2e2e4 solid; border-top:4px #5b648a solid; padding:28px; }
+.popContBoxType1 > .pCbTxt01 { font-size:28px; color:#727476; }
+.popContBoxType1 > .pCbTxt02 { font-size:28px; color:#4e4f53; }
+.popContBoxType1 > .pCbTxt02 > span { padding-right: 10px; }
+.popContBoxType1 > .pCbTxt02 .color04 { color:#4e4f53; }
+
+.popBtnAreaRight { text-align: right; margin-top:20px; }
+.popBtnAreaRight.ty2 { text-align: right; margin:0 0 -20px 0; }
+.popBtnAreaRight > button + button {margin-left: 10px;}
+.pSmallBtnType1 {display:inline-block; line-height:48px; padding:0 30px; text-align:left; border:1px solid #cdcdd1; font-size:24px; color:#4e4f51; }
+.pSmallBtnType1:after {content:''; display:inline-block; vertical-align:middle; width:11px; height:22px; margin-left:15px; margin-top:-4px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;}
+.pSmallBtnType2 {display:inline-block; line-height:48px; padding:0 30px; text-align:left; border:1px solid #4171df; font-size:24px; color:#4171df; }
+.pSmallBtnType3 {display:inline-block; line-height:48px; padding:0 30px; text-align:left; border:1px solid #258384; font-size:24px; color:#258384; }
+
+.popContBoxType2 { border:2px #e2e2e4 solid; padding:40px 20px; }
+.popContBoxType2 > .pCbTxt01 { font-size:32px; color:#292a2d; text-align:center; }
+.popContBoxType2 > .pCbTxt02 { font-size:32px; color:#292a2d; text-align:center; }
+.popContBoxType2 > .pCbTxt01 > .pbr { display:block; }
+.popContBoxType2 > .pCbLogo01 { height:46px; font-size:0; background:url('../new_images/common/footerLogo01.png') no-repeat 90% 0; background-size:161px; margin-top:30px; }
+
+.contentsSection.popTy1 { background:#fbfbfb; border-top:1px #e2e2e4 solid; padding:40px; }
+.tableArea.popTy1 { margin-bottom:-40px; }
+.tableArea.popTy1 .view { border-top:1px #e2e2e4 solid; }
+.tblInfoTxt08.popTy1 { margin:60px 0 0 0; }
