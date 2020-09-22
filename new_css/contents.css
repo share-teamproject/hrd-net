@@ -175,6 +175,13 @@
 #subContentWrap .subContArea .sortArea .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
 #subContentWrap .subContArea .sortArea .selectViewArea select { width:120px; }
 
+.sortArea { display: flex; justify-content: space-between; padding: 8px 0; }
+.sortArea .totalNum { font-size:16px; line-height:30px; color:#727476; }
+.sortArea .totalNum strong { color:#f58220; }
+.sortArea .selectViewArea .selectView { display:inline-block; }
+.sortArea .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
+.sortArea .selectViewArea select { width:120px; }
+
 /* box */
 #subContentWrap .subContArea .boxList > ul > li { border:1px solid #e3e7ee; margin:0 0 10px 0; } 
 #subContentWrap .subContArea .boxList > ul > li:last-child { margin:0 }

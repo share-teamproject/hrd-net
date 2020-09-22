@@ -62,8 +62,14 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 #subContentWrap .subContArea .sortArea .totalNum strong { color:#f58220; }
 #subContentWrap .subContArea .sortArea .selectViewArea .selectView { display:inline-block; }
 #subContentWrap .subContArea .sortArea .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
-
 #subContentWrap .subContArea .sortArea {display:none;}
+
+.sortArea { display: flex; justify-content: space-between; padding: 8px 30px; }
+.sortArea.etc {padding: 8px 0;}
+.sortArea .totalNum { font-size:26px; height:30px; padding-top:10px; color:#727476; }
+.sortArea .totalNum strong { color:#f58220; }
+.sortArea .selectViewArea .selectView { display:inline-block; }
+.sortArea .selectViewArea label { position:fixed; bottom:0; font-size:0; line-height:0; }
 
 
 #subContentWrap .subContArea .searchBox.ty2 { border-top :6px #e1e4e9 solid; margin-top:20px; }
@@ -718,6 +724,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 /*검색 영역*/
 .schDom {padding: 60px 70px; border-top: 8px solid #d8dfeb; border-bottom: 8px solid #d8dfeb;}
+.schDom.etc {padding: 60px 0;}
 .schDom.top {margin-top: 15px;}
 .schDomCont {font-size: 0; text-align: left;}
 .schDomCont + .schDomCont {margin-top: 32px;}
@@ -729,7 +736,6 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .schDom > .btnGroup .btnType3 {width: 100%; height: 70px; font-size: 28px;}
 .schDom + .sortArea {margin-top: 72px; display: flex !important;}
 .schDom + form {margin-top: 72px;}
-
 
 
 .dateDom {font-size: 0;}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>우편번호 찾기 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+
+    <!-- <link href="../new_css/layout_m.css" rel="stylesheet" />
+    <link href="../new_css/contents_m.css" rel="stylesheet" /> -->
+
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">우편번호 찾기</h2>
+        </div>
+        <div class="popContEle">
+
+            <div class="tabInterface">
+
+                <!-- 텝 인덱스 -->  
+                <div class="tabListArea"> 
+                    <ul class="tabList" role="tablist">
+                        <li role="tab" aria-controls="section1" aria-selected="true" id="tab1" class="on"><button type="button">도로명검색</button></li>
+                        <li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">지번검색</button></li>
+                        <li role="tab" aria-controls="section3" aria-selected="false" id="tab3" class="moDpNone"><button type="button">우편번호 검색</button></li>
+                    </ul>
+                </div> 
+                <!--// 텝 인덱스 -->
+
+                <!-- 텝 컨텐츠 -->
+                <div class="tabContents">
+                    <!-- 도로명검색 -->
+                    <section role="tabpanel" id="section1" class="tabCont on">
+                        <div class="schDom ty2 etc">
+                            <div class="schDomCont">
+                                <strong class="tit">시도</strong>
+                                <div class="ele">
+                                    <select title="시도 선택" name=" " id=" " class="selectBox">
+                                        <option value="" selected="selected">시도/선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="schDomCont">
+                                <strong class="tit">시군구</strong>
+                                <div class="ele">
+                                    <select title="시도 선택" name=" " id=" " class="selectBox">
+                                        <option value="" selected="selected">시/군/구 선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="schDomCont">
+                                <strong class="tit">도로명 <span title="필수입력" class="color01">＊</span></strong>
+                                <div class="ele">
+                                    <input type="text" value="" title="도로명 입력" name="" id="" placeholder="주소명을 입력해주세요">
+                                </div>
+                            </div>
+                            <div class="btnGroup">
+                                <button type="button" class="btnType3">검색</button>
+                            </div>
+                        </div>
+
+                        <div class="sortArea ty3 mFlex etc">
+                            <p class="totalNum">전체 <strong>14</strong> 건</p>
+                            <div class="selectViewArea">
+                                <div class="selectView">
+                                    <label for="pageRow1">페이지당 조회건수</label>
+                                    <select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
+                                        <option value="10" selected="selected">10개씩</option>
+                                        <option value="20">20개씩</option>
+                                        <option value="30">30개씩</option>
+                                        <option value="50">50개씩</option>
+                                        <option value="100">100개씩</option>
+                                    </select>
+                                </div>                                     
+                            </div>
+                        </div>
+
+                        <div class="tableArea">
+                            <table class="list mb0">
+                                <caption>주소 목록</caption>
+                                <colgroup>
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:auto;">
+                                    <col style="width:auto;" class="verM">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="moDpNone">번호</th>
+                                        <th scope="col" class="moDpNone">도로명</th>
+                                        <th scope="col">우편번호</th>
+                                        <th scope="col" class="last">지번명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="moDpNone">
+                                        <td colspan="4" class="none last">자료가 없습니다. 다른 검색조건을 선택해주세요</td>
+                                    </tr>
+                                    <tr class="pcDpNone">
+                                        <td colspan="2" class="none last">자료가 없습니다. 다른 검색조건을 선택해주세요</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!--// 도로명검색 -->
+                    <!-- 지번검색 -->
+                    <section role="tabpane2" id="section2" class="tabCont">
+                        <div class="schDom ty2 etc">
+                            <div class="schDomCont">
+                                <strong class="tit">시도</strong>
+                                <div class="ele">
+                                    <select title="시도 선택" name=" " id=" " class="selectBox">
+                                        <option value="" selected="selected">시도/선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="schDomCont">
+                                <strong class="tit">시군구</strong>
+                                <div class="ele">
+                                    <select title="시도 선택" name=" " id=" " class="selectBox">
+                                        <option value="" selected="selected">시/군/구 선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="schDomCont">
+                                <strong class="tit">상세주소 <span title="필수입력" class="color01">＊</span></strong>
+                                <div class="ele">
+                                    <input type="text" value="" title="상세주소 입력" name="" id="" placeholder="지번명을 입력해 주세요">
+                                </div>
+                            </div>
+                            <div class="btnGroup">
+                                <button type="button" class="btnType3">검색</button>
+                            </div>
+                        </div>
+
+                        <div class="sortArea ty3 mFlex etc">
+                            <p class="totalNum">전체 <strong>14</strong> 건</p>
+                            <div class="selectViewArea">
+                                <div class="selectView">
+                                    <label for="pageRow1">페이지당 조회건수</label>
+                                    <select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
+                                        <option value="10" selected="selected">10개씩</option>
+                                        <option value="20">20개씩</option>
+                                        <option value="30">30개씩</option>
+                                        <option value="50">50개씩</option>
+                                        <option value="100">100개씩</option>
+                                    </select>
+                                </div>                                     
+                            </div>
+                        </div>
+
+                        <div class="tableArea">
+                            <table class="list mb0">
+                                <caption>주소 목록</caption>
+                                <colgroup>
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:auto;">
+                                    <col style="width:auto;" class="verM">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="moDpNone">번호</th>
+                                        <th scope="col" class="moDpNone">도로명</th>
+                                        <th scope="col">우편번호</th>
+                                        <th scope="col" class="last">지번명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="moDpNone">
+                                        <td colspan="4" class="none last">자료가 없습니다. 다른 검색조건을 선택해주세요</td>
+                                    </tr>
+                                    <tr class="pcDpNone">
+                                        <td colspan="2" class="none last">자료가 없습니다. 다른 검색조건을 선택해주세요</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!--// 지번검색 -->
+                    <!-- 우편번호 검색 -->
+                    <section role="tabpane3" id="section3" class="tabCont moDpNone">
+                        <div class="schDom ty2 etc">
+                            <div class="schDomCont">
+                                <strong class="tit">시도</strong>
+                                <div class="ele">
+                                    <select title="시도 선택" name=" " id=" " class="selectBox">
+                                        <option value="" selected="selected">시도/선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="schDomCont">
+                                <strong class="tit">시군구</strong>
+                                <div class="ele">
+                                    <select title="시도 선택" name=" " id=" " class="selectBox">
+                                        <option value="" selected="selected">시/군/구 선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="schDomCont">
+                                <strong class="tit">우편번호 <span title="필수입력" class="color01">＊</span></strong>
+                                <div class="ele">
+                                    <input type="text" value="" title="우편번호 입력" name="" id="">
+                                </div>
+                            </div>
+                            <div class="btnGroup">
+                                <button type="button" class="btnType3">검색</button>
+                            </div>
+                        </div>
+
+                        <div class="sortArea ty3 mFlex etc">
+                            <p class="totalNum">전체 <strong>14</strong> 건</p>
+                            <div class="selectViewArea">
+                                <div class="selectView">
+                                    <label for="pageRow1">페이지당 조회건수</label>
+                                    <select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
+                                        <option value="10" selected="selected">10개씩</option>
+                                        <option value="20">20개씩</option>
+                                        <option value="30">30개씩</option>
+                                        <option value="50">50개씩</option>
+                                        <option value="100">100개씩</option>
+                                    </select>
+                                </div>                                     
+                            </div>
+                        </div>
+
+                        <div class="tableArea">
+                            <table class="list mb0">
+                                <caption>주소 목록</caption>
+                                <colgroup>
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:25%;" class="moDpNone">
+                                    <col style="width:auto;">
+                                    <col style="width:auto;" class="verM">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="moDpNone">번호</th>
+                                        <th scope="col" class="moDpNone">도로명</th>
+                                        <th scope="col">우편번호</th>
+                                        <th scope="col" class="last">지번명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="moDpNone">
+                                        <td colspan="4" class="none last">자료가 없습니다. 다른 검색조건을 선택해주세요</td>
+                                    </tr>
+                                    <tr class="pcDpNone">
+                                        <td colspan="2" class="none last">자료가 없습니다. 다른 검색조건을 선택해주세요</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!--// 우편번호 검색 -->
+                </div>
+                <!--// 텝 컨텐츠 -->
+
+            </div>
+
+        </div>
+        <button type="button" class="popClose">닫기</button>
+    </div>
+    
+
+</body>
+</html>
