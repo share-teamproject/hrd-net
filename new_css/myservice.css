@@ -1941,4 +1941,14 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .conList > li .cont {position: relative; display: inline-block; vertical-align: top; width: calc(100% - 147px); padding-left: 12px; font-size: 14px; color: #727476;}
 .conList > li .cont:before {content:''; position: absolute; top: 4px; left: 0; height: 12px; border-left: 1px solid #e4ebeb;}
 
-
+.sChkEle {margin: 60px 0;}
+.sChkEle .inCont {display: table; width: 100%; table-layout: fixed;}
+.sChkCont {position: relative; display: table-cell; vertical-align: top; text-align: center; padding: 2px 0 35px 0;}
+.sChkCont + .sChkCont {border-left: 1px dashed #dfdfdf;}
+.sChkCont:after {content: ''; position: absolute; left: 50%; bottom: 0; width: 125px; height: 19px; margin-left: -63px; background-image: url(../new_images/common/icoStar.png); background-repeat: no-repeat;}
+.sChkCont.ty1:after {background-position: 0 -95px;}
+.sChkCont.ty2:after {background-position: 0 -76px;}
+.sChkCont.ty3:after {background-position: 0 -57px;}
+.sChkCont.ty4:after {background-position: 0 -38px;}
+.sChkCont.ty5:after {background-position: 0 -19px;}
+.sChkCont .ui_radioBox label {margin-right: 0;}
