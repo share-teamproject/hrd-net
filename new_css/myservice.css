@@ -694,6 +694,10 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .txtList04 > li > dl > dd { text-align:left; }
 .txtList04 > li > dl > dd .titleBtn { margin-left:10px;}
 
+/* 2020-09-22 추가 */
+.txtList04 > li.clear { clear:both; width:80%; }
+.txtList04 > li.clear > dl > dt { width:160px; }
+
 /* MY카드- 카드현황 */
 .cardStatusBox { border:1px #e2e2e4 solid; padding:25px 0; margin-bottom:50px; }
 .cardStatusBox > ul { overflow:hidden; }
@@ -1956,4 +1960,25 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .guideImgBox {text-align: center;}
 .guideImgBox + .commentBox {margin-top: 20px;}
 
+.pCheckList01 { margin-top:-20px; }
+.pCheckList01 > ul { overflow:hidden; border-bottom:1px #e2e2e4 solid; padding-bottom:20px; }
+.pCheckList01 > ul.noneLine { border-bottom:0; padding-bottom:5px; }
+.pCheckList01 > ul > li { float:left; padding-right:10px; }
+.pCheckList01 .ui_radioBox { margin-right:-30px; }
+.pCheckList01 .ui_radioBox > label { color:#727476; }
+.pCheckList01 .cnt { font-size:14px; color:#727476; margin-bottom:10px; padding-top:20px; }
 
+.popSearchBox { padding:22px 50px; border:3px solid #d8dfeb; }
+.popSearchBox > fieldset > legend { font-size:0; line-height: 0; }
+.popSearchBox > fieldset > dl { width:100%; display:flex; flex-wrap:wrap;  }
+.popSearchBox > fieldset > dl > dt { width:120px; margin-bottom:8px; }
+.popSearchBox > fieldset > dl > dt > label { color:#4e4f51; font-size:18px; line-height:40px; }
+.popSearchBox > fieldset > dl > dd { width:calc(100% - 120px); margin-bottom:8px; }
+.popSearchBox > fieldset > dl > dd:last-child { margin-bottom:0; }
+.popSearchBox > fieldset > dl > dd .btnArea { margin-left:15px; }
+
+.SpanTy1 { display:inline-block; }
+.SpanTy1 dt, .SpanTy1 dd { float:left; font-size:14px; color:#666; }
+.SpanTy1 dt { width:100px; }
+.SpanTy1 dt > span { display:inline-block; text-align:center; min-width:90px; height:24px; line-height:22px; border:1px #d3d3d3 solid; padding:0 10px; border-radius:10px; }
+.SpanTy1 dd { text-align:left; padding-top:2px; }

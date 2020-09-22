@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>훈련과정 상세 구직자 수강평 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">구직자 수강평</h2>
+        </div>
+        <div class="popContEle">
+			<div class="tableArea">
+				<div class="signUpFlow">
+					<ol class="signUpFlowList" aria-label="총 3단계 중 현재단계 2단계">
+						<li aria-current="step"><em class="stepCount">1</em><span class="txt">만족도</span></li>
+						<li class="on"><em class="stepCount">2</em><span class="txt">영역별  만족도</span></li>
+						<li><em class="stepCount">3</em><span class="txt">기타평가 만족도</span></li>
+					</ol>
+				</div> 
+				 <table class="list mt30">
+                    <caption>수강평 등록</caption>
+                    <colgroup>
+                        <col style="width:180px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="brd-b-ty1">평가영역</th>
+                            <th class="brd-b-ty1 last">질문항목</th>
+                        </tr>
+						<tr>
+                            <th class="brd-b-ty1">훈련교사</th>
+                            <td class="tl last">
+								<div class="pCheckList01"> 
+									<div class="cnt">교강사는 담당수업에 대한 전문적인 기술 및 지식을 가지고 있다.</div>
+									<ul>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check101" name="check101" id="check101">
+												<label for="check101" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check102" name="check102" id="check102">
+												<label for="check102">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check103" name="check103" id="check103">
+												<label for="check103">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check104" name="check104" id="check104">
+												<label for="check104">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check105" name="check105" id="check105">
+												<label for="check105">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+
+									<div class="cnt">교강사는 훈련 준비 및 진행을 성실하게 수행하였다.</div>
+									<ul>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check201" name="check201" id="check201">
+												<label for="check201" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check202" name="check202" id="check202">
+												<label for="check202">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check203" name="check203" id="check203">
+												<label for="check203">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check204" name="check204" id="check204">
+												<label for="check204">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check205" name="check205" id="check205">
+												<label for="check205">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+
+									<div class="cnt">교강사와 훈생간의 적절한 상담 및 지도가 이루어졌다.</div>
+									<ul class="noneLine">
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check301" name="check301" id="check301">
+												<label for="check301" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check302" name="check302" id="check302">
+												<label for="check302">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check303" name="check303" id="check303">
+												<label for="check303">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check304" name="check304" id="check304">
+												<label for="check304">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check305" name="check305" id="check305">
+												<label for="check305">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</td>
+                        </tr>
+						<tr>
+                            <th class="brd-b-ty1">훈련방법</th>
+                            <td class="tl last">
+								<div class="pCheckList01"> 
+									<div class="cnt">훈련목적을 달성하기에 이론과 실기가 잘 연계(시간배분 등)되어 있다.</div>
+									<ul>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check401" name="check401" id="check401">
+												<label for="check401" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check402" name="check402" id="check402">
+												<label for="check402">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check403" name="check403" id="check403">
+												<label for="check403">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check404" name="check404" id="check404">
+												<label for="check404">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check405" name="check405" id="check405">
+												<label for="check405">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+
+									<div class="cnt">훈련을 운영하였던 방법(강의, 실습 방법 등 수업방식)에 만족한다.</div>
+									<ul>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check501" name="check501" id="check501">
+												<label for="check501" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check502" name="check502" id="check502">
+												<label for="check502">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check503" name="check503" id="check503">
+												<label for="check503">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check504" name="check504" id="check504">
+												<label for="check504">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check505" name="check505" id="check505">
+												<label for="check505">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+
+									<div class="cnt">훈련에 활용한 교보재(교재, 부가자료, 멀티미디어 자료 등)가 훈련내용을 이해하는데 도움이 되었다.</div>
+									<ul class="noneLine">
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check601" name="check601" id="check601">
+												<label for="check601" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check602" name="check602" id="check602">
+												<label for="check602">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check603" name="check603" id="check603">
+												<label for="check603">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check604" name="check604" id="check604">
+												<label for="check604">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check605" name="check605" id="check605">
+												<label for="check605">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</td>
+                        </tr>
+						<tr>
+                            <th class="brd-b-ty1">시설장비</th>
+                            <td class="tl last">
+								<div class="pCheckList01"> 
+									<div class="cnt">강의실 및 실습실 등 훈련에 적합한 시설을 갖추고 있다.</div>
+									<ul>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check701" name="check701" id="check701">
+												<label for="check701" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check702" name="check702" id="check702">
+												<label for="check702">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check703" name="check703" id="check703">
+												<label for="check703">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check704" name="check704" id="check704">
+												<label for="check704">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check705" name="check705" id="check705">
+												<label for="check705">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+
+									<div class="cnt">실제 산업현장에서 활용될 수 있는 적절한 장비 및 기자재를 갖추고 있다.</div>
+									<ul>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check801" name="check801" id="check801">
+												<label for="check801" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check802" name="check802" id="check802">
+												<label for="check802">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check803" name="check803" id="check803">
+												<label for="check803">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check804" name="check804" id="check804">
+												<label for="check804">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check805" name="check805" id="check805">
+												<label for="check805">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+
+									<div class="cnt">훈련에 필요한 충분한 장비 및 기자재가 제공되었다.</div>
+									<ul class="noneLine">
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check901" name="check901" id="check901">
+												<label for="check901" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check902" name="check902" id="check902">
+												<label for="check902">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check903" name="check903" id="check903">
+												<label for="check903">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check904" name="check904" id="check904">
+												<label for="check904">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check905" name="check905" id="check905">
+												<label for="check905">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</td>
+                        </tr>
+						<tr>
+                            <th class="brd-b-ty1">취업지원</th>
+                            <td class="tl last">
+								<div class="pCheckList01"> 
+									<div class="cnt">훈련생이 원하는 취업정보(취업상담)를 충분히 제공하고 있다.</div>
+									<ul class="noneLine">
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check1001" name="check1001" id="check1001">
+												<label for="check1001" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check1002" name="check1002" id="check1002">
+												<label for="check1002">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check1003" name="check1003" id="check1003">
+												<label for="check1003">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check1004" name="check1004" id="check1004">
+												<label for="check1004">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check1005" name="check1005" id="check1005">
+												<label for="check1005">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</td>
+                        </tr>
+						<tr>
+                            <th class="brd-b-ty1">행정서비스</th>
+                            <td class="tl last">
+								<div class="pCheckList01"> 
+									<div class="cnt">훈련기관은 행정상 문제가 발생하면 관심을 가지고 성실하게 도와준다.</div>
+									<ul class="noneLine">
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" checked="checked" value="check1101" name="check1101" id="check1101">
+												<label for="check1101" class="nowrap">매우 그렇다 (5점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check1102" name="check1102" id="check1102">
+												<label for="check1102">그렇다 (4점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check1103" name="check1103" id="check1103">
+												<label for="check1103">보통 (3점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check1104" name="check1104" id="check1104">
+												<label for="check1104">아니다 (2점)</label>
+											</div>
+										</li>
+										<li>
+											<div class="ui_radioBox">
+												<input type="radio" value="check1105" name="check1105" id="check1105">
+												<label for="check1105">전혀 아니다 (1점)</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
+        </div>
+		
+		<div class="popBtnArea ty2">
+            <button type="button" class="pBtnType1">이전</button>
+            <button type="button" class="pBtnType2">다음</button>
+        </div>
+
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</body>
+</html>
