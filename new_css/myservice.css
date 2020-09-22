@@ -1152,6 +1152,7 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .btnViewLink:after {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-left: 4px; width: 6px; height: 6px; background: url(../new_images/common/arrowGoLink02.png) no-repeat; background-size: 100% 100%;}
 .btnSave {min-width: 136px; font-size: 14px; color: #65646a; text-align: center; border: 1px solid #d8dfeb; line-height: 28px; background: #f8f8f8;}
 .btnSave:before {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-right: 9px; width: 19px; height: 17px; background: url(../new_images/common/iconMark01.png) no-repeat; background-size: 100% 100%;}
+.btnSave:hover {background: #c9d3e8;}
 .btnCompare {min-width: 136px; font-size: 14px; color: #65646a; text-align: center; border: 1px solid #d8dfeb; line-height: 28px; background: #f8f8f8;}
 .btnCompare:before {content: ''; position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-right: 9px; width: 19px; height: 15px; background: url(../new_images/common/iconMark02.png) no-repeat; background-size: 100% 100%;}
 

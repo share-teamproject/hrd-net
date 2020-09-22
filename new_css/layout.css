@@ -138,6 +138,7 @@ body.noScroll { position: fixed; overflow: hidden;	width: 100%; height: 100% }
 .tableArea table.list td a:hover { text-decoration: underline; color: #4171df; }
 .tableArea .tableTitleArea { display:table; width:100%; margin:50px 0 0 0; }
 .tableArea .tableTitleArea .tableTitle { display:table-cell; padding:0 0 15px 0; color:#292a2d; font-size:22px; font-weight:500; }
+.tableArea .tableTitleArea .tableTitle small {padding-left: 13px; font-size: 16px; color: #727476;}
 .tableArea .tableTitleArea .tableComment { display:table-cell; padding:0 0 7px 0; vertical-align:bottom; text-align:right; color:#727476; font-size:12px; font-weight:400; }
 .tableArea .tableTitleArea .tableBtnSet { display:table-cell; padding:0 0 7px 0; vertical-align:middle; text-align:right; }
 .tableNoti { font-size:12px; line-height:20px; color:#727476; }
