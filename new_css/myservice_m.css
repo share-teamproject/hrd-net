@@ -1308,3 +1308,31 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tableArea.popTy1 { margin-bottom:-40px; }
 .tableArea.popTy1 .view { border-top:1px #e2e2e4 solid; }
 .tblInfoTxt08.popTy1 { margin:60px 0 0 0; }
+
+
+.commentBox + .rstListCont {margin-top: 60px;}
+.rstListCont {padding: 40px 30px; border: 6px solid #d8dfeb;}
+.rstCTop {padding-bottom: 30px; border-bottom: 1px dashed #dfdfdf;}
+.rlTxt {padding-bottom: 10px; font-size: 28px; color: #4e4f51; line-height: 34px;}
+.rstCTop .esHash {margin-top: 16px;}
+
+.rlTc {font-size: 0;}
+.rlTc > .rlTm {display: inline-block; max-width: calc(100% - 110px); font-size: 32px; color: #292a2d; line-height: 40px; vertical-align: middle;}
+.rlTc > .rlTm {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;}
+.rlTc > .rlTm + .rndTxt {margin-left: 20px; width: 90px; line-height: 40px; vertical-align: middle;}
+
+.rstContIn {padding-top: 24px;}
+.conList {font-size: 0;}
+.conList > li {margin-top: 7px;}
+.conList > li.full {display: block; width: 100%; margin-bottom: 29px;}
+.conList > li .starGuage {}
+.conList > li .txt {display: inline-block; vertical-align: top; width: 195px; font-size: 28px; color: #4e4f51;}
+.conList > li .cont {position: relative; display: inline-block; vertical-align: top; width: calc(100% - 195px); padding-left: 22px; font-size: 28px; color: #727476;}
+.conList > li .cont:before {content:''; position: absolute; top: 10px; left: 0; height: 24px; border-left: 2px solid #e4ebeb;}
+.conList > li.full .txt {display: block; width: 100%;}
+.conList > li.full .cont {display: block; width: 100%; padding-left: 0;}
+.conList > li.full .cont:before {content: none;}
+
+
+
+
