@@ -1888,8 +1888,8 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 
 .popBtnArea {margin-top: 50px; text-align: center; font-size: 0;}
 .popBtnArea > button + button {margin-left: 20px;}
-.pBtnType1 {display: inline-block; width: 136px; height: 50px; font-size: 18px; color: #4e4f51; text-align: center; border: 1px solid #ededed;}
-.pBtnType2 {display: inline-block; width: 136px; height: 50px; font-size: 18px; color: #fff; text-align: center; background: #4171df;}
+.pBtnType1 {display: inline-block; min-width: 136px; height: 50px; padding: 0 20px; font-size: 18px; color: #4e4f51; text-align: center; border: 1px solid #ededed;}
+.pBtnType2 {display: inline-block; min-width: 136px; height: 50px; padding: 0 20px; font-size: 18px; color: #fff; text-align: center; background: #4171df;}
 
 /*popup*/
 .ctyTit2 {text-align: center; font-weight: 500; font-size: 32px; color: #4e4f51; line-height: 44px; margin-bottom: 35px;}
@@ -1952,3 +1952,8 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .sChkCont.ty4:after {background-position: 0 -38px;}
 .sChkCont.ty5:after {background-position: 0 -19px;}
 .sChkCont .ui_radioBox label {margin-right: 0;}
+
+.guideImgBox {text-align: center;}
+.guideImgBox + .commentBox {margin-top: 20px;}
+
+
