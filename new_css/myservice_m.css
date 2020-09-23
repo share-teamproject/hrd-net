@@ -1349,4 +1349,9 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .tChkEle > .tChkCont + .tChkCont {margin-left: 40px;}
 .schDomCont.ty2 .tChkEle > .tChkCont input[type="text"] {display: inline-block; width: 140px; margin: 0 6px;}
 
+.elesiDom {}
+.elesiDom > .inCont {}
+.elesiDom > .inCont +.inCont {margin-top: 20px;}
 
+
+.btnH26s {display:inline-block; padding:0 15px; min-width:150px; text-align:center; font-size:24px; color:#4e4f51; border:1px solid #cdcdd1; line-height:38px; background: #fff;}

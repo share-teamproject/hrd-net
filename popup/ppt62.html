@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>훈련교사자격증 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">훈련교사자격증</h2>
+        </div>
+        <div class="popContEle">
+            <h3 class="ctyTit">
+                훈련교사자격증
+                <div class="toolTip moDpNone">
+                    <button type="button" class="toolTipBtn">툴팁</button>
+                    <div class="toolTipContent right" style="width:300px;">
+                        <p class="toolTipTitle">훈련교사자격증</p>
+                        <p class="toolTipText">신청 직종과 관련된 자격만 등록하시기 바랍니다.</p>
+                    </div>
+                </div>
+            </h3>
+
+            <div class="tableArea">
+                <div class="tableTitleArea mt0">
+                    <div class="tableComment essMoDp">
+                        "<span class="color01">＊</span>" 는 필수 입력 항목 입니다.
+                        <a href="https://10.99.8.29/jsp/NCS_TEACHER.pdf" class="btnH26s ml10" target="_blank" title="새창">직종별 인정 자격 확인</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schDom ty3">
+                <div class="inCont">
+                    <div class="schDomCont ty2">
+                        <strong class="tit">
+                            자격증 명칭 <span title="필수입력" class="color01">＊</span>
+                            <div class="toolTip moDpNone">
+                                <button type="button" class="toolTipBtn">툴팁</button>
+                                <div class="toolTipContent right" style="width:300px;">
+                                    <p class="toolTipTitle">자격증 명칭</p>
+                                    <p class="toolTipText">본인이 소지하신 자격증명을 검색 후 선택하시기 바랍니다.</p>
+                                </div>                                
+                            </div>
+                        </strong>
+                        <div class="ele">
+                            <div class="elesiDom">
+                                <div class="inCont wc1">
+                                    <select title="검색 구분 선택" class="selectBox">
+                                        <option selected="selected" value="">선택</option>
+                                        <option value="">자격명칭</option>
+                                        <option value="">자격구분</option>
+                                        <option value="">자격코드</option>
+                                        <option value="">관련부처</option>
+                                    </select>
+                                </div>
+                                <div class="inCont">
+                                    <input type="text" title="검색어 입력" name="" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schDomCont ty2">
+                        <strong class="tit">자격증 코드 <span title="필수입력" class="color01">＊</span></strong>
+                        <div class="ele">
+                            <input type="text" title="자격증 코드" name="" id="">
+                        </div>
+                    </div>
+
+                    <div class="schDomCont ty2">
+                        <strong class="tit">
+                            취득일 <span title="필수입력" class="color01">＊</span>
+                            <div class="toolTip moDpNone">
+                                <button type="button" class="toolTipBtn">툴팁</button>
+                                <div class="toolTipContent right" style="width:300px;">
+                                    <p class="toolTipTitle">취득일</p>
+                                    <p class="toolTipText">자격증상 최초 발급일로 입력하시기 바랍니다.</p>
+                                </div>                                
+                            </div>
+                        </strong>
+                        <div class="ele">
+                            <div class="dateDom">
+                                <div class="dateSelect">
+                                    <input type="text" value="" placeholder="20200903" title="달력" name="date" id="date01">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schDomCont ty2">
+                        <strong class="tit">
+                            자격증 파일 <span title="필수입력" class="color01">＊</span>
+                            <div class="toolTip moDpNone">
+                                <button type="button" class="toolTipBtn">툴팁</button>
+                                <div class="toolTipContent right" style="width:300px;">
+                                    <p class="toolTipTitle">자격증 파일</p>
+                                    <div class="toolTipText">
+                                        <ul class="dotList">
+                                            <li>증빙서류 등록은 1개만 등록해주세요.</li>
+                                            <li>증빙서류는 1Mbyte 이내만 가능하며 pdf, zip, jpg, gif 확장자 파일만 등록가능 합니다.</li>
+                                            <li>증빙서류는 상하방향을 맞춰 등록하시기 바랍니다.</li>
+                                            <li>육안으로 내용을 확인할 수 있는 증빙파일을 등록하시기 바랍니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </strong>
+                        <div class="ele">
+                            <div class="fIner">
+                                <img src="../new_images/temp/@fileadd.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- confirmBtn -->
+        <div class="popBtnArea">
+            <button type="button" class="pBtnType2">저장</button>
+        </div>
+        <!--// confirmBtn -->
+
+        <button type="button" class="popClose">닫기</button>
+    </div>
+    
+
+</body>
+</html>
