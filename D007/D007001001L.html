@@ -13,27 +13,28 @@
 	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
 	<title>지원제도 | HRD-Net</title>
 	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link rel="stylesheet" href="../new_css/lib/jquery-ui.css" />
+	<link rel="stylesheet" href="../new_css/lib/swiper.min.css" />
+	<link rel="stylesheet" href="../new_css/lib/daterangepicker.css" />
+	<link rel="stylesheet" href="../new_css/reset.css" />
 
-	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
-	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
-	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
-	<link href="../new_css/reset.css" rel="stylesheet" />
-	<link href="../new_css/layout.css" rel="stylesheet" />
-	<link href="../new_css/contents.css" rel="stylesheet" />
-	<link href="../new_css/main.css" rel="stylesheet" />
-	<link href="../new_css/front.css" rel="stylesheet" />
+	<link rel="stylesheet" media="screen and (min-width:1024px)" href="../new_css/layout.css" />
+	<link rel="stylesheet" media="screen and (min-width:1024px)" href="../new_css/contents.css" />
+	<link rel="stylesheet" media="screen and (min-width:1024px)" href="../new_css/main.css" />
+	<link rel="stylesheet" media="screen and (min-width:1024px)" href="../new_css/front.css" />
 
-	<link rel="stylesheet" href="../new_css/layout_m.css" media="only screen and (max-device-width:768px)" />
-	<link rel="stylesheet" href="../new_css/contents_m.css" media="only screen and (max-device-width:768px)" />
-	<link rel="stylesheet" href="../new_css/main_m.css" media="only screen and (max-device-width:768px)" />
-	<link rel="stylesheet" href="../new_css/front_m.css" media="only screen and (max-device-width:768px)" />
+	<link rel="stylesheet" media="screen and (max-width:1024px)" href="../new_css/layout_m.css" />
+	<link rel="stylesheet" media="screen and (max-width:1024px)" href="../new_css/contents_m.css" />
+	<link rel="stylesheet" media="screen and (max-width:1024px)" href="../new_css/main_m.css" />
+	<link rel="stylesheet" media="screen and (max-width:1024px)" href="../new_css/front_m.css" />
 
 	<script src="../new_js/lib/jquery-2.1.1.js"></script>
 	<script src="../new_js/lib/jquery-ui.js"></script>
 	<script src="../new_js/lib/moment.min.js"></script>
 	<script src="../new_js/lib/daterangepicker.js"></script>
 	<script src="../new_js/lib/swiper.min.js"></script>
-	<script src="../new_js/ui.js"></script>
+	<script src="../new_js/ui.js"	media="screen and (min-width:1024px)"></script>
+	<script src="../new_js/ui_m.js" media="screen and (max-width:1024px)"></script>
 </head>
 
 <body>
@@ -46,7 +47,24 @@
 	<div id="wrap">
 		<!-- 헤더영역 -->
 		<header id="headerWrap">
-			Header영역
+			<div class="headArea">
+				헤더영역
+			</div>
+			<!-- 헤더 : mobile -->
+			<div class="headerBtn">
+				<!--h1>class="headerLogo"><a href="/" title="직업훈련포털 HRD-Net 로고">직업훈련포털 HRD-Net</a></h1-->
+				<button type="button" class="backBtn btn">이전 단계로 돌아가기</button>
+				<button type="button" class="searhBtn btn">검색</button>
+				<button type="button" class="totalMenuBtn btn">전체메뉴</button>
+				<!--button type="button"class="closeBtn btn">닫기</button-->
+			</div>
+			<!-- 전체메뉴 : mobile  -->
+			<nav class="totalMenuWrap">
+				<div class="overlay"></div>
+				<div class="totalMenuArea">
+					전체메뉴 : mobile
+				</div>
+			</nav>
 		</header>
 		<!-- //헤더영역 -->
 
@@ -106,8 +124,8 @@
 							</fieldset>
 						</div>
 
-						<div class="cont1 contentTline">
-							<ul class="lineBox pb0"><!-- 2020-09-17  태그 수정 및 col-3삭제 -->
+						<div class="cont1"><!-- 2020-09-21 -->
+							<ul class="lineBox mcol-2"><!-- 2020-09-17  태그 수정 및 col-3삭제 -->
 								<li>
 									<h4 class="bult-title-center">고용노동법</h4>
 									<div class="scon tl">
@@ -144,8 +162,6 @@
 										<span class="fr"><a href="#" class="btn_detail">자세히보기</a></span>
 									</p>
 								</li>
-							</ul>
-							<ul class="lineBox pb0">
 								<li>
 									<h4 class="bult-title-center">고용노동법</h4>
 									<div class="scon tl">
@@ -209,9 +225,24 @@
 
 		<!-- 푸터영역 -->
 		<footer id="footerWrap">
-			푸터영역
+			<div class="footerArea">
+				푸터영역
+			</div>
 		</footer>
-		<!--// 푸터영역 -->
-	</div>
+		<!-- //푸터영역 -->
+
+		<!-- Top버튼 -->
+		<!--div class="btnGoTop"><a href="/" role="button">Top으로 이동</a></div-->
+		<!-- //Top버튼 -->
+
+		<!-- 하단 고정 메뉴 : Mobile -->
+		<div id="floatingWrap" class="fixBotNav">
+			<nav class="floatingMenu">
+				하단 고정 메뉴 : Mobile
+			</nav>
+		</div>
+		<!-- //하단 고정 메뉴 : Mobile -->
+	</div><!-- // #wrap -->
 </body>
+
 </html>

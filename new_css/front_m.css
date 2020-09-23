@@ -5,8 +5,9 @@
 * ======================================================================================== */
 html, body{position:relative;width:100%;height:100%;margin:0;padding:0;}
 *{letter-spacing:-1px;}
-#front{line-height:1;}
+#front{line-height:1.4;}
 .visually-hidden {position: absolute;white-space: nowrap;width: 1px;height: 1px;overflow: hidden;border: 0;padding: 0;clip: rect(0 0 0 0);clip-path: inset(50%); margin: -1px;}
+.forPC{display:none;}
 
 [class*="col-"] {width: 100%;}
 #subContentWrap{width:100%;padding:0;}
@@ -33,9 +34,6 @@ html, body{position:relative;width:100%;height:100%;margin:0;padding:0;}
 * 기존 여백 css 재조정
 * ============================== */
 #contentWrap{padding:0 !important;}
-#subContentWrap{padding:60px 0 100px !important;}
-#subContentWrap .subContArea .headingTitleArea .headingText{line-height:24px;padding-bottom:0 !important;}
-#subContentWrap .subContArea .headingTitleArea .headingTitle{padding-bottom:20px !important;}
 .searchBoxLineWrap{margin:0; 0 60px !important;}
 
 input[type='text'], input[type='password'], input[type='number'], input[type='file']{line-height:40px !important;}
@@ -65,18 +63,22 @@ input[type='text'], input[type='password'], input[type='number'], input[type='fi
 .contentArea > .tradeView					/* 상세_직업박스 */
 {margin-top:40px !important;}
 
-.contentTline{width:100%;padding-top:50px;border-top:8px solid #e7e9f0;}
-.cont1{width:100%;margin-top:60px;padding:26px 50px 0 50px;}
+#front .contentTline1{width:100%;padding-top:50px;border-top:8px solid #e7e9f0;}
+#front .cont1{width:100%;padding:0 30px 50px !important;}
+#front .btnGroup + .tableArea{margin-top:40px;}
 
 /* ==============================
-*title
+*title 2020-09-21
 * ============================== */
+#front .headingTitleArea{width:100%;padding:70px 40px 60px !important;border-bottom:8px solid #e7e9f0;}
+#front .headingTitleArea .headingTitle{width:100%;padding:0 0 30px !important;}
+#front .headingTitleArea .headingText{width:100%;padding:0 !important;color:#727476;font-size:28px !important;}
+
 /* H4  */
-.bult-h4{width:100%;margin:60px 0 40px;padding-top:16px;color:#292a2d;font-size:32px;background:url('../new_images/common/bult_blueline.png') no-repeat 0 0;background-size:4px 0 0 23px;}
-.bult-h4:first-child{margin-top:0;}
-.bult-h4+.hDesc-s{margin-top:10px;line-height:40px;color:#727476;font-size:28px;}
-.bult-h4 + .tableArea{margin-top:40px !important;}
-.bult-h4.mb10{margin-bottom:10px !important;}
+#front .bult-h4{width:100%;margin:50px 0 0;padding-top:16px;color:#292a2d;font-size:32px;background:url('../new_images/common/bult_blueline.png') no-repeat 0 0;background-size:4px 0 0 23px;}
+#front .bult-h4+.hDesc-s{margin-top:30px;color:#727476;font-size:28px;}
+#front .bult-h4 + .tableArea{margin-top:40px !important;}
+#front .bult-h4.mb10{margin-bottom:10px !important;}
 
 /* H5  */
 .bultH5{width:100%;margin-top:40px;padding-left:10px;color:#5b648a;font-size:16px;background:url('../new_images/common/bult_dotblue.png') no-repeat 0 6px;background-size:4px;}
@@ -88,7 +90,6 @@ input[type='text'], input[type='password'], input[type='number'], input[type='fi
 /* ==============================
 * table
 * ============================== */
-table.list td.tl p{line-height:1.4;}
 table .nodata{height:150px;text-align:center;}	/*  table data가 없는 경우  */
 .pagenation{margin-top:20px;}
 
@@ -100,13 +101,13 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 =====================================================================================================*/
 .tabWrap{width:100%;padding:30px 0 0;}
 
-/* ========= 오렌지색 글씨 ========= */
-.tabDesc{width:100%;line-height:1.3;margin-top:20px;margin-left:10px;text-indent:-10px;color:#f48b2f;font-size:14px;}
+/* ========= 오렌지색 글씨 2020-09-22 ========= */
+.tabDesc{width:100%;margin-top:20px;margin-left:10px;text-indent:-10px;color:#f48b2f;font-size:24px;}
 
 /* ---------- 탭 + 탭:하단라인 ---------- */
 .tabList04 {width:100%;margin-top:30px;border-bottom:1px solid #e2e2e4;}
 .tabList04 ul{overflow:hidden;width:100%;}
-.tabList04 li{float:left;width:170px;height:40px;line-height:40px;text-align:center;color:#727476;cursor:pointer;}
+.tabList04 li{float:left;width:170px;height:40px;text-align:center;color:#727476;cursor:pointer;}
 .tabList04 li a{display:block;width:100%;height:100%;font-size:16px;}
 .tabList04 li.on{border-bottom:2px solid #434e65;color:#5b648a;}
 .tabList04 li section{position:absolute;left:0;top:44px;background:#fff;text-align:left;padding:20px;border:1px solid red;box-sizing:border-box;}
@@ -134,21 +135,18 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 
 
 /* ==============================
-* 검색 조건 영역
+* 검색 조건 영역 2020-09-21
 * ============================== */
-.searchWrap{overflow:hidden;width:900px;margin:30px auto 0;padding:20px 90px;border:3px solid #d8dfeb;background-color:#fff;}
-.searchWrap.full{overflow:hidden;width:100%;}
-.searchWrap legend{font-size:0;line-height:0;}
-.searchWrap dl{display:flex;flex-wrap:wrap;width:100%;}
-.searchWrap dt{width:120px;height:40px;}
-.searchWrap label{width:100%;line-height:40px;color:#4e4f51;}
-.searchWrap dd{width:calc(100% - 120px);margin-bottom:8px;vertical-align:top;}
-.searchWrap dd:last-child{margin-bottom:0;}
-.searchWrap dd input{max-width:calc(100% - 130px );}
-.searchWrap dd select + input, .searchWrap dd input + .btnArea{margin-left:10px;}
-.searchWrap dd .inputBox{display:table;width:100%;}
-.searchWrap dd .inputBox input{display:inline-block;width:calc(100% - 130px );}
-.searchWrap dd .inputBox input + button{display:table-cell;margin-left:10px;}
+#front .searchWrap{overflow:hidden;margin:0;padding:20px 60px;border-bottom:8px solid #d8dfeb;background-color:#fff;}
+#front .searchWrap.full{overflow:hidden;width:100%;}
+#front .searchWrap legend{font-size:0;line-height:0;}
+#front .searchWrap dl{width:100%;}
+#front .searchWrap dt, .searchWrap dd{width:100%;padding-bottom:30px;}
+#front .searchWrap label{width:100%;line-height:1.4;color:#4e4f51;font-size:30px;font-weight:bold;}
+#front .searchWrap dd .btnArea{width:100%;margin-top:30px;}
+#front .searchWrap dd select, #front .searchWrap dd select.w80p{width:100% !important;}
+#front .searchWrap dd select + select, #front .searchWrap dd select + input{width:100% !important;margin-top:20px;}
+#front .searchWrap dd .btnArea button{width:100% !important;}
 /* ==============================
 * keyword
 * ============================== */
@@ -162,17 +160,17 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 
 /* ==============================
 * Button
-* ============================== */
+* ============================== 
 .btn_search{display:inline-block;height:40px;line-height:40px;padding:0 36px;color:#fff;font-size:14px;text-align:center;background:#4171df;border:1px solid #4171df;}
 .btn_detail{display:inline-block;height:70px;line-height:70px;padding:0 15px 3px 10px;color:#4870cf;font-size:28px;text-align:left;background:url('../new_images/common/arrowConfirm.png') no-repeat right 50%;background-size:24px 48px;}
 .btn_filedown{padding-right:40px;color:#727476;font-size:26px;background:url('../new_images/front/btn_filedown.png') no-repeat right 50%;background-size:28px 36px;}
-
-/* ---------- 관심등록 버튼 ---------- */
+*/
+/* ---------- 관심등록 버튼 ----------
 .btnLike { box-sizing:border-box; display:inline-block; width:240px; padding:0 14px; background-color:#f8f8f8; border:2px solid #d8dfeb; }
 .btnLike span { width:100%; height:70px; line-height:66px; padding-left:40px; color:#4e4f51; font-weight:500; font-size:24px; text-align:center; position:relative; }
 .btnLike span:after{content:'';display:block;width:32px;height:28px;background:url('../new_images/common/icoLike.png') no-repeat; background-size:cover; position:absolute; top:5px; left:0;}
-
-/* ========== 3단링크박스 ========== */
+ */
+/* ========== 3단링크박스 ==========
 .gridWrap{overflow:hidden;width:100%;margin:30px auto 0;padding:20px 0;border:3px solid #d8dfeb;background-color:#fff;}
 .gridWrap .title{display:block;width:100%;padding:20px 0 60px;color:#292a2d;font-size:26px;text-align:center;}
 .gridWrap .outer-grid{display:table;width:100%;table-layout:fixed;}
@@ -180,7 +178,9 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 .gridWrap .outer-grid div:nth-child(3n){border-right:0;}
 .gridWrap .outer-grid div li{padding-right:20px;}
 .gridWrap .outer-grid div li a{display:block;padding:20px;background:url('../new_images/common/ico_arrowR.png') no-repeat right center;background-size:30px;}
-
+ */
+.btnGroup{margin-top:50px;}
+.btnType1{display:inline-block;height:90px;line-height:90px;padding:0 40px;}
 
 /* ==============================
 * 직업/기관 박스
@@ -218,67 +218,190 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 #front .viewArea{margin:40px 0 0;}
 #front .tabInterface, #front .tabContents{margin-top:40px;}
 .guideBox{width:100%;line-height:20px;padding:25px 35px;color:#727476;font-size:12px;background-color:#f7f7f7;}
-/* 이미지 감싸는 박스 */
-.imgArea{width:100%;margin-top:20px;padding:40px 0;text-align:center;border:1px solid #dfdfdf;}
+/* 이미지 감싸는 박스 2020-09-21 */
+.imgArea{width:100%;margin-top:20px;padding:40px 30px;text-align:center;border:1px solid #dfdfdf;}
 .imgArea img{width:100%;}
 /* 해시태그 */
 .hashtag{color:#258384;font-size:14px;}
 /* 상단점선라인 */
-.dashlineT{width:100%;background:url('../new_images/common/bg_dash.png') repeat-x 0 0;background-size:4px 1px;}
+.dashlineT{width:100%;background:url('../new_images/front/bg_dash.png') repeat-x 0 0;background-size:18px 2px;}
 
-/* -----  상세 > 숫자리스트 ----- */
-.li-decimal{overflow:hidden;width:100%;}
-.li-decimal li{width:100%;margin:0;padding:0;margin-left:12px;text-indent:-12px;color:#727476;font-size:26px;line-height:40px;border:0;}
-.li-decimal li span{color:#4171df;}
-/* -----  상세 > 숫자리스트 ----- */
-.li-disc{overflow:hidden;width:100%;}
-.li-disc li{display:inline-block;width:100%;margin:0;padding:0;padding-left:15px;color:#727476;font-size:30px;border:0;background:url('../new_images/common/bult_dotblue.png') no-repeat 0 16px;background-size:8px;}
-.li-disc li ul{margin:0;padding:0;}
-.li-disc li ul li{padding:0 !important;background:none !important;}
+/* -----  상세 > 숫자리스트 2020-09-21 ----- */
+#front .li-decimal{overflow:hidden;width:100%;}
+#front .li-decimal li{width:100%;margin:0;padding:0;margin-left:12px;text-indent:-12px;color:#727476;font-size:26px;line-height:40px;border:0;}
+#front .li-decimal li span{color:#4171df;}
 
-/* 5줄이상 말줄임 */
-.lineBox .ellipsis5{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;word-wrap:break-word;}
+/* -----  상세 > 숫자리스트 2020-09-21 ----- */
+#front .li-disc{overflow:hidden;width:100%;}
+#front .li-disc li{display:inline-block;width:100%;margin:0;padding:0;padding-left:15px;color:#727476;font-size:30px;border:0;background:url('../new_images/common/bult_dotblue.png') no-repeat 0 16px;background-size:8px;}
+#front .li-disc li ul{margin:0;padding:0;}
+#front .li-disc li ul li{padding:0;background:none;}
 
-/* -----  박스목록 > 블릿타이틀+설명+해시태그+자세히보기 ----- */
-.lineBox{overflow:hidden;width:100%;margin-top:40px;}
-.lineBox > div{position:relative;vertical-align:top;margin:0;padding:40px 30px;border:1px solid #e2e2e4;}
-.lineBox .stit{width:100%;line-height:1.4;color:#292a2d;font-size:30px;text-align:center;}
-.lineBox .scon{display:block;width:100%;padding:30px 0;font-size:26px;text-align:center;}
-.lineBox .scon p{line-height:1.8;}
-.lineBox .dashlineT{margin-top:20px;padding:20px 0 0;background-position:10px 0;}
+/* -----  박스목록 > 블릿타이틀+설명+해시태그+자세히보기 2020-09-21 ----- */
+#front .lineBox{overflow:hidden;width:100%;margin-top:40px;}
+#front .lineBox > li{position:relative;vertical-align:top;margin:0;padding:50px 10px 40px;border:2px solid #e2e2e4;}
+#front .lineBox > div{position:relative;vertical-align:top;margin:0;padding:50px 30px 40px;border:2px solid #e2e2e4;}
+#front .lineBox .stit{width:100%;color:#292a2d;font-size:30px;text-align:center;}
+#front .lineBox .scon{display:block;width:100%;padding:30px 50px;font-size:26px;text-align:center;}
+#front .lineBox .scon p{line-height:1.4;}
+#front .lineBox .li-decimal{padding:40px 30px 0;}
+#front .lineBox .col-2-1, #front .lineBox .col-1{margin-bottom:20px;}
+#front .lineBox .col-2-1 .stit, #front .lineBox .col-1 .stit{padding-bottom:40px;}
+#front .lineBox .col-2-1 .li-disc li{background:url('../new_images/front/bult_dotgreen.png') no-repeat 0 16px;background-size:8px;}
+#front .lineBox .col-2-1 .li-disc li li{padding-left:16px;text-indent:-16px;background:none;}
+#front .lineBox .col-2-1 .li-disc li li:first-child{margin-top:10px;}
+/* 2단 라인박스 2020-09-21 */
+#front .lineBox.mcol-2{overflow:hidden;width:100%;}
+#front .lineBox.mcol-2 li{float:left;width:50%;padding-bottom:0 !important;}
+#front .lineBox.mcol-2 li .bult-title-center{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;width:100%;}
+#front .lineBox.mcol-2 .scon{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;word-wrap:break-word;width:100%;min-height:250px;margin-bottom:30px;padding:30px 0 0;}
+#front .lineBox.mcol-2 .linkArea{overflow:hidden;display:block;width:100%;}
+#front .lineBox.mcol-2 .linkArea span{display:inline-block;float:none;width:100%;padding:0 0 20px;}
+#front .lineBox.mcol-2 .linkArea span a{display:inline-block;padding-right:30px;color:#727476;background:url('../new_images/common/btnTumbIntroNext.jpg') no-repeat right center;background-size:14px 24px;}
+#front .lineBox.mcol-2 .linkArea .hashtag{display:none;}
 
-/* 박스 높이 */
-.lineBox.h600 > div{height:auto;}
-.lineBox.h600 .scon.h100{height:140px;padding:20px 0;text-align:center;}
-.lineBox.h200 > div{padding-bottom:0;}
-.lineBox.h200 > div .scon{height:170px;margin-bottom:40px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;word-wrap:break-word;}
-.lineBox.pb0 > div{padding-bottom:0;}
-
-/* 하단고정영역 */
-.lineBox .linkArea{display:block;width:100%;height:70px;line-height:70px;}
-.lineBox .linkArea span{display:inline-block;height:100%;margin-top:10px;}
-.lineBox .linkArea .hashtag{display:none;}
+/* 하단고정영역 2020-09-21 */
+#front .lineBox .linkArea{display:block;width:100%;height:70px;line-height:70px;background:url('../new_images/front/bg_dash.png') repeat-x 0 0;background-size:18px 2px;}
+#front .lineBox .linkArea span{display:inline-block;height:100%;text-align:center;}
+#front .lineBox .linkArea .hashtag{display:none;}
 
 /* 단처리  */
 .lineBox .col-3{float:left;width:50%;}
-.lineBox.h600 .col-3{float:none;width:100%;}
-.lineBox .col-2-1 + .col-2-1{margin-left:0;}
 .col-2-1 .li-disc{min-height:60px;}
 
-/* -----  굵은박스 ----- */
-.lineBox_b{width:100%;height:100%;padding:0 30px;border:6px solid #e2e2e4;}
-.lineBox_b .stit{width:100%;margin:50px 0;color:#292a2d;font-size:32px;text-align:center;}
-.lineBox_b .li-disc.col-3{width:100% !important;padding:0 10px;}
-.lineBox_b .li-disc.col-3 li{width:100%;height:auto;line-height:1.2;padding-left:14px;color:#595478;font-size:30px;font-weight:500;vertical-align:top;border-right:0;background-position:0 20px;}
+/* -----  굵은박스 2020-09-21 ----- */
+#front .lineBox_b{width:100%;height:100%;margin-top:60px;padding:60px 50px;border:6px solid #e2e2e4;}
+#front .lineBox_b .stit{width:100%;color:#292a2d;font-size:28px;font-weight:500;text-align:center;}
+#front .lineBox_b .li-disc.col-3{width:100%;margin-top:60px;}
+#front .lineBox_b .li-disc.col-3 li{width:100%;margin-top:50px !important;color:#5B648A !important;font-size:30px;font-weight:500;vertical-align:top;background-position:0 20px;}
+#front .lineBox_b .li-disc.col-3 li:first-child{margin-top:0 !important;}
 
 
 /* -----  상세 > 타이틀+버튼+해시태그+배경이미지 ----- */
-.viewTitleArea{width:100%;height:282px;margin-top:40px;padding:40px 50px;background:#f1f2f7 url('../new_images/front/bg_viewTitle_m.png') no-repeat right 0;background-size:contain;}
-.viewTitleArea h4{color:#292a2d;font-size:42px;}
-.viewTitleArea .hashtag{margin-top:20px;font-size:26px;}
-.viewCon{margin:0 0 40px;}
-.viewCon .scon{line-height:22px;padding:10px 0 0 0;color:#727476;font-size:14px;}
-.viewCon .bult-h4{margin-bottom:10px;}
+#front .viewTitleArea{position:relative;width:100%;height:282px;padding:40px 50px;background:#f1f2f7 url('../new_images/front/bg_viewTitle_m.png') no-repeat right 0;background-size:contain;}
+#front .viewTitleArea h4{color:#292a2d;font-size:42px;}
+#front .viewTitleArea .btn_view2{position:absolute;top:40px;left:50px;width:80%;height:60px;font-size:0;background:url('../new_images/common/arrowStepM.png') no-repeat right center;background-size:19px 35px;}
+#front .viewTitleArea .hashtag{margin-top:20px;font-size:26px;}
+#front .viewCon{margin:0 0 40px;}
+#front .viewCon .scon{line-height:1.4;padding:10px 0 0 0;color:#727476;font-size:26px;}
+#front .viewCon .bult-h4{margin-bottom:10px;}
 
 
 
+/* ==============================
+* 레이어팝업
+* ============================== */
+#mask {position:absolute;left:0; top:0; z-index:1000;width:100%;height:100%;background-color:#000;display:block;}
+#frontP.w1140{width:90%;height:95%;}
+#frontP .y-scroll{overflow-y:scroll;}
+#frontP.layerPop{position:absolute;left:50%;top:30px;z-index:10000;margin-left:-45%;background-color:#fff;}
+#frontP.layerPop .layerTitle{position:relative;width:100%;height:100px;padding:0 30px;border-bottom:1px #e2e2e4 solid;}
+#frontP.layerPop .layerTitle .text{line-height:100px;color:#4e4f51;font-size:26px;text-align:left;}
+#frontP.layerPop .layerTitle .close{position:absolute;top:32px;right:22px;width:38px;height:38px;background:url('../new_images/common/btnClose.png') no-repeat;cursor: pointer;background-size:100%;}
+#frontP.layerPop .layerTitle .close a{font-size:0;}
+
+/* ---------- Layout_컨텐츠 ----------  */
+#frontP .layerPopCon{position:relative;width:100%;height:85%;padding:30px 40px 40px;}
+#frontP .layerPopCon .Title{width:100%;line-height:1;margin:0;color:#292a2d;font-size:38px;font-weight:500;text-align:center;}
+#frontP .layerPopCon .absolute.logo_moel{position:absolute;left:40px;top:30px;width:100px;height:38px;font-size:0;background:none;}
+#frontP .layerPopCon .pimg_c001001001L{background:url('../new_images/front/pimg_c001001001L.png') no-repeat right bottom;background-size:350px 112px;}
+#frontP .layerPopCon .cont1{margin-top:0 !important;}
+
+/* ---------- 파란막대타이틀 ----------  */
+#frontP .layerPopCon .bult-Title{width:100%;margin-top:60px;padding:0;color:#292a2d;font-size:30px;background:url('../new_images/front/bult_tit.png') no-repeat 0 0;background-size:4px 0 0 23px;}
+#frontP .layerPopCon .bult-Title-desc{width:100%;margin-top:10px;color:#727476;font-size:26px;}
+
+/* ---------- 파란블릿소타이틀 + 컨텐츠 ----------  */
+#frontP .layerPopCon .bstit-scon{width:100%;}
+#frontP .layerPopCon .bstit-scon .stit{width:100%;line-height:1.2;margin:30px 0 10px;padding:0 0 0 10px;color:#595478;font-size:28px;font-weight:500;background:url('../new_images/front/bult_bDot.png') no-repeat 0 7px;background-size:10px 16px;}
+#frontP .layerPopCon .bstit-scon .scon{width:100%;line-height:1.2;padding-left:10px;color:#727476;font-size:26px;}
+#frontP .layerPopCon .bstit-scon .scon:after{content:"";display:block;clear:both;}
+
+/* ---------- 컨텐츠이미지 ----------  */
+#frontP .layerPopCon .pimg_c001001001L{background:none;}
+
+/*
+#frontP .imgstit-scon{display: -webkit-flex;display: flex;-ms-flex-direction: row;flex-direction: row;align-items: stretch;position:relative;width:100%;min-height:140px;padding:30px 0;border-bottom:1px dashed #dfdfdf;}
+#frontP .imgstit-scon:before{content:"";display:inline-block;position:absolute;top:20px;left:0;width:100px;height:100px;margin-left:-20px;background:none;}
+#frontP .imgstit-scon.icon_01:before{background-position:0 0;}
+#frontP .imgstit-scon.icon_02:before{background-position:-100px 0;}
+#frontP .imgstit-scon.icon_03:before{background-position:-200px 0;}
+#frontP .imgstit-scon.icon_04:before{background-position:-300px 0;}
+#frontP .imgstit-scon.thump:before{background-position:-400px 0;}
+#frontP .imgstit-scon:after{content:"";display:block;clear:both;}
+#frontP .imgstit-scon .stit{-ms-flex: 2;-webkit-flex:2;flex:2;float:none;width:30%;height:100%;padding:0;color:#595478;font-size:26px;}
+#frontP .imgstit-scon .scon{-ms-flex: 5;-webkit-flex:5;flex:5;float:none;width:70%;height:100%;padding-left:10px;color:#727476;font-size:26px;}
+#frontP .box-scon{width:100%;height:auto;display:block;}
+#frontP .box-scon:after{content:"";display:block;clear:both;}
+#frontP .box-scon li{position:relative;padding:100px 20px 30px 20px;text-align:center;background-color:#f6f6f6;}
+#frontP .box-scon li:nth-child(2n){background-color:#fff;}
+#frontP .box-scon li .scon{display:inline-block;text-align:center;}
+*/
+
+
+
+/* 2020-09-22 ---------- 청년취업아카데미 > 지원절차, 국가인적자원개발컨소시엄 > 지원절차 ---------- */
+#frontP .bgIcon-02{width:100%;height:auto;display:block;}
+#frontP .bgIcon-02:after{content:"";display:block;clear:both;}
+#frontP .bgIcon-02 li{position:relative;padding:100px 20px 30px 20px;text-align:center;background-color:#f6f6f6;}
+#frontP .bgIcon-02 li:before{content:"";display:inline-block;position:absolute;top:30px;left:50%;width:60px;height:60px;margin-left:-30px;background-image:url('../new_images/front/mbg_C002001001L-2-04.png');background-repeat:no-repeat;}
+#frontP .bgIcon-02 li:nth-child(2n){background-color:#fff;}
+#frontP .bgIcon-02 li .scon{display:inline-block;text-align:center;}
+#frontP .bgIcon-02 li.icon01:before{background-position:0 0;}
+#frontP .bgIcon-02 li.icon02:before{background-position:-60px 0;}
+#frontP .bgIcon-02 li.icon03:before{background-position:-120px 0;}
+#frontP .bgIcon-02 li.icon04:before{background-position:-180px 0;}
+#frontP .bgIcon-02 li.icon05:before{background-position:-240px 0;}
+#frontP .bgIcon-02 li.icon06:before{background-position:-300px 0;}
+#frontP .bgIcon-02 li.icon07:before{background-position:-360px 0;}
+#frontP .bgIcon-02 li.icon08:before{background-position:-420px 0;}
+#frontP .bgIcon-02 li.icon09:before{background-position:-480px 0;}
+#frontP .bgIcon-02 li.icon10:before{background-position:-540px 0;}
+#frontP .bgIcon-02 li.icon11:before{background-position:-600px 0;}
+#frontP .bgIcon-02 li.icon12:before{background-position:-660px 0;}
+#frontP .bgIcon-02 li.icon13:before{background-position:-720px 0;}
+#frontP .bgIcon-02.fl-2 li, #frontP .bgIcon-02.fl-4 li{float:left;width:50%;min-height:280px;max-height:450px;padding-left:10px;padding-right:20px;}
+#frontP .bgIcon-02.fl-2 li:nth-of-type(3){background-color:#fff !important;}
+#frontP .bgIcon-02.fl-2 li:nth-of-type(4){background-color:#f6f6f6 !important;}
+#frontP .bgIcon-02.fl-4 li{height:450px;}
+#frontP .bgIcon-02.fl-4 li:nth-child(4), #frontP .bgIcon-02.fl-4 li:nth-child(5), #frontP .bgIcon-02.fl-4 li:nth-child(8){background-color:#f6f6f6 !important;}
+#frontP .bgIcon-02.fl-4 li:nth-child(3), #frontP .bgIcon-02.fl-4 li:nth-child(6), #frontP .bgIcon-02.fl-4 li:nth-child(7){background-color:#fff !important;}
+
+/* 2020-09-22 ---------- 청년취업아카데미 > 교육훈련프로그램, 사업주지원훈련 > 연간지원한도액 ---------- */
+.progBox li{padding:40px 0;background:url('../new_images/front/bg_dash.png') repeat-x 0 0;background-size:18px 2px;}
+.progBox li:first-child{background:none;}
+.progBox dl{position:relative;display: -webkit-flex;display: flex;-ms-flex-direction: row;flex-direction: row;align-items: stretch;padding-top:170px;}
+.progBox dl:before{content:"";position:absolute;top:0;left:50%;margin-left:-75px;width:150px;height:150px;background-image:url('../new_images/front/mbg_C002001001L-2-03.png');background-repeat:no-repeat;background-size:1500px 300px;}
+.progBox dl.icon01:before{background-position:0 0;}
+.progBox dl.icon02:before{background-position:-150px 0;}
+.progBox dl.icon03:before{background-position:-300px 0;}
+.progBox dl.icon04:before{background-position:-450px 0;}
+.progBox dl.icon05:before{background-position:-600px 0;}
+.progBox dl.icon06:before{background-position:-750px 0;}
+.progBox dl.icon07:before{background-position:-900px 0;}
+.progBox dl.icon08:before{background-position:-1050 0;}
+.progBox dl.icon09:before{background-position:-1200px 0;}
+.progBox dl.icon10:before{background-position:-1350px 0;}
+.progBox dl.icon11:before{background-position:0 -150px;}
+.progBox dl.icon12:before{background-position:-150px -150px;}
+.progBox dl.icon13:before{background-position:-300px -150px;}
+.progBox dl.icon14:before{background-position:-450px -150px;}
+.progBox dl.icon15:before{background-position:-600px -150px;}
+.progBox dl.icon16:before{background-position:-750px -150px;}
+.progBox dl dt, .progBox dl dd{-ms-flex: 1;-webkit-flex: 1;flex: 1;width:100%;font-size:28px;text-align:left;}
+.progBox dl dt{color:#292a2d;}
+.progBox dl dd{color:#727476;}
+.progBox dl dd em{color:#268486;}
+
+/* 2020-09-22 ---------- 청년취업아카데미 > 창작과정 ---------- */
+#frontP .bline .bstit-scon{width:100%;margin:20px 0;padding:30px;border:8px solid #a1b8ee;}
+#frontP .bline .bstit-scon .stit{margin:0 0 20px;color:#292a2d;font-weight:normal;text-align:center;background:none;}
+#frontP .bline .bstit-scon .scon{width:100%;}
+#frontP .bline .bstit-scon .scon + .scon{margin-top:50px;}
+/* ---------- 사업주지원훈련 > 이란? ---------- */
+#frontP .slineBox.no-line > div{padding:0 !important;border:0 none;}
+#frontP .slineBox.no-line .bstit-scon > *{width:100%;text-align:left !important;}
+#frontP .slineBox.no-line .bstit-scon .stit{width:100%;padding:0 0 0 10px;color:#595478;font-size:26px;font-weight:500;background:url('../new_images/front/bult_bDot.png') no-repeat 0 5px;background-size:10px 16px;}
+#frontP .slineBox.no-line .bstit-scon .scon{display:flex;flex-wrap:wrap;width:100%;padding-left:10px;color:#727476;font-size:26px;}
+#frontP .slineBox.no-line .bstit-scon .scon span:nth-child(2){-ms-flex: 1;-webkit-flex: 1;flex: 1;text-align:left !important;}
+#frontP .slineBox.no-line .bstit-scon .scon .sstit{display:inline-block;width:30%;color:#292a2d;}
