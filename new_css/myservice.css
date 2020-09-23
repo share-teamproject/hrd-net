@@ -1878,6 +1878,7 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .txtTy1 {margin-top: 7px; font-size: 13px; color: #258384;}
 
 .tblIpRe {width: 320px;}
+.tblIpRe2 {width: 485px;}
 
 .tblBtnBox {font-size: 0;}
 .tblBtnBox > li {display: inline-block;}
@@ -2004,7 +2005,9 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .tChkEle > .tChkCont + .tChkCont {margin-left: 30px;}
 .schDomCont.ty2 .tChkEle > .tChkCont input[type="text"] {width: 140px; margin: 0 6px;}
 
-.elesiDom {display: table; width: 100%; table-layout: fixed;}
+.elesiDom {display: table; width: 100%; max-width: 485px; table-layout: fixed;}
 .elesiDom > .inCont {display: table-cell; vertical-align: top;}
 .elesiDom > .inCont +.inCont {padding-left: 20px;}
 .elesiDom > .inCont.wc1 {width: 150px;}
+.elesiDom > .inCont .selectBox,
+.elesiDom > .inCont input[type="text"] {width: 100%;}

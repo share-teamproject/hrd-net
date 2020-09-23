@@ -742,6 +742,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 .dateDom {font-size: 0;}
 .dateDom > .dateSelect {position: relative; display: inline-block; width: calc(50% - 20px); vertical-align: top;}
+.dateDom > .dateSelect.single {display: block; width: 100%;}
 .dateDom > .dateSelect + .dateSelect {margin-left: 40px;}
 .dateDom > .dateSelect + .dateSelect:before {content: '~'; position: absolute; left: -40px; width: 40px; text-align: center; line-height: 70px; font-size: 28px; color: #727476;} 
 .dateDom > .dateSelect input[type="text"] {width: 100%;}
@@ -1260,6 +1261,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .txtTy1 {margin-top: 7px; font-size: 24px; color: #258384;}
 
 .tblIpRe {width: 100%;}
+.tblIpRe2 {width: 100%;}
 
 .cmBox {padding: 30px; background: #f7f7f7; font-size: 24px; color: #727476;}
 

@@ -447,6 +447,7 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .pr0 {padding-right:0 !important;}
 .pt0 {padding-top:0 !important;}
 .pt30 {padding-top:30px !important;}
+.pl0 {padding-left:0 !important;}
 .brd-t-ty1 {border-top:1px solid #e2e2e4 !important;}
 .brd-r-ty1 {border-right:1px solid #e2e2e4;}
 .brd-b-ty1 {border-bottom:1px solid #e2e2e4 !important;}
@@ -454,6 +455,7 @@ button.conFirm, a.conFirm { display:inline-block; width:100px; height:26px; line
 .brd-r-ty2 {border-right:2px solid #5b648a !important;}
 .brd-b-ty2 {border-bottom:2px solid #5b648a !important;}
 .brd-l-ty2 {border-left:2px solid #5b648a !important;}
+.brd-r-none {border-right:0 !important;}
 
 .nowrap {white-space:nowrap;}
 .tblFixed {table-layout:fixed;}
