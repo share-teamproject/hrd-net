@@ -737,6 +737,8 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .schDom + .sortArea {margin-top: 72px; display: flex !important;}
 .schDom + form {margin-top: 72px;}
 
+.schDom.ty3 {padding: 40px 0; border: 0; border-top: 4px solid #5b648a;}
+
 
 .dateDom {font-size: 0;}
 .dateDom > .dateSelect {position: relative; display: inline-block; width: calc(50% - 20px); vertical-align: top;}
@@ -1252,8 +1254,10 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 
 /*kjs*/
-.fIner {padding: 20px; background: #fff;}
+.fIner {background: #fff;}
 .fIner > img {width: 100%;}
+
+.txtTy1 {margin-top: 7px; font-size: 24px; color: #258384;}
 
 .tblIpRe {width: 100%;}
 
@@ -1265,6 +1269,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 
 
 .mFlex {display: flex !important;}
+.essMoDp {display: block !important; text-align: right; margin-bottom: 10px;}
 /*kjs*/
 
 
@@ -1339,6 +1344,9 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .conList > li.full .cont {display: block; width: 100%; padding-left: 0;}
 .conList > li.full .cont:before {content: none;}
 
-
+.tChkEle {font-size: 0;}
+.tChkEle > .tChkCont {display: inline-block; vertical-align: middle; font-size: 28px; color: #4e4f51;}
+.tChkEle > .tChkCont + .tChkCont {margin-left: 40px;}
+.schDomCont.ty2 .tChkEle > .tChkCont input[type="text"] {display: inline-block; width: 140px; margin: 0 6px;}
 
 

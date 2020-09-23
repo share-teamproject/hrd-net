@@ -1045,15 +1045,25 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .schDomCont + .schDomCont {margin-top: 10px;}
 .schDomCont > * {vertical-align: top;}
 .schDomCont > .ele {display: inline-block; width: calc(100% - 125px);}
+.schDomCont > .ele.ty1 {padding-top: 8px;}
 .schDomCont > .ele .selectBox,
 .schDomCont > .ele input[type="text"],
 .schDomCont > .ele input[type="pass"] {width: 435px;}
 .schDomCont > .tit {width: 125px; display: inline-block; font-size: 18px; color: #4e4f51; line-height: 40px;}
 .schDomCont > .tit.normal {line-height: normal;}
-.schDom.ty2 {padding: 25px 20px 25px 30px;}
+.schDomCont > .tit .toolTip {margin: -3px 0 0 10px; font-size: 0; line-height: normal;}
+.schDomCont > .tit .toolTip .toolTipBtn {margin: 0;}
 .schDom.ty2 {padding: 25px 20px 25px 30px;}
 .schDom.ty2 .schDomCont > .tit {width: 160px;}
 .schDom.ty2 .schDomCont > .ele {width: calc(100% - 160px);}
+
+.schDom.ty3 {padding: 60px 110px; border: 1px solid #e2e2e4; border-top: 2px solid #5b648a;}
+.schDomCont.ty2 + .schDomCont.ty2 {margin-top: 30px;}
+.schDomCont.ty2 > .tit {width: 192px;}
+.schDomCont.ty2 > .ele .selectBox,
+.schDomCont.ty2 > .ele input[type="text"],
+.schDomCont.ty2 > .ele input[type="pass"] {width: 100%;}
+.schDomCont.ty2 > .ele {width: calc(100% - 192px);}
 .schDom > .btnGroup {margin-top: 20px;}
 .schDom + .sortArea {margin-top: 52px;}
 .schDom + form {margin-top: 52px;}
@@ -1862,8 +1872,10 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 
 
 /*kjs*/
-.fIner {padding: 20px; background: #fff;}
+.fIner {background: #fff;}
 .fIner > img {width: 100%;}
+
+.txtTy1 {margin-top: 7px; font-size: 13px; color: #258384;}
 
 .tblIpRe {width: 320px;}
 
@@ -1886,6 +1898,10 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .popContEle > #subContentWrap .subContArea {width: auto;}
 
 .ctyTit {text-align: center; font-weight: 500; font-size: 32px; color: #4e4f51; line-height: 44px; margin-bottom: 35px;}
+.ctyTit .toolTip {margin: -5px 0 0 11px; line-height: normal; font-size: 0;}
+.ctyTit .toolTip .toolTipBtn {margin: 0; line-height: normal;}
+
+.ctyTit .toolTipContent .toolTipTitle {line-height: normal;}
 
 .popEle > .popClose {position: absolute; top: 16px; right: 30px;}
 .popClose {display: inline-block; width: 22px; height: 22px; background: url(../new_images/common/btnCloseTy1.png) no-repeat; overflow: hidden; font-size: 0;}
@@ -1982,3 +1998,10 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .SpanTy1 dt { width:100px; }
 .SpanTy1 dt > span { display:inline-block; text-align:center; min-width:90px; height:24px; line-height:22px; border:1px #d3d3d3 solid; padding:0 10px; border-radius:10px; }
 .SpanTy1 dd { text-align:left; padding-top:2px; }
+
+.tChkEle {font-size: 0;}
+.tChkEle > .tChkCont {display: inline-block; vertical-align: middle; font-size: 14px; color: #4e4f51;}
+.tChkEle > .tChkCont + .tChkCont {margin-left: 30px;}
+.schDomCont.ty2 .tChkEle > .tChkCont input[type="text"] {width: 140px; margin: 0 6px;}
+
+
