@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>훈련강사 기본정보 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">훈련강사 기본정보</h2>
+        </div>
+        <div class="popContEle">
+			<!-- 테이블 -->
+			<div class="tableArea">
+				 <div class="tableTitleArea mt0">
+					<div class="tableComment">"<span class="color01">＊</span>" 는 필수 입력 항목입니다. </div>
+					<h3 class="bigTitle02"><span class="txt verM"><span class="color01">＊</span> 필수입력</span></h3>
+                </div> 
+
+				<div class="divTableArea02">
+					<div class="caption">실물 카드정보 내용</div>
+					<div class="divTable"> 
+						<div class="divTableBody"> 
+							<div class="divTableRow"> 
+								<div class="thCell02">생년월일</div> 
+								<div class="tdCell02">74년 05월 22일</div> 
+							</div> 
+							<div class="divTableRow"> 
+								<div class="thCell02">성명(강사명)</div> 
+								<div class="tdCell02">임호동</div> 
+							</div>	
+							<div class="divTableRow"> 
+								<div class="thCell02">핸드폰번호 <span class="color01">＊</span></div> 
+								<div class="tdCell02">
+									<div class="inpArea phoneInput">
+										<div class="ele ty1">
+											<select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
+												<option selected="selected" value="">선택</option>
+												<option value="032"> 032 </option>
+											</select>
+										</div>
+										<div class="ele ty2">-</div>
+										<div class="ele ty3">
+											<input type="text" title="전화번호 가운데 자리" name="userTel02" id="userTel02">
+										</div>
+										<div class="ele ty2">-</div>
+										<div class="ele ty3">
+											<input type="text" title="전화번호 끝 자리" name="userTel03" id="userTel03">
+										</div>
+									</div>
+								</div> 
+							</div>
+							<div class="divTableRow"> 
+								<div class="thCell02">이메일</div> 
+								<div class="tdCell02">
+									<div class="inpArea emailInput">
+										<div class="ele">
+											<input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
+										</div>
+										<div class="ele ty1">@</div>
+										<div class="ele">
+											<input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
+										</div>
+										<div class="ele ty2">
+											<select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
+												<option selected="selected" value="">직접입력</option>
+												<option value="chol.com"> chol.com </option>
+												<option value="dreamwiz.com"> dreamwiz.com </option>
+												<option value="empal.com"> empal.com </option>
+												<option value="freechal.com"> freechal.com </option>
+												<option value="gmail.com"> gmail.com </option>
+												<option value="hanmail.net"> hanmail.net </option>
+												<option value="hanmir.net"> hanmir.net </option>
+												<option value="hitel.com"> hitel.com </option>
+												<option value="hotmail.com"> hotmail.com </option>
+												<option value="korea.com"> korea.com </option>
+												<option value="nate.com"> nate.com </option>
+												<option value="naver.com"> naver.com </option>
+												<option value="orgio.com"> orgio.com </option>
+												<option value="paran.com"> paran.com </option>
+												<option value="sayclub.net"> sayclub.net </option>
+												<option value="shinbiro.com"> shinbiro.com </option>
+												<option value="yahoo.co.kr"> yahoo.co.kr </option>
+												<option value="yahoo.com"> yahoo.com </option>
+												<option value="molab.go.kr"> molab.go.kr </option>
+											</select>
+										</div>
+									</div>	
+								</div> 
+							</div>	
+						</div>
+					</div>
+				</div>								               
+            </div>
+			<!-- // 테이블 -->			
+        </div>
+		
+		<div class="popBtnArea">
+            <button type="button" class="pBtnType2">저장</button>
+        </div>
+
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</body>
+</html>

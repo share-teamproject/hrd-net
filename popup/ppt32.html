@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>학습 진행률 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">학습 진행률</h2>
+        </div>
+        <div class="popContEle">
+			<!-- 테이블 -->
+			<div class="tableArea">
+				
+				<div class="popSearchBox">
+					<fieldset>
+						<legend>학습 진행률 검색</legend>
+						<dl>              
+							<dt><label for="date01">기간검색</label></dt>
+							<dd>
+								<div class="dateDom">
+                                    <div class="dateSelect w100p">
+                                        <input type="text" value="" placeholder="20200903" title="달력" name="date" id="date01" class="w150">
+                                    </div>
+                                </div>
+								<span class="dateSelectTxt01">~</span>
+								<div class="dateDom">
+                                    <div class="dateSelect w100p">
+                                        <input type="text" value="" placeholder="20200903" title="달력" name="date" id="date02" class="w150">
+                                    </div>
+                                </div>  
+								<div class="btnArea">
+									<button type="button" class="btnType2 primary btnW60">당일</button>
+									<button type="button" class="btnType2 btnW60">1주일</button>
+									<button type="button" class="btnType2 btnW60">1개월</button>
+									<button type="button" class="btnType2 btnW60">3개월</button>
+								</div>                                        
+							</dd>
+						</dl> 
+						<div class="btnGroup">
+							<button type="button" class="btnType3">검색</button>
+						</div>
+					</fieldset>
+				</div>
+
+				<div class="tableTitleArea mt60">
+                    <h3 class="ctyTit">학습근로자 정보</h3>
+                </div>
+				<table class="view mb0">
+                    <caption>학습근로자 정보</caption>
+                    <colgroup>
+                        <col style="width:180px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>기업명</th>
+                            <td class="last">주식회사비앤비컴퍼니</td>
+                        </tr>
+						<tr>
+                            <th>성명</th>
+                            <td class="last">연지훈</td>
+                        </tr>
+						<tr>
+                            <th>상태</th>
+                            <td class="last">재직중</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+				<div class="tableTitleArea mt60">
+                    <h3 class="ctyTit">총 훈련시간</h3>
+                </div>
+				<table class="view mb0">
+                    <caption>총 훈련시간 정보</caption>
+                    <colgroup>
+                        <col style="width:180px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>OJT</th>
+                            <td class="last">1,802 시간</td>
+                        </tr>
+						<tr>
+                            <th>OFF-JT</th>
+                            <td class="last">1,802 시간</td>
+                        </tr>
+						<tr>
+                            <th>전체</th>
+                            <td class="last">1,802 시간</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+				<div class="tableTitleArea mt60">
+                    <h3 class="ctyTit">학습시간</h3>
+                </div>
+				<table class="view mb0">
+                    <caption>학습시간 정보</caption>
+                    <colgroup>
+                        <col style="width:180px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>OJT</th>
+                            <td class="last">77 시간</td>
+                        </tr>
+						<tr>
+                            <th>OFF-JT</th>
+                            <td class="last">77 시간</td>
+                        </tr>
+						<tr>
+                            <th>전체</th>
+                            <td class="last">77 시간</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+				<div class="tableTitleArea mt60">
+                    <h3 class="ctyTit">학습진행률</h3>
+                </div>
+				<table class="view mb0">
+                    <caption>학습진행률 정보</caption>
+                    <colgroup>
+                        <col style="width:180px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>OJT</th>
+                            <td class="last">4.30 %</td>
+                        </tr>
+						<tr>
+                            <th>OFF-JT</th>
+                            <td class="last">4.30 %</td>
+                        </tr>
+						<tr>
+                            <th>전체</th>
+                            <td class="last">4.30 %</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+				<div class="tableTitleArea mt60">
+                    <h3 class="ctyTit">과목별 학습진행률</h3>
+                </div>
+
+				<div class="tableArea03">
+					<ul>
+						<li>
+							<div class="titleSection">
+								<div class="titleBox">
+									<ul class="titleList">
+										<li>OJT</li>
+										<li>
+											<dl class="SpanTy1">
+												<dt><span>학습진행률</span></dt>
+												<dd>50%</dd>
+											</dl>
+										</li>
+									</ul>
+									<p class="titleText">의류유통 환경분석</p>
+								</div>
+							</div>
+							<div class="contentsSection popTy1">
+								<div class="tableArea popTy1">
+									<table class="view">
+										<caption></caption>
+										<colgroup>
+											<col style="width: 210px;">
+											<col style="width: auto;">
+										</colgroup>
+										<tr>
+											<th>NCS 적용여부</th>
+											<td class="last">적용</td>
+										</tr>
+										<tr>
+											<th>NCS 코드명칭</th>
+											<td class="last">의류 유통환경 분석</td>
+										</tr>
+										<tr>
+											<th>총훈련시간</th>
+											<td class="last">60</td>
+										</tr>
+										<tr>
+											<th>학습시간</th>
+											<td class="last">0</td>
+										</tr>
+										<tr>
+											<th>보강시간</th>
+											<td class="last">0</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+												               
+            </div>
+			<!-- // 테이블 -->			
+        </div>
+
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</body>
+</html>

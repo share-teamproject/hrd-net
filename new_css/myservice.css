@@ -1931,7 +1931,7 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .pSmallBtnType3.verPC { display:inline-block !important; }
 
 .popContBoxType2 { border:1px #e2e2e4 solid; padding:40px; }
-.popContBoxType2 > .pCbTxt01 { font-size:22px; color:#292a2d; text-align:center; padding:0 60px; }
+.popContBoxType2 > .pCbTxt01 { font-size:22px; color:#292a2d; text-align:center; padding:0 55px; }
 .popContBoxType2 > .pCbTxt02 { font-size:22px; color:#292a2d; text-align:center; padding-top:20px; }
 .popContBoxType2 > .pCbLogo01 { height:32px; font-size:0; background:url('../new_images/common/footerLogo01.png') no-repeat 100% 0; margin-top:30px; }
 
@@ -1985,7 +1985,7 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .pCheckList01 .ui_radioBox > label { color:#727476; }
 .pCheckList01 .cnt { font-size:14px; color:#727476; margin-bottom:10px; padding-top:20px; }
 
-.popSearchBox { padding:22px 50px; border:3px solid #d8dfeb; }
+.popSearchBox { padding:22px 45px; border:3px solid #d8dfeb; }
 .popSearchBox > fieldset > legend { font-size:0; line-height: 0; }
 .popSearchBox > fieldset > dl { width:100%; display:flex; flex-wrap:wrap;  }
 .popSearchBox > fieldset > dl > dt { width:120px; margin-bottom:8px; }
@@ -2011,3 +2011,49 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .elesiDom > .inCont.wc1 {width: 150px;}
 .elesiDom > .inCont .selectBox,
 .elesiDom > .inCont input[type="text"] {width: 100%;}
+
+
+.pInfoTxt1 { font-size:16px; color:#727476; margin-bottom:25px; }
+
+.tabListArea.popTabList .tabList li { height:45px; line-height: 39px; }
+.tabListArea.popTabList .tabList li button, .tabListArea.popTab .tabList li a { width:100%; font-size:16px; }
+.tabListArea.popTabList .tabList li.on { color:#434e65; font-weight:500; }
+.tabContents.popTabCon { margin-top:-35px; }
+
+.popSchArea {display:table; width:100%; table-layout:fixed; }
+.popSchSort {display:table-cell; vertical-align:top; }
+.popSchSort > .tit {display:block; padding-left:10px; height:35px; font-size:16px; color:#5b648a; }
+.popSchSort > .inner {padding:10px; border:1px #f0f0f2 solid; }
+.popSchSort > .inner.ty2 { margin-left:-1px; }
+.popSchSortList {height:147px; overflow:auto; }
+.popSchSortList > li {position:relative; overflow:hidden; font-size:14px; color:#727476; }
+.popSchSortList > li.none { padding:10px; }
+.popSchSortList > li + li {margin-top:12px;}
+.popSchSortList > li > input[type="radio"] {position:absolute; top:0; left:-100px;}
+.popSchSortList > li > label {display:block; padding:0 10px; font-size:14px; color:#727476; box-sizing:border-box;}
+.popSchSortList > li > input[type="radio"]:checked + label,
+.popSchSortList > li > label:focus,
+.popSchSortList > li > label:hover {  padding:0 10px; color:#4171df; }
+.popSchSortList > li > input[type="radio"]:checked + label:after,
+.popSchSortList > li > label:focus:after,
+.popSchSortList > li > label:hover:after {content:''; position:relative; top:50%; right:-10px; display:inline-block; width:16px; height:12px; margin-top:-5px; background:url('../new_images/common/icoCheck03.png')}
+.popSchSortList > li.on label {display:block; padding:0 10px; font-size:14px; color:#4171df; box-sizing:border-box; }
+.popSchSortList > li.on label:after {content:''; position:relative; top:50%; right:-10px; display:inline-block; width:16px; height:12px; margin-top:-5px; background:url('../new_images/common/icoCheck03.png')}
+
+.popSchSort.ty2 { width:585px; padding-right:15px; }
+.popSchSort.ty2 > .inner { height:204px; padding:15px; }
+.popSchSort.ty2 > .inner .tit { font-size:16px; color:#5b648a; height:32px; }
+.w408 { width:408px !important; }
+
+.popSchSort.ty2 .keyword { margin-top:0; font-size:14px;color:#727476; }
+.popSchSort.ty2 .keyword > a, .popSchSort.ty2 .keyword > button{display:inline-block; margin:0 1px; min-width:31px;line-height:26px;vertical-align:middle;text-align:center;color:#333;box-sizing:border-box;border:1px #cdcdd1 solid;}
+.popSchSort.ty2 .keyword > a.on, .popSchSort.ty2 .keyword > button.on{border-color:#4270e0;color:#4270e0;}
+
+.popSelcArea {overflow:hidden;width:100%; table-layout:fixed; }
+.popSelcSort {float:left; width:19.5%; border:1px #d5d5d5 solid; margin-right:5px; }
+.popSelcSort:last-child { width:19.7%; margin-right:0; }
+.popSelcSort > .tit {display:block; height:30px; padding:4px 0 0 15px; font-size:14px; color:#4e4f51; background:#e3ecf7; }
+.popSelcSortList {height:140px; padding:10px; }
+.popSelcSortList > li { font-size:12px; color:#727476; padding:3px 0;}
+.popSelcSortList > li .btnDelete { position:relative; font-size:0; }
+.popSelcSortList > li .btnDelete:before { content:''; position:absolute; top:-10px; right:-20px; width:12px; height:12px; background:url('../new_images/common/icoKeywordDelete.png') no-repeat; }

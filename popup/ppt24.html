@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>맞춤정보 설정 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" />     
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">맞춤정보 설정</h2>
+        </div>
+        <div class="popContEle">
+			<div class="pInfoTxt1">관심분야를선택하세요 . 훈련항목은 <span class="color04">5개</span>, 다른 항목은 <span class="color04">3개</span> 까지 선택할 수 있습니다.</div>
+			<div class="">
+				<!-- 텝 인덱스 -->  
+				<div class="tabListArea popTabList"> 
+					<ul class="tabList" role="tablist">
+						<li role="tab" aria-controls="section1" aria-selected="true" id="tab1"  class="on"><button type="button">훈련 선택</button></li>
+						<li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">자격증 선택</button></li>
+						<li role="tab" aria-controls="section2" aria-selected="false" id="tab3"><button type="button">일자리 선택</button></li>
+						<li role="tab" aria-controls="section2" aria-selected="false" id="tab4"><button type="button">직업 선택</button></li>
+						<li role="tab" aria-controls="section2" aria-selected="false" id="tab5"><button type="button">학과 선택</button></li>
+					</ul>
+				</div> 
+				<!--// 텝 인덱스 -->
+
+				<!-- 텝 컨텐츠 -->
+				<div class="tabContents popTabCon">
+					<section id="section1" role="tabpanel" class="tabCont on">
+						<h3>훈련 section</h3>
+						<div class="popSchArea">
+							<div class="popSchSort">
+								<strong class="tit">STEP 01. 대분류 선택</strong>
+								<div class="inner">
+									<ul class="popSchSortList">
+										<li class="on"><input type="radio" name="popSchSort01" id="popSchSort01-01"><label for="popSchSort01-01">건설분야</label></li>
+										<li><input type="radio" name="popSchSort01" id="popSchSort01-02"><label for="popSchSort01-02">공예분야</label></li>
+										<li><input type="radio" name="popSchSort01" id="popSchSort01-03"><label for="popSchSort01-03">금속분야</label></li>
+										<li><input type="radio" name="popSchSort01" id="popSchSort01-04"><label for="popSchSort01-04">금융·보험분야</label></li>
+										<li><input type="radio" name="popSchSort01" id="popSchSort01-05"><label for="popSchSort01-05">기계·장비분야</label></li>
+										<li><input type="radio" name="popSchSort01" id="popSchSort01-06"><label for="popSchSort01-06">건설분야</label></li>
+										<li><input type="radio" name="popSchSort01" id="popSchSort01-07"><label for="popSchSort01-07">공예분야</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 02. 중분류 선택</strong>
+								<div class="inner ty2">
+									<ul class="popSchSortList">
+										<li><input type="radio" name="popSchSort02" id="popSchSort02-01"><label for="popSchSort02-01">문화 · 예술</label></li>
+										<li class="on"><input type="radio" name="popSchSort02" id="popSchSort02-02"><label for="popSchSort02-02">디자인</label></li>
+										<li><input type="radio" name="popSchSort02" id="popSchSort02-03"><label for="popSchSort02-03">문화콘텐츠</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 03. 소분류 선택</strong>
+								<div class="inner ty2">
+									<ul class="popSchSortList">
+										<li class="on"><input type="radio" name="popSchSort03" id="popSchSort03-01"><label for="popSchSort03-01">디자인</label></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="bigTitle02 mt30">선택정보</h4>
+						<div class="popSelcArea">
+							<div class="popSelcSort">
+								<strong class="tit">훈련 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">자격 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">일자리 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">직업 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">학과 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType2">저장</button>
+						</div>
+					</section>
+
+					<section id="section2" role="tabpanel" class="tabCont">
+						<h3>자격증 section</h3>
+						<div class="popSchArea">
+							<div class="popSchSort ty2">
+								<div class="inner">
+									<p class="tit"><b>가나다</b>  검색</p>
+									<p class="keyword">
+										<button class="on">가</button>
+										<button>나</button>
+										<button>다</button>
+										<button>라</button>
+										<button>마</button>
+										<button>바</button>
+										<button>사</button>
+										<button>아</button>
+										<button>자</button>
+										<button>차</button>
+										<button>카</button>
+										<button>타</button>
+										<button>파</button>
+										<button>하</button>
+										<button>전체</button>
+									</p>
+									<p class="tit mt30"><b>자격명</b>  검색</p>
+									<p class="inputBox">
+										<input type="text" value="" title="검색어" name="searchText5" id="searchText5" class="w408">
+										<span class="btnArea"><button type="button" class="searchBtn">검색</button></span>
+									</p>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 01. 대분류 선택</strong>
+								<div class="inner">
+									<ul class="popSchSortList">
+										<li class="on"><input type="radio" name="popSchSort04" id="popSchSort04-01"><label for="popSchSort04-01">DIY가구창업 및 인테리어디자인</label></li>
+										<li><input type="radio" name="popSchSort04" id="popSchSort04-02"><label for="popSchSort04-02">거푸집</label></li>
+										<li><input type="radio" name="popSchSort04" id="popSchSort04-03"><label for="popSchSort04-03">건설공정관리</label></li>
+										<li><input type="radio" name="popSchSort04" id="popSchSort04-04"><label for="popSchSort04-04">건설품질검사</label></li>
+										<li><input type="radio" name="popSchSort04" id="popSchSort04-05"><label for="popSchSort04-05">건축CAD실무</label></li>
+										<li><input type="radio" name="popSchSort04" id="popSchSort04-06"><label for="popSchSort04-06">DIY가구창업 및 인테리어디자인</label></li>
+										<li><input type="radio" name="popSchSort04" id="popSchSort04-07"><label for="popSchSort04-07">거푸집</label></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="bigTitle02 mt30">선택정보</h4>
+						<div class="popSelcArea">
+							<div class="popSelcSort">
+								<strong class="tit">훈련 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">자격 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">일자리 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">직업 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">학과 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType2">저장</button>
+						</div>
+					</section>
+
+					<section id="section3" role="tabpanel" class="tabCont">
+						<h3>일자리 section</h3>
+						<div class="popSchArea">
+							<div class="popSchSort">
+								<strong class="tit">STEP 01. 대분류 선택</strong>
+								<div class="inner">
+									<ul class="popSchSortList">
+										<li class="on"><input type="radio" name="popSchSort05" id="popSchSort05-01"><label for="popSchSort05-01">건설·채굴 연구개발직 및 공학기술직</label></li>
+										<li><input type="radio" name="popSchSort05" id="popSchSort05-02"><label for="popSchSort05-02">건설·채굴직</label></li>
+										<li><input type="radio" name="popSchSort05" id="popSchSort05-03"><label for="popSchSort05-03">경영·행정·사무직</label></li>
+										<li><input type="radio" name="popSchSort05" id="popSchSort05-04"><label for="popSchSort05-04">경찰·소방·교도직</label></li>
+										<li><input type="radio" name="popSchSort05" id="popSchSort05-05"><label for="popSchSort05-05">경호·경비직</label></li>
+										<li><input type="radio" name="popSchSort05" id="popSchSort05-06"><label for="popSchSort05-06">건설·채굴 연구개발직 및 공학기술직</label></li>
+										<li><input type="radio" name="popSchSort05" id="popSchSort05-07"><label for="popSchSort05-07">건설·채굴직</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 02. 중분류 선택</strong>
+								<div class="inner ty2">
+									<ul class="popSchSortList">
+										<li class="none">대분류를 선택해 주세요.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 03. 소분류 선택</strong>
+								<div class="inner ty2">
+									<ul class="popSchSortList">
+										<li class="none">중분류를 선택해 주세요.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="bigTitle02 mt30">선택정보</h4>
+						<div class="popSelcArea">
+							<div class="popSelcSort">
+								<strong class="tit">훈련 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">자격 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">일자리 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">직업 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">학과 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType2">저장</button>
+						</div>
+					</section>
+
+					<section id="section4" role="tabpanel" class="tabCont">
+						<h3>직업 section</h3>
+						<div class="popSchArea">
+							<div class="popSchSort">
+								<strong class="tit">STEP 01. 중분류 선택</strong>
+								<div class="inner">
+									<ul class="popSchSortList">
+										<li><input type="radio" name="popSchSort08" id="popSchSort08-01"><label for="popSchSort08-01">건설·기계·재료·화학·섬유</label></li>
+										<li class="on"><input type="radio" name="popSchSort08" id="popSchSort08-02"><label for="popSchSort08-02">관리·경영·금융·보험</label></li>
+										<li><input type="radio" name="popSchSort08" id="popSchSort08-03"><label for="popSchSort08-03">교육·연구·법률·보건</label></li>
+										<li><input type="radio" name="popSchSort08" id="popSchSort08-04"><label for="popSchSort08-04">녹색직업</label></li>
+										<li><input type="radio" name="popSchSort08" id="popSchSort08-05"><label for="popSchSort08-05">미용·숙박·여행·스포츠·음식</label></li>
+										<li><input type="radio" name="popSchSort08" id="popSchSort08-06"><label for="popSchSort08-06">건설·기계·재료·화학·섬유</label></li>
+										<li><input type="radio" name="popSchSort08" id="popSchSort08-07"><label for="popSchSort08-07">관리·경영·금융·보험</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 02. 소분류 선택</strong>
+								<div class="inner ty2">
+									<ul class="popSchSortList">
+										<li class="on"><input type="radio" name="popSchSort09" id="popSchSort09-01"><label for="popSchSort09-01">건설관련직</label></li>
+										<li><input type="radio" name="popSchSort09" id="popSchSort09-02"><label for="popSchSort09-02">기계관련직</label></li>
+										<li><input type="radio" name="popSchSort09" id="popSchSort09-03"><label for="popSchSort09-03">섬유및의복관련직</label></li>
+										<li><input type="radio" name="popSchSort09" id="popSchSort09-04"><label for="popSchSort09-04">재료관련직</label></li>
+										<li><input type="radio" name="popSchSort09" id="popSchSort09-05"><label for="popSchSort09-05">화학관련직</label></li>
+										<li><input type="radio" name="popSchSort09" id="popSchSort09-06"><label for="popSchSort09-06">건설관련직</label></li>
+										<li><input type="radio" name="popSchSort09" id="popSchSort09-07"><label for="popSchSort09-07">기계관련직</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 03. 세 분류 선택</strong>
+								<div class="inner ty2">
+									<ul class="popSchSortList">
+										<li><input type="radio" name="popSchSort10" id="popSchSort10-01"><label for="popSchSort10-01">섬유제조기계조작원</label></li>
+										<li><input type="radio" name="popSchSort10" id="popSchSort10-02"><label for="popSchSort10-02">의복제조원및수선원</label></li>
+										<li class="on"><input type="radio" name="popSchSort10" id="popSchSort10-03"><label for="popSchSort10-03">재단,재봉및관련기능종사자</label></li>
+										<li><input type="radio" name="popSchSort10" id="popSchSort10-04"><label for="popSchSort10-04">제화및기타직물관련 기계조작원및조립원</label></li>
+										<li><input type="radio" name="popSchSort10" id="popSchSort10-05"><label for="popSchSort10-05">재단,재봉및관련기능종사자</label></li>
+										<li><input type="radio" name="popSchSort10" id="popSchSort10-06"><label for="popSchSort10-06">섬유제조기계조작원</label></li>
+										<li><input type="radio" name="popSchSort10" id="popSchSort10-07"><label for="popSchSort10-07">의복제조원및수선원</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 04. 세세 분류 선택</strong>
+								<div class="inner">
+									<ul class="popSchSortList">
+										<li class="on"><input type="radio" name="popSchSort11" id="popSchSort11-01"><label for="popSchSort11-01">기타직물및신발관련기계조작원및조립원</label></li>
+										<li><input type="radio" name="popSchSort11" id="popSchSort11-02"><label for="popSchSort11-02">세탁관련기계조작원</label></li>
+										<li><input type="radio" name="popSchSort11" id="popSchSort11-03"><label for="popSchSort11-03">신발제조기조작원및조립원</label></li>
+										<li><input type="radio" name="popSchSort11" id="popSchSort11-04"><label for="popSchSort11-04">제화원</label></li>
+										<li><input type="radio" name="popSchSort11" id="popSchSort11-05"><label for="popSchSort11-05">기타직물및신발관련기계조작원및조립원</label></li>
+										<li><input type="radio" name="popSchSort11" id="popSchSort11-06"><label for="popSchSort11-06">세탁관련기계조작원</label></li>
+										<li><input type="radio" name="popSchSort11" id="popSchSort11-07"><label for="popSchSort11-07">신발제조기조작원및조립원</label></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="bigTitle02 mt30">선택정보</h4>
+						<div class="popSelcArea">
+							<div class="popSelcSort">
+								<strong class="tit">훈련 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">자격 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">일자리 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">직업 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">학과 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType2">저장</button>
+						</div>
+					</section>
+
+					<section id="section5" role="tabpanel" class="tabCont">
+						<h3>학과 section</h3>
+						<div class="popSchArea">
+							<div class="popSchSort">
+								<strong class="tit">STEP 01. 대분류 선택</strong>
+								<div class="inner">
+									<ul class="popSchSortList">
+										<li class="on"><input type="radio" name="popSchSort12" id="popSchSort12-01"><label for="popSchSort12-01">건설분야</label></li>
+										<li><input type="radio" name="popSchSort12" id="popSchSort12-02"><label for="popSchSort12-02">공예분야</label></li>
+										<li><input type="radio" name="popSchSort12" id="popSchSort12-03"><label for="popSchSort12-03">금속분야</label></li>
+										<li><input type="radio" name="popSchSort12" id="popSchSort12-04"><label for="popSchSort12-04">금융·보험분야</label></li>
+										<li><input type="radio" name="popSchSort12" id="popSchSort12-05"><label for="popSchSort12-05">기계·장비분야</label></li>
+										<li><input type="radio" name="popSchSort12" id="popSchSort12-06"><label for="popSchSort12-06">농림·농업·광업분야</label></li>
+										<li><input type="radio" name="popSchSort12" id="popSchSort12-07"><label for="popSchSort12-07">건설분야</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSchSort">
+								<strong class="tit">STEP 02. 중분류 선택</strong>
+								<div class="inner ty2">
+									<ul class="popSchSortList">
+										<li><input type="radio" name="popSchSort13" id="popSchSort13-01"><label for="popSchSort13-01">건설분야</label></li>
+										<li class="on"><input type="radio" name="popSchSort13" id="popSchSort13-02"><label for="popSchSort13-02">공예분야</label></li>
+										<li><input type="radio" name="popSchSort13" id="popSchSort13-03"><label for="popSchSort13-03">금속분야</label></li>
+										<li><input type="radio" name="popSchSort13" id="popSchSort13-04"><label for="popSchSort13-04">금융·보험분야</label></li>
+										<li><input type="radio" name="popSchSort13" id="popSchSort13-05"><label for="popSchSort13-05">기계·장비분야</label></li>
+										<li><input type="radio" name="popSchSort13" id="popSchSort13-06"><label for="popSchSort13-06">농림·농업·광업분야</label></li>
+										<li><input type="radio" name="popSchSort13" id="popSchSort13-07"><label for="popSchSort13-07">건설분야</label></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="bigTitle02 mt30">선택정보</h4>
+						<div class="popSelcArea">
+							<div class="popSelcSort">
+								<strong class="tit">훈련 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+										<li>SQL <a href="/" class="btnDelete">삭제</a></li>
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">자격 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">일자리 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">직업 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popSelcSort">
+								<strong class="tit">학과 정보</strong>
+								<div class="inner">
+									<ul class="popSelcSortList">
+										<li>DB관리 및 시장분석가 <a href="/" class="btnDelete">삭제</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType2">저장</button>
+						</div>
+					</section>
+				</div>
+				<!-- 텝 컨텐츠 -->
+			</div>		
+			
+        </div>
+
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</body>
+</html>
