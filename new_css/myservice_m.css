@@ -1257,19 +1257,13 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 /*kjs*/
 .fIner {background: #fff;}
 .fIner > img {width: 100%;}
-
 .txtTy1 {margin-top: 7px; font-size: 24px; color: #258384;}
-
 .tblIpRe {width: 100%;}
 .tblIpRe2 {width: 100%;}
-
 .cmBox {padding: 30px; background: #f7f7f7; font-size: 24px; color: #727476;}
-
 .tblBtnBox {}
 .tblBtnBox > li {}
 .tblBtnBox > li + li {margin-top: 20px;}
-
-
 .mFlex {display: flex !important;}
 .essMoDp {display: block !important; text-align: right; margin-bottom: 10px;}
 /*kjs*/
@@ -1355,5 +1349,13 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .elesiDom > .inCont {}
 .elesiDom > .inCont +.inCont {margin-top: 20px;}
 
-
 .btnH26s {display:inline-block; padding:0 15px; min-width:150px; text-align:center; font-size:24px; color:#4e4f51; border:1px solid #cdcdd1; line-height:38px; background: #fff;}
+
+.afArea {position: relative;}
+.afAreaDom {position: absolute; z-index: 1; top: 70px; left: 0; width: 100%; max-height: 352px; padding: 21px 20px 0 20px; border: 1px solid #cdcdd1; border-top: 0; background: #fff; overflow: auto;}
+.afAreaDom > .inCont {padding-bottom: 21px;}
+.afAreaList {}
+.afAreaList > li {}
+.afAreaList > li + li {margin-top: 20px;}
+.afAreaList > li a {display: block; font-size: 28px; color: #4e4f51; line-height: 40px;}
+.afAreaList > li a:focus, .afAreaList > li a:hover {color: #4171df;}
