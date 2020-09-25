@@ -466,6 +466,7 @@ button.studyBtn{ display:inline-block;min-width:65px;text-align:center;padding:0
 /* ==============================
 * 0917 레이어팝업
 * ============================== */
+#mask {position:absolute;left:0; top:0; z-index:1000;width:100%;height:100%;background-color:#000;display:block;}
 .w1140{width:1140px;}
 .y-scroll{overflow-y:scroll;height:740px;}
 .layerPop{position:absolute;left:50%;top:100px;;z-index:10000;margin-left:-570px;background-color:#fff;}
@@ -474,7 +475,7 @@ button.studyBtn{ display:inline-block;min-width:65px;text-align:center;padding:0
 .layerPop .layerTitle .close{position:absolute;top:16px;right:22px;width:22px;height:22px;background:url('../new_images/common/btnClose.png') no-repeat;cursor:pointer;}
 .layerPop .layerTitle .close a{font-size:0;}
 /* ---------- Layout_컨텐츠 ----------  */
-.layerPopCon{position:relative;width:100%;padding:30px 40px 40px;}
+.layerPopCon{position:relative;width:100%;padding:30px 40px 40px;margin-bottom:40px;}
 .layerPopCon .Title{width:100%;line-height:1;margin:0;color:#292a2d;font-size:26px;font-weight:500;text-align:center;}
 .layerPopCon .absolute.logo_moel{position:absolute;left:40px;top:30px;width:100px;height:38px;font-size:0;background:url('../new_images/front/logo_moel.png') no-repeat 0 0;background-size:100px 38px;}
 
@@ -496,39 +497,6 @@ button.studyBtn{ display:inline-block;min-width:65px;text-align:center;padding:0
 .layerPopCon .bstit-scon .sscon{color:#747474;}
 .layerPopCon .bstit-scon .scon a{letter-spacing:0;color:#4171e0;}
 .layerPopCon .bstit-scon .scon a:link{text-decoration:underline;}
-/* 
-.box-scon{width:100%;min-height:186px;display:-webkit-flex;display:flex;-ms-flex-direction:row;flex-direction:row;align-items:stretch;}
-.box-scon:after{content:"";display:block;clear:both;}
-.box-scon li{position:relative;-ms-flex:1;-webkit-flex:1;flex:1;padding:90px 20px 30px 10px;text-align:center;background-color:#f6f6f6;}
-.box-scon li:before{content:"";display:inline-block;position:absolute;top:30px;left:50%;width:50px;height:50px;margin-left:-20px;background-image:url('../new_images/front/bg_C002001001L.png');background-repeat:no-repeat;}
-.box-scon li.bg_01:before{background-position:0 0;}
-.box-scon li.bg_02:before{background-position:-50px 0;}
-.box-scon li.bg_03:before{background-position:-100px 0;}
-.box-scon li.bg_04:before{background-position:-150px 0;}
-.box-scon li.bg_05:before{background-position:-200px 0;}
-.box-scon li.bg_06:before{background-position:-350px 0;}
-.box-scon li.bg_07:before{background-position:-400px 0;}
-.box-scon li.bg_08:before{background-position:-450px 0;}
-.box-scon li.bg_09:before{background-position:-500px 0;}
-.box-scon li.bg_10:before{background-position:-550px 0;}
-.box-scon li.bg_11:before{background-position:-600px 0;}
-.box-scon li:nth-child(2n){background-color:#fff;}
-.box-scon li .scon{display:inline-block;text-align:center;}
-
-.box-scon.fl-2{display:block !important;}
-.box-scon.fl-2 li{flex:none;float:left !important;width:50% !important;height:250px;padding-left:10px;padding-right:20px;}
-.box-scon.fl-2 li:nth-child(3){background-color:#fff !important;}
-.box-scon.fl-2 li:nth-child(4){background-color:#f6f6f6 !important;}
-*/
-
-/*
-.flexWrap .bstit-scon{-ms-flex:1;-webkit-flex:1;flex:1;border:1px solid #e2e2e4;}
-.flexWrap .bstit-scon:nth-child(2){margin:0 10px;}
-.flexWrap .bstit-scon .stit{color:#595478;text-align:center !important;background:none !important;}
-.flexWrap .bstit-scon .scon{display:flex;flex-wrap:wrap;width:100%;text-align:center !important;}
-.flexWrap .bstit-scon .scon span:nth-child(2){-ms-flex:1;-webkit-flex:1;flex:1;text-align:center !important;}
-.flexWrap .bstit-scon .scon .sstit{width:30%;}
-*/
 
 /* 2020-09-22 ---------- 청년취업아카데미 > 지원절차 ---------- */
 #frontP .bgIcon-02{width:100%;height:auto;display:block;}
@@ -565,9 +533,9 @@ button.studyBtn{ display:inline-block;min-width:65px;text-align:center;padding:0
 /* 2020-09-22 ---------- 사업주지원훈련 > 연간지원한도액 ---------- */
 .progBox.imgstit-scon{position:relative;width:100%;}
 .progBox.imgstit-scon li{min-height:160px;padding:30px 0;border-bottom:1px dashed #dfdfdf;}
-.progBox.imgstit-scon dl{display:-webkit-flex;display:flex;-ms-flex-direction:row;flex-direction:row;align-items:stretch;width:100%;}
-.progBox.imgstit-scon dl dt{-ms-flex:1;-webkit-flex:1;flex:1;padding:0 0 0 170px;color:#292a2d;font-size:14px;}
-.progBox.imgstit-scon dl dd{-ms-flex:3;-webkit-flex:3;flex:3;line-height:22.5px;color:#727476;font-size:14px;}
+.progBox.imgstit-scon dl{overflow:hidden;width:100%;min-height:100px;}
+.progBox.imgstit-scon dl dt{float:left;width:30%;padding:0 0 0 170px;color:#292a2d;font-size:14px;}
+.progBox.imgstit-scon dl dd{float:left;width:70%;line-height:22.5px;color:#727476;font-size:14px;}
 .progBox.imgstit-scon dl dd em{color:#268486;}
 .progBox.imgstit-scon dl:before{content:"";display:inline-block;position:absolute;top:0;left:60px;width:100px;height:100px;margin-left:-20px;background-image:url('../new_images/front/bg_C002001001L_02.png');background-repeat:no-repeat;background-size:1000px 200px;}
 .progBox.imgstit-scon dl.icon01:before{background-position:0 0;}

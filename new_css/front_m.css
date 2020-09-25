@@ -320,28 +320,8 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 /* ---------- 컨텐츠이미지 ----------  */
 #frontP .layerPopCon .pimg_c001001001L{background:none;}
 
-/*
-#frontP .imgstit-scon{display: -webkit-flex;display: flex;-ms-flex-direction: row;flex-direction: row;align-items: stretch;position:relative;width:100%;min-height:140px;padding:30px 0;border-bottom:1px dashed #dfdfdf;}
-#frontP .imgstit-scon:before{content:"";display:inline-block;position:absolute;top:20px;left:0;width:100px;height:100px;margin-left:-20px;background:none;}
-#frontP .imgstit-scon.icon_01:before{background-position:0 0;}
-#frontP .imgstit-scon.icon_02:before{background-position:-100px 0;}
-#frontP .imgstit-scon.icon_03:before{background-position:-200px 0;}
-#frontP .imgstit-scon.icon_04:before{background-position:-300px 0;}
-#frontP .imgstit-scon.thump:before{background-position:-400px 0;}
-#frontP .imgstit-scon:after{content:"";display:block;clear:both;}
-#frontP .imgstit-scon .stit{-ms-flex: 2;-webkit-flex:2;flex:2;float:none;width:30%;height:100%;padding:0;color:#595478;font-size:26px;}
-#frontP .imgstit-scon .scon{-ms-flex: 5;-webkit-flex:5;flex:5;float:none;width:70%;height:100%;padding-left:10px;color:#727476;font-size:26px;}
-#frontP .box-scon{width:100%;height:auto;display:block;}
-#frontP .box-scon:after{content:"";display:block;clear:both;}
-#frontP .box-scon li{position:relative;padding:100px 20px 30px 20px;text-align:center;background-color:#f6f6f6;}
-#frontP .box-scon li:nth-child(2n){background-color:#fff;}
-#frontP .box-scon li .scon{display:inline-block;text-align:center;}
-*/
-
-
-
 /* 2020-09-22 ---------- 청년취업아카데미 > 지원절차, 국가인적자원개발컨소시엄 > 지원절차 ---------- */
-#frontP .bgIcon-02{width:100%;height:auto;display:block;}
+#frontP .bgIcon-02{overflow:hidden;width:100%;height:auto;display:block;}
 #frontP .bgIcon-02:after{content:"";display:block;clear:both;}
 #frontP .bgIcon-02 li{position:relative;padding:100px 20px 30px 20px;text-align:center;background-color:#f6f6f6;}
 #frontP .bgIcon-02 li:before{content:"";display:inline-block;position:absolute;top:30px;left:50%;width:60px;height:60px;margin-left:-30px;background-image:url('../new_images/front/mbg_C002001001L-2-04.png');background-repeat:no-repeat;}
@@ -360,7 +340,7 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 #frontP .bgIcon-02 li.icon11:before{background-position:-600px 0;}
 #frontP .bgIcon-02 li.icon12:before{background-position:-660px 0;}
 #frontP .bgIcon-02 li.icon13:before{background-position:-720px 0;}
-#frontP .bgIcon-02.fl-2 li, #frontP .bgIcon-02.fl-4 li{float:left;width:50%;min-height:280px;max-height:450px;padding-left:10px;padding-right:20px;}
+#frontP .bgIcon-02.fl-2 li, #frontP .bgIcon-02.fl-4 li{box-sizing:border-box; float:left;width:50%;min-height:410px;max-height:470px;padding-left:10px;padding-right:20px;}
 #frontP .bgIcon-02.fl-2 li:nth-of-type(3){background-color:#fff !important;}
 #frontP .bgIcon-02.fl-2 li:nth-of-type(4){background-color:#f6f6f6 !important;}
 #frontP .bgIcon-02.fl-4 li{height:450px;}
@@ -370,7 +350,7 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 /* 2020-09-22 ---------- 청년취업아카데미 > 교육훈련프로그램, 사업주지원훈련 > 연간지원한도액 ---------- */
 .progBox li{padding:40px 0;background:url('../new_images/front/bg_dash.png') repeat-x 0 0;background-size:18px 2px;}
 .progBox li:first-child{background:none;}
-.progBox dl{position:relative;display: -webkit-flex;display: flex;-ms-flex-direction: row;flex-direction: row;align-items: stretch;padding-top:170px;}
+.progBox dl{overflow:hidden;width:100%;position:relative;/*display: -webkit-flex;display: flex;-ms-flex-direction: row;flex-direction: row;align-items: stretch;*/padding-top:170px;}
 .progBox dl:before{content:"";position:absolute;top:0;left:50%;margin-left:-75px;width:150px;height:150px;background-image:url('../new_images/front/mbg_C002001001L-2-03.png');background-repeat:no-repeat;background-size:1500px 300px;}
 .progBox dl.icon01:before{background-position:0 0;}
 .progBox dl.icon02:before{background-position:-150px 0;}
@@ -388,7 +368,7 @@ table.view th.photo{background:#fff url('../new_images/common/bg_photo.png') no-
 .progBox dl.icon14:before{background-position:-450px -150px;}
 .progBox dl.icon15:before{background-position:-600px -150px;}
 .progBox dl.icon16:before{background-position:-750px -150px;}
-.progBox dl dt, .progBox dl dd{-ms-flex: 1;-webkit-flex: 1;flex: 1;width:100%;font-size:28px;text-align:left;}
+.progBox dl dt, .progBox dl dd{/*-ms-flex: 1;-webkit-flex: 1;flex: 1;width:100%;*/float:left;width:50%;margin-bottom:10px;font-size:28px;text-align:left;}
 .progBox dl dt{color:#292a2d;}
 .progBox dl dd{color:#727476;}
 .progBox dl dd em{color:#268486;}
