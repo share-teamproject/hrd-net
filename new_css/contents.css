@@ -254,6 +254,11 @@
 .like { text-indent:-9999px; line-height:0; background:url('../new_images/common/likeSet.png') 0 0 no-repeat; width:27px; height:24px; }
 .like.on { background-position:-27px 0; }
 
+/* dl Table */
+.dlTable { display:flex; flex-wrap:wrap; border-top:2px solid #727476; }
+.dlTable dt { width:230px; background:#f0f0f2; border-bottom:1px solid #e2e2e4; padding:17px 30px; font-size: 14px; color:#222222; font-weight:400; text-align:left; box-sizing:border-box; }
+.dlTable dd { width:calc(100% - 230px); border-bottom:1px solid #e2e2e4; font-size: 14px; color:#727476; text-align:left; padding:14px;  box-sizing:border-box; }
+
 /* 레이어 팝업 */
 #mask { position:absolute; left:0; top:0; z-index:1000; background-color:#000; display:none; }
 .windowPop { display: none; position:fixed; left:50%; top:50%; z-index:10000; background-color:#fff;}/*0907*/
@@ -303,32 +308,32 @@
 /* ==============================
 * 자주묻는 질문 & 질문과 답변 
 * ============================== */ 
-#subContentWrap .subContArea .qnaArea { padding:30px 0 0; }
-#subContentWrap .subContArea .qnaArea > ul { border-top:2px solid #2d4059; }
-#subContentWrap .subContArea .qnaArea > ul > li { border-bottom: 1px solid #e3e7ee; }
-#subContentWrap .subContArea .qnaArea .qnaQ { position:relative; /*cursor: pointer;*/ padding: 25px 30px; } 
-#subContentWrap .subContArea .qnaArea .qnaQ:after { content:''; position:absolute; top:calc(50% - 4px); right:30px; display:inline-block; width:17px; height:8px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -8px; }
-#subContentWrap .subContArea .qnaArea .qnaQ .txtQ { padding:0px 25px 0px 0px; }
-#subContentWrap .subContArea .qnaArea .qnaQ .arrowBtn {position:absolute; top:calc(50% - 10px); right:25px; display:block; width:25px; height:25px; z-index:1; background:transparent; }
-#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection { display: flex; justify-content:flex-start; padding-bottom:10px; }
-#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li { font-size:14px; line-height:15px; color:#727476; padding:0 20px; border-right:1px solid #cccccc; }
-#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:first-child { padding-left:0; }
-#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li:last-child { border-right:0; }
-#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check { color:#727476; font-size:18px; }  /* my서비스 알람 */
-#subContentWrap .subContArea .qnaArea .qnaQ .txtQ > .qnaSection > li .check.point { color:#258384; }  /* my서비스 알람 */
-#subContentWrap .subContArea .qnaArea .qnaQ .txtQ .qnaText { font-size:18px; line-height:24px; color:#292a2d; }
-#subContentWrap .subContArea .qnaArea .qnaA { position:relative; padding:30px 50px 30px 95px; border-bottom: 1px dashed #e3e7ee; background:#f4f6f9; display:none; }
-#subContentWrap .subContArea .qnaArea .qnaA.tblIn {padding: 30px;}
-#subContentWrap .subContArea .qnaArea.alam .qnaA { padding:30px 50px; }  /* my서비스 알람 */
-#subContentWrap .subContArea .qnaArea .iconA { position:absolute; top:50%; left:50px; margin-top:-9px; display:inline-block; width:16px; height:18px; background:url('../new_images/common/icoAnswer.png') no-repeat 0 0; background-size:100%; font-size:0; }
-#subContentWrap .subContArea .qnaArea .qnaA .txtA { color:#4e4f51; line-height:21px; font-size:14px; }
-#subContentWrap .subContArea .qnaArea > ul > li.on {border-bottom:none;}
-#subContentWrap .subContArea .qnaArea > ul > li.on .qnaQ:after { background-position:0 0;}
-#subContentWrap .subContArea .qnaArea > ul > li.on .txtQ {color:#333;}
-#subContentWrap .subContArea .qnaArea > ul > li.none {text-align: center; padding: 30px 0;}
-#subContentWrap .subContArea .qnaArea > ul + .pagenation { margin-top:20px; }
-#subContentWrap .subContArea .qnaArea .moreBtn { display:none; }
-#subContentWrap .subContArea .qnaArea .btnGroup + .pagenation { margin-top:20px; }
+.qnaArea { padding:30px 0 0; }
+.qnaArea > ul { border-top:2px solid #2d4059; }
+.qnaArea > ul > li { border-bottom: 1px solid #e3e7ee; }
+.qnaArea .qnaQ { position:relative; /*cursor: pointer;*/ padding: 25px 30px; } 
+.qnaArea .qnaQ:after { content:''; position:absolute; top:calc(50% - 4px); right:30px; display:inline-block; width:17px; height:8px; background:url('../new_images/common/arrowQna.png') no-repeat 0 -8px; }
+.qnaArea .qnaQ .txtQ { padding:0px 25px 0px 0px; }
+.qnaArea .qnaQ .arrowBtn {position:absolute; top:calc(50% - 10px); right:25px; display:block; width:25px; height:25px; z-index:1; background:transparent; }
+.qnaArea .qnaQ .txtQ > .qnaSection { display: flex; justify-content:flex-start; padding-bottom:10px; }
+.qnaArea .qnaQ .txtQ > .qnaSection > li { font-size:14px; line-height:15px; color:#727476; padding:0 20px; border-right:1px solid #cccccc; }
+.qnaArea .qnaQ .txtQ > .qnaSection > li:first-child { padding-left:0; }
+.qnaArea .qnaQ .txtQ > .qnaSection > li:last-child { border-right:0; }
+.qnaArea .qnaQ .txtQ > .qnaSection > li .check { color:#727476; font-size:18px; }  /* my서비스 알람 */
+.qnaArea .qnaQ .txtQ > .qnaSection > li .check.point { color:#258384; }  /* my서비스 알람 */
+.qnaArea .qnaQ .txtQ .qnaText { font-size:18px; line-height:24px; color:#292a2d; }
+.qnaArea .qnaA { position:relative; padding:30px 50px 30px 95px; border-bottom: 1px dashed #e3e7ee; background:#f4f6f9; display:none; }
+.qnaArea .qnaA.tblIn {padding: 30px;}
+.qnaArea.alam .qnaA { padding:30px 50px; }  /* my서비스 알람 */
+.qnaArea .iconA { position:absolute; top:50%; left:50px; margin-top:-9px; display:inline-block; width:16px; height:18px; background:url('../new_images/common/icoAnswer.png') no-repeat 0 0; background-size:100%; font-size:0; }
+.qnaArea .qnaA .txtA { color:#4e4f51; line-height:21px; font-size:14px; }
+.qnaArea > ul > li.on {border-bottom:none;}
+.qnaArea > ul > li.on .qnaQ:after { background-position:0 0;}
+.qnaArea > ul > li.on .txtQ {color:#333;}
+.qnaArea > ul > li.none {text-align: center; padding: 30px 0;}
+.qnaArea > ul + .pagenation { margin-top:20px; }
+.qnaArea .moreBtn { display:none; }
+.qnaArea .btnGroup + .pagenation { margin-top:20px; }
 #subContentWrap .subContArea .icoLock { display:inline-block; vertical-align:middle; width:13px; height:15px; margin:0 10px 3px 0; font-size:0; line-height:0; background:url('../new_images/common/icoLock.png') no-repeat; background-size:13px 15px; }
 #subContentWrap .subContArea .icoNew { display:inline-block; vertical-align:middle; width:16px; height:16px; margin:0 0 3px 8px; font-size:0; line-height:0; background:url('../new_images/common/icoNew.png') no-repeat; background-size:16px 16px; }
 

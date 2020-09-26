@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>훈련과정 수강신청 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" /> 
+    
+    <!--link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/layout_m.css" />
+	<link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/contents_m.css" />
+	<link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/main_m.css" />
+    <link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/front_m.css" />
+    <link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/myservice_m.css" /-->
+
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">훈련과정 수강신청</h2>
+        </div>
+        <div class="popContEle"> 
+            <h3 class="ctyTit verPC">훈련과정 수강신청</h3> 
+            <div class="pTraining">
+                <div class="signUpFlow">
+                    <ol class="signUpFlowList" aria-label="총 3단계 중 현재단계 2단계">
+                        <li><em class="stepCount">1</em><span class="txt">유의사항 동의</span></li>
+                        <li aria-current="step" class="on"><em class="stepCount">2</em><span class="txt">정보 입력</span></li>
+                        <li><em class="stepCount">3</em><span class="txt">수강신청 완료</span></li>
+                    </ol>
+                </div> 
+
+                <div class="tableArea">
+                    <div class="tableTitleArea">
+                        <h4 class="tableTitle">훈련과정 정보</h4> 
+                        <div class="tableComment">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
+                    </div>
+                    <table class="view">
+                        <caption>훈련과정 정보</caption>
+                        <colgroup>
+                            <col style="width: 230px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>훈련기관</th>
+                                <td>(주)주경야독(원격)</td>
+                            </tr>
+                            <tr>
+                                <th>훈련과정</th>
+                                <td>ISO 14001</td>
+                            </tr>
+                            <tr>
+                                <th>훈련일</th>
+                                <td>2020-08-16 ~ 2020-09-15</td>
+                            </tr>
+                            <tr>
+                                <th>특화과정</th>
+                                <td class="last"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="tableTitleArea">
+                        <h4 class="tableTitle">수강신청 정보</h4> 
+                        <div class="tableComment verPC">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
+                        <div class="tableCommentM verM"><span class="color01">＊</span> 필수입력</div>
+                    </div>
+                    <dl class="dlTable">
+                        <dt>성명</dt>
+                        <dd>한고은</dd>
+                        <dt>생년월일</dt>
+                        <dd>1993-06-12</dd>
+                        <dt scope="row">연락처 <span title="필수입력" class="color01">＊</span></dt>
+                        <dd>
+                            <div class="phoneInput">
+                                <div class="ele ty1">
+                                    <select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
+                                        <option selected="selected" value="">선택</option>
+                                        <option value="010"> 010 </option>
+                                    </select>
+                                </div>
+                                <div class="ele ty2">-</div>
+                                <div class="ele ty3">
+                                    <input type="text" title="핸드폰 가운데 번호" name="userHP02" id="userHP02">
+                                </div>
+                                <div class="ele ty2">-</div>
+                                <div class="ele ty3">
+                                    <input type="text" title="핸드폰 마지막 번호" name="userHP03" id="userHP03">
+                                </div>
+                            </div>
+                        </dd>
+                        <dt scope="row">SMS수신동의여부 <span title="필수입력" class="color01">＊</span></dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="snsYesN1" name="snsYesN" id="snsYesN1"> 
+                                <label for="snsYesN1">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="snsYesN2" name="snsYesN" id="snsYesN2"> 
+                                <label for="snsYesN2">아니오</label>
+                            </div> 
+                            <p class="inpAlertMsg">SMS수신여부 미동의 시 훈련선발결과(선발/미선발)를 카카오톡 또는 SMS로 받아 보실 수 없습니다.</p>
+                        </dd>
+                        <dt scope="row">이메일 <span title="필수입력" class="color01">＊</span></dt>
+                        <dd>
+                            <div class="inputArea">
+                                <div class="emailInput">
+                                    <div class="ele">
+                                        <input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
+                                    </div>
+                                    <div class="ele ty1">@</div>
+                                    <div class="ele">
+                                        <input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
+                                    </div>
+                                    <div class="ele ty2">
+                                        <select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
+                                            <option selected="selected" value="">직접입력</option>
+                                            <option value="chol.com"> chol.com </option>
+                                            <option value="dreamwiz.com"> dreamwiz.com </option>
+                                            <option value="empal.com"> empal.com </option>
+                                            <option value="freechal.com"> freechal.com </option>
+                                            <option value="gmail.com"> gmail.com </option>
+                                            <option value="hanmail.net"> hanmail.net </option>
+                                            <option value="hanmir.net"> hanmir.net </option>
+                                            <option value="hitel.com"> hitel.com </option>
+                                            <option value="hotmail.com"> hotmail.com </option>
+                                            <option value="korea.com"> korea.com </option>
+                                            <option value="nate.com"> nate.com </option>
+                                            <option value="naver.com"> naver.com </option>
+                                            <option value="orgio.com"> orgio.com </option>
+                                            <option value="paran.com"> paran.com </option>
+                                            <option value="sayclub.net"> sayclub.net </option>
+                                            <option value="shinbiro.com"> shinbiro.com </option>
+                                            <option value="yahoo.co.kr"> yahoo.co.kr </option>
+                                            <option value="yahoo.com"> yahoo.com </option>
+                                            <option value="molab.go.kr"> molab.go.kr </option>
+                                        </select>
+                                    </div>
+                                </div> 
+                            </div>                                       
+                        </dd>
+                        <dt scope="row">최종학력 <span title="필수입력" class="color01">＊</span></dt>
+                        <dd>
+                            <div class="inputArea">
+                                <div class="educationInput">
+                                    <div class="ele ty1">
+                                        <select title="" name="Education01" id="Education01" class="selectBox">
+                                            <option selected="selected" value="">선택</option>
+                                            <option value="Education01">학력</option>
+                                        </select>
+                                    </div>
+                                    <div class="ele ty2">
+                                        <select title="" name="Education02" id="Education02" class="selectBox">
+                                            <option selected="selected" value="">선택</option>
+                                            <option value="Education02">학력</option>
+                                        </select>
+                                    </div>
+                                    <div class="ele ty3">
+                                        <select title="" name="Education03" id="Education03" class="selectBox">
+                                            <option selected="selected" value="">선택</option>
+                                            <option value="Education03">학력</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>    
+                            <p class="inpAlertMsg">학력정보는 통계의 목적으로만 활용이 되며, 훈련기관을 포함한 외부에 제공되지 않습니다.</p>
+                        </dd>
+                        <dt scope="row">고용형태</dt>
+                        <dd>
+                            <div class="inputArea">
+                                <div class="ui_radioBox">                                             
+                                    <input type="radio" checked="checked" value="employment01" name="employment" id="employment01"> 
+                                    <label for="employment01">실업자</label>
+                                </div>
+                                <div class="ui_radioBox">   
+                                    <input type="radio" value="employment02" name="employment" id="employment02"> 
+                                    <label for="employment02">근로자</label>
+                                </div> 
+                                <div class="ui_radioBox">   
+                                    <input type="radio" value="employment03" name="employment" id="employment03"> 
+                                    <label for="employment03">자영업자</label>
+                                </div> 
+                                <p class="inpAlertMsg">고용형태는 고용보험 정보로 자동 선택됩니다.<br> 
+                                    실제 고용형태와 다른 경우 훈련 수강 시 훈련기관에 말씀해주시기 바랍니다.</p>
+                            </div>
+                        </dd>
+                        <dt>대상구분</dt>
+                        <dd>일반참여자</dd>
+                    </dl>
+                    <!-- 지원유형 -->
+                    <dl class="dlTable dtW100p">
+                        <dt>지원유형 <span title="필수입력" class="color01">＊</span></dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="targetType01" name="targetType" id="targetType01"> 
+                                <label for="targetType01">해당없음</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType02" name="targetType" id="targetType02"> 
+                                <label for="targetType02">장애인</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType03" name="targetType" id="targetType03"> 
+                                <label for="targetType03">한부모가족 지원법에 해당하는 자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio"value="targetType04" name="targetType" id="targetType04"> 
+                                <label for="targetType04">특별고용지원업종 대상자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType05" name="targetType" id="targetType05"> 
+                                <label for="targetType05">고용위기지역 대상자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType06" name="targetType" id="targetType06"> 
+                                <label for="targetType06">기초생활수급자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType07" name="targetType" id="targetType07"> 
+                                <label for="targetType07">북한이탈주민</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType08" name="targetType" id="targetType08"> 
+                                <label for="targetType08">무급휴직자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType09" name="targetType" id="targetType09"> 
+                                <label for="targetType09">출소예정자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType10" name="targetType" id="targetType10"> 
+                                <label for="targetType10">장애인취업성공패키지 참여자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="targetType11" name="targetType" id="targetType11"> 
+                                <label for="targetType11">근로·자녀장려금 수급자</label>
+                            </div>
+                        </dd>
+                    </dl>
+                    <p class="inpAlertMsg color04">지원유형에 따라 훈련비 또는 훈련장려금을 추가지원 받으실 수 있으며, 고용센터 승인 후 수강신청이 이루어집니다.</p>
+                    <!-- 지원대상 -->
+                    <dl class="dlTable dtW100p">
+                        <dt>지원대상 <span title="필수입력" class="color01">＊</span></dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="target01" name="target" id="target01"> 
+                                <label for="target01">실업자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="target02" name="target" id="target02"> 
+                                <label for="target02">고보미가입근로자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="target03" name="target" id="target03"> 
+                                <label for="target03">지방관서의 장이 인정하는 자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio"value="target04" name="target" id="target04"> 
+                                <label for="target04">근로자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="target05" name="target" id="target05"> 
+                                <label for="target05">자영업자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="target06" name="target" id="target06"> 
+                                <label for="target06">무급휴직자</label>
+                            </div>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" value="target07" name="target" id="target07"> 
+                                <label for="target07">특수형태근로종사자</label>
+                            </div>
+                        </dd>
+                    </dl>
+                    <p class="inpAlertMsg color04">지원대상이 변경된 경우 고용센터로 문의하시기 바랍니다.</p>
+                    <!-- 룬련과정 정보 -->
+                    <div class="tableTitleArea">
+                        <h4 class="tableTitle">훈련과정 정보</h4> 
+                    </div>
+                    <dl class="dlTable dtW635 mt0">
+                        <dt>1. 신청일 현재 공무원 또는 사립학교 교직원으로 재직 중입니까?</dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="traningQ11" name="traningQ1" id="traningQ11"> 
+                                <label for="traningQ11">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="traningQ12" name="traningQ1" id="traningQ12"> 
+                                <label for="traningQ12">아니오</label>
+                            </div> 
+                        </dd>
+                        <dt>2. 신청일 현재 「근로자직업능력 개발법」 제55조에 따라 수강 또는 지원·융자의 제한처분을 
+                            받아 지원·융자 제한기간 중에 있거나 「고용보험법 시행령」 제56조제4항에 따라 부정행위에 
+                            따른 지원금 등의 반환명령을 받고 그 납부의 의무를 이행하지 않은 사실이 있습니까?</dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="traningQ21" name="traningQ2" id="traningQ21"> 
+                                <label for="traningQ21">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="traningQ22" name="traningQ2" id="traningQ22"> 
+                                <label for="traningQ22">아니오</label>
+                            </div> 
+                        </dd>
+                        <dt>3. 신청일 현재 정부(지방자치단체 포함)로부터 훈련비 등을 지원받는 훈련과정(훈련과정명 또는
+                            사업명과 상관없이 지금 신청하는 훈련과정 이외의 훈련과정을 의미)을 수강하고 있거나 수강할
+                            계획이 있습니까?</dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="traningQ31" name="traningQ3" id="traningQ31"> 
+                                <label for="traningQ31">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="traningQ32" name="traningQ3" id="traningQ32"> 
+                                <label for="traningQ32">아니오</label>
+                            </div> 
+                        </dd>
+                        <dt>4. 「외국인근로자의 고용 등에 관한 법률」을 적용받는 외국인(E-9, H-2)인가요?</dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="traningQ41" name="traningQ4" id="traningQ41"> 
+                                <label for="traningQ41">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="traningQ42" name="traningQ4" id="traningQ42"> 
+                                <label for="traningQ42">아니오</label>
+                            </div> 
+                        </dd>
+                        <dt>5. 「국민기초생활보장법」제9조에 따라 생계급여를 수급 받는 일반수급자인가요?</dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="traningQ51" name="traningQ5" id="traningQ51"> 
+                                <label for="traningQ51">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="traningQ52" name="traningQ5" id="traningQ52"> 
+                                <label for="traningQ52">아니오</label>
+                            </div> 
+                        </dd>
+                        <dt>6. 연 매출 1억 5천만원 이상인 자영업자(사업자등록증이 여러 개일 경우 합산한 금액)입니까?</dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="traningQ61" name="traningQ6" id="traningQ61"> 
+                                <label for="traningQ61">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="traningQ62" name="traningQ6" id="traningQ62"> 
+                                <label for="traningQ62">아니오</label>
+                            </div> 
+                        </dd>
+                        <dt>7. 월 평균임금(소득) 300만원 이상인 대규모기업근로자(만 45세 미만)·특수형태근로종사입니까?</dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="traningQ71" name="traningQ7" id="traningQ71"> 
+                                <label for="traningQ71">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="traningQ72" name="traningQ7" id="traningQ72"> 
+                                <label for="traningQ72">아니오</label>
+                            </div> 
+                        </dd>
+                        <dt>8. 최종학년에 재학중인 졸업예정자 이외 재학생입니까?</dt>
+                        <dd>
+                            <div class="ui_radioBox">                                             
+                                <input type="radio" checked="checked" value="traningQ81" name="traningQ8" id="traningQ81"> 
+                                <label for="traningQ81">예</label>
+                            </div>
+                            <div class="ui_radioBox">   
+                                <input type="radio" value="traningQ82" name="traningQ8" id="traningQ82"> 
+                                <label for="traningQ82">아니오</label>
+                            </div> 
+                        </dd>
+                    </dl>
+                </div> 
+            </div>          
+        </div>
+
+        <div class="popBtnArea">
+            <button type="button" class="pBtnType2">수강신청</button>
+        </div>
+
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</body>
+</html>

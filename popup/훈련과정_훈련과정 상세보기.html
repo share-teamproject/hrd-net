@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>   
+    <meta charset="UTF-8">                                   
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+    <meta name="viewport" content="width=640, user-scacle=yes">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="HRD">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="HRD">
+    <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+    <title>훈련과정 상세보기 | HRD-Net</title> 
+    <link rel="shortcut icon" href="../new_images/common/favicon.ico">
+    <link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+    <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+    <link href="../new_css/lib/daterangepicker.css" rel="stylesheet" /> 
+    <link href="../new_css/reset.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/contents.css" rel="stylesheet" />
+    <link href="../new_css/main.css" rel="stylesheet" /> 
+    
+    <link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/layout_m.css" />
+	<link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/contents_m.css" />
+	<link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/main_m.css" />
+    <link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/front_m.css" />
+    <link rel="stylesheet" media="screen and (max-width:720px)" href="../new_css/myservice_m.css" />
+
+    <script src="../new_js/lib/jquery-2.1.1.js"></script>
+    <script src="../new_js/lib/jquery-ui.js"></script>
+    <script src="../new_js/lib/moment.min.js"></script>   
+    <script src="../new_js/lib/daterangepicker.js"></script>     
+    <script src="../new_js/lib/swiper.min.js"></script>
+    <script src="../new_js/ui.js"></script>
+</head>
+
+<body>
+    <div class="popEle" style="width: 980px">
+        <div class="popHeader">
+            <h2 class="popHeaderTit">훈련과정 상세보기</h2>
+        </div>
+        <div class="popContEle"> 
+            <h3 class="ctyTit verPC">훈련과정 상세보기</h3> 
+            <div class="tableArea">
+                <div class="tableTitleArea">
+                    <h4 class="bigTitle02">기업정보</h4>                   
+                </div>
+                <table class="view">
+                    <caption>기업정보</caption>
+                    <colgroup>
+                        <col style="width: 220px;">
+                        <col style="width: auto;">                         
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>기업명</th>
+                            <td class="last">한국기술교육대학교</td>
+                        </tr>
+                        <tr>
+                            <th>사업자등록번호</th>
+                            <td class="last"> </td>
+                        </tr>
+                        <tr>
+                            <th>소재지</th>
+                            <td class="last">[]</td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td class="last"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tableTitleArea">
+                    <h4 class="bigTitle02">운영방식</h4>                   
+                </div>
+                <table class="view">
+                    <caption>운영방식</caption>
+                    <colgroup>
+                        <col style="width: 220px;">
+                        <col style="width: auto;">                         
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>운영형태</th>
+                            <td class="last">공동훈련</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tableTitleArea">
+                    <h4 class="bigTitle02">일학습병행제 프로그램 개요</h4>                   
+                </div>
+                <table class="view">
+                    <caption>일학습병행제 프로그램 개요</caption>
+                    <colgroup>
+                        <col style="width: 220px;">
+                        <col style="width: auto;">                         
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>훈련과정명</th>
+                            <td class="last">(변경인정)_2019년_(대학연계형)_기계요소설계_L3_ver2.0_신비앤텍</td>
+                        </tr>
+                        <tr>
+                            <th>훈련직종 (NCS직무)</th>
+                            <td class="last">기계요소설계 (15010201)</td>
+                        </tr>
+                        <tr>
+                            <th>NCS 목표수준</th>
+                            <td class="last">Level 3</td>
+                        </tr>
+                        <tr>
+                            <th>훈련직종코드</th>
+                            <td class="last"></td>
+                        </tr>
+                        <tr>
+                            <th>한국고용직업분코드(KECO)</th>
+                            <td class="last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tableTitleArea">
+                    <h4 class="bigTitle02">교과목</h4>                   
+                </div>
+                <div class="tabInterface pTraining">
+                    <!-- 텝 인덱스 -->  
+                    <div class="tabListArea"> 
+                        <ul class="tabList" role="tablist">
+                            <li role="tab" aria-controls="section1" aria-selected="true" id="tab1" class="on"><button type="button">OJT</button></li>
+                            <li role="tab" aria-controls="section2" aria-selected="false" id="tab2"><button type="button">OFF-JT</button></li>
+                        </ul>
+                    </div> 
+                    <!--// 텝 인덱스 -->
+    
+                    <!-- 텝 컨텐츠 -->
+                    <div class="tabContents">                        
+                        <!-- OJT -->
+                        <section role="tabpanel" id="section1" class="tabCont on">                            
+                            <div class="qnaArea pd0">  
+                                <ul>
+                                    <li>
+                                        <div tabindex="0" class="qnaQ">
+                                            <div class="txtQ ty2">
+                                                <ul class="qnaSection">
+                                                    <li class="txt01">물리기초</li>
+                                                </ul>
+                                                <p class="qnaText">해석용모델링</p>
+                                            </div>
+                                        </div>
+                                        <div class="qnaA">
+                                            <div class="TrainingHistoryBox">
+                                                <ul>
+                                                    <li>
+                                                        <dl>
+                                                            <dt class="tl">훈련방법</dt>
+                                                            <dd>OJT</dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="borL">
+                                                        <dl>
+                                                            <dt class="tl">NCS 적용여부</dt>
+                                                            <dd>예</dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li>
+                                                        <dl>
+                                                            <dt class="tl">교과목</dt>
+                                                            <dd></dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="borL">
+                                                        <dl>
+                                                            <dt class="tl">NCS 직무명</dt>
+                                                            <dd> </dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li>
+                                                        <dl>
+                                                            <dt class="tl">훈련일수</dt>
+                                                            <dd></dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="borL">
+                                                        <dl>
+                                                            <dt class="tl">훈련시간</dt>
+                                                            <dd>45시간</dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="clearW100">
+                                                        <dl class="autoH">
+                                                            <dt class="tl">내용</dt>
+                                                            <dd class="cols3">
+                                                                1. 기계·기구의 위험성과 작업의 순서 및 동선에 관한내용, 2. 작업 개시 전 점검에 관한 내용,
+3. 정리정돈 및 청소에 관한 내용, 4. 사고 발생 시 긴급조치에 관한 내용, 5. 산업보건 및 직업병 
+예방에 관한 내용, 6. 물질안전보건자료에 관한 내용, 7.「산업안전보건법」 및 일반관리에 관한 내용 
+                                                            </dd>
+                                                        </dl>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>												                         
+                                </ul>		
+                            </div>
+                        </section>
+                        <!--// OJT -->
+                        <!-- OFF-JT -->
+                        <section role="tabpanel" id="section2" class="tabCont">
+                            <div class="qnaArea pd0">  
+                                <ul>
+                                    <li>
+                                        <div tabindex="0" class="qnaQ">
+                                            <div class="txtQ ty2">
+                                                <ul class="qnaSection">
+                                                    <li class="txt01">물리기초</li>
+                                                </ul>
+                                                <p class="qnaText">해석용모델링</p>
+                                            </div>
+                                        </div>
+                                        <div class="qnaA">
+                                            <div class="TrainingHistoryBox">
+                                                <ul>
+                                                    <li>
+                                                        <dl>
+                                                            <dt class="tl">훈련방법</dt>
+                                                            <dd>OFF-JT</dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="borL">
+                                                        <dl>
+                                                            <dt class="tl">NCS 적용여부</dt>
+                                                            <dd>예</dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li>
+                                                        <dl>
+                                                            <dt class="tl">교과목</dt>
+                                                            <dd></dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="borL">
+                                                        <dl>
+                                                            <dt class="tl">NCS 직무명</dt>
+                                                            <dd> </dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li>
+                                                        <dl>
+                                                            <dt class="tl">훈련일수</dt>
+                                                            <dd></dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="borL">
+                                                        <dl>
+                                                            <dt class="tl">훈련시간</dt>
+                                                            <dd>45시간</dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="clearW100">
+                                                        <dl class="autoH">
+                                                            <dt class="tl">내용</dt>
+                                                            <dd class="cols3">
+                                                                1. 기계·기구의 위험성과 작업의 순서 및 동선에 관한내용, 2. 작업 개시 전 점검에 관한 내용,
+3. 정리정돈 및 청소에 관한 내용, 4. 사고 발생 시 긴급조치에 관한 내용, 5. 산업보건 및 직업병 
+예방에 관한 내용, 6. 물질안전보건자료에 관한 내용, 7.「산업안전보건법」 및 일반관리에 관한 내용 
+                                                            </dd>
+                                                        </dl>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>												                         
+                                </ul>		
+                            </div>
+                        </section>
+                        <!--// OFF-JT -->
+                        
+                    </div>
+                    <!--// 텝 컨텐츠 -->    
+                </div>         
+                
+                <div class="tableTitleArea">
+                    <h4 class="bigTitle02">훈련개요</h4>                   
+                </div>
+                <div class="tabInterface">
+                    <!-- 텝 인덱스 -->  
+                    <div class="tabListArea"> 
+                        <ul class="tabList" role="tablist">
+                            <li role="tab" aria-controls="section21" aria-selected="true" id="tab21" class="on"><button type="button">OJT</button></li>
+                            <li role="tab" aria-controls="section22" aria-selected="false" id="tab22"><button type="button">OFF-JT</button></li>
+                        </ul>
+                    </div> 
+                    <!--// 텝 인덱스 -->
+    
+                    <!-- 텝 컨텐츠 -->
+                    <div class="tabContents">                        
+                        <!-- OJT -->
+                        <section role="tabpanel" id="section21" class="tabCont on">                            
+                            <table class="view">
+                                <caption>OJT 훈련개요</caption>
+                                <colgroup>
+                                    <col style="width: 220px;">
+                                    <col style="width: auto;">                         
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>훈련목적</th>
+                                        <td class="last">일반목표 : 기계를 구성하고 있는 단위요소를 설계하기 위하여 창의적인 접근과 제조방법을 고려한 요소의 강도, 
+                                            형상, 구조를 결정하여 적합한 규격을 검토하는 설계업무를 수행하는 기계설계산업기사 육성을 일차 목표로 하고 
+                                            간단한 기계의 구조물에 발생하는 변형을 역학적 계산 및 응용해석을 통해 설계에 반영하는 기계설계 엔지니어 
+                                            육성을 목표로 한다 - 세부목표 1. 기계 체결요소, 동력전달요소 설계를 할 수 있다 - 세부목표 2. 기계의 성능, 
+                                            안정성 및 신뢰성 확인을 위해 역학적 계산을 할 수 있다. - 세부목표 3. 모델링 및 응용해석을 통하여 설계를 
+                                            검증할 수 있다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>주요 훈련내용</th>
+                                        <td class="last">PDMS 시스템 개발보고서 참고</td>
+                                    </tr>
+                                    <tr>
+                                        <th>훈련대상 요건</th>
+                                        <td class="last">PDMS 시스템 개발보고서 참고</td>
+                                    </tr>
+                                    <tr>
+                                        <th>비고</th>
+                                        <td class="last">훈련수준 : 일학습병행 훈련과정개발·인정 시스템 훈련과정 전환(자동연계 등록)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <!--// OJT -->
+                        <!-- OFF-JT -->
+                        <section role="tabpanel" id="section22" class="tabCont">
+                            <table class="view">
+                                <caption>OFF-JT 훈련개요</caption>
+                                <colgroup>
+                                    <col style="width: 220px;">
+                                    <col style="width: auto;">                         
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>훈련목적</th>
+                                        <td class="last">일반목표 : 기계를 구성하고 있는 단위요소를 설계하기 위하여 창의적인 접근과 제조방법을 고려한 요소의 강도, 
+                                            형상, 구조를 결정하여 적합한 규격을 검토하는 설계업무를 수행하는 기계설계산업기사 육성을 일차 목표로 하고 
+                                            간단한 기계의 구조물에 발생하는 변형을 역학적 계산 및 응용해석을 통해 설계에 반영하는 기계설계 엔지니어 
+                                            육성을 목표로 한다 - 세부목표 1. 기계 체결요소, 동력전달요소 설계를 할 수 있다 - 세부목표 2. 기계의 성능, 
+                                            안정성 및 신뢰성 확인을 위해 역학적 계산을 할 수 있다. - 세부목표 3. 모델링 및 응용해석을 통하여 설계를 
+                                            검증할 수 있다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>주요 훈련내용</th>
+                                        <td class="last">PDMS 시스템 개발보고서 참고</td>
+                                    </tr>
+                                    <tr>
+                                        <th>훈련대상 요건</th>
+                                        <td class="last">PDMS 시스템 개발보고서 참고</td>
+                                    </tr>
+                                    <tr>
+                                        <th>비고</th>
+                                        <td class="last">훈련수준 : 일학습병행 훈련과정개발·인정 시스템 훈련과정 전환(자동연계 등록)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <!--// OFF-JT -->
+                        
+                    </div>
+                    <!--// 텝 컨텐츠 -->    
+                </div>      
+            </div>         
+        </div>
+
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</body>
+</html>

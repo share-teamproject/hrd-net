@@ -124,7 +124,9 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .TrainingHistoryBox > ul > li > dl > dt, .TrainingHistoryBox > ul > li > dl > dd { float:left; line-height:38px;}
 .TrainingHistoryBox > ul > li > dl > dt { width:205px;  font-size:28px; color:#4e4f51; text-align:center; }
 .TrainingHistoryBox > ul > li > dl > dd { color:#292a2d; font-size:28px; width:calc(100% - 170px); padding:0 20px 0 40px; word-break: keep-all; }
-.TrainingHistoryBox > ul > li > dl > dt:before { content:''; position:absolute; top:2px; left:205px; height:calc(100% - 2px); border-left:3px solid #e3e7ee; }
+.TrainingHistoryBox > ul > li > dl > dd:before { content:''; position:absolute; top:2px; left:205px; height:calc(100% - 2px); border-left:3px solid #e3e7ee; }
+.TrainingHistoryBox > ul > li > dl.autoH > dd { line-height:32px; }
+.TrainingHistoryBox > ul > li.clearW100 {clear:both; width:100%;}
 .TrainingHistoryBox > ul > li > dl > .star { margin-left:40px; }
 .TrainingHistoryBox .btnH26.mt5 { margin-top:5px; }
 
@@ -211,9 +213,8 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .txtBox01 { border:2px #e2e2e4 solid; padding:38px 30px 0 30px; margin-top:50px; }
 .txtBox01 > ul { overflow:hidden; min-width:570px; width:100%; text-align:center; }
 .txtBox01 > ul > li { position:relative; float:left; text-align:center; padding-right:40px; margin-bottom:40px; }
-@media ( max-width:640px ) {
-	.txtBox01 > ul > li:last-child { clear:both; padding-right:0; margin-right:-80px; width:0; }
-}
+.txtBox01 > ul > li:last-child { clear:both; padding-right:0; margin-right:-80px; width:0; }
+
 .txtBox01 > ul > li:last-child { padding-right:0; margin-right:-80px; width:0; }
 .txtBox01 > ul > li:before { content:''; position:absolute; top:75px; right:10px; width:19px; height:35px; background:url('../new_images/common/arrowStepM.png') no-repeat; }
 .txtBox01 > ul > li > .innerTxtBox { width:216px; border:2px #e2e2e4 solid; padding-bottom:30px; }
@@ -1030,7 +1031,7 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .infoDetailBox .info .title { width:100%; }
 .infoDetailBox .info .title .tit { width:100%; padding-right:90px; color:#292a2d; font-size:32px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; position:relative; }
 .infoDetailBox .info .title .tit .statusTag { position:absolute; top:0; right:0; }
-.infoDetailBox .info .title .add { margin-bottom:4px; color:#4e4f51; font-size:28f.infoDetailBox .info > .infoList li .conpx; }
+/*.infoDetailBox .info .title .add { margin-bottom:4px; color:#4e4f51; font-size:28f.infoDetailBox .info > .infoList li .conpx; } css 이상으로 막음*/ 
 .infoDetailBox .info .title .hashtagList { display:flex; flex-wrap:wrap; }
 .infoDetailBox .info .title .hashtagList li { margin-left:10px; }
 .infoDetailBox .info .title .hashtagList li:first-child { margin-left:0; }
@@ -1404,3 +1405,37 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .pIcon1 { background:#5b648a;}
 .pIcon2 { background:#258384;}
 .pIcon3 { background:#987a27;}
+
+/* 훈련과정 팝업 */
+.pTraining .signUpFlow { margin:20px 0 0; }
+.pTraining .signUpFlow .signUpFlowList li {width:15%; }
+.pTraining .signUpFlow .signUpFlowList .txt { font-weight:300; line-height:36px; letter-spacing:-2px; word-break: keep-all; }
+.pTraining .signUpFlow .signUpFlowList .on .txt { font-weight:500; }
+.pTraining .stepApplication { display:flex; flex-wrap:wrap; width:100%; padding:20px 10px 20px; justify-content:space-between;}
+.pTraining .stepApplication li {  position:relative; min-width:100%; min-height:169px; width:100%; text-align: left; padding:0; }
+.pTraining .stepApplication li + li { position:relative; margin:30px 0 0; }
+.pTraining .stepApplication li + li:before { position:absolute; top:-37px; left:75px; content:''; width:16px; height:31px; background:url('../new_images/common/arrowStep.png') 0 0 no-repeat; background-size:100%; opacity:0.5; transform: rotate(90deg); }
+.pTraining .stepApplication li:nth-child(1) { background:url('../new_images/common/stepApplication01.png') 0 0 no-repeat; background-size:166px 169px }
+.pTraining .stepApplication li:nth-child(2) { background:url('../new_images/common/stepApplication02.png') 0 0 no-repeat; background-size:166px 169px }
+.pTraining .stepApplication li:nth-child(3) { background:url('../new_images/common/stepApplication03.png') 0 0 no-repeat; background-size:166px 169px }
+.pTraining .stepApplication li:nth-child(4) { background:url('../new_images/common/stepApplication04.png') 0 0 no-repeat; background-size:166px 169px }
+.pTraining .stepApplication .stepTitle { font-size:22px; color:#292a2d; padding:100px 0 0 65px; }
+.pTraining .stepApplication .stepText { position:absolute; top:35px; left:200px; font-size:28px; color:#727476; margin:0; }
+.pTraining .stepApplication .stepText strong { font-weight:500; color:#4171df; display: block; }
+.pTraining .bigTitle02 { margin:50px 0 0 0; }
+.pTraining .dotList li { font-size:28px; color:#727476; line-height: 40px; }
+.pTraining .dotList li + li { margin:25px 0 0 0; }
+.pTraining .qnaArea .qnaA { padding: 40px 30px; }
+.pTraining .inpAlertMsg { font-size:24px; }
+.pTraining .inpAlertMsg:before { content:''; position:absolute; top:22px; left:0; width:4px; height:4px; border-bottom:3px solid #767676; border-radius:100%; }
+.pTraining .phoneInput { max-width:100%; }
+.pTraining .emailInput { max-width:100%; }
+.pTraining .emailInput > .ele.ty2 {padding-left:0; }
+.pTraining .educationInput { padding-right:0px; }
+.pTraining .educationInput > .ele.ty3 { margin:25px 0 35px; }
+.pTraining .inputArea .ui_radioBox { width:28%; }
+.pTraining .dlTable.dtW100p dt { width:100%; text-align:left }
+.pTraining .dlTable.dtW100p dd { width:100%; }
+.pTraining .dlTable.dtW100p dd .ui_radioBox { width:100%; margin-bottom:20px; }
+.pTraining .dlTable.dtW635 dd { width:100%; text-align:left;}
+.pTraining .dlTable.dtW635 dd .ui_radioBox label { margin-right:120px; }

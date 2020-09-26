@@ -65,8 +65,6 @@ $(function(){
 				});
 			//});
 		},
-
-
 		// tab
 		fn_tab:function(){
 			$('.tabInterface').each(function(tab){
@@ -76,10 +74,9 @@ $(function(){
 						$(this).attr('title','선택됨').siblings().attr('title','');
 						if ( !$(this).hasClass('on') )
 						{					
-							$(this).addClass('on').siblings().removeClass('on');
-		
-							$('.tabContents').children('.tabCont').removeClass('on');
-							$('.tabContents').children('.tabCont').eq(idx).addClass('on');
+							$(this).addClass('on').siblings().removeClass('on');		
+							$(this).parent().parent().siblings().children('.tabCont').removeClass('on');
+							$(this).parent().parent().siblings().children('.tabCont').eq(idx).addClass('on');
 						}
 					});	
 				});

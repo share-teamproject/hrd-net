@@ -150,10 +150,14 @@ button.delBtn, a.delBtn { display:inline-block; min-width:65px; text-align:cente
 .TrainingHistoryBox > ul > li.borL {border-left:1px #e2e2e4 solid;}
 .TrainingHistoryBox > ul > li.clearW100 {clear:both; width:100%;}
 .TrainingHistoryBox > ul > li > dl { position:relative; overflow:hidden; display:flex; align-items:center; margin:14px 0; height:35px; line-height:100%; }
+.TrainingHistoryBox > ul > li > dl.autoH { display: flex; height:auto; }
 .TrainingHistoryBox > ul > li > dl > dt, .TrainingHistoryBox > ul > li > dl > dd { float:left; }
 .TrainingHistoryBox > ul > li > dl > dt { width:170px; color:#4e4f51; text-align:center; }
 .TrainingHistoryBox > ul > li > dl > dd { color:#292a2d; font-size:14px; padding-left:40px; }
-.TrainingHistoryBox > ul > li > dl > dd:before { content:""; position:absolute; top:0; left:170px; width:1px; height:35px; background-color:#e3e7ee;  }
+.TrainingHistoryBox > ul > li > dl > dd:before { content:""; position:absolute; top:0; left:170px; width:1px; height:35px; background-color:#e3e7ee; }
+.TrainingHistoryBox > ul > li > dl.autoH > dd.cols3 { width:calc(100% - 210px);}
+.TrainingHistoryBox > ul > li > dl.autoH > dd { line-height:26px; }
+.TrainingHistoryBox > ul > li > dl.autoH > dd:before { height:100%; }
 .TrainingHistoryBox > ul > li > dl > .star { margin-left:40px; }
 .TrainingHistoryBox > ul > li > dl > dd .leftBtn { padding-left:30px; }
 
@@ -1893,7 +1897,9 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .popContEle > #subContentWrap {display: block; width: auto; padding: 0 !important;}
 .popContEle > #subContentWrap .subContArea {width: auto;}
 
+.ctyTitArea { position: relative; }
 .ctyTit {text-align: center; font-weight: 500; font-size: 32px; color: #4e4f51; line-height: 44px; margin-bottom: 35px;}
+.ctyTit + .btnDownloadAll { position:absolute; top:10px; right:0px; }
 .ctyTit .toolTip {margin: -5px 0 0 11px; line-height: normal; font-size: 0;}
 .ctyTit .toolTip .toolTipBtn {margin: 0; line-height: normal;}
 
@@ -1914,12 +1920,12 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .popContBoxType1 > .pCbTxt01 { font-size:14px; color:#727476; }
 .popContBoxType1 > .pCbTxt02 { overflow:hidden; font-size:14px; color:#4e4f51; }
 .popContBoxType1 > .pCbTxt02 > li { float:left; padding-right: 10px; }
-.popContBoxType1 > .pCbTxt02 > li > span { padding-right: 10px; }
+
 
 .popBtnAreaRight { text-align: right; margin-top:20px; }
 .popBtnAreaRight.ty2 { text-align: right; margin:10px 0; }
 .popBtnAreaRight > button + button {margin-left: 10px;}
-.pSmallBtnType1 {display:inline-block; line-height:26px; padding:0 20px; text-align:left; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51; }
+.pSmallBtnType1 {dsplay:inline-block; line-height:26px; padding:0 20px; text-align:left; border:1px solid #cdcdd1; font-size:12px; color:#4e4f51; }
 .pSmallBtnType1:after {content:''; display:inline-block; vertical-align:middle; width:6px; height:12px; margin-left:5px; margin-top:-3px; background:#fff url('../new_images/common/arrowGoLink.png') no-repeat; background-size:cover;}
 .pSmallBtnType2 {display:inline-block; line-height:26px; padding:0 20px; text-align:left; border:1px solid #4171df; font-size:12px; color:#4171df; }
 .pSmallBtnType3 {display:inline-block; line-height:26px; padding:0 20px; text-align:left; border:1px solid #258384; font-size:12px; color:#258384; }
@@ -2094,3 +2100,31 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .pIcon1 { background:#5b648a;}
 .pIcon2 { background:#258384;}
 .pIcon3 { background:#987a27;}
+
+/* 훈련과정 팝업 */
+.pTraining .bigTitle02 { margin:40px 0 0 0; }
+.pTraining .dotList li { font-size:14px; color:#727476; line-height:26px; }
+.pTraining .dotList li + li { margin:15px 0 0 0; }
+.pTraining .qnaArea .qnaA { padding: 30px; }
+.pTraining .TrainingHistoryBox > ul > li > dl > dt { padding:0 0 0 20px; }
+.pTraining .stepApplication { display:flex; width:100%; padding:20px 120px 20px; justify-content:space-between;}
+.pTraining .stepApplication li { min-width:110px; text-align: center; padding:68px 0 0 0; }
+.pTraining .stepApplication li + li { position:relative; margin-left:65px; }
+.pTraining .stepApplication li + li:before { position:absolute; top:33px; left:-40px; content:''; width:16px; height:31px; background:url('../new_images/common/arrowStep.png') 0 0 no-repeat; background-size:100%; opacity:0.5; }
+.pTraining .stepApplication li:nth-child(1) { background:url('../new_images/common/stepApplication01.png') center 0 no-repeat; background-size:110px 112px }
+.pTraining .stepApplication li:nth-child(2) { background:url('../new_images/common/stepApplication02.png') center 0 no-repeat; background-size:110px 112px }
+.pTraining .stepApplication li:nth-child(3) { background:url('../new_images/common/stepApplication03.png') center 0 no-repeat; background-size:110px 112px }
+.pTraining .stepApplication li:nth-child(4) { background:url('../new_images/common/stepApplication04.png') center 0 no-repeat; background-size:110px 112px }
+.pTraining .stepApplication .stepTitle { font-size:15px; color:#292a2d; }
+.pTraining .stepApplication .stepText { font-size:14px; color:#727476; margin:30px 0 0; }
+.pTraining .stepApplication .stepText strong { font-weight:500; color:#4171df; display: block; }
+.pTraining .educationInput { padding-right:160px; }
+.pTraining .dlTable.dtW100p { margin:60px 0 0; }
+.pTraining .dlTable.dtW100p dt { width:100%; text-align:center }
+.pTraining .dlTable.dtW100p dd { width:100%; }
+.pTraining .dlTable.dtW100p dd .ui_radioBox { width:280px; margin-bottom:8px; }
+.pTraining .dlTable.dtW100p dd .ui_radioBox + .ui_radioBox { margin-left:0; }
+.pTraining .dlTable.dtW635 { margin:60px 0 0; }
+.pTraining .dlTable.dtW635 dt { width:635px; }
+.pTraining .dlTable.dtW635 dd { width:calc(100% - 635px); text-align:center;}
+.pTraining .dlTable.dtW635 dd .ui_radioBox label { margin-right:0px; }
