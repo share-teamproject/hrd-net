@@ -1439,3 +1439,16 @@ button.delBtn, a.delBtn { display:inline-block; height:50px; line-height:46px; t
 .pTraining .dlTable.dtW100p dd .ui_radioBox { width:100%; margin-bottom:20px; }
 .pTraining .dlTable.dtW635 dd { width:100%; text-align:left;}
 .pTraining .dlTable.dtW635 dd .ui_radioBox label { margin-right:120px; }
+.pTraining .inpAlertMsg.box { background:#f7f7f7; padding:25px; margin:0; }
+.pTraining .inpAlertMsg.box .boxText { color:#727476; line-height:30px; padding:0 0 30px; }
+.pTraining .inpAlertMsg .checkBoxArea { text-align:left; padding:30px 0 0; border-top:2px solid #e2e2e4;}
+.infoTable { display:flex; flex-wrap:wrap; width:100%; border-top:3px solid #727476; margin:35px 0 20px; box-sizing:border-box; background: #fff;}
+.infoTable > li { display:flex; }
+.infoTable > li:nth-child(1) { width:100%; }
+.infoTable > li:nth-child(2) { width:100%; }
+.infoTable > li:nth-child(3) { width:100%; }
+.infoTable > li:nth-child(4) { width:100%; }
+.infoTable > li .infoTitle { display:block; width:220px; background:#f0f0f2; border-right:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4; padding:20px; font-size: 26px; color:#4e4f51; font-weight:400; text-align:center; box-sizing:border-box; }
+.infoTable > li .infoTitle.last { border-right:1px solid #e2e2e4; }
+.infoTable > li .infoText { display:block; width:calc(100% - 220px); border-right:none; border-bottom:1px solid #e2e2e4; font-size: 26px; color:#727476; text-align:left; padding:20px 30px; box-sizing:border-box; }
+.infoTable > li .infoTitle.last, .infoTable > li .infoText.last { border-right:none; }

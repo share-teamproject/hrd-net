@@ -2128,3 +2128,24 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .pTraining .dlTable.dtW635 dt { width:635px; }
 .pTraining .dlTable.dtW635 dd { width:calc(100% - 635px); text-align:center;}
 .pTraining .dlTable.dtW635 dd .ui_radioBox label { margin-right:0px; }
+.pTraining .inpAlertMsg.box .checkBoxArea { text-align:right; }
+.pTraining .inpAlertMsg.box .boxText { color:#258384; }
+.infoTable { display:table; width:100%; border-top:1px solid #727476; margin:15px 0 20px; box-sizing:border-box; background: #fff;}
+.infoTable > li { display:table-cell; }
+.infoTable > li:nth-child(1) { width:170px; }
+.infoTable > li:nth-child(2) { width:195px; }
+.infoTable > li:nth-child(3) { width:auto; }
+.infoTable > li:nth-child(4) { width:240px; }
+.infoTable > li .infoTitle { display:block; background:#f0f0f2; border-right:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4; padding:17px 20px; font-size: 14px; color:#4e4f51; font-weight:400; text-align:center; box-sizing:border-box; }
+.infoTable > li .infoText { display:block; border-right:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4; font-size: 14px; color:#727476; text-align:center; padding:17px; box-sizing:border-box; }
+.infoTable > li .infoTitle.last, .infoTable > li .infoText.last { border-right:none; }
+
+.teachProfile { border:3px solid #d8dfeb; padding:20px; display:flex; align-items:flex-start; width:100%; }
+.teachProfile .photoProfile { display:block; border:1px solid #e2e2e4; width:210px; height:270px; background:url('../new_images/common/bgTeachProfile.png') no-repeat; }
+.teachProfile .dlProfile { display:flex; flex-wrap:wrap; width:calc(100% - 210px); }
+.teachProfile .dlProfile dt { position:relative; width:125px; font-size:14px; color:#4e4f51; line-height:24px; color:#4e4f51; padding:0 0 15px 15px;}
+.teachProfile .dlProfile dt:after { position:absolute; content:''; top:6px; right:0; width:1px; height:12px; background:#e4ebeb; }
+.teachProfile .dlProfile dd { width:190px; font-size:14px; line-height:24px; color:#666; padding:0 0 15px 15px; }
+.teachProfile .dlProfile dd.cols3 { width:calc(100% - 125px); }
+
+
