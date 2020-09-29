@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>훈련장비 조회 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type02" style="width: 980px">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">훈련장비 조회</h2>
+		</div>
+		<div class="popContEle">
+			
+			<!-- 장비 검색 -->
+			<div class="tableArea">
+				<table class="view">
+					<caption>장비 검색 폼</caption>
+					<colgroup>
+					<col style="width:150px;">
+					<col style="width:250px;">
+					<col style="width:150px;">
+					<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">장비종류</th>
+							<td>
+								<select name="equipSelect" title="장비종류 선택" id="equipSelect" class="selectBox w100p">
+									<option value="">전체</option>
+								</select>
+							</td>
+							<th scope="row">장비명</th>
+							<td>
+								<input type="text" value="" title="장비명 검색" name="equipName" id="equipName" class="w100p">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">장비증빙파일</th>
+							<td colspan="3">
+								<fieldset>
+									<legend>장비증빙파일 유무 선택</legend>
+									<div class="radioGroup">
+										<div class="ui_radioBox">
+											<input type="radio" name="equipFileYn" id="equipFileAll" checked>
+											<label for="equipFileAll">전체</label>
+										</div>
+										<div class="ui_radioBox">
+											<input type="radio" name="equipFileYn" id="equipFileY">
+											<label for="equipFileY" class="on">있음</label>
+										</div>
+										<div class="ui_radioBox disabled">
+											<input type="radio" name="equipFileYn" id="equipFileN">
+											<label for="equipFileN">없음</label>
+										</div>
+									</div>
+								</fieldset>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="txtList type03">
+					<li>이미 배정된 시설은 목록에서 제외됩니다.</li>
+					<li>통합심사는 시설증빙파일이 없는 시설은 추가할 수 없습니다.</li>
+					<li>사진을 첨부하지 않는 경우 심사에 불이익을 받을 수 있으니, 반드시 사진 첨부 여부를 확인하여 주십시오.</li>
+				</ul>
+				<div class="btnGroup mt30">
+					<button type="button" class="searchBtn">검색</button>
+				</div>
+			</div>
+			<!-- // 장비 검색 -->
+			
+			<!-- 정렬 옵션 영역 -->
+			<div class="sortArea">
+				<p class="totalNum">전체 <strong>7</strong> 건</p>
+				<div class="selectViewArea">
+					<div class="selectView">
+						<label for="pageRowTest">페이지당 조회건수</label>
+						<select title="페이지당 조회건수" name="pageRowTest" id="pageRowTest" class="selectBox h30">
+							<option value="10" selected="selected">10개씩</option>
+							<option value="20">20개씩</option>
+							<option value="30">30개씩</option>
+							<option value="50">50개씩</option>
+							<option value="100">100개씩</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!--// 정렬 옵션 영역 -->
+			
+			<!-- 훈련장비 조회 테이블 -->
+			<div class="tableArea">
+				<table class="list">
+					<caption>훈련장비 리스트</caption>
+					<colgroup>
+					<col style="width: 60px;">
+					<col style="width: 60px;">
+					<col style="width: 100px;">
+					<col style="width: auto;">
+					<col style="width: 100px;">
+					<col style="width: 100px;">
+					<col style="width: 120px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">선택</th>
+							<th scope="col" rowspan="2">번호</th>
+							<th scope="col" rowspan="2">장비구분</th>
+							<th scope="col">장비명</th>
+							<th scope="col">보유수량</th>
+							<th scope="col" rowspan="2">임차여부</th>
+							<th scope="col" rowspan="2" class="last">장비증빙파일</th>
+						</tr>
+						<tr>
+							<th scope="col" class="topLine">제조일자</th>
+							<th scope="col" class="topLine">설치장소</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">
+								<div class="ui_checkBox single">
+									<input type="checkbox" name="chkReturn" id="chkReturn001">
+									<label for="chkReturn001">선택</label>
+								</div>
+							</td>
+							<td rowspan="2">1</td>
+							<td rowspan="2">전용</td>
+							<td class="tl">X-RAY</td>
+							<td>1</td>
+							<td rowspan="2">자체</td>
+							<td rowspan="2" class="last">
+								<a href="/" class="btnFile pd0">첨부파일</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="tl">20170407</td>
+							<td>선택</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //훈련장비 조회 테이블 -->
+			<div class="btnGroup tr">
+				<button type="button" class="btnType3">적용</button>
+			</div>
+			
+			<div class="pagenation">
+				<a href="/" class="pb prev">이전보기</a>
+				<a href="/" class="on">1</a>
+				<a href="/">2</a>
+				<a href="/">3</a>
+				<a href="/">4</a>
+				<a href="/">5</a>
+				<a href="/">6</a>
+				<a href="/">7</a>
+				<a href="/" class="pb next">다음보기</a>
+			</div>
+			
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

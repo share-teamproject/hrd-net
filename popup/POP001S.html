@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>인정신청 등록 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type01" style="width: 980px">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">인정신청 등록(협약기업)</h2>
+		</div>
+		<div class="popContEle">
+			<div class="tableArea">
+				<table class="view">
+					<caption>협약기업 정보</caption>
+					<colgroup>
+					<col style="width:200px;">
+					<col style="width:auto;">
+					<col style="width:200px;">
+					<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">기업(기관명)</th>
+							<td colspan="3">(주)거림</td>
+						</tr>
+						<tr>
+							<th scope="row">대표자명</th>
+							<td>김인택</td>
+							<th scope="row">사업자등록번호</th>
+							<td>1348646486</td>
+						</tr>
+						<tr>
+							<th scope="row">운영형태</th>
+							<td>도제학교</td>
+							<th scope="row">사업담당자</th>
+							<td>송기순</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="tabInterface">
+				<div class="tabListArea">
+					<ul class="tabList" role="tablist"><!-- 활성화 클래스 on-->
+						<li role="tab" aria-controls="section1" aria-selected="true" id="tab1" class="on" title="선택됨"><button type="button">기본정보(OJT)</button></li>
+						<li role="tab" aria-controls="section2" aria-selected="false" id="tab2" title=""><button type="button">훈련개요(OJT)</button></li>
+						<li role="tab" aria-controls="section3" aria-selected="false" id="tab3" title=""><button type="button">훈련목표(OJT)</button></li>
+						<li role="tab" aria-controls="section4" aria-selected="false" id="tab4" title=""><button type="button">인력/시설/장비(OJT)</button></li>
+					</ul>
+				</div>
+				<div class="tabContents"><!-- 활성화 클래스 on-->
+					<section id="section1" role="tabpanel" class="tabCont on">
+						<div class="tableArea">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">접수처 지정</h4>
+								<div class="tableComment">"<span class="color01">＊</span>" 는 필수 입력 항목 입니다.</div>
+							</div>
+							<table class="view form">
+								<caption>접수처지정 입력 폼</caption>
+								<colgroup>
+								<col style="width:200px;">
+								<col style="width:auto;">
+								<col style="width:200px;">
+								<col style="width:auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">기업 소재지 선택 <span class="color01">*</span></th>
+										<td colspan="3">
+											<fieldset>
+												<legend>기업 소재지 광역시/도, 시/군/구 선택</legend>
+												<div class="inputBox addrBox">
+													<div class="inputGroup">
+														<select title="광역시/도를 선택하세요." name="comAddr01" id="comAddr01" class="selectBox" style="width: 200px;">
+															<option selected="selected" value="">광역시/도 선택</option>
+															<option value="1"> 서울특별시 </option>
+														</select>
+														<select title="시/군/구를 선택하세요." name="comAddr02" id="comAddr02" class="selectBox" style="width: 200px;">
+															<option selected="selected" value="">시/군/구 선택</option>
+															<option value="1"> 강남구 </option>
+														</select>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">한국산업인력공단</th>
+										<td></td>
+										<th scope="row">관할 접수처</th>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">프로그램 정보</h4>
+								<div class="tableComment">"<span class="color01">＊</span>" 는 필수 입력 항목 입니다.</div>
+							</div>
+							<table class="view">
+								<caption>프로그램 정보</caption>
+								<colgroup>
+								<col style="width:200px;">
+								<col style="width:auto;">
+								<col style="width:200px;">
+								<col style="width:auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">PM 성명 <span class="color01">*</span></th>
+										<td>김온배</td>
+										<th scope="row">프로그램개발 착수일자 <span class="color01">*</span></th>
+										<td>20190220</td>
+									</tr>
+									<tr>
+										<th scope="row">PM 연락처 <span class="color01">*</span></th>
+										<td>010-2019-9686</td>
+										<th scope="row">프로그램개발 완료일자 <span class="color01">*</span></th>
+										<td>20190222</td>
+									</tr>
+									<tr>
+										<th scope="row">훈련유형</th>
+										<td colspan="3">NCS 기반자격과정  모듈자격과정</td>
+									</tr>
+									<tr>
+										<th scope="row">NCS 기반자격명</th>
+										<td colspan="3">전자기기생산_L2_ver2.0 ( S20E )</td>
+									</tr>
+									<tr>
+										<th scope="row">훈련과정명</th>
+										<td colspan="3">2019년_(도제)_전자기기생산_L2_ver2.0_거림</td>
+									</tr>
+									<tr>
+										<th scope="row">훈련직종명</th>
+										<td colspan="3">전자제품생산 ( 19020102 )</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea form">
+							<table class="view form">
+								<caption>프로그램 정보</caption>
+								<colgroup>
+								<col style="width:150px;">
+								<col style="width:100px;">
+								<col style="width:100px;">
+								<col style="width:auto;">
+								<col style="width:150px;">
+								<col style="width:auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="rightLine" rowspan="2">훈련기간 (시간)</th>
+										<th scope="row" class="rightLine" rowspan="2">OJT <span class="color01">*</span></th>
+										<th scope="row">집체</th>
+										<td colspan="3">24 개월 / 720 일 / 720 시간</td>
+									</tr>
+									<tr>
+										<th scope="row">온라인</th>
+										<td colspan="3">0 시간</td>
+									</tr>
+									<tr>
+										<th scope="row" class="rightLine" rowspan="2">교육방법</th>
+										<th scope="row" colspan="2">OJT <span class="color01">*</span></th>
+										<td colspan="3">기업현장교수 1 명 / 학습근로자 3 명</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">학위연계형 여부 <span class="color01">*</span></th>
+										<td>
+											<fieldset>
+												<legend>학위연계형 여부 선택</legend>
+												<div class="radioGroup">
+													<div class="ui_radioBox">
+														<input type="radio" name="degree01" id="degree01Y">
+														<label for="degree01Y">예</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="degree01" id="degree01N">
+														<label for="degree01N">아니요</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<th scope="row">고숙련 마이스터<br>과정여부 <span class="color01">*</span></th>
+										<td>
+											<fieldset>
+												<legend>고숙련 마이스터 과정여부 선택</legend>
+												<div class="radioGroup">
+													<div class="ui_radioBox">
+														<input type="radio" name="meister01" id="meister01Y">
+														<label for="meister01Y">예</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="meister01" id="meister01N">
+														<label for="meister01N">아니요</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="rightLine">목표수준</th>
+										<th scope="row" colspan="2">학습근로자 교육수준 <span class="color01">*</span></th>
+										<td>
+											<select title="교육수준을 선택하세요." name="rank01" id="rank01" class="selectBox" style="width: 120px;">
+												<option selected="selected" value="">선택</option>
+												<option value="1"> 고급 </option>
+											</select>
+										</td>
+										<th scope="row">NCS 직능수준<br>(목표수준)</th>
+										<td>
+											<select title="목표수준을 선택하세요." name="rank02" id="rank02" class="selectBox" style="width: 120px;">
+												<option selected="selected" value="">선택</option>
+												<option value="1"> 고급 </option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="rightLine">학습근로자</th>
+										<th scope="row" colspan="2">훈련인원<br>(기업선정시 채용계획) <span class="color01">*</span></th>
+										<td>2명</td>
+										<th scope="row">추가 채용<br>예정 인원</th>
+										<td>2명</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="3">기업현장교수 <span class="color01">*</span></th>
+										<td>2명</td>
+										<th scope="row">HRD 담당자 <span class="color01">*</span></th>
+										<td>1명</td>
+									</tr>
+									<tr>
+										<th scope="row">첨부파일 <span class="color01">*</span></th>
+										<td colspan="5">
+											<div class="AddFilesArea">
+												<dl class="fileBox">
+													<dt>
+														<div class="compareChk">
+															<div class="ui_checkBox single">
+																<input type="checkbox" name="attachFile01" id="attachFile01">
+																<label for="attachFile01">선택</label>
+															</div>
+															<span>첨부파일명.pptx <a href="/" class="btnDelete">삭제</a></span>
+														</div>
+													</dt>
+													<dd>31.24KB</dd>
+												</dl>
+												<div class="dragBox">
+													이곳을 더블클릭 또는 파일을 드래그하세요.
+												</div>
+												<div class="fileBtnBox">
+													<div class="btnGroup">
+														<button type="button" class="btnType2 btnTy2">파일추가</button>
+														<button type="button" class="btnType2 btnTy3">항목제거</button>
+														<button type="button" class="btnType2 btnTy4">전체 항목제거</button>
+													</div>
+												</div>
+												
+												<ul class="txtList type03">
+													<li>교육인증프로그램 보고서 첨부</li>
+													<li>업로드 가능 파일 확장자 : hwp, xls, ppt, doc, xlsx, pptx, docx, jpg, gif, zip</li>
+													<li>
+														단일 첨부파일의 최대 크기 : 5 Mbytes<br>
+														- 파일용량이 크거나 파일(엑셀 등) 업로드시 문제가 발생할 경우, 압축하여 업로드 하십시오.<br>
+														- 용량이 5MB를 초과하면 파일을 별도(CD 등)로 제출하십시오.
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType2">다음</button>
+						</div>
+					</section>
+					<section id="section2" role="tabpanel" class="tabCont">
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">일학습병행제 프로그램 개요</h4>
+								<div class="tableComment">"<span class="color01">＊</span>" 는 필수 입력 항목 입니다.</div>
+							</div>
+							<table class="view form">
+								<caption>일학습병행제 프로그램 정보</caption>
+								<colgroup>
+								<col style="width:200px;">
+								<col style="width:auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">훈련과정명</th>
+										<td>2019년_(도제)_전자기기생산_L2_ver2.0_거림</td>
+									</tr>
+									<tr>
+										<th scope="row">훈련직종<br>(NCS 기반 코드)</th>
+										<td>19020102 (전자제품생산)</td>
+									</tr>
+									<tr>
+										<th scope="row">NCS 목표 수준</th>
+										<td>/</td>
+									</tr>
+									<tr>
+										<th scope="row">과정담당자</th>
+										<td>송기순</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="managerTel1">전화번호</label> <span class="color01">＊</span></th>
+										<td>
+											<fieldset>
+												<legend>담당자 전화번호</legend>
+												<div class="inputGroup">
+													<select title="지역번호를 선택하세요." name="managerTel1" id="managerTel1" class="selectBox telSelect">
+														<option selected="selected" value="">선택</option>
+														<option value="010"> 010 </option>
+													</select>
+													<span class="line">-</span>
+													<input type="text" title="중간4자리를 입력하세요" name="managerTel2" id="managerTel2" class="telInput">
+													<span class="line">-</span>
+													<input type="text" title="끝4자리를 입력하세요" name="managerTel3" id="managerTel3" class="telInput">
+												</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="managerHp1">휴대폰번호</label></th>
+										<td>
+											<fieldset>
+												<legend>담당자 휴대폰번호</legend>
+												<div class="inputGroup">
+													<select title="지역번호를 선택하세요." name="managerHp1" id="managerHp1" class="selectBox telSelect">
+														<option selected="selected" value="">선택</option>
+														<option value="010"> 010 </option>
+													</select>
+													<span class="line">-</span>
+													<input type="text" title="중간4자리를 입력하세요" name="managerHp2" id="managerHp2" class="telInput">
+													<span class="line">-</span>
+													<input type="text" title="끝4자리를 입력하세요" name="managerHp3" id="managerHp3" class="telInput">
+												</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="managerFax1">팩스번호</label></th>
+										<td>
+											<fieldset>
+												<legend>담당자 팩스번호</legend>
+												<div class="inputGroup">
+													<select title="지역번호를 선택하세요." name="managerFax1" id="managerFax1" class="selectBox telSelect">
+														<option selected="selected" value="">선택</option>
+														<option value="010"> 010 </option>
+													</select>
+													<span class="line">-</span>
+													<input type="text" title="중간4자리를 입력하세요" name="managerFax2" id="managerFax2" class="telInput">
+													<span class="line">-</span>
+													<input type="text" title="끝4자리를 입력하세요" name="managerFax3" id="managerFax3" class="telInput">
+												</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="managerEmail1">이메일(email)</label> <span class="color01">＊</span></th>
+										<td>
+											<fieldset>
+												<legend>담당자 이메일</legend>
+												<div class="inputGroup">
+													<input type="text" value="" title="메일 계정을 입력하세요" name="managerEmail1" id="managerEmail1" class="emailInput">
+													<span class="line">@</span>
+													<input type="text" value="" title="메일 계정을 입력하세요" name="managerEmail2" id="managerEmail2" class="emailInput">
+												</div>
+												<div class="inputGroup bot">
+													<select title="메일 항목 선택" id="managerEmail3" name="managerEmail3" class="selectBox emailSelect">
+														<option value="all">선택</option>
+														<option value="mail1">gmail.com</option>
+														<option value="mail2">nate.com</option>
+														<option value="mail3">직접입력</option>
+													</select>
+												</div>
+											</fieldset>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">훈련 능력단위 선정</h4>
+							</div>
+							<table class="list form">
+								<caption>일학습병행제 프로그램 정보</caption>
+								<colgroup>
+								<col style="width:60px;">
+								<col style="width:120px;">
+								<col style="width:auto;">
+								<col style="width:130px;">
+								<col style="width:150px;">
+								<col style="width:150px;">
+								<col style="width:90px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">NCS 적용</th>
+										<th scope="col">능력단위 / NCS 코드</th>
+										<th scope="col">필수 여부</th>
+										<th scope="col">선이수 여부</th>
+										<th scope="col">PBL 여부</th>
+										<th scope="col" class="last">훈련시간</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="ui_radioBox single">
+												<input type="radio" name="selectItem" id="item1">
+												<label for="item1">옵션1</label>
+											</div>
+										</td>
+										<td>
+											<select name="ncsItem1" title="ncs 적용 여부 선택" id="ncsItem1" class="selectBox">
+												<option value="Y" selected>적용</option>
+												<option value="N">미적용</option>
+											</select>
+										</td>
+										<td>
+											<fieldset>
+												<legend>능력단위 / NCS 코드</legend>
+												<div class="inputGroup">
+													<input type="text" id="unitCode1" name="unitCode1" title="능력단위 입력" class="w100p">
+													<input type="text" id="ncsCode1" name="ncsCode1" title="NCS 코드 입력" value="0204020107_16v2" class="mt5 w100p">
+												</div>
+											</fieldset>
+										</td>
+										<td class="left">
+											<fieldset>
+												<legend>필수 여부 선택</legend>
+												<div class="radioGroup type01">
+													<div class="ui_radioBox">
+														<input type="radio" name="essential1" id="essentialY1">
+														<label for="essentialY1">필수</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="essential1" id="essentialN1">
+														<label for="essentialN1">선택</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<td>
+											<fieldset>
+												<legend>선이수 여부 선택</legend>
+												<div class="radioGroup type01">
+													<div class="ui_radioBox">
+														<input type="radio" name="completeYN1" id="completeY1">
+														<label for="completeY1">예</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="completeYN1" id="completeN1">
+														<label for="completeN1">아니오</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<td>
+											<fieldset>
+												<legend>PBL 여부 선택</legend>
+												<div class="radioGroup type01">
+													<div class="ui_radioBox">
+														<input type="radio" name="pblYN1" id="pblY1">
+														<label for="pblY1">예</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="pblYN1" id="pblN1">
+														<label for="pblN1">아니오</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<td class="last">1265 시간</td>
+									</tr><tr>
+										<td>
+											<div class="ui_radioBox single">
+												<input type="radio" name="selectItem" id="item2">
+												<label for="item2">옵션1</label>
+											</div>
+										</td>
+										<td>
+											<select name="ncsItem2" title="ncs 적용 여부 선택" id="ncsItem2" class="selectBox">
+												<option value="Y" selected>적용</option>
+												<option value="N">미적용</option>
+											</select>
+										</td>
+										<td>
+											<fieldset>
+												<legend>능력단위 / NCS 코드</legend>
+												<div class="inputGroup">
+													<input type="text" id="unitCode2" name="unitCode2" title="능력단위 입력" class="w100p">
+													<input type="text" id="ncsCode2" name="ncsCode2" title="NCS 코드 입력" value="0204020107_16v2" class="mt5 w100p">
+												</div>
+											</fieldset>
+										</td>
+										<td class="left">
+											<fieldset>
+												<legend>필수 여부 선택</legend>
+												<div class="radioGroup type01">
+													<div class="ui_radioBox">
+														<input type="radio" name="essential2" id="essentialY2">
+														<label for="essentialY2">필수</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="essential2" id="essentialN2">
+														<label for="essentialN2">선택</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<td>
+											<fieldset>
+												<legend>선이수 여부 선택</legend>
+												<div class="radioGroup type01">
+													<div class="ui_radioBox">
+														<input type="radio" name="completeYN2" id="completeY2">
+														<label for="completeY2">예</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="completeYN2" id="completeN2">
+														<label for="completeN2">아니오</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<td>
+											<fieldset>
+												<legend>PBL 여부 선택</legend>
+												<div class="radioGroup type01">
+													<div class="ui_radioBox">
+														<input type="radio" name="pblYN2" id="pblY2">
+														<label for="pblY2">예</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="pblYN2" id="pblN2">
+														<label for="pblN2">아니오</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<td class="last">1265 시간</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">교과목 훈련편성정보</h4>
+							</div>
+							<table class="list form">
+								<caption>교과목 훈련편성정보</caption>
+								<colgroup>
+								<col style="width:60px;">
+								<col style="width:180px;">
+								<col style="width:180px;">
+								<col style="width:100px;">
+								<col style="width:auto;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">교과목</th>
+										<th scope="col">훈련방법</th>
+										<th scope="col">훈련일수</th>
+										<th scope="col" class="last">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="ui_radioBox single">
+												<input type="radio" name="eduPlanItem1" id="eduPlanItem1">
+												<label for="eduPlanItem1">선택</label>
+											</div>
+										</td>
+										<td>
+											<input type="text" id="eduPlanText1" name="eduPlanText1" title="교과목 입력" class="w100p">
+										</td>
+										<td>
+											<fieldset>
+												<legend>훈련방법 선택</legend>
+												<div class="radioGroup type01">
+													<div class="ui_radioBox">
+														<input type="radio" name="eduPlanTraining1" id="trainingOJT1">
+														<label for="trainingOJT1">OJT</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="eduPlanTraining1" id="trainingOffJT1">
+														<label for="trainingOffJT1">Off-JT</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<td>
+											<input type="text" id="eduPlanDay1" name="eduPlanDay1" title="훈련일수 입력" style="min-width: 100%; width: 100%;">
+										</td>
+										<td class="last">
+											<textarea name="eduPlanContent1" id="eduPlanContent1" title="훈련내용 입력" cols="30" rows="10"></textarea>
+										</td>
+									</tr><tr>
+										<td>
+											<div class="ui_radioBox single">
+												<input type="radio" name="eduPlanItem2" id="eduPlanItem2">
+												<label for="eduPlanItem2">선택</label>
+											</div>
+										</td>
+										<td>
+											<input type="text" id="eduPlanText2" name="eduPlanText2" title="교과목 입력" class="w100p">
+										</td>
+										<td>
+											<fieldset>
+												<legend>훈련방법 선택</legend>
+												<div class="radioGroup type01">
+													<div class="ui_radioBox">
+														<input type="radio" name="eduPlanTraining2" id="trainingOJT2">
+														<label for="trainingOJT2">OJT</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="eduPlanTraining2" id="trainingOffJT2">
+														<label for="trainingOffJT2">Off-JT</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<td>
+											<input type="text" id="eduPlanDay2" name="eduPlanDay2" title="훈련일수 입력" style="min-width: 100%; width: 100%;">
+										</td>
+										<td class="last">
+											<textarea name="eduPlanContent2" id="eduPlanContent2" title="훈련내용 입력" cols="30" rows="10"></textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">능력단위 정보</h4>
+							</div>
+							<table class="list form">
+								<caption>능력단위 정보</caption>
+								<colgroup>
+								<col style="width:60px;">
+								<col style="width:150px;">
+								<col style="width:180px;">
+								<col style="width:auto;">
+								<col style="width:100px;">
+								<col style="width:100px;">
+								<col style="width:90px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">교과목</th>
+										<th scope="col">능력단위명</th>
+										<th scope="col">NCS코드</th>
+										<th scope="col">NCS적용</th>
+										<th scope="col">필수여부</th>
+										<th scope="col" class="last">훈련시간</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>품질경영혁신</td>
+										<td>일학습병행 및 훈련과정의 이해</td>
+										<td>BCS20190312000867068</td>
+										<td>미적용</td>
+										<td>선택</td>
+										<td class="last">45</td>
+									</tr><tr>
+										<td>2</td>
+										<td>품질경영혁신</td>
+										<td>일학습병행 및 훈련과정의 이해</td>
+										<td>BCS20190312000867068</td>
+										<td>미적용</td>
+										<td>선택</td>
+										<td class="last">45</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType1">이전</button>
+							<button type="button" class="pBtnType2">다음</button>
+						</div>
+					</section>
+					<section id="section3" role="tabpanel" class="tabCont">
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">훈련목표</h4>
+								<div class="tableComment">"<span class="color01">＊</span>" 는 필수 입력 항목 입니다.</div>
+							</div>
+							<table class="view form">
+								<caption>일학습병행제 프로그램 정보</caption>
+								<colgroup>
+								<col style="width:200px;">
+								<col style="width:auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="trainingPurpose">훈련목적</label> <span class="color01">*</span></th>
+										<td>
+											<textarea name="trainingPurpose" id="trainingPurpose" title="훈련목적 입력" cols="30" rows="10"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="trainingContent">주요 훈련 내용</label> <span class="color01">*</span></th>
+										<td>
+											<textarea name="trainingContent" id="trainingContent" title="주요 훈련 내용 입력" cols="30" rows="10"></textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">프로그램 정보</h4>
+								<div class="tableComment">"<span class="color01">＊</span>" 는 필수 입력 항목 입니다.</div>
+							</div>
+							<table class="view">
+								<caption>프로그램 정보</caption>
+								<colgroup>
+								<col style="width:200px;">
+								<col style="width:auto;">
+								<col style="width:200px;">
+								<col style="width:auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">PM 성명 <span class="color01">*</span></th>
+										<td>김온배</td>
+										<th scope="row">프로그램개발 착수일자 <span class="color01">*</span></th>
+										<td>20190220</td>
+									</tr>
+									<tr>
+										<th scope="row">PM 연락처 <span class="color01">*</span></th>
+										<td>010-2019-9686</td>
+										<th scope="row">프로그램개발 완료일자 <span class="color01">*</span></th>
+										<td>20190222</td>
+									</tr>
+									<tr>
+										<th scope="row">훈련유형</th>
+										<td colspan="3">NCS 기반자격과정  모듈자격과정</td>
+									</tr>
+									<tr>
+										<th scope="row">NCS 기반자격명</th>
+										<td colspan="3">전자기기생산_L2_ver2.0 ( S20E )</td>
+									</tr>
+									<tr>
+										<th scope="row">훈련과정명</th>
+										<td colspan="3">2019년_(도제)_전자기기생산_L2_ver2.0_거림</td>
+									</tr>
+									<tr>
+										<th scope="row">훈련직종명</th>
+										<td colspan="3">전자제품생산 ( 19020102 )</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea form">
+							<table class="view form">
+								<caption>프로그램 정보</caption>
+								<colgroup>
+								<col style="width:150px;">
+								<col style="width:100px;">
+								<col style="width:100px;">
+								<col style="width:auto;">
+								<col style="width:150px;">
+								<col style="width:auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="rightLine" rowspan="2">훈련기간 (시간)</th>
+										<th scope="row" class="rightLine" rowspan="2">OJT <span class="color01">*</span></th>
+										<th scope="row">집체</th>
+										<td colspan="3" class="last">24 개월 / 720 일 / 720 시간</td>
+									</tr>
+									<tr>
+										<th scope="row">온라인</th>
+										<td colspan="3">0 시간</td>
+									</tr>
+									<tr>
+										<th scope="row" class="rightLine" rowspan="2">교육방법</th>
+										<th scope="row" colspan="2">OJT <span class="color01">*</span></th>
+										<td colspan="3">기업현장교수 1 명 / 학습근로자 3 명</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2">학위연계형 여부 <span class="color01">*</span></th>
+										<td>
+											<fieldset>
+												<legend>학위연계형 여부 선택</legend>
+												<div class="radioGroup">
+													<div class="ui_radioBox">
+														<input type="radio" name="degree02" id="degree02Y">
+														<label for="degree02Y">예</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="degree02" id="degree02N">
+														<label for="degree02N">아니요</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+										<th scope="row">고숙련 마이스터<br>과정여부 <span class="color01">*</span></th>
+										<td>
+											<fieldset>
+												<legend>고숙련 마이스터 과정여부 선택</legend>
+												<div class="radioGroup">
+													<div class="ui_radioBox">
+														<input type="radio" name="meister02" id="meister02Y">
+														<label for="meister02Y">예</label>
+													</div>
+													<div class="ui_radioBox">
+														<input type="radio" name="meister02" id="meister02N">
+														<label for="meister02N">아니요</label>
+													</div>
+												</div>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="rightLine">목표수준</th>
+										<th scope="row" colspan="2">학습근로자 교육수준 <span class="color01">*</span></th>
+										<td>
+											<select title="교육수준을 선택하세요." name="rank001" id="rank001" class="selectBox" style="width: 120px;">
+												<option selected="selected" value="">선택</option>
+												<option value="1"> 고급 </option>
+											</select>
+										</td>
+										<th scope="row">NCS 직능수준<br>(목표수준)</th>
+										<td>
+											<select title="목표수준을 선택하세요." name="rank002" id="rank002" class="selectBox" style="width: 120px;">
+												<option selected="selected" value="">선택</option>
+												<option value="1"> 고급 </option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="rightLine">학습근로자</th>
+										<th scope="row" colspan="2">훈련인원<br>(기업선정시 채용계획) <span class="color01">*</span></th>
+										<td>2명</td>
+										<th scope="row">추가 채용<br>예정 인원</th>
+										<td>2명</td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="3">기업현장교수 <span class="color01">*</span></th>
+										<td>2명</td>
+										<th scope="row">HRD 담당자 <span class="color01">*</span></th>
+										<td>1명</td>
+									</tr>
+									<tr>
+										<th scope="row">첨부파일 <span class="color01">*</span></th>
+										<td colspan="5">
+											<div class="AddFilesArea">
+												<dl class="fileBox">
+													<dt>
+														<div class="compareChk">
+															<div class="ui_checkBox single">
+																<input type="checkbox" name="attachFile02" id="attachFile02">
+																<label for="attachFile02">선택</label>
+															</div>
+															<span>첨부파일명.pptx <a href="/" class="btnDelete">삭제</a></span>
+														</div>
+													</dt>
+													<dd>31.24KB</dd>
+												</dl>
+												<div class="dragBox">
+													이곳을 더블클릭 또는 파일을 드래그하세요.
+												</div>
+												<div class="fileBtnBox">
+													<div class="btnGroup">
+														<button type="button" class="btnType2 btnTy2">파일추가</button>
+														<button type="button" class="btnType2 btnTy3">항목제거</button>
+														<button type="button" class="btnType2 btnTy4">전체 항목제거</button>
+													</div>
+												</div>
+												
+												<ul class="txtList type03">
+													<li>교육인증프로그램 보고서 첨부</li>
+													<li>업로드 가능 파일 확장자 : hwp, xls, ppt, doc, xlsx, pptx, docx, jpg, gif, zip</li>
+													<li>
+														단일 첨부파일의 최대 크기 : 5 Mbytes<br>
+														- 파일용량이 크거나 파일(엑셀 등) 업로드시 문제가 발생할 경우, 압축하여 업로드 하십시오.<br>
+														- 용량이 5MB를 초과하면 파일을 별도(CD 등)로 제출하십시오.
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType1">이전</button>
+							<button type="button" class="pBtnType2">다음</button>
+						</div>
+					</section>
+					<section id="section4" role="tabpanel" class="tabCont">
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">기업현장교수 / HRD담당자</h4>
+							</div>
+							<table class="list form">
+								<caption>기업현장교수 / HRD담당자 정보</caption>
+								<colgroup>
+								<col style="width:140px;">
+								<col style="width:160px;">
+								<col style="width:120px;">
+								<col style="width:120px;">
+								<col style="width:120px;">
+								<col style="width:auto;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2">인력구분</th>
+										<th scope="col">직위</th>
+										<th scope="col">성명</th>
+										<th scope="col">자격증</th>
+										<th scope="col">근무경력</th>
+										<th scope="col" rowspan="2" class="last">담당교과목</th>
+									</tr>
+									<tr>
+										<th scope="col">학력</th>
+										<th scope="col">생년월일</th>
+										<th scope="col">증빙서류</th>
+										<th scope="col">근무형태</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td rowspan="2">HRD 담당자</td>
+										<td></td>
+										<td>송기순</td>
+										<td></td>
+										<td></td>
+										<td rowspan="2" class="last"></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>1969.11.10</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td rowspan="2">기업현장교수</td>
+										<td></td>
+										<td>박형득</td>
+										<td></td>
+										<td>5년이상</td>
+										<td rowspan="2" class="left last">
+											<ul class="txtList type01">
+												<li>일학습병행 및 훈련과정의 이해</li>
+												<li>품질경영혁신</li>
+												<li>PBL실습2</li>
+												<li>품질관리</li>
+												<li>PBL실습</li>
+												<li>PBL실습1</li>
+												<li>하드웨어시험</li>
+												<li>생산안전관리</li>
+												<li>제품하드웨어 구성</li>
+												<li>생산지원</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>2~3년제대학교졸업</td>
+										<td>1969.11.10</td>
+										<td>
+											<button type="button" class="certificateBtn">경력증명서</button>
+										</td>
+										<td>정규직</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">훈련실시 장소</h4>
+							</div>
+							<table class="list form">
+								<caption>훈련실시 장소 정보</caption>
+								<colgroup>
+								<col style="width:160px;">
+								<col style="width:auto;">
+								<col style="width:100px;">
+								<col style="width:100px;">
+								<col style="width:120px;">
+								<col style="width:100px;">
+								<col style="width:100px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">장소명</th>
+										<th scope="col">소재지</th>
+										<th scope="col">전화번호</th>
+										<th scope="col">훈련방법</th>
+										<th scope="col">강의실 및<br>실습실 장소</th>
+										<th scope="col">훈련일자</th>
+										<th scope="col" class="last">강의실 면적<br>(m<sup>2</sup>)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>(주)거림</td>
+										<td>(15655) 경기도 안산시 단원구 엠티브이12로21번길 18 (성곡동 (주)거림) 4사 106</td>
+										<td></td>
+										<td>OJT</td>
+										<td></td>
+										<td></td>
+										<td class="last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">훈련시설 및 장비</h4>
+							</div>
+							<table class="list form">
+								<caption>훈련시설 및 장비 정보</caption>
+								<colgroup>
+								<col style="width:160px;">
+								<col style="width:100px;">
+								<col style="width:100px;">
+								<col style="width:auto;">
+								<col style="width:auto;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시설 및 장비명</th>
+										<th scope="col">보유수량</th>
+										<th scope="col">훈련방법</th>
+										<th scope="col" colspan="2" class="last">해당 교과목</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>X-RAY</td>
+										<td>1</td>
+										<td>OJT</td>
+										<td class="left">
+											<ul class="txtList type01">
+												<li>생산안전관리</li>
+											</ul>
+										</td>
+										<td class="left last"></td>
+									</tr>
+									<tr>
+										<td>스크린프린터</td>
+										<td>6</td>
+										<td>OJT</td>
+										<td class="left">
+											<ul class="txtList type01">
+												<li>일학습병행 및 훈련과정의 이해</li>
+												<li>품질경영혁신</li>
+												<li>PBL실습2</li>
+												<li>품질관리</li>
+												<li>PBL실습</li>
+												<li>PBL실습1</li>
+												<li>하드웨어시험</li>
+												<li>생산안전관리</li>
+												<li>제품하드웨어 구성</li>
+												<li>생산지원</li>
+											</ul>
+										</td>
+										<td class="left last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="tableArea form">
+							<div class="tableTitleArea">
+								<h4 class="tableTitle">첨부파일</h4>
+							</div>
+							<table class="view form">
+								<caption>첨부파일 등록</caption>
+								<colgroup>
+								<col style="width:200px;">
+								<col style="width:auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">훈련실시 장소 증빙자료</th>
+										<td>
+											<div class="AddFilesArea">
+												<dl class="fileBox">
+													<dt>
+														<div class="compareChk">
+															<div class="ui_checkBox single">
+																<input type="checkbox" name="attachFile04" id="attachFile04">
+																<label for="attachFile04">선택</label>
+															</div>
+															<span>첨부파일명.pptx <a href="/" class="btnDelete">삭제</a></span>
+														</div>
+													</dt>
+													<dd>31.24KB</dd>
+												</dl>
+												<div class="dragBox">
+													이곳을 더블클릭 또는 파일을 드래그하세요.
+												</div>
+												<div class="fileBtnBox">
+													<div class="btnGroup">
+														<button type="button" class="btnType2 btnTy2">파일추가</button>
+														<button type="button" class="btnType2 btnTy3">항목제거</button>
+														<button type="button" class="btnType2 btnTy4">전체 항목제거</button>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">시설 / 장비 증빙자료</th>
+										<td>
+											<div class="AddFilesArea">
+												<dl class="fileBox">
+													<dt>
+														<div class="compareChk">
+															<div class="ui_checkBox single">
+																<input type="checkbox" name="attachFile05" id="attachFile05">
+																<label for="attachFile05">선택</label>
+															</div>
+															<span>첨부파일명.pptx <a href="/" class="btnDelete">삭제</a></span>
+														</div>
+													</dt>
+													<dd>31.24KB</dd>
+												</dl>
+												<div class="dragBox">
+													이곳을 더블클릭 또는 파일을 드래그하세요.
+												</div>
+												<div class="fileBtnBox">
+													<div class="btnGroup">
+														<button type="button" class="btnType2 btnTy2">파일추가</button>
+														<button type="button" class="btnType2 btnTy3">항목제거</button>
+														<button type="button" class="btnType2 btnTy4">전체 항목제거</button>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<ul class="txtList type03">
+								<li>훈련실시장소 및 시설/장비에 대한 증빙자료를 파일로 첨부하는 화면입니다.</li>
+								<li>필수 입력항목은 아닙니다. 따라서 선택적으로 첨부해주시기 바랍니다.</li>
+							</ul>
+						</div>
+						
+						<div class="popBtnArea">
+							<button type="button" class="pBtnType1">이전</button>
+							<button type="button" class="pBtnType2">창닫기</button>
+						</div>
+					</section>
+				</div>
+			</div>
+			
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

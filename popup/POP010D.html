@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>훈련비용 산출 기준 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type02" style="width: 980px">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">훈련비용 산출 기준</h2>
+		</div>
+		<div class="popContEle">
+			
+			<!-- 훈련비용 산출 기준 테이블 -->
+			<div class="tableArea">
+				<!-- <div class="tableTitleArea mt0">
+					<h4 class="tableTitle">기업 및 훈련정보</h4>
+				</div> -->
+				<table class="list">
+					<caption>기업 및 훈련정보 리스트</caption>
+					<colgroup>
+					<col style="width: 140px;">
+					<col style="width: 150px;">
+					<col style="width: 195px;">
+					<col style="width: 195px;">
+					<col style="width: 220px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">항목</th>
+							<th scope="col">상시근로자 1,000인 미만 기업</th>
+							<th scope="col">상시근로자 1,000인 이상 기업</th>
+							<th scope="col" class="last">비고</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="3">공동훈련 센터형<br>(NCS 기반자격과정)</td>
+							<td>도제식현장교육훈련비<br>(OJT 훈련비)</td>
+							<td>
+								<p class="dot tc">직종별단가x3x인원x시간</p>
+							</td>
+							<td>
+								<p class="dot tc">직종별단가x2x인원x시간</p>
+							</td>
+							<td class="last">
+								<p class="asterisk">(연차별 감액 지급) 1년차 100%, 2년차 90%, 3년차 80%, 4년차 70%</p>
+								<p class="asterisk2">인프라 비용을 지원받지 않는 공동훈련센터에 Off-JT 훈련을 위탁한 경우 OJT 훈련비 10% 추가 감액</p>
+							</td>
+						</tr>
+						<tr>
+							<td>현장외 교육훈련비<br>(OFF-JT 훈련비)</td>
+							<td colspan="2">
+								<p class="dot">(직종별단가×조정계수×인원×시간)의 5배까지 실비 수준을 심사하여 지원하되, 3배까지 정산 없이 지원</p>
+								<p class="asterisk">단, 대학연계형은 학기당 최대 300만원 한도에서 지급</p>
+								<p class="asterisk2">고교 재학생 신분의 학습근로자의 경우 미지원</p>
+							</td>
+							<td class="last">
+								<p class="asterisk">공동훈련센터가 인프라 비용을 지원받지 않는 경우 공동훈련센터에 학습기업 OJT 훈련비의 10% 추가 지급</p>
+								<p class="asterisk">현장외훈련의 조정계수는 [별표 4]참조</p>
+							</td>
+						</tr>
+						<tr>
+							<td>숙식비</td>
+							<td colspan="2">
+								<p class="dot">1일 평균 5시간 이상인 off-jt를 실시하고 숙식을 제공하거나 숙식비를 지급한 경우에는 훈련비용(훈련비)외에 식비는 1일 3,300원까지, 숙식비는 1일 14,000원까지 지원</p>
+							</td>
+							<td class="last">
+								<p class="dot">월 330,000원 한도</p>
+								<p class="asterisk">기업내에서 Off-jt를 실시하는 경우 제외</p>
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="3">공동훈련 센터형<br>(모듈형 과정)</td>
+							<td>도제식현장교육훈련비<br>(OJT 훈련비)</td>
+							<td>
+								<p class="dot tc">직종별단가×1.5×인원×시간</p>
+							</td>
+							<td>
+								<p class="dot tc">직종별단가×1×인원×시간</p>
+							</td>
+							<td class="last">
+								<p class="asterisk">(연차별 감액 지급) 1년차 100%, 2년차 90%, 3년차 80%, 4년차 70%</p>
+								<p class="asterisk">인프라 비용을 지원받지 않는 공동훈련센터에 Off-JT 훈련을 위탁한 경우 OJT 훈련비 10% 추가 감액</p>
+							</td>
+						</tr>
+						<tr>
+							<td>현장외 교육훈련비<br>(OFF-JT 훈련비)</td>
+							<td colspan="2">
+								<p class="dot">(직종별단가×조정계수×훈련인원×시간)의 실비수준을 심사하여 지원하되 1.5배 한도 내에서 정산 없이 지원</p>
+							</td>
+							<td class="last">
+								<p class="asterisk">공동훈련센터가 인프라 비용을 지원받지 않는 경우 공동훈련센터에 학습기업 OJT 훈련비의 10% 추가 지급</p>
+								<p class="asterisk">현장외훈련의 조정계수는 [별표 4]참조</p>
+							</td>
+						</tr>
+						<tr>
+							<td>숙식비</td>
+							<td colspan="2">
+								<p class="dot">1일 평균 5시간 이상인 Off-JT를 실시하고, 숙식을 제공하거나 숙식비를 지급한 경우에는 훈련비용(훈련비)외에 식비는 1일 3,300원까지, 숙식비는 1일 14,000원까지 지원</p>
+								<p class="asterisk">고교재학생 신분의 학습근로자의 경우 미지원</p>
+							</td>
+							<td class="last">
+								<p class="dot">월 330,000원 한도</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //훈련비용 산출 기준 테이블 -->
+			
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

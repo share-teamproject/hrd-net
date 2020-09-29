@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>학습월차 관리 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type02" style="width: 980px">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">학습월차 관리</h2>
+		</div>
+		<div class="popContEle">
+			<!-- 학습월차 관리 테이블 -->
+			<div class="tableArea">
+				<table class="view mb0">
+					<caption>학습월차 관리 테이블</caption>
+					<colgroup>
+					<col style="width:160px;">
+					<col style="width:250px;">
+					<col style="width:110px;">
+					<col style="width:110px;">
+					<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">기업(기관)명</th>
+							<td class="last" colspan="4">
+								(주)거림<br>
+								[15616] 경기도 안산시 단원구 엠티브이12로21번길 18 (성곡동)
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">운영형태</th>
+							<td>P-TECH(NCS기반 자격 과정)</td>
+							<th scope="row" colspan="2">관할지부지사</th>
+							<td class="last">경기지사</td>
+						</tr>
+						<tr>
+							<th scope="row">훈련과정명</th>
+							<td class="last" colspan="4">
+								[P-TECH]정보통신기기하드웨어개발(전자기기하드웨어개발_L3_ver2.0)_(주)거림_2019_산업기사_대림대학교<br>
+								(ABF20193000614947)
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">훈련직종명</th>
+							<td>정보통신기기하드웨어개발 (19030301)</td>
+							<th scope="row" colspan="2">신청기업구분</th>
+							<td>사업장</td>
+						</tr>
+						<tr>
+							<th scope="row">훈련과정구분</th>
+							<td>일반</td>
+							<th scope="row" rowspan="4" class="borderR">훈련기간</th>
+							<th scope="row">실시기간<br>(회차)</th>
+							<td class="last">2019-03-09 ~ 2021-02-28 (1회차)</td>
+						</tr>
+						<tr>
+							<th scope="row">프로그램 유효기간</th>
+							<td>2019-03-11 ~ 2024-03-10</td>
+							<th scope="row">OJT</th>
+							<td>24개월 / 720일 / 662시간</td>
+						</tr>
+						<tr>
+							<th scope="row">훈련실시 인원</th>
+							<td>3 명</td>
+							<th scope="row">Off-JT</th>
+							<td>24개월 / 720일 / 660시간</td>
+						</tr>
+						<tr>
+							<th scope="row">적용단가</th>
+							<td>2,559 원 (정보통신기기하드웨어개발)</td>
+							<th scope="row">전체</th>
+							<td>24개월 / 720일 / 1322시간</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //학습월차 관리 테이블 -->
+			
+			<!-- 학습월차 목록 테이블 -->
+			<div class="tableArea">
+				<div class="tableTitleArea">
+					<h4 class="tableTitle">학습월차 목록</h4>
+					<div class="btnGroup tr">
+						<button type="button" class="btnType2">삭제</button>
+						<button type="button" class="btnType2 etc">수정</button>
+						<button type="button" class="btnType3">추가</button>
+					</div>
+				</div>
+				<table class="list">
+					<caption>학습월차 목록</caption>
+					<colgroup>
+					<col style="width: 60px;">
+					<col style="width: 60px;">
+					<col style="width: 80px;">
+					<col style="width: 110px;">
+					<col style="width: 110px;">
+					<col style="width: 90px;">
+					<col style="width: 95px;">
+					<col style="width: 95px;">
+					<col style="width: 100px;">
+					<col style="width: 100px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">전체</th>
+							<th scope="col">번호</th>
+							<th scope="col">월차</th>
+							<th scope="col">과정연계여부</th>
+							<th scope="col">학습기간</th>
+							<th scope="col">상태</th>
+							<th scope="col">학습일지</th>
+							<th scope="col">학습 활동서</th>
+							<th scope="col">등록일자</th>
+							<th scope="col" class="last">세부평가<br>계획서</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="radioGroup">
+									<div class="ui_radioBox single">
+										<input type="radio" name="studySelect" id="studySelect01">
+										<label for="studySelect01">선택</label>
+									</div>
+								</div>
+							</td>
+							<td>16</td>
+							<td>16월차</td>
+							<td>일반</td>
+							<td>2020-06-01 ~ 2020-06-30</td>
+							<td>작성중</td>
+							<td><button type="button" class="tableSmallBtn primary">등록</button></td>
+							<td><button type="button" class="tableSmallBtn">조회</button></td>
+							<td>2020-08-13</td>
+							<td class="last"></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="radioGroup">
+									<div class="ui_radioBox single">
+										<input type="radio" name="studySelect" id="studySelect02">
+										<label for="studySelect02">선택</label>
+									</div>
+								</div>
+							</td>
+							<td>15</td>
+							<td>16월차</td>
+							<td>일반</td>
+							<td>2020-06-01 ~ 2020-06-30</td>
+							<td>작성중</td>
+							<td><button type="button" class="tableSmallBtn primary">등록</button></td>
+							<td><button type="button" class="tableSmallBtn">조회</button></td>
+							<td>2020-08-13</td>
+							<td class="last"></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="radioGroup">
+									<div class="ui_radioBox single">
+										<input type="radio" name="studySelect" id="studySelect03">
+										<label for="studySelect03">선택</label>
+									</div>
+								</div>
+							</td>
+							<td>14</td>
+							<td>16월차</td>
+							<td>일반</td>
+							<td>2020-06-01 ~ 2020-06-30</td>
+							<td>작성중</td>
+							<td><button type="button" class="tableSmallBtn primary">등록</button></td>
+							<td><button type="button" class="tableSmallBtn">조회</button></td>
+							<td>2020-08-13</td>
+							<td class="last"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //학습월차 목록 테이블 -->
+			<div class="pagenation">
+				<a href="/" class="pb prev">이전보기</a>
+				<a href="/" class="on">1</a>
+				<a href="/">2</a>
+				<a href="/">3</a>
+				<a href="/">4</a>
+				<a href="/">5</a>
+				<a href="/">6</a>
+				<a href="/">7</a>
+				<a href="/" class="pb next">다음보기</a>
+			</div>
+			
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>교/강사 이력사항 입력 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type01" style="width: 980px;">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">교/강사 이력사항 입력</h2>
+		</div>
+		<div class="popContEle">
+			<div class="tableArea">
+				<div class="tableTitleArea mt0">
+					<h4 class="tableTitle">교/강사 정보</h4>
+				</div>
+				
+				<table class="view">
+					<caption>교/강사 정보</caption>
+					<colgroup>
+					<col style="width: 150px;">
+					<col style="width: auto;">
+					<col style="width: 150px;">
+					<col style="width: auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">성명</th>
+							<td>김용진</td>
+							<th scope="row">주민등록번호</th>
+							<td>810825-1******</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="tableArea form">
+				<div class="tableTitleArea mt0">
+					<h4 class="tableTitle">자격증 선택사항</h4>
+				</div>
+				<table class="view form">
+					<caption>자격증 선택사항 입력 폼</caption>
+					<colgroup>
+					<col style="width: 150px;">
+					<col style="width: auto;">
+					<col style="width: 150px;">
+					<col style="width: auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">경력구분 <span class="color01">*</span></th>
+							<td colspan="3">
+								<fieldset>
+									<legend>경력구분 선택</legend>
+									<div class="radioGroup">
+										<div class="ui_radioBox">
+											<input type="radio" name="career" id="career1">
+											<label for="career1">현장실무경력</label>
+										</div>
+										<div class="ui_radioBox">
+											<input type="radio" name="career" id="career2">
+											<label for="career2">강의경력</label>
+										</div>
+									</div>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="careerCate">경력구분</label> <span class="color01">*</span></th>
+							<td>
+								<input type="text" title="경력구분 입력" name="careerCate" id="careerCate">
+							</td>
+							<th scope="row"><label for="department">근무부서명</label></th>
+							<td>
+								<input type="text" title="근무부서명 입력" name="department" id="department">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="departmentContents">담당부서내용</label></th>
+							<td>
+								<input type="text" title="담당부서 내용 입력" name="departmentContents" id="departmentContents">
+							</td>
+							<th scope="row"><label for="jobTitle">직위명</label> <span class="color01">*</span></th>
+							<td>
+								<select name="jobTitle" title="직위 선택" id="jobTitle" class="selectBox" style="width:214px;">
+									<option value="all">선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">재직여부 <span class="color01">*</span></th>
+							<td>
+								<fieldset>
+									<legend>재직여부 선택</legend>
+									<div class="radioGroup">
+										<div class="ui_radioBox">
+											<input type="radio" name="serve" id="serveY">
+											<label for="serveY">예</label>
+										</div>
+										<div class="ui_radioBox">
+											<input type="radio" name="serve" id="serveN">
+											<label for="serveN">아니오</label>
+										</div>
+									</div>
+								</fieldset>
+							</td>
+							<th scope="row"><label for="employType">고용형태</label> <span class="color01">*</span></th>
+							<td>
+								<select name="employType" title="고용형태 선택" id="employType" class="selectBox" style="width:214px;">
+									<option value="all">선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">입사/퇴사일 <span class="color01">*</span></th>
+							<td colspan="3">
+								<div class="dateSelect">
+									<input type="text" placeholder="20201012" title="달력" name="date01" id="date01" class="selectW180">
+								</div>
+								<span class="dateSelectTxt01">~</span>
+								<div class="dateSelect">
+									<input type="text" placeholder="20201012" title="달력" name="date02" id="date02" class="selectW180">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="workday">주 근무일수</label></th>
+							<td>
+								<input type="text" title="주 근무일수 입력" name="workday" id="workday">
+							</td>
+							<th scope="row"><label for="worktime">일 근무시간</label></th>
+							<td>
+								<input type="text" title="일 근무시간 입력" name="worktime" id="worktime">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="researCareer">연구경력년수</label></th>
+							<td>
+								<input type="text" title="연구경력년수 입력" name="researCareer" id="researCareer">
+							</td>
+							<th scope="row"><label for="fieldCarrer">현장경력년수</label></th>
+							<td>
+								<select name="fieldCarrer" title="현장경력년수 선택" id="fieldCarrer" class="selectBox" style="width:214px;">
+									<option value="all">선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">증빙서류</th>
+							<td colspan="3">
+								<div class="AddFilesArea">
+									<dl class="fileBox">
+										<dt>
+											<div class="compareChk">
+												<div class="ui_checkBox single">
+													<input type="checkbox" name="compareChk" id="compareChk04">
+													<label for="compareChk04">선택</label>
+												</div>
+												<span>첨부파일명.pptx <a href="/" class="btnDelete">삭제</a></span>
+											</div>
+										</dt>
+										<dd>31.24KB</dd>
+									</dl>
+									<div class="dragBox">
+										이곳을 더블클릭 또는 파일을 드래그하세요.
+									</div>
+									<div class="fileBtnBox">
+										<div class="btnGroup">
+											<button type="button" class="btnType2 btnTy2">파일추가</button>
+											<button type="button" class="btnType2 btnTy3">항목제거</button>
+											<button type="button" class="btnType2 btnTy4">전체 항목제거</button>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			
+			
+			<div class="popBtnArea">
+				<button type="button" class="pBtnType2">저장</button>
+			</div>
+			
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

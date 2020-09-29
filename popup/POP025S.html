@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>대리인 선임신청 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type01" style="width: 980px;">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">대리인 선임신청</h2>
+		</div>
+		<div class="popContEle">
+			<div class="tableArea form">
+				<div class="tableTitleArea mt0">
+					<h4 class="tableTitle">기업 대리인 선임신청</h4>
+					<div class="tableComment">"<span class="color01">＊</span>" 는 필수 입력 항목 입니다.</div>
+				</div>
+				<table class="view form">
+					<caption>기업 대리인 선임신청 정보 입력</caption>
+					<colgroup>
+					<col style="width:150px;">
+					<col style="width:auto;">
+					<col style="width:150px;">
+					<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="userName">대리인 성명</label> <span class="color01">＊</span></th>
+							<td>
+								<input type="text" id="userName" name="userName" title="대리인 성명 입력">
+							</td>
+							<th scope="row">주민등록번호 <span class="color01">＊</span></th>
+							<td>
+								<div class="inputGroup">
+									<input type="text" id="RRN1" name="RRN1" title="주민등록번호 앞자리 입력" style="min-width: 100px; max-width: 100px;">
+									<span class="line">-</span>
+									<input type="text" id="RRN2" name="RRN2" title="주민등록번호 뒷자리 입력" style="min-width: 100px; max-width: 100px;">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">구분</th>
+							<td colspan="3">기업 대리인</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰번호 <span class="color01">＊</span></th>
+							<td colspan="3">
+								<fieldset>
+									<legend class="labelTitle verM">담당자 휴대전화번호 <span class="color01">＊</span></legend>
+									<div class="inputGroup">
+										<select title="지역번호를 선택하세요." name="userHp01" id="userHp01" class="selectBox telSelect">
+											<option selected="selected" value="">선택</option>
+											<option value="010"> 010 </option>
+										</select>
+										<span class="line">-</span>
+										<input type="text" title="중간4자리를 입력하세요" name="userHp02" id="userHp02" class="telInput">
+										<span class="line">-</span>
+										<input type="text" title="끝4자리를 입력하세요" name="userHp03" id="userHp03" class="telInput">
+									</div>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="userAddr01">주소</label> <span class="color01">＊</span></th>
+							<td colspan="3">
+								<fieldset>
+									<legend>주소</legend>
+									<div class="inputBox addrBox">
+										<div class="inputGroup">
+											<input type="text" id="userAddr01" name="userAddr01" title="우편번호를 입력하세요" class="addrCodeInput">
+											<button type="button" class="btnType2 addrCodeBtn">우편번호 찾기</button>
+										</div>
+										<p><input type="text" class="w100p mt10" id="userAddr02" name="userAddr02" title="주소를 입력하세요"></p>
+										<p><input type="text" class="w100p mt10" id="userAddr03" name="userAddr03" title="상세주소를 입력하세요"></p>
+									</div>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="userMail01">이메일</label></th>
+							<td colspan="3">
+								<fieldset>
+									<legend>이메일</legend>
+									<div class="inputGroup">
+										<input type="text" value="" title="메일 계정을 입력하세요" name="userMail01" id="userMail01" class="emailInput">
+										<span class="line">@</span>
+										<input type="text" value="" title="메일 계정을 입력하세요" name="userMail02" id="userMail02" class="emailInput">
+									</div>
+									<div class="inputGroup bot">
+										<select title="메일 항목 선택" id="userMail03" name="userMail03" class="selectBox emailSelect">
+											<option value="all">선택</option>
+											<option value="mail1">gmail.com</option>
+											<option value="mail2">nate.com</option>
+											<option value="mail3">직접입력</option>
+										</select>
+									</div>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="role">대리인 직책</label></th>
+							<td>
+								<input type="text" id="role" name="role" title="대리인 직책 입력">
+							</td>
+							<th scope="row">신청일</th>
+							<td>2020-08-21</td>
+						</tr>
+						<tr>
+							<th scope="row">전자통지 수신</th>
+							<td colspan="3">
+								<fieldset>
+									<legend>전자통지 수신여부 선택</legend>
+									<div class="radioGroup">
+										<div class="ui_radioBox">
+											<input type="radio" name="email" id="emailY" checked>
+											<label for="emailY">예</label>
+										</div>
+										<div class="ui_radioBox">
+											<input type="radio" name="email" id="emailN">
+											<label for="emailN">아니오</label>
+										</div>
+									</div>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">고용보험 피보험자 여부</th>
+							<td colspan="3">
+								<fieldset>
+									<legend>고용보험 피보험자 여부 선택</legend>
+									<div class="radioGroup">
+										<div class="ui_radioBox">
+											<input type="radio" name="insured" id="insuredY" checked>
+											<label for="insuredY">예</label>
+										</div>
+										<div class="ui_radioBox">
+											<input type="radio" name="insured" id="insuredN">
+											<label for="insuredN">아니오</label>
+										</div>
+									</div>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="rightLine" rowspan="2">고용보험 피보험자가 아닌 경우</th>
+							<th scope="row">대표자와의 관계</th>
+							<td colspan="2">
+								<fieldset>
+									<legend>대표자와의 관계 선택</legend>
+									<div class="radioGroup type01">
+										<div class="ui_radioBox">
+											<input type="radio" name="relation" id="relation1" checked>
+											<label for="relation1">배우자</label>
+										</div>
+										<div class="ui_radioBox">
+											<input type="radio" name="relation" id="relation2">
+											<label for="relation2">직계존속</label>
+										</div>
+										<div class="ui_radioBox">
+											<input type="radio" name="relation" id="relation3">
+											<label for="relation3">직계비속</label>
+										</div>
+										<div class="ui_radioBox">
+											<input type="radio" name="relation" id="relation4">
+											<label for="relation4">교&middot;강사</label>
+										</div>
+									</div>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="reason">대리인으로 선임하는 사유</label></th>
+							<td colspan="2">
+								<input type="text" id="reason" name="reason" title="대리인으로 선임하는 사유 입력">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">증빙서류</th>
+							<td colspan="3">
+								<div class="AddFilesArea">
+									<dl class="fileBox">
+										<dt>
+											<div class="compareChk">
+												<div class="ui_checkBox single">
+													<input type="checkbox" name="compareChk" id="compareChk04">
+													<label for="compareChk04">선택</label>
+												</div>
+												<span>첨부파일명.pptx <a href="/" class="btnDelete">삭제</a></span>
+											</div>
+										</dt>
+										<dd>31.24KB</dd>
+									</dl>
+									<div class="dragBox">
+										이곳을 더블클릭 또는 파일을 드래그하세요.
+									</div>
+									<div class="fileBtnBox">
+										<div class="btnGroup">
+											<button type="button" class="btnType2 btnTy2">파일추가</button>
+											<button type="button" class="btnType2 btnTy3">항목제거</button>
+											<button type="button" class="btnType2 btnTy4">전체 항목제거</button>
+										</div>
+									</div>
+									<ul class="txtList type03">
+										<li>신청서와 보안서약서를 작성하여 같이 첨부하시기 바랍니다.</li>
+										<li>파일 크기는 5메가로 제한되며 2개 이상의 파일은 압축해서 올려주십시오. (hwp, doc, zip, pdf)</li>
+									</ul>
+									
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<ul class="txtList type03">
+				<li>기업 대표자 또는 다른 대리인이 전자통지를 수신하는 경우, 전자통지를 수신할 수 없습니다.</li>
+				<li>'근로자직업능력개발법' 제 6조에 따라 대리인 선입(해임)을 신청합니다.</li>
+			</ul>
+			
+			<div class="popBtnArea">
+				<button type="button" class="pBtnType2">선임신청</button>
+			</div>
+			
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

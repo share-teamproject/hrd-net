@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>훈련결과 신청 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type02" style="width: 1200px">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">훈련결과 신청</h2>
+		</div>
+		<div class="popContEle">
+			<!-- 훈련결과 신청 테이블 -->
+			<div class="tableArea">
+				<table class="view mb0">
+					<caption>훈련결과 신청 테이블</caption>
+					<colgroup>
+					<col style="width:170px;">
+					<col style="width:250px;">
+					<col style="width:170px;">
+					<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">월차</th>
+							<td>16 월차</td>
+							<th scope="row">학습기간</th>
+							<td class="last">2020-06-01 ~ 2020-06-30</td>
+						</tr>
+						<tr>
+							<th scope="row">HRD 담당자</th>
+							<td>송기순</td>
+							<th scope="row">과정연계 월차여부</th>
+							<td class="last">일반</td>
+						</tr>
+						<tr>
+							<th scope="row">교과목명</th>
+							<td>PBL 실습</td>
+							<th scope="row">능력단위명</th>
+							<td class="last">PBL실습1 ( BCS20190312000867067 )</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //훈련결과 신청 테이블 -->
+			
+			<!-- 학습근로자별 정규훈련결과 입력 테이블 -->
+			<div class="tableArea">
+				<div class="tableTitleArea">
+					<h4 class="tableTitle">학습근로자별 정규훈련결과 입력</h4>
+				</div>
+				<table class="list">
+					<caption>학습근로자별 정규훈련결과 입력</caption>
+					<colgroup>
+					<col style="width: 60px;">
+					<col style="width: auto;">
+					<col style="width: 90px;">
+					<col style="width: 120px;">
+					<col style="width: 70px;">
+					<col style="width: 70px;">
+					<col style="width: 120px;">
+					<col style="width: 100px;">
+					<col style="width: 100px;">
+					<col style="width: 120px;">
+					<col style="width: 100px;">
+					<col style="width: 100px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">번호</th>
+							<th scope="col" rowspan="2">성명<br>(생년월일)</th>
+							<th scope="col" rowspan="2">상태<br>(상태변경일)</th>
+							<th scope="col" rowspan="2">선행학습<br>여부</th>
+							<th scope="col" rowspan="2">전체 훈련시간</th>
+							<th scope="col" rowspan="2">월간 훈련시간</th>
+							<th scope="col" colspan="3">정규 훈련결과</th>
+							<th scope="col" colspan="3" class="last">보강 훈련결과</th>
+						</tr>
+						<tr>
+							<th scope="col" class="topLine">훈련시간</th>
+							<th scope="col">성취도</th>
+							<th scope="col">비고</th>
+							<th scope="col" class="topLine">훈련시간</th>
+							<th scope="col">성취도</th>
+							<th scope="col">비고</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>홍길동<br>(000313)</td>
+							<td>훈련중</td>
+							<td>
+								<div class="ui_radioBox first">
+									<input type="radio" name="priorYN01" id="priorY01">
+									<label for="priorY01">예</label>
+								</div>
+								<div class="ui_radioBox ml0">
+									<input type="radio" name="priorYN01" id="priorN01" checked>
+									<label for="priorN01">아니오</label>
+								</div>
+							</td>
+							<td>45시간</td>
+							<td>5시간</td>
+							<td>
+								<input type="text" value="5" title="정규훈련시간 입력" name="regularHour" id="regularHour01" style="width: 60px; min-width: 60px;"> 시간
+							</td>
+							<td>
+								<select name="regularArchieve" title="정규훈련 성취도 입력" id="regularArchieve01" class="selectBox">
+									<option value="">5</option>
+								</select>
+							</td>
+							<td>
+								<textarea name="regularEtc" id="regularEtc01" cols="30" rows="10" title="정규훈련결과 비고 입력"></textarea>
+							</td>
+							<td>
+								<input type="text" value="5" title="보강훈련시간 입력" name="extraHour" id="extraHour01" style="width: 60px; min-width: 60px;"> 시간
+							</td>
+							<td>
+								<select name="extraArchieve" title="보강훈련 성취도 입력" id="extraArchieve01" class="selectBox">
+									<option value="">5</option>
+								</select>
+							</td>
+							<td>
+								<textarea name="extraEtc" id="extraEtc01" cols="30" rows="10" title="보강훈련결과 비고 입력"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>홍길동<br>(000313)</td>
+							<td>훈련중</td>
+							<td>
+								<div class="ui_radioBox first">
+									<input type="radio" name="priorYN02" id="priorY02">
+									<label for="priorY02">예</label>
+								</div>
+								<div class="ui_radioBox ml0">
+									<input type="radio" name="priorYN02" id="priorN02" checked>
+									<label for="priorN02">아니오</label>
+								</div>
+							</td>
+							<td>45시간</td>
+							<td>5시간</td>
+							<td>
+								<input type="text" value="5" title="정규훈련시간 입력" name="regularHour" id="regularHour02" style="width: 60px; min-width: 60px;"> 시간
+							</td>
+							<td>
+								<select name="regularArchieve" title="정규훈련 성취도 입력" id="regularArchieve02" class="selectBox">
+									<option value="">5</option>
+								</select>
+							</td>
+							<td>
+								<textarea name="regularEtc" id="regularEtc02" cols="30" rows="10" title="정규훈련결과 비고 입력"></textarea>
+							</td>
+							<td>
+								<input type="text" value="5" title="보강훈련시간 입력" name="extraHour" id="extraHour02" style="width: 60px; min-width: 60px;"> 시간
+							</td>
+							<td>
+								<select name="extraArchieve" title="보강훈련 성취도 입력" id="extraArchieve02" class="selectBox">
+									<option value="">5</option>
+								</select>
+							</td>
+							<td>
+								<textarea name="extraEtc" id="extraEtc02" cols="30" rows="10" title="보강훈련결과 비고 입력"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //교과목 및 능력단위별 훈련일지 테이블 -->
+			<ul class="txtList type03">
+				<li>보강훈련을 실시한 학습근로자의 보강결과를 등록해 주시기 바랍니다.</li>
+				<li>보강훈련결과가 미입력된 학습근로자는 해당 월차의 보강시간이 0 시간으로 처리 됩니다.</li>
+			</ul>
+			
+			<div class="popBtnArea ty2">
+				<button type="button" class="pBtnType2">신청</button>
+			</div>
+			
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

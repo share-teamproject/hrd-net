@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>비용신청 훈련과정 선택 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type01" style="width: 980px">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">비용신청 훈련과정 선택</h2>
+		</div>
+		<div class="popContEle">
+			<div class="tableArea form">
+				<div class="tableTitleArea mt0">
+					<h4 class="tableTitle">훈련과정 검색</h4>
+				</div>
+				
+				<table class="view">
+					<caption>훈련과정 검색 정보 입력</caption>
+					<colgroup>
+					<col style="width:160px;">
+					<col style="width:auto;">
+					<col style="width:160px;">
+					<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">훈련시작년 월</th>
+							<td>
+								2019년
+								<select title="훈련시작 월 선택" name="trainingMonth" id="trainingMonth" class="selectBox">
+									<option selected="selected" value="">선택</option>
+									<option value="1"> 1월 </option>
+								</select>
+							</td>
+							<th scope="row">훈련방법</th>
+							<td>
+								<select title="훈련방법 선택" name="trainingWay" id="trainingWay" class="selectBox w100p">
+									<option selected="selected" value="all">전체</option>
+									<option value="1"> 집체훈련 </option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">훈련기관</th>
+							<td><input type="text" id="trainingAgency" name="trainingAgency" title="훈련기관명 입력" class="w100p"></td>
+							<th scope="row">훈련기관 관리번호</th>
+							<td><input type="text" id="trainingCode" name="trainingCode" title="훈련기관 관리번호 입력" class="w100p"></td>
+						</tr>
+						<tr>
+							<th scope="row">훈련과정명</th>
+							<td><input type="text" id="trainingTitle" name="trainingTitle" title="훈련과정명 입력" class="w100p"></td>
+							<th scope="row">훈련과정ID</th>
+							<td><input type="text" id="trainingId" name="trainingId" title="훈련과정ID 입력" class="w100p"></td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+			
+			
+			<div class="popBtnArea mt10">
+				<button type="button" class="pBtnType2">검색</button>
+			</div>
+			
+			
+			<div class="sortArea">
+				<p class="totalNum">전체 <strong>3</strong> 건</p>
+				<div class="selectViewArea">
+					<div class="selectView">
+						<label for="pageRow1">페이지당 조회건수</label>
+						<select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
+							<option value="10" selected="selected">10개씩</option>
+							<option value="20">20개씩</option>
+							<option value="30">30개씩</option>
+							<option value="50">50개씩</option>
+							<option value="100">100개씩</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="tableArea">
+				<table class="list">
+					<caption>비용신청 훈련과정 목록</caption>
+					<colgroup>
+					<col style="width: 60px;">
+					<col style="width: 60px;">
+					<col style="width: 120px;">
+					<col style="width: auto;">
+					<col style="width: 60px;">
+					<col style="width: 100px;">
+					<col style="width: 120px;">
+					<col style="width: 100px;">
+					<col style="width: 80px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">
+								<div class="ui_checkBox single">
+									<input type="checkbox" name="trainingAll" id="trainingAll">
+									<label for="trainingAll">선택</label>
+								</div>
+							</th>
+							<th scope="col">연번</th>
+							<th scope="col">훈련기관</th>
+							<th scope="col">훈련과정명</th>
+							<th scope="col">회차</th>
+							<th scope="col">훈련방법</th>
+							<th scope="col">훈련기간</th>
+							<th scope="col">비용신청대<br>행동의여부</th>
+							<th scope="col" class="last">결제여부</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="ui_checkBox single">
+									<input type="checkbox" name="trainingItem1" id="trainingItem1">
+									<label for="trainingItem1">선택</label>
+								</div>
+							</td>
+							<td>1</td>
+							<td>㈜한국코퍼</td>
+							<td>국민콜 채용예정자 교육2 (18일 128시간)</td>
+							<td>1</td>
+							<td>집체훈련</td>
+							<td>2019-09-03 <br>~ 2019-09-30</td>
+							<td>미동의</td>
+							<td class="last">N</td>
+						</tr><tr>
+							<td>
+								<div class="ui_checkBox single">
+									<input type="checkbox" name="trainingItem2" id="trainingItem2">
+									<label for="trainingItem2">선택</label>
+								</div>
+							</td>
+							<td>2</td>
+							<td>㈜한국코퍼</td>
+							<td>국민콜 채용예정자 교육2 (18일 128시간)</td>
+							<td>1</td>
+							<td>집체훈련</td>
+							<td>2019-09-03 <br>~ 2019-09-30</td>
+							<td>미동의</td>
+							<td class="last">N</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btnGroup clearFixed">
+					<button type="button" class="uiBtn fr">과정추가</button>
+				</div>
+				<div class="pagenation">
+					<a href="/" class="pb prev">이전보기</a>
+					<a href="/" class="on">1</a>
+					<a href="/">2</a>
+					<a href="/">3</a>
+					<a href="/">4</a>
+					<a href="/">5</a>
+					<a href="/">6</a>
+					<a href="/">7</a>
+					<a href="/" class="pb next">다음보기</a>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

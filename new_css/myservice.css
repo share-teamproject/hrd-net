@@ -2148,4 +2148,75 @@ button.btnType01 { min-width:220px; display:inline-block; text-align:center; bac
 .teachProfile .dlProfile dd { width:190px; font-size:14px; line-height:24px; color:#666; padding:0 0 15px 15px; }
 .teachProfile .dlProfile dd.cols3 { width:calc(100% - 125px); }
 
+/* ==============================
+* MY서비스(기업) - 팝업 .popEle.type01
+* ============================== */
+.popEle.type01 .tabContents > .tabCont { margin-top: 30px !important; }
+.popEle.type01 .tabContents > .tabCont .tableArea .tableTitleArea { margin-top: 0; }
+.popEle.type01 .tableArea.form table.view.form th.rightLine { border-right: 1px solid #e2e2e4;}
+.popEle.type01 .tableArea table.view.form .inputGroup { display:inline-block; }
+.popEle.type01 .tableArea table.view.form .inputGroup .urlInput { width:500px; max-width:440px; }
+.popEle.type01 .tableArea table.view.form .inputGroup .line { display:inline-block; line-height:65px; padding:0 5px; }
+.popEle.type01 .tableArea table.view.form .inputGroup .telSelect { width:148px; }
+.popEle.type01 .tableArea table.view.form .inputGroup .telInput { width:148px; }
+.popEle.type01 .tableArea table.view.form .inputGroup .emailSelect { display:inline-block; width:148px; margin-left:10px; }
+.popEle.type01 .tableArea table.view.form .inputGroup .emailInput { display:inline-block; width:148px; }
+.popEle.type01 .tableArea table.view.form .dateSelect { display:inline-block; height:40px; padding:0; line-height:35px;}
+.popEle.type01 .tableArea table.view th.rightLine { border-right: 1px solid #e2e2e4; }
+.popEle.type01 .tableArea table.view.rw th { width:210px; }
+
+.popEle.type01 .tableArea table.list.form .radioGroup.type01 .ui_radioBox,
+.popEle.type01 .tableArea table.view.form .radioGroup.type01 .ui_radioBox { padding-left: 30px; }
+.popEle.type01 .tableArea table.list.form .radioGroup.type01 .ui_radioBox label,
+.popEle.type01 .tableArea table.view.form .radioGroup.type01 .ui_radioBox label { margin-right: 0; }
+.popEle.type01 .tableArea table.list.form .radioGroup.type01 .ui_radioBox + .ui_radioBox{ margin-left: 5px; }
+.popEle.type01 .tableArea table.list td.left {padding: 14px 5px;}
+.popEle.type01 .tableArea table.list th.bottomLine { border-bottom: 1px solid #e2e2e4; }
+
+.popEle.type01 .tableArea table .certificateBtn,
+.popEle.type01 .tableArea table .smallBtn { height: 26px; line-height: 24px; font-size: 12px; background: #fff; padding:0 12px; border: 1px solid #258384; color: #258384; }
+.popEle.type01 .popContBtn { text-decoration: underline; }
+.popEle.type01 .tableArea table .moneyInput { min-width: 80px; width: 80px; text-align: right; font-size: 12px;}
+.popEle.type01 .tableArea table input[type="text"]:read-only {background:#ebebeb;}
+.popEle.type01 .tableArea table input[type="text"]:-moz-read-only {background:#ebebeb;}
+.popEle.type01 .tableArea table.list tfoot th { border-bottom:1px solid #e2e2e4; }
+.popEle.type01 .tableArea table.list tfoot td { background:#fff;}
+
+.popEle.type01 .searchWrap { width:100%; margin:0 0 30px; padding:30px 30px; }
+.popEle.type01 .searchWrap .cate { width:150px; }
+.popEle.type01 .searchWrap .inputBox { display:inline-block; }
+.popEle.type01 .searchWrap .inputBox .serchInput { width:270px; }
+
+.popEle.type01 .ncsBoxWrap .box { float:left; width:23%; margin: 0 0 0 20px; }
+.popEle.type01 .ncsBoxWrap .box.first { margin-left:0; }
+.popEle.type01 .ncsBoxWrap .box .title { position: relative; padding-left:20px; }
+.popEle.type01 .ncsBoxWrap .box .title::before { content:''; display:inline-block; position:absolute; top:5px; left:0; width:14px; height:14px; border-radius:3px; border:1px solid #5b648a; transform: rotate(-180deg); background:#fff url("../new_images/common/btnPage.png") 3px 0 no-repeat;}
+.popEle.type01 .ncsBoxWrap .box .innerBox { height:400px; overflow:hidden; margin:10px 0 0; box-sizing:border-box; border:1px solid #ebebeb; }
+.popEle.type01 .ncsBoxWrap .box .innerBox .tableArea {overflow:auto; height:100%;}
+.popEle.type01 .ncsBoxWrap .box .innerBox .tableArea table.list { height:100%; margin-bottom:0; }
+
+/* ==============================
+* MY서비스(기업) - 팝업 .popEle.type02
+* ============================== */
+
+.popEle.type02 .tableArea table.view th.borderR { border-right: 1px solid #e2e2e4; }
+.popEle.type02 .tableArea table.view td.borderR { border-right: 1px solid #e2e2e4; }
+.popEle.type02 .tableArea table.list tfoot th { border-bottom: 1px solid #e2e2e4; }
+.popEle.type02 .tableArea table .notice { margin-top: 20px; }
+.popEle.type02 .tableArea table .dateSelect.tableDate.mid { vertical-align: middle; }
+.popEle.type02 .dot, .popEle.type02 .asterisk, .popEle.type02 .asterisk2 { text-align: left; }
+.popEle.type02 .dot:before { content: '·'; margin-right: 5px; }
+.popEle.type02 .asterisk:before { content: '*'; margin-right: 5px; }
+.popEle.type02 .asterisk2:before { content: '**'; margin-right: 5px; }
+.popEle.type02 button.tableSmallBtn { height: 26px; line-height: 24px; font-size: 12px; background: #fff; padding: 0 12px; border: 1px solid #258384; color: #258384; }
+.popEle.type02 button.tableSmallBtn.primary { border-color: #417f; color: #4171df; }
+.popEle.type02 button.pSmallBtnType2 { margin-left: 10px; margin-right: 10px;; font-size: 14px; border: 1px solid #000000; border-radius: 5px; line-height: 33px; color: #000000; }
+.popEle.type02 .tableTitleArea + .txtList.type03 li:first-child { margin: 0 0 10px 0; }
+.popEle.type02 .AddFilesArea { margin-bottom: 0; }
+.popEle.type02 .ml0 { margin-left: 0!important; }
+.popEle.type02 .ui_radioBox.first { margin: 20px 0 10px; }
+.popEle.type02 .subjectInput { width: 138px; min-width: 138px; margin-bottom: 5px; }
+.popEle.type02 .dateSelect.w100 input[type="text"] { width: 100px; min-width: 100px; }
+.popEle.type02 .btnFile { vertical-align: middle; }
+
 

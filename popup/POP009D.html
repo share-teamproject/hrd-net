@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>실시신고 내역 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type02" style="width: 980px">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">실시신고 내역</h2>
+		</div>
+		<div class="popContEle">
+			
+			<!-- 실시신고 테이블 -->
+			<div class="tableArea">
+				<div class="tableTitleArea mt0">
+					<h3 class="ctyTit">실시신고</h3>
+				</div>
+				<table class="view mb0">
+					<caption>경력정보</caption>
+					<colgroup>
+					<col style="width:160px;">
+					<col style="width:250px;">
+					<col style="width:110px;">
+					<col style="width:110px;">
+					<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">기업(기관)명</th>
+							<td class="last" colspan="4">(주)거림</td>
+						</tr>
+						<tr>
+							<th scope="row">운영형태</th>
+							<td>도제학교</td>
+							<th scope="row" colspan="2">관할지부지사</th>
+							<td class="last">한국산업인력공단 경기지사</td>
+						</tr>
+						<tr>
+							<th scope="row">훈련과정명</th>
+							<td class="last" colspan="4">
+								전자부품생산_L2_(군자공고)_(주)거림<br>
+								(ABG20173000453769)
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">훈련기관관리번호</th>
+							<td>500020081235</td>
+							<th scope="row" rowspan="4" class="borderR">훈련기간</th>
+							<th scope="row">실시기간</th>
+							<td class="last">2017-03-01 ~ 2019-02-28</td>
+						</tr>
+						<tr>
+							<th scope="row">NCS 직종명<br>(NCS 직종코드)</th>
+							<td>전자부품생산 (19020202) / (2,414원)</td>
+							<th scope="row">OJT</th>
+							<td>24 개월 / 730 일 / 750 시간 (온라인 : 0시간)</td>
+						</tr>
+						<tr>
+							<th scope="row">(구)훈련직종명<br>(훈련직종코드)</th>
+							<td>(--) / (0원)</td>
+							<th scope="row">Off-JT</th>
+							<td>24 개월 / 464 일 / 464 시간 (온라인 : 0시간)</td>
+						</tr>
+						<tr>
+							<th scope="row">훈련실시가능인원<br>(정원)</th>
+							<td>3명</td>
+							<th scope="row">전체</th>
+							<td>24 개월 / 730 일 / 1214 시간 (온라인 : 0시간)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //실시신고 테이블 -->
+			
+			<h3 class="ctyTit mt60">학습근로자(1인당) 훈련비 계산</h3>
+			
+			<!-- 기업 및 훈련정보 테이블 -->
+			<div class="tableArea">
+				<div class="tableTitleArea mt0">
+					<h4 class="tableTitle">기업 및 훈련정보</h4>
+					<div class="popBtnAreaRight ty2">
+						<button type="button" class="pSmallBtnType2">훈련비용 산출기준</button>
+					</div>
+				</div>
+				<table class="list">
+					<caption>기업 및 훈련정보 리스트</caption>
+					<colgroup>
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					<col style="width: 90px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="4">기업정보</th>
+							<th scope="col" colspan="6" class="last">훈련정보</th>
+						</tr>
+						<tr>
+							<th scope="col" rowspan="2" class="topLine">기업명</th>
+							<th scope="col" colspan="2" class="topLine">상시 근로자 수</th>
+							<th scope="col" rowspan="2" class="topLine">등록된<br>훈련생</th>
+							<th scope="col" rowspan="2" class="topLine">구분</th>
+							<th scope="col" rowspan="2" class="topLine">훈련방법</th>
+							<th scope="col" rowspan="2" class="topLine">개월/일</th>
+							<th scope="col" rowspan="2" class="topLine">시간</th>
+							<th scope="col" rowspan="2" class="topLine">직종단가</th>
+							<th scope="col" rowspan="2" class="topLine last">조정계수</th>
+						</tr>
+						<tr>
+							<th scope="col" class="topLine">참여신청<br>기준</th>
+							<th scope="col" class="topLine">실시신고<br>기준</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">(주)거림</td>
+							<td rowspan="2">21 명</td>
+							<td rowspan="2">21 명</td>
+							<td rowspan="2">3 명</td>
+							<td><strong class="bold">OJT</strong></td>
+							<td>자체</td>
+							<td>24/730</td>
+							<td>750</td>
+							<td rowspan="2">2,414</td>
+							<td class="last">3</td>
+						</tr>
+						<tr>
+							<td><strong class="bold">off-JT</strong></td>
+							<td>위탁</td>
+							<td>24/464</td>
+							<td>464</td>
+							<td class="last">1.45</td>
+						</tr>
+						<!-- 데이터 없을때
+						<tr>
+							<td colspan="10" class="last">기업 및 훈련정보 내용이 없습니다.</td>
+						</tr>
+						-->
+					</tbody>
+				</table>
+			</div>
+			<!-- //기업 및 훈련정보 테이블 -->
+			
+			<!-- 훈련비용 정보 테이블 -->
+			<div class="tableArea">
+				<div class="tableTitleArea">
+					<h4 class="tableTitle">훈련비용 정보</h4>
+				</div>
+				<table class="list">
+					<caption>훈련비용 정보 리스트</caption>
+					<colgroup>
+					<col style="width: 130px;">
+					<col style="width: 130px;">
+					<col style="width: 130px;">
+					<col style="width: 130px;">
+					<col style="width: 130px;">
+					<col style="width: 125px;">
+					<col style="width: 125px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="5">훈련비용</th>
+							<th scope="col" colspan="2" class="last">훈련기간</th>
+						</tr>
+						<tr>
+							<th scope="col" class="topLine">소계</th>
+							<th scope="col" class="topLine">OJT 비용</th>
+							<th scope="col" class="topLine">Off-JT</th>
+							<th scope="col" class="topLine">숙식비</th>
+							<th scope="col" class="topLine">식비</th>
+							<th scope="col" class="topLine">개월/일</th>
+							<th scope="col" class="topLine last">시간</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>5,431,500</td>
+							<td>5,431,500</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>24</td>
+							<td class="last">730</td>
+						</tr>
+						<!-- 데이터 없을 때
+						<tr>
+							<td class="last" colspan="7">훈련비용 정보가 없습니다.</td>
+						</tr>
+						-->
+					</tbody>
+				</table>
+			</div>
+			<!-- //훈련비용 정보 테이블 -->
+			
+			<!-- 학습근로자 명단 -->
+			<div class="tableArea">
+				<div class="tableTitleArea">
+					<h4 class="tableTitle">학습근로자 명단</h4>
+				</div>
+				<table class="list">
+					<caption>학습근로자 명단 리스트</caption>
+					<colgroup>
+					<col style="width: 65px;">
+					<col style="width: 90px;">
+					<col style="width: 65px;">
+					<col style="width: 95px;">
+					<col style="width: 95px;">
+					<col style="width: 95px;">
+					<col style="width: 95px;">
+					<col style="width: 95px;">
+					<col style="width: 102px;">
+					<col style="width: 103px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">번호</th>
+							<th scope="col" rowspan="2">성명<br>(생년월일)</th>
+							<th scope="col" rowspan="2">성별</th>
+							<th scope="col" colspan="5">훈련비용</th>
+							<th scope="col" rowspan="2">학습근로자 수당</th>
+							<th scope="col" rowspan="2" class="last">총계 (1인당)</th>
+						</tr>
+						<tr>
+							<th scope="col" class="topLine">소계</th>
+							<th scope="col" class="topLine">OJT</th>
+							<th scope="col" class="topLine">Off-JT</th>
+							<th scope="col" class="topLine">숙식비</th>
+							<th scope="col" class="topLine">식비</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>유제찬<br>(000313)</td>
+							<td>남</td>
+							<td class="tr">5,431,500</td>
+							<td class="tr">5,431,500</td>
+							<td class="tr">0</td>
+							<td class="tr">0</td>
+							<td class="tr">0</td>
+							<td class="tr">9,600,000</td>
+							<td class="tr last">15,031,500</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>윤현수<br>(010113)</td>
+							<td>남</td>
+							<td class="tr">5,431,500</td>
+							<td class="tr">5,431,500</td>
+							<td class="tr">0</td>
+							<td class="tr">0</td>
+							<td class="tr">0</td>
+							<td class="tr">9,600,000</td>
+							<td class="tr last">15,031,500</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>이순찬<br>(000928)</td>
+							<td>남</td>
+							<td class="tr">5,431,500</td>
+							<td class="tr">5,431,500</td>
+							<td class="tr">0</td>
+							<td class="tr">0</td>
+							<td class="tr">0</td>
+							<td class="tr">9,600,000</td>
+							<td class="tr last">15,031,500</td>
+						</tr>
+						<!-- 데이터 없을 때
+						<tr>
+							<td colspan="10" class="last">학습근로자 명단이 없습니다.</td>
+						</tr>
+						-->
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row" colspan="3">총계</th>
+							<td class="tr">16,294,500</td>
+							<td class="tr">16,294,500</td>
+							<td class="tr">0</td>
+							<td class="tr">0</td>
+							<td class="tr">0</td>
+							<td class="tr">28,800,000</td>
+							<td class="tr">45,094,500</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<!-- //학습근로자 명단 -->
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>

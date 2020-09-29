@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=640, user-scacle=yes">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="HRD">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="HRD">
+	<meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+	<title>공동훈련센터 검색 | HRD-Net</title>
+	<link rel="shortcut icon" href="../new_images/common/favicon.ico">
+	<link href="../new_css/lib/jquery-ui.css" rel="stylesheet" />
+	<link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
+	<link href="../new_css/lib/daterangepicker.css" rel="stylesheet" />
+	<link href="../new_css/reset.css" rel="stylesheet" />
+	<link href="../new_css/layout.css" rel="stylesheet" />
+	<link href="../new_css/contents.css" rel="stylesheet" />
+	<link href="../new_css/main.css" rel="stylesheet" />
+	
+	<script src="../new_js/lib/jquery-2.1.1.js"></script>
+	<script src="../new_js/lib/jquery-ui.js"></script>
+	<script src="../new_js/lib/moment.min.js"></script>
+	<script src="../new_js/lib/daterangepicker.js"></script>
+	<script src="../new_js/lib/swiper.min.js"></script>
+	<script src="../new_js/ui.js"></script>
+	
+</head>
+<body>
+	
+	<div class="popEle type01" style="width: 700px;">
+		<div class="popHeader">
+			<h2 class="popHeaderTit">공동훈련센터 검색</h2>
+		</div>
+		<div class="popContEle">
+			<div class="searchWrap">
+				<fieldset>
+					<legend>검색영역</legend>
+					<dl>
+						<dt><label for="searchText01">공동훈련센터명</label></dt>
+						<dd>
+							<p class="inputBox">
+								<input type="text" value="" title="공동훈련센터명 검색어" name="searchText01" id="searchText01">
+								<span class="btnArea"><button type="button" class="searchBtn">검색</button></span>
+							</p>
+						</dd>
+					</dl>
+				</fieldset>
+			</div>
+			
+			<div class="sortArea">
+				<p class="totalNum">전체 <strong>1,020</strong> 건</p>
+				<div class="selectViewArea">
+					<div class="selectView">
+						<label for="pageRow1">페이지당 조회건수</label>
+						<select title="페이지당 조회건수" name="pageRow1" id="pageRow1" class="selectBox h30">
+							<option value="10" selected="selected">10개씩</option>
+							<option value="20">20개씩</option>
+							<option value="30">30개씩</option>
+							<option value="50">50개씩</option>
+							<option value="100">100개씩</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tableArea">
+				<table class="list">
+					<caption>공동훈련센터 검색 결과 목록</caption>
+					<colgroup>
+					<col style="width: 60px;">
+					<col style="width: 120px;">
+					<col style="width: auto;">
+					<col style="width: 100px;">
+					<col style="width: 100px;">
+					<col style="width: 100px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">번호</th>
+							<th scope="col" rowspan="2">운영형태</th>
+							<th scope="col">공동훈련센터명</th>
+							<th scope="col">전화번호</th>
+							<th scope="col">참여년도</th>
+							<th scope="col" rowspan="2" class="last">참여신청</th>
+						</tr>
+						<tr>
+							<th scope="col">소재지</th>
+							<th scope="col">담당자명</th>
+							<th scope="col">상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">1</td>
+							<td rowspan="2">공동훈련센터</td>
+							<td>(사)캠틱종합기술원</td>
+							<td>012-1234-5678</td>
+							<td>2014</td>
+							<td rowspan="2" class="last">
+								<button type="button" class="smallBtn">참여신청</button>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">전라북도 전주시 덕진구 유상로 67 (팔복동 2가)</td>
+							<td>홍길동</td>
+							<td>적합(최종)</td>
+						</tr><tr>
+							<td rowspan="2">2</td>
+							<td rowspan="2">공동훈련센터</td>
+							<td>(사)캠틱종합기술원</td>
+							<td>012-1234-5678</td>
+							<td>2014</td>
+							<td rowspan="2" class="last">
+								<button type="button" class="smallBtn">참여신청</button>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">전라북도 전주시 덕진구 유상로 67 (팔복동 2가)</td>
+							<td>홍길동</td>
+							<td>적합(최종)</td>
+						</tr>
+						<tr style="display: none;">
+							<td colspan="6">자료가 없습니다. 다른 검색조건을 선택해주세요.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="pagenation">
+				<a href="/" class="pb prev">이전보기</a>
+				<a href="/" class="on">1</a>
+				<a href="/">2</a>
+				<a href="/">3</a>
+				<a href="/">4</a>
+				<a href="/">5</a>
+				<a href="/">6</a>
+				<a href="/">7</a>
+				<a href="/" class="pb next">다음보기</a>
+			</div>
+			
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	
+</body>
+</html>
